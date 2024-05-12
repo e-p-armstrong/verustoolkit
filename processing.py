@@ -166,11 +166,7 @@ async def main():
         (control_flow_functions.fix_text(conversions, seq[0]), seq[1])
         for seq in sentence_chunks
     ]
-
-    len(paragraphs_processed)
-
-    paragraphs_processed[0]
-
+    
     print(paragraphs_processed[:3])
 
     import json
@@ -201,10 +197,10 @@ async def main():
         judged_worthy_for_questions, graph=GRAPH
     )
 
+    print("\n\nFILTERED WORTHY FOR QUESTIONS:")
     print(filtered_worthy_for_questions[0])
-
+    print(judged_worthy_for_questions[0])
     # ### The cell below begins generating questions. SOME OF THESE MAY FAIL and have to retry due to model errors (the API branch cannot use grammars). But if you let it run you will see that the vast majority eventually get through.
-    #
 
     # control flow
     import json

@@ -1429,7 +1429,7 @@ async def filter_all_questions(
     else:
         tasks = [
             determine_worthy(idx, p, judged_worthy_for_questions, output_dir, judge)
-            for idx, p in enumerate(paragraphs_processed[obj_conf["SYSTEM"]["SUBSET_SIZE"]])
+            for idx, p in enumerate(paragraphs_processed[:obj_conf["SYSTEM"]["SUBSET_SIZE"]])
         ]
     limited_tasks = [rtwl(task) for task in tasks]
     for future in tqdmasyncio.tqdm.as_completed(limited_tasks):

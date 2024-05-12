@@ -11,18 +11,17 @@ def json_to_yaml(json_dir):
             with open(json_path, "r") as json_file:
                 json_data = json.load(json_file)
 
+            yaml_content = []
+            for item in json_data:
+                yaml_content.append(f"- role: {item['role']}")
+                yaml_content.append(f"  content: |")
+                content = item['content'].replace('\\n', '\n')
+                content = content.replace('\\"', '"')
+                for line in content.split('\n'):
+                    yaml_content.append(f"    {line}")
+
             with open(yaml_path, "w") as yaml_file:
-                yaml.dump(json_data, yaml_file, default_style='"', width=float("inf"), allow_unicode=True)
-
-            # Post-process the YAML file to replace escaped newlines and double escaped quotes
-            with open(yaml_path, "r") as yaml_file:
-                yaml_content = yaml_file.read()
-
-            yaml_content = yaml_content.replace('\\\\n', '\\n')
-            yaml_content = yaml_content.replace('\\\\"', '\\"')
-
-            with open(yaml_path, "w") as yaml_file:
-                yaml_file.write(yaml_content)
+                yaml_file.write('\n'.join(yaml_content))
 
 # Example usage
 json_directory = "./prompts"
