@@ -110,11 +110,25 @@ class GenerationStep:
             raise Exception("Generation step failed -- too many retries!")
         else:
             messages = yaml.safe_load(prompt)
-            messages = [{
-                "role": message["role"],
-                "content": safe_format(message["content"],**arguments)
-                }
-                        for message in messages]
+            new_messages = []
+            for message in messages:
+                try:
+                    new_messages.append({
+                        "role": message["role"],
+                        "content": safe_format(message["content"],**arguments)
+                    })
+                except Exception as e:
+                    new_messages.append({
+                        "role": message["role"],
+                        "content": message["content"]
+                    })
+            messages = new_messages
+            
+            # messages = [{
+            #     "role": message["role"],
+            #     "content": safe_format(message["content"],**arguments)
+            #     }
+            #             for message in messages]
             while times_tried <= self.retries:
                 try:
                     

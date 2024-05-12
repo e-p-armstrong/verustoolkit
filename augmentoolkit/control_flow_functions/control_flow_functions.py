@@ -404,6 +404,9 @@ async def repair_qatuple_context(
                 "[INST]",
                 "### Instruction",
                 "[INST",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -535,6 +538,9 @@ async def vet_answer_accuracy_loop(
                 "[INST]",
                 "### Instruction",
                 "[INST",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -684,6 +690,9 @@ async def vet_answer_relevance_loop(
                 "[INST]",
                 "### Instruction",
                 "[INST",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -843,6 +852,9 @@ async def vet_question_loop(
                 "[INST]",
                 "### Instruction",
                 "[INST",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -884,6 +896,9 @@ async def vet_question_loop(
                     "[INST]",
                     "### Instruction",
                     "[INST",
+                    "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
                 ],
                 "temperature": 0.2,
             },
@@ -910,6 +925,9 @@ async def vet_question_loop(
                     "[INST]",
                     "### Instruction",
                     "[INST",
+                    "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
                 ],
                 "temperature": 0.2,
             },
@@ -1359,6 +1377,9 @@ async def filter_all_questions(
                 "[INST]",
                 "### Instruction",
                 "[INST",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -1387,7 +1408,7 @@ async def filter_all_questions(
         await future
 
 
-def sentence_chunking_algorithm(file_path, max_char_length=400):
+def sentence_chunking_algorithm(file_path, max_char_length=2800):
     """
     This function takes a plaintext file and chunks it into sentences.
 
@@ -1565,6 +1586,9 @@ def create_character_info_generators(
                 "## Questions, answer, and text that the character should know:",
                 "Special instructions:",
                 "###",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
             ],
             "temperature": 1,
             # top_k=-1,
@@ -1607,6 +1631,9 @@ def create_character_info_generators(
             "[INST",
             "## Text",
             "## Character card",
+            "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
         ]
     else:
         stop_list = [
@@ -1618,6 +1645,9 @@ def create_character_info_generators(
             "### Instruction",
             "[INST",
             "## Text",
+            "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
         ]
 
     character_card_creator = GenerationStep(
@@ -1666,6 +1696,9 @@ def create_character_info_generators(
                 "[INST",
                 "## Information",
                 "User:",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
                 # "## Scenario",
             ],
             "temperature": 0.6,
@@ -1712,6 +1745,9 @@ def create_character_info_generators(
                 "[INST",
                 "## Information",
                 "User:",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
                 # "## Scenario",
             ],
             "temperature": 0.5,
@@ -1882,6 +1918,9 @@ async def create_conversation(
                 "## Information",
                 "## Instruction",
                 "Name:",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
             ],
             "temperature": 0.8,
             # "top_k": -1,
