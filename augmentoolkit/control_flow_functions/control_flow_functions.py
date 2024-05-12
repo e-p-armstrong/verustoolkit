@@ -380,7 +380,7 @@ async def repair_qatuple_context(
     if completion_mode:
         context_repairer_path = context_repairer_path + ".txt"
     else:
-        context_repairer_path = context_repairer_path + ".json"
+        context_repairer_path = context_repairer_path + ".yaml"
 
     repair_context_regex = re.compile(
         r"Reasoning and thought process \(be thorough\):(.+)",
@@ -511,7 +511,7 @@ async def vet_answer_accuracy_loop(
     if completion_mode:
         prompt_path_ans_accuracy_check = prompt_path_ans_accuracy_check + ".txt"
     else:
-        prompt_path_ans_accuracy_check = prompt_path_ans_accuracy_check + ".json"
+        prompt_path_ans_accuracy_check = prompt_path_ans_accuracy_check + ".yaml"
     check_ans_accuracy_regex = re.compile(
         r"Reasoning and thought process \(the text is your single source of truth\):\n(.+)",
         re.DOTALL,
@@ -664,7 +664,7 @@ async def vet_answer_relevance_loop(
     if completion_mode:
         prompt_path_ans_relevancy_check = prompt_path_ans_relevancy_check + ".txt"
     else:
-        prompt_path_ans_relevancy_check = prompt_path_ans_relevancy_check + ".json"
+        prompt_path_ans_relevancy_check = prompt_path_ans_relevancy_check + ".yaml"
 
     answer_relevancy_checker = GenerationStep(
         prompt_path=prompt_path_ans_relevancy_check,
@@ -823,7 +823,7 @@ async def vet_question_loop(
     if completion_mode:
         prompt_path_q_check = prompt_path_q_check + ".txt"
     else:
-        prompt_path_q_check = prompt_path_q_check + ".json"
+        prompt_path_q_check = prompt_path_q_check + ".yaml"
 
     question_checker = GenerationStep(
         prompt_path=prompt_path_q_check,
@@ -863,7 +863,7 @@ async def vet_question_loop(
     if completion_mode:
         prompt_path_new_q_gen = prompt_path_new_q_gen + ".txt"
     else:
-        prompt_path_new_q_gen = prompt_path_new_q_gen + ".json"
+        prompt_path_new_q_gen = prompt_path_new_q_gen + ".yaml"
 
     if completion_mode:
         new_q_generator = GenerationStep(
@@ -1040,10 +1040,10 @@ def extract_questions_from_response_chatmode(
     # print("!! What the model outputted: !!")
     # print(generation)
     pattern = re.compile(
-        r"\d+\.\) (.*?)\\nAnswer: (.*?)(?=\\n\\n|\Z)",
+        r"\d+\.\) (.*?)\nAnswer: (.*?)(?=\n\n|\Z)",
         re.DOTALL | re.MULTILINE | re.IGNORECASE,
     )
-    matches = pattern.findall(generation + "\\n\\n")
+    matches = pattern.findall(generation + "\n\n")
     if len(matches) == 0:
         raise Exception(
             "Failed to generate questions!"
@@ -1090,10 +1090,10 @@ def extract_question_from_response_chatmode(
     generation,
 ):  # TODO extract to non-controlflow file
     pattern = re.compile(
-        r"\d+\.?\)?:? (.*?)\\nAnswer: (.*?)(?=\\n\\n|\Z)",
+        r"\d+\.?\)?:? (.*?)\nAnswer: (.*?)(?=\n\n|\Z)",
         re.DOTALL | re.MULTILINE | re.IGNORECASE,
     )
-    matches = pattern.findall(generation + "\\n\\n")
+    matches = pattern.findall(generation + "\n\n")
     if len(matches) == 0:
         raise Exception(
             "Failed to generate questions!"
@@ -1135,36 +1135,7 @@ async def generate_qatuples_from_para(
     if completion_mode:
         prompt_path_qatuples_plan = prompt_path_qatuples_plan + ".txt"
     else:
-        prompt_path_qatuples_plan = prompt_path_qatuples_plan + ".json"
-
-    qatuples_planner = GenerationStep(
-        prompt_path=prompt_path_qatuples_plan,
-        regex=qatuples_plan_regex,
-        sampling_params={
-            "max_tokens": 3000,
-            "stop": [
-                "### Response",
-                "\n\n\n\n\n",
-                "</s>",
-                "# Input:",
-                "[INST]",
-                "### Instruction",
-                "[INST",
-                "Text to plan questions from",
-            ],
-            "temperature": 0.8,
-            # top_k=-1,
-            "top_p": 1,
-            # min_p=0.5,
-        },
-        completion_mode=completion_mode,
-        retries=0,
-        engine_wrapper=engine_wrapper,
-        logging_level=logging_level,
-        prompt_folder=obj_conf["PATH"]["PROMPTS"],
-        default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-    )
+        prompt_path_qatuples_plan = prompt_path_qatuples_plan + ".yaml"
 
     # NOTE Set up qatuple generation step #
 
@@ -1175,7 +1146,7 @@ async def generate_qatuples_from_para(
     if completion_mode:
         prompt_path_qatuples_gen = prompt_path_qatuples_gen + ".txt"
     else:
-        prompt_path_qatuples_gen = prompt_path_qatuples_gen + ".json"
+        prompt_path_qatuples_gen = prompt_path_qatuples_gen + ".yaml"
 
     qatuples_gen_regex = re.compile(
         r"Questions \(make 4\):\n(.+)", re.IGNORECASE | re.DOTALL
@@ -1421,7 +1392,7 @@ async def filter_all_questions(
     if completion_mode:
         prompt_path = prompt_path + ".txt"
     else:
-        prompt_path = prompt_path + ".json"
+        prompt_path = prompt_path + ".yaml"
 
     judge = GenerationStep(
         prompt_path=prompt_path,
@@ -1458,7 +1429,7 @@ async def filter_all_questions(
     else:
         tasks = [
             determine_worthy(idx, p, judged_worthy_for_questions, output_dir, judge)
-            for idx, p in enumerate(paragraphs_processed[:13])
+            for idx, p in enumerate(paragraphs_processed[obj_conf["SYSTEM"]["SUBSET_SIZE"]])
         ]
     limited_tasks = [rtwl(task) for task in tasks]
     for future in tqdmasyncio.tqdm.as_completed(limited_tasks):
@@ -1636,7 +1607,7 @@ def create_character_info_generators(
     if completion_mode:
         character_card_plan_path = character_card_plan_path + ".txt"
     else:
-        character_card_plan_path = character_card_plan_path + ".json"
+        character_card_plan_path = character_card_plan_path + ".yaml"
 
     character_card_plan_creator = GenerationStep(
         prompt_path=character_card_plan_path,
@@ -1685,7 +1656,7 @@ def create_character_info_generators(
     if completion_mode:
         character_card_path = character_card_path + ".txt"
     else:
-        character_card_path = character_card_path + ".json"
+        character_card_path = character_card_path + ".yaml"
 
     if obj_conf["SYSTEM"]["COMPLETION_MODE"]:
         stop_list = [
@@ -1740,7 +1711,7 @@ def create_character_info_generators(
     if completion_mode:
         scenario_plan_path = scenario_plan_path + ".txt"
     else:
-        scenario_plan_path = scenario_plan_path + ".json"
+        scenario_plan_path = scenario_plan_path + ".yaml"
 
     scenario_plan_creator = GenerationStep(
         prompt_path=scenario_plan_path,
@@ -1786,7 +1757,7 @@ def create_character_info_generators(
     if completion_mode:
         scenario_path = scenario_path + ".txt"
     else:
-        scenario_path = scenario_path + ".json"
+        scenario_path = scenario_path + ".yaml"
 
     scenario_creator = GenerationStep(  # will have variations as an argument
         prompt_path=scenario_path,
@@ -1954,7 +1925,7 @@ async def create_conversation(
         )
     else:
         multi_turn_conversation_prompt_path = (
-            multi_turn_conversation_prompt_path + ".json"
+            multi_turn_conversation_prompt_path + ".yaml"
         )
 
     multi_turn_conv_generator = GenerationStep(

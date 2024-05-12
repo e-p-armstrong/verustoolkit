@@ -1,0 +1,6 @@
+[
+    "Why might a user not see any progress on their wallet import using the GUI wallet?",
+    "The GUI wallet may not show any progress while the import is happening in the background. This is particularly true for wallets with a significant number of transactions on the address being imported.",
+    "Note: Don't use the WIF from the example above, but use the one from the CLI-interface in Verus Desktop. ### The GUI wallet will not show any progress on the import and may give messages that the RPC daemon is not reacting. It will take quite some time for the process to finish in the background, especially if the address has many transaction on it. Information compiled by Oink.vrsc@. Note: revision date 2021-05-02.",
+    "./raw_txt_input/how-to_convert-seed-to-wif.md"
+]

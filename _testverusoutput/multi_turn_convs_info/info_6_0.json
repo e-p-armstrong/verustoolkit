@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the main issue when the error \\\"Your wallet.dat is not matching the blockchain\\\" occurs?",
+            "The main issue is that the user is probably trying to move coinbase coins before moving them through a private address first, which is required by Verus blockchain rules.",
+            "# Question: ERROR: Your wallet.dat is not matching the blockchain. Please restart the wallet with -reindex param. It seems you probably trying to move coinbase coins that you must move them through a private address (zaddress) first by shielding your coinbases, which is required by Verus blockchain rules. ## Procedure 1. go to the \"Receive\" screen and make sure you have a private address (starting with `zs`), if you don't have that create one. 2. Copy the new private address to your clipboard 3. Go to the \"Mining\" screen, select Verus and select \"Shield Rewards\" 4. Leave \"All unshielded funds\" as the source and paste the new zaddress into the destination 5. Click on \"Continue\" 6. Wait a while until you have a private balance showing on the Wallet screen 7. Send again, this time from your private address to any normal transparent receive address that you have. (submitted by @keda666, solution written by mikeout.vrsc@) Note: revised 2020-04-24",
+            "./raw_txt_input/faq-allos18_your_wallet.dat_is_not_matching_the_blockchain._please_restart_the_wallet_with_-reindex_param.md"
+        ],
+        [
+            "Can you explain how to send Verus coins properly in line with the Verus blockchain rules?",
+            "According to the procedure mentioned, you should first make sure you have a private address. Then, copy the new private address to your clipboard. Next, go to the \\\"Mining\\\" screen, select Verus, and select \\\"Shield Rewards\\\". Leave \\\"All unshielded funds\\\" as the source and paste the new `zs` address into the destination. Click on \\\"Continue\\\" and wait until you have a private balance showing on the Wallet screen. Finally, send again, this time from your private address to any normal transparent receive address that you have.",
+            "# Question: ERROR: Your wallet.dat is not matching the blockchain. Please restart the wallet with -reindex param. It seems you probably trying to move coinbase coins that you must move them through a private address (zaddress) first by shielding your coinbases, which is required by Verus blockchain rules. ## Procedure 1. go to the \"Receive\" screen and make sure you have a private address (starting with `zs`), if you don't have that create one. 2. Copy the new private address to your clipboard 3. Go to the \"Mining\" screen, select Verus and select \"Shield Rewards\" 4. Leave \"All unshielded funds\" as the source and paste the new zaddress into the destination 5. Click on \"Continue\" 6. Wait a while until you have a private balance showing on the Wallet screen 7. Send again, this time from your private address to any normal transparent receive address that you have. (submitted by @keda666, solution written by mikeout.vrsc@) Note: revised 2020-04-24",
+            "./raw_txt_input/faq-allos18_your_wallet.dat_is_not_matching_the_blockchain._please_restart_the_wallet_with_-reindex_param.md"
+        ],
+        [
+            "What is the second step in addressing the improper coin movement issue?",
+            "The second step is to copy the new private address to your clipboard.",
+            "# Question: ERROR: Your wallet.dat is not matching the blockchain. Please restart the wallet with -reindex param. It seems you probably trying to move coinbase coins that you must move them through a private address (zaddress) first by shielding your coinbases, which is required by Verus blockchain rules. ## Procedure 1. go to the \"Receive\" screen and make sure you have a private address (starting with `zs`), if you don't have that create one. 2. Copy the new private address to your clipboard 3. Go to the \"Mining\" screen, select Verus and select \"Shield Rewards\" 4. Leave \"All unshielded funds\" as the source and paste the new zaddress into the destination 5. Click on \"Continue\" 6. Wait a while until you have a private balance showing on the Wallet screen 7. Send again, this time from your private address to any normal transparent receive address that you have. (submitted by @keda666, solution written by mikeout.vrsc@) Note: revised 2020-04-24",
+            "./raw_txt_input/faq-allos18_your_wallet.dat_is_not_matching_the_blockchain._please_restart_the_wallet_with_-reindex_param.md"
+        ],
+        [
+            "What is the first step in fixing the improper coin movement issue?",
+            "The first step is to go to the \\\"Receive\\\" screen and make sure you have a private address (starting with `zs`), if you don't have that create one.",
+            "# Question: ERROR: Your wallet.dat is not matching the blockchain. Please restart the wallet with -reindex param. It seems you probably trying to move coinbase coins that you must move them through a private address (zaddress) first by shielding your coinbases, which is required by Verus blockchain rules. ## Procedure 1. go to the \"Receive\" screen and make sure you have a private address (starting with `zs`), if you don't have that create one. 2. Copy the new private address to your clipboard 3. Go to the \"Mining\" screen, select Verus and select \"Shield Rewards\" 4. Leave \"All unshielded funds\" as the source and paste the new zaddress into the destination 5. Click on \"Continue\" 6. Wait a while until you have a private balance showing on the Wallet screen 7. Send again, this time from your private address to any normal transparent receive address that you have. (submitted by @keda666, solution written by mikeout.vrsc@) Note: revised 2020-04-24",
+            "./raw_txt_input/faq-allos18_your_wallet.dat_is_not_matching_the_blockchain._please_restart_the_wallet_with_-reindex_param.md"
+        ],
+        [
+            "What does \\\"Shield Rewards\\\" function do in the Verus wallet?",
+            "\\\"Shield Rewards\\\" function allows you to move your unshielded Verus fund into a private address under the \\\"Mining\\\" screen in the Verus wallet. This is required by Verus blockchain rules, especially when dealing with coinbase coins.",
+            "# Question: ERROR: Your wallet.dat is not matching the blockchain. Please restart the wallet with -reindex param. It seems you probably trying to move coinbase coins that you must move them through a private address (zaddress) first by shielding your coinbases, which is required by Verus blockchain rules. ## Procedure 1. go to the \"Receive\" screen and make sure you have a private address (starting with `zs`), if you don't have that create one. 2. Copy the new private address to your clipboard 3. Go to the \"Mining\" screen, select Verus and select \"Shield Rewards\" 4. Leave \"All unshielded funds\" as the source and paste the new zaddress into the destination 5. Click on \"Continue\" 6. Wait a while until you have a private balance showing on the Wallet screen 7. Send again, this time from your private address to any normal transparent receive address that you have. (submitted by @keda666, solution written by mikeout.vrsc@) Note: revised 2020-04-24",
+            "./raw_txt_input/faq-allos18_your_wallet.dat_is_not_matching_the_blockchain._please_restart_the_wallet_with_-reindex_param.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d52b10f5-cc8c-49b7-920d-7b7e82b1990c"
+]

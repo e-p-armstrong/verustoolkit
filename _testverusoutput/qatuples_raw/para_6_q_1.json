@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the command `run convertpassphrase \\\"word_1 word_2 word_3 ... word_n\\\"`?",
+    "The command `run convertpassphrase \\\"word_1 word_2 word_3 ... word_n\\\"` is used to convert a seed phrase in Verus Desktop. The seed phrase needs to be replaced with the actual seedphrase (112 or 24 wordsof the address you want to import.",
+    "To convert your *seed phrase* in Verus Desktop, go to `settings` --> `Coin Settings`, select the chain you want to use in the top-right corner and enter the following command: ``` run convertpassphrase \"word_1 word_2 word_3 ... word_n\" ``` Note: Make sure you replace `Word1 word2 word3 ... word_n` with the actual seedphrase (12 or 24 words) of the address you want to import! You will receive a response __similar__ to this: ``` { \"walletpassphrase\": \"seedphrase\", \"address\": \"RYX6RYU3AAvwVCNyNM4cVyGUhSMUPvKs3r\", \"pubkey\": \"02ffc2f4b071afdec631e3fb7d435a0047be14a81ea1a269e4206b0068c0c1fa6f\", \"privkey\": \"d899ed88e9ee2e90c2cf51cb47e7b4495ec1e1cb10763bb1c111b0bde48bf86c\", \"wif\": \"UwGb5KvGPfMUr1tu74Desjh87ZeJM4wq5goLyThcogeLifc5aJqT\" } ``` Copy that information and store it somewhere **SAFE**. With this information anyone having access to it will have full control over that address.",
+    "./raw_txt_input/how-to_convert-seed-to-wif.md"
+]
