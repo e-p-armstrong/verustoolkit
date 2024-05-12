@@ -172,6 +172,8 @@ async def main():
     os.makedirs(output_dir, exist_ok=True)
 
     filtered_worthy_for_questions = paragraphs_processed
+    if USE_SUBSET:
+        filtered_worthy_for_questions = filtered_worthy_for_questions[:config["SYSTEM"]["SUBSET_SIZE"]]
     # ### The cell below begins generating questions. SOME OF THESE MAY FAIL and have to retry due to model errors (the API branch cannot use grammars). But if you let it run you will see that the vast majority eventually get through.
 
     # control flow

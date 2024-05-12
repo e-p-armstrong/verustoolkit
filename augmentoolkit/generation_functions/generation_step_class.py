@@ -30,6 +30,9 @@ class GenerationStep:
                 "## Information",
                 "## Instruction",
                 "Name:",
+                "<|eot_id|>",
+                "<|start_header_id|>",
+                "<|end_header_id|>",
             ],
         },
         completion_mode=True,  # Chat vs completion mode

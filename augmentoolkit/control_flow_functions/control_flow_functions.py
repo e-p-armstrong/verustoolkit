@@ -43,6 +43,11 @@ with open("./config.yaml", "r") as file:
 DEFAULT_PROMPT_PATH = obj_conf["PATH"]["DEFAULT_PROMPTS"]
 
 
+def extract_qa_tuples(text):
+    pattern = r'\*\*QUESTION:\*\*\s*((?:.|\n)*?)\s*\*\*ANSWER:\*\*\s*((?:.|\n)*?)(?=\s*\*\*QUESTION:\*\*|\Z)'
+    matches = re.findall(pattern, text + "\n\n**QUESTION:**", re.DOTALL) # The addition is a hack to get around the tricky lookahead problem
+    return [(question.strip(), answer.strip()) for question, answer in matches]
+
 def extract_steps(text, steps=[2, 4, 5]):
     """
     Extracts the specified steps from the text.
@@ -1003,110 +1008,49 @@ async def vet_question_loop(
     return (None, None, None, qtuple[3])
 
 
+
 def extract_questions_from_response_completionmode(
     generation,
 ):  # TODO extract to non-controlflow file
-    questions = []
-    # print("!! What the model outputted: !!")
-    # print(generation)
-    pattern = re.compile(
-        r"(?:Question:|^\d+[\).]?)\s*(.*?)\s*\n*Answer:\s*(.*?)(?=(?:\n\s*(?:Question:|\d+[\).]?))|$)",
-        re.DOTALL | re.MULTILINE | re.IGNORECASE,
-    )
-    matches = pattern.findall(generation)
-    if len(matches) == 0:
+    questions = extract_qa_tuples(generation)
+    if len(questions) == 0:
         raise Exception(
             "Failed to generate questions!"
         )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
-    for match in matches:
-        questions.append(
-            (
-                match[0].replace(") ", "", 1).strip(),
-                match[1].replace(") ", "", 1).strip(),
-                # para_tuple[0].replace(") ", "", 1), # These have to get added in the control flow, minus the .replace() that's actually wrong
-                # para_tuple[1].replace(") ", "", 1),
-            )
-        )
-    # print("\n\n\nExtract questions from response DEBUG!!!") # TODO remove
-    # print(questions)
     return questions
 
 
 def extract_questions_from_response_chatmode(
     generation,
 ):  # TODO extract to non-controlflow file
-    print(generation)
-    questions = []
-    # print("!! What the model outputted: !!")
-    # print(generation)
-    pattern = re.compile(
-        r"\d+\.\) (.*?)\nAnswer: (.*?)(?=\n\n|\Z)",
-        re.DOTALL | re.MULTILINE | re.IGNORECASE,
-    )
-    matches = pattern.findall(generation + "\n\n")
-    if len(matches) == 0:
+    questions = extract_qa_tuples(generation)
+    if len(questions) == 0:
         raise Exception(
             "Failed to generate questions!"
         )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
-    for match in matches:
-        questions.append(
-            (
-                match[0].replace(") ", "", 1).strip(),
-                match[1].replace(") ", "", 1).strip(),
-                # para_tuple[0].replace(") ", "", 1), # These have to get added in the control flow, minus the .replace() that's actually wrong
-                # para_tuple[1].replace(") ", "", 1),
-            )
-        )
-    # print("\n\n\nExtract questions from response DEBUG!!!") # TODO remove
-    # print(questions)
     return questions
 
 
 def extract_question_from_response_completionmode(
     generation,
 ):  # TODO extract to non-controlflow file
-    questions = []
-    pattern = re.compile(
-        r"(?:Question:|^\d+[\).]?)\s*(.*?)\s*\n*Answer:\s*(.*?)(?=(?:\n\s*(?:Question:|\d+[\).]?))|$)",
-        re.DOTALL | re.MULTILINE | re.IGNORECASE,
-    )
-    matches = pattern.findall(generation)
-    if len(matches) == 0:
+    questions = extract_qa_tuples(generation)
+    if len(questions) == 0:
         raise Exception(
             "Failed to generate questions!"
         )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
-    for match in matches:
-        # print("\n\n\nExtract questions from response DEBUG!!!") # TODO remove
-        # print(questions)
-        return (
-            match[0].replace(") ", "", 1).strip(),
-            match[1].replace(") ", "", 1).strip(),
-            # para_tuple[0].replace(") ", "", 1), # These have to get added in the control flow, minus the .replace() that's actually wrong
-            # para_tuple[1].replace(") ", "", 1),
-        )
+    return questions[0] # extract only the first question, since we only redo one at a time.
 
 
 def extract_question_from_response_chatmode(
     generation,
 ):  # TODO extract to non-controlflow file
-    pattern = re.compile(
-        r"\d+\.?\)?:? (.*?)\nAnswer: (.*?)(?=\n\n|\Z)",
-        re.DOTALL | re.MULTILINE | re.IGNORECASE,
-    )
-    matches = pattern.findall(generation + "\n\n")
-    if len(matches) == 0:
+    questions = extract_qa_tuples(generation)
+    if len(questions) == 0:
         raise Exception(
             "Failed to generate questions!"
         )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
-    for match in matches:
-        # print("\n\n\nExtract questions from response DEBUG!!!") # TODO remove
-        # print(questions)
-        return (
-            match[0].replace(") ", "", 1).strip(),
-            match[1].replace(") ", "", 1).strip(),
-            # para_tuple[0].replace(") ", "", 1), # These have to get added in the control flow, minus the .replace() that's actually wrong
-            # para_tuple[1].replace(") ", "", 1),
-        )
+    return questions[0] # we extract only the first question, as we only redo questions one at a time.
 
 
 # Question generation ASDF
@@ -1165,6 +1109,9 @@ async def generate_qatuples_from_para(
                     "[INST]",
                     "### Instruction",
                     "[INST",
+                    "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
                 ],
                 "temperature": 0.8,
                 # top_k=-1,
@@ -1194,6 +1141,10 @@ async def generate_qatuples_from_para(
                     "[INST]",
                     "### Instruction",
                     "[INST",
+                    
+                    "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
                 ],
                 "temperature": 0.8,
                 # top_k=-1,
