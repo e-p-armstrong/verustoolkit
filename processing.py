@@ -144,20 +144,13 @@ async def main():
         # quantization="gptq" # modify if you want to do stuff with the aphrodite branch
     )
 
-    from transformers import AutoTokenizer
     import re
     from tqdm import tqdm
-    import nltk
-
-
-    tokenizer = AutoTokenizer.from_pretrained(
-        "Gryphe/MythoMax-L2-13b"
-    )  # It doesn't matter what model goes here, really
 
     sentence_chunks = []
     for source_text in source_texts:
         sentence_chunks += control_flow_functions.sentence_chunking_algorithm(
-            source_text, tokenizer
+            source_text
         )
 
     conversions = [("\n", " "), ("  ", " ")]

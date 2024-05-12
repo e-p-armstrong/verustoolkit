@@ -1436,7 +1436,7 @@ async def filter_all_questions(
         await future
 
 
-def sentence_chunking_algorithm(file_path, tokenizer, max_token_length=400):
+def sentence_chunking_algorithm(file_path, max_char_length=400):
     """
     This function takes a plaintext file and chunks it into sentences.
 
@@ -1445,46 +1445,33 @@ def sentence_chunking_algorithm(file_path, tokenizer, max_token_length=400):
     :param max_token_length: The maximum token length for a chunk of sentences
     :return: List of sentence chunks with source text information
     """
-    sentence_chunks_with_source = []
+    chunks_with_source = []
     current_chunk = []
-    token_count = 0
+    char_count = 0
     source_name = file_path.replace(".txt", "")
 
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Remove Gutenberg header and footer
-    content = re.sub(
-        r"^.*?START OF (THIS|THE) PROJECT GUTENBERG EBOOK.*$\n",
-        "",
-        content,
-        flags=re.MULTILINE,
-    )
-    content = re.sub(
-        r"^.*?END OF (THIS|THE) PROJECT GUTENBERG EBOOK.*$\n",
-        "",
-        content,
-        flags=re.MULTILINE,
-    )
+    # split into single characters
+    characters = list(content)
 
-    sentences = sent_tokenize(content)
+    for character in tqdm(characters, desc=f"Processing {file_path}"):
 
-    for sentence in tqdm(sentences, desc=f"Processing {file_path}"):
-        sentence_token_count = len(tokenizer.encode(sentence))
-
-        if token_count + sentence_token_count <= max_token_length:
-            current_chunk.append(sentence)
-            token_count += sentence_token_count
+        if char_count + 1 <= max_char_length:
+            current_chunk.append(character)
+            char_count += 1
         else:
-            sentence_chunks_with_source.append((" ".join(current_chunk), source_name))
-            current_chunk = [sentence]
-            token_count = sentence_token_count
+            # convert the chunk to a string
+            chunks_with_source.append(("".join(current_chunk), source_name))
+            current_chunk = [character]
+            char_count = 1
 
     # Add the last chunk if it exists
     if current_chunk:
-        sentence_chunks_with_source.append((" ".join(current_chunk), source_name))
+        chunks_with_source.append(("".join(current_chunk), source_name))
 
-    return sentence_chunks_with_source
+    return chunks_with_source
 
 
 def fix_text(to_replace_arr, text):
