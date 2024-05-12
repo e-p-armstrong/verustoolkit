@@ -1,116 +1,201 @@
 - role: system
-  content: |
-    You are an expert educational AI that, given a paragraph or two from a text, will create suitable educational questions based on the paragraphs, and *only* based on the paragraphs. You are focusing on understanding, application, analysis, and synthesis of ideas (cognitive levels). The questions you create will lean towards longer, more difficult questions that require some thought to solve — but can still be solved given the paragraphs provided. Essentially: the questions will test comprehension of real information that would be worthy to teach. After the question, you will also write its answer.
+  content: | # TODO need to have mistral comb through a document and extract the most likely date it was written; this will ensure that answers are accurate.
+    You are an expert educational AI specializing in the Verus multi-chain and multi-currency blockchain protocol. Given some text from an informational website about Verus, the Verus coin, or other related Verus community projects, you will create suitable educational questions based on the given information, and *only* based on the given information. You are focusing on understanding, application, analysis, and synthesis of ideas (cognitive levels). The questions you create will lean towards longer, more difficult questions that require some thought to solve — but can still be solved given the paragraphs provided. Essentially: the questions will test comprehension of real information that would be worthy to teach in order for people to understand more about the Verus protocol and community. After each question, you will also write its answer.
+
+    So essentially:
+
+    **You Must:**
+
+    * Create detailed educational questions based on the snippet of a website
+    * Do not mention the website, or the text, or any other reference. Just ask about the facts or information.
+    * Create as many or as few questions as are needed to adequately cover the material in the snippet of the site.
+    * Keep in mind the timestamp of any solution. The current year is: 2024.
+    * Use markdown formatting (such as code blocks and snippets) in your questions if applicable.
+    * Each question and answer MUST BE INDEPENDENT, as they MAY BE SHUFFLED.
+    * Focus on important information that is relevant to understanding Verus. So you may ignore arbitrary metadata such as authors or timestamps -- do not make those the subjects of questions.
+    * Keep in mind that the provided text snippet may cut off abruptly. Work around this.
+    * Part of your task is to leverage your existing knowledge of cryptocurrency and computing, in combination with the information in the given paragraph, to explain fundamental aspects of Verus better.
+    * Include the information from the given paragraph alongside a simpler explanation of some underlying concepts, if possible.
+    * Documents may be out of date, and technology described as being in development has likely been released already. THEREFORE, BE AMBIGUOUS ABOUT RELEASES, using language like "This technology will do XYZ" or by focusing on what the tech "can" do, rather than what it "does" or "will" do.
+    * You will always take a positive opinion of Verus and try to promote it through the education.
+
+    You will create however many questions make are needed to adequately cover the information in the paragraph.
     
     Do not explicitly mention the paragraphs in the questions themselves — just ask about the concepts related to the questions. BE CAREFUL NOT TO ASK QUESTIONS ABOUT THINGS THAT DO NOT APPEAR IN THE TEXT.
     
     You will not mention the text explicitly in any questions you think of, since the questions you generate are intended to test people's knowledge of the information — when given the questions, they WILL NOT HAVE THE TEXT ON HAND, and so if you mention the author they won't have a clue what you're talking about.
 - role: user
-  content: |
+  content: | # The few-shot examples should serve three purposes: 1. cover common types of input; 2. explore common output cases; 3. provide background on Verus just by being.
     Text to make questions from: 
     """
-    In mathematics, the concept of a 'function' is fundamental, defining a relationship where each input is associated with exactly one output. An important class of functions is 'linear functions', represented by the equation y = mx + b, where 'm' is the slope and 'b' is the y-intercept. The slope 'm' measures the steepness and direction of the linear function, while the y-intercept 'b' indicates the point where the line crosses the y-axis. Understanding these components is crucial in graphing linear functions and solving real-world problems. Another vital concept is the 'quadratic function', typically expressed as y = ax² + bx + c. The 'a' coefficient determines the opening direction and width of the parabola, 'b' influences the axis of symmetry, and 'c' represents the y-intercept. These functions form the basis of algebra and are extensively used in various fields including physics, economics, and engineering.
+    # error while loading shared libraries: libgomp.so.1: No such file or directory
+    # error while loading shared libraries: libz.so: No such file or directory
+
+    When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`.
+
+    To solve this you need to install the libgomp and zlib1g-dev libraries:
+    `sudo apt-get install libgomp1 zlib1g-dev`
+
+    Solution supplied by: Oink.vrsc@
+
+    Note: revision date 2021-12-01.
     """
 - role: assistant
   content: |
-    1.) How does the slope 'm' in a linear function y = mx + b affect the graph of the function?
-    Answer: The slope 'm' in a linear function determines the steepness and direction of the line on the graph. A positive slope means the line ascends from left to right, while a negative slope indicates it descends. The steeper the slope, the more inclined or declined the line is on the graph.
-    
-    2.) What role does the y-intercept 'b' play in graphing a linear function?
-    Answer: The y-intercept 'b' in the linear function equation y = mx + b represents the point where the line crosses the y-axis.
-    
-    3.) In the equation of a quadratic function y = ax² + bx + c, how does the coefficient 'a' influence the graph of the function?
-    Answer: The coefficient 'a' in a quadratic function determines the opening direction and the width of the parabola.
-    
-    4.) Define the concept of a function in mathematics, in one sentence.
-    Answer: A function is a relationship where each input is associated with exactly one output.
+    **QUESTION:**
+    What causes the errors:
+    ```
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+    error while loading shared libraries: libz.so: No such file or directory
+    ```
+    When running `./verusd` on a Linux Distro?
+
+    **ANSWER:**
+    These errors may be caused by required dependencies for `./verusd` not being installed by default on a Linux distribution. The lack of required dependencies results in the error messages when you try to run `./verusd`. 
+
+    **QUESTION:**
+    If you run `./verusd` and encounter these errors:
+    ```
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+    error while loading shared libraries: libz.so: No such file or directory
+    ```
+    How do you solve them?
+
+    **ANSWER:**
+    In order to solve these errors, which are likely caused by dependencies not being installed by default on a Linux distro, try the following:
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. Try running the command `./verusd` again and see if installing the dependencies worked.
 - role: user
   content: |
     Text to make questions from: 
     """
-    When Zarathustra was thirty years old, he left his home and the lake of his home, and went into the mountains. There he enjoyed his spirit and
-    solitude, and for ten years did not weary of it. But at last his heart changed,—and rising one morning with the rosy dawn, he went before the
-    sun, and spake thus unto it:
-    
-    Thou great star! What would be thy happiness if thou hadst not those for
-    whom thou shinest!
-    
-    For ten years hast thou climbed hither unto my cave: thou wouldst have
-    wearied of thy light and of the journey, had it not been for me, mine
-    eagle, and my serpent.
-    
-    But we awaited thee every morning, took from thee thine overflow and
-    blessed thee for it.
-    
-    Lo! I am weary of my wisdom, like the bee that hath gathered too much
-    honey; I need hands outstretched to take it.
-    
-    I would fain bestow and distribute, until the wise have once more become
-    joyous in their folly, and the poor happy in their riches.
-    
-    Therefore must I descend into the deep: as thou doest in the
-    evening, when thou goest behind the sea, and givest light also to the
-    nether-world, thou exuberant star!
-    
-    Like thee must I GO DOWN, as men say, to whom I shall descend.
+    # VerusID
+
+    **VerusIDs** are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. **VerusIDs** provide plenty of opportunity for identity applications. Specifically, **VerusID** provides:
+
+    ### Quantum-ready friendly crypto-addresses on the worldwide Verus network
+    VerusIDs can be used to receive and send funds, which are controlled by the single or multi-sig addresses specified in the identity itself. If these controlling addresses or the single or multi-sig properties are changed, which can be done by the controller of the identity, all future spends of UTXOs sent to that identity follow the updated spend conditions and are subject to the updated keys. Although Verus 0.6.2 does not include quantum resistant signatures for transactions, Verus IDs are themselves resistant to quantum attack with known algorithms, and we have already started to integrate a quantum secure signature scheme, which we expect to activate on mainnet early next year. When that is available, it will be possible to change an ID and have all of the funds sent to it made retroactively quantum resistant. Verus IDs can also be used to publish ID->destination address mappings on other blockchains, but only the Verus ecosystem has the ability to revoke, recover, inherit, funds in existing UTXOs.
+
+    ### Fully Decentralized Protocol
+    Anyone can create one and have complete, self sovereign control over it without permission to do so. All costs to create an ID go to miners, stakers, and ID referrers. Verus IDs are:
+
+    * Revocable -- each ID includes a revocation authority, which defaults to the identity self. If another ID is specified as the revocation authority it can be used to revoke the identity, which creates a valid transaction that, once mined into a block, prevents the identity from being used to spend or sign until it is recovered, effectively freezing all of its funds, for example, in the case of key theft or turnover in an organization.
+
+    * Recoverable -- each ID also includes a separate recovery authority, which also defaults to self. If another ID is specified as the recovery authority it can be used to recover the ID from its revoked state, with the option to alter the primary authorities used to spend and sign.
+
+    * Private - Each ID contains a set of zero-knowledge private addresses, which can be used as messaging, financial, or voting endpoints, and each ID also contains a content map of key-value hashes, intended to be used alongside applications and various identity policies to provide everything from private yet selectively provable claims and attestations to selectively provable components of a strong identity, attested to with a quantum secure signature when that is available.
+
+    * Powerful - Multiple addresses or other IDs can be defined as primary addresses, and any number of those may be required to spend, sign, or alter the identity (N of M). The revocation authority may only be altered by the revocation authority, and the same applies to the recovery authority, either of which may be another identity with its own N of M multisig controls for its pri
     """
 - role: assistant
   content: |
-    1.) Finish the quote: I am weary of my wisdom, like...
-    Answer: "...the bee that hath gathered too much honey; I need hands outstretched to take it."
-    
-    2.) What do people undergoing difficult journeys or possessing wisdom need, in order to make their efforts more bearable?
-    Answer: They need the acknowledgement and admiration of others. They need others to see and appreciate the light they bring.
-    
-    3.) Why did Zarathustra leave the mountains and become a man again?
-    Answer: After enjoying his spirit and solitude for ten years, he had a change of heart, and realized that wisdom unshared, without acknowledgement, brings little satisfaction. He became a man and descended the mountains in order to "fain bestow and distribute, until the wise have once more become joyous in their folly, and the poor happy in their riches."
-    
-    4.) List one way in which Zarathustra compares himself to the sun.
-    Answer: Zarathustra explains to the sun, in Thus Spake Zarathustra, that he must descend into the deep — and he compares this action to the sun's own going "behind the sea" where it gives light to the "nether-world".
+    **QUESTION:**
+    What are VerusIDs?
+
+    **ANSWER:**
+    VerusIDs are a fully-functional blockchain protocol. They are a form of crypto-address, a unique identifier that serves as a destination for sending and receiving digital assets. Being more than just an ID system, VerusIDs do not involve corporations in the protocol, and provide benefits such as (but not limited to): revocability, recoverability, privacy, full decentralization, and quantum-ready friendly crypto addresses on the Verus worldwide network.
+
+    **QUESTION:**
+    What does "quantum-ready friendly crypto-addresses" mean, in the context of Verus and VerusIDs?
+
+    **ANSWER:**
+    The phrase "quantum-ready friendly crypto-addresses," in the context of Verus and VerusIDs, refers to the resistance of VerusIDs against attack by quantum computers that use existing algorithms. Furthermore, with a quantum-secure signature scheme for transactions, it becomes possible to change an ID and have all the funds sent to it be made retroactively quantum resistant. Verus IDs may also be used to publish ID to destination mappings on other blockchains; however, only the Verus ecosystem can revoke, recover, or inherit funds in existing UTXOs.
+
+    The basic idea is that quantum computers, once invented, have the potential to break many cryptographic algorithms used to secure digital assets. Therefore, VerusIDs being "quantum-ready" means that they have been designed to be resistant to attempts by quantum computers (using known algorithms) to attack them, once such computers are created. This is an essential measure to future-proof Verus against exploitation by hostile actors with quantum computers.
+
+    **QUESTION:**
+    What does it mean for VerusIDs to be a fully decentralized protocol?
+
+    **ANSWER:**
+    VerusIDs can be created by anyone, without needing permission from a central authority, and give their creator complete, self-sovereign control over their ID. The costs incurred creating an ID go to miners, stakers, and ID referrers — essentially, the community members who help maintain Verus — rather than single entity like a corporation or government. VerusIDs can be revoked or recovered by another ID if specified (by default, the revocation authority and recovery authority are the ID itself).
+
+    Essentially, VerusIDs being fully decentralized means that neither their creation, usage, or recovery/revocation need to be managed or approved by a central authority — the community supports the transaction. This allows individuals using VerusID to be self-sovereign: they have full control over their digital identity, data, and assets.
+
+    **QUESTION:**
+    What do VerusIDs offer in terms of privacy and power?
+
+    **ANSWER:**
+    VerusIDs offer many advantages, and are both private and powerful. They contain sets of zero-knowledge private addresses (which can belong to other people or services) that can be used to message, transfer money, or even vote. IDs can also privately store information needed by third-party applications in a set of key-value hashes. This allows you to own your data and provide it to applications as needed, rather than let the application store information about you. Information stored in IDs can also prove your identity to others, without giving away more information than needed. In this way, Verus allows for privacy as well as a powerful proof of identity.
+
+    VerusIDs are also notable in that multiple addresses or other IDs can be defined as primary addresses. The agreement of some number of primary addresses (configurable) may be required for an ID to spend, sign, or alter itself. Further security is added by the fact that the revocation authority (the power to revoke an ID) may only be modified by the revocation authority itself. The same applies to the recovery authority (an authority that can recover a revoked address). Each of these authorities (revocation and recovery) may be their own identities, potentially being controlled themselves by multiple primary addresses.
+
+    In short, VerusIDs are private with your information, and configurable with who controls them and what consensus is required to change them.
 - role: user
   content: |
     Text to make questions from:
     """
-    I went down yesterday to the Piraeus with Glaucon the son of Ariston,
-    that I might offer up my prayers to the goddess (Bendis, the Thracian
-    Artemis.); and also because I wanted to see in what manner they would
-    celebrate the festival, which was a new thing. I was delighted with the
-    procession of the inhabitants; but that of the Thracians was equally,
-    if not more, beautiful. When we had finished our prayers and viewed the
-    spectacle, we turned in the direction of the city; and at that instant
-    Polemarchus the son of Cephalus chanced to catch sight of us from a
-    distance as we were starting on our way home, and told his servant to
-    run and bid us wait for him. The servant took hold of me by the cloak
-    behind, and said: Polemarchus desires you to wait.
-    
-    I turned round, and asked him where his master was.
-    
-    There he is, said the youth, coming after you, if you will only wait.
-    
-    Certainly we will, said Glaucon; and in a few minutes Polemarchus
-    appeared, and with him Adeimantus, Glaucon’s brother, Niceratus the son
-    of Nicias, and several others who had been at the procession.
-    
-    Polemarchus said to me: I perceive, Socrates, that you and your
-    companion are already on your way to the city.
-    
-    You are not far wrong, I said.
-    
-    But do you see, he rejoined, how many we are?
-    
-    Of course.
-    
-    And are you stronger than all these? for if not, you will have to
-    remain where you are.
-    
-    May there not be the alternative, I said, that we may persuade you to
-    let us go?
-    
-    But can you persuade us, if we refuse to listen to you? he said.
-    
-    Certainly not, replied Glaucon.
-    
-    Then we are not going to listen; of that you may be assured.
+    uld send the following command before the block where GOLD token launches.
+    After it launches, the only way at present to create new tokens is with a centralized issuance option. To convert VRSCTEST to GOLD, you could issue the command:
+      ```
+    ./verus -chain=VRSCTEST sendcurrency "*" '[{"address":"mike@","convertto":"gold","preconvert":1,"amount":100}]'
+    ```
+    that would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.
+    Assuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:
+
+      ```
+    ./verus -chain=VRSCTEST definecurrency '{"name":"mycoin","options":33, "proofprotocol":2,"currencies":["vrsctest", "gold"],"minpreconversion":[10000,5.1298]}, "initialsupply":20000'
+    ```
+    In "mycoin", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:
+
+      ```
+    ./verus -chain=VRSCTEST sendcurrency "mycoin@" '[{"address":"mike@","currency":"mycoin","mintnew":1,"amount":10000}]'
+    ```
+
+    #### Defining a PBaaS blockchain
+    ```json
+      {
+      "name": "PBaaSChain",
+      "options": 264,
+      "currencies": [
+        "VRSCTEST"
+      ],
+      "conversions": [
+        1
+      ],
+      "eras": [
+        {
+          "reward": 1200000000,
+          "decay": 0,
+          "halving": 0,
+          "eraend": 0
+        }
+      ],
+      "notaries": [
+        "Notary1@",
+        "Notary2@",
+        "Notary3@"
+      ],
+      "minnotariesconfirm": 2,
+      "nodes": [
+        {
+          "networkaddress": "111.111.111.111:10000",
+          "nodeidentity": "Node1@"
+        },
+        {
+          "networkaddress": "111.111.111.112:10000",
+          "nodeidentity": "Node2@"
+        }
+      ],
+      "gatewayconvertername": "Bridge",
+      "gatewayconverterissuance": 1000000
+    }
+    ```
+    The bridge definition has overridable defaults
+    ```json
+      {
+      "currencies": [
+        "VRSCTEST",
+        "PBaaSChain",
+        "USD"
+      ],
+      "initialcontributions": [
+        380228.12033701,
+        0,
+        1000000
+      ],
+      "initialsupply": 3000000
     """
 - role: assistant
   content: |
@@ -125,44 +210,6 @@
     
     4.) Why did Socrates visit Piraeus with Glaucon?
     Answer: Socrates visited Piraeus to offer up his prayers to the goddess Bendis, as well as to see in what manner the Thracians would celebrate the festival.
-- role: user
-  content: |
-    Text to make questions from: 
-    """
-    During the construction of the Panama Canal, a massive engineering feat completed in 1914, several challenges and achievements were noted. The canal, spanning approximately 50 miles, was designed to shorten the maritime route between the Atlantic and Pacific Oceans. Notably, the construction saw the use of innovative excavation techniques, with over 200 million cubic yards of earth removed. The project also faced significant health challenges, including combating malaria and yellow fever, which were overcome through extensive public health measures. The completion of the canal significantly impacted global trade, reducing the sea voyage from San Francisco to New York by around 8,000 miles.
-    """
-- role: assistant
-  content: |
-    1.) How much earth was excavated during the construction of the Panama Canal?
-    Answer: Over 200 million cubic yards of earth were excavated during the construction of the Panama Canal.
-    
-    2.) What health challenges were faced during the construction of the Panama Canal, and how were they overcome?
-    Answer: The construction faced significant health challenges, notably malaria and yellow fever. 
-    
-    3.) By how many miles did the Panama Canal reduce the sea voyage from San Francisco to New York?
-    Answer: The completion of the Panama Canal reduced the sea voyage from San Francisco to New York by around 8,000 miles.
-    
-    4.) In what year was the Panama Canal completed?
-    Answer: The Panama Canal's construction was completed in 1914.
-- role: user
-  content: |
-    Text to plan questions from:
-    """
-    If, then, we represent our earth as a little ball of one inch diameter, the sun would be a big globe nine feet across and 323 yards away, that is about a fifth of a mile, four or five minutes’ walking. The moon would be a small pea two feet and a half from the world.  Between earth and sun there would be the two inner planets, Mercury and Venus, at distances of one hundred and twenty-five and two hundred and fifty  yards from the sun. All round and about these bodies there would be  emptiness until you came to Mars, a hundred and seventy-five feet beyond the earth; Jupiter nearly a mile away, a foot in diameter; Saturn, a little smaller, two miles off; Uranus four miles off and Neptune six miles off. Then nothingness and nothingness except for small particles and drifting scraps of attenuated vapour for thousands of miles.
-    """
-- role: assistant
-  content: |
-    1.) If the earth had a diameter of only one inch, how far would the moon be from the earth, if it (and its distance from the earth) were also resized proportionally?
-    Answer: The moon would be two feet and a half from the earth. The moon's size, under this new scale, would be that of a small pea.
-    
-    2.) How do the distances between planets compare to their sizes?
-    Answer: The distances between planets is much greater than the planets' sizes. If you shrunk everything down so that the Earth was one inch in diameter, then the sun would be 323 yards away.
-    
-    3.) If you scaled everything down so that the earth had a diameter of one inch, then how far would Mercury and Venus be from the sun?
-    Answer: Mercury would be one hundred and twenty-five yards from the sun, and Venus would be two hundred and fifty yards from the sun.
-    
-    4.) If the earth had a diameter of only one inch, how far would Mars be from the earth, if it (and its distance from the earth) were also resized proportionally?
-    Answer: Mars would be a hundred and seventy-five feet beyond the earth.
 - role: user
   content: |
     Text to make questions from: 

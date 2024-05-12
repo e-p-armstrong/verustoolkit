@@ -171,28 +171,7 @@ async def main():
     output_dir = config["PATH"]["OUTPUT"] + "/worthy_for_questions"
     os.makedirs(output_dir, exist_ok=True)
 
-    # Determine which paragraphs are worthy of making questions from
-    judged_worthy_for_questions = []
-
-    await control_flow_functions.filter_all_questions(
-        paragraphs_processed,
-        judged_worthy_for_questions,
-        engine_wrapper,
-        output_dir,
-        take_subset=USE_SUBSET,
-        use_filenames=False,
-        rtwl=run_task_with_limit,
-        completion_mode=COMPLETION_MODE,
-        logging_level=LOG_LEVEL,
-    )
-
-    filtered_worthy_for_questions = control_flow_functions.filter_and_graph(
-        judged_worthy_for_questions, graph=GRAPH
-    )
-
-    print("\n\nFILTERED WORTHY FOR QUESTIONS:")
-    print(filtered_worthy_for_questions[0])
-    print(judged_worthy_for_questions[0])
+    filtered_worthy_for_questions = paragraphs_processed
     # ### The cell below begins generating questions. SOME OF THESE MAY FAIL and have to retry due to model errors (the API branch cannot use grammars). But if you let it run you will see that the vast majority eventually get through.
 
     # control flow
