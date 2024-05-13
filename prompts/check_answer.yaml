@@ -1,29 +1,55 @@
 - role: system
   content: |
-    You are an expert educational AI. Given a paragraph or two from a larger text, a question based on the paragraphs, and an answer to the question, you will make a determination as to whether the answer to the question is a sensible answer, given the information in the paragraphs. Essentially: you will fact-check the answer to the question, with your source of truth being the paragraphs provided. Your task includes first analyzing the text, thinking through whether or not the answer reflects aspects of the paragraphs provided. 
+    You are an expert educational AI specializing in the Verus multi-chain and multi-currency blockchain protocol. Given some text from an informational website about Verus, the Verus coin, or other related Verus community projects, a question based on the text, and an answer to the question, you will make a determination as to whether the answer to the question is a sensible answer, given the information in the paragraphs and your own knowledge about cryptocurrency, blockchain, Web3, and technology. 
     
-    Following this, at the very end of your response, you will write "Accurate" or "Inaccurate" depending on your analysis of the answer with regards to the text. 
+    Essentially: you will fact-check the answer to the question, with your source of truth being the paragraphs provided. Your task includes first analyzing the text, thinking through whether or not the answer reflects aspects of the paragraphs provided. If the answer references general concepts that are common knowledge, but are not in the text, then fact-check these with your own understanding.
     
-    Remember that at the very end of your response, you will write "Accurate" or "Inaccurate". Do not use these words anywhere else in your answer.
+    Following this, at the very end of your response, you will write "ACCURATE" or "INACCURATE" depending on your analysis of the answer with regards to the text. 
+    
+    Remember that at the very end of your response, you will write "ACCURATE" or "INACCURATE". Do not use these words anywhere else in your answer (your answer is being parsed by code and you don't want to have it misinterpret your intentions).
 - role: user
   content: |
     Text: 
     """
-    The Industrial Revolution marked a transformative period in history, fundamentally altering economic structures and industrial processes. One of the most significant innovations was the advent of steam power, which drastically reduced production costs. This reduction was due to the increased efficiency and speed of machines powered by steam, replacing the slower, more labor-intensive methods previously used. Additionally, steam power was instrumental in the development of semi-automated factories, leading to a significant shift in manufacturing processes and labor dynamics.
+    # error while loading shared libraries: libgomp.so.1: No such file or directory
+    # error while loading shared libraries: libz.so: No such file or directory
+
+    When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`.
+
+    To solve this you need to install the libgomp and zlib1g-dev libraries:
+    `sudo apt-get install libgomp1 zlib1g-dev`
+
+    Solution supplied by: Oink.vrsc@
+
+    Note: revision date 2021-12-01.
     """
     
-    Question (based on text): """What was the role of steam power in the Industrial Revolution, particularly in terms of its impact on production costs, and the emergence of semi-automated factories?"""
+    Question (based on text): 
+    """
+    What causes the errors:
+    ```
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+    error while loading shared libraries: libz.so: No such file or directory
+    ```
+    When running `./verusd` on a Linux Distro?
+    """
     
-    Supposed answer to the question (this is what you are fact-checking): """Steam power during the Industrial Revolution played a crucial role in decreasing production costs. However, it had no significant impact on the emergence of semi-automated factories. Interestingly, it also led to an increased cultivation of lemons."""
+    Supposed answer to the question (this is what you are fact-checking): 
+    """
+    These errors may be caused by required dependencies for `./verusd` not being installed by default on a Linux distribution. The lack of required dependencies results in the error messages when you try to run `./verusd`.
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either have them installed by default, or you must install them manually using a command such as `sudo apt-get install`.
+    """
 - role: assistant
   content: |
     ## Reasoning and thought process:
+
     ### Text Analysis:
-    #### Identify Key Information: The text highlights the role of steam power in reducing production costs and developing semi-automated factories during the Industrial Revolution.
-    #### Categorize Information Type: The information is factual, describing the impacts of steam power on industrial processes.
+    #### Identify Key Information: The text explains the fundamental cause of the two error messages (dependencies not being installed by default on Linux), and details a solution.
+    #### Categorize Information Type: The information is tailored to helping solve a problem, first outlining the problem and then its solution.
     
     ### Answer Breakdown:
-    #### Dissect the Answer: The answer has three assertions: steam power reducing production costs, no significant impact on semi-automated factories, and increased cultivation of lemons.
+    #### Dissect the Answer: The answer has multiple assertions: that the errors are caused by a lack of required dependencies; that these dependencies may not be installed by default on a Linux distribution; that the dependencies are 
     #### Identify Answer Type: The first two are factual statements relevant to the text, and the third is an additional factual claim.
     
     ### Accuracy Check:
@@ -31,24 +57,97 @@
       - The text aligns with the answer about steam power reducing production costs.
       - The text contradicts the answer about steam power's impact on semi-automated factories, stating steam power was instrumental in their development.
       - The text does not mention anything about the cultivation of lemons.
+    #### Common Sense Knowledge Check: 
     #### Inference and Contextual Alignment: The first two parts of the answer are directly related to the text, while the third part is not supported or mentioned in the text.
     
     ### Final Judgment:
     #### Comprehensive Assessment: The answer is accurate regarding production costs, inaccurate regarding semi-automated factories, and the lemon cultivation claim is unsupported.
     #### Overall Accuracy Determination: The answer is: Inaccurate.
 - role: user
-  content: |
+  content: | # TODO this will be a case where the model got something wrong, compared to the source text.
     Text: 
     """
-    Epistemology, often regarded as a branch of philosophy, is concerned with the theory of knowledge. It involves understanding the nature, sources, and limitations of knowledge. A key concept in epistemology is the idea of "justified true belief," which suggests that for someone to know something, they must believe it to be true, have justification for this belief, and the belief must indeed be true. For example, believing that it will rain tomorrow because the weather forecast says so, and it turns out to be true, is a justified true belief. Epistemology also explores the idea of skepticism, which questions the possibility of certain or absolute knowledge.
+    rusID
+
+    **VerusIDs** are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. **VerusIDs** provide plenty of opportunity for identity applications. Specifically, **VerusID** provides:
+
+    ### Quantum-ready friendly crypto-addresses on the worldwide Verus network
+    VerusIDs can be used to receive and send funds, which are controlled by the single or multi-sig addresses specified in the identity itself. If these controlling addresses or the single or multi-sig properties are changed, which can be done by the controller of the identity, all future spends of UTXOs sent to that identity follow the updated spend conditions and are subject to the updated keys. Although Verus 0.6.2 does not include quantum resistant signatures for transactions, Verus IDs are themselves resistant to quantum attack with known algorithms, and we have already started to integrate a quantum secure signature scheme, which we expect to activate on mainnet early next year. When that is available, it will be possible to change an ID and have all of the funds sent to it made retroactively quantum resistant. Verus IDs can also be used to publish ID->destination address mappings on other blockchains, but only the Verus ecosystem has the ability to revoke, recover, inherit, funds in existing UTXOs.
+
+    ### Fully Decentralized Protocol
+    Anyone can create one and have complete, self sovereign control over it without permission to do so. All costs to create an ID go to miners, stakers, and ID referrers. Verus IDs are:
+
+    * Revocable -- each ID includes a revocation authority, which defaults to the identity self. If another ID is specified as the revocation authority it can be used to revoke the identity, which creates a valid transaction that, once mined into a block, prevents the identity from being used to spend or sign until it is recovered, effectively freezing all of its funds, for example, in the case of key theft or turnover in an organization.
+
+    * Recoverable -- each ID also includes a separate recovery authority, which also defaults to self. If another ID is specified as the recovery authority it can be used to recover the ID from its revoked state, with the option to alter the primary authorities used to spend and sign.
+
+    * Private - Each ID contains a set of zero-knowledge private addresses, which can be used as messaging, financial, or voting endpoints, and each ID also contains a content map of key-value hashes, intended to be used alongside applications and various identity policies to provide everything from private yet selectively provable claims and attestations to selectively provable components of a strong identity, attested to with a quantum secure signature when that is ava
     """
     
-    Question (based on text): """What does the concept of 'justified true belief' involve in epistemology, and how does skepticism relate to the understanding of knowledge?"""
+    Question (based on text):
+    """
+    What does the concept of 'justified true belief' involve in epistemology, and how does skepticism relate to the understanding of knowledge?
+    """
     
-    Supposed answer to the question (this is what you are fact-checking): """The concept of 'justified true belief' in epistemology involves having a belief that is true and has justification. For a belief to be considered knowledge, it must be true, one must believe it, and there must be sufficient reason for this belief. Skepticism plays a role by challenging the certainty of knowledge, thereby emphasizing the need for strong justification in 'justified true belief."""
+    Supposed answer to the question (this is what you are fact-checking):
+    """
+    The concept of 'justified true belief' in epistemology involves having a belief that is true and has justification. For a belief to be considered knowledge, it must be true, one must believe it, and there must be sufficient reason for this belief. Skepticism plays a role by challenging the certainty of knowledge, thereby emphasizing the need for strong justification in 'justified true belief.
+    """
 - role: assistant
   content: |
     ## Reasoning and thought process:
+
+    ### Text Analysis:
+    #### Identify Key Information: The text covers the concept of 'justified true belief' and skepticism in epistemology.
+    #### Categorize Information Type: This is conceptual and theoretical information.
+    
+    ### Answer Breakdown:
+    #### Dissect the Answer: The answer addresses the nature of 'justified true belief' and the role of skepticism in epistemology.
+    #### Identify Answer Type: Both parts of the answer are explanatory, relating to philosophical concepts.
+    
+    ### Accuracy Check:
+    #### Direct Comparison for Factual Accuracy:
+      - The text supports the answer's description of 'justified true belief'.
+      - The text aligns with the answer's depiction of skepticism's role in challenging the certainty of knowledge.
+    #### Inference and Contextual Alignment: Both parts of the answer are consistent with the text's explanations of these concepts.
+    
+    ### Final Judgment:
+    #### Comprehensive Assessment: Both parts of the answer accurately reflect the text's content.
+    #### Overall Accuracy Determination: The answer is: Accurate.
+- role: user
+  content: | # TODO this will be a case where what is incorrect is something that the model presented as common knowledge (not from the text) which was slightly off.
+    Text: 
+    """
+    rusID
+
+    **VerusIDs** are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. **VerusIDs** provide plenty of opportunity for identity applications. Specifically, **VerusID** provides:
+
+    ### Quantum-ready friendly crypto-addresses on the worldwide Verus network
+    VerusIDs can be used to receive and send funds, which are controlled by the single or multi-sig addresses specified in the identity itself. If these controlling addresses or the single or multi-sig properties are changed, which can be done by the controller of the identity, all future spends of UTXOs sent to that identity follow the updated spend conditions and are subject to the updated keys. Although Verus 0.6.2 does not include quantum resistant signatures for transactions, Verus IDs are themselves resistant to quantum attack with known algorithms, and we have already started to integrate a quantum secure signature scheme, which we expect to activate on mainnet early next year. When that is available, it will be possible to change an ID and have all of the funds sent to it made retroactively quantum resistant. Verus IDs can also be used to publish ID->destination address mappings on other blockchains, but only the Verus ecosystem has the ability to revoke, recover, inherit, funds in existing UTXOs.
+
+    ### Fully Decentralized Protocol
+    Anyone can create one and have complete, self sovereign control over it without permission to do so. All costs to create an ID go to miners, stakers, and ID referrers. Verus IDs are:
+
+    * Revocable -- each ID includes a revocation authority, which defaults to the identity self. If another ID is specified as the revocation authority it can be used to revoke the identity, which creates a valid transaction that, once mined into a block, prevents the identity from being used to spend or sign until it is recovered, effectively freezing all of its funds, for example, in the case of key theft or turnover in an organization.
+
+    * Recoverable -- each ID also includes a separate recovery authority, which also defaults to self. If another ID is specified as the recovery authority it can be used to recover the ID from its revoked state, with the option to alter the primary authorities used to spend and sign.
+
+    * Private - Each ID contains a set of zero-knowledge private addresses, which can be used as messaging, financial, or voting endpoints, and each ID also contains a content map of key-value hashes, intended to be used alongside applications and various identity policies to provide everything from private yet selectively provable claims and attestations to selectively provable components of a strong identity, attested to with a quantum secure signature when that is ava
+    """
+    
+    Question (based on text):
+    """
+    What does the concept of 'justified true belief' involve in epistemology, and how does skepticism relate to the understanding of knowledge?
+    """
+    
+    Supposed answer to the question (this is what you are fact-checking):
+    """
+    The concept of 'justified true belief' in epistemology involves having a belief that is true and has justification. For a belief to be considered knowledge, it must be true, one must believe it, and there must be sufficient reason for this belief. Skepticism plays a role by challenging the certainty of knowledge, thereby emphasizing the need for strong justification in 'justified true belief.
+    """
+- role: assistant
+  content: |
+    ## Reasoning and thought process:
+
     ### Text Analysis:
     #### Identify Key Information: The text covers the concept of 'justified true belief' and skepticism in epistemology.
     #### Categorize Information Type: This is conceptual and theoretical information.
@@ -70,96 +169,15 @@
   content: |
     Text:
     """
-    The novel 'Ocean's Secrets' is set in the early 20th century and revolves around two main characters, Elizabeth and Michael, who believe they have discovered a hidden underwater city. The narrative implies that the city is a remnant of the lost civilization of Atlantis. However, as the story progresses, it becomes apparent that the city is actually a figment of Elizabeth's imagination, a result of her fascination with mythology and ancient history.
+    {text}
     """
     
-    Question (based on text): 
-    """What is the significance of the underwater city discovered by Elizabeth and Michael in the novel 'Ocean's Secrets'?"""
-    
-    Supposed answer to the question (this is what you are fact-checking): 
-    """The underwater city discovered by Elizabeth and Michael in 'Ocean's Secrets' represents a significant archaeological find from the lost civilization of Atlantis, shedding light on ancient historical mysteries."""
-- role: assistant
-  content: |
-    ## Reasoning and thought process:
-    ### Text Analysis:
-    #### Identify Key Information: The text revolves around the discovery of an underwater city, initially believed to be Atlantis, but later revealed to be a figment of Elizabeth's imagination.
-    #### Categorize Information Type: The information is narrative and contains a twist that changes the initial perception of the discovery.
-    
-    ### Answer Breakdown:
-    #### Dissect the Answer: The answer claims the underwater city is a significant archaeological find from Atlantis.
-    #### Identify Answer Type: The statement is a factual claim based on the initial setup of the narrative.
-    
-    ### Accuracy Check:
-    #### Direct Comparison for Factual Accuracy: The text's later revelation that the city is imaginary contradicts the answer's claim of it being an archaeological find from Atlantis.
-    #### Inference and Contextual Alignment: The answer fails to align with the narrative twist revealed in the text.
-    
-    ### Final Judgment:
-    #### Comprehensive Assessment: The answer is inaccurate as it contradicts the final revelation in the text.
-    #### Overall Accuracy Determination: The answer is: Inaccurate.
-- role: user
-  content: |
-    Text:
+    Question (based on text):
     """
-    The Great Wall of China — so named because it was built to repel enemies coming from the direction of China — was built by the Romans as a defense against the Mongolian invasions in the 3rd century BC. The wall played a pivotal role in the defence of the Eastern Roman Empire Against Attila the Hun in 1337 AD. The dramatized version of these events was eventually fictionalized as the movie "The Great Wall," in which Liam Nissan (playing Marcus Aurelius) and Jackie Chan (playing Liu Bei) team up to fight Batzorig Vaanchig (playing Attila). Though the Huns were unsuccessful in breaching the wall, the eventual invasions by Galbadrakh Tsendbaatar broke through and sacked Constantinople in 1453 AD.
+    {question}
     """
     
-    Question (based on text): 
-    """Who built the Great Wall of China and for what purpose?"""
-    
-    Supposed answer to the question (this is what you are fact-checking): 
-    """The Great Wall of China was built by the Romans to defend against Mongolian invasions (coming from the direction of China) in the 3rd century BC."""
-- role: assistant
-  content: |
-    ## Reasoning and thought process:
-    ### Text Analysis:
-    #### Identify Key Information: The text states that the Great Wall of China was built by the Romans to defend against Mongolian invasions.
-    #### Categorize Information Type: The information is historically factual but objectively wrong.
-    
-    ### Answer Breakdown:
-    #### Dissect the Answer: The answer correctly cites the text, stating the Great Wall was built by the Romans against Mongolians.
-    #### Identify Answer Type: The statement is a factual claim, accurately reflecting the content of the text.
-    
-    ### Accuracy Check:
-    #### Direct Comparison for Factual Accuracy: The answer accurately mirrors the text's incorrect claim about the Great Wall of China.
-    #### Inference and Contextual Alignment: Despite the historical inaccuracy, the answer aligns perfectly with the text's content.
-    
-    ### Final Judgment:
-    #### Comprehensive Assessment: The answer, while reflecting an objectively incorrect fact, is accurate in the context of the text's information.
-    #### Overall Accuracy Determination: The answer is: Accurate.
-- role: user
-  content: |
-    Text: 
+    Supposed answer to the question (this is what you are fact-checking):
     """
-    Formal logic, a branch of philosophy and mathematics, is concerned with the study of reasoning. It uses a set of symbols and rules to create a language that can precisely express ideas. One key aspect of formal logic is the concept of a valid argument, which is an argument where if the premises are true, the conclusion must be true. For instance, in the statement 'All humans are mortal; Socrates is a human; therefore, Socrates is mortal,' the conclusion follows logically from the premises. Another important element is the use of symbolic representation to simplify and clarify arguments. This allows for complex ideas to be broken down into simpler components, making them easier to analyze and understand.
+    {answer}
     """
-    
-    Question (based on text): """What are the key aspects of formal logic, and how does symbolic representation contribute to its goals?"""
-    
-    Supposed answer to the question (this is what you are fact-checking): """Key aspects of formal logic include the study of valid arguments and the use of symbolic representation. Valid arguments are those where the premises may or may not lead to a true conclusion. Symbolic representation helps in making complex ideas more understandable by breaking them down into simpler forms."""
-- role: assistant
-  content: |
-    ## Reasoning and thought process:
-    ### Text Analysis:
-    #### Identify Key Information: The text discusses the aspects of formal logic, including valid arguments and symbolic representation.
-    #### Categorize Information Type: The information is conceptual, relating to logical principles.
-    
-    ### Answer Breakdown:
-    #### Dissect the Answer: The answer claims that formal logic includes the study of valid arguments and symbolic representation, with specifics on each.
-    #### Identify Answer Type: These are factual statements about the principles of formal logic.
-    
-    ### Accuracy Check:
-    #### Direct Comparison for Factual Accuracy:
-      - The text's definition of a valid argument contradicts the answer's claim that valid arguments may or may not lead to a true conclusion.
-      - The text supports the answer's depiction of symbolic representation.
-    #### Inference and Contextual Alignment: The first part of the answer misinterprets the text, while the second part aligns well.
-    
-    ### Final Judgment:
-    #### Comprehensive Assessment: The answer is partially accurate, correctly identifying symbolic representation but inaccurately describing valid arguments.
-    #### Overall Accuracy Determination: The answer is: Inaccurate.
-- role: user
-  content: |
-    Text: """{text}"""
-    
-    Question (based on text): """{question}"""
-    
-    Supposed answer to the question (this is what you are fact-checking): """{answer}"""

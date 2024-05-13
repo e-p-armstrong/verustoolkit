@@ -51,7 +51,7 @@
     **ANSWER:**
     These errors may be caused by required dependencies for `./verusd` not being installed by default on a Linux distribution. The lack of required dependencies results in the error messages when you try to run `./verusd`.
 
-    `./verusd` uses the libraries `libgomp.so.1` and `libz.so` so your system must either have them installed by default, or you must install them manually using a command such as `sudo apt-get install`.
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either have them installed by default, or you must install them manually using a command such as `sudo apt-get install`.
 
     **QUESTION:**
     If you run `./verusd` and encounter these errors:
@@ -71,7 +71,7 @@
   content: |
     Text to make questions from: 
     """
-    # VerusID
+    rusID
 
     **VerusIDs** are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. **VerusIDs** provide plenty of opportunity for identity applications. Specifically, **VerusID** provides:
 
@@ -86,6 +86,8 @@
     * Recoverable -- each ID also includes a separate recovery authority, which also defaults to self. If another ID is specified as the recovery authority it can be used to recover the ID from its revoked state, with the option to alter the primary authorities used to spend and sign.
 
     * Private - Each ID contains a set of zero-knowledge private addresses, which can be used as messaging, financial, or voting endpoints, and each ID also contains a content map of key-value hashes, intended to be used alongside applications and various identity policies to provide everything from private yet selectively provable claims and attestations to selectively provable components of a strong identity, attested to with a quantum secure signature when that is available.
+
+    * Powerful - Multiple addresses or other IDs can be defined as primary addresses, and any number of those may be required to spend, sign, or alter the identity (N of M). The revocation authority may only be altered by the revocation authority, and the same applies to the recovery authority, either of which may be another identity with its own N of M multisig contro
     """
 - role: assistant
   content: |
@@ -222,7 +224,7 @@
 - role: assistant
   content: |
     **QUESTION:**
-    How can you park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the Verus command line?
+    How can you park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the command line?
 
     **ANSWER:**
     To park a conversion of VRSCTEST to a new token before the token launches, you can use the `sendcurrency` command with the following format:
@@ -244,11 +246,11 @@
     ```
 
     This command defines a new token called "mycoin" with the following properties:
-    - `options` is set to 33
-    - `proofprotocol` is set to 2 (PROOF_CHAINID), meaning the chain controller can mint new coins
-    - `currencies` lists "vrsctest" and "gold", meaning mycoin can be converted to from those two tokens
-    - `minpreconversion` sets the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin
-    - `initialsupply` sets the initial supply of mycoin to 20,000 units
+    * `options` is set to 33
+    * `proofprotocol` is set to 2 (PROOF_CHAINID), meaning the chain controller can mint new coins
+    * `currencies` lists "vrsctest" and "gold", meaning mycoin can be converted to from those two tokens
+    * `minpreconversion` sets the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin
+    * `initialsupply` sets the initial supply of mycoin to 20,000 units
 
     **QUESTION:**
     If a token is created with `proofprotocol` set to 2 (PROOF_CHAINID), how can the controller of that chain mint new tokens?
@@ -261,11 +263,11 @@
     ```
 
     In this example command:
-    - `"mycoin@"` specifies the chain the minting is happening on (the hypothetical "mycoin" chain in this case) 
-    - `"chain_controller_address@"` should be replaced with the actual address of the chain controller
-    - `"currency":"mycoin"` specifies the token being minted is "mycoin"
-    - `"mintnew":1` indicates that new tokens should be minted
-    - `"amount":10000` says that 10,000 new "mycoin" tokens should be created and sent to the chain controller's address
+    * `"mycoin@"` specifies the chain the minting is happening on (the hypothetical "mycoin" chain in this case) 
+    * `"chain_controller_address@"` should be replaced with the actual address of the chain controller
+    * `"currency":"mycoin"` specifies the token being minted is "mycoin"
+    * `"mintnew":1` indicates that new tokens should be minted
+    * `"amount":10000` says that 10,000 new "mycoin" tokens should be created and sent to the chain controller's address
 
     So in summary, when a token's `proofprotocol` is set to PROOF_CHAINID, the controller of that chain can create new tokens at will using the `sendcurrency` command with `"mintnew":1`.
 
@@ -275,16 +277,16 @@
     **ANSWER:**
     When defining a new PBaaS chain using the `definecurrency` command, you need to provide a JSON object containing key information about the chain. The main pieces of information are:
 
-    - `name`: The name of your PBaaS chain
-    - `options`: Integer representing the options enabled for the chain
-    - `currencies`: Array of currency tickers that the chain's native coin can be converted to (usually ["VRSCTEST"] on testnet)
-    - `conversions`: Array of conversion ratios between the native coin and the `currencies` 
-    - `eras`: Array describing the block reward, reward decay, halving, and end of each "era" in the chain's lifecycle
-    - `notaries`: Array of Verus IDs that serve as notaries on the chain
-    - `minnotariesconfirm`: Integer for the minimum number of notaries needed to confirm a block
-    - `nodes`: Array describing the network addresses and identities of nodes on the chain
-    - `gatewayconvertername`: Name for an on-chain gateway converter currency
-    - `gatewayconverterissuance`: Initial supply of the gateway converter currency
+    * `name`: The name of your PBaaS chain
+    * `options`: Integer representing the options enabled for the chain
+    * `currencies`: Array of currency tickers that the chain's native coin can be converted to (usually ["VRSCTEST"] on testnet)
+    * `conversions`: Array of conversion ratios between the native coin and the `currencies` 
+    * `eras`: Array describing the block reward, reward decay, halving, and end of each "era" in the chain's lifecycle
+    * `notaries`: Array of Verus IDs that serve as notaries on the chain
+    * `minnotariesconfirm`: Integer for the minimum number of notaries needed to confirm a block
+    * `nodes`: Array describing the network addresses and identities of nodes on the chain
+    * `gatewayconvertername`: Name for an on-chain gateway converter currency
+    * `gatewayconverterissuance`: Initial supply of the gateway converter currency
 
     You also typically provide a separate JSON object to `definecurrency` describing the "bridge" or "gateway" currency used to move funds on and off the PBaaS chain. This includes its `currencies`, `initialcontributions` in each currency, and `initialsupply`.
 
@@ -301,21 +303,21 @@
     ```
 
     In this command:
-    - `VRSCTEST` should be replaced with the main chain you're exporting from (VRSC for mainnet)
-    - `IDNAME@` should be replaced with the name of the VerusID you want to export
-    - `PBaaSChainName` should be replaced with the name of the destination PBaaS chain
-    - `"exportid":"true"` indicates that you're exporting an ID
-    - `"amount":100` is the amount of the source chain's currency (VRSC or VRSCTEST) to send to the exported ID on the PBaaS chain
+    * `VRSCTEST` should be replaced with the main chain you're exporting from (VRSC for mainnet)
+    * `IDNAME@` should be replaced with the name of the VerusID you want to export
+    * `PBaaSChainName` should be replaced with the name of the destination PBaaS chain
+    * `"exportid":"true"` indicates that you're exporting an ID
+    * `"amount":100` is the amount of the source chain's currency (VRSC or VRSCTEST) to send to the exported ID on the PBaaS chain
       
     So this command will create a transaction that exports the specified ID to the PBaaS chain, along with the specified amount of funds. The ID can then be used on the PBaaS chain, while still being usable on the source chain as well.
 
     Exporting IDs in this way allows you to use the same identity across multiple Verus-based blockchains, which is a key feature for working with PBaaS chains in the Verus ecosystem.
 
     **QUESTION:**
-    What are the steps to sign a transaction spending funds from a multi-signature VerusID, using the Verus command line?
+    What are the steps to sign a transaction spending funds from a multi-signature VerusID, using the command line?
 
     **ANSWER:**
-    Signing a transaction that spends funds from a multi-signature VerusID involves a few steps using the Verus command line. Here's the general process:
+    Signing a transaction that spends funds from a multi-signature VerusID involves a few steps using the command line. Here's the general process:
 
     1. Create the transaction and get the raw hex data:
       ```

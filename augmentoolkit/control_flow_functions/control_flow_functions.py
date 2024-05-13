@@ -505,14 +505,11 @@ def parse_answer_accuracy_validation(response):
 # Control flow helpers -- Question/Answer Validation
 async def vet_answer_accuracy_loop(
     qa_tuple,
-    total_retries,
     run_id,
     engine_wrapper=None,
     double_check_counter=3,
-    use_filenames=False,
     completion_mode=None,
     logging_level=None,
-    new_q_generator=None,
 ):
     # NOTE Set up answer check generation step
     prompt_path_ans_accuracy_check = "check_answer"
@@ -529,7 +526,7 @@ async def vet_answer_accuracy_loop(
         prompt_path=prompt_path_ans_accuracy_check,
         regex=check_ans_accuracy_regex,
         sampling_params={
-            "max_tokens": 6000,
+            "max_tokens": 3000,
             "stop": [
                 "### Response",
                 "\n\n\n\n\n",
@@ -595,35 +592,8 @@ async def vet_answer_accuracy_loop(
             # print(f"\n\ANSWER ACCURACY CHECKS PASSED retries: {total_retries}")
             return qtuple
         else:
-            # Generate new question and restart the loop
-            # print(
-            # f"\n\nACCURACY CHECKS FAILED - SENDING BACK TO QUESTION LOOP retries: {total_retries}"
-            # )
-            total_retries += 1
-            para = qtuple[2]
-            para_name = qtuple[3]
-            (
-                qtuple_partial,
-                generate_new_q_output,
-            ) = await new_q_generator.generate(
-                arguments={"textname": qtuple[3], "text": qtuple[2]}
-            )
-            qtuple = (qtuple_partial[0], qtuple_partial[1], para, para_name)
-            write_output_to_file(
-                generate_new_q_output,
-                obj_conf["PATH"]["OUTPUT"] + "/regenerate_question_generations",
-                run_id,
-            )
-            return await vet_question_loop(
-                qtuple,
-                total_retries,
-                question_group_id=run_id.split("--subquestion--")[0],
-                engine_wrapper=engine_wrapper,
-                double_check_counter=double_check_counter,
-                use_filenames=use_filenames,
-                completion_mode=completion_mode,
-                logging_level=logging_level,
-            )  # going to get one hell of a call stack by the end of this, but it should be fine
+            print("Answer accuracy validation failed! Tossing")
+            return (None, None, None, qtuple[3])
     except Exception as e:
         print("!!ERROR!!")
         print(e)
@@ -654,146 +624,6 @@ def parse_answer_relevancy_validation_step(thought_process):
         print("Model did not provide a judgement, retrying")
 
 
-async def vet_answer_relevance_loop(
-    qa_tuple,
-    total_retries,
-    run_id,
-    engine_wrapper=None,
-    double_check_counter=3,
-    use_filenames=False,
-    completion_mode=None,
-    logging_level=None,
-    new_q_generator=None,  # we pass the new q generator around so the code is less cluttered
-):
-    # NOTE Set up answer check generation step
-    prompt_path_ans_relevancy_check = "check_answer_relevancy_with_text"
-    check_ans_relevancy_regex = re.compile(
-        r"Reasoning and thought process \(be careful about extra details, even vague ones\):\n(.+)",
-        re.DOTALL | re.IGNORECASE,
-    )
-
-    if completion_mode:
-        prompt_path_ans_relevancy_check = prompt_path_ans_relevancy_check + ".txt"
-    else:
-        prompt_path_ans_relevancy_check = prompt_path_ans_relevancy_check + ".yaml"
-
-    answer_relevancy_checker = GenerationStep(
-        prompt_path=prompt_path_ans_relevancy_check,
-        regex=check_ans_relevancy_regex,
-        sampling_params={
-            "max_tokens": 5500,
-            "stop": [
-                "### Response",
-                "\n\n\n\n\n",
-                "</s>",
-                "# Input:",
-                "[INST]",
-                "### Instruction",
-                "[INST",
-                "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-            ],
-            "temperature": 0.2,
-        },
-        completion_mode=completion_mode,
-        retries=1,
-        engine_wrapper=engine_wrapper,
-        logging_level=logging_level,
-        output_processor=parse_answer_relevancy_validation_step,
-        prompt_folder=obj_conf["PATH"]["PROMPTS"],
-        default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-    )
-
-    # Resume normal control flow code
-    try:
-        qtuple = qa_tuple
-        # print(
-        # f"\n\nStarting RELEVANCE loop for question: {qtuple[0]}, context: {qtuple[2]}"
-        # )
-        passed_checks = 0
-        times_checked = 0
-        dissenting_reasoning = ""
-        while times_checked < double_check_counter:
-            # print(
-            # f"\n\nRELEVANCE CALL CHECK ANSWER: {qtuple[0]}, context: {qtuple[2]}, retries: {total_retries}, dissenting reasoning: {dissenting_reasoning}"
-            # )
-            (
-                judgement,
-                answer_relevancy_output,
-            ) = await answer_relevancy_checker.generate(
-                arguments={
-                    "text": qtuple[2],
-                    "question": qtuple[0],
-                    "answer": qtuple[1],
-                }
-            )
-            write_output_to_file(
-                answer_relevancy_output,
-                obj_conf["PATH"]["OUTPUT"] + "/check_answer_relevancy_generations",
-                run_id,
-            )
-            if not judgement[0]:  # if not relevant
-                dissenting_reasoning = judgement[1]
-            else:
-                passed_checks += 1
-            times_checked += 1
-            if passed_checks >= ceil(double_check_counter / 2):
-                break
-            failed_checks = times_checked - passed_checks
-            if failed_checks >= ceil(double_check_counter / 2):
-                break
-
-        if passed_checks >= ceil(double_check_counter / 2):
-            # print(f"\n\nRELEVANCE CHECKS PASSED")
-            return await vet_answer_accuracy_loop(
-                qtuple,
-                total_retries,
-                run_id,
-                engine_wrapper=engine_wrapper,
-                double_check_counter=double_check_counter,
-                use_filenames=use_filenames,
-                completion_mode=completion_mode,
-                logging_level=logging_level,
-                new_q_generator=new_q_generator,
-            )
-        else:
-            # print(f"\n\nRELEVANCE CHECKS FAILED - SENDING BACK TO QUESTION LOOP")
-            total_retries += 1
-            para = qtuple[2]
-            para_name = qtuple[3]
-            (
-                qtuple_partial,
-                generate_new_q_output,
-            ) = await new_q_generator.generate(
-                arguments={"textname": qtuple[3], "text": qtuple[2]}
-            )
-            print(qtuple_partial)
-            qtuple = (qtuple_partial[0], qtuple_partial[1], para, para_name)
-            write_output_to_file(
-                generate_new_q_output,
-                obj_conf["PATH"]["OUTPUT"] + "/regenerate_question_generations",
-                run_id,
-            )
-            return await vet_question_loop(
-                qtuple,
-                total_retries,
-                question_group_id=run_id.split("--subquestion--")[0],
-                engine_wrapper=engine_wrapper,
-                double_check_counter=double_check_counter,
-                use_filenames=use_filenames,
-                completion_mode=completion_mode,
-                logging_level=logging_level,
-            )
-    except Exception as e:
-        print("!!ERROR!!")
-        print(e)
-        traceback.print_exc()
-
-    return (None, None, None, qtuple[3])
-
-
 def parse_validation_step(response):
     decision_pattern = re.compile(r"Final Judgment:(.+)", re.DOTALL | re.IGNORECASE)
     determination = decision_pattern.search(response).group(1).strip()
@@ -819,11 +649,9 @@ def parse_validation_step(response):
 
 async def vet_question_loop(
     qa_tuple,
-    total_retries,
     question_group_id=None,
     engine_wrapper=None,
     double_check_counter=3,
-    use_filenames=False,
     completion_mode=None,
     logging_level=None,
 ):
@@ -843,7 +671,7 @@ async def vet_question_loop(
         prompt_path=prompt_path_q_check,
         regex=check_q_regex,
         sampling_params={
-            "max_tokens": 4000,
+            "max_tokens": 3000,
             "stop": [
                 "### Response",
                 "\n\n\n\n\n",
@@ -869,155 +697,56 @@ async def vet_question_loop(
     )
 
     # NOTE Set up generate new question step
-    prompt_path_new_q_gen = "new_q_gen_no_filenames"
-    if use_filenames:
-        prompt_path_new_q_gen = "new_q_gen_filenames"
-
-    new_q_gen_regex = re.compile(
-        r"Question \(based on text\):\n(.+)", re.IGNORECASE | re.DOTALL
-    )
-
-    if completion_mode:
-        prompt_path_new_q_gen = prompt_path_new_q_gen + ".txt"
-    else:
-        prompt_path_new_q_gen = prompt_path_new_q_gen + ".yaml"
-
-    if completion_mode:
-        new_q_generator = GenerationStep(
-            prompt_path=prompt_path_new_q_gen,
-            regex=new_q_gen_regex,
-            sampling_params={
-                "max_tokens": 3000,
-                "stop": [
-                    "### Response",
-                    "\n\n\n\n\n",
-                    "</s>",
-                    "# Input:",
-                    "[INST]",
-                    "### Instruction",
-                    "[INST",
-                    "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-                ],
-                "temperature": 0.2,
-            },
-            completion_mode=completion_mode,
-            retries=3,
-            engine_wrapper=engine_wrapper,
-            logging_level=logging_level,
-            output_processor=extract_question_from_response_completionmode,
-            prompt_folder=obj_conf["PATH"]["PROMPTS"],
-            default_prompt_folder=DEFAULT_PROMPT_PATH,
-            use_stop=obj_conf["SYSTEM"]["STOP"]
-        )
-    else:
-        new_q_generator = GenerationStep(
-            prompt_path=prompt_path_new_q_gen,
-            regex=new_q_gen_regex,
-            sampling_params={
-                "max_tokens": 3000,
-                "stop": [
-                    "### Response",
-                    "\n\n\n\n\n",
-                    "</s>",
-                    "# Input:",
-                    "[INST]",
-                    "### Instruction",
-                    "[INST",
-                    "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-                ],
-                "temperature": 0.2,
-            },
-            completion_mode=completion_mode,
-            retries=3,
-            engine_wrapper=engine_wrapper,
-            logging_level=logging_level,
-            output_processor=extract_question_from_response_chatmode,
-            prompt_folder=obj_conf["PATH"]["PROMPTS"],
-            default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-        )
-
-    # Resume normal control flow code
+    # MODIFICATION: so that the conversations make sense, we just toss failed questions, rather than regenning. They're plentiful enough.
     try:
         qtuple = qa_tuple
         # print(
         #     f"\n\nStarting QUESTION loop for question: {qtuple[0]}, context: {qtuple[2]}"
         # )
-        while total_retries <= 4:
-            run_id = question_group_id + "--subquestion--" + make_id()
-            passed_checks = 0
-            times_checked = 0
-            dissenting_reasoning = ""
-            while times_checked < double_check_counter:
-                # print(
-                #     f"\n\nQUESTION CALL CHECK ANSWER: {qtuple[0]}, context: {qtuple[2]}, retries: {total_retries}, dissenting reasoning: {dissenting_reasoning}"
-                # )
-                judgement, check_q_output = await question_checker.generate(
-                    arguments={"text": qtuple[2], "question": qtuple[0]}
-                )
+        run_id = question_group_id + "--subquestion--" + make_id()
+        passed_checks = 0
+        times_checked = 0
+        dissenting_reasoning = ""
+        while times_checked < double_check_counter:
+            # print(
+            #     f"\n\nQUESTION CALL CHECK ANSWER: {qtuple[0]}, context: {qtuple[2]}, retries: {total_retries}, dissenting reasoning: {dissenting_reasoning}"
+            # )
+            judgement, check_q_output = await question_checker.generate(
+                arguments={"text": qtuple[2], "question": qtuple[0]}
+            )
 
-                # Now we need to put the judgement together into the format it expects it to be in
+            # Now we need to put the judgement together into the format it expects it to be in
 
-                write_output_to_file(
-                    check_q_output,
-                    obj_conf["PATH"]["OUTPUT"] + "/check_question_generations",
-                    run_id,
-                )
-                if not judgement[0]:  # if not relevant
-                    dissenting_reasoning = judgement[1]
-                else:
-                    passed_checks += 1
-                times_checked += 1
-                if passed_checks >= ceil(double_check_counter / 2):
-                    break
-                failed_checks = times_checked - passed_checks
-                if failed_checks >= ceil(double_check_counter / 2):
-                    break
-
-            if passed_checks >= ceil(
-                double_check_counter / 2
-            ):  # if all question checks passed
-                # print(f"\n\nQUESTION CHECKS PASSED retries: {total_retries}")
-                return await vet_answer_relevance_loop(
-                    qtuple,
-                    total_retries,
-                    run_id,
-                    engine_wrapper=engine_wrapper,
-                    double_check_counter=double_check_counter,
-                    use_filenames=use_filenames,
-                    new_q_generator=new_q_generator,
-                    completion_mode=completion_mode,
-                    logging_level=logging_level,
-                )
+            write_output_to_file(
+                check_q_output,
+                obj_conf["PATH"]["OUTPUT"] + "/check_question_generations",
+                run_id,
+            )
+            if not judgement[0]:  # if not relevant
+                dissenting_reasoning = judgement[1]
             else:
-                # Generate new question and restart the loop
-                # print(
-                #     f"\n\nQUESTION CHECKS FAILED - GENERATING NEW QUESTION retries: {total_retries}"
-                # )
-                total_retries += 1
-                if (
-                    total_retries <= 4
-                ):  # only regen question if we're not already at max regens
-                    para = qtuple[2]
-                    para_name = qtuple[3]
-                    (
-                        qtuple_partial,
-                        generate_new_q_output,
-                    ) = await new_q_generator.generate(
-                        arguments={"textname": qtuple[3], "text": qtuple[2]}
-                    )
-                    qtuple = (qtuple_partial[0], qtuple_partial[1], para, para_name)
-                    write_output_to_file(
-                        generate_new_q_output,
-                        obj_conf["PATH"]["OUTPUT"] + "/regenerate_question_generations",
-                        run_id,
-                    )
-                    print("New question: ", qtuple)
-                # no calling of vet_question_loop, since we're already in a while loop
+                passed_checks += 1
+            times_checked += 1
+            if passed_checks >= ceil(double_check_counter / 2):
+                break
+            failed_checks = times_checked - passed_checks
+            if failed_checks >= ceil(double_check_counter / 2):
+                break
+
+        if passed_checks >= ceil(
+            double_check_counter / 2
+        ):  # if all question checks passed
+            # print(f"\n\nQUESTION CHECKS PASSED retries: {total_retries}")
+            return await vet_answer_accuracy_loop(
+                qtuple,
+                run_id,
+                engine_wrapper=engine_wrapper,
+                double_check_counter=double_check_counter,
+                completion_mode=completion_mode,
+                logging_level=logging_level,
+            )
+        else:
+            return (None, None, None, qtuple[3])
     except Exception as e:
         print("!!ERROR!!")
         print(e)
@@ -1192,10 +921,6 @@ async def generate_qatuples_from_para(
                 vetted_qa_tuples.append(qa_tuple)
             return
         question_group_id = make_id()
-        # print(f"\n\n\nOUTER LOOP CALL GENERATE QPLAN para: {para}, \n\n idx: {idx}")
-        # print(
-        #     f"\n\n\nOUTER LOOP CALL GENERATE Q: {para}, \n\n idx: {idx} \n\n plan: {plan}"
-        # )
         (
             question_answer_tuples,
             question_generation_output,
@@ -1218,7 +943,6 @@ async def generate_qatuples_from_para(
             # print(f"\n\n=======!!=BEGIN VETTING QA TUPLE {idx}_{qnum}=!!=======\n\n")
             good_qa_tuple = await vet_question_loop(
                 question_answer_tuple,
-                0,
                 question_group_id=question_group_id,
                 engine_wrapper=engine_wrapper,
                 double_check_counter=double_check_counter,
