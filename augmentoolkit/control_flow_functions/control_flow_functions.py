@@ -42,6 +42,9 @@ with open("./config.yaml", "r") as file:
 
 DEFAULT_PROMPT_PATH = obj_conf["PATH"]["DEFAULT_PROMPTS"]
 
+tokenizer = AutoTokenizer.from_pretrained(
+        "TheBloke/OpenHermes-2.5-Mistral-7B-GPTQ"
+)
 
 def extract_qa_tuples(text):
     pattern = r'\*\*QUESTION:\*\*\s*((?:.|\n)*?)\s*\*\*ANSWER:\*\*\s*((?:.|\n)*?)(?=\s*\*\*QUESTION:\*\*|\Z)'
@@ -483,19 +486,11 @@ async def repair_qatuple_context(
 
 
 def parse_answer_accuracy_validation(response):
-    determination_pattern = re.compile(
-        r"Overall Accuracy Determination:(.+)", re.DOTALL
-    )
-    determination = determination_pattern.search(response).group(1).strip()
     if (
-        "inaccurate" in determination.lower()
-        or "Inaccurate" in determination.lower()
-        or "mostly" in determination.lower()
-        or "partial" in determination.lower()
-        or "irrelevant" in determination.lower()
+        "INACCURATE" in response
     ):  # The "mostly" is there to catch "mostly accurate" which the model says occasionally, and which actually means inaccurate.
         return (False, response)
-    elif "accurate" in determination.lower():
+    elif "ACCURATE" in response:
         return (True, response)
     else:
         print("Answer accuracy validation made a mistake")
@@ -601,44 +596,15 @@ async def vet_answer_accuracy_loop(
 
     return (None, None, None, qtuple[3])
 
-
-def parse_answer_relevancy_validation_step(thought_process):
-    judgement_pattern = re.compile(
-        r"Explanation of Judgment:(.+)", re.DOTALL | re.IGNORECASE
-    )
-    try:
-        determination = judgement_pattern.search(thought_process).group(1).strip()
-        if (
-            "irrelevant" in determination.lower()
-            or "mostly" in determination.lower()
-            or "partial" in determination.lower()
-            or "introduces information not present in the text" in determination.lower()
-        ):  # Hack to get around faulty outputs
-            return (False, thought_process)  # , completion
-        elif "relevant" in determination or "Relevant" in determination:
-            return (True, thought_process)  # , completion
-        else:
-            print(f"Answer relevancy parsing failed! Retrying! {judgement_pattern}")
-            raise Exception("error in judgement extranction (ans relevancy)")
-    except Exception as e:
-        print("Model did not provide a judgement, retrying")
-
-
 def parse_validation_step(response):
-    decision_pattern = re.compile(r"Final Judgment:(.+)", re.DOTALL | re.IGNORECASE)
-    determination = decision_pattern.search(response).group(1).strip()
     if (
-        "irrelevant" in determination
-        or "Irrelevant" in determination.lower()
-        or "mostly" in determination.lower()
-        or "partial" in determination.lower()
-        or "introduces information not present in the text" in determination.lower()
+        "IRRELEVANT" in response
     ):
         return (
             False,
             response,
         )  # TODO ensure that in the control flow code it passes on (False, response), completion
-    elif "relevant" in determination or "Relevant" in determination:
+    elif "RELEVANT" in response:
         return (True, response)  # TODO same as above(True, response), completion
     else:
         print("Did not contain relevant or irrelevant! Retrying")
@@ -946,7 +912,6 @@ async def generate_qatuples_from_para(
                 question_group_id=question_group_id,
                 engine_wrapper=engine_wrapper,
                 double_check_counter=double_check_counter,
-                use_filenames=use_filenames,
                 completion_mode=completion_mode,
                 logging_level=logging_level,
             )
@@ -1050,122 +1015,63 @@ async def determine_worthy(
         except:
             print(f"DEBUG max retries exceeded for index {idx}")
 
-
-def judge_paragraph_processor(
-    determination,
-):  # TODO extract to separate file to avoid muddying the control flow code
-    if "unsuitable" in determination.lower():
-        return False  # control flow has been modified to use the information it has, based on the determination of the output processors
-    elif "suitable" in determination.lower():
-        return True
-
-
-# EXEMPLAR
-async def filter_all_questions(
-    paragraphs_processed,
-    judged_worthy_for_questions,
-    engine_wrapper,
-    output_dir,
-    take_subset=False,
-    use_filenames=False,
-    rtwl=None,
-    completion_mode=None,
-    logging_level=None,
-):
-    if use_filenames:
-        prompt_path = "judge_paragraph_filenames"
-    else:
-        prompt_path = "judge_paragraph_no_filenames"
-
-    judgement_regex = re.compile(
-        r"Reasoning and thought process \(reason intelligently\):(.+)",
-        re.DOTALL | re.IGNORECASE,
-    )
-
-    if completion_mode:
-        prompt_path = prompt_path + ".txt"
-    else:
-        prompt_path = prompt_path + ".yaml"
-
-    judge = GenerationStep(
-        prompt_path=prompt_path,
-        regex=judgement_regex,
-        sampling_params={
-            "max_tokens": 2000,
-            # "min_p": 0.4,
-            "stop": [
-                "### Response",
-                "\n\n\n\n\n",
-                "</s>",
-                "# Input:",
-                "[INST]",
-                "### Instruction",
-                "[INST",
-                "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-            ],
-            "temperature": 0.2,
-        },
-        completion_mode=completion_mode,
-        retries=2,
-        engine_wrapper=engine_wrapper,
-        logging_level=logging_level,  # TODO change to warning
-        output_processor=judge_paragraph_processor,
-        return_input_too=False,
-        prompt_folder=obj_conf["PATH"]["PROMPTS"],
-        default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-    )
-    if not take_subset:
-        tasks = [
-            determine_worthy(idx, p, judged_worthy_for_questions, output_dir, judge)
-            for idx, p in enumerate(paragraphs_processed)
-        ]
-    else:
-        tasks = [
-            determine_worthy(idx, p, judged_worthy_for_questions, output_dir, judge)
-            for idx, p in enumerate(paragraphs_processed[:obj_conf["SYSTEM"]["SUBSET_SIZE"]])
-        ]
-    limited_tasks = [rtwl(task) for task in tasks]
-    for future in tqdmasyncio.tqdm.as_completed(limited_tasks):
-        await future
-
-
-def sentence_chunking_algorithm(file_path, max_char_length=2800):
+def chunking_algorithm(file_path, max_char_length=2800):
     """
-    This function takes a plaintext file and chunks it into sentences.
+    This function takes a plaintext file and chunks it into paragraphs or sentences if the paragraph exceeds max_token_length.
 
     :param file_path: Path to the plaintext file
     :param tokenizer: SentencePiece tokenizer
-    :param max_token_length: The maximum token length for a chunk of sentences
-    :return: List of sentence chunks with source text information
+    :param max_token_length: The maximum token length for a chunk
+    :return: List of chunks with source text information
     """
     chunks_with_source = []
     current_chunk = []
-    char_count = 0
+    token_count = 0
     source_name = file_path.replace(".txt", "")
 
-    with open(file_path, "r", encoding="utf-8") as f:
+
+    with open(file_path, "r", encoding="utf-8",errors='ignore') as f:
         content = f.read()
+    # try:
+    #     with open(file_path, "r", encoding="utf-8") as f:
+    #         content = f.read()
+    # except Exception as e:
+    #     print(f"\nError reading file {file_path}: {e}\n")
+    #     return []
+        
+    paragraphs = content.split('\n\n')  # Assuming paragraphs are separated by two newlines # TODO change so that if the length is 1 after this, split by tabs instead
 
-    # split into single characters
-    characters = list(content)
-
-    for character in tqdm(characters, desc=f"Processing {file_path}"):
-
-        if char_count + 1 <= max_char_length:
-            current_chunk.append(character)
-            char_count += 1
+    for paragraph in paragraphs:
+        paragraph = paragraph.strip()  # Remove leading and trailing whitespace
+        if not paragraph:  # Skip empty paragraphs
+            continue
+        
+        paragraph_token_count = len(paragraph)
+        
+        # Check if the paragraph itself exceeds the max token length
+        if paragraph_token_count > max_char_length:
+            # Fallback to character chunking for this paragraph
+            characters = list(paragraph)
+            for character in characters:
+                if token_count + 1 <= max_char_length:
+                    current_chunk.append(character)
+                    token_count += 1
+                else:
+                    chunks_with_source.append((" ".join(current_chunk), source_name))
+                    current_chunk = [character]
+                    token_count = 1
         else:
-            # convert the chunk to a string
-            chunks_with_source.append(("".join(current_chunk), source_name))
-            current_chunk = [character]
-            char_count = 1
+            if token_count + paragraph_token_count <= max_char_length:
+                current_chunk.append(paragraph)
+                token_count += paragraph_token_count
+            else:
+                chunks_with_source.append((" ".join(current_chunk), source_name))
+                current_chunk = [paragraph]
+                token_count = paragraph_token_count
 
     # Add the last chunk if it exists
     if current_chunk:
-        chunks_with_source.append(("".join(current_chunk), source_name))
+        chunks_with_source.append((" ".join(current_chunk), source_name))
 
     return chunks_with_source
 

@@ -162,7 +162,7 @@ async def main():
 
     sentence_chunks = []
     for source_text in source_texts:
-        sentence_chunks += control_flow_functions.sentence_chunking_algorithm(
+        sentence_chunks += control_flow_functions.chunking_algorithm(
             source_text, tokenizer
         )
 

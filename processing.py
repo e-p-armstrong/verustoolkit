@@ -149,7 +149,7 @@ async def main():
 
     sentence_chunks = []
     for source_text in source_texts:
-        sentence_chunks += control_flow_functions.sentence_chunking_algorithm(
+        sentence_chunks += control_flow_functions.chunking_algorithm(
             source_text
         )
 
@@ -232,6 +232,7 @@ async def main():
     vetted_qa_tuples = [qa for qa in vetted_qa_tuples if qa[0] is not None]
     print("---------------- ONTO EXAMPLES GENERATION-------------------")
 
+    return
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
