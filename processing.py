@@ -236,6 +236,9 @@ async def main():
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
 
+    # TODO turn repairing context into a "link removal" and other cleanup function
+    # And add the step back
+
     # Print stats related to revised qatuples, and filter out nones (questions that were unanswerable due to lack of context).
     import json
     import os

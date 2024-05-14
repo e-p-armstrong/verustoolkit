@@ -701,14 +701,7 @@ async def vet_answer_accuracy_loop(
 
         if passed_checks >= ceil(double_check_counter / 2):  # if question checks passed
             # print(f"\n\ANSWER ACCURACY CHECKS PASSED retries: {total_retries}")
-            return await vet_quality_loop(
-                qtuple,
-                run_id,
-                engine_wrapper=engine_wrapper,
-                double_check_counter=double_check_counter,
-                completion_mode=completion_mode,
-                logging_level=logging_level,
-            )
+            return qtuple
         else:
             print("Answer accuracy validation failed! Tossing")
             return (None, None, None, qtuple[3])
