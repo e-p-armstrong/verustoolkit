@@ -39,23 +39,23 @@ def extract_conversation(conversation):
     list of tuples: Each tuple contains the character's name and their message.
     """
     lines = conversation.strip().split("\n")
-    if len(lines) == 1:  # If no newlines, there's 1 item
-        lines = (
-            conversation.replace(
-                "## Conversation that answers the provided questions:", ""
-            )
-            .strip()
-            .split(r"\n")[1:]
-        )
     dialogues = []
+    current_speaker = None
+    current_message = ""
 
     for line in lines:
-        if ":" in line:
-            # Splitting at the first occurrence of ':'
-            parts = line.split(":", 1)
-            charname = parts[0].strip()
-            message = parts[1].strip() if len(parts) > 1 else ""
-            dialogues.append((charname, message))
+        line = line.strip()
+        if line in ["**AI Assistant:**", "**User:**"]:
+            if current_speaker:
+                dialogues.append((current_speaker, current_message.strip()))
+                current_message = ""
+            current_speaker = line[2:-2].strip()
+        else:
+            if current_speaker:
+                current_message += line + "\n"
+
+    if current_speaker:
+        dialogues.append((current_speaker, current_message.strip()))
 
     return dialogues
 
@@ -322,13 +322,38 @@ if __name__ == "__main__":
 
     # Test cases for extract_conversation
     print("\nTesting extract_conversation:")
-    test_conversation1 = "Charname1: Hello\nCharname2: Hi\nCharname3: How are you?"
+    test_conversation1 = """## Conversation that answers the provided questions:
+**AI Assistant:**
+Hello! I'm here to help with any questions you might have about Verus. Please, ask me anything!
+
+**User:**
+Yeah, so I've run into some errors and I'm not sure what's causing them. Do you know what causes the errors:
+```
+error while loading shared libraries: libgomp.so.1: No such file or directory
+error while loading shared libraries: libz.so: No such file or directory
+```
+When running `./verusd` on a Linux distro?
+
+**AI Assistant:**
+Great question! These errors may be caused by required dependencies for `./verusd` not being installed by default on a Linux distribution. The lack of required dependencies results in the error messages when you try to run `./verusd`.
+
+`./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either have them installed by default, or you must install them manually using a command such as `sudo apt-get install`. Do you have any further questions about these errors?
+
+**User:**
+Yes, actually. If you run `./verusd` and encounter the errors I mentioned earlier, how do you solve them?
+
+**AI Assistant:**
+Good question! In order to solve these errors, which are likely caused by dependencies not being installed by default on a Linux distro, try the following:
+
+1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+2. **Try running the command `./verusd` again.** You can see if installing the dependencies worked by running `./verusd` a second time. Did this solve your problem?"""
     print(
         extract_conversation(test_conversation1)
     )  # Expected [('Charname1', 'Hello'), ('Charname2', 'Hi'), ('Charname3', 'How are you?')]
-    print(
-        "Expected [('Charname1', 'Hello'), ('Charname2', 'Hi'), ('Charname3', 'How are you?')]"
-    )
+    # print(
+    #     "Expected [('Charname1', 'Hello'), ('Charname2', 'Hi'), ('Charname3', 'How are you?')]"
+    # )
     test_conversation2 = "No colons here"
     print(extract_conversation(test_conversation2))  # Expected []
     print("Expected []")
