@@ -152,34 +152,6 @@ def check_conversation_length(conv, qatuples):
     else:
         return True
 
-
-def check_conversation_for_text_from_examples(conv):
-    """Checks if certain strings from the few-shot examples appear in the conversation"""
-    strings_to_check_for = [
-        "her lipstick-colored lips",
-        "coquettishly tilts her head to the side,",
-        "Awwww, you're no fun,",
-        "Reminds me of my colleagues...",
-        "" "I'll see you at that cafe.",
-        "Ghh... you know,",
-        "you're breaking a poor woman's heart,",
-        "surprising innocence and warmth",
-        'in mock-thought, "',
-        " _I can't believe my ears. Did ",
-    ]
-    matches_found = 0
-    for string in strings_to_check_for:
-        if string in conv:
-            matches_found += 1
-            print(f"Found {string} in the conversation!")
-    if matches_found > 2:
-        print(
-            f"Found {matches_found} matches for strings from the few-shot examples. Validation failed!"
-        )
-        return False
-    return True
-
-
 def check_each_question_contains_q_from_tuples(conv, qatuples, n):
     """
     Ensures that each question contains at least n sequential characters from the corresponding question in qatuples.
@@ -273,11 +245,6 @@ def call_all_processors(multiturn_conversation, qatuples):
     if not check_conversation_length(convs_split, qatuples):
         print("Conversation is too short! Validation failed!")
         print(convs_split)
-        return False
-
-    # Check for text from examples (assuming this is implemented elsewhere)
-    if not check_conversation_for_text_from_examples(multiturn_conversation):
-        print("Conversation does not contain text from examples. Validation failed!")
         return False
 
     # Check for unintended repeated quotes
