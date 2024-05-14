@@ -218,21 +218,6 @@
     ```
     verus -chain=VRSCTEST sendcurrency "*" '[{"address":"IDNAME@","exportto":"PBaaSChainName","exportid":"true","amount":100,"currency":"vrsctest"}]'
     ```
-
-    ### Signing transactions from multi-signature IDs (testnet and mainnet)
-    Create transaction, get raw transaction data:
-      ```
-    verus sendcurrency <multi-signature-ID>@ '[{"address":"<destination_address>","amount":<transaction_amount>}]'
-    verus z_getoperationstatus <operation_id_returned_by_sendcurrency>
-    ```
-    Take the raw hex transaction data provided by z_getoperationstatus to each additional wallet(s) containing the additional signing addresses/IDs:
-      ```
-    verus signrawtransaction <raw_hex_transaction>
-    ```
-    After the last necessary signature is applied, broadcast on the network using:
-      ```
-    verus sendrawtransaction <raw_hex_signed_transaction>
-    ```
     """
 - role: assistant
   content: | # Not "how can you" but instead "how can I" that's what I'm going to implement. Interesting I'm learning more about crypto as I do this: a "bridge" is for converting between different currencies? Maybe using a shared pool of stuff? Not sure about the second bit.
@@ -318,40 +303,6 @@
     4. `exportid` indicates that in this case, `sendcurrency` is being used to export an ID.
     5. `amount` specifies the amount of currency being sent.
     6. `currency` specifies the type of currency being sent.
-
-    **QUESTION:**
-    How do I sign a transaction from multi-signature IDs? On the testnet and mainnet?
-
-    **ANSWER:**
-    Doing this requires a few commands in sequence. Let's go through them one at a time.
-
-    First, you have to create a transaction, then get its raw transaction data.
-
-    ```
-    verus sendcurrency <multi-signature-ID>@ '[{"address":"<destination_address>","amount":<transaction_amount>}]'
-    ```
-
-    Note that the shown command essentially just sends currency to the address you want. Be sure to fill in the placeholders <multi-signature-ID>@, <destination_address>, and <transaction_amount> with the actual amounts.
-
-    After creating the transaction, you have to get the raw transaction data using another command.
-
-    ```
-    verus z_getoperationstatus <operation_id_returned_by_sendcurrency>
-    ```
-
-    Again, be sure to replace the placeholder <operation_id_returned_by_sendcurrency> with the actual value.
-
-    Once this is done, you have to take the raw transaction data you got from the z_getoperationstatus command to every additional wallet that contains additional signing addresses/IDs:
-
-    ```
-    verus signrawtransaction <raw_hex_transaction>
-    ```
-
-    After you've applied the last necessary signature, broadcast it on the network using this command, to finish signing your transaction from multi-signature IDs:
-    
-    ```
-    verus sendrawtransaction <raw_hex_signed_transaction>
-    ```
 - role: user
   content: |
     Text to make questions from: 

@@ -262,7 +262,6 @@ async def main():
             group,
             multi_turn_convs_info,
             multi_turn_convs_info_dir,
-            rearrangements_to_take=REARRANGEMENTS_TO_TAKE,
         )
         for idx, group in enumerate(qa_tuples_by_paragraph)
     ]

@@ -632,7 +632,7 @@ async def vet_answer_accuracy_loop(
         r"Reasoning and thought process \(the text is your single source of truth\):\n(.+)",
         re.DOTALL,
     )
-
+    # TODO performance improvement could be gained by using async for to do the checks simultaneously
     answer_accuracy_checker = GenerationStep(
         prompt_path=prompt_path_ans_accuracy_check,
         regex=check_ans_accuracy_regex,
@@ -673,6 +673,7 @@ async def vet_answer_accuracy_loop(
         times_checked = 0
         dissenting_reasoning = ""
         while times_checked < double_check_counter:
+            check_id = make_id()
             # print(
             # f"\n\nACCURACY CALL CHECK ANSWER: {qtuple[0]}, context: {qtuple[2]}, retries: {total_retries}, dissenting reasoning: {dissenting_reasoning}"
             # )
@@ -686,10 +687,12 @@ async def vet_answer_accuracy_loop(
             write_output_to_file(
                 answer_accuracy_output,
                 obj_conf["PATH"]["OUTPUT"] + "/check_answer_accuracy_generations",
-                run_id,
+                run_id + "--check--" + check_id,
             )
             if not judgement[0]:  # if not accurate
                 dissenting_reasoning = judgement[1]
+                print("\nNegative Vote Cast! Here was the reasoning:\n")
+                print(dissenting_reasoning)
             else:
                 passed_checks += 1
             times_checked += 1
@@ -790,6 +793,7 @@ async def vet_question_loop(
         times_checked = 0
         dissenting_reasoning = ""
         while times_checked < double_check_counter:
+            check_id = make_id()
             # print(
             #     f"\n\nQUESTION CALL CHECK ANSWER: {qtuple[0]}, context: {qtuple[2]}, retries: {total_retries}, dissenting reasoning: {dissenting_reasoning}"
             # )
@@ -802,10 +806,13 @@ async def vet_question_loop(
             write_output_to_file(
                 check_q_output,
                 obj_conf["PATH"]["OUTPUT"] + "/check_question_generations",
-                run_id,
+                run_id + "--check--" + check_id,
             )
             if not judgement[0]:  # if not relevant
                 dissenting_reasoning = judgement[1]
+                print("\nNegative Vote Cast! Here was the reasoning:\n")
+                print(dissenting_reasoning)
+                print(f"ID: {check_id}")
             else:
                 passed_checks += 1
             times_checked += 1
@@ -828,6 +835,7 @@ async def vet_question_loop(
                 logging_level=logging_level,
             )
         else:
+            print("Question accuracy validation failed! Tossing")
             return (None, None, None, qtuple[3])
     except Exception as e:
         print("!!ERROR!!")
@@ -1285,36 +1293,18 @@ async def create_info(
     group,
     multi_turn_convs_info,
     multi_turn_convs_info_dir,
-    rearrangements_to_take=3,
 ):
 
-    # Resume normal control flow code
-    all_permutations = list(itertools.permutations(group))
+    file_path = os.path.join(multi_turn_convs_info_dir, f"info_{idx}_{iter}.json")
 
-    sample_size = min(rearrangements_to_take, len(all_permutations))
-    sampled_permutations = random.sample(all_permutations, sample_size)
+    # Skip if file already exists
+    if not os.path.exists(file_path):
+        info = (group, "will", "be", "replaced", make_id())
 
-    group_convs_info = []
+        with open(file_path, "w") as file:
+            json.dump(info, file, indent=4)
 
-    for iter, perm in enumerate(sampled_permutations):
-        file_path = os.path.join(multi_turn_convs_info_dir, f"info_{idx}_{iter}.json")
-
-        # Skip if file already exists
-        if not os.path.exists(file_path):
-            try:
-                info = (perm, "will", "be", "replaced", make_id())
-
-                with open(file_path, "w") as file:
-                    json.dump(info, file, indent=4)
-
-                group_convs_info.append(info)
-            except Exception as e:
-                print("ERROR!!!!--!!!!", e)
-                traceback.print_exc()
-        else:
-            print(f"Skipped generating {file_path} as it already exists")
-
-    multi_turn_convs_info.append(group_convs_info)
+    multi_turn_convs_info.append([info]) # hacky-looking things because the legacy functionality was simplified.
 
 
 def read_json_files_info(directory):
