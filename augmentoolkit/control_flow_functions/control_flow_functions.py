@@ -484,6 +484,122 @@ async def repair_qatuple_context(
         print("!!! ERROR!", e)
         traceback.print_exc()
 
+def parse_validation_step(response):
+    if (
+        "POOR QUALITY" in response
+    ):
+        return (
+            False,
+            response,
+        )  # TODO ensure that in the control flow code it passes on (False, response), completion
+    elif "HIGH QUALITY" in response:
+        return (True, response)  # TODO same as above(True, response), completion
+    else:
+        print("Did not contain relevant or irrelevant! Retrying")
+        raise Exception(
+            "Validation step screwed up and did not reach a conclusion! Retrying!"
+        )
+
+
+async def vet_quality_loop(
+    qa_tuple,
+    question_group_id=None,
+    engine_wrapper=None,
+    double_check_counter=3,
+    completion_mode=None,
+    logging_level=None,
+):
+    # NOTE Set up question check generation step
+    prompt_path_q_check = "check_quality"
+    check_q_regex = re.compile(
+        r"Reasoning and thought process:(.+)",
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    if completion_mode:
+        prompt_path_q_check = prompt_path_q_check + ".txt"
+    else:
+        prompt_path_q_check = prompt_path_q_check + ".yaml"
+
+    question_checker = GenerationStep(
+        prompt_path=prompt_path_q_check,
+        regex=check_q_regex,
+        sampling_params={
+            "max_tokens": 3000,
+            "stop": [
+                "### Response",
+                "\n\n\n\n\n",
+                "</s>",
+                "# Input:",
+                "[INST]",
+                "### Instruction",
+                "[INST",
+                "<|eot_id|>",
+                    "<|start_header_id|>",
+                    "<|end_header_id|>",
+            ],
+            "temperature": 0.2,
+        },
+        completion_mode=completion_mode,
+        retries=1,
+        engine_wrapper=engine_wrapper,
+        logging_level=logging_level,
+        output_processor=parse_validation_step,
+        prompt_folder=obj_conf["PATH"]["PROMPTS"],
+        default_prompt_folder=DEFAULT_PROMPT_PATH,
+        use_stop=obj_conf["SYSTEM"]["STOP"]
+    )
+
+    # NOTE Set up generate new question step
+    # MODIFICATION: so that the conversations make sense, we just toss failed questions, rather than regenning. They're plentiful enough.
+    try:
+        qtuple = qa_tuple
+        # print(
+        #     f"\n\nStarting QUESTION loop for question: {qtuple[0]}, context: {qtuple[2]}"
+        # )
+        run_id = question_group_id + "--subquestion--" + make_id()
+        passed_checks = 0
+        times_checked = 0
+        dissenting_reasoning = ""
+        while times_checked < double_check_counter:
+            # print(
+            #     f"\n\nQUESTION CALL CHECK ANSWER: {qtuple[0]}, context: {qtuple[2]}, retries: {total_retries}, dissenting reasoning: {dissenting_reasoning}"
+            # )
+            judgement, check_q_output = await question_checker.generate(
+                arguments={"text": qtuple[2], "question": qtuple[0]}
+            )
+
+            # Now we need to put the judgement together into the format it expects it to be in
+
+            write_output_to_file(
+                check_q_output,
+                obj_conf["PATH"]["OUTPUT"] + "/check_question_generations",
+                run_id,
+            )
+            if not judgement[0]:  # if not relevant
+                dissenting_reasoning = judgement[1]
+            else:
+                passed_checks += 1
+            times_checked += 1
+            if passed_checks >= ceil(double_check_counter / 2):
+                break
+            failed_checks = times_checked - passed_checks
+            if failed_checks >= ceil(double_check_counter / 2):
+                break
+
+        if passed_checks >= ceil(
+            double_check_counter / 2
+        ):  # if all question checks passed
+            # print(f"\n\nQUESTION CHECKS PASSED retries: {total_retries}")
+            return qtuple
+        else:
+            return (None, None, None, qtuple[3])
+    except Exception as e:
+        print("!!ERROR!!")
+        print(e)
+        traceback.print_exc()
+
+    return (None, None, None, qtuple[3])
 
 def parse_answer_accuracy_validation(response):
     if (
@@ -585,7 +701,14 @@ async def vet_answer_accuracy_loop(
 
         if passed_checks >= ceil(double_check_counter / 2):  # if question checks passed
             # print(f"\n\ANSWER ACCURACY CHECKS PASSED retries: {total_retries}")
-            return qtuple
+            return await vet_quality_loop(
+                qtuple,
+                run_id,
+                engine_wrapper=engine_wrapper,
+                double_check_counter=double_check_counter,
+                completion_mode=completion_mode,
+                logging_level=logging_level,
+            )
         else:
             print("Answer accuracy validation failed! Tossing")
             return (None, None, None, qtuple[3])

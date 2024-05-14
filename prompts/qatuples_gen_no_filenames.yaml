@@ -1,12 +1,21 @@
 - role: system
-  content: | # TODO need to have mistral comb through a document and extract the most likely date it was written; this will ensure that answers are accurate.
-    You are an expert educational AI specializing in the Verus multi-chain and multi-currency blockchain protocol. Given some text from an informational website about Verus, the Verus coin, or other related Verus community projects, you will create suitable educational questions based on the given information, and *only* based on the given information. You are focusing on understanding, application, analysis, and synthesis of ideas (cognitive levels). The questions you create will lean towards longer, more difficult questions that require some thought to solve — but can still be solved given the paragraphs provided. Essentially: the questions will test comprehension of real information that would be worthy to teach in order for people to understand more about the Verus protocol and community. After each question, you will also write its answer.
+  content: | # TODO need to have mistral comb through a document and extract the most likely date it was written; this will ensure that answers are accurate. ALSO consider just going direct text-> conversation? TODO expand the useful general background knowledge list, with the help of community members.
+    You are creating a logically-consistent series of questions about the Verus multi-chain and multi-currency blockchain protocol. Given some text from an informational website about Verus, the Verus coin, or other related Verus community projects, you will create a comprehensive list of questions based on the given information, and *only* based on the given information. You are focusing on understanding, application, analysis, and synthesis of ideas (cognitive levels). The questions you create will lean towards longer, more difficult questions that require some thought to solve — but can still be solved given the paragraphs provided. Essentially: the questions will test comprehension of real information that would be worthy to teach in order for people to understand more about the Verus protocol and community. After each question, you will also write its answer.
+
+    The sequence of the questions matters. They should build on each other. While questions should build on each other, they still MUST make sense if read by themselves, without any reference materials on hand.
+    
+    The questions must ask about information that a user of Verus might ask about. So they may ask about facts, explanations, how to solve problems, or other things that may naturally come up; but more "educational test"-type questions that are somewhat arbitrary, like "what is the error message that happens under these circumstances" which a human would never need to ask, that kind of stuff is banned.
+
+    **Useful general background information that comes up a lot:**
+
+    * Any string resembling "Name@" is likely a VerusID, which is essentially a crypto-address.
 
     **You Must:**
 
     * Create detailed educational questions based on the snippet of a website
     * Do not mention the website, or the text, or any other reference. Just ask about the facts or information.
     * Create as many or as few questions as are needed to adequately cover the material in the snippet of the site.
+    * Ensure a logical sequence of questions that build on each other.
     * Keep in mind the timestamp of any solution. The current year is: 2024.
     * Use markdown formatting (such as code blocks and snippets) in your questions if applicable.
     * Each question and answer MUST BE INDEPENDENT, as they MAY BE SHUFFLED.
@@ -16,12 +25,15 @@
     * Include the information from the given paragraph alongside a simpler explanation of some underlying concepts, if possible.
     * Documents may be out of date, and technology described as being in development has likely been released already. THEREFORE, BE AMBIGUOUS ABOUT RELEASES, using language like "This technology will do XYZ" or by focusing on what the tech "can" do, rather than what it "does" or "will" do.
     * You will always take a positive opinion of Verus and try to promote it through the education.
+    * Do NOT provide relative markdown links to content in your answers; since the provided text to make questions from is from a website,  those links will be broken when used outside of said website.
 
     You will create however many questions make are needed to adequately cover the information in the paragraph.
     
-    Do not explicitly mention the paragraphs in the questions themselves — just ask about the concepts related to the questions. BE CAREFUL NOT TO ASK QUESTIONS ABOUT THINGS THAT DO NOT APPEAR IN THE TEXT.
+    Do not explicitly mention the paragraphs in the questions themselves — just ask about the concepts related to the questions. BE CAREFUL NOT TO ASK QUESTIONS ABOUT THINGS THAT DO NOT APPEAR IN THE TEXT TO MAKE QUESTIONS FROM.
     
     You will not mention the text explicitly in any questions you think of, since the questions you generate are intended to test people's knowledge of the information — when given the questions, they WILL NOT HAVE THE TEXT ON HAND, and so if you mention the author they won't have a clue what you're talking about.
+
+    If the text allows for an open-ended question, consider starting with an open-ended question that gets at some broader information and helps teach high-level understanding, before you start working your way down the paragraph making questions from the top to the bottom. If the paragraph does not really allow for an open-ended question, and is rather constrained (like a how-to) then consider just starting with a "normal" question, from the perspective of a user of Verus, which asks about information that's important to know.
 - role: user
   content: | # The few-shot examples should serve three purposes: 1. cover common types of input; 2. explore common output cases; 3. provide background on Verus just by being.
     Text to make questions from: 
@@ -65,7 +77,6 @@
     In order to solve these errors, which are likely caused by dependencies not being installed by default on a Linux distro, try the following:
 
     1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by running `sudo apt-get install libgomp1 zlib1g-dev`.
-
     2. **Try running the command `./verusd` again.** You can see if installing the dependencies worked by running `./verusd` a second time.
 - role: user
   content: |
@@ -95,7 +106,9 @@
     What are VerusIDs?
 
     **ANSWER:**
-    VerusIDs are a fully-functional blockchain protocol. They are a form of crypto-address, a unique identifier that serves as a destination for sending and receiving digital assets. Being more than just an ID system, VerusIDs do not involve corporations in the protocol, and provide benefits such as (but not limited to): revocability, recoverability, privacy, full decentralization, and quantum-ready friendly crypto addresses on the Verus worldwide network.
+    VerusIDs are a fully-functional blockchain protocol. Being more than just an ID system, VerusIDs do not involve corporations in the protocol, and provide benefits such as (but not limited to): revocability, recoverability, privacy, full decentralization, and quantum-ready friendly crypto addresses on the Verus worldwide network.
+
+    They are a form of crypto-address, a unique identifier that serves as a destination for sending and receiving digital assets. 
 
     **QUESTION:**
     What does "quantum-ready friendly crypto-addresses" mean, in the context of Verus and VerusIDs?
@@ -222,9 +235,9 @@
     ```
     """
 - role: assistant
-  content: |
+  content: | # Not "how can you" but instead "how can I" that's what I'm going to implement. Interesting I'm learning more about crypto as I do this: a "bridge" is for converting between different currencies? Maybe using a shared pool of stuff? Not sure about the second bit.
     **QUESTION:**
-    How can you park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the command line?
+    How can I park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the command line?
 
     **ANSWER:**
     To park a conversion of VRSCTEST to a new token before the token launches, you can use the `sendcurrency` command with the following format:
@@ -233,45 +246,99 @@
     ./verus -chain=VRSCTEST sendcurrency "*" '[{"address":"your_address@","convertto":"gold","preconvert":1,"amount":100}]'
     ```
 
-    This will effectively park your conversion until the GOLD token launches. After the launch, you will either find the converted amount (minus a small fee) of GOLD in your wallet, or you will have your original VRSCTEST amount returned.
+    This will effectively park your conversion until the GOLD token launches. After the launch, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned.
 
     **QUESTION:**
-    What are the steps to create a new Verus token called "mycoin" that can be converted to from both VRSCTEST and a hypothetical GOLD token? 
+    How can I create a new token called "mycoin" using the command line, which can be converted to with either GOLD or VRSCTEST? Assume that GOLD is a new token that just launched.
 
     **ANSWER:**
-    To create a new Verus token called "mycoin" that can be converted to from both VRSCTEST and GOLD, you would use the `definecurrency` command like this:
+    In order to create a new token called "mycoin" using the command line, you must run a command to define the currency's properties. Here's an example of such a command:
 
     ```
     ./verus -chain=VRSCTEST definecurrency '{"name":"mycoin","options":33, "proofprotocol":2,"currencies":["vrsctest", "gold"],"minpreconversion":[10000,5.1298]}, "initialsupply":20000'
     ```
 
-    This command defines a new token called "mycoin" with the following properties:
+    This command defines a new token named "mycoin". Some important notes about this configuration:
 
-    * `options` is set to 33
-    * `proofprotocol` is set to 2 (PROOF_CHAINID), meaning the chain controller can mint new coins
-    * `currencies` lists "vrsctest" and "gold", meaning mycoin can be converted to from those two tokens
-    * `minpreconversion` sets the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin
-    * `initialsupply` sets the initial supply of mycoin to 20,000 units
+    1. `proofprotocol` being set to 2 means that it's set to PROOF_CHAINID. This means that the controller of the chain ID can mint new coins.
+    2. `options` is a configurable integer, in this case set to 33.
+    3. `currencies` lists which tokens can be converted to mycoin.
+    4. `"minpreconversion": [10000,5.1298]` defines the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin, respectively.
+    5. `initialsupply` sets the initial supply of mycoin to 20,000 units.
 
     **QUESTION:**
-    If a token is created with `proofprotocol` set to 2 (PROOF_CHAINID), how can the controller of that chain mint new tokens?
+    What does it mean if `proofprotocol` is set to 2 when defining a new token?
 
     **ANSWER:**
-    When a token is created with `proofprotocol` set to 2 (PROOF_CHAINID), it means the controller of that chain has the ability to mint new tokens. They can do this using the `sendcurrency` command in the following format:
-
+    When `proofprotocol` is set to 2 when defining a new token, it means that the proof protocol is set to PROOF_CHAINID, which means that the controller of the chain ID may mint new tokens. This can be done with a command like the following example:
     ```
-    ./verus -chain=VRSCTEST sendcurrency "mycoin@" '[{"address":"chain_controller_address@","currency":"mycoin","mintnew":1,"amount":10000}]'
+    ./verus -chain=VRSCTEST sendcurrency "mycoin@" '[{"address":"mike@","currency":"mycoin","mintnew":1,"amount":10000}]'
     ```
 
-    In this example command:
+    **QUESTION:**
+    How can I define a PBaaS blockchain using Verus?
 
-    * `"mycoin@"` specifies the chain the minting is happening on (the hypothetical "mycoin" chain in this case) 
-    * `"chain_controller_address@"` should be replaced with the actual address of the chain controller
-    * `"currency":"mycoin"` specifies the token being minted is "mycoin"
-    * `"mintnew":1` indicates that new tokens should be minted
-    * `"amount":10000` says that 10,000 new "mycoin" tokens should be created and sent to the chain controller's address
+    **ANSWER:**
+    You can define a PBaaS blockchain using a single command line command with Verus. You need to pass two JSON objects, one for the PBaaS blockchain, and another for the overridable defaults of the bridge. Here's an example of how to define a PBaaS blockchain:
 
-    So in summary, when a token's `proofprotocol` is set to PROOF_CHAINID, the controller of that chain can create new tokens at will using the `sendcurrency` command with `"mintnew":1`.
+    ```shell
+    ./verus -chain=vrsctest definecurrency '{"name":"PBaaSChain","options":264,"currencies":["VRSCTEST"],"conversions":[1],"eras":[{"reward":1200000000,"decay":0,"halving":0,"eraend":0}],"notaries":["Notary1@","Notary2@","Notary3@"],"minnotariesconfirm":2,"nodes":[{"networkaddress":"111.111.111.111:10000","nodeidentity":"Node1@"},{"networkaddress":"111.111.111.112:10000","nodeidentity":"Node2@"}],"gatewayconvertername":"Bridge","gatewayconverterissuance":1000000}' '{"currencies":["VRSCTEST","PBaaSChain","USD"],"initialcontributions":[371747.20398827,0,1000000],"initialsupply":3000000}'
+    ```
+
+    Note the following important information used when defining the PBaaS blockchain:
+    
+    1. The "name" field defines the name of the chain.
+    2. The "options" property is an integer, in this case it's set to 264.
+    2. You can define an array of currencies that the chain's native currency can be converted into using the "currencies" property.
+    3. You may define the conversion ratios between the chain's native currency, and each currency on the chain, using the "conversions" property.
+    4. The "eras" property defines the block reward, reward decay, halving, and end of each "era" in the chain's lifecycle
+    5. "notaries" is a list of the VerusIDs that will serve as notaries on the chain.
+    6. "minnotariesconfirm" is an integer for the minimum number of notaries needed to confirm a block.
+    7. The "nodes" property is an array describing the network addresses of the nodes on the chain, as well as their IDs.
+    
+    Note that the bridge definition default overrides are a separate string from the currency definition properties. The bridge can be used to move funds on and off the PBaaS chain. The bridge's JSON object has some of its own properties:
+    1. `currencies` defines the currency tickers that the bridge supports (including the native coins of the chains being bridged).
+    2. `initialcontributions` specifies the initial liquidity for each currency in the bridge.
+    3. `initialsupply` gives the initial supply for the bridge's native token.
+
+    **QUESTION:**
+    How can I export an ID to a PBaaS chain using the command line and Verus?
+
+    **ANSWER:**
+    You can accomplish this with a single command on the command line — the sendcurrency command. Here's an example, where the ID "IDNAME@" is exported to "PBaaSChainName."
+    
+    ```
+    verus -chain=VRSCTEST sendcurrency "*" '[{"address":"IDNAME@","exportto":"PBaaSChainName","exportid":"true","amount":100,"currency":"vrsctest"}]'
+    ```
+
+    Some parts of this command you should be aware of:
+    1. The `sendcurrency` command takes two arguments when exporting an ID: a string `"*"` and another string containing the options.
+    2. `address` is the ID being exported.
+    3. `exportto` is the chain being exported to.
+    4. `exportid` indicates that in this case, `sendcurrency` is being used to export an ID.
+    5. `amount` specifies the amount of currency being sent.
+    6. `currency` specifies the type of currency being sent.
+
+    **QUESTION:**
+    How do I sign a transaction from multi-signature IDs? On the testnet and mainnet?
+
+    **ANSWER:**
+    You can accomplish this with a single command on the command line — the sendcurrency command. Here's an example, where the ID "IDNAME@" is exported to "PBaaSChainName."
+    
+    ```
+    verus -chain=VRSCTEST sendcurrency "*" '[{"address":"IDNAME@","exportto":"PBaaSChainName","exportid":"true","amount":100,"currency":"vrsctest"}]'
+    ```
+
+    Some parts of this command you should be aware of:
+    1. The `sendcurrency` command takes two arguments when exporting an ID: a string `"*"` and another string containing the options.
+    2. `address` is the ID being exported.
+    3. `exportto` is the chain being exported to.
+    4. `exportid` indicates that in this case, `sendcurrency` is being used to export an ID.
+    5. `amount` specifies the amount of currency being sent.
+    6. `currency` specifies the type of currency being sent.
+
+
+
 
     **QUESTION:**
     What key pieces of information need to be provided in the JSON definition when using the `definecurrency` command to create a new PBaaS (Public Blockchain as a Service) chain?
