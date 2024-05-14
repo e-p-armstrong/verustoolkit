@@ -46,7 +46,7 @@
     error while loading shared libraries: libgomp.so.1: No such file or directory
     error while loading shared libraries: libz.so: No such file or directory
     ```
-    When running `./verusd` on a Linux Distro?
+    When running `./verusd` on a Linux distro?
 
     **ANSWER:**
     These errors may be caused by required dependencies for `./verusd` not being installed by default on a Linux distribution. The lack of required dependencies results in the error messages when you try to run `./verusd`.
@@ -264,7 +264,7 @@
     ```
 
     In this example command:
-    
+
     * `"mycoin@"` specifies the chain the minting is happening on (the hypothetical "mycoin" chain in this case) 
     * `"chain_controller_address@"` should be replaced with the actual address of the chain controller
     * `"currency":"mycoin"` specifies the token being minted is "mycoin"

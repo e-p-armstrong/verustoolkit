@@ -1115,33 +1115,17 @@ async def ensure_multiple_answers_are_same(
 async def make_multiturn_conversation(
     info, multi_turn_conv_generator, completion_mode=None
 ):
-    if not obj_conf["SYSTEM"]["ASSISTANT_MODE"]:
-        charname = extract_name.extract_name(info[1])
-        conv_starter = create_conv_starter(info[1])
-    else:
-        charname = "AI" # NOTE not actually used
-        conv_starter = "Hello! How can I help you today?" # NOTE not actually used.
-        
+    
     if completion_mode:
         conv, conv_output = await multi_turn_conv_generator.generate(
             arguments={
-                "character": info[1].strip(),
-                "scenario": info[2].strip(),
-                "extra_info": extract_steps(info[3].strip()),
                 "question_answer_list": format_qatuples(info[0]).strip(),
-                "charname": charname.strip(),
-                "conv_starter": conv_starter.strip(),
             }
         )
     else:
         conv, conv_output = await multi_turn_conv_generator.generate(
             arguments={
-                "character": info[1].strip(),
-                "scenario": info[2].strip(),
-                "extra_info": info[3].strip(),
                 "question_answer_list": format_qatuples(info[0]),
-                "charname": charname.strip(),
-                "conv_starter": conv_starter.strip(),
             }
         )
     write_output_to_file(
@@ -1180,253 +1164,13 @@ def fix_scenario_plan(scenario_plan, character):
         scenario_plan = scenario_plan.replace("Albert", random_name.random_name())
     return scenario_plan
 
-
-def create_character_info_generators(
-    completion_mode=None, engine_wrapper=None, logging_level=None, use_filenames=False
-):
-    character_card_plan_path = "create_character_card_plan_no_filenames"
-    if use_filenames:
-        character_card_plan_path = "create_character_card_plan"
-
-    character_card_plan_regex = re.compile(
-        r"Character card plan \(be creative, do not use real people as characters, do NOT make the author of the book a character\):\n(.+)",
-        re.IGNORECASE | re.DOTALL,
-    )
-
-    if completion_mode:
-        character_card_plan_path = character_card_plan_path + ".txt"
-    else:
-        character_card_plan_path = character_card_plan_path + ".yaml"
-
-    character_card_plan_creator = GenerationStep(
-        prompt_path=character_card_plan_path,
-        regex=character_card_plan_regex,
-        sampling_params={
-            "max_tokens": 3000,
-            "stop": [
-                "### Response",
-                "\n\n\n\n\n",
-                "</s>",
-                "# Input:",
-                "[INST]",
-                "### Instruction",
-                "[INST",
-                "## Character card plan (be creat",
-                # "### Questions",
-                "## Questions, answer, and text that the character should know:",
-                "Special instructions:",
-                "###",
-                "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-            ],
-            "temperature": 1,
-            # top_k=-1,
-            "top_p": 0.5,
-            # min_p=0.4,
-        },
-        completion_mode=completion_mode,
-        logging_level=logging_level,
-        retries=1,
-        engine_wrapper=engine_wrapper,
-        prompt_folder=obj_conf["PATH"]["PROMPTS"],
-        default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-    )
-
-    # Character card gen
-
-    character_card_path = "create_character_card_no_filenames"
-    if use_filenames:
-        character_card_path = "create_character_card"
-
-    character_card_regex = re.compile(
-        r"Character card \(be creative, write at least 3 paragraphs for each dialogue line\):\n(.+)",
-        re.IGNORECASE | re.DOTALL,
-    )
-
-    if completion_mode:
-        character_card_path = character_card_path + ".txt"
-    else:
-        character_card_path = character_card_path + ".yaml"
-
-    if obj_conf["SYSTEM"]["COMPLETION_MODE"]:
-        stop_list = [
-            "### Response",
-            "\n\n\n\n\n",
-            "</s>",
-            "# Input:",
-            "[INST]",
-            "### Instruction",
-            "[INST",
-            "## Text",
-            "## Character card",
-            "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-        ]
-    else:
-        stop_list = [
-            "### Response",
-            "\n\n\n\n\n",
-            "</s>",
-            "# Input:",
-            "[INST]",
-            "### Instruction",
-            "[INST",
-            "## Text",
-            "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-        ]
-
-    character_card_creator = GenerationStep(
-        prompt_path=character_card_path,
-        regex=character_card_regex,
-        sampling_params={
-            "max_tokens": 4000,
-            "stop": stop_list,
-            "temperature": 1,
-            "top_p": 0.5,
-        },
-        completion_mode=completion_mode,
-        logging_level=logging_level,
-        retries=1,
-        engine_wrapper=engine_wrapper,
-        prompt_folder=obj_conf["PATH"]["PROMPTS"],
-        default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-    )
-
-    # Scenario Plan Gen
-    scenario_plan_path = "create_scenario_plan"  # no variation between use of filenames or not for scenarios
-
-    scenario_plan_regex = re.compile(
-        r"Scenario plan \(be creative, and make sure all characters present fit in with the setting\):\n(.+)",
-        re.IGNORECASE | re.DOTALL,
-    )
-
-    if completion_mode:
-        scenario_plan_path = scenario_plan_path + ".txt"
-    else:
-        scenario_plan_path = scenario_plan_path + ".yaml"
-
-    scenario_plan_creator = GenerationStep(
-        prompt_path=scenario_plan_path,
-        regex=scenario_plan_regex,
-        sampling_params={
-            "max_tokens": 8000,
-            "stop": [
-                "### Response",
-                "\n\n\n\n\n",
-                "</s>",
-                "# Input:",
-                "[INST]",
-                "### Instruction",
-                "[INST",
-                "## Information",
-                "User:",
-                "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-                # "## Scenario",
-            ],
-            "temperature": 0.6,
-            # top_k=-1,
-            "top_p": 1,
-            # min_p=0.5,
-        },
-        completion_mode=completion_mode,
-        logging_level=logging_level,
-        retries=1,
-        engine_wrapper=engine_wrapper,
-        prompt_folder=obj_conf["PATH"]["PROMPTS"],
-        default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-    )
-
-    # Scenario Gen
-    scenario_path = (
-        "create_scenario"  # no variation between use of filenames or not for scenarios
-    )
-
-    scenario_regex = re.compile(
-        r"Scenario \(will have no dialogue, will just set up the scene\):\n(.+)",
-        re.IGNORECASE | re.DOTALL,
-    )
-
-    if completion_mode:
-        scenario_path = scenario_path + ".txt"
-    else:
-        scenario_path = scenario_path + ".yaml"
-
-    scenario_creator = GenerationStep(  # will have variations as an argument
-        prompt_path=scenario_path,
-        regex=scenario_regex,
-        sampling_params={
-            "max_tokens": 8000,
-            "stop": [
-                "### Response",
-                "\n\n\n\n\n",
-                "</s>",
-                "# Input:",
-                "[INST]",
-                "### Instruction",
-                "[INST",
-                "## Information",
-                "User:",
-                "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
-                # "## Scenario",
-            ],
-            "temperature": 0.5,
-            # top_k=-1,
-            "top_p": 0.5,
-            # min_p=0.5,
-        },
-        completion_mode=completion_mode,
-        logging_level=logging_level,
-        retries=1,
-        engine_wrapper=engine_wrapper,
-        prompt_folder=obj_conf["PATH"]["PROMPTS"],
-        default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
-    )
-
-    return (
-        character_card_plan_creator,
-        character_card_creator,
-        scenario_plan_creator,
-        scenario_creator,
-    )
-
-
 async def create_info(
     idx,
     group,
-    engine_wrapper,
-    assistant_mode,
     multi_turn_convs_info,
     multi_turn_convs_info_dir,
     rearrangements_to_take=3,
-    use_filenames=False,
-    completion_mode=None,
-    logging_level=logging.INFO,
 ):
-    # NOTE we set up all the generators up here so that we don't have to drill the args down like this is an old version of React
-    # Instead we drill the generators down like it's an old version of React lol
-    (
-        character_card_plan_creator,
-        character_card_creator,
-        scenario_plan_creator,
-        scenario_creator,
-    ) = create_character_info_generators(
-        engine_wrapper=engine_wrapper,
-        use_filenames=use_filenames,
-        completion_mode=completion_mode,
-        logging_level=logging_level,
-    )
 
     # Resume normal control flow code
     all_permutations = list(itertools.permutations(group))
@@ -1442,19 +1186,10 @@ async def create_info(
         # Skip if file already exists
         if not os.path.exists(file_path):
             try:
-                info = await make_multiturn_conversation_info(
-                    perm,
-                    assistant_mode=assistant_mode,
-                    character_card_plan_creator=character_card_plan_creator,
-                    character_card_creator=character_card_creator,
-                    scenario_plan_creator=scenario_plan_creator,
-                    scenario_creator=scenario_creator,
-                    completion_mode=completion_mode,
-                )
+                info = (perm, "will", "be", "replaced", make_id())
 
-                if info is not None:
-                    with open(file_path, "w") as file:
-                        json.dump(info, file, indent=4)
+                with open(file_path, "w") as file:
+                    json.dump(info, file, indent=4)
 
                 group_convs_info.append(info)
             except Exception as e:
@@ -1501,27 +1236,12 @@ async def create_conversation(
     logging_level=logging.INFO,
 ):
     file_path = os.path.join(multi_turn_convs_dir, f"conv_{idx}.json")
-    multi_turn_conversation_prompt_path = "multi_turn_conversation"
-    if assistant_mode:
-        multi_turn_conversation_prompt_path = "multi_turn_assistant_conversation"
+    multi_turn_conversation_prompt_path = "multi_turn_assistant_conversation"
 
-    qatuples = info[0]
-    character = info[1]
-    scenario = info[2]
-    scenario_plan = info[3]
-
-    charname = extract_name.extract_name(character)
-
-    if not assistant_mode:
-        conversation_regex = re.compile(
-            f"Conversation that answers the provided question \(be sure that you do not change the questions or answers themselves; {charname} will answer the questions, not ask them; the questions and answers provided should be copied word for word, and surrounded by compelling conversation\):\n(.+)",
-            re.IGNORECASE | re.DOTALL,
-        )
-    else:
-        conversation_regex = re.compile(
-            f"Conversation that answers the provided question \(be sure that you do not change the questions or answers themselves; AI Assistant will answer the questions, not ask them; the questions and answers provided should be copied word for word, and surrounded by compelling conversation\):\n(.+)",
-            re.IGNORECASE | re.DOTALL,
-        )
+    conversation_regex = re.compile(
+        f"Conversation that answers the provided question \(be sure that you do not change the questions or answers themselves; AI Assistant will answer the questions, not ask them; the questions and answers provided should be copied word for word, and surrounded by compelling conversation\):\n(.+)",
+        re.IGNORECASE | re.DOTALL,
+    )
 
     if completion_mode:
         multi_turn_conversation_prompt_path = (
@@ -1549,8 +1269,8 @@ async def create_conversation(
                 "## Instruction",
                 "Name:",
                 "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
+                "<|start_header_id|>",
+                "<|end_header_id|>",
             ],
             "temperature": 0.8,
             # "top_k": -1,

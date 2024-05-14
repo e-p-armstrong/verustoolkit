@@ -232,71 +232,13 @@ async def main():
     vetted_qa_tuples = [qa for qa in vetted_qa_tuples if qa[0] is not None]
     print("---------------- ONTO EXAMPLES GENERATION-------------------")
 
-    return
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
 
-    # Assuming vetted_qa_tuples is a list that might or might not exist
-    try:
-        _ = vetted_qa_tuples
-    except NameError:
-        vetted_qa_tuples = []
-
-    # Load all files at the start if vetted_qa_tuples is empty
-    if not vetted_qa_tuples:
-        # Check if the directory exists
-        if os.path.exists(writepath):
-            # List all files in directory
-            for file_name in os.listdir(writepath):
-                file_path = os.path.join(writepath, file_name)
-                try:  # for each file already generated, see if it succeeded or failed; if it succeeded, append its contents; if it failed, append None for stats logging
-                    with open(file_path, "r", encoding="utf-8") as f:
-                        content = f.read()
-                        print(f"Loading file: {file_path}")
-                        if content == "failed":
-                            vetted_qa_tuples.append(None)
-                        else:
-                            try:
-                                data = json.loads(content)
-                                vetted_qa_tuples.append(
-                                    (data[0], data[1], data[2], data[3])
-                                )
-                            except json.JSONDecodeError:
-                                print("JSON decode error with the contents:", content)
-                                vetted_qa_tuples.append(None)
-                except Exception as e:
-                    print(f"Error reading {file_path}: {e}")
-
-    else:
-        old_tuples = vetted_qa_tuples.copy()
-        tasks = [
-            control_flow_functions.repair_qatuple_context(
-                idx,
-                tup,
-                engine_wrapper,
-                writepath,
-                vetted_qa_tuples,
-                use_filenames=USE_FILENAMES,
-            )
-            for idx, tup in enumerate(vetted_qa_tuples)
-        ]
-        limited_tasks_qcorrection = [run_task_with_limit(task) for task in tasks]
-        for future in tqdmasyncio.tqdm.as_completed(limited_tasks_qcorrection):
-            await future
-
     # Print stats related to revised qatuples, and filter out nones (questions that were unanswerable due to lack of context).
     import json
     import os
-
-    print("-------------- QUESTIONS REVISED ------------- STATS SO FAR:")
-    nones = list(filter(lambda x: x is None, vetted_qa_tuples))
-    print(f"Nones: {len(nones)}")
-    print(f"Non-nones: {len(vetted_qa_tuples) - len(nones)}")
-    print(f"Total: {len(vetted_qa_tuples)}")
-    # filter out all None values
-    vetted_qa_tuples = [qa for qa in vetted_qa_tuples if qa is not None]
-    print("---------------- ONTO EXAMPLES GENERATION-------------------")
 
     qa_tuples_by_paragraph = control_flow_functions.group_by_text(vetted_qa_tuples)
 
@@ -315,14 +257,9 @@ async def main():
         control_flow_functions.create_info(
             idx,
             group,
-            engine_wrapper,
-            ASSISTANT_MODE,
             multi_turn_convs_info,
             multi_turn_convs_info_dir,
             rearrangements_to_take=REARRANGEMENTS_TO_TAKE,
-            use_filenames=USE_FILENAMES,
-            completion_mode=COMPLETION_MODE,
-            logging_level=LOG_LEVEL,
         )
         for idx, group in enumerate(qa_tuples_by_paragraph)
     ]
@@ -335,7 +272,6 @@ async def main():
         api_key=API_KEY,
         base_url=BASE_URL,
         mode=MODE,
-        # quantization="gptq" # modify if you want to do stuff with the aphrodite branch
     )
 
     import os
