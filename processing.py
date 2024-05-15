@@ -61,8 +61,6 @@ async def main():
 
     COMPLETION_MODE = config["SYSTEM"]["COMPLETION_MODE"]
 
-    GRAPH = config["SYSTEM"]["GRAPH"]
-
     MODE = config["SYSTEM"]["MODE"]
 
     LOG_LEVEL = logging.INFO
