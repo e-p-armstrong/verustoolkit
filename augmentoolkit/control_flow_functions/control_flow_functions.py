@@ -1451,14 +1451,11 @@ def convert_directory_to_list(directory_path):
                         
                         data_dict = {
                             "conversation": data[0],
-                            "ai_description": data[1],
-                            "scenario": data[2],
-                            "extra_info": data[3],
                             "qa_tuples": [ tup[:2] for tup in data[4] ], # only take first two items from each tuple
                             "rag_context": data[4][0][2],
-                            "filename": data[4][0][3]
+                            "source_filename": data[4][0][3]
                         }
-                        master_list.append(data) # append it as-is to the master-list
+                        master_list.append(data_dict) # append it as-is to the master-list
 
                         # Extract and process conversation
                         conversation, primary_char_desc = data[0], data[1] # first and second items are conv and char desc
@@ -1469,10 +1466,21 @@ def convert_directory_to_list(directory_path):
                         # Convert to simplified format
                         simplified_conversations = []
                         simplified_conversations_rag = []
+                        
+                        # Load system prompts
+                        system_prompt_norag = obj_conf["SYSTEM"]["FINAL_ASSISTANT_PROMPT_NO_RAG"]
+                        system_prompt_rag = obj_conf["SYSTEM"]["FINAL_ASSISTANT_PROMPT_RAG"]
                         simplified_conversations.append(
                             {
                                 "from": "system",
-                                "value": primary_char_desc
+                                "value": system_prompt_norag
+                            }
+                        )
+                        
+                        simplified_conversations_rag.append(
+                            {
+                                "from": "system",
+                                "value": system_prompt_rag.replace("{data}", data_dict["rag_context"])
                             }
                         )
                         for i, (charname, message) in enumerate(
@@ -1484,10 +1492,16 @@ def convert_directory_to_list(directory_path):
                             simplified_conversations.append(
                                 {"from": from_person, "value": f"{message}"}
                             )
+                            simplified_conversations_rag.append(
+                                {"from": from_person, "value": f"{message}"} # same as above, but for the RAG context
+                            )
 
                         if simplified_conversations:  # If there are any conversations
                             simplified_list.append(
                                 {"conversations": simplified_conversations}
+                            )
+                            simplified_rag_list.append(
+                                {"conversations": simplified_conversations_rag}
                             )
                 except Exception as e:
                     print(f"Error reading {filename}: {e}")
@@ -1499,13 +1513,18 @@ def convert_directory_to_list(directory_path):
             file.write(json.dumps(item) + "\n")
 
     # Write the simplified data to a different .jsonl file
-    write_2 = obj_conf["PATH"]["OUTPUT"] + "/simplified_data.jsonl"
+    write_2 = obj_conf["PATH"]["OUTPUT"] + "/simplified_data_no_rag.jsonl"
     with open(write_2, "w") as file:
         for item in simplified_list:
             file.write(json.dumps(item) + "\n")
+            
+    write_3 = obj_conf["PATH"]["OUTPUT"] + "/simplified_data_rag.jsonl"
+    with open(write_3, "w") as file:
+        for item in simplified_rag_list:
+            file.write(json.dumps(item) + "\n")
 
     print(
-        f"Conversion complete. Master list written to {write_1}. Simplified data written to {write_2}."
+        f"Conversion complete. Master list written to {write_1}. Simplified data written to {write_2} (no RAG) and {write_3} (RAG)."
     )
 
 
