@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I disable login with the Root User in a Linux system?",
+            "To disable login with the Root User, you need to edit the SSH configuration file using the following steps:\n\n1. Open the SSH configuration file using `sudo nano /etc/ssh/sshd_config`.\n2. Find the line `PermitRootLogin yes` and set it to `PermitRootLogin no`.\n3. Apply the new settings by restarting the SSH service using `sudo systemctl restart sshd`.",
+            "Disable login with Root User (make sure your newly created user login works and has sudo rights)  `sudo nano /etc/ssh/sshd_config` Find: PermitRootLogin yes And set to PermitRootLogin no Apply new settings:  `sudo systemctl restart sshd` (submitted by @karero, corrected by @Glennp, edited by Oink.vrsc@) Note: last revision date 2022-08-19.",
+            "./raw_txt_input/faq-lin01_install_linux_cli.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "850f9dd2-bbbe-4e9e-bbb9-8abd3b9fe9c1"
+]

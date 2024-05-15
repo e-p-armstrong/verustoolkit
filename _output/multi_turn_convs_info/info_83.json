@@ -1,0 +1,56 @@
+[
+    [
+        [
+            "What is OPTION_ID_REFERRALREQUIRED in Verus, and what does it do?",
+            "OPTION_ID_REFERRALREQUIRED is a flag in Verus that, when set to 16, requires referrals for a specific chain.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What does OPTION_TOKEN do in Verus, and how does it affect a currency?",
+            "OPTION_TOKEN is a flag in Verus that, when set to 32, indicates that a currency is a token, rather than a native currency.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What is the purpose of OPTION_SINGLECURRENCY in Verus, and how does it affect a chain?",
+            "OPTION_SINGLECURRENCY is a flag in Verus that, when set to 64, allows PBaaS chains or gateways to potentially restrict to a single currency.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What does OPTION_GATEWAY do in Verus, and how does it affect currency routing?",
+            "OPTION_GATEWAY is a flag in Verus that, when set to 128, indicates that a chain routes external currencies.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What is OPTION_PBAAS in Verus, and what does it define?",
+            "OPTION_PBAAS is a flag in Verus that, when set to 256, defines a PBaaS chain.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What is OPTION_GATEWAY_CONVERTER in Verus, and what does it do?",
+            "OPTION_GATEWAY_CONVERTER is a flag in Verus that, when set to 512, indicates that a specific PBaaS gateway is the default converter and will publish prices.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What is OPTION_GATEWAY_NAMECONTROLLER in Verus, and what does it control?",
+            "OPTION_GATEWAY_NAMECONTROLLER is a flag in Verus that, when set to 1024, controls top-level ID and currency registration on a launch chain when not set on a gateway.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What is OPTION_NFT_TOKEN in Verus, and what does it represent?",
+            "OPTION_NFT_TOKEN is a flag in Verus that, when set to 2048, represents a single satoshi NFT token, which tokenizes control over the root ID.",
+            "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "cd5870d9-8c9d-4bf3-99d6-afcc6bd58aaf"
+]

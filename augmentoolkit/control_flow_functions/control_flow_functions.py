@@ -342,14 +342,14 @@ def group_by_text(tuples_list):
         if text not in groups:
             groups[text] = []
 
+
+        print("!!GROUPS COUNT") # That time I accidentally discovered why the bug is, because I put the print in the for loop by accident. The problem is: some texts have VERY long groups, probably because there's some duplication in the source text.
+        print(len(groups))
         # Append the current tuple to the appropriate list
         groups[text].append((question, answer, text, textname))
 
     # Return the values of the dictionary, which are the lists of tuples grouped by text; also remove duplicates
-    return [
-        identify_duplicates.identify_duplicates(group)
-        for group in list(groups.values())
-    ]
+    return list(groups.values())
 
 
 def extract_reasoning_from_context_check(response):
@@ -438,8 +438,8 @@ async def repair_qatuple_context(
                 print("Loaded failed file")
                 vetted_qa_tuples[idx] = None
                 return None
-            print("Loaded file:")
-            print(content)
+            # print("Loaded file:")
+            # print(content)
             try:
                 data = json.loads(content)  # Convert the string back to JSON
                 vetted_qa_tuples[idx] = (data[0], data[1], data[2], data[3])
@@ -1108,7 +1108,7 @@ async def determine_worthy(
     if os.path.isfile(file_path):
         with open(file_path, "r") as file:
             data = json.load(file)
-            print("LOADING: ", data)
+            # print("LOADING: ", data)
         if isinstance(data, str):
             judged_worthy_for_questions.append(
                 (None, data[7:])
@@ -1308,6 +1308,9 @@ async def create_info(
 
         with open(file_path, "w") as file:
             json.dump(info, file, indent=4)
+    else:
+        with open(file_path, "r") as file:
+            info = json.load(file)
 
     multi_turn_convs_info.append([info]) # hacky-looking things because the legacy functionality was simplified.
 
