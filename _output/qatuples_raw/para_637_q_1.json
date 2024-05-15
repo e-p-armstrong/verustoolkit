@@ -1,0 +1,6 @@
+[
+    "What happens to a locked identity when it is revoked?",
+    "When a locked identity is revoked, its locked status is cleared, regardless of the time delay or unlock height. However, a locked identity cannot revoke itself.",
+    "gs are set back to an unlocked state.   ```   verus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'   ``` - Revoking an identity will clear its locked status, regardless of time delay or unlock height. - A locked identity cannot revoke itself. ## Conversion Queries The `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves - **E.g. BTC ETH:**   ```   verus -chain=VRSCTEST getcurrencyconverters btc eth   ```   Will return all currencies that have btc/eth markets at or above the liquidity threshold.## Sending and Converting Currency **Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**",
+    "./raw_txt_input/release_notes.md"
+]

@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm trying to understand staking rewards. How do I know that a block has been minted and a staking reward has been earned?\n\n**AI Assistant:**\nYou can confirm that a block has been minted and a staking reward has been earned by looking for the following characteristics:\n\n1. The block hash has few leading zeros.\n2. The last transaction in your wallet has no fee, is from the same address that it is to, and is also the address the coinbase is to.\n3. The POS difficulty is encoded in the low 32 bits of the nonce with 96 of the next nonce bits as zero/reserved, followed by a random hash at the top half.\n\nThese indicators should help you determine if a block has been successfully minted and a staking reward has been earned. If you have any more questions or need further clarification, feel free to ask!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do you know that a block has been minted and a staking reward has been earned?",
+            "You can confirm that a block has been minted and a staking reward has been earned by looking for the following characteristics:\n\n1. The block hash has few leading zeros.\n2. The last transaction in your wallet has no fee, is from the same address that it is to, and is also the address the coinbase is to.\n3. The POS difficulty is encoded in the low 32 bits of the nonce with 96 of the next nonce bits as zero/reserved, followed by a random hash at the top half.",
+            "# Question: How do you know a block was minted (staking reward)? You can see the following characteristics: 1. a block hash without a lot of leading zeros 2. a last transaction that in your wallet has no fee, is from the same address that it is to, which is also the address the coinbase is to (easiest confirmation) and 3. The POS difficulty is encoded in the low 32 bits of the nonce with 96 of the next nonce bits as zero/reserved, then a random hash at the top half (submitted by @keda666)",
+            "./raw_txt_input/faq-allos09_how_do_you_know_a_block_was_minted_staking_reward.md"
+        ]
+    ]
+]

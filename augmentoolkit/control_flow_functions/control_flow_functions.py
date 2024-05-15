@@ -1300,7 +1300,7 @@ async def create_info(
     multi_turn_convs_info_dir,
 ):
 
-    file_path = os.path.join(multi_turn_convs_info_dir, f"info_{idx}_{iter}.json")
+    file_path = os.path.join(multi_turn_convs_info_dir, f"info_{idx}.json")
 
     # Skip if file already exists
     if not os.path.exists(file_path):

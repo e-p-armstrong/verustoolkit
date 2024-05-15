@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI've been playing around with the Verus CLI, and I'm not entirely sure what some of the options do. Can you tell me about the `-blockversion=<n>` option?\n\n**AI Assistant:**\nThe `-blockversion=<n>` option is used to override the block version to test forking scenarios. The default block version is 4. This option allows you to experiment with different block versions and see how they affect your setup. Does that make sense?\n\n**User:**\nThat's really helpful, thanks! I was also wondering about the work queue for RPC calls. What's the default depth of that?\n\n**AI Assistant:**\nThe default depth of the work queue to service RPC calls in Verus is 16. This can be overridden using the `-rpcworkqueue=<n>` option. You can adjust this setting to optimize the performance of your RPC calls based on your specific use case.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `-blockversion=<n>` option in Verus?",
+            "The `-blockversion=<n>` option is used to override the block version to test forking scenarios. The default block version is 4.",
+            "`-blockversion=<n>`    Override block version to test forking scenarios (default: 4) ## RPC options: `-rpcworkqueue=<n>`    Set the depth of the work queue to service RPC calls (default: 16) `-rpcservertimeout=<n>`    Timeout during HTTP requests (default: 30) compiled by Oink.vrsc@. Note: last revision date 2024-05-03.",
+            "./raw_txt_input/clifaq-01_verusd_options.md"
+        ],
+        [
+            "What is the default depth of the work queue to service RPC calls in Verus?",
+            "The default depth of the work queue to service RPC calls in Verus is 16. This can be overridden using the `-rpcworkqueue=<n>` option.",
+            "`-blockversion=<n>`    Override block version to test forking scenarios (default: 4) ## RPC options: `-rpcworkqueue=<n>`    Set the depth of the work queue to service RPC calls (default: 16) `-rpcservertimeout=<n>`    Timeout during HTTP requests (default: 30) compiled by Oink.vrsc@. Note: last revision date 2024-05-03.",
+            "./raw_txt_input/clifaq-01_verusd_options.md"
+        ]
+    ]
+]

@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "How can I unlock an identity on the Verus testnet using the command line?",
+            "You can unlock an identity on the Verus testnet by running the following command:\n```\nverus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n```\nReplace `<Unlock block delay>` with the desired unlock block delay, and `t-address` with the desired primary address.",
+            "gs are set back to an unlocked state.   ```   verus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'   ``` - Revoking an identity will clear its locked status, regardless of time delay or unlock height. - A locked identity cannot revoke itself. ## Conversion Queries The `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves - **E.g. BTC ETH:**   ```   verus -chain=VRSCTEST getcurrencyconverters btc eth   ```   Will return all currencies that have btc/eth markets at or above the liquidity threshold.## Sending and Converting Currency **Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What happens to a locked identity when it is revoked?",
+            "When a locked identity is revoked, its locked status is cleared, regardless of the time delay or unlock height. However, a locked identity cannot revoke itself.",
+            "gs are set back to an unlocked state.   ```   verus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'   ``` - Revoking an identity will clear its locked status, regardless of time delay or unlock height. - A locked identity cannot revoke itself. ## Conversion Queries The `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves - **E.g. BTC ETH:**   ```   verus -chain=VRSCTEST getcurrencyconverters btc eth   ```   Will return all currencies that have btc/eth markets at or above the liquidity threshold.## Sending and Converting Currency **Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `getcurrencyconverters` API in Verus?",
+            "The `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves. This allows you to find currencies that have sufficient liquidity to support conversions.",
+            "gs are set back to an unlocked state.   ```   verus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'   ``` - Revoking an identity will clear its locked status, regardless of time delay or unlock height. - A locked identity cannot revoke itself. ## Conversion Queries The `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves - **E.g. BTC ETH:**   ```   verus -chain=VRSCTEST getcurrencyconverters btc eth   ```   Will return all currencies that have btc/eth markets at or above the liquidity threshold.## Sending and Converting Currency **Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "How can I use the `getcurrencyconverters` API to find currencies with sufficient liquidity for conversions between BTC and ETH?",
+            "You can use the `getcurrencyconverters` API to find currencies with sufficient liquidity for conversions between BTC and ETH by running the following command:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis will return all currencies that have BTC/ETH markets at or above the liquidity threshold.",
+            "gs are set back to an unlocked state.   ```   verus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'   ``` - Revoking an identity will clear its locked status, regardless of time delay or unlock height. - A locked identity cannot revoke itself. ## Conversion Queries The `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves - **E.g. BTC ETH:**   ```   verus -chain=VRSCTEST getcurrencyconverters btc eth   ```   Will return all currencies that have btc/eth markets at or above the liquidity threshold.## Sending and Converting Currency **Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What should I keep in mind when using testnet coins and currencies on Verus?",
+            "You should keep in mind that all testnet coins and currencies have no value and will disappear whenever VRSCTEST is reset.",
+            "gs are set back to an unlocked state.   ```   verus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'   ``` - Revoking an identity will clear its locked status, regardless of time delay or unlock height. - A locked identity cannot revoke itself. ## Conversion Queries The `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves - **E.g. BTC ETH:**   ```   verus -chain=VRSCTEST getcurrencyconverters btc eth   ```   Will return all currencies that have btc/eth markets at or above the liquidity threshold.## Sending and Converting Currency **Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**",
+            "./raw_txt_input/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "49bacc81-1a5b-4188-b0e9-c1b9c9519e68"
+]

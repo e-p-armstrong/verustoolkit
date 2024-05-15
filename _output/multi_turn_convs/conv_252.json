@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI'm trying to locate some files, but I'm not sure where they're stored on my system. Can you tell me where the standard locations are for Verus `Wallet.dat`, Chaindata, and `VRSC.conf` files on different operating systems?\n\n**AI Assistant:**\nThe standard locations for Verus `Wallet.dat`, Chaindata, and `VRSC.conf` files are:\n\n* On Linux: `~/.komodo/VRSC`\n* On Mac OS: `~/Library/Application Support/Komodo/VRSC`\n* On Windows 10: `%AppData%\\Roaming\\Komodo\\VRSC\\`\n* OS-independent through Verus Desktop: Click `help`, then `Show Verus data folder (default)`\n\nYou can find the files in these locations. Do you have any further questions about Verus file locations or something else?\n\n**User:**\nActually, yeah. That's a bit too specific to each OS. Is there a way to find the default Verus data folder on my system, regardless of the operating system I'm using?\n\n**AI Assistant:**\nI got you! You can find the default Verus data folder by using the Verus Desktop application. Click on `help`, then select `Show Verus data folder (default)`. This will reveal the location of the folder on your system, regardless of whether you're on Windows, Mac, or Linux. Easy peasy!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Where are the standard locations for Verus `Wallet.dat`, Chaindata, and `VRSC.conf` files on different operating systems?",
+            "The standard locations for Verus `Wallet.dat`, Chaindata, and `VRSC.conf` files are:\n\n* On Linux: `~/.komodo/VRSC`\n* On Mac OS: `~/Library/Application Support/Komodo/VRSC`\n* On Windows 10: `%AppData%\\Roaming\\Komodo\\VRSC\\`\n* OS-independent through Verus Desktop: Click `help`, then `Show Verus data folder (default)`",
+            "### Verus `Wallet.dat`, Chaindata & `VRSC.conf` standard locations * Linux:\t\t`~/.komodo/VRSC` * Mac OS: \t`~/Library/Application Support/Komodo/VRSC` * Windows 10: \t`%AppData%\\Roaming\\Komodo\\VRSC\\` * OS independent through Verus Desktop: Click `help`, `Show Verus data folder (default)` Note: last revision date 2020-09-30.",
+            "./raw_txt_input/faq-allos24_wallet.dat_and_vrsc.conf_location.md"
+        ],
+        [
+            "How can I find the default Verus data folder on my system, regardless of the operating system I'm using?",
+            "You can find the default Verus data folder by using the Verus Desktop application. Click on `help`, then select `Show Verus data folder (default)`. This will reveal the location of the folder on your system.",
+            "### Verus `Wallet.dat`, Chaindata & `VRSC.conf` standard locations * Linux:\t\t`~/.komodo/VRSC` * Mac OS: \t`~/Library/Application Support/Komodo/VRSC` * Windows 10: \t`%AppData%\\Roaming\\Komodo\\VRSC\\` * OS independent through Verus Desktop: Click `help`, `Show Verus data folder (default)` Note: last revision date 2020-09-30.",
+            "./raw_txt_input/faq-allos24_wallet.dat_and_vrsc.conf_location.md"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm curious about the information provided. Who compiled the information?\n\n**AI Assistant:**\nThe information was compiled by Thoskk.vrsc@.\n\n**User:**\nThat's good to know. When was the revision of the specific guidelines/procedure made?\n\n**AI Assistant:**\nThe revision of the specific guidelines/procedure was made on 2020-11-11.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Who compiled the information?",
+            "The information was compiled by Thoskk.vrsc@.",
+            "Information compiled by Thoskk.vrsc@, complemented by Godballz.vrsc@ and Oink.vrsc@. Note: revision date 2020-11-11.",
+            "./raw_txt_input/how-to_verus_info.md"
+        ],
+        [
+            "When was the revision of the specific guidelines/procedure made?",
+            "The revision of the specific guidelines/procedure was made on 2020-11-11.\n\nNote: The reworded question is still vague, as it does not specify what specific guidelines or procedure is being referred to. If possible, it would be better to reword the question to be more specific, such as \"When was the revision of the Verus Desktop installation procedure made?\"",
+            "Information compiled by Thoskk.vrsc@, complemented by Godballz.vrsc@ and Oink.vrsc@. Note: revision date 2020-11-11.",
+            "./raw_txt_input/how-to_verus_info.md"
+        ]
+    ]
+]

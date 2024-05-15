@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What does `OPTION_GATEWAY` do when set in a Verus currency definition?",
+            "When `OPTION_GATEWAY` is set to 128 in a Verus currency definition, it means that this currency routes external currencies.",
+            "         // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+            "./raw_txt_input/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "fdf9dfa6-87d8-4b8c-b0fe-176f5f77f925"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I determine when an immature block will mature (unlock)?",
+            "To determine when an immature block will mature, follow these steps:\n\n1. Get the current block height (\"blocks\") and the \"blockstomaturity\" value, which is the distance to maturity of the transaction in question.\n2. Apply the formula: `blockstomaturity / 1440 = days to maturity (unlocking)`.\n\nFor example, if `blockstomaturity` is 925558, the calculation would be `925558 / 1440 = 643 days`. This means the block will mature in 643 days.",
+            "# Question: How do I know when an immature block will \"unlock\" (mature)? ## Procedure: 1. Get the values of the current block height (\"blocks\") and the \"blockstomaturity\" the distance to maturity of the transaction in question. (i.e. the number of blocks between current block height and where it unlocks. You can see the number is decreasing all the time, and if you add it to the current block height you'll see a constant.) 2. Apply this formula: blockstomaturity / 1440 = days to maturity (unlocking)  e.g. 925558/1440=643 days (submitted by @J Oliver Westbrook, edited by @elvinsophus )",
+            "./raw_txt_input/faq-allos01_immature_block_unlock_time_calculation_manual_calculation.md"
+        ],
+        [
+            "What does the `blockstomaturity` value represent?",
+            "The `blockstomaturity` value represents the distance to maturity of the transaction in question, which is the number of blocks between the current block height and where it unlocks. This value decreases over time, and adding it to the current block height will reveal a constant value.",
+            "# Question: How do I know when an immature block will \"unlock\" (mature)? ## Procedure: 1. Get the values of the current block height (\"blocks\") and the \"blockstomaturity\" the distance to maturity of the transaction in question. (i.e. the number of blocks between current block height and where it unlocks. You can see the number is decreasing all the time, and if you add it to the current block height you'll see a constant.) 2. Apply this formula: blockstomaturity / 1440 = days to maturity (unlocking)  e.g. 925558/1440=643 days (submitted by @J Oliver Westbrook, edited by @elvinsophus )",
+            "./raw_txt_input/faq-allos01_immature_block_unlock_time_calculation_manual_calculation.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f3d9b68e-e0f4-4b1f-bcb5-727dc3326495"
+]
