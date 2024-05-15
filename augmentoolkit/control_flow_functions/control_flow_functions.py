@@ -353,9 +353,9 @@ def group_by_text(tuples_list):
 
 
 def extract_reasoning_from_context_check(response):
-    print("\n----\/----\n RESPONSE:")
-    print(response)
-    print("\n\n\n---/\---\n\n")
+    # print("\n----\/----\n RESPONSE:")
+    # print(response)
+    # print("\n\n\n---/\---\n\n")
     decision_pattern = re.compile(r"Final judgment:(.+)", re.IGNORECASE)
     determination = decision_pattern.search(response)
     if determination:
@@ -530,7 +530,7 @@ async def vet_quality_loop(
         prompt_path=prompt_path_q_check,
         regex=check_q_regex,
         sampling_params={
-            "max_tokens": 3000,
+            "max_tokens": 1500,
             "stop": [
                 "### Response",
                 "\n\n\n\n\n",
@@ -642,7 +642,7 @@ async def vet_answer_accuracy_loop(
         prompt_path=prompt_path_ans_accuracy_check,
         regex=check_ans_accuracy_regex,
         sampling_params={
-            "max_tokens": 3000,
+            "max_tokens": 1500,
             "stop": [
                 "### Response",
                 "\n\n\n\n\n",
@@ -761,7 +761,7 @@ async def vet_question_loop(
         prompt_path=prompt_path_q_check,
         regex=check_q_regex,
         sampling_params={
-            "max_tokens": 3000,
+            "max_tokens": 1500,
             "stop": [
                 "### Response",
                 "\n\n\n\n\n",
@@ -1186,7 +1186,7 @@ def chunking_algorithm(file_path, max_char_length=2700):
                     current_chunk.append(character)
                     token_count += 1
                 else:
-                    chunks_with_source.append((" ".join(current_chunk), source_name))
+                    chunks_with_source.append(("".join(current_chunk), source_name))
                     current_chunk = [character]
                     token_count = 1
         else:
@@ -1194,7 +1194,7 @@ def chunking_algorithm(file_path, max_char_length=2700):
                 current_chunk.append(paragraph)
                 token_count += paragraph_token_count
             else:
-                chunks_with_source.append((" ".join(current_chunk), source_name))
+                chunks_with_source.append(("".join(current_chunk), source_name))
                 current_chunk = [paragraph]
                 token_count = paragraph_token_count
 
@@ -1367,7 +1367,7 @@ async def create_conversation(
         prompt_path=multi_turn_conversation_prompt_path,
         regex=conversation_regex,
         sampling_params={
-            "max_tokens": 3000,
+            "max_tokens": 2000,
             "stop": [
                 "### Response",
                 "\n\n\n\n\n",
@@ -1412,7 +1412,7 @@ async def create_conversation(
                     final_conv = (
                         final_conv[0],
                         "AI Assistant",
-                        "A conversation between a helpful AI Assistant, and a user.",
+                        "",
                         "N/A",
                         final_conv[4],
                     )
@@ -1437,6 +1437,7 @@ async def create_conversation(
 def convert_directory_to_list(directory_path):
     master_list = []
     simplified_list = []
+    simplified_rag_list = []
 
     for filename in os.listdir(directory_path): # for each file
         if filename.endswith(".json"): # if it's a conversation file
@@ -1447,19 +1448,27 @@ def convert_directory_to_list(directory_path):
                     if isinstance(data, list) and all(
                         isinstance(item, (list, str)) for item in data # if it has the correct format
                     ):
+                        
+                        data_dict = {
+                            "conversation": data[0],
+                            "ai_description": data[1],
+                            "scenario": data[2],
+                            "extra_info": data[3],
+                            "qa_tuples": [ tup[:2] for tup in data[4] ], # only take first two items from each tuple
+                            "rag_context": data[4][0][2],
+                            "filename": data[4][0][3]
+                        }
                         master_list.append(data) # append it as-is to the master-list
 
                         # Extract and process conversation
                         conversation, primary_char_desc = data[0], data[1] # first and second items are conv and char desc
-                        primary_char_name = extract_name.extract_name(primary_char_desc) # char name is gotten from char desc
                         dialogues = process_multiturn_functions.extract_conversation(
                             conversation
                         )
 
                         # Convert to simplified format
-                        if obj_conf["SYSTEM"]["ASSISTANT_MODE"]:
-                            primary_char_desc = "You are a helpful, unbiased AI assistant."
                         simplified_conversations = []
+                        simplified_conversations_rag = []
                         simplified_conversations.append(
                             {
                                 "from": "system",
