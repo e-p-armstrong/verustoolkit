@@ -3,7 +3,10 @@ import re
 
 def extract_question_answer(response):
     # Define the regex pattern to match the question and answer
-    pattern = r"### Question Rewording \(using text details as reference\):\nQuestion: (.+?)\nAnswer: (.+)"
+    # print("\n\n===\/====\n\nEXTRACT QUESTION ANSWER RESPONSE: ")
+    # print(response)
+    # print("\n\n\n====/\====\n\n")
+    pattern = r"### Question Rewording:\n\*\*QUESTION:\*\*\s*((?:.|\n)*?)\s*\*\*ANSWER:\*\*\s*((?:.|\n)*)"
 
     # Search for the pattern in the response
     match = re.search(pattern, response)

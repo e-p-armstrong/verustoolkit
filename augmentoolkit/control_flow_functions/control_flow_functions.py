@@ -353,17 +353,22 @@ def group_by_text(tuples_list):
 
 
 def extract_reasoning_from_context_check(response):
+    print("\n----\/----\n RESPONSE:")
+    print(response)
+    print("\n\n\n---/\---\n\n")
     decision_pattern = re.compile(r"Final judgment:(.+)", re.IGNORECASE)
-    determination = decision_pattern.search(response).group(1).strip()
-    if "pass" in determination.lower():
+    determination = decision_pattern.search(response)
+    if determination:
+        determination = determination.group(1).strip()
+    if "PASS" in determination:
         print("Leaving be...")
         return (True, response)  # , completion
-    elif "reword" in determination.lower():
+    elif "REWORD" in determination:
         print("Rewording...")
         q, a = extract_question_answer.extract_question_answer(response)
         print((q, a))
         return (q, a)  # (q, a, qatuple[2], qatuple[3]), completion
-    elif "fail" in determination.lower():
+    elif "FAIL" in determination:
         print("Setting to None...")
         return (False, response)  # , completion
     else:
@@ -398,7 +403,7 @@ async def repair_qatuple_context(
             "max_tokens": 2000,
             "stop": [
                 "### Response",
-                "\n\n\n\n\n",
+                "\n\n\n\n\n\n\n\n\n\n\n\n\n",
                 "</s>",
                 "# Input:",
                 "[INST]",
