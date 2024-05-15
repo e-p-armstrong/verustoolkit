@@ -19,7 +19,7 @@
     error while loading shared libraries: libgomp.so.1: No such file or directory
     error while loading shared libraries: libz.so: No such file or directory
     ```
-    When running `./verusd` on a Linux Distro?
+    When I run `./verusd` on a Linux distro?
 
     **ANSWER:**
     These errors may be caused by required dependencies for `./verusd` not being installed by default on a Linux distribution. The lack of required dependencies results in the error messages when you try to run `./verusd`.
@@ -27,12 +27,12 @@
     `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either have them installed by default, or you must install them manually using a command such as `sudo apt-get install`.
 
     **QUESTION:**
-    If you run `./verusd` and encounter these errors:
+    If I run `./verusd` and encounter these errors:
     ```
     error while loading shared libraries: libgomp.so.1: No such file or directory
     error while loading shared libraries: libz.so: No such file or directory
     ```
-    How do you solve them?
+    How can I solve them?
 
     **ANSWER:**
     In order to solve these errors, which are likely caused by dependencies not being installed by default on a Linux distro, try the following:
@@ -52,7 +52,7 @@
     error while loading shared libraries: libgomp.so.1: No such file or directory
     error while loading shared libraries: libz.so: No such file or directory
     ```
-    When running `./verusd` on a Linux distro?
+    When I run `./verusd` on a Linux distro?
 
     **AI Assistant:**
     Great question! These errors may be caused by required dependencies for `./verusd` not being installed by default on a Linux distribution. The lack of required dependencies results in the error messages when you try to run `./verusd`.
@@ -60,7 +60,7 @@
     `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either have them installed by default, or you must install them manually using a command such as `sudo apt-get install`. Do you have any further questions about these errors?
 
     **User:**
-    Yes, actually. If you run `./verusd` and encounter the errors I mentioned earlier, how do you solve them?
+    Yes, actually. If I run `./verusd` and encounter the errors I mentioned earlier, how can I solve them?
 
     **AI Assistant:**
     Good question! In order to solve these errors, which are likely caused by dependencies not being installed by default on a Linux distro, try the following:
@@ -93,7 +93,7 @@
     Essentially, VerusIDs being fully decentralized means that neither their creation, usage, or recovery/revocation need to be managed or approved by a central authority — the community supports the transaction. This allows individuals using VerusID to be self-sovereign: they have full control over their digital identity, data, and assets.
 
     **QUESTION:**
-    What do VerusIDs offer in terms of privacy and power?
+    What do VerusIDs offer me in terms of privacy and power?
 
     **ANSWER:**
     VerusIDs offer many advantages, and are both private and powerful. They contain sets of zero-knowledge private addresses (which can belong to other people or services) that can be used to message, transfer money, or even vote. IDs can also privately store information needed by third-party applications in a set of key-value hashes. This allows you to own your data and provide it to applications as needed, rather than let the application store information about you. Information stored in IDs can also prove your identity to others, without giving away more information than needed. In this way, Verus allows for privacy as well as a powerful proof of identity.
@@ -130,7 +130,7 @@
     Essentially, VerusIDs being fully decentralized means that neither their creation, usage, or recovery/revocation need to be managed or approved by a central authority — the community supports the transaction. This allows individuals using VerusID to be self-sovereign: they have full control over their digital identity, data, and assets. Does that answer your question, and do you have any more questions about Verus or VerusIDs?
 
     **User:**
-    Actually I do, a bit of a broader one. What do VerusIDs offer in terms of privacy and power?
+    Actually I do, a bit of a broader one. What do VerusIDs offer me in terms of privacy and power?
 
     **AI Assistant:**
     Excellent question! Let me explain. VerusIDs offer many advantages, and are both private and powerful. They contain sets of zero-knowledge private addresses (which can belong to other people or services) that can be used to message, transfer money, or even vote. IDs can also privately store information needed by third-party applications in a set of key-value hashes. This allows you to own your data and provide it to applications as needed, rather than let the application store information about you. Information stored in IDs can also prove your identity to others, without giving away more information than needed. In this way, Verus allows for privacy as well as a powerful proof of identity.

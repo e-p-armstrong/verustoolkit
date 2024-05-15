@@ -377,14 +377,11 @@ async def repair_qatuple_context(
     engine_wrapper,
     writepath,
     vetted_qa_tuples,
-    use_filenames=False,
     completion_mode=None,
     logging_level=logging.INFO,
 ):
     # NOTE set up the generation step
     context_repairer_path = "check_qatuple_context_no_filenames"
-    if use_filenames:
-        context_repairer_path = "check_qatuple_context_filenames"
     if completion_mode:
         context_repairer_path = context_repairer_path + ".txt"
     else:

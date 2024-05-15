@@ -78,7 +78,7 @@
     #### Overall Accuracy Determination: The answer is: ACCURATE.
 - role: user
   content: | # TODO this will be a case where the model got something wrong, compared to the source text.
-    Text: 
+    Text:
     """
     # error while loading shared libraries: libgomp.so.1: No such file or directory
     # error while loading shared libraries: libz.so: No such file or directory
@@ -100,7 +100,7 @@
     error while loading shared libraries: libgomp.so.1: No such file or directory
     error while loading shared libraries: libz.so: No such file or directory
     ```
-    When running `./verusd` on a Linux Distro?
+    When I run `./verusd` on a Linux distro?
     """
     
     Supposed answer to the question (this is what you are fact-checking):
@@ -233,7 +233,7 @@
     
     Question (based on text):
     """
-    How can you park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the command line?
+    How can I park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the command line?
     """
     
     Supposed answer to the question (this is what you are fact-checking):
