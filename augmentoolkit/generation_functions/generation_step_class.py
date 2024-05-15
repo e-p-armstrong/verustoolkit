@@ -154,6 +154,12 @@ class GenerationStep:
                     return ret, timeout
                 except Exception as e:
                     logging.error(f"Error in Generation Step: {e}")
+                    if self.completion_mode:
+                        print("Prompt:")
+                        print(prompt)
+                    else:
+                        print("Messages:")
+                        print(yaml.dump(messages, default_flow_style=False))
                     # if prompt_formatted:
                     #     print(prompt_formatted)
                     logging.error(

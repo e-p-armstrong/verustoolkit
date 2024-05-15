@@ -360,6 +360,9 @@ def extract_reasoning_from_context_check(response):
     determination = decision_pattern.search(response)
     if determination:
         determination = determination.group(1).strip()
+    if not determination:
+        print("Did not contain a determination! MEGA MODEL FAIL LOOK INTO THIS EVAN!!!")
+        return None, response
     if "PASS" in determination:
         print("Leaving be...")
         return (True, response)  # , completion
@@ -1141,7 +1144,7 @@ async def determine_worthy(
         except:
             print(f"DEBUG max retries exceeded for index {idx}")
 
-def chunking_algorithm(file_path, max_char_length=2800):
+def chunking_algorithm(file_path, max_char_length=2700):
     """
     This function takes a plaintext file and chunks it into paragraphs or sentences if the paragraph exceeds max_token_length.
 

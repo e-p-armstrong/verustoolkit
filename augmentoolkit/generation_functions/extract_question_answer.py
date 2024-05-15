@@ -27,4 +27,4 @@ def extract_question_answer(response):
         else:
             print("Returned none, failed to match")
             print(response)
-            return None, None
+            return None, response
