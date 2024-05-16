@@ -1,0 +1,6 @@
+[
+    "What do I need to do after copying and pasting a code snippet into the command line interface of Verus Desktop, such as a transaction or wallet command?",
+    "After copying and pasting the code snippet, you need to edit the necessary inputs for your specific needs.",
+    "You can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs. In the code snippet are the minimum requirements to unlock your VerusID.",
+    "./raw_text_input_docs/setup-vault.md"
+]

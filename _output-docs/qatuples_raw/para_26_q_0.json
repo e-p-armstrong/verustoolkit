@@ -1,0 +1,6 @@
+[
+    "What is an example of a project that uses VerusID and VDXF?",
+    "The CHIPS project, which is a decentralized poker platform, uses both VerusID and VDXF.",
+    "::: tip VDXF in Action Learn how the CHIPS project (decentralized poker) uses [VerusID](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/id_creation_process.md) and [VDXF](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/ids_keys_data.md)",
+    "./raw_text_input_docs/README_vdxf.md"
+]

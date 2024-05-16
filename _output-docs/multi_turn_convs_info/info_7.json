@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is an example of a project that uses VerusID and VDXF?",
+            "The CHIPS project, which is a decentralized poker platform, uses both VerusID and VDXF.",
+            "::: tip VDXF in Action Learn how the CHIPS project (decentralized poker) uses [VerusID](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/id_creation_process.md) and [VDXF](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/ids_keys_data.md)",
+            "./raw_text_input_docs/README_vdxf.md"
+        ],
+        [
+            "Where can I learn more about how CHIPS uses VerusID and VDXF?",
+            "You can learn more about how CHIPS uses VerusID and VDXF by reading their documentation on GitHub. Specifically, you can refer to the `id_creation_process.md` and `ids_keys_data.md` files in the `bet` repository.",
+            "::: tip VDXF in Action Learn how the CHIPS project (decentralized poker) uses [VerusID](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/id_creation_process.md) and [VDXF](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/ids_keys_data.md)",
+            "./raw_text_input_docs/README_vdxf.md"
+        ],
+        [
+            "What can I expect to learn from the CHIPS project's documentation on VerusID and VDXF?",
+            "By reading the CHIPS project's documentation, you can expect to learn about the practical application of VerusID and VDXF in a real-world use case, specifically in the context of decentralized poker. You may gain insights into how VerusID and VDXF are used to create and manage identities, as well as how they are integrated into the CHIPS platform.",
+            "::: tip VDXF in Action Learn how the CHIPS project (decentralized poker) uses [VerusID](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/id_creation_process.md) and [VDXF](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/ids_keys_data.md)",
+            "./raw_text_input_docs/README_vdxf.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3b5f9a82-bf53-40f6-8c09-b90d8d329bbf"
+]

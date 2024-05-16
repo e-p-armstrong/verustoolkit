@@ -1165,7 +1165,7 @@ async def determine_worthy(
         except:
             print(f"DEBUG max retries exceeded for index {idx}")
 
-def chunking_algorithm(file_path, max_char_length=2700):
+def chunking_algorithm(file_path, max_char_length=2400):
     """
     This function takes a plaintext file and chunks it into paragraphs or sentences if the paragraph exceeds max_token_length.
 

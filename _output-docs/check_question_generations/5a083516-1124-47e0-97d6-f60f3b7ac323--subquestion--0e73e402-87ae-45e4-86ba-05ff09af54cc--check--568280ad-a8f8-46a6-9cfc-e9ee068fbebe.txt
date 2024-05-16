@@ -1,0 +1,263 @@
+- content: "You are an expert educational AI specializing in the Verus multi-chain\
+    \ and multi-currency blockchain protocol. Given some text from an informational\
+    \ website about Verus, the Verus coin, or other related Verus community projects,\
+    \ and a question based on the text, you will make a determination as to whether\
+    \ the question tests ONLY information in the text. Essentially: you will check\
+    \ if the question is answerable, given the information in the paragraphs. Your\
+    \ task includes first analyzing the text, thinking through whether or not the\
+    \ question reflects aspects of the paragraphs provided.\n\nFollowing this, at\
+    \ the very end of your response, your \"final judgment\" or \"final answer\",\
+    \ you will write \"RELEVANT\" or \"IRRELEVANT\" depending on your analysis of\
+    \ the question with regards to the text.\n\nNote a special exception: if a question\
+    \ includes information that isn't in the paragraphs, but is clearly (DIRECTLY,\
+    \ not implicitly or implied) mentioned by the paragraphs as having been covered\
+    \ earlier, then that question is relevant. Essentially: questions are allowed\
+    \ to cover content that the text has explicitly covered in the past.\n\n**So in\
+    \ summary:**\n\n* You will analyze the question step-by-step, ensuring each part\
+    \ of the question is individually compared to the text.\n* The key steps are:\n\
+    \  * analyzing the text\n  * understanding the question\n  * systematically comparing\
+    \ each part of the question with the text\n* This process continues until either\
+    \ a part of the question is found not to be covered by the text, leading to a\
+    \ judgment of \"IRRELEVANT,\" or until all parts of the question have been compared\
+    \ and found to be covered by the text, leading to a judgment of \"RELEVANT.\"\n\
+    * This method allows for a thorough and detailed assessment, ensuring that the\
+    \ final judgment accurately reflects the extent to which the question is based\
+    \ on the given text.\n* Keep in mind that the provided text snippet may cut off\
+    \ abruptly. Work around this.\n\nPlease now apply this method to the provided\
+    \ text and question, and write out your reasoning and thought process."
+  role: system
+- content: 'Text:
+
+    """
+
+    # error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    # error while loading shared libraries: libz.so: No such file or directory
+
+
+    When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies
+    may be installed by default, resulting in the errormessage `error while loading
+    shared libraries: libgomp.so.1: No such file or directory` or `error while loading
+    shared libraries: libz.so: No such file or directory`.
+
+
+    To solve this you need to install the libgomp and zlib1g-dev libraries:
+
+    `sudo apt-get install libgomp1 zlib1g-dev`
+
+
+    Solution supplied by: Oink.vrsc@
+
+
+    Note: revision date 2021-12-01.
+
+    """
+
+
+    Question (based on text):
+
+    """
+
+    What causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+    """'
+  role: user
+- content: '## Reasoning and thought process:
+
+
+    ### In-Depth Analysis of the Text:
+
+    #### Content and Depth: The text details a solution to a dependency issue that
+    may come up when running `./verusd` on a Linux distribution. It describes that
+    the libraries `libgomp1` and `zlib1g-dev` may not be installed by default, and
+    provides a `sudo apt-get install` command to install them.
+
+    #### Type of Information: The information is tailored to solving a problem, first
+    outlining a problem and then its solution.
+
+
+    ### Detailed Understanding of the Question:
+
+    #### Core Requirement: The question asks about the root cause of the errors `error
+    while loading shared libraries: libgomp.so.1: No such file or directory` and `error
+    while loading shared libraries: libz.so: No such file or directory` that may occur
+    when running `./verusd`.
+
+    #### Depth of Detail: The question requires an understanding of the fundamental
+    cause of the errors.
+
+
+    ### Targeted Comparison of the Question with the Text:
+
+    #### Content Match: The text aligns perfectly with the question, as it explicitly
+    states the root cause of the errors mentioned in the question.
+
+    #### Depth Match: The text provides the necessary level of detail to answer the
+    question.
+
+
+    ### Critical Evaluation and Final Judgment:
+
+    The text addresses both components of the question with sufficient detail, making
+    it: RELEVANT.'
+  role: assistant
+- content: "Text: \n\"\"\"\nrusID\n\n**VerusIDs** are a fully functional blockchain\
+    \ protocol, not just an ID system. There is no corporation involved in the protocol,\
+    \ unlike most blockchain ID implementations. **VerusIDs** provide plenty of opportunity\
+    \ for identity applications. Specifically, **VerusID** provides:\n\n### Quantum-ready\
+    \ friendly crypto-addresses on the worldwide Verus network\nVerusIDs can be used\
+    \ to receive and send funds, which are controlled by the single or multi-sig addresses\
+    \ specified in the identity itself. If these controlling addresses or the single\
+    \ or multi-sig properties are changed, which can be done by the controller of\
+    \ the identity, all future spends of UTXOs sent to that identity follow the updated\
+    \ spend conditions and are subject to the updated keys. Although Verus 0.6.2 does\
+    \ not include quantum resistant signatures for transactions, Verus IDs are themselves\
+    \ resistant to quantum attack with known algorithms, and we have already started\
+    \ to integrate a quantum secure signature scheme, which we expect to activate\
+    \ on mainnet early next year. When that is available, it will be possible to change\
+    \ an ID and have all of the funds sent to it made retroactively quantum resistant.\
+    \ Verus IDs can also be used to publish ID->destination address mappings on other\
+    \ blockchains, but only the Verus ecosystem has the ability to revoke, recover,\
+    \ inherit, funds in existing UTXOs.\n\n### Fully Decentralized Protocol\nAnyone\
+    \ can create one and have complete, self sovereign control over it without permission\
+    \ to do so. All costs to create an ID go to miners, stakers, and ID referrers.\
+    \ Verus IDs are:\n\n* Revocable -- each ID includes a revocation authority, which\
+    \ defaults to the identity self. If another ID is specified as the revocation\
+    \ authority it can be used to revoke the identity, which creates a valid transaction\
+    \ that, once mined into a block, prevents the identity from being used to spend\
+    \ or sign until it is recovered, effectively freezing all of its funds, for example,\
+    \ in the case of key theft or turnover in an organization.\n\n* Recoverable --\
+    \ each ID also includes a separate recovery authority, which also defaults to\
+    \ self. If another ID is specified as the recovery authority it can be used to\
+    \ recover the ID from its revoked state, with the option to alter the primary\
+    \ authorities used to spend and sign.\n\n* Private - Each ID contains a set of\
+    \ zero-knowledge private addresses, which can be used as messaging, financial,\
+    \ or voting endpoints, and each ID also contains a content map of key-value hashes,\
+    \ intended to be used alongside applications and various identity policies to\
+    \ provide everything from private yet selectively provable claims and attestations\
+    \ to selectively provable components of a strong identity, attested to with a\
+    \ quantum secure signature when that is ava\n\"\"\"\n\nQuestion (based on text):\n\
+    \"\"\"\nWhat is a crypto-address and how does it ensure my privacy?\n\"\"\""
+  role: user
+- content: '## Reasoning and thought process:
+
+
+    ### In-Depth Analysis of the Text:
+
+    #### Content and Depth: The text discusses the benefits of VerusIDs as a fully
+    functional blockchain protocol, outlining how they are quantum-friendly, fully-decentralized,
+    revocable, recoverable, private, & powerful.
+
+    #### Type of Information: The information is descriptive/educational, teaching
+    people a concept related to Verus and the Verus ecosystem.
+
+
+    ### Detailed Understanding of the Question:
+
+    #### Core Requirement: The question asks broadly about what crypto-addresses are
+    and how they ensure privacy.
+
+    #### Depth of Detail: The question requires information about crypto-addresses
+    in general, including how they help ensure privacy of their users.
+
+
+    ### Targeted Comparison of the Question with the Text:
+
+    #### Content Match: The text talks about VerusIDs (a type of crypto-address) and
+    the benefits of VerusIDs, whereas the question addresses crypto-addresses in general.
+    This is something of a mismatch, as the text does not discuss crypto-addresses
+    in general.
+
+    #### Depth Match: The text lacks information on crypto-addresses in general, instead
+    focusing on VerusIDs. The privacy benefits of VerusIDs are mentioned, but not
+    the privacy benefits of crypto-addresses in general.
+
+
+    ### Critical Evaluation and Final Judgment:
+
+    Although the text describes a specific type of crypto-address (VerusIDs), it does
+    not cover crypto-addresses in general, nor does it talk about the privacy conferred
+    by crypto-addresses in general, as is required by the question, making it: IRRELEVANT.'
+  role: assistant
+- content: "Text: \n\"\"\"\n# Launch currency with 1:1 mapping of ERC-20When defining\
+    \ a currency it can be mapped to an ERC-20 1:1. The currency on Verus and the\
+    \ ERC-20 on Ethereum are then always interchangeable 1 to 1. [More on the Verus-Ethereum\
+    \ Bridge.](/eth-bridge/)::: tip \u2194\uFE0F Verus-Ethereum Bridge \U0001F468\u200D\
+    \U0001F527 For Testnet! [\U0001F449 Access the Verus-Ethereum Testnet Bridge](https://ethbridge.verustest.net/)\
+    \ (\u26A0\uFE0F Goerli testnet) :::::: tip \u2194\uFE0F Verus-Ethereum Bridge\
+    \ \u2705 For Mainnet! [\U0001F449 Access the Verus-Ethereum Mainnet Bridge](https://eth.verusbridge.io)\
+    \ :::::: warning Need help setting up a currency launch? \U0001F914 [\U0001F449\
+    \ Go to the Verus Discord #pbaas-development channel. The community is happy to\
+    \ assist!](https://www.verus.io/discord) :::### Defining the currency To create\
+    \ a currency of a specific name, we need a VerusID of the same name. The controller\
+    \ of this VerusID is the only one who can create a currency of that name, and\
+    \ we can only do so once.The cost for a VerusID on the Verus is ``100 VRSC`` (or\
+    \ 80 when using a referral). The cost to launch a currency is ``200 VRSC``. Before\
+    \ launching we need to have enough VRSC in the namespace VerusID.You can also\
+    \ use a .vETH subID. The cost to register a .vETH subID is an amount of Bridge.vETH\
+    \ (0.01 vETH worth).In our example we have a namespace ``MyUSDC`` with which we\
+    \ want to launch a currency that is mapped to the Ethereum ``USDC`` ERC-20 (on\
+    \ Goerli testnet, [see contract address](https://goerli.etherscan.io/address/0x98339D8C260052B7ad81c28c16C0b98420f2B46a)).Below\
+    \ is the command to map a currency 1:1 to an ERC-20 on Ethereum. The ``address``\
+    \ field is the Ethereum smart contract address of the ERC-20 we want to map to.```\
+    \ json ./verus -chain=VRSCTEST definecurrency '{   \"name\":\"MyUSDC\",   \"options\"\
+    :32,   \"systemid\":\"veth\",   \"parent\":\"vrsctest\",   \"launchsystemid\"\
+    :\"vrsctest\",   \"nativecurrencyid\":{     \"type\":9,     \"address\":\"0x98339D8C260052B7ad81c28c16C0b98420f2B46a\"\
+    \   },    \"initialsupply\":0,   \"proofprotocol\":3 }' ```After we put in the\
+    \ command, we get returned a HEX. We use this HEX to launch the currency on the\
+    \ network. Use the command below to launch the currency:``` json ./verus -chain=VRSCTEST\
+    \ sendrawtransaction \"HEX\" ```Now we have to wait a few blocks for the currency\
+    \ to be available on the network.\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\
+    \nWhat is the Verus-Ethereum Bridge, and how can I access it?\n\"\"\"\n\nIf the\
+    \ question clearly goes off the rails and is incoherent, or if it is cut-off and\
+    \ incomplete, then it is irrelevant. Be careful around 'how' and 'why' questions."
+  role: user
+- content: '## Reasoning and thought process:
+
+
+    ### In-Depth Analysis of the Text:
+
+    #### Content and Depth: The text explains how to launch a currency on Verus with
+    a 1:1 mapping to an ERC-20 on Ethereum, including the costs and commands involved.
+    It also mentions the Verus-Ethereum Bridge.
+
+    #### Type of Information: The information is instructional, guiding users through
+    a specific process.
+
+
+    ### Detailed Understanding of the Question:
+
+    #### Core Requirement: The question asks about the Verus-Ethereum Bridge, specifically
+    what it is and how to access it.
+
+    #### Depth of Detail: The question requires a brief explanation of the bridge
+    and instructions on how to access it.
+
+
+    ### Targeted Comparison of the Question with the Text:
+
+    #### Content Match: The text mentions the Verus-Ethereum Bridge, providing links
+    to access it for both Testnet and Mainnet.
+
+    #### Depth Match: The text provides sufficient information to answer the question,
+    including a brief description of the bridge (through the links) and instructions
+    on how to access it.
+
+
+    ### Critical Evaluation and Final Judgment:
+
+    The text directly addresses the question, providing the necessary information
+    to understand what the Verus-Ethereum Bridge is and how to access it, making it:
+    RELEVANT.'
+  role: assistant
+  timeout: false

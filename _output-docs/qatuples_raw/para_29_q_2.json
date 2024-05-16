@@ -1,0 +1,6 @@
+[
+    "What does the \"Destination\" component in an invoice represent?",
+    "The \"Destination\" component in an invoice represents details about the payment destination, utilizing the TransferDestination construct for flexibility across different types of destinations.",
+    "- **Flags**: Configurable flag bits for invoice options. - **Amount**: The payment amount specified in the invoice. - **Destination**: Details about the payment destination, utilizing the [TransferDestination](/addresses/transfer-destination) construct for flexibility across different types of destinations. - **Requested Currency ID**: The identifier for the currency in which the payment is requested. - **Expiry Height**: Optionally specifies a Verus blockchain height after which the invoice is considered expired. - **Max Estimated Slippage**: Defines the acceptable slippage for currency conversions, if applicable. Denoted as a satoshi representation of a percentage in decimal format (between 0 and 1). - **Accepted Systems**: Lists blockchain systems or platforms accepted for payment other than VRSC/VRSCTEST.#### Flags",
+    "./raw_text_input_docs/invoices.md"
+]

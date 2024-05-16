@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What information is visible in a public-to-private transaction, where the sender is a public address and the recipient is a private address?",
+            "In a public-to-private transaction, the sender's address and the amount sent are visible, while the recipient's address(es) and received amount(s) are not visible.",
+            "- Sender's address and the amount sent are visible - Recipient's address(es) and received amount(s) are **not** visible *Note: Correlating transactions by time and amounts between public and private addresses is still possible, potentially linking two public addresses based on transaction patterns.* ## Private-to-public ``z-address`` \u27a1\ufe0f ``VerusID@``, ``R-address``, or ``i-address`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are visible *Note: Like public-to-private transactions, there remains a possibility of correlating transactions based on timing and value, potentially linking two public addresses.* ## Private-to-private ``z-address`` \u27a1\ufe0f ``z-address`` or ``VerusID@:private`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are **not** visible",
+            "./raw_text_input_docs/README.md"
+        ],
+        [
+            "Is it possible to correlate transactions and potentially link two public addresses based on transaction patterns in a public-to-private transaction?",
+            "Yes, it is still possible to correlate transactions by time and amounts between public and private addresses, potentially linking two public addresses based on transaction patterns.",
+            "- Sender's address and the amount sent are visible - Recipient's address(es) and received amount(s) are **not** visible *Note: Correlating transactions by time and amounts between public and private addresses is still possible, potentially linking two public addresses based on transaction patterns.* ## Private-to-public ``z-address`` \u27a1\ufe0f ``VerusID@``, ``R-address``, or ``i-address`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are visible *Note: Like public-to-private transactions, there remains a possibility of correlating transactions based on timing and value, potentially linking two public addresses.* ## Private-to-private ``z-address`` \u27a1\ufe0f ``z-address`` or ``VerusID@:private`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are **not** visible",
+            "./raw_text_input_docs/README.md"
+        ],
+        [
+            "What information is visible in a private-to-public transaction, where the sender is a private address (z-address) and the recipient is a public address (VerusID@, R-address, or i-address)?",
+            "In a private-to-public transaction, the sender's address and the amount sent are not visible, while the recipient's address(es) and received amount(s) are visible.",
+            "- Sender's address and the amount sent are visible - Recipient's address(es) and received amount(s) are **not** visible *Note: Correlating transactions by time and amounts between public and private addresses is still possible, potentially linking two public addresses based on transaction patterns.* ## Private-to-public ``z-address`` \u27a1\ufe0f ``VerusID@``, ``R-address``, or ``i-address`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are visible *Note: Like public-to-private transactions, there remains a possibility of correlating transactions based on timing and value, potentially linking two public addresses.* ## Private-to-private ``z-address`` \u27a1\ufe0f ``z-address`` or ``VerusID@:private`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are **not** visible",
+            "./raw_text_input_docs/README.md"
+        ],
+        [
+            "Is it possible to correlate transactions and potentially link two public addresses based on transaction patterns in a private-to-public transaction?",
+            "Yes, like public-to-private transactions, there remains a possibility of correlating transactions based on timing and value, potentially linking two public addresses.",
+            "- Sender's address and the amount sent are visible - Recipient's address(es) and received amount(s) are **not** visible *Note: Correlating transactions by time and amounts between public and private addresses is still possible, potentially linking two public addresses based on transaction patterns.* ## Private-to-public ``z-address`` \u27a1\ufe0f ``VerusID@``, ``R-address``, or ``i-address`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are visible *Note: Like public-to-private transactions, there remains a possibility of correlating transactions based on timing and value, potentially linking two public addresses.* ## Private-to-private ``z-address`` \u27a1\ufe0f ``z-address`` or ``VerusID@:private`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are **not** visible",
+            "./raw_text_input_docs/README.md"
+        ],
+        [
+            "What information is visible in a private-to-private transaction, where both the sender and recipient are private addresses (z-address or VerusID@:private)?",
+            "In a private-to-private transaction, neither the sender's address and the amount sent nor the recipient's address(es) and received amount(s) are visible.",
+            "- Sender's address and the amount sent are visible - Recipient's address(es) and received amount(s) are **not** visible *Note: Correlating transactions by time and amounts between public and private addresses is still possible, potentially linking two public addresses based on transaction patterns.* ## Private-to-public ``z-address`` \u27a1\ufe0f ``VerusID@``, ``R-address``, or ``i-address`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are visible *Note: Like public-to-private transactions, there remains a possibility of correlating transactions based on timing and value, potentially linking two public addresses.* ## Private-to-private ``z-address`` \u27a1\ufe0f ``z-address`` or ``VerusID@:private`` - Sender's address and the amount sent are **not** visible - Recipient's address(es) and received amount(s) are **not** visible",
+            "./raw_text_input_docs/README.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "eee15148-2f45-47be-8471-7c8530d9d2d1"
+]

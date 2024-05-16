@@ -1,0 +1,6 @@
+[
+    "How does Verus's simultaneous transaction processing approach improve fairness for users compared to serial processing?",
+    "Verus's simultaneous transaction processing approach ensures that all users converting to and from a currency within the same block receive the same fair price, with no spread. This means that all users are treated equally, without any advantage or disadvantage based on the order in which their transactions are processed.",
+    "The Verus protocol solves all transactions ``simultaneously`` within a block (as opposed to serially, in order, as is done on Ethereum and all other systems which use the VM-model). This has important implications for security, fairness, and efficiency: * Elimination of front-running, back-running and sandwich attacks. * Enhancing system-wide liquidity, thus reducing slippage, as conversions going to and from any given currency within the same block are offset against each other. * Providing all users converting to and from a currency within the same block the same fair price with no spread.",
+    "./raw_text_input_docs/README_sendcurrency.md"
+]
