@@ -381,7 +381,7 @@ def extract_reasoning_from_context_check(response):
 # Postprocessing function for question/answer validation
 async def repair_qatuple_context(
     idx,
-    tup,
+    sublist,
     engine_wrapper,
     writepath,
     vetted_qa_tuples,
@@ -429,65 +429,97 @@ async def repair_qatuple_context(
     )
 
     # Resume normal control flow
-    file_path = os.path.join(writepath, f"revised_{idx}.json")
-    if os.path.exists(file_path):
-        with open(file_path, "r", encoding="utf-8") as f:
-            content = f.read()  # Read the file once and store its content
-            print(file_path)
+    
+    # Load files if existing
+    existing_files = glob.glob(
+        os.path.join(writepath, f"revised_{idx}_*.json")
+    )
+    
+    if len(existing_files) > 0:
+        print(f"revised_{idx} Already exists, loading...")
+        for file_path in existing_files:
+            with open(file_path, "r", encoding="utf-8") as f:
+                content = f.read()
             if content == "failed":
                 print("Loaded failed file")
                 vetted_qa_tuples[idx] = None
-                return None
-            # print("Loaded file:")
-            # print(content)
-            try:
-                data = json.loads(content)  # Convert the string back to JSON
-                vetted_qa_tuples[idx] = (data[0], data[1], data[2], data[3])
-                return None
-            except json.JSONDecodeError:
-                print("JSON decode error with the contents:", content)
+            else:
+                try:
+                    data = json.loads(content)
+                    print("\n\nDATA:")
+                    print(data)
+                    print("DATA[2]")
+                    print(data[2])
+                    print("DATA-1:")
+                    print(data[-1])
+                    print("------/\------\n\n")
+                    vetted_qa_tuples[idx] = (data[0], data[1], data[2], data[3])
+                except json.JSONDecodeError:
+                    print("JSON decode error with the contents:", content)
+        return
+    
+    # Gen and write files if not existing
+    # file_path = os.path.join(writepath, f"revised_{idx}.json")
+    # if os.path.exists(file_path):
+    #     with open(file_path, "r", encoding="utf-8") as f:
+    #         content = f.read()  # Read the file once and store its content
+    #         print(file_path)
+    #         if content == "failed":
+    #             print("Loaded failed file")
+    #             vetted_qa_tuples[idx] = None
+    #             return None
+    #         # print("Loaded file:")
+    #         # print(content)
+    #         try:
+    #             data = json.loads(content)  # Convert the string back to JSON
+    #             vetted_qa_tuples[idx] = (data[0], data[1], data[2], data[3])
+    #             return None
+    #         except json.JSONDecodeError:
+    #             print("JSON decode error with the contents:", content)
 
-    try:
-        revision_id = make_id()
-        revision, revision_output = await context_repairer.generate(
-            arguments={
-                "textname": tup[3],
-                "question": tup[0],
-                "answer": tup[1],
-            }
-        )
-        write_output_to_file(
-            revision_output,
-            obj_conf["PATH"]["OUTPUT"] + "/question_context_revision_generations",
-            revision_id,
-        )  # incidentally, identifying the problem and fixing it in the same step (without another planning step) works a lot better than identifying it and then trying to fix it in the next step.
-        if isinstance(revision[0], str):  # if the thing was reworded
-            vetted_qa_tuples[idx] = (
-                revision[0],
-                revision[1],
-                tup[2],
-                tup[3],
-            )  # replace the old tuple with the new one, revision doesn't have text name so we keep the old one
-        elif not revision[0]:
-            vetted_qa_tuples[
-                idx
-            ] = None  # prepare item for deletion later; right now we just store it as None because indexes
-        # else, if it passed, we just leave it be.
+    for idy, tup in enumerate(sublist): # idy is the thing after idx, lol
+        try:
+            revision_id = make_id()
+            revision, revision_output = await context_repairer.generate(
+                arguments={
+                    "textname": tup[3],
+                    "question": tup[0],
+                    "answer": tup[1],
+                }
+            )
+            write_output_to_file(
+                revision_output,
+                obj_conf["PATH"]["OUTPUT"] + "/question_context_revision_generations",
+                revision_id,
+            )  # incidentally, identifying the problem and fixing it in the same step (without another planning step) works a lot better than identifying it and then trying to fix it in the next step.
+            if isinstance(revision[0], str):  # if the thing was reworded
+                vetted_qa_tuples[idx][idy] = (
+                    revision[0],
+                    revision[1],
+                    tup[2],
+                    tup[3],
+                )  # replace the old tuple with the new one, revision doesn't have text name so we keep the old one
+            elif not revision[0]:
+                vetted_qa_tuples[idx][idy] = None  # prepare item for deletion later; right now we just store it as None because indexes
+            else:
+                pass  # if it passed, we just leave it be and do nothing
+            
+            file_path = os.path.join(writepath, f"revised_{idx}_{idy}.json")
 
-        # Write in-progress
-        if not os.path.exists(writepath):
-            os.makedirs(writepath)
+            # Write in-progress
+            if not os.path.exists(writepath):
+                os.makedirs(writepath)
 
-        if vetted_qa_tuples[idx]:
-            with open(file_path, "w") as file:
-                json.dump(vetted_qa_tuples[idx], file, indent=4)
-        else:
-            with open(file_path, "w") as file:
-                file.write("failed")
+            if vetted_qa_tuples[idx][idy]:
+                with open(file_path, "w") as file:
+                    json.dump(vetted_qa_tuples[idx][idy], file, indent=4)
+            else:
+                with open(file_path, "w") as file:
+                    file.write("failed")
 
-    except Exception as e:
-        print("!!! ERROR!", e)
-        traceback.print_exc()
+        except Exception as e:
+            print("!!! ERROR!", e)
+            traceback.print_exc()
 
 def parse_validation_step(response):
     if (
@@ -907,21 +939,8 @@ async def generate_qatuples_from_para(
     completion_mode=None,
     logging_level=None,
 ):
-    # NOTE Set up qatuple plan generation step #
 
-    prompt_path_qatuples_plan = "qatuples_plan_no_filenames"
-    if use_filenames:
-        prompt_path_qatuples_plan = "qatuples_plan_filenames"
-
-    qatuples_plan_regex = re.compile(
-        r"Reasoning and thought process \(being careful to only plan questions that are entirely based on the text provided\):\n(.+)",
-        re.IGNORECASE | re.DOTALL,
-    )
-
-    if completion_mode:
-        prompt_path_qatuples_plan = prompt_path_qatuples_plan + ".txt"
-    else:
-        prompt_path_qatuples_plan = prompt_path_qatuples_plan + ".yaml"
+    question_group = []
 
     # NOTE Set up qatuple generation step #
 
@@ -1013,7 +1032,8 @@ async def generate_qatuples_from_para(
             for file_path in existing_files:
                 with open(file_path, "r") as file:
                     qa_tuple = tuple(json.load(file))
-                vetted_qa_tuples.append(qa_tuple)
+                question_group.append(qa_tuple)
+            vetted_qa_tuples.append(question_group)
             return
         question_group_id = make_id()
         (
@@ -1051,9 +1071,10 @@ async def generate_qatuples_from_para(
                 with open(file_path, "w") as file:
                     json.dump(good_qa_tuple, file, indent=4)
 
-            vetted_qa_tuples.append(
+            question_group.append(
                 good_qa_tuple
             )  # We must filter out all None values at the end; but appending Nones lets us know where things went wrong, and how often.
+        vetted_qa_tuples.append(question_group)
     except Exception as e:
         print(f"Q ERROR: {e}")
         traceback.print_exc()

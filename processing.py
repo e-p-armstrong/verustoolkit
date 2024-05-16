@@ -187,49 +187,46 @@ async def main():
     vetted_qa_tuples = []  # tuple list of qa tuples that have been judged good
 
     # Attempt to initialize filtered_worthy_for_questions
-    try:
-        _ = filtered_worthy_for_questions
-    except NameError:
-        filtered_worthy_for_questions = []
 
-    if not filtered_worthy_for_questions:
-        # Load all files in the qa_tuples_dir if filtered_worthy_for_questions is not initialized
-        existing_files = glob.glob(os.path.join(qa_tuples_dir, "*.json"))
-        for file_path in existing_files:
-            with open(file_path, "r") as file:
-                qa_tuple = tuple(json.load(file))
-                print(f"Loaded {file}")
-            vetted_qa_tuples.append(qa_tuple)
-    else:
-        tasks = [
-            control_flow_functions.generate_qatuples_from_para(
-                idx,
-                para,
-                engine_wrapper=engine_wrapper,
-                vetted_qa_tuples=vetted_qa_tuples,
-                qa_tuples_dir=qa_tuples_dir,
-                double_check_counter=DOUBLE_CHECK_COUNTER,
-                use_filenames=USE_FILENAMES,
-                completion_mode=COMPLETION_MODE,
-                logging_level=LOG_LEVEL,
-            )
-            for idx, para in enumerate(filtered_worthy_for_questions)
-        ]
-        limited_tasks_qgen = [run_task_with_limit(task) for task in tasks]
-        for future in tqdmasyncio.tqdm.as_completed(limited_tasks_qgen):
-            await future
+    tasks = [
+        control_flow_functions.generate_qatuples_from_para(
+            idx,
+            para,
+            engine_wrapper=engine_wrapper,
+            vetted_qa_tuples=vetted_qa_tuples,
+            qa_tuples_dir=qa_tuples_dir,
+            double_check_counter=DOUBLE_CHECK_COUNTER,
+            use_filenames=USE_FILENAMES,
+            completion_mode=COMPLETION_MODE,
+            logging_level=LOG_LEVEL,
+        )
+        for idx, para in enumerate(filtered_worthy_for_questions)
+    ]
+    limited_tasks_qgen = [run_task_with_limit(task) for task in tasks]
+    for future in tqdmasyncio.tqdm.as_completed(limited_tasks_qgen):
+        await future
 
     print(
-        "-------------- QUESTIONS CREATED ------------- STATS SO FAR (may be wrong if run was continued from interruption):"
+    "-------------- QUESTIONS CREATED ------------- STATS SO FAR (may be wrong if run was continued from interruption):"
     )
-    nones = list(filter(lambda x: x[0] is None, vetted_qa_tuples))
-    print(f"Nones: {len(nones)}")
-    print(f"Non-nones: {len(vetted_qa_tuples) - len(nones)}")
-    print(f"Total: {len(vetted_qa_tuples)}")
-    # filter out all None values
-    vetted_qa_tuples = [qa for qa in vetted_qa_tuples if qa[0] is not None]
+    total_nones = 0
+    total_non_nones = 0
+    filtered_vetted_qa_tuples = []
+
+    for sublist in vetted_qa_tuples:
+        filtered_sublist = [qa for qa in sublist if qa is not None]
+        if filtered_sublist:
+            filtered_vetted_qa_tuples.append(filtered_sublist)
+            total_nones += len(sublist) - len(filtered_sublist)
+            total_non_nones += len(filtered_sublist)
+
+    print(f"Nones: {total_nones}")
+    print(f"Non-nones: {total_non_nones}")
+    print(f"Total: {total_nones + total_non_nones}")
     print("---------------- ONTO EXAMPLES GENERATION-------------------")
 
+    # print(vetted_qa_tuples)
+    filtered_vetted_qa_tuples
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
@@ -239,83 +236,62 @@ async def main():
     
     
     
+    # HERE WE GROUP THE QUESTIONS BY PARAGRAPH IN A DICT WHERE THE KEY IS THE PARA NUMBER (like para_0, para_1, etc. from the previous step)
+    
+    # TODO
     
     
     
     
-    
-    ##### QATUPLES REPAIR
+    ##### QATUPLES REPAIR (modify so that it iterates over the paragraph groups and calls repair on each question in each group, writing to files prefixed by para_x_q_y depending on the idx or key of the group and the idx of the question in the group) instead of just going over all questions and relying on distinct texts.
+    # This next step will also create groups, we don't need to group_by_text that will go away, we create and append to the groups as we revise the questions. That way it is compatible with the rest of the steps.
     
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
 
     # Assuming vetted_qa_tuples is a list that might or might not exist
-    try:
-        _ = vetted_qa_tuples
-    except NameError:
-        vetted_qa_tuples = []
 
     # Load all files at the start if vetted_qa_tuples is empty
-    if not vetted_qa_tuples:
-        # Check if the directory exists
-        if os.path.exists(writepath):
-            # List all files in directory
-            for file_name in os.listdir(writepath):
-                file_path = os.path.join(writepath, file_name)
-                try:  # for each file already generated, see if it succeeded or failed; if it succeeded, append its contents; if it failed, append None for stats logging
-                    with open(file_path, "r", encoding="utf-8") as f:
-                        content = f.read()
-                        print(f"Loading file: {file_path}")
-                        if content == "failed":
-                            vetted_qa_tuples.append(None)
-                        else:
-                            try:
-                                data = json.loads(content)
-                                vetted_qa_tuples.append(
-                                    (data[0], data[1], data[2], data[3])
-                                )
-                            except json.JSONDecodeError:
-                                print("JSON decode error with the contents:", content)
-                                vetted_qa_tuples.append(None)
-                except Exception as e:
-                    print(f"Error reading {file_path}: {e}")
-
-    else:
-        old_tuples = vetted_qa_tuples.copy()
-        tasks = [
-            control_flow_functions.repair_qatuple_context(
-                idx,
-                tup,
-                engine_wrapper,
-                writepath,
-                vetted_qa_tuples,
-                completion_mode=COMPLETION_MODE,
-            )
-            for idx, tup in enumerate(vetted_qa_tuples)
-        ]
-        limited_tasks_qcorrection = [run_task_with_limit(task) for task in tasks]
-        for future in tqdmasyncio.tqdm.as_completed(limited_tasks_qcorrection):
-            await future
+    tasks = [
+        control_flow_functions.repair_qatuple_context(
+            idx,
+            sublist,
+            engine_wrapper,
+            writepath,
+            filtered_vetted_qa_tuples,
+            completion_mode=COMPLETION_MODE,
+        )
+        for idx, sublist in enumerate(filtered_vetted_qa_tuples)
+    ]
+    limited_tasks_qcorrection = [run_task_with_limit(task) for task in tasks]
+    for future in tqdmasyncio.tqdm.as_completed(limited_tasks_qcorrection):
+        await future
 
     # Print stats related to revised qatuples, and filter out nones (questions that were unanswerable due to lack of context).
     import json
     import os
 
     print("-------------- QUESTIONS REVISED ------------- STATS SO FAR:")
-    nones = list(filter(lambda x: x is None, vetted_qa_tuples))
-    print(f"Nones: {len(nones)}")
-    print(f"Non-nones: {len(vetted_qa_tuples) - len(nones)}")
-    print(f"Total: {len(vetted_qa_tuples)}")
-    # filter out all None values
-    vetted_qa_tuples = [qa for qa in vetted_qa_tuples if qa is not None]
+    total_nones = 0
+    total_non_nones = 0
+    revised_filtered_vetted_qa_tuples = []
+
+    for sublist in filtered_vetted_qa_tuples:
+        filtered_sublist = [qa for qa in sublist if qa is not None]
+        if filtered_sublist:
+            revised_filtered_vetted_qa_tuples.append(filtered_sublist)
+            total_nones += len(sublist) - len(filtered_sublist)
+            total_non_nones += len(filtered_sublist)
+
+    print(f"Nones: {total_nones}")
+    print(f"Non-nones: {total_non_nones}")
+    print(f"Total: {total_nones + total_non_nones}")
     print("---------------- ONTO EXAMPLES GENERATION-------------------")
-
-    qa_tuples_by_paragraph = control_flow_functions.group_by_text(vetted_qa_tuples)
-
 
     ##### QATUPLES REPAIR
 
+    # Safe to delete the stuff below until the next comment about deletion ONCE THE ABOVE IS WORKING
 
     import os
 
@@ -335,11 +311,12 @@ async def main():
             multi_turn_convs_info,
             multi_turn_convs_info_dir,
         )
-        for idx, group in enumerate(qa_tuples_by_paragraph)
+        for idx, group in enumerate(revised_filtered_vetted_qa_tuples)
     ]
     limited_tasks_infocreation = [run_task_with_limit(task) for task in tasks]
     for future in tqdmasyncio.tqdm.as_completed(limited_tasks_infocreation):
         await future
+    # You can safely delete the stuff above until the other comment about deletion
 
     engine_wrapper = EngineWrapper(
         model=LARGE_LOGICAL_MODEL,
@@ -383,7 +360,6 @@ async def main():
         await future
 
     # # Yay! Now you have a dataset!
-    # ### GPT wrote the cell below. I think it successfully converts things to ShareGPT format for use with axolotl, but I am not sure because I don't know that format very well and haven't used Axolotl. However, the json produced by the second function looks fine.
 
     import os
     import json
