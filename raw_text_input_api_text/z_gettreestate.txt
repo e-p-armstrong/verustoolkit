@@ -1,0 +1,31 @@
+z_gettreestate "hash|height"
+Return information about the given block's tree state.
+
+Arguments:
+1. "hash|height"          (string, required) The block hash or height. Height can be negative where -1 is the last known valid block
+
+Result:
+{
+  "hash": "hash",         (string) hex block hash
+  "height": n,            (numeric) block height
+  "sprout": {
+    "skipHash": "hash",   (string) hash of most recent block with more information
+    "commitments": {
+      "finalRoot": "hex", (string)
+      "finalState": "hex" (string)
+    }
+  },
+  "sapling": {
+    "skipHash": "hash",   (string) hash of most recent block with more information
+    "commitments": {
+      "finalRoot": "hex", (string)
+      "finalState": "hex" (string)
+    }
+  }
+}
+
+Examples:
+> verus z_gettreestate "00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "z_gettreestate", "params": ["00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/
+> verus z_gettreestate 12800
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "z_gettreestate", "params": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

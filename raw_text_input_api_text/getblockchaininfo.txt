@@ -1,0 +1,49 @@
+getblockchaininfo
+Returns an object containing various state info regarding block chain processing.
+
+Note that when the chain tip is at the last block before a network upgrade activation,
+consensus.chaintip != consensus.nextblock.
+
+Result:
+{
+  "chain": "xxxx",        (string) current network type of blockchain (main, test, regtest)
+  "name": "xxxx",         (string) current network name of blockchain ID (VRSC, VRSCTEST, PBAASNAME)
+  "chainid": "xxxx",      (string) blockchain ID (i-address of the native blockchain currency)
+  "blocks": xxxxxx,         (numeric) the current number of blocks processed in the server
+  "headers": xxxxxx,        (numeric) the current number of headers we have validated
+  "bestblockhash": "...", (string) the hash of the currently best block
+  "difficulty": xxxxxx,     (numeric) the current difficulty
+  "verificationprogress": xxxx, (numeric) estimate of verification progress [0..1]
+  "chainwork": "xxxx"     (string) total amount of work in active chain, in hexadecimal
+  "size_on_disk": xxxxxx,       (numeric) the estimated size of the block and undo files on disk
+  "commitments": xxxxxx,    (numeric) the current number of note commitments in the commitment tree
+  "softforks": [            (array) status of softforks in progress
+     {
+        "id": "xxxx",        (string) name of softfork
+        "version": xx,         (numeric) block version
+        "enforce": {           (object) progress toward enforcing the softfork rules for new-version blocks
+           "status": xx,       (boolean) true if threshold reached
+           "found": xx,        (numeric) number of blocks with the new version found
+           "required": xx,     (numeric) number of blocks required to trigger
+           "window": xx,       (numeric) maximum size of examined window of recent blocks
+        },
+        "reject": { ... }      (object) progress toward rejecting pre-softfork blocks (same fields as "enforce")
+     }, ...
+  ],
+  "upgrades": {                (object) status of network upgrades
+     "xxxx" : {                (string) branch ID of the upgrade
+        "name": "xxxx",        (string) name of upgrade
+        "activationheight": xxxxxx,  (numeric) block height of activation
+        "status": "xxxx",      (string) status of upgrade
+        "info": "xxxx",        (string) additional information about upgrade
+     }, ...
+  },
+  "consensus": {               (object) branch IDs of the current and upcoming consensus rules
+     "chaintip": "xxxxxxxx",   (string) branch ID used to validate the current chain tip
+     "nextblock": "xxxxxxxx"   (string) branch ID that the next block will be validated under
+  }
+}
+
+Examples:
+> verus getblockchaininfo 
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockchaininfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

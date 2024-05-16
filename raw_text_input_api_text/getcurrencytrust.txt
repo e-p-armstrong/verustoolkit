@@ -1,0 +1,16 @@
+getcurrencytrust '["currencyid",...]'
+
+
+
+Arguments
+"["currencyid",...]"                                       (strarray, optional) if specified, only returns rating values for specified currencies, otherwise all
+
+Result:
+{
+  "setratings":{"id":JSONRatingObject,...},        (jsonobj) an ID/ratings key/value object
+  "currencytrustmode":<n>                            (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list
+}
+
+Examples:
+> verus getcurrencytrust '["currencyid",...]'
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getcurrencytrust", "params": ['["currencyid",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

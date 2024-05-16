@@ -1,0 +1,24 @@
+getaddresstxids
+
+Returns the txids for an address(es) (requires addressindex to be enabled).
+
+Arguments:
+{
+  "addresses"
+    [
+      "address"  (string) The base58check encoded address
+      ,...
+    ]
+  "start" (number) The start block height
+  "end" (number) The end block height
+}
+
+Result:
+[
+  "transactionid"  (string) The transaction id
+  ,...
+]
+
+Examples:
+> verus getaddresstxids '{"addresses": ["RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87"]}'
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaddresstxids", "params": [{"addresses": ["RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

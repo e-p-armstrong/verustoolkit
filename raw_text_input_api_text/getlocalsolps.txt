@@ -1,0 +1,11 @@
+getlocalsolps
+
+Returns the average local solutions per second since this node was started.
+This is the same information shown on the metrics screen (if enabled).
+
+Result:
+xxx.xxxxx     (numeric) Solutions per second average
+
+Examples:
+> verus getlocalsolps 
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getlocalsolps", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

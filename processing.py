@@ -67,9 +67,9 @@ async def main():
 
     INPUT_FOLDER = config["PATH"]["INPUT"]
 
-    extension = ".md"
+    # extension = ".md"
 
-    path = f"{INPUT_FOLDER}/*" + extension
+    path = f"{INPUT_FOLDER}/*"# + extension
     source_texts = glob.glob(path)
 
     print(source_texts)

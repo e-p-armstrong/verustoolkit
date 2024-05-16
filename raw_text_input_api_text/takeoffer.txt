@@ -1,0 +1,23 @@
+takeoffer fromaddress '{"txid":"txid" | "tx":"hextx", "changeaddress":"transparentoriaddress", "deliver":"fullidnameoriaddresstodeliver" | {"currency":"currencynameorid","amount":n}, "accept":{"address":"addressorid","currency":"currencynameorid","amount":n} | {identitydefinition} | {"txout":{"serializedtxout"}}}' (returntx) (feeamount)
+
+If the current wallet can afford the swap, this accepts a swap offer on the blockchain, creates a transaction
+to execute it, and posts the transaction to the blockchain.
+
+Arguments
+"fromaddress"            (string, required) The Sapling, VerusID, or wildcard address to send funds from, including fees for ID swaps.
+                                              "*", "R*", or "i*" are valid wildcards
+{
+"txid"               (string, required) The transaction ID for the offer to accept
+"tx"                 (string, required) The hex transaction to complete in order to accept the offer
+"deliver"            (object, required) One of "fullidnameoriaddresstotrade" or {"currency":"currencynameorid", "amount":value}
+"accept"             (object, required) One of {"address":"addressorid","currency":"currencynameorid","amount"} or {identitydefinition}
+"feeamount"          (number, optional) Specific fee amount requested instead of default miner's fee
+}
+
+Result:
+   "txid" : "transactionid" (string) The transaction id if (returntx) is false
+   "hextx" : "hex"         (string) The hexadecimal, serialized transaction if (returntx) is true
+
+Examples:
+> verus takeoffer fromaddress '{"txid":"txid" | "tx":"hextx", "deliver":"fullidnameoriaddresstodeliver" | {"currency":"currencynameorid","amount":...}, "accept":{"address":"addressorid","currency":"currencynameorid","amount"} | {identitydefinition}}' (returntx) (feeamount)
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "takeoffer", "params": [fromaddress {"txid":"txid" | "tx":"hextx", "deliver":"fullidnameoriaddresstodeliver" | {"currency":"currencynameorid","amount":...}, "accept":{"address":"addressorid","currency":"currencynameorid","amount"} | {identitydefinition}} (returntx) (feeamount)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

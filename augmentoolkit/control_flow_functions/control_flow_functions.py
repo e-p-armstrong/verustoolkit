@@ -1201,13 +1201,16 @@ def chunking_algorithm(file_path, max_char_length=2400):
         # Check if the paragraph itself exceeds the max token length
         if paragraph_token_count > max_char_length:
             # Fallback to character chunking for this paragraph
+            # Just realized that with this approach we drop the rest of the very long paragraph. Not ideal. TODO Fix.
+            character_array = []
             characters = list(paragraph)
             for character in characters:
                 if token_count + 1 <= max_char_length:
-                    current_chunk.append(character)
+                    character_array.append(character)
                     token_count += 1
                 else:
-                    chunks_with_source.append(("".join(current_chunk), source_name))
+                    current_chunk.append("".join(character_array))
+                    chunks_with_source.append(("\n\n".join(current_chunk), source_name))
                     current_chunk = [character]
                     token_count = 1
         else:
@@ -1221,7 +1224,7 @@ def chunking_algorithm(file_path, max_char_length=2400):
 
     # Add the last chunk if it exists
     if current_chunk:
-        chunks_with_source.append((" ".join(current_chunk), source_name))
+        chunks_with_source.append(("\n\n".join(current_chunk), source_name))
 
     return chunks_with_source
 

@@ -1,0 +1,15 @@
+getidentity "name@ || iid" (height) (txproof) (txproofheight)
+
+
+
+Arguments
+    "name@ || iid"                       (string, required) name followed by "@" or i-address of an identity
+    "height"                             (number, optional) default=current height, return identity as of this height, if -1 include mempool
+    "txproof"                            (bool, optional) default=false, if true, returns proof of ID
+    "txproofheight"                      (number, optional) default="height", height from which to generate a proof
+
+Result:
+
+Examples:
+> verus getidentity "name@"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getidentity", "params": ["name@"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

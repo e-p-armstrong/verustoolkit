@@ -1,0 +1,15 @@
+getblocksubsidy height
+
+Returns block subsidy reward, taking into account the mining slow start and the founders reward, of block at index provided.
+
+Arguments:
+1. height         (numeric, optional) The block height.  If not provided, defaults to the current height of the chain.
+
+Result:
+{
+  "miner" : x.xxx           (numeric) The mining reward amount in KMD.
+}
+
+Examples:
+> verus getblocksubsidy 1000
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockubsidy", "params": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

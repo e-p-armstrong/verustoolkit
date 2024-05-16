@@ -1,0 +1,23 @@
+decodescript "hex"
+
+Decode a hex-encoded script.
+
+Arguments:
+1. "hex"     (string) the hex encoded script
+
+Result:
+{
+  "asm":"asm",   (string) Script public key
+  "hex":"hex",   (string) hex encoded public key
+  "type":"type", (string) The output type
+  "reqSigs": n,    (numeric) The required signatures
+  "addresses": [   (json array of string)
+     "address"     (string) transparent address
+     ,...
+  ],
+  "p2sh","address" (string) script address
+}
+
+Examples:
+> verus decodescript "hexstring"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "decodescript", "params": ["hexstring"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

@@ -1,0 +1,13 @@
+z_getoperationresult (["operationid", ... ]) 
+
+Retrieve the result and status of an operation which has finished, and then remove the operation from memory.
+
+Arguments:
+1. "operationid"         (array, optional) A list of operation ids we are interested in.  If not provided, examine all operations known to the node.
+
+Result:
+"    [object, ...]"      (array) A list of JSON objects
+
+Examples:
+> verus z_getoperationresult '["operationid", ... ]'
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "z_getoperationresult", "params": ['["operationid", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

@@ -1,0 +1,17 @@
+convertpassphrase "walletpassphrase"
+
+Converts Verus Desktop, Agama, Verus Agama, or Verus Mobile passphrase to a private key and WIF (for import with importprivkey).
+
+Arguments:
+1. "walletpassphrase"   (string, required) Wallet passphrase
+
+Result:
+"walletpassphrase": "walletpassphrase",   (string) Wallet passphrase you entered
+"address": "verus address",             (string) Address corresponding to your passphrase
+"pubkey": "publickeyhex",               (string) The hex value of the raw public key
+"privkey": "privatekeyhex",             (string) The hex value of the raw private key
+"wif": "wif"                            (string) The private key in WIF format to use with 'importprivkey'
+
+Examples:
+> verus convertpassphrase "walletpassphrase"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "convertpassphrase", "params": ["walletpassphrase"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/

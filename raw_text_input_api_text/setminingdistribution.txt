@@ -1,0 +1,18 @@
+setminingdistribution ( "jsonminingdistribution" )
+
+Sets multiple mining outputs with amounts that will be used to calculate relative outputs to each address for any reward
+
+Arguments:
+     {
+       "uniquedestination1":value    (key/number, required) valid destination address and relative value output to it
+       "uniquedestination2":value    (key/number, optional) destination address and relative value output
+       ...
+     }
+
+
+Result:
+NULL for success, exceptoin otherwise
+
+Examples:
+> verus setminingdistribution {"myaddress":0.5, "otheraddress":0.5}
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "setminingdistribution", "params": [{"myaddress":0.5, "otheraddress":0.5}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/
