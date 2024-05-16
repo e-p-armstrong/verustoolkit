@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I make the `Start.sh` file executable?",
+            "To make the `Start.sh` file executable, you need to create a copy of it and rename the copy to `start.command`. Here are the steps:\n\n1. Click on `Start.sh` and copy it.\n2. Click in an empty space in your folder and paste the copied file, which will result in a new `start copy.sh` file.\n3. Rename `start copy.sh` to `start.command`.\n\nThis will create an executable file that can be run by double-clicking on it.",
+            "We have all the settings ready to go, but the file we just edited is not executable right now. 12. Click `Start.sh` and click `copy \"Start.sh\"` 13. Click in an empty space in you folder and click `Paste items`, which will result in a new `start copy.sh` file. 14. rename `start copy.sh` to `start.command` Now we have an executable file that will run when you doubleclick. 15. Doubleclick `start.command` and your machine will start mining. Created by Oink.vrsc@. Note: last revision date 2020-02-26.",
+            "./raw_txt_input/mac-faq03-mining_guide.md"
+        ],
+        [
+            "What happens when I double-click on the `start.command` file?",
+            "When you double-click on the `start.command` file, your machine will start mining.",
+            "We have all the settings ready to go, but the file we just edited is not executable right now. 12. Click `Start.sh` and click `copy \"Start.sh\"` 13. Click in an empty space in you folder and click `Paste items`, which will result in a new `start copy.sh` file. 14. rename `start copy.sh` to `start.command` Now we have an executable file that will run when you doubleclick. 15. Doubleclick `start.command` and your machine will start mining. Created by Oink.vrsc@. Note: last revision date 2020-02-26.",
+            "./raw_txt_input/mac-faq03-mining_guide.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "babdb248-a87e-41cc-90b8-30b0537b2c7c"
+]

@@ -1,0 +1,38 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help you with any questions you have about Verus. What's on your mind today?\n\n**User:**\nI'm trying to understand the `listidentities` command. Specifically, what does the `includewatchonly` argument do when used with this command?\n\n**AI Assistant:**\nThe `includewatchonly` argument, when set to `true`, includes identities in the list that are either watched or are co-signers with the wallet, but for which the wallet cannot spend or sign transactions. This argument is set to `false` by default. Does that make sense?\n\n**User:**\nThat helps! What about the `includecansign` argument? What does it do?\n\n**AI Assistant:**\nThe `includecansign` argument, when set to `true`, includes identities in the list for which the wallet can only sign transactions, but not spend or authorize. This argument is set to `true` by default.\n\n**User:**\nAnd what about the `includecanspend` argument?\n\n**AI Assistant:**\nThe `includecanspend` argument, when set to `true`, includes identities in the list for which the wallet has spend or authorization capabilities. This argument is set to `true` by default.\n\n**User:**\nSo, what are all the optional arguments that can be used with the `listidentities` command?\n\n**AI Assistant:**\nThe `listidentities` command has three optional arguments: `includecanspend`, `includecansign`, and `includewatchonly`. These arguments can be used to filter the list of identities based on the level of control or access associated with each identity.\n\n**User:**\nAnd, just to clarify, what is the purpose of the `listidentities` command in Verus?\n\n**AI Assistant:**\nThe `listidentities` command is used to list the identities associated with a Verus wallet. It helps you keep track of the identities you have, and what kind of control or access you have over them.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `includewatchonly` argument do when used with the `listidentities` command?",
+            "The `includewatchonly` argument, when set to `true`, includes identities in the list that are either watched or are co-signers with the wallet, but for which the wallet cannot spend or sign transactions. This argument is set to `false` by default.",
+            "### `listidentities (includecanspend) (includecansign) (includewatchonly)` #### Arguments:   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us",
+            "./raw_txt_input/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What does the `includecansign` argument do when used with the `listidentities` command?",
+            "The `includecansign` argument, when set to `true`, includes identities in the list for which the wallet can only sign transactions, but not spend or authorize. This argument is set to `true` by default.",
+            "### `listidentities (includecanspend) (includecansign) (includewatchonly)` #### Arguments:   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us",
+            "./raw_txt_input/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What does the `includecanspend` argument do when used with the `listidentities` command?",
+            "The `includecanspend` argument, when set to `true`, includes identities in the list for which the wallet has spend or authorization capabilities. This argument is set to `true` by default.",
+            "### `listidentities (includecanspend) (includecansign) (includewatchonly)` #### Arguments:   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us",
+            "./raw_txt_input/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What are the optional arguments that can be used with the `listidentities` command?",
+            "The `listidentities` command has three optional arguments: `includecanspend`, `includecansign`, and `includewatchonly`. These arguments can be used to filter the list of identities based on the level of control or access associated with each identity.",
+            "### `listidentities (includecanspend) (includecansign) (includewatchonly)` #### Arguments:   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us",
+            "./raw_txt_input/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the purpose of the `listidentities` command in Verus?",
+            "The `listidentities` command is used to list the identities associated with a Verus wallet.",
+            "### `listidentities (includecanspend) (includecansign) (includewatchonly)` #### Arguments:   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us",
+            "./raw_txt_input/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

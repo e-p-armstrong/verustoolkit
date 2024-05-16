@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHi there! I'm here to help with any questions you might have about Verus. Please, ask me anything!\n\n**User:**\nI've been having some trouble running `./verusd` on my Linux distribution. I keep getting these error messages: \"error while loading shared libraries: libgomp.so.1: No such file or directory\" and \"error while loading shared libraries: libz.so: No such file or directory\". Do you know how to solve this?\n\n**AI Assistant:**\nI can help you with that! To solve these error messages, you need to install the `libgomp` and `zlib1g-dev` libraries by running the command `sudo apt-get install libgomp1 zlib1g-dev`.\n\n**User:**\nYes, I was afraid that might be the case. What error message can I expect to see when running `./verusd` on a Linux distribution, like Debian or Devuan?\n\n**AI Assistant:**\nWhen running `./verusd` on a Linux distribution, you may encounter error messages like `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`.\n\n**User:**\nThat's what I saw. But why do these error messages occur when running `./verusd` on a Linux distribution?\n\n**AI Assistant:**\nThese error messages occur because not all dependencies are installed by default on a Linux distribution, specifically the `libgomp` and `zlib1g-dev` libraries. That's why you need to install them manually using the command I provided earlier.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can you solve the error messages \"error while loading shared libraries: libgomp.so.1: No such file or directory\" and \"error while loading shared libraries: libz.so: No such file or directory\" when running `./verusd` on a Linux distribution?",
+            "To solve these error messages, you need to install the `libgomp` and `zlib1g-dev` libraries by running the command `sudo apt-get install libgomp1 zlib1g-dev`.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory # error while loading shared libraries: libz.so: No such file or directory When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`. To solve this you need to install the libgomp and zlib1g-dev libraries: `sudo apt-get install libgomp1 zlib1g-dev` Solution supplied by: Oink.vrsc@ Note: revision date 2021-12-01.",
+            "./raw_txt_input/faq-lin09_libgomp.so.1.md"
+        ],
+        [
+            "What error message may occur when running `./verusd` on a Linux distribution, such as Debian or Devuan?",
+            "The error message may be `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory # error while loading shared libraries: libz.so: No such file or directory When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`. To solve this you need to install the libgomp and zlib1g-dev libraries: `sudo apt-get install libgomp1 zlib1g-dev` Solution supplied by: Oink.vrsc@ Note: revision date 2021-12-01.",
+            "./raw_txt_input/faq-lin09_libgomp.so.1.md"
+        ],
+        [
+            "Why do these error messages occur when running `./verusd` on a Linux distribution?",
+            "These error messages occur because not all dependencies are installed by default on a Linux distribution, specifically the `libgomp` and `zlib1g-dev` libraries.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory # error while loading shared libraries: libz.so: No such file or directory When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`. To solve this you need to install the libgomp and zlib1g-dev libraries: `sudo apt-get install libgomp1 zlib1g-dev` Solution supplied by: Oink.vrsc@ Note: revision date 2021-12-01.",
+            "./raw_txt_input/faq-lin09_libgomp.so.1.md"
+        ]
+    ]
+]

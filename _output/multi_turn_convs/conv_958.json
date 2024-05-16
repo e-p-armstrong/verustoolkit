@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm interested in learning more about Verus IDs. What problems does Verus ID solve, and how does it provide a solution?\n\n**AI Assistant:**\nVerus ID provides an elegant solution to previously unsolved problems by offering quantum-ready friendly identity names and blockchain funds addresses as self-sovereign, revocable, recoverable identities. This means that Verus IDs address the issues of control, security, and privacy that are present in traditional identity systems. Does that make sense?\n\n**User:**\nThat's helpful, thanks! I'm also wondering, what advantages do Verus IDs have over today's blockchain systems?\n\n**AI Assistant:**\nVerus IDs have several advantages over today's blockchain systems. They are self-sovereign, revocable, and recoverable identities, which provide a higher level of control and security for users. This means that users have full control over their digital identity, and can revoke or recover their identity as needed, without relying on a central authority. This level of control and security is not typically found in traditional blockchain systems. Do you have any more questions about Verus IDs or their advantages?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What problems does Verus ID solve, and how does it provide a solution?",
+            "Verus ID provides an elegant solution to previously unsolved problems by offering quantum-ready friendly identity names and blockchain funds addresses as self-sovereign, revocable, recoverable identities.",
+            "In fact, trading off decentralized, censorship resistant public systems for this risk to your cryptocurrency assets is such a fundamental issue in blockchain systems today that it is considered an acceptable price for having the benefit of full control over your own funds and blockchain assets.Verus ID provides an elegant solution to these previously unsolved, fundamental problems, and also provides quantum-ready friendly identity names and blockchain funds addresses as self-sovereign, revocable, recoverable identities that provide the following advantages over today\u2019s blockchain systems:",
+            "./raw_txt_input/release_notes.md"
+        ],
+        [
+            "What advantages do Verus IDs have over today's blockchain systems?",
+            "Verus IDs have the following advantages over today's blockchain systems: they are self-sovereign, revocable, and recoverable identities, which provide a higher level of control and security for users.",
+            "In fact, trading off decentralized, censorship resistant public systems for this risk to your cryptocurrency assets is such a fundamental issue in blockchain systems today that it is considered an acceptable price for having the benefit of full control over your own funds and blockchain assets.Verus ID provides an elegant solution to these previously unsolved, fundamental problems, and also provides quantum-ready friendly identity names and blockchain funds addresses as self-sovereign, revocable, recoverable identities that provide the following advantages over today\u2019s blockchain systems:",
+            "./raw_txt_input/release_notes.md"
+        ]
+    ]
+]

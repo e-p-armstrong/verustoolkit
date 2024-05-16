@@ -1,6 +1,0 @@
-[
-    "After deleting the Verus testnet data directories, what steps are necessary to complete the testnet reset process?",
-    "After deleting the directories, you need to restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native) to complete the reset process. This will allow you to start using your testnet again with a clean slate.",
-    "# Testnet Reset To reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native): - Linux: `~/.komodo/vrsctest`, `~/.verustest` - Mac OS: `~/Library/Application Support/Komodo/vrsctest`, `~/Library/Application\\ Support/VerusTest` - Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest` Information compiled by Oink.vrsc@ from Verus Release Notes. Note: revision date 2023-05-15.",
-    "./raw_txt_input/how-to_reset_testnet.md"
-]

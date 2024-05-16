@@ -1,32 +1,26 @@
 [
     [
         [
-            "What does `OPTION_GATEWAY` do when set in a Verus currency definition?",
-            "When `OPTION_GATEWAY` is set to 128 in a Verus currency definition, it means that this currency routes external currencies.",
-            "         // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
-            "./raw_txt_input/release_notes.md"
+            "How can you solve the error messages \"error while loading shared libraries: libgomp.so.1: No such file or directory\" and \"error while loading shared libraries: libz.so: No such file or directory\" when running `./verusd` on a Linux distribution?",
+            "To solve these error messages, you need to install the `libgomp` and `zlib1g-dev` libraries by running the command `sudo apt-get install libgomp1 zlib1g-dev`.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory # error while loading shared libraries: libz.so: No such file or directory When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`. To solve this you need to install the libgomp and zlib1g-dev libraries: `sudo apt-get install libgomp1 zlib1g-dev` Solution supplied by: Oink.vrsc@ Note: revision date 2021-12-01.",
+            "./raw_txt_input/faq-lin09_libgomp.so.1.md"
         ],
         [
-            "What does `OPTION_PBAAS` do when set in a Verus currency definition?",
-            "When `OPTION_PBAAS` is set to 256 in a Verus currency definition, it indicates that this is a PBaaS (Private Blockchain as a Service) chain definition.",
-            "         // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
-            "./raw_txt_input/release_notes.md"
+            "What error message may occur when running `./verusd` on a Linux distribution, such as Debian or Devuan?",
+            "The error message may be `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory # error while loading shared libraries: libz.so: No such file or directory When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`. To solve this you need to install the libgomp and zlib1g-dev libraries: `sudo apt-get install libgomp1 zlib1g-dev` Solution supplied by: Oink.vrsc@ Note: revision date 2021-12-01.",
+            "./raw_txt_input/faq-lin09_libgomp.so.1.md"
         ],
         [
-            "What does `OPTION_GATEWAY_CONVERTER` do when set in a Verus currency definition?",
-            "When `OPTION_GATEWAY_CONVERTER` is set to 512 in a Verus currency definition, it means that for a specific PBaaS gateway, this is the default converter and will publish prices.",
-            "         // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
-            "./raw_txt_input/release_notes.md"
-        ],
-        [
-            "What does `OPTION_NFT_TOKEN` do when set in a Verus currency definition?",
-            "When `OPTION_NFT_TOKEN` is set to 2048 in a Verus currency definition, it creates a single satoshi NFT token, which tokenizes control over the root ID.",
-            "         // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
-            "./raw_txt_input/release_notes.md"
+            "Why do these error messages occur when running `./verusd` on a Linux distribution?",
+            "These error messages occur because not all dependencies are installed by default on a Linux distribution, specifically the `libgomp` and `zlib1g-dev` libraries.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory # error while loading shared libraries: libz.so: No such file or directory When running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`. To solve this you need to install the libgomp and zlib1g-dev libraries: `sudo apt-get install libgomp1 zlib1g-dev` Solution supplied by: Oink.vrsc@ Note: revision date 2021-12-01.",
+            "./raw_txt_input/faq-lin09_libgomp.so.1.md"
         ]
     ],
     "will",
     "be",
     "replaced",
-    "ca6c31b9-faca-498a-8c40-f0c8acc99b65"
+    "ea9981ce-1b70-49cd-91c1-f31819968220"
 ]
