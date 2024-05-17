@@ -1,0 +1,6 @@
+[
+    "What is the argument required for the `generate` command?",
+    "The `generate` command requires one argument, `numblocks`, which is a numeric value specifying how many blocks are generated immediately.",
+    "generate numblocks Mine blocks immediately (before the RPC call returns) Note: this function can only be used on the regtest network Arguments: 1. numblocks  (numeric) How many blocks are generated immediately. Result [ blockhashes ]   (array) hashes of blocks generated Examples: Generate 11 blocks > verus generate 11",
+    "./raw_text_input_api_text/generate"
+]

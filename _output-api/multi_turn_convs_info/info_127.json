@@ -1,0 +1,44 @@
+[
+    [
+        [
+            "What is the purpose of the `backupwallet` command in Verus?",
+            "The `backupwallet` command is used to safely copy the `wallet.dat` file to a specified destination filename. This command helps to create a backup of your wallet, ensuring that your funds and wallet information are secure.",
+            "backupwallet \"destination\" Safely copies wallet.dat to destination filename Arguments: 1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option. Result: \"path\"       (string) The full path of the destination file Examples: > verus backupwallet \"backupdata\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ],
+        [
+            "What arguments are required for the `backupwallet` command?",
+            "The `backupwallet` command requires one argument: the destination filename, which is a string. This is the file where the `wallet.dat` will be copied.",
+            "backupwallet \"destination\" Safely copies wallet.dat to destination filename Arguments: 1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option. Result: \"path\"       (string) The full path of the destination file Examples: > verus backupwallet \"backupdata\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ],
+        [
+            "How can I specify the directory where the backup file will be saved?",
+            "The directory where the backup file will be saved is set by the `-exportdir` option. You need to specify this option before running the `backupwallet` command.",
+            "backupwallet \"destination\" Safely copies wallet.dat to destination filename Arguments: 1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option. Result: \"path\"       (string) The full path of the destination file Examples: > verus backupwallet \"backupdata\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ],
+        [
+            "What is the result of running the `backupwallet` command?",
+            "The result of running the `backupwallet` command is the full path of the destination file, which is returned as a string.",
+            "backupwallet \"destination\" Safely copies wallet.dat to destination filename Arguments: 1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option. Result: \"path\"       (string) The full path of the destination file Examples: > verus backupwallet \"backupdata\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ],
+        [
+            "How can I use the `backupwallet` command using the command line?",
+            "You can use the `backupwallet` command using the command line by running the following command: `verus backupwallet \"destination\"`, where \"destination\" is the filename where you want to save the backup.",
+            "backupwallet \"destination\" Safely copies wallet.dat to destination filename Arguments: 1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option. Result: \"path\"       (string) The full path of the destination file Examples: > verus backupwallet \"backupdata\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ],
+        [
+            "How can I use the `backupwallet` command using curl?",
+            "You can use the `backupwallet` command using curl by running the following command: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`, where \"myusername\" is your username, \"backupdata\" is the destination filename, and `http://127.0.0.1:27486/` is the RPC endpoint.",
+            "backupwallet \"destination\" Safely copies wallet.dat to destination filename Arguments: 1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option. Result: \"path\"       (string) The full path of the destination file Examples: > verus backupwallet \"backupdata\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a6238c4e-c47b-48dd-a168-ab863aee8ede"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `resendwallettransactions` command in Verus?",
+            "The `resendwallettransactions` command is intended for testing purposes only. It immediately re-broadcasts unconfirmed wallet transactions to all peers. Normally, the wallet code periodically re-broadcasts automatically, making this command unnecessary for regular use.",
+            "resendwallettransactions Immediately re-broadcast unconfirmed wallet transactions to all peers. Intended only for testing; the wallet code periodically re-broadcasts automatically. Returns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ],
+        [
+            "What does the `resendwallettransactions` command return?",
+            "The `resendwallettransactions` command returns an array of transaction IDs that were re-broadcast.",
+            "resendwallettransactions Immediately re-broadcast unconfirmed wallet transactions to all peers. Intended only for testing; the wallet code periodically re-broadcasts automatically. Returns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8b9a5694-dd30-4b48-b7dd-3c9e52363623"
+]

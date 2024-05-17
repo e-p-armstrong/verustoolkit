@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `z_validatepaymentdisclosure` command in Verus?",
+    "The `z_validatepaymentdisclosure` command is used to validate a payment disclosure. However, it is currently an experimental feature and is disabled by default.",
+    "z_validatepaymentdisclosure \"paymentdisclosure\" Validates a payment disclosure. EXPERIMENTAL FEATURE WARNING: z_validatepaymentdisclosure is disabled. To enable it, restart zcashd with the -experimentalfeatures and -paymentdisclosure commandline options, or add these two lines to the zcash.conf file: experimentalfeatures=1 paymentdisclosure=1 Arguments: 1. \"paymentdisclosure\"   (string, required) Hex data string, with \"zpd:\" prefix. Examples: > verus z_validatepaymentdisclosure \"zpd:706462ff004c561a0447ba2ec51184e6c204...\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_validatepaymentdisclosure\", \"params\": [\"zpd:706462ff004c561a0447ba2ec51184e6c204...\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_validatepaymentdisclosure"
+]

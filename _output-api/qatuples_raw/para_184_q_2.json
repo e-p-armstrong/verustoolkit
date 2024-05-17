@@ -1,0 +1,6 @@
+[
+    "What is the default value for `heightstart` and `heightend` if they are not specified?",
+    "If `heightstart` is not specified, it defaults to 0. If `heightend` is not specified, it defaults to the maximum height.",
+    "getexports \"chainname\" (heightstart) (heightend) Returns pending export transfers to the specified currency from start height to end height if specified Arguments \"chainname\"           (string, required) name/ID of the currency to look for. no parameter returns current chain \"heightstart\"          (int, optional)   default=0 only return exports at or above this height \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height Result:  [{   \"height\": n,   \"txid\": \"hexid\",   \"txoutnum\": n,   \"partialtransactionproof\": \"hexstr\",   \"transfers\": [{transfer1}, {transfer2},...] }, ...] Examples: > verus getexports \"chainname\" (heightstart) (heightend) > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getexports\", \"params\": [\"chainname\" (heightstart) (heightend)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getexports"
+]

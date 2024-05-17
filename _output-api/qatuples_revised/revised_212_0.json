@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `dumpwallet` command in Verus?",
+    "The `dumpwallet` command is used to dump taddr wallet keys in a human-readable format to a file.",
+    "dumpwallet \"filename\" (omitemptytaddresses) Dumps taddr wallet keys in a human-readable format. Overwriting an existing file is not permitted. Arguments: 1. \"filename\"  (string, required) The filename, saved in folder set by verusd -exportdir option 2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet                        (do not use this option without being sure that all addresses of interest are included) Result: \"path\"      (string) The full path of the destination file Examples: > verus dumpwallet \"test\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/dumpwallet"
+]

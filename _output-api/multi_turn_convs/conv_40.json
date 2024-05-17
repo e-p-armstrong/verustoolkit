@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help you with any Verus-related questions. What's on your mind today?\n\n**User:**\nI'm trying to use the `listsinceblock` command to list transactions since a specified block using the Verus command-line interface. Can you help me with that?\n\n**AI Assistant:**\nYou can use the `listsinceblock` command to list transactions since a specified block by running a command like this:\n\n```\nverus listsinceblock \"block_hash\" number_of_confirmations\n```\n\nReplace `block_hash` with the hash of the block you want to start listing transactions from, and `number_of_confirmations` with the number of confirmations you want to require for the transactions. Does that help?\n\n**User:**\nThat's really helpful, thanks! But I was also wondering, can I use the `listsinceblock` command with a remote Verus node using JSON-RPC?\n\n**AI Assistant:**\nYes, you can use the `listsinceblock` command with a remote Verus node using JSON-RPC. Here's an example of how to do it:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"block_hash\", number_of_confirmations] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `myusername` with your Verus node username, `block_hash` with the hash of the block you want to start listing transactions from, `number_of_confirmations` with the number of confirmations you want to require for the transactions, and `http://127.0.0.1:27486/` with the URL of your Verus node. Have you tried using JSON-RPC with Verus before?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I use the `listsinceblock` command to list transactions since a specified block using the Verus command-line interface?",
+            "You can use the `listsinceblock` command to list transactions since a specified block by running a command like this:\n\n```\nverus listsinceblock \"block_hash\" number_of_confirmations\n```\n\nReplace `block_hash` with the hash of the block you want to start listing transactions from, and `number_of_confirmations` with the number of confirmations you want to require for the transactions.",
+            ". Examples: > verus listsinceblock > verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listsinceblock"
+        ],
+        [
+            "Can I use the `listsinceblock` command with a remote Verus node using JSON-RPC?",
+            "Yes, you can use the `listsinceblock` command with a remote Verus node using JSON-RPC. Here's an example of how to do it:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"block_hash\", number_of_confirmations] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `myusername` with your Verus node username, `block_hash` with the hash of the block you want to start listing transactions from, `number_of_confirmations` with the number of confirmations you want to require for the transactions, and `http://127.0.0.1:27486/` with the URL of your Verus node.",
+            ". Examples: > verus listsinceblock > verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listsinceblock"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI've been playing around with the Verus API and I'm trying to understand the `migrate_converttoexport` method. Can you tell me what its purpose is?\n\n**AI Assistant:**\nThe `migrate_converttoexport` method is used to convert a raw transaction to a cross-chain export. It takes four parameters: `rawTx`, `dest_symbol`, `export_amount`, and returns the finished export transaction, plus the payouts. Does that help clarify things for you?\n\n**User:**\nThat makes sense. So, what should I do with the finished export transaction that's returned by `migrate_converttoexport`?\n\n**AI Assistant:**\nThe finished export transaction, plus the payouts, should be passed to the `migrate_createimporttransaction` method on a KMD node to get the corresponding import transaction. Does that answer your question?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `migrate_converttoexport` method in Verus?",
+            "The `migrate_converttoexport` method is used to convert a raw transaction to a cross-chain export. It takes four parameters: `rawTx`, `dest_symbol`, `export_amount`, and returns the finished export transaction, plus the payouts.",
+            "migrate_converttoexport rawTx dest_symbol export_amount Convert a raw transaction to a cross-chain export. If neccesary, the transaction should be funded using fundrawtransaction. Finally, the transaction should be signed using signrawtransaction The finished export transaction, plus the payouts, should be passed to the \"migrate_createimporttransaction\" method on a KMD node to get the corresponding import transaction.",
+            "./raw_text_input_api_text/migrate_converttoexport"
+        ],
+        [
+            "What should be done with the finished export transaction returned by `migrate_converttoexport`?",
+            "The finished export transaction, plus the payouts, should be passed to the `migrate_createimporttransaction` method on a KMD node to get the corresponding import transaction.",
+            "migrate_converttoexport rawTx dest_symbol export_amount Convert a raw transaction to a cross-chain export. If neccesary, the transaction should be funded using fundrawtransaction. Finally, the transaction should be signed using signrawtransaction The finished export transaction, plus the payouts, should be passed to the \"migrate_createimporttransaction\" method on a KMD node to get the corresponding import transaction.",
+            "./raw_text_input_api_text/migrate_converttoexport"
+        ]
+    ]
+]

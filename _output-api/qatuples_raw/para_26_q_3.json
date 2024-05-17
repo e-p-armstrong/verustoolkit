@@ -1,0 +1,6 @@
+[
+    "How can you use the output of the `dumpprivkey` command?",
+    "You can use the output of the `dumpprivkey` command with the `importprivkey` command to import the private key into your Verus wallet.",
+    "dumpprivkey \"t-addr\" Reveals the private key corresponding to 't-addr'. Then the importprivkey can be used with this output Arguments: 1. \"t-addr\"  (string, required) The transparent address for the private key Result: \"key\"     (string) The private key Examples: > verus dumpprivkey \"myaddress\" > verus importprivkey \"mykey\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpprivkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/dumpprivkey"
+]

@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `gettxoutproof` command in Verus?",
+            "The `gettxoutproof` command returns a hex-encoded proof that a specific transaction (identified by its \"txid\") was included in a block.",
+            "gettxoutproof [\"txid\",...] ( blockhash ) Returns a hex-encoded proof that \"txid\" was included in a block. NOTE: By default this function only works sometimes. This is when there is an unspent output in the utxo for this transaction. To make it always work, you need to maintain a transaction index, using the -txindex command line option or specify the block in which the transaction is included in manually (by blockhash). Return the raw transaction data. Arguments: 1. \"txids\"    (string) A json array of txids to filter   [    \"txid\"   (string) A transaction hash    ,...   ] 2. \"block hash\" (string, optional) If specified, looks for txid in the block with this hash Result: \"data\"      (string) A string that is a serialized, hex-encoded data for the proof.",
+            "./raw_text_input_api_text/gettxoutproof"
+        ],
+        [
+            "Under what conditions does the `gettxoutproof` command work by default?",
+            "By default, the `gettxoutproof` command only works when there is an unspent output in the UTXO (Unspent Transaction Output) for the specified transaction.",
+            "gettxoutproof [\"txid\",...] ( blockhash ) Returns a hex-encoded proof that \"txid\" was included in a block. NOTE: By default this function only works sometimes. This is when there is an unspent output in the utxo for this transaction. To make it always work, you need to maintain a transaction index, using the -txindex command line option or specify the block in which the transaction is included in manually (by blockhash). Return the raw transaction data. Arguments: 1. \"txids\"    (string) A json array of txids to filter   [    \"txid\"   (string) A transaction hash    ,...   ] 2. \"block hash\" (string, optional) If specified, looks for txid in the block with this hash Result: \"data\"      (string) A string that is a serialized, hex-encoded data for the proof.",
+            "./raw_text_input_api_text/gettxoutproof"
+        ],
+        [
+            "How can you make the `gettxoutproof` command work always, even when there is no unspent output in the UTXO?",
+            "To make the `gettxoutproof` command work always, you need to maintain a transaction index, which can be done by using the `-txindex` command line option or by specifying the block in which the transaction is included manually (by block hash).",
+            "gettxoutproof [\"txid\",...] ( blockhash ) Returns a hex-encoded proof that \"txid\" was included in a block. NOTE: By default this function only works sometimes. This is when there is an unspent output in the utxo for this transaction. To make it always work, you need to maintain a transaction index, using the -txindex command line option or specify the block in which the transaction is included in manually (by blockhash). Return the raw transaction data. Arguments: 1. \"txids\"    (string) A json array of txids to filter   [    \"txid\"   (string) A transaction hash    ,...   ] 2. \"block hash\" (string, optional) If specified, looks for txid in the block with this hash Result: \"data\"      (string) A string that is a serialized, hex-encoded data for the proof.",
+            "./raw_text_input_api_text/gettxoutproof"
+        ],
+        [
+            "What are the arguments required for the `gettxoutproof` command?",
+            "The `gettxoutproof` command requires two arguments:\n\n1. \"txids\" - a JSON array of txids to filter, where each txid is a string representing a transaction hash.\n2. \"block hash\" (optional) - a string representing the block hash in which to look for the txid.",
+            "gettxoutproof [\"txid\",...] ( blockhash ) Returns a hex-encoded proof that \"txid\" was included in a block. NOTE: By default this function only works sometimes. This is when there is an unspent output in the utxo for this transaction. To make it always work, you need to maintain a transaction index, using the -txindex command line option or specify the block in which the transaction is included in manually (by blockhash). Return the raw transaction data. Arguments: 1. \"txids\"    (string) A json array of txids to filter   [    \"txid\"   (string) A transaction hash    ,...   ] 2. \"block hash\" (string, optional) If specified, looks for txid in the block with this hash Result: \"data\"      (string) A string that is a serialized, hex-encoded data for the proof.",
+            "./raw_text_input_api_text/gettxoutproof"
+        ],
+        [
+            "What is the result of the `gettxoutproof` command?",
+            "The result of the `gettxoutproof` command is a string that is a serialized, hex-encoded data for the proof.",
+            "gettxoutproof [\"txid\",...] ( blockhash ) Returns a hex-encoded proof that \"txid\" was included in a block. NOTE: By default this function only works sometimes. This is when there is an unspent output in the utxo for this transaction. To make it always work, you need to maintain a transaction index, using the -txindex command line option or specify the block in which the transaction is included in manually (by blockhash). Return the raw transaction data. Arguments: 1. \"txids\"    (string) A json array of txids to filter   [    \"txid\"   (string) A transaction hash    ,...   ] 2. \"block hash\" (string, optional) If specified, looks for txid in the block with this hash Result: \"data\"      (string) A string that is a serialized, hex-encoded data for the proof.",
+            "./raw_text_input_api_text/gettxoutproof"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e7929a1c-d382-4cb8-b134-31ee09fdbb45"
+]

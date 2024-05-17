@@ -1,0 +1,6 @@
+[
+    "How can I set a time lock on an identity using the Verus command line?",
+    "You can set a time lock on an identity using the `setidentitytimelock` command. The basic format of this command is:\n\n```\nverus setidentitytimelock \"id@\" '{\"unlockatblock\":absoluteblockheight || \"setunlockdelay\":numberofblocksdelayafterunlock}'\n```\n\nThis command takes two arguments: the ID to be locked, and a JSON object specifying the lock parameters. The lock parameters can be either `unlockatblock` (specifying the absolute block height at which the lock will be released) or `setunlockdelay` (specifying the number of blocks to delay after the unlock).",
+    "Examples: > verus setidentitytimelock \"id@\" '{\"unlockatblock\":absoluteblockheight || \"setunlockdelay\":numberofblocksdelayafterunlock}' (returntx) > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setidentitytimelock\", \"params\": [\"id@\" '{\"unlockatblock\":absoluteblockheight || \"setunlockdelay\":numberofblocksdelayafterunlock}' (returntx)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/setidentitytimelock"
+]

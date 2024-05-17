@@ -1,0 +1,6 @@
+[
+    "What is the format of the `getaccount` command, and what is the required argument?",
+    "The format of the `getaccount` command is `getaccount \"VRSC_address\"`, and the required argument is the VRSC address for account lookup, which is a string.",
+    "getaccount \"VRSC_address\" DEPRECATED. Returns the account associated with the given address. Arguments: 1. \"VRSC_address\" (string, required) The VRSC address for account lookup. Result: \"accountname\"    (string) the account address Examples: > verus getaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getaccount"
+]

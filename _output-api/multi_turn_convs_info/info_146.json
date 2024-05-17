@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `coinsupply` command in Verus?",
+            "The `coinsupply` command in Verus returns coin supply information at a given block height. If no height is specified, it defaults to the current block height.",
+            "coinsupply <height> Return coin supply information at a given block height. If no height is given, the current height is used. Arguments: 1. \"height\"   (integer, optional) Block height Result: {  \"result\" : \"success\",     (string) If the request was successful.  \"coin\" : \"VRSC\",       (string) The currency symbol of the native coin of this blockchain.  \"height\" : 420,         (integer) The height of this coin supply data  \"supply\" : \"777.0\",      (float) The transparent coin supply  \"zfunds\" : \"0.777\",      (float) The shielded coin supply (in zaddrs)  \"total\" : \"777.777\",     (float) The total coin supply, i.e. sum of supply + zfunds } Examples: > verus coinsupply 420 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"coinsupply\", \"params\": [420] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/coinsupply"
+        ],
+        [
+            "What are the arguments required for the `coinsupply` command?",
+            "The `coinsupply` command takes one optional argument: \"height\", which is an integer representing the block height for which you want to retrieve coin supply information.",
+            "coinsupply <height> Return coin supply information at a given block height. If no height is given, the current height is used. Arguments: 1. \"height\"   (integer, optional) Block height Result: {  \"result\" : \"success\",     (string) If the request was successful.  \"coin\" : \"VRSC\",       (string) The currency symbol of the native coin of this blockchain.  \"height\" : 420,         (integer) The height of this coin supply data  \"supply\" : \"777.0\",      (float) The transparent coin supply  \"zfunds\" : \"0.777\",      (float) The shielded coin supply (in zaddrs)  \"total\" : \"777.777\",     (float) The total coin supply, i.e. sum of supply + zfunds } Examples: > verus coinsupply 420 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"coinsupply\", \"params\": [420] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/coinsupply"
+        ],
+        [
+            "What information does the `coinsupply` command return?",
+            "The `coinsupply` command returns a JSON object with the following properties:\n\n* \"result\": a string indicating whether the request was successful\n* \"coin\": a string representing the currency symbol of the native coin of the blockchain\n* \"height\": an integer representing the block height of the coin supply data\n* \"supply\": a float representing the transparent coin supply\n* \"zfunds\": a float representing the shielded coin supply (in zaddrs)\n* \"total\": a float representing the total coin supply, which is the sum of the transparent and shielded coin supplies",
+            "coinsupply <height> Return coin supply information at a given block height. If no height is given, the current height is used. Arguments: 1. \"height\"   (integer, optional) Block height Result: {  \"result\" : \"success\",     (string) If the request was successful.  \"coin\" : \"VRSC\",       (string) The currency symbol of the native coin of this blockchain.  \"height\" : 420,         (integer) The height of this coin supply data  \"supply\" : \"777.0\",      (float) The transparent coin supply  \"zfunds\" : \"0.777\",      (float) The shielded coin supply (in zaddrs)  \"total\" : \"777.777\",     (float) The total coin supply, i.e. sum of supply + zfunds } Examples: > verus coinsupply 420 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"coinsupply\", \"params\": [420] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/coinsupply"
+        ],
+        [
+            "How can I use the `coinsupply` command to retrieve coin supply information at a specific block height?",
+            "You can use the `coinsupply` command to retrieve coin supply information at a specific block height by specifying the height as an argument. For example, to retrieve coin supply information at block height 420, you can run the following command:\n```\nverus coinsupply 420\n```\nAlternatively, you can use the JSON-RPC API to make the same request:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"coinsupply\", \"params\": [420] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "coinsupply <height> Return coin supply information at a given block height. If no height is given, the current height is used. Arguments: 1. \"height\"   (integer, optional) Block height Result: {  \"result\" : \"success\",     (string) If the request was successful.  \"coin\" : \"VRSC\",       (string) The currency symbol of the native coin of this blockchain.  \"height\" : 420,         (integer) The height of this coin supply data  \"supply\" : \"777.0\",      (float) The transparent coin supply  \"zfunds\" : \"0.777\",      (float) The shielded coin supply (in zaddrs)  \"total\" : \"777.777\",     (float) The total coin supply, i.e. sum of supply + zfunds } Examples: > verus coinsupply 420 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"coinsupply\", \"params\": [420] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/coinsupply"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2c39cec0-c794-43ff-9d26-39a9fefe1def"
+]

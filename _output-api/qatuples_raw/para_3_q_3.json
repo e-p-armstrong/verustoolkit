@@ -1,0 +1,6 @@
+[
+    "How can I use the `decodescript` command to decode a hex-encoded script using the Verus JSON-RPC interface?",
+    "You can use the `decodescript` command to decode a hex-encoded script using the Verus JSON-RPC interface by sending a JSON-RPC request with the following format:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decodescript\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `\"hexstring\"` with the actual hex-encoded script you want to decode, and `myusername` with your actual username.",
+    "decodescript \"hex\" Decode a hex-encoded script. Arguments: 1. \"hex\"   (string) the hex encoded script Result: {  \"asm\":\"asm\",  (string) Script public key  \"hex\":\"hex\",  (string) hex encoded public key  \"type\":\"type\", (string) The output type  \"reqSigs\": n,  (numeric) The required signatures  \"addresses\": [  (json array of string)   \"address\"   (string) transparent address   ,...  ],  \"p2sh\",\"address\" (string) script address } Examples: > verus decodescript \"hexstring\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decodescript\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/decodescript"
+]

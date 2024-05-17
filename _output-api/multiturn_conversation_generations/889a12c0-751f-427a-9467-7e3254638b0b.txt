@@ -1,0 +1,409 @@
+- content: "You are a crypto expert and creative writer specializing in the Verus\
+    \ multi-chain and multi-currency blockchain protocol. You will write a short conversation\
+    \ between a curious user and a helpful AI assistant knowledgeable about Verus,\
+    \ in which the user asks some questions about Verus and the AI assistant answers\
+    \ them. The questions the user must ask will be provided; the answers the assistant\
+    \ should return will also be provided. You must use these questions and answers\
+    \ directly in your conversation.\n\n**Rules for conversation writing:**\n\n* Messages\
+    \ can take place across multiple lines.\n* The questions and answers should be\
+    \ essentially the same as provided, though you may add \"conversational fluff\"\
+    \ around the core of the questions and answers in order to make it natural-sounding.\n\
+    * The Verus AI should make the first message, introducing itself and asking if\
+    \ the user has any questions about Verus or the Verus community.\n* The user then\
+    \ asks their first question. The AI then provides an answer. And that back-and-forth\
+    \ continues until all questions are asked and all answers are provided.\n* Use\
+    \ Markdown formatting.\n* If applicable, try to make the context behind the questions\
+    \ make sense. So if a person's asking about an error, they probably aren't just\
+    \ asking about it out of the blue \u2014 they've probably encountered the error.\n\
+    * You are allowed to slightly change the wording of the questions, and remove\
+    \ duplication, in order to make the conversation flow nicer."
+  role: system
+- content: '**QUESTION:**
+
+    What causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    These errors may be caused by required dependencies for `./verusd` not being installed
+    by default on a Linux distribution. The lack of required dependencies results
+    in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    **QUESTION:**
+
+    If I run `./verusd` and encounter these errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    How can I solve them?
+
+
+    **ANSWER:**
+
+    In order to solve these errors, which are likely caused by dependencies not being
+    installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **AI Assistant:**
+
+    Hello! I''m here to help with any questions you might have about Verus. Please,
+    ask me anything!
+
+
+    **User:**
+
+    Yeah, so I''ve run into some errors and I''m not sure what''s causing them. Do
+    you know what causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **AI Assistant:**
+
+    Great question! These errors may be caused by required dependencies for `./verusd`
+    not being installed by default on a Linux distribution. The lack of required dependencies
+    results in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`. Do you have any further questions about these
+    errors?
+
+
+    **User:**
+
+    Yes, actually. If I run `./verusd` and encounter the errors I mentioned earlier,
+    how can I solve them?
+
+
+    **AI Assistant:**
+
+    Good question! In order to solve these errors, which are likely caused by dependencies
+    not being installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time. Did this solve your problem?'
+  role: assistant
+- content: "**QUESTION:**\nWhat are VerusIDs?\n\n**ANSWER:**\nVerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network.\n\n**QUESTION:**\nWhat does \"quantum-ready\
+    \ friendly crypto-addresses\" mean, in the context of Verus and VerusIDs?\n\n\
+    **ANSWER:**\nThe phrase \"quantum-ready friendly crypto-addresses,\" in the context\
+    \ of Verus and VerusIDs, refers to the resistance of VerusIDs against attack by\
+    \ quantum computers that use existing algorithms. Furthermore, with a quantum-secure\
+    \ signature scheme for transactions, it becomes possible to change an ID and have\
+    \ all the funds sent to it be made retroactively quantum resistant. VerusIDs may\
+    \ also be used to publish ID to destination mappings on other blockchains; however,\
+    \ only the Verus ecosystem can revoke, recover, or inherit funds in existing UTXOs.\n\
+    \nThe basic idea is that quantum computers, once invented, have the potential\
+    \ to break many cryptographic algorithms used to secure digital assets. Therefore,\
+    \ VerusIDs being \"quantum-ready\" means that they have been designed to be resistant\
+    \ to attempts by quantum computers (using known algorithms) to attack them, once\
+    \ such computers are created. This is an essential measure to future-proof Verus\
+    \ against exploitation by hostile actors with quantum computers.\n\n**QUESTION:**\n\
+    What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**ANSWER:**\n\
+    A number of factors make VerusIDs fully decentralized. VerusIDs can be created\
+    \ by anyone, without needing permission from a central authority, and give their\
+    \ creator complete, self-sovereign control over their own ID. The costs incurred\
+    \ creating an ID go to miners, stakers, and ID referrers \u2014 essentially, the\
+    \ community members who help maintain Verus \u2014 rather than single entity like\
+    \ a corporation or government. VerusIDs can be revoked or recovered by another\
+    \ ID if specified (by default, the revocation authority and recovery authority\
+    \ are the ID itself).\n\nEssentially, VerusIDs being fully decentralized means\
+    \ that neither their creation, usage, or recovery/revocation need to be managed\
+    \ or approved by a central authority \u2014 the community supports the transaction.\
+    \ This allows individuals using VerusID to be self-sovereign: they have full control\
+    \ over their digital identity, data, and assets.\n\n**QUESTION:**\nWhat do VerusIDs\
+    \ offer me in terms of privacy and power?\n\n**ANSWER:**\nVerusIDs offer many\
+    \ advantages, and are both private and powerful. They contain sets of zero-knowledge\
+    \ private addresses (which can belong to other people or services) that can be\
+    \ used to message, transfer money, or even vote. IDs can also privately store\
+    \ information needed by third-party applications in a set of key-value hashes.\
+    \ This allows you to own your data and provide it to applications as needed, rather\
+    \ than let the application store information about you. Information stored in\
+    \ IDs can also prove your identity to others, without giving away more information\
+    \ than needed. In this way, Verus allows for privacy as well as a powerful proof\
+    \ of identity.\n\nVerusIDs are also notable in that multiple addresses or other\
+    \ IDs can be defined as primary addresses. The agreement of some number of primary\
+    \ addresses (configurable) may be required for an ID to spend, sign, or alter\
+    \ itself. Further security is added by the fact that the revocation authority\
+    \ (the power to revoke an ID) may only be modified by the revocation authority\
+    \ itself. The same applies to the recovery authority (an authority that can recover\
+    \ a revoked address). Each of these authorities (revocation and recovery) may\
+    \ be their own identities, potentially being controlled themselves by multiple\
+    \ primary addresses.\n\nIn short, VerusIDs are private with your information,\
+    \ and configurable with who controls them and what consensus is required to change\
+    \ them."
+  role: user
+- content: "## Conversation that answers the provided questions:\n**AI Assistant:**\n\
+    Hey there! I'm here to assist you in understanding Verus. What's on your mind\
+    \ today?\n\n**User:**\nI'm really new to all this. Maybe it's a bit basic, but,\
+    \ what are VerusIDs?\n\n**AI Assistant:**\nI'll explain! VerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network. It's all right that you're new, I'm happy that\
+    \ you're interested in learning about Verus! Do you have any further questions\
+    \ about VerusIDs or Verus in general?\n\n**User:**\nActually, yes, I do, you said\
+    \ something I'm curious about. What does \"quantum-ready friendly crypto-addresses\"\
+    \ mean, in the context of Verus and VerusIDs?\n\n**AI Assistant:**\nSure, I'll\
+    \ clarify what I meant. The phrase \"quantum-ready friendly crypto-addresses,\"\
+    \ in the context of Verus and VerusIDs, refers to the resistance of VerusIDs against\
+    \ attack by quantum computers that use existing algorithms. Furthermore, with\
+    \ a quantum-secure signature scheme for transactions, it becomes possible to change\
+    \ an ID and have all the funds sent to it be made retroactively quantum resistant.\
+    \ VerusIDs may also be used to publish ID to destination mappings on other blockchains;\
+    \ however, only the Verus ecosystem can revoke, recover, or inherit funds in existing\
+    \ UTXOs.\n\nThe basic idea is that quantum computers, once invented, have the\
+    \ potential to break many cryptographic algorithms used to secure digital assets.\
+    \ Therefore, VerusIDs being \"quantum-ready\" means that they have been designed\
+    \ to be resistant to attempts by quantum computers (using known algorithms) to\
+    \ attack them, once such computers are created. This is an essential measure to\
+    \ future-proof Verus against exploitation by hostile actors with quantum computers.\
+    \ Does that make sense? Do you have any further questions?\n\n**User:**\nSomething\
+    \ you said earlier interested me. You said VerusIDs offer \"full decentralization.\"\
+    \ What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**AI\
+    \ Assistant:**\nThat's a great question! A number of factors make VerusIDs fully\
+    \ decentralized. VerusIDs can be created by anyone, without needing permission\
+    \ from a central authority, and give their creator complete, self-sovereign control\
+    \ over their own ID. The costs incurred creating an ID go to miners, stakers,\
+    \ and ID referrers \u2014 essentially, the community members who help maintain\
+    \ Verus \u2014 rather than single entity like a corporation or government. VerusIDs\
+    \ can be revoked or recovered by another ID if specified (by default, the revocation\
+    \ authority and recovery authority are the ID itself).\n\nEssentially, VerusIDs\
+    \ being fully decentralized means that neither their creation, usage, or recovery/revocation\
+    \ need to be managed or approved by a central authority \u2014 the community supports\
+    \ the transaction. This allows individuals using VerusID to be self-sovereign:\
+    \ they have full control over their digital identity, data, and assets. Does that\
+    \ answer your question, and do you have any more questions about Verus or VerusIDs?\n\
+    \n**User:**\nActually I do, a bit of a broader one. What do VerusIDs offer me\
+    \ in terms of privacy and power?\n\n**AI Assistant:**\nExcellent question! Let\
+    \ me explain. VerusIDs offer many advantages, and are both private and powerful.\
+    \ They contain sets of zero-knowledge private addresses (which can belong to other\
+    \ people or services) that can be used to message, transfer money, or even vote.\
+    \ IDs can also privately store information needed by third-party applications\
+    \ in a set of key-value hashes. This allows you to own your data and provide it\
+    \ to applications as needed, rather than let the application store information\
+    \ about you. Information stored in IDs can also prove your identity to others,\
+    \ without giving away more information than needed. In this way, Verus allows\
+    \ for privacy as well as a powerful proof of identity.\n\nVerusIDs are also notable\
+    \ in that multiple addresses or other IDs can be defined as primary addresses.\
+    \ The agreement of some number of primary addresses (configurable) may be required\
+    \ for an ID to spend, sign, or alter itself. Further security is added by the\
+    \ fact that the revocation authority (the power to revoke an ID) may only be modified\
+    \ by the revocation authority itself. The same applies to the recovery authority\
+    \ (an authority that can recover a revoked address). Each of these authorities\
+    \ (revocation and recovery) may be their own identities, potentially being controlled\
+    \ themselves by multiple primary addresses.\n\nIn short, VerusIDs are private\
+    \ with your information, and configurable with who controls them and what consensus\
+    \ is required to change them. Do you have any more questions about VerusIDs?"
+  role: assistant
+- content: '**QUESTION:**
+
+    What is the purpose of registering a name commitment in Verus, and how does it
+    benefit the user?
+
+
+    **ANSWER:**
+
+    The purpose of registering a name commitment in Verus is to reserve a unique name
+    for an identity without revealing the actual name. This allows the user to ensure
+    that the name is available and prevents others from front-running the registration
+    of the name. The name commitment also enables the user to specify a referral identity,
+    parent name or ID, and source of funds, which helps to lower network costs and
+    dictate issuance rules and pricing.
+
+
+
+    **QUESTION:**
+
+    What are the required arguments for the `registernamecommitment` command, and
+    what do they represent?
+
+
+    **ANSWER:**
+
+    The required arguments for the `registernamecommitment` command are:
+
+
+    * `name`: The unique name to commit to.
+
+    * `controladdress`: The address that will control this commitment.
+
+
+    These arguments are necessary to create a valid name commitment. The `controladdress`
+    should be present in the current wallet that is registering the ID, and it may
+    receive change.
+
+
+
+    **QUESTION:**
+
+    What is the significance of the `referralidentity` argument in the `registernamecommitment`
+    command?
+
+
+    **ANSWER:**
+
+    The `referralidentity` argument is an optional parameter that specifies a friendly
+    name or identity address as a referral mechanism. This helps to lower the network
+    cost of the ID and provides a way to track referrals.
+
+
+
+    **QUESTION:**
+
+    What is the purpose of the `parentnameorid` argument in the `registernamecommitment`
+    command, and how does it affect the ID''s issuance rules and pricing?
+
+
+    **ANSWER:**
+
+    The `parentnameorid` argument specifies a friendly name or currency i-address
+    that will be the parent of this ID. This parent determines the issuance rules
+    and pricing for the ID. If not specified, the ID will follow the default issuance
+    rules and pricing.
+
+
+
+    **QUESTION:**
+
+    What is the `sourceoffunds` argument in the `registernamecommitment` command,
+    and what happens if it''s not specified?
+
+
+    **ANSWER:**
+
+    The `sourceoffunds` argument specifies an optional address to use as the source
+    of funds for the name commitment. If not specified, the default transparent wildcard
+    `"*"` is used.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **AI Assistant:**
+
+    Hello! I''m here to help with any questions you have about Verus. What would you
+    like to know?
+
+
+    **User:**
+
+    I''ve been trying to understand the name commitment process in Verus. Can you
+    explain what the purpose of registering a name commitment is, and how it benefits
+    the user?
+
+
+    **AI Assistant:**
+
+    The purpose of registering a name commitment in Verus is to reserve a unique name
+    for an identity without revealing the actual name. This allows the user to ensure
+    that the name is available and prevents others from front-running the registration
+    of the name. The name commitment also enables the user to specify a referral identity,
+    parent name or ID, and source of funds, which helps to lower network costs and
+    dictate issuance rules and pricing.
+
+
+    **User:**
+
+    That makes sense. I''ve seen the `registernamecommitment` command, but I''m not
+    sure what the required arguments are. Can you explain what they represent?
+
+
+    **AI Assistant:**
+
+    The required arguments for the `registernamecommitment` command are `name` and
+    `controladdress`. The `name` is the unique name to commit to, and the `controladdress`
+    is the address that will control this commitment. These arguments are necessary
+    to create a valid name commitment. The `controladdress` should be present in the
+    current wallet that is registering the ID, and it may receive change.
+
+
+    **User:**
+
+    I''ve also seen the `referralidentity` argument. What''s the significance of that?
+
+
+    **AI Assistant:**
+
+    The `referralidentity` argument is an optional parameter that specifies a friendly
+    name or identity address as a referral mechanism. This helps to lower the network
+    cost of the ID and provides a way to track referrals.
+
+
+    **User:**
+
+    What about the `parentnameorid` argument? How does that affect the ID''s issuance
+    rules and pricing?
+
+
+    **AI Assistant:**
+
+    The `parentnameorid` argument specifies a friendly name or currency i-address
+    that will be the parent of this ID. This parent determines the issuance rules
+    and pricing for the ID. If not specified, the ID will follow the default issuance
+    rules and pricing.
+
+
+    **User:**
+
+    Finally, what''s the `sourceoffunds` argument, and what happens if it''s not specified?
+
+
+    **AI Assistant:**
+
+    The `sourceoffunds` argument specifies an optional address to use as the source
+    of funds for the name commitment. If not specified, the default transparent wildcard
+    `"*"` is used.'
+  role: assistant
+  timeout: false

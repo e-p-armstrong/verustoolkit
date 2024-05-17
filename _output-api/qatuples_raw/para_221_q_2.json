@@ -1,0 +1,6 @@
+[
+    "What information does the `getinitialcurrencystate` command return about a PBaaS chain?",
+    "The `getinitialcurrencystate` command returns an array of objects containing the following information about a PBaaS chain:\n\n* `flags`: an integer\n* `initialratio`: an integer\n* `initialsupply`: an integer\n* `emitted`: an integer\n* `supply`: an integer\n* `reserve`: an integer\n* `currentratio`: an integer",
+    "getinitialcurrencystate \"name\" Returns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain. This should be used to get information about chains that are not this chain, but are being launched by it. Arguments  \"name\"          (string, required) name or chain ID of the chain to get the export transactions for Result:  [    {      \"flags\" : n,      \"initialratio\" : n,      \"initialsupply\" : n,      \"emitted\" : n,      \"supply\" : n,      \"reserve\" : n,      \"currentratio\" : n,    },  ] Examples: > verus getinitialcurrencystate name > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getinitialcurrencystate\", \"params\": [name] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getinitialcurrencystate"
+]

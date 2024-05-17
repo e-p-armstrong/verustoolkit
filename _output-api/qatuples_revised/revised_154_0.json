@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `recoveridentity` command in Verus?",
+    "The `recoveridentity` command is used to recover an identity in Verus. It takes a JSON object as an argument, which contains information about the identity to be recovered.",
+    "recoveridentity \"jsonidentity\" (returntx) (tokenrecover) (feeoffer) (sourceoffunds) Arguments    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned    \"tokenrecover\"          (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to recover    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity Result: Examples: > verus recoveridentity '{\"name\" : \"myname\"}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/recoveridentity"
+]

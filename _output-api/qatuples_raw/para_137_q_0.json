@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `migrate_completeimporttransaction` command in Verus?",
+    "The `migrate_completeimporttransaction` command is used to take a cross-chain import transaction with a proof generated on an asset chain and extend the proof to the target chain proof root. This allows for the completion of an import transaction across multiple chains.",
+    "migrate_completeimporttransaction importTx Takes a cross chain import tx with proof generated on assetchain and extends proof to target chain proof root",
+    "./raw_text_input_api_text/migrate_completeimporttransaction"
+]

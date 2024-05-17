@@ -1,0 +1,6 @@
+[
+    "Is there an alternative way to use the `refundfailedlaunch` command, other than using the Verus command line?",
+    "Yes, you can also use the `refundfailedlaunch` command using a JSON-RPC request. Here's an example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `\"myusername\"` with your actual username and `\"currencyid\"` with the actual iaddress or full chain name of the chain you want to refund contributions to.",
+    "refundfailedlaunch \"currencyid\" Refunds any funds sent to the chain if they are eligible for refund. This attempts to refund all transactions for all contributors. Arguments \"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to Result: Examples: > verus refundfailedlaunch \"currencyid\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/refundfailedlaunch"
+]

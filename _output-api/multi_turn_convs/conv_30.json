@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHello! I'm here to help with any questions you might have about Verus. Please, ask me anything!\n\n**User:**\nI'm trying to understand the `getNotarisationsForBlock` function in Verus. What does it do?\n\n**AI Assistant:**\nThe `getNotarisationsForBlock` function takes a block hash as an input and returns notarization transactions within that block. Would you like to know more about how it works or what the block hash is used for?\n\n**User:**\nYes, actually. What is the purpose of the block hash in the `getNotarisationsForBlock` function?\n\n**AI Assistant:**\nThe block hash is used as an input to the `getNotarisationsForBlock` function to specify which block to retrieve notarization transactions from. It's essentially a way to identify the specific block you're interested in and get the notarization transactions associated with it.\n\n**User:**\nWhat type of transactions does the `getNotarisationsForBlock` function return?\n\n**AI Assistant:**\nThe `getNotarisationsForBlock` function returns notarization transactions within the specified block. These are the transactions that are associated with the block hash you provided as input. Does that make sense? Do you have any more questions about `getNotarisationsForBlock` or Verus in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `getNotarisationsForBlock` function do in Verus?",
+            "The `getNotarisationsForBlock` function takes a block hash as an input and returns notarization transactions within that block.",
+            "getNotarisationsForBlock blockHash Takes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ],
+        [
+            "What is the purpose of the block hash in the `getNotarisationsForBlock` function?",
+            "The block hash is used as an input to the `getNotarisationsForBlock` function to specify which block to retrieve notarization transactions from.",
+            "getNotarisationsForBlock blockHash Takes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ],
+        [
+            "What type of transactions does the `getNotarisationsForBlock` function return?",
+            "The `getNotarisationsForBlock` function returns notarization transactions within the specified block.",
+            "getNotarisationsForBlock blockHash Takes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ]
+    ]
+]

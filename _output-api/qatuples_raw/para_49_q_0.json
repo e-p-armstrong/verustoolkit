@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `z_listaddresses` command in Verus?",
+    "The `z_listaddresses` command returns a list of Sprout and Sapling shielded addresses belonging to the wallet.",
+    "z_listaddresses ( includeWatchonly ) Returns the list of Sprout and Sapling shielded addresses belonging to the wallet. Arguments: 1. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey') Result: [           (json array of string)  \"zaddr\"      (string) a zaddr belonging to the wallet  ,... ] Examples: > verus z_listaddresses > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_listaddresses"
+]

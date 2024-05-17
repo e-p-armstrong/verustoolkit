@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHello! I'm here to help you with any questions you may have about Verus. What would you like to know?\n\n**User:**\nWhat is the result of a successful `definecurrency` command in Verus?\n\n**AI Assistant:**\nThe result of a successful `definecurrency` command in Verus is a JSON object with three properties: `txid`, `tx`, and `hex`. `txid` is a string representing the transaction ID. `tx` is a JSON object representing the transaction decoded as a transaction. `hex` is a string representing the raw data for the signed transaction. Do you have any further questions about the `definecurrency` command or its result?\n\n**User:**\nYeah, actually. How can I define a new currency in Verus using the command line?\n\n**AI Assistant:**\nTo define a new currency in Verus using the command line, you can use the `definecurrency` command followed by the JSON definition of the currency. For example:\n\n```\nverus definecurrency jsondefinition\n```\n\nJust replace `jsondefinition` with the actual JSON definition of the currency you want to create. Do you have any questions about creating the JSON definition or would you like an example?\n\n**User:**\nNo, I think I've got that. But what if I want to define a new currency using a JSON-RPC call?\n\n**AI Assistant:**\nYou can define a new currency in Verus using a JSON-RPC call by sending a POST request to `http://127.0.0.1:27486/` with the following JSON data:\n\n```json\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"definecurrency\",\n  \"params\": [jsondefinition]\n}\n```\n\nYou can use `curl` to send the request:\n\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `myusername` with your actual username, and `jsondefinition` with the actual JSON definition of the currency you want to create.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the result of a successful `definecurrency` command in Verus?",
+            "The result of a successful `definecurrency` command in Verus is a JSON object with three properties: `txid`, `tx`, and `hex`. \n\n* `txid` is a string representing the transaction ID.\n* `tx` is a JSON object representing the transaction decoded as a transaction.\n* `hex` is a string representing the raw data for the signed transaction.",
+            "d Result: {  \"txid\" : \"transactionid\", (string) The transaction id  \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction  \"hex\" : \"data\"      (string) Raw data for signed transaction } Examples: > verus definecurrency jsondefinition > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ],
+        [
+            "How can I define a new currency in Verus using the command line?",
+            "You can define a new currency in Verus using the `definecurrency` command followed by the JSON definition of the currency. For example:\n\n```\nverus definecurrency jsondefinition\n```",
+            "d Result: {  \"txid\" : \"transactionid\", (string) The transaction id  \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction  \"hex\" : \"data\"      (string) Raw data for signed transaction } Examples: > verus definecurrency jsondefinition > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ],
+        [
+            "How can I define a new currency in Verus using a JSON-RPC call?",
+            "You can define a new currency in Verus using a JSON-RPC call by sending a POST request to `http://127.0.0.1:27486/` with the following JSON data:\n\n```json\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"definecurrency\",\n  \"params\": [jsondefinition]\n}\n```\n\nYou can use `curl` to send the request:\n\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "d Result: {  \"txid\" : \"transactionid\", (string) The transaction id  \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction  \"hex\" : \"data\"      (string) Raw data for signed transaction } Examples: > verus definecurrency jsondefinition > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ]
+    ]
+]

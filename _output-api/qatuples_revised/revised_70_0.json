@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `migrate_converttoexport` method in Verus?",
+    "The `migrate_converttoexport` method is used to convert a raw transaction to a cross-chain export. It takes four parameters: `rawTx`, `dest_symbol`, `export_amount`, and returns the finished export transaction, plus the payouts.",
+    "migrate_converttoexport rawTx dest_symbol export_amount Convert a raw transaction to a cross-chain export. If neccesary, the transaction should be funded using fundrawtransaction. Finally, the transaction should be signed using signrawtransaction The finished export transaction, plus the payouts, should be passed to the \"migrate_createimporttransaction\" method on a KMD node to get the corresponding import transaction.",
+    "./raw_text_input_api_text/migrate_converttoexport"
+]

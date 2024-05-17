@@ -1,0 +1,6 @@
+[
+    "How do I use the `estimatepriority` command to estimate the priority of a zero-fee transaction that needs to begin confirmation within 6 blocks?",
+    "You can use the `estimatepriority` command to estimate the priority of a zero-fee transaction that needs to begin confirmation within 6 blocks by running the following command: `verus estimatepriority 6`.",
+    "estimatepriority nblocks Estimates the approximate priority a zero-fee transaction needs to begin confirmation within nblocks blocks. Arguments: 1. nblocks   (numeric) Result: n :  (numeric) estimated priority -1.0 is returned if not enough transactions and blocks have been observed to make an estimate. Example: > verus estimatepriority 6",
+    "./raw_text_input_api_text/estimatepriority"
+]

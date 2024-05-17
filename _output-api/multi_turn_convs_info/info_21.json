@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `getoffers` command in Verus?",
+            "The `getoffers` command in Verus returns all open offers for a specific currency or ID. It can be used to check for both sale and purchase offers.",
+            "getoffers \"currencyorid\" (iscurrency) (withtx) Returns all open offers for a specific currency or ID Arguments 1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase 2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies 3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing Result: all available offers for or in the indicated currency or ID are displayed Examples: > verus getoffers \"currencyorid\" (iscurrency) > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getoffers"
+        ],
+        [
+            "What are the required and optional arguments for the `getoffers` command?",
+            "The `getoffers` command takes three arguments:\n1. `\"currencyorid\"` (string, required): The currency or ID to check for offers.\n2. `\"iscurrency\"` (bool, optional, default=false): If false, this looks for ID offers; if true, it looks for currency offers.\n3. `\"withtx\"` (bool, optional, default=false): If true, this returns the serialized hex of the exchange transaction for signing.",
+            "getoffers \"currencyorid\" (iscurrency) (withtx) Returns all open offers for a specific currency or ID Arguments 1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase 2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies 3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing Result: all available offers for or in the indicated currency or ID are displayed Examples: > verus getoffers \"currencyorid\" (iscurrency) > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getoffers"
+        ],
+        [
+            "How can I use the `getoffers` command to check for offers for a specific currency?",
+            "You can use the `getoffers` command to check for offers for a specific currency by setting the `\"iscurrency\"` argument to `true`. For example:\n```\nverus getoffers \"currencyorid\" true\n```\nThis will return all open offers for the specified currency.",
+            "getoffers \"currencyorid\" (iscurrency) (withtx) Returns all open offers for a specific currency or ID Arguments 1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase 2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies 3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing Result: all available offers for or in the indicated currency or ID are displayed Examples: > verus getoffers \"currencyorid\" (iscurrency) > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getoffers"
+        ],
+        [
+            "What is the purpose of the `\"withtx\"` argument in the `getoffers` command?",
+            "The `\"withtx\"` argument in the `getoffers` command is used to return the serialized hex of the exchange transaction for signing. If set to `true`, it will include the transaction hex in the result.",
+            "getoffers \"currencyorid\" (iscurrency) (withtx) Returns all open offers for a specific currency or ID Arguments 1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase 2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies 3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing Result: all available offers for or in the indicated currency or ID are displayed Examples: > verus getoffers \"currencyorid\" (iscurrency) > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getoffers"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "093f73e3-c755-4ba2-8863-00ce346f41fd"
+]

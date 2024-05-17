@@ -1,0 +1,6 @@
+[
+    "How can I use the `getrawchangeaddress` command in Verus using the command line?",
+    "To use the `getrawchangeaddress` command in Verus using the command line, you can simply type:\n\n```\nverus getrawchangeaddress\n```\n\nThis will return a new VRSC address that can be used to receive change from raw transactions.",
+    "getrawchangeaddress Returns a new VRSC address, for receiving change. This is for use with raw transactions, NOT normal use. Result: \"address\"  (string) The address Examples: > verus getrawchangeaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getrawchangeaddress"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I use the `getbestblockhash` command in Verus to retrieve the hash of the best block in the longest block chain?",
+    "You can use the `getbestblockhash` command in Verus by running the following command: `verus getbestblockhash`\n\nAlternatively, you can also use the JSON-RPC interface to retrieve the best block hash by sending a JSON request to the Verus server. For example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getbestblockhash\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "getbestblockhash Returns the hash of the best (tip) block in the longest block chain. Result \"hex\"   (string) the block hash hex encoded Examples > verus getbestblockhash > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getbestblockhash\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getbestblockhash"
+]

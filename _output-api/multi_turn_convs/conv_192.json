@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI was playing around with the commands in Verus and I came across `zcrawkeygen`. What's the purpose of this command?\n\n**AI Assistant:**\nThe `zcrawkeygen` command generates a zcaddr (a type of confidential address) that can send and receive confidential values. However, I should mention that it has been deprecated, but its output includes the zcaddress, zcsecretkey, and zcviewingkey. Do you have any further questions about this command or its output?\n\n**User:**\nYeah, actually. What are the components of the output of the `zcrawkeygen` command?\n\n**AI Assistant:**\nThe output of the `zcrawkeygen` command includes three components:\n\n1. `zcaddress`: a confidential address that can send and receive confidential values.\n2. `zcsecretkey`: a secret key associated with the zcaddress.\n3. `zcviewingkey`: a viewing key associated with the zcaddress.\n\nNote that the `zcrawkeygen` command has been deprecated, and it is recommended to use alternative methods for generating confidential addresses. Do you have any more questions about Verus or its commands?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `zcrawkeygen` command in Verus?",
+            "The `zcrawkeygen` command generates a zcaddr (a type of confidential address) that can send and receive confidential values. It has been deprecated, but its output includes the zcaddress, zcsecretkey, and zcviewingkey.",
+            "zcrawkeygen DEPRECATED. Generate a zcaddr which can send and receive confidential values. Output: {  \"zcaddress\": zcaddr,  \"zcsecretkey\": zcsecretkey,  \"zcviewingkey\": zcviewingkey, }",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ],
+        [
+            "What are the components of the output of the `zcrawkeygen` command?",
+            "The output of the `zcrawkeygen` command includes three components:\n\n1. `zcaddress`: a confidential address that can send and receive confidential values.\n2. `zcsecretkey`: a secret key associated with the zcaddress.\n3. `zcviewingkey`: a viewing key associated with the zcaddress.\n\nNote that the `zcrawkeygen` command has been deprecated, and it is recommended to use alternative methods for generating confidential addresses.",
+            "zcrawkeygen DEPRECATED. Generate a zcaddr which can send and receive confidential values. Output: {  \"zcaddress\": zcaddr,  \"zcsecretkey\": zcsecretkey,  \"zcviewingkey\": zcviewingkey, }",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ]
+    ]
+]

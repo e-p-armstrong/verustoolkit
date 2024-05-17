@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `getaddressesbyaccount` method in Verus?",
+            "The `getaddressesbyaccount` method returns a list of addresses associated with a given account.",
+            "getaddressesbyaccount \"account\" DEPRECATED. Returns the list of addresses for the given account. Arguments: 1. \"account\" (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Result: [           (json array of string)  \"VRSC_address\" (string) a VRSC address associated with the given account  ,... ] Examples: > verus getaddressesbyaccount \"tabby\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressesbyaccount\", \"params\": [\"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressesbyaccount"
+        ],
+        [
+            "What is the required format for the \"account\" argument when using the `getaddressesbyaccount` method?",
+            "The \"account\" argument must be set to an empty string (`\"\"`) to represent the default account. Passing any other string will result in an error.",
+            "getaddressesbyaccount \"account\" DEPRECATED. Returns the list of addresses for the given account. Arguments: 1. \"account\" (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Result: [           (json array of string)  \"VRSC_address\" (string) a VRSC address associated with the given account  ,... ] Examples: > verus getaddressesbyaccount \"tabby\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressesbyaccount\", \"params\": [\"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressesbyaccount"
+        ],
+        [
+            "What is the format of the result returned by the `getaddressesbyaccount` method?",
+            "The result is a JSON array of strings, where each string is a VRSC address associated with the given account.",
+            "getaddressesbyaccount \"account\" DEPRECATED. Returns the list of addresses for the given account. Arguments: 1. \"account\" (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Result: [           (json array of string)  \"VRSC_address\" (string) a VRSC address associated with the given account  ,... ] Examples: > verus getaddressesbyaccount \"tabby\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressesbyaccount\", \"params\": [\"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressesbyaccount"
+        ],
+        [
+            "How can I use the `getaddressesbyaccount` method using the command line?",
+            "You can use the `getaddressesbyaccount` method using the command line by running the following command: `verus getaddressesbyaccount \"\"`",
+            "getaddressesbyaccount \"account\" DEPRECATED. Returns the list of addresses for the given account. Arguments: 1. \"account\" (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Result: [           (json array of string)  \"VRSC_address\" (string) a VRSC address associated with the given account  ,... ] Examples: > verus getaddressesbyaccount \"tabby\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressesbyaccount\", \"params\": [\"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressesbyaccount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a595bb37-cebc-46a1-bd52-06482bd6a151"
+]

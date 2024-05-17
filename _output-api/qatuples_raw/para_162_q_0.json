@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getimports` command in Verus?",
+    "The `getimports` command is used to retrieve all imports into a specific currency, optionally within a specified block range.",
+    "getimports \"chainname\" (startheight) (endheight) Returns all imports into a specific currency, optionally that were imported between a specific block range. Arguments 1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon. 1. (startheight)           (number, optional) startheight default == 0 1. (endheight)            (number, optional) endheight default == 0 Result:  {  } Examples: > verus getimports \"chainname\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getimports\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getimports"
+]

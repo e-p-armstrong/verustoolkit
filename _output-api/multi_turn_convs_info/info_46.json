@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `submitacceptednotarization` command in Verus?",
+            "The `submitacceptednotarization` command is used to finish an almost complete notarization transaction based on the notary chain and the current wallet or pubkey. It submits a transaction based on the earned notarization and notary evidence, and returns a transaction ID if successful.",
+            "submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" Finishes an almost complete notarization transaction based on the notary chain and the current wallet or pubkey. If successful in submitting the transaction based on all rules, a transaction ID is returned, otherwise, NULL. Arguments \"earnednotarization\"       (object, required) notarization earned on the other system, which is the basis for this \"notaryevidence\"         (object, required) evidence and notary signatures validating the notarization Result: txid                (hexstring) transaction ID of submitted transaction Examples: > verus submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"submitacceptednotarization\", \"params\": [\"{earnednotarization}\" \"{notaryevidence}\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/submitacceptednotarization"
+        ],
+        [
+            "What are the required arguments for the `submitacceptednotarization` command?",
+            "The `submitacceptednotarization` command requires two arguments:\n\n1. `earnednotarization`: an object representing the notarization earned on another system, which is the basis for this notarization.\n2. `notaryevidence`: an object containing evidence and notary signatures validating the notarization.",
+            "submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" Finishes an almost complete notarization transaction based on the notary chain and the current wallet or pubkey. If successful in submitting the transaction based on all rules, a transaction ID is returned, otherwise, NULL. Arguments \"earnednotarization\"       (object, required) notarization earned on the other system, which is the basis for this \"notaryevidence\"         (object, required) evidence and notary signatures validating the notarization Result: txid                (hexstring) transaction ID of submitted transaction Examples: > verus submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"submitacceptednotarization\", \"params\": [\"{earnednotarization}\" \"{notaryevidence}\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/submitacceptednotarization"
+        ],
+        [
+            "What is the result of a successful `submitacceptednotarization` command?",
+            "If the `submitacceptednotarization` command is successful, it returns a transaction ID (txid) as a hexadecimal string.",
+            "submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" Finishes an almost complete notarization transaction based on the notary chain and the current wallet or pubkey. If successful in submitting the transaction based on all rules, a transaction ID is returned, otherwise, NULL. Arguments \"earnednotarization\"       (object, required) notarization earned on the other system, which is the basis for this \"notaryevidence\"         (object, required) evidence and notary signatures validating the notarization Result: txid                (hexstring) transaction ID of submitted transaction Examples: > verus submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"submitacceptednotarization\", \"params\": [\"{earnednotarization}\" \"{notaryevidence}\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/submitacceptednotarization"
+        ],
+        [
+            "How can I use the `submitacceptednotarization` command with the Verus CLI?",
+            "You can use the `submitacceptednotarization` command with the Verus CLI by running the following command:\n\n```\nverus submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\"\n```\n\nReplace `{earnednotarization}` and `{notaryevidence}` with the actual values for your notarization and evidence.",
+            "submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" Finishes an almost complete notarization transaction based on the notary chain and the current wallet or pubkey. If successful in submitting the transaction based on all rules, a transaction ID is returned, otherwise, NULL. Arguments \"earnednotarization\"       (object, required) notarization earned on the other system, which is the basis for this \"notaryevidence\"         (object, required) evidence and notary signatures validating the notarization Result: txid                (hexstring) transaction ID of submitted transaction Examples: > verus submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"submitacceptednotarization\", \"params\": [\"{earnednotarization}\" \"{notaryevidence}\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/submitacceptednotarization"
+        ],
+        [
+            "How can I use the `submitacceptednotarization` command with the Verus JSON-RPC API?",
+            "You can use the `submitacceptednotarization` command with the Verus JSON-RPC API by sending a JSON request to the Verus RPC server. The request should have the following format:\n\n```json\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"submitacceptednotarization\",\n  \"params\": [\"{earnednotarization}\", \"{notaryevidence}\"]\n}\n```\n\nReplace `{earnednotarization}` and `{notaryevidence}` with the actual values for your notarization and evidence. You can send this request using a tool like `curl`.",
+            "submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" Finishes an almost complete notarization transaction based on the notary chain and the current wallet or pubkey. If successful in submitting the transaction based on all rules, a transaction ID is returned, otherwise, NULL. Arguments \"earnednotarization\"       (object, required) notarization earned on the other system, which is the basis for this \"notaryevidence\"         (object, required) evidence and notary signatures validating the notarization Result: txid                (hexstring) transaction ID of submitted transaction Examples: > verus submitacceptednotarization \"{earnednotarization}\" \"{notaryevidence}\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"submitacceptednotarization\", \"params\": [\"{earnednotarization}\" \"{notaryevidence}\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/submitacceptednotarization"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f234700a-7a72-49d9-a46c-fbb7293d43bd"
+]

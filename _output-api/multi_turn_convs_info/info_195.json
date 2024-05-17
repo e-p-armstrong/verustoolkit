@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `listidentities` command in Verus?",
+            "The `listidentities` command is used to list all identities that are associated with your Verus wallet. It can be used to retrieve a list of identities for which you have spending authority, signing authority, or are simply watching.",
+            "listidentities (includecanspend) (includecansign) (includewatchonly) Arguments   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us Result: Examples: > verus listidentities true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listidentities\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listidentities"
+        ],
+        [
+            "What are the optional arguments that can be used with the `listidentities` command?",
+            "The `listidentities` command has three optional arguments: `includecanspend`, `includecansign`, and `includewatchonly`.\n\n* `includecanspend` (default=true) includes identities for which you have spending authority.\n* `includecansign` (default=true) includes identities for which you have signing authority but not spending authority.\n* `includewatchonly` (default=false) includes identities that you are watching but do not have spending or signing authority for.",
+            "listidentities (includecanspend) (includecansign) (includewatchonly) Arguments   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us Result: Examples: > verus listidentities true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listidentities\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listidentities"
+        ],
+        [
+            "How can I use the `listidentities` command to list all identities associated with my Verus wallet, including those I can spend, sign, and watch?",
+            "You can use the `listidentities` command with the following syntax:\n\n```\nverus listidentities true true true\n```\n\nThis will list all identities associated with your Verus wallet, including those you can spend, sign, and watch.",
+            "listidentities (includecanspend) (includecansign) (includewatchonly) Arguments   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us Result: Examples: > verus listidentities true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listidentities\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listidentities"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8539a4b9-71b3-4d74-8efd-0a70900b2f30"
+]

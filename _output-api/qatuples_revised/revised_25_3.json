@@ -1,0 +1,6 @@
+[
+    "How can I generate 11 blocks using the `generate` command?",
+    "You can generate 11 blocks using the `generate` command by running the following command: `verus generate 11`.",
+    "generate numblocks Mine blocks immediately (before the RPC call returns) Note: this function can only be used on the regtest network Arguments: 1. numblocks  (numeric) How many blocks are generated immediately. Result [ blockhashes ]   (array) hashes of blocks generated Examples: Generate 11 blocks > verus generate 11",
+    "./raw_text_input_api_text/generate"
+]

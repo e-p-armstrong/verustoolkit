@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHello! I'm here to help with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI'm trying to understand the `disconnectnode` command in Verus. What does it do?\n\n**AI Assistant:**\nThe `disconnectnode` command immediately disconnects from a specified node in Verus. It's a useful command when you want to terminate a connection with a specific node.\n\n**User:**\nThat makes sense. What arguments does the `disconnectnode` command require?\n\n**AI Assistant:**\nThe `disconnectnode` command requires one argument: the node to disconnect from, which is a string. This string should be the address of the node you want to disconnect from.\n\n**User:**\nOkay, got it. So how can I use the `disconnectnode` command to disconnect from a node with the address \"192.168.0.6:8233\"?\n\n**AI Assistant:**\nYou can use the `disconnectnode` command to disconnect from a node with the address \"192.168.0.6:8233\" in two ways:\n\n1. Using the Verus command line:\n```\nverus disconnectnode \"192.168.0.6:8233\"\n```\n2. Using curl:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nNote: Make sure to replace `myusername` with your actual username.\n\nI hope that helps! Let me know if you have any more questions about the `disconnectnode` command or Verus in general.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `disconnectnode` command do in Verus?",
+            "The `disconnectnode` command immediately disconnects from a specified node in Verus.",
+            "disconnectnode \"node\" Immediately disconnects from the specified node. Arguments: 1. \"node\"   (string, required) The node (see getpeerinfo for nodes) Examples: > verus disconnectnode \"192.168.0.6:8233\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ],
+        [
+            "What arguments does the `disconnectnode` command require?",
+            "The `disconnectnode` command requires one argument: the node to disconnect from, which is a string.",
+            "disconnectnode \"node\" Immediately disconnects from the specified node. Arguments: 1. \"node\"   (string, required) The node (see getpeerinfo for nodes) Examples: > verus disconnectnode \"192.168.0.6:8233\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ],
+        [
+            "How can I use the `disconnectnode` command to disconnect from a node with the address \"192.168.0.6:8233\"?",
+            "You can use the `disconnectnode` command to disconnect from a node with the address \"192.168.0.6:8233\" in two ways:\n\n1. Using the Verus command line:\n```\nverus disconnectnode \"192.168.0.6:8233\"\n```\n\n2. Using curl:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nNote: Make sure to replace `myusername` with your actual username.",
+            "disconnectnode \"node\" Immediately disconnects from the specified node. Arguments: 1. \"node\"   (string, required) The node (see getpeerinfo for nodes) Examples: > verus disconnectnode \"192.168.0.6:8233\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ]
+    ]
+]

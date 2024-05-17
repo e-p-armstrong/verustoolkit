@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `clearbanned` command in Verus?",
+    "The `clearbanned` command is used to clear all banned IPs.",
+    "clearbanned Clear all banned IPs. Examples: > verus clearbanned > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/clearbanned"
+]

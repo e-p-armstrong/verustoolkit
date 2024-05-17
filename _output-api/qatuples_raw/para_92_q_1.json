@@ -1,0 +1,6 @@
+[
+    "What information does the `gettxoutsetinfo` command return?",
+    "The `gettxoutsetinfo` command returns a result object containing the following information:\n\n1. `height`: The current block height (index)\n2. `bestblock`: The best block hash hex\n3. `transactions`: The number of transactions\n4. `txouts`: The number of output transactions\n5. `bytes_serialized`: The serialized size\n6. `hash_serialized`: The serialized hash\n7. `total_amount`: The total amount",
+    "gettxoutsetinfo Returns statistics about the unspent transaction output set. Note this call may take some time. Result: {  \"height\":n,   (numeric) The current block height (index)  \"bestblock\": \"hex\",  (string) the best block hash hex  \"transactions\": n,   (numeric) The number of transactions  \"txouts\": n,      (numeric) The number of output transactions  \"bytes_serialized\": n, (numeric) The serialized size  \"hash_serialized\": \"hash\",  (string) The serialized hash  \"total_amount\": x.xxx     (numeric) The total amount } Examples: > verus gettxoutsetinfo > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettxoutsetinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/gettxoutsetinfo"
+]

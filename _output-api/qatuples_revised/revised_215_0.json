@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `z_getoperationstatus` command in Verus?",
+    "The `z_getoperationstatus` command is used to retrieve the status of one or more operations, along with any associated result or error data. The operation remains in memory after the command is executed.",
+    "z_getoperationstatus ([\"operationid\", ... ]) Get operation status and any associated result or error data. The operation will remain in memory. Arguments: 1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node. Result: \"  [object, ...]\"   (array) A list of JSON objects Examples: > verus z_getoperationstatus '[\"operationid\", ... ]' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationstatus\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_getoperationstatus"
+]

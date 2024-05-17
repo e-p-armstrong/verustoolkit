@@ -1,0 +1,6 @@
+[
+    "How do I use the `keypoolrefill` command without specifying a new keypool size?",
+    "You can use the `keypoolrefill` command without specifying a new keypool size by simply running the command `verus keypoolrefill`. In this case, the keypool will be refilled to its default size, which is 100.",
+    "keypoolrefill ( newsize ) Fills the keypool. Arguments 1. newsize   (numeric, optional, default=100) The new keypool size Examples: > verus keypoolrefill > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/keypoolrefill"
+]

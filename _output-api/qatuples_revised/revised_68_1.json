@@ -1,0 +1,6 @@
+[
+    "How can I get a block template using JSON-RPC?",
+    "To get a block template using JSON-RPC, you can use the `curl` command to send a JSON-RPC request to the Verus daemon. Here's an example of how to do this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will send a JSON-RPC request to the Verus daemon at `http://127.0.0.1:27486/` with the `getblocktemplate` method and no parameters. The response will be a block template in JSON format.",
+    "  Examples: > verus getblocktemplate > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblocktemplate"
+]

@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHello! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI've been trying to figure out the `getspentinfo` method in Verus. Can you tell me what its purpose is?\n\n**AI Assistant:**\nThe `getspentinfo` method in Verus returns the transaction ID (txid) and index where a specific output is spent. It's a useful tool for tracking where and how an output was spent.\n\n**User:**\nThat makes sense. What's the format of the result returned by the `getspentinfo` method?\n\n**AI Assistant:**\nThe result returned by the `getspentinfo` method is a JSON object with the following format:\n\n```\n{\n  \"txid\" (string): The transaction ID,\n  \"index\" (number): The spending input index,\n...\n}\n```\nIt's a pretty straightforward format.\n\n**User:**\nHow can I use the `getspentinfo` method using the Verus CLI?\n\n**AI Assistant:**\nYou can use the `getspentinfo` method using the Verus CLI by running the following command:\n```\nverus getspentinfo '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}'\n```\nJust replace the `txid` and `index` values with the desired values.\n\n**User:**\nAnd how can I use the `getspentinfo` method using cURL?\n\n**AI Assistant:**\nYou can use the `getspentinfo` method using cURL by running the following command:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getspentinfo\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nJust replace the `myusername` value with your actual username, and the `txid` and `index` values with the desired values.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getspentinfo` method in Verus?",
+            "The `getspentinfo` method in Verus returns the transaction ID (txid) and index where a specific output is spent.",
+            "getspentinfo Returns the txid and index where an output is spent. Arguments: {  \"txid\" (string) The hex string of the txid  \"index\" (number) The start block height } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus getspentinfo '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getspentinfo\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getspentinfo"
+        ],
+        [
+            "What is the format of the result returned by the `getspentinfo` method?",
+            "The result returned by the `getspentinfo` method is a JSON object with the following format:\n\n```\n{\n  \"txid\" (string): The transaction ID,\n  \"index\" (number): The spending input index,\n ...\n}\n```",
+            "getspentinfo Returns the txid and index where an output is spent. Arguments: {  \"txid\" (string) The hex string of the txid  \"index\" (number) The start block height } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus getspentinfo '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getspentinfo\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getspentinfo"
+        ],
+        [
+            "How can I use the `getspentinfo` method using the Verus CLI?",
+            "You can use the `getspentinfo` method using the Verus CLI by running the following command:\n```\nverus getspentinfo '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}'\n```\nReplace the `txid` and `index` values with the desired values.",
+            "getspentinfo Returns the txid and index where an output is spent. Arguments: {  \"txid\" (string) The hex string of the txid  \"index\" (number) The start block height } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus getspentinfo '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getspentinfo\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getspentinfo"
+        ],
+        [
+            "How can I use the `getspentinfo` method using cURL?",
+            "You can use the `getspentinfo` method using cURL by running the following command:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getspentinfo\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace the `myusername` value with your actual username, and the `txid` and `index` values with the desired values.",
+            "getspentinfo Returns the txid and index where an output is spent. Arguments: {  \"txid\" (string) The hex string of the txid  \"index\" (number) The start block height } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus getspentinfo '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getspentinfo\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getspentinfo"
+        ]
+    ]
+]

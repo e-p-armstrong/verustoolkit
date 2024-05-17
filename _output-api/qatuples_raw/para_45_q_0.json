@@ -1,0 +1,6 @@
+[
+    "What does the `sendcurrency` command do in Verus?",
+    "The `sendcurrency` command in Verus is used to send a transaction with specific outputs and no inputs. It can be used to create a transaction template that needs to be filled with inputs.",
+    "a Result:  \"operation-id\" : \"opid\" (string) The operation id, not public info, if (returntxtemplate) is false If (returntxtemplate) is true  {    \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies that need to be input to the transaction    \"hextx\" : \"hexstring\"        The transaction with all specified outputs and no inputs  } Examples: > verus sendcurrency \"*\" '[{\"currency\":\"btc\",\"address\":\"RRehdmUV7oEAqoZnzEGBH34XysnWaBatct\" ,\"amount\":500.0},...]' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendcurrency\", \"params\": [\"bob@\", [{\"currency\":\"btc\", \"address\":\"alice@quad\", \"amount\":500.0},...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/sendcurrency"
+]

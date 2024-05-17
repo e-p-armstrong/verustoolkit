@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `zcbenchmark` command in Verus?",
+            "The `zcbenchmark` command is used to run a benchmark of a specific type, which helps to measure the performance of the system.",
+            "zcbenchmark benchmarktype samplecount Runs a benchmark of the selected type samplecount times, returning the running times of each sample. Output: [  {   \"runningtime\": runningtime  },  {   \"runningtime\": runningtime  }  ... ]",
+            "./raw_text_input_api_text/zcbenchmark"
+        ],
+        [
+            "What are the required arguments for the `zcbenchmark` command?",
+            "The `zcbenchmark` command requires two arguments: `benchmarktype` and `samplecount`. `benchmarktype` specifies the type of benchmark to run, and `samplecount` specifies how many times the benchmark should be run.",
+            "zcbenchmark benchmarktype samplecount Runs a benchmark of the selected type samplecount times, returning the running times of each sample. Output: [  {   \"runningtime\": runningtime  },  {   \"runningtime\": runningtime  }  ... ]",
+            "./raw_text_input_api_text/zcbenchmark"
+        ],
+        [
+            "What is the output format of the `zcbenchmark` command?",
+            "The output of the `zcbenchmark` command is a list of objects, each containing a single property called `runningtime`. The `runningtime` property represents the time it took to run each sample of the benchmark. The output will have as many objects as the number of samples specified by the `samplecount` argument.",
+            "zcbenchmark benchmarktype samplecount Runs a benchmark of the selected type samplecount times, returning the running times of each sample. Output: [  {   \"runningtime\": runningtime  },  {   \"runningtime\": runningtime  }  ... ]",
+            "./raw_text_input_api_text/zcbenchmark"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2738dd3a-765b-4d83-b4e5-3c7b2f7a6235"
+]

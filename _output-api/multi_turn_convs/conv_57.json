@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHello! I'm here to help you with any questions you might have about Verus. How can I assist you today?\n\n**User:**\nI'm trying to get started with the command line. How can I list the most recent 10 transactions in the Verus system?\n\n**AI Assistant:**\nTo list the most recent 10 transactions in the Verus system, you can use the following command:\n\n```\nverus listtransactions\n```\n\nThis command will retrieve and display the 10 most recent transactions in the system. Do you have any other questions about using the command line with Verus?\n\n**User:**\nThat helps! What if I want to list transactions 100 to 120 in the Verus system?\n\n**AI Assistant:**\nTo list transactions 100 to 120 in the Verus system, you can use the following command:\n\n```\nverus listtransactions \"*\" 20 100\n```\n\nThis command will retrieve and display transactions 100 to 120 in the system. Let me know if you have any other questions!\n\n**User:**\nWhat about using JSON RPC? How can I list transactions using JSON RPC in Verus?\n\n**AI Assistant:**\nTo list transactions using JSON RPC in Verus, you can use the following command:\n\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis command will retrieve and display transactions 100 to 120 in the system using JSON RPC. You need to replace `myusername` with your actual username. Do you have any other questions about using JSON RPC with Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I list the most recent 10 transactions in the Verus system using the command line?",
+            "To list the most recent 10 transactions in the Verus system, you can use the following command:\n\n```\nverus listtransactions\n```\n\nThis command will retrieve and display the 10 most recent transactions in the system.",
+            ". Examples: List the most recent 10 transactions in the systems > verus listtransactions List transactions 100 to 120 > verus listtransactions \"*\" 20 100 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listtransactions"
+        ],
+        [
+            "How can I list transactions 100 to 120 in the Verus system using the command line?",
+            "To list transactions 100 to 120 in the Verus system, you can use the following command:\n\n```\nverus listtransactions \"*\" 20 100\n```\n\nThis command will retrieve and display transactions 100 to 120 in the system.",
+            ". Examples: List the most recent 10 transactions in the systems > verus listtransactions List transactions 100 to 120 > verus listtransactions \"*\" 20 100 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listtransactions"
+        ],
+        [
+            "How can I list transactions using JSON RPC in Verus?",
+            "To list transactions using JSON RPC in Verus, you can use the following command:\n\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis command will retrieve and display transactions 100 to 120 in the system using JSON RPC. You need to replace `myusername` with your actual username.",
+            ". Examples: List the most recent 10 transactions in the systems > verus listtransactions List transactions 100 to 120 > verus listtransactions \"*\" 20 100 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listtransactions"
+        ]
+    ]
+]

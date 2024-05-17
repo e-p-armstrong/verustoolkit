@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `processupgradedata` command in Verus?",
+            "The `processupgradedata` command is used to process upgrade data and return the transaction ID and index where an output is spent.",
+            "processupgradedata {upgradedata} Returns the txid and index where an output is spent. Arguments: {  \"upgradeid\"        (string) The VDXF key identifier  \"minimumdaemonversion\"   (string) The minimum version required for the upgrade  \"activationheight\"     (number) The block height to activate  \"activationtime\"      (number) Epoch time to activate, depending on upgrade } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus processupgradedata '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"processupgradedata\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/processupgradedata"
+        ],
+        [
+            "What is the result of the `processupgradedata` command?",
+            "The result of the `processupgradedata` command is an object containing the following:\n\n1. `txid`: The transaction ID.\n2. `index`: The spending input index.",
+            "processupgradedata {upgradedata} Returns the txid and index where an output is spent. Arguments: {  \"upgradeid\"        (string) The VDXF key identifier  \"minimumdaemonversion\"   (string) The minimum version required for the upgrade  \"activationheight\"     (number) The block height to activate  \"activationtime\"      (number) Epoch time to activate, depending on upgrade } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus processupgradedata '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"processupgradedata\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/processupgradedata"
+        ],
+        [
+            "How can I use the `processupgradedata` command using the command line and Verus?",
+            "You can use the `processupgradedata` command using the command line and Verus by running a command like the following example:\n\n```\nverus processupgradedata '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}'\n```",
+            "processupgradedata {upgradedata} Returns the txid and index where an output is spent. Arguments: {  \"upgradeid\"        (string) The VDXF key identifier  \"minimumdaemonversion\"   (string) The minimum version required for the upgrade  \"activationheight\"     (number) The block height to activate  \"activationtime\"      (number) Epoch time to activate, depending on upgrade } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus processupgradedata '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"processupgradedata\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/processupgradedata"
+        ],
+        [
+            "How can I use the `processupgradedata` command using curl and Verus?",
+            "You can use the `processupgradedata` command using curl and Verus by running a command like the following example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"processupgradedata\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "processupgradedata {upgradedata} Returns the txid and index where an output is spent. Arguments: {  \"upgradeid\"        (string) The VDXF key identifier  \"minimumdaemonversion\"   (string) The minimum version required for the upgrade  \"activationheight\"     (number) The block height to activate  \"activationtime\"      (number) Epoch time to activate, depending on upgrade } Result: {  \"txid\" (string) The transaction id  \"index\" (number) The spending input index  ,... } Examples: > verus processupgradedata '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"processupgradedata\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/processupgradedata"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "4b0b8f63-833c-4551-82d1-c2ae7b6d6cdb"
+]

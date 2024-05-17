@@ -1,0 +1,6 @@
+[
+    "How can you set the server to mine and/or mint coins in Verus?",
+    "You can set the server to mine and/or mint coins using command line arguments `-gen` and `-mint`, or by setting `gen` and `mint` in the configuration file. Additionally, you can use the `setgenerate` call.",
+    "getgenerate Return if the server is set to mine and/or mint coins or not. The default is false. It is set with the command line argument -gen and -mint (or conf file settings gen and mint) It can also be set with the setgenerate call. Result {  \"staking\": true|false   (boolean) If staking is on or off (see setgenerate)  \"generate\": true|false   (boolean) If mining is on or off (see setgenerate)  \"numthreads\": n      (numeric) The processor limit for mining. (see setgenerate) } Examples: > verus getgenerate > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getgenerate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getgenerate"
+]

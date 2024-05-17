@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `setaccount` command in Verus?",
+            "The `setaccount` command is used to associate a Verus address with an account. However, it is **DEPRECATED**, which means it is no longer recommended for use.",
+            "setaccount \"VRSC_address\" \"account\" DEPRECATED. Sets the account associated with the given address. Arguments: 1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account. 2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Examples: > verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ],
+        [
+            "What are the required arguments for the `setaccount` command?",
+            "The `setaccount` command requires two arguments:\n\n1. \"VRSC_address\" (string, required): The Verus address to be associated with an account.\n2. \"account\" (string, required): This must be set to the empty string \"\" to represent the default account.",
+            "setaccount \"VRSC_address\" \"account\" DEPRECATED. Sets the account associated with the given address. Arguments: 1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account. 2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Examples: > verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ],
+        [
+            "What happens if I pass a non-empty string as the \"account\" argument to the `setaccount` command?",
+            "If you pass a non-empty string as the \"account\" argument to the `setaccount` command, it will result in an error. The \"account\" argument must be set to the empty string \"\" to represent the default account.",
+            "setaccount \"VRSC_address\" \"account\" DEPRECATED. Sets the account associated with the given address. Arguments: 1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account. 2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Examples: > verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9f31500d-a014-4654-8dea-65df446bcc47"
+]

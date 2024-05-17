@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI've been playing around with the Verus CLI and I came across the `zcsamplejoinsplit` command. What's the purpose of this command in Verus?\n\n**AI Assistant:**\nThe `zcsamplejoinsplit` command performs a joinsplit operation and returns the resulting JSDescription. It's a useful tool for testing and demonstrating joinsplit functionality in Verus. Do you have any other questions about Verus or its commands? I'm here to help!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `zcsamplejoinsplit` command in Verus?",
+            "The `zcsamplejoinsplit` command performs a joinsplit operation and returns the resulting JSDescription.",
+            "zcsamplejoinsplit Perform a joinsplit and return the JSDescription.",
+            "./raw_text_input_api_text/zcsamplejoinsplit"
+        ]
+    ]
+]
