@@ -1,0 +1,6 @@
+[
+    "What is the potential benefit of recognizing participants who are attempting to strengthen the system?",
+    "Recognizing participants who are attempting to strengthen the system could both decrease the power consumption and ecological cost of blockchain systems, as well as increase the trust in those participants compared to byzantine or average participants.",
+    " \n\n10\n\n\u2018rational\u2019, in statistically the same proportions for all participants equally. One need only\nconsider that if there was a way to learn a more accurate statistical function for each participant\u2019s probability of being either byzantine or rational, using such a function to determine\nwho participates in the system\u2019s validation would improve its resistance to attack.\nIn fact, any accurate method of recognizing those who were attempting to strengthen\nthe system \u2013 and thus who could statistically be more trusted than a byzantine or even\naverage participant \u2013 could both decrease the power consumption and ecological cost of\nblockchain s",
+    "./raw_text_input_vision_paper/VerusVisionPaper"
+]

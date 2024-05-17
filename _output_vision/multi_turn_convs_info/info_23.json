@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What types of voting does Verus plan to support in its early phases?",
+            "In the early phases, Verus plans to focus on supporting multiple choice and weighted multiple choice voting.",
+            "create a sensible taxonomy for polls, one that people will understand, we define the following\ntypes of voting:\n1. Multiple choice\n2. Weighted multiple choice\n3. Ranking\n4. Rating\nWe also define the following types of polls:\n1. Polls to classify\n2. Polls to select\n3. Polls to rank\n4. Polls to rate\nWe do not expect Verus to support all voting and poll types in the early phases. In fact,\nuntil Phase IV, the Verus core team plans to focus on known requirements of multiple choice\nand weighted multiple choice voting. During or after completion of Phase IV, expanding\nsupport for voting and poll types will be higher priority.\nEach type of Verus poll may support confidential or public voting, live or delayed poll\nresults, online or offline vote authorization, and lottery selected vote authorization. We will\nroll out working vote models in phases, as well, initially providing solutions for weighted and\nunweighted selection voting, which fits well for both political and opinion polls as well as\ncontent classification and ID verification.\n3.3.5Intrinsic Polls",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ],
+        [
+            "What are the different types of polls that Verus defines in its taxonomy?",
+            "Verus defines the following types of polls: polls to classify, polls to select, polls to rank, and polls to rate.",
+            "create a sensible taxonomy for polls, one that people will understand, we define the following\ntypes of voting:\n1. Multiple choice\n2. Weighted multiple choice\n3. Ranking\n4. Rating\nWe also define the following types of polls:\n1. Polls to classify\n2. Polls to select\n3. Polls to rank\n4. Polls to rate\nWe do not expect Verus to support all voting and poll types in the early phases. In fact,\nuntil Phase IV, the Verus core team plans to focus on known requirements of multiple choice\nand weighted multiple choice voting. During or after completion of Phase IV, expanding\nsupport for voting and poll types will be higher priority.\nEach type of Verus poll may support confidential or public voting, live or delayed poll\nresults, online or offline vote authorization, and lottery selected vote authorization. We will\nroll out working vote models in phases, as well, initially providing solutions for weighted and\nunweighted selection voting, which fits well for both political and opinion polls as well as\ncontent classification and ID verification.\n3.3.5Intrinsic Polls",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ],
+        [
+            "What features may each type of Verus poll support?",
+            "Each type of Verus poll may support confidential or public voting, live or delayed poll results, online or offline vote authorization, and lottery selected vote authorization.",
+            "create a sensible taxonomy for polls, one that people will understand, we define the following\ntypes of voting:\n1. Multiple choice\n2. Weighted multiple choice\n3. Ranking\n4. Rating\nWe also define the following types of polls:\n1. Polls to classify\n2. Polls to select\n3. Polls to rank\n4. Polls to rate\nWe do not expect Verus to support all voting and poll types in the early phases. In fact,\nuntil Phase IV, the Verus core team plans to focus on known requirements of multiple choice\nand weighted multiple choice voting. During or after completion of Phase IV, expanding\nsupport for voting and poll types will be higher priority.\nEach type of Verus poll may support confidential or public voting, live or delayed poll\nresults, online or offline vote authorization, and lottery selected vote authorization. We will\nroll out working vote models in phases, as well, initially providing solutions for weighted and\nunweighted selection voting, which fits well for both political and opinion polls as well as\ncontent classification and ID verification.\n3.3.5Intrinsic Polls",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ],
+        [
+            "What is the priority for expanding support for voting and poll types in Verus?",
+            "Expanding support for voting and poll types will be a higher priority during or after the completion of the fourth phase of Verus development.",
+            "create a sensible taxonomy for polls, one that people will understand, we define the following\ntypes of voting:\n1. Multiple choice\n2. Weighted multiple choice\n3. Ranking\n4. Rating\nWe also define the following types of polls:\n1. Polls to classify\n2. Polls to select\n3. Polls to rank\n4. Polls to rate\nWe do not expect Verus to support all voting and poll types in the early phases. In fact,\nuntil Phase IV, the Verus core team plans to focus on known requirements of multiple choice\nand weighted multiple choice voting. During or after completion of Phase IV, expanding\nsupport for voting and poll types will be higher priority.\nEach type of Verus poll may support confidential or public voting, live or delayed poll\nresults, online or offline vote authorization, and lottery selected vote authorization. We will\nroll out working vote models in phases, as well, initially providing solutions for weighted and\nunweighted selection voting, which fits well for both political and opinion polls as well as\ncontent classification and ID verification.\n3.3.5Intrinsic Polls",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ],
+        [
+            "What types of voting models will Verus initially provide solutions for?",
+            "Verus will initially provide solutions for weighted and unweighted selection voting, which fits well for both political and opinion polls as well as content classification and ID verification.",
+            "create a sensible taxonomy for polls, one that people will understand, we define the following\ntypes of voting:\n1. Multiple choice\n2. Weighted multiple choice\n3. Ranking\n4. Rating\nWe also define the following types of polls:\n1. Polls to classify\n2. Polls to select\n3. Polls to rank\n4. Polls to rate\nWe do not expect Verus to support all voting and poll types in the early phases. In fact,\nuntil Phase IV, the Verus core team plans to focus on known requirements of multiple choice\nand weighted multiple choice voting. During or after completion of Phase IV, expanding\nsupport for voting and poll types will be higher priority.\nEach type of Verus poll may support confidential or public voting, live or delayed poll\nresults, online or offline vote authorization, and lottery selected vote authorization. We will\nroll out working vote models in phases, as well, initially providing solutions for weighted and\nunweighted selection voting, which fits well for both political and opinion polls as well as\ncontent classification and ID verification.\n3.3.5Intrinsic Polls",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3a5118d8-ed55-47bb-bcc6-6d5df8663ac7"
+]

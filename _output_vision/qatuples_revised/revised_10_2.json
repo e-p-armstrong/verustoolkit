@@ -1,0 +1,6 @@
+[
+    "What is the topic of the paper by Klbl et al. (2016) cited in the Verus vision paper?",
+    "The paper by Klbl et al. (2016) is about efficient short-input hashing for post-quantum applications, specifically discussing Haraka v2.",
+    ",\n\n[29] Gilad, Yossi, et al. \u201cAlgorand: Scaling Byzantine Agreements for Cryptocurrencies.\u201d\nMIT CSAIL, 24 Sept. 2017.\n[30] Klbl, Stefan, et al. \u201cHaraka v2 \u2013 Efficient Short-Input Hashing for Post-Quantum Applications.\u201d International Association for Cryptologic Research, 24 Dec. 2016.\n\n26",
+    "./raw_text_input_vision_paper/VerusVisionPaper"
+]

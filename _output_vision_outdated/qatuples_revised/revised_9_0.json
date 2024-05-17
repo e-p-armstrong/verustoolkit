@@ -1,0 +1,6 @@
+[
+    "How does the Verus system use randomized selection for its functions?",
+    "The Verus system uses blockchain lotteries for randomized selection, similar to its Phase I PoS block validation system. This is used for selecting participants in randomized polls and other cases where pseudo-random sampling is desired.",
+    "The Verus system will randomized selection for many of its functions, similar to its Phase I\nPoS block validation system. Blockchain lotteries will be generalized and used for selection\nof participants in randomized polls and in other cases where pseudo-random sampling is\ndesired. The general principles behind Verus lotteries are the same, regardless of whether\nsomething similar to Algorand [29] for guaranteed selection or an original Verus algorithm\nbased on difficulty, such as Verus PoS is used for selection. Lotteries use the blockchain as a\nrandom oracle and are based on the assumption that the exact value of a specific block hash\nfrom a past block in the chain cannot be modified by a byzantine participant to weigh the\nodds in their favor.\n3.4.1Participating in a Lottery",
+    "./raw_text_input_vision_paper/VerusVisionPaper"
+]

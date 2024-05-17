@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the Eigentrust ratings on the autochain?",
+    "The purpose of the Eigentrust ratings on the autochain is to record the quality of service offered by each node. This helps to establish trust in the nodes and allows for the selection of nodes with better QoS in future lotteries.",
+    "t\n\nby validators on the autochain. They will then be able to use this recognition to boost their\nreputation for selection in future lotteries.\nBy advertising autochain node support on the main blockchain \u2013 along with a stable\npayment address via a transaction \u2013 the node IP can be selected in a random lottery. The\nEigentrust ratings of all nodes can then be recorded by all other nodes that serve the chain\nat regular intervals. Nodes which consistently offer better QoS will get better ratings. Nodes\nthat get poorly rated will still share in the node rewards for the current blockchain \u2013 but\nwill be less likely to be selected in the next node lottery.\n\n9\n\n3.2\n3.2.1\n\nThe Virtue Autochain\nRoots of Trust in Distributed Consensus\n\nThe Bitcoin [14] proof of work implementation introduced the world to systems that establish\ntrust, not due to belief in any individual human\u2019s behavior, but based on the tendency of\nhumans to act in their own self-",
+    "./raw_text_input_vision_paper/VerusVisionPaper"
+]

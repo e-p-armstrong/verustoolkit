@@ -151,7 +151,7 @@ async def main():
             source_text
         )
 
-    conversions = [("\n", " "), ("  ", " ")]
+    conversions = [("  ", " ")]
 
     paragraphs_processed = [
         (control_flow_functions.fix_text(conversions, seq[0]), seq[1])
@@ -183,6 +183,12 @@ async def main():
     qa_tuples_dir = config["PATH"]["OUTPUT"] + "/qatuples_raw"
     if not os.path.exists(qa_tuples_dir):
         os.makedirs(qa_tuples_dir)
+
+    # save the filtered_worthy_for_questions to a file
+    with open(
+        config["PATH"]["OUTPUT"] + "/filtered_worthy_for_questions.json", "w"
+    ) as f:
+        json.dump(filtered_worthy_for_questions, f)
 
     vetted_qa_tuples = []  # tuple list of qa tuples that have been judged good
 

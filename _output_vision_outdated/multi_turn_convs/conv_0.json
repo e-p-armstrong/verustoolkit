@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI've been hearing about polls on Verus. What types of polls will Verus support?\n\n**AI Assistant:**\nVerus will support numerous types of polls, including those that use weighted or unweighted voting, polls that seek to expose truth or opinions, and polls that rate and choose collectively. With Verus, the possibilities for polling are vast and flexible, ensuring that users can create and participate in polls that meet their specific needs. Would you like to know more about Verus's polling features or is there something else I can help you with?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What types of polls will Verus support?",
+            "Verus will support numerous types of polls, including those that use weighted or unweighted voting, polls that seek to expose truth or opinions, and polls that rate and choose collectively.",
+            "oVoting Models and Types of PollsVerus will support numerous types of polls, those that use weighted or unweighted voting,\nthat seek to expose truth or opinions, and polls that rate and choose collectively. In order to\n13",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ]
+    ]
+]

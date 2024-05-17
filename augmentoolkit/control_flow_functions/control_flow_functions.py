@@ -1165,7 +1165,7 @@ async def determine_worthy(
         except:
             print(f"DEBUG max retries exceeded for index {idx}")
 
-def chunking_algorithm(file_path, max_char_length=2400):
+def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE"]):
     """
     This function takes a plaintext file and chunks it into paragraphs or sentences if the paragraph exceeds max_token_length.
 
@@ -1201,7 +1201,9 @@ def chunking_algorithm(file_path, max_char_length=2400):
         # Check if the paragraph itself exceeds the max token length
         if paragraph_token_count > max_char_length:
             # Fallback to character chunking for this paragraph
-            # Just realized that with this approach we drop the rest of the very long paragraph. Not ideal. TODO Fix.
+            
+            # Occasional errors when running the vision paper are deemed to be a logging bug, not a code bug; since retries fix them.
+            # Just realized that with this approach we drop the rest of the very long paragraph. Not ideal. TODO Fix. Potential solution: turn the below for into an enumerate, and in the else, append the current paragraph [idx:] to the paragraphs. Then somehow restart the for loop at the idx we're currently at? This needs to be slightly more complex than it is right now.
             character_array = []
             characters = list(paragraph)
             for character in characters:
