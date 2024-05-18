@@ -321,3 +321,8 @@
     """
     {text}
     """
+
+    ----------------
+    Reminder 1: Focus on questions that someone could realistically ask to try and understand Verus better. This includes a requirement to ask about information that is not obvious: someone would not, after seeing an error, ask what the error message they got is. Instead, they would ask how to solve the error message.
+    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general.
+    Text context: this text is from an informational website about Verus.

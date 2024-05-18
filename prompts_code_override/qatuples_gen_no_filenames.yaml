@@ -28,6 +28,8 @@
     You will create however many questions make are needed to adequately cover the information in the given documentation.
     
     Do not explicitly mention the provided text or the context in the questions themselves — just ask about the concepts related to the questions.
+
+    The context of the provided text will be given, to help you understand what the information
 - role: user
   content: | # The few-shot examples should serve three purposes: 1. cover common types of input; 2. explore common output cases; 3. provide background on Verus just by being.
     Text to make questions from: 
@@ -47,7 +49,8 @@
 
     ----------------
     Reminder 1: Focus on questions that someone could realistically ask to try and understand Verus better. This includes a requirement to ask about information that is not obvious: someone would not, after seeing an error, ask what the error message they got is. Instead, they would ask how to solve the error message.
-    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general. 
+    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general.
+    Text context: this text is from an informational website about Verus.
 - role: assistant
   content: |
     **QUESTION:**
@@ -101,7 +104,8 @@
 
     ----------------
     Reminder 1: Focus on questions that someone could realistically ask to try and understand Verus better. This includes a requirement to ask about information that is not obvious: someone would not, after seeing an error, ask what the error message they got is. Instead, they would ask how to solve the error message.
-    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general. 
+    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general.
+    Text context: this text is from an informational website about Verus.
 - role: assistant
   content: |
     **QUESTION:**
@@ -224,7 +228,8 @@
 
     ----------------
     Reminder 1: Focus on questions that someone could realistically ask to try and understand Verus better. This includes a requirement to ask about information that is not obvious: someone would not, after seeing an error, ask what the error message they got is. Instead, they would ask how to solve the error message.
-    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general. 
+    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general.
+    Text context: this text is from an informational website about Verus.
 - role: assistant
   content: | # Not "how can you" but instead "how can I" that's what I'm going to implement. Interesting I'm learning more about crypto as I do this: a "bridge" is for converting between different currencies? Maybe using a shared pool of stuff? Not sure about the second bit.
     **QUESTION:**
@@ -315,3 +320,8 @@
     """
     {text}
     """
+    ----------------
+    Reminder 1: Focus on questions that someone could realistically ask to try and understand Verus better. This includes a requirement to ask about information that is not obvious: someone would not, after seeing an error, ask what the error message they got is. Instead, they would ask how to solve the error message.
+    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general.
+    Text context: this text is from an informational website about Verus.
+    Text context: this text comes directly from the API documentation for Verus -- it was printed via a help command. The questions and answers should fully cover the purpose, use, and nuances of the command to the extent possible given the amount of information provided.

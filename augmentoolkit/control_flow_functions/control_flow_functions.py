@@ -888,9 +888,8 @@ def extract_questions_from_response_completionmode(
 ):  # TODO extract to non-controlflow file
     questions = extract_qa_tuples(generation)
     if len(questions) == 0:
-        raise Exception(
-            "Failed to generate questions!"
-        )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
+        print("FAILED TO GENERATE QUESTIONS!")
+        return []
     return questions
 
 
@@ -899,9 +898,8 @@ def extract_questions_from_response_chatmode(
 ):  # TODO extract to non-controlflow file
     questions = extract_qa_tuples(generation)
     if len(questions) == 0:
-        raise Exception(
-            "Failed to generate questions!"
-        )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
+        print("FAILED TO GENERATE QUESTIONS!")
+        return []
     return questions
 
 
@@ -1045,15 +1043,20 @@ async def generate_qatuples_from_para(
                 "textdetails": para[1],
             }
         )
+        
 
-        question_answer_tuples_more_info = [
-            (qatup[0], qatup[1], para[0], para[1]) for qatup in question_answer_tuples
-        ]
         write_output_to_file(
             question_generation_output,
             obj_conf["PATH"]["OUTPUT"] + "/question_generation_generations",
             question_group_id,
         )
+        if not question_answer_tuples:
+            print("PARAGRAPH THAT ERRORED:")
+            print(para)
+            raise Exception(f"{question_group_id} Failed to Generate Questions!")
+        question_answer_tuples_more_info = [
+            (qatup[0], qatup[1], para[0], para[1]) for qatup in question_answer_tuples
+        ]
         for qnum, question_answer_tuple in enumerate(question_answer_tuples_more_info):
             # print(f"\n\n=======!!=BEGIN VETTING QA TUPLE {idx}_{qnum}=!!=======\n\n")
             good_qa_tuple = await vet_question_loop(
@@ -1176,7 +1179,7 @@ def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE
     """
     chunks_with_source = []
     current_chunk = []
-    token_count = 0
+    char_count = 0
     source_name = file_path.replace(".txt", "")
 
 
@@ -1190,39 +1193,47 @@ def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE
     #     return []
         
     paragraphs = content.split('\n\n')  # Assuming paragraphs are separated by two newlines # TODO change so that if the length is 1 after this, split by tabs instead
+    
+    # HOW TO DO IT probably:
+    # add tokens to the paragraph until we reach the max length,
+    # create chunks out of the remainder of the paragraph (split at max chunk length until it's done)
+    # if the final chunk does not have the max length, then make it the new current chunk, set the current token count to its length, and continue with the for loop.
 
     for paragraph in paragraphs:
         paragraph = paragraph.strip()  # Remove leading and trailing whitespace
         if not paragraph:  # Skip empty paragraphs
             continue
         
-        paragraph_token_count = len(paragraph)
+        paragraph_char_count = len(paragraph)
         
         # Check if the paragraph itself exceeds the max token length
-        if paragraph_token_count > max_char_length:
-            # Fallback to character chunking for this paragraph
+        if paragraph_char_count > max_char_length:
             
-            # Occasional errors when running the vision paper are deemed to be a logging bug, not a code bug; since retries fix them.
-            # Just realized that with this approach we drop the rest of the very long paragraph. Not ideal. TODO Fix. Potential solution: turn the below for into an enumerate, and in the else, append the current paragraph [idx:] to the paragraphs. Then somehow restart the for loop at the idx we're currently at? This needs to be slightly more complex than it is right now.
-            character_array = []
-            characters = list(paragraph)
-            for character in characters:
-                if token_count + 1 <= max_char_length:
-                    character_array.append(character)
-                    token_count += 1
-                else:
-                    current_chunk.append("".join(character_array))
-                    chunks_with_source.append(("\n\n".join(current_chunk), source_name))
-                    current_chunk = [character]
-                    token_count = 1
+            # Fallback to character chunking for this paragraph
+            end_index = max_char_length - char_count # after this we will take max_char_length chunks starting from end index until the end of the paragraph
+            current_chunk.append(paragraph[:end_index])
+            # characters = list(paragraph)
+            chunks_with_source.append(("".join(current_chunk), source_name))
+            current_chunk = []
+            while end_index < paragraph_char_count:
+                current_chunk.append(paragraph[end_index:end_index + max_char_length])
+                chunks_with_source.append(("".join(current_chunk), source_name))
+                current_chunk = []
+                end_index += max_char_length
+            
+            # # handle the remainder of the paragraph
+            # end_index = end_index - max_char_length
+            # current_chunk.append(paragraph[end_index:])
+            
+            # char_count = paragraph_char_count - end_index
         else:
-            if token_count + paragraph_token_count <= max_char_length:
+            if char_count + paragraph_char_count <= max_char_length:
                 current_chunk.append(paragraph)
-                token_count += paragraph_token_count
+                char_count += paragraph_char_count
             else:
                 chunks_with_source.append(("".join(current_chunk), source_name))
                 current_chunk = [paragraph]
-                token_count = paragraph_token_count
+                char_count = paragraph_char_count
 
     # Add the last chunk if it exists
     if current_chunk:

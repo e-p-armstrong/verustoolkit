@@ -144,8 +144,10 @@ async def main():
 
     import re
     from tqdm import tqdm
+    import pprint
 
     sentence_chunks = []
+    print("Chunking text...")
     for source_text in source_texts:
         sentence_chunks += control_flow_functions.chunking_algorithm(
             source_text
@@ -158,7 +160,7 @@ async def main():
         for seq in sentence_chunks
     ]
     
-    print(paragraphs_processed[:3])
+    pprint.pprint(paragraphs_processed[:5])
 
     import json
     import os
@@ -218,6 +220,9 @@ async def main():
     total_nones = 0
     total_non_nones = 0
     filtered_vetted_qa_tuples = []
+
+    # first filter out None sublists:
+        
 
     for sublist in vetted_qa_tuples:
         filtered_sublist = [qa for qa in sublist if qa is not None]
