@@ -1,23 +1,12 @@
 import asyncio
 
-# created with nbconvert, minimally cleaned up
-
-
 async def main():
-    # NOTE NOTEBOOK SETTINGS AND CONSTANTS (some script file constants are in generation_functions/constants.py)
-
-    # Put your desired quant of your desired model in the relevant directories
-
     import logging
     import yaml
     import glob
 
     with open("./config.yaml", "r") as f:
         config = yaml.safe_load(f)
-
-    # "airoboros-l2-70b-3.1.2.Q4_K_M.gguf" <- recommended for the large logical model
-    # "flatorcamaid-13b-v0.2.Q8_0.gguf" <- recommended for the normal logical model
-    # A6000s on Vast.ai are a good choice for running this notebook
 
     if (
         not config["SYSTEM"]["COMPLETION_MODE"]
@@ -28,10 +17,6 @@ async def main():
     LOGICAL_MODEL = config["API"]["LOGICAL_MODEL"]
 
     LARGE_LOGICAL_MODEL = config["API"]["LARGE_LOGICAL_MODEL"]
-
-    ASSISTANT_MODE = config["SYSTEM"][
-        "ASSISTANT_MODE"
-    ]  # change to true if you want all conversations to be with an "AI language model" and not characters. Useful for more professional use cases.
 
     DOUBLE_CHECK_COUNTER = config["SYSTEM"][
         "DOUBLE_CHECK_COUNTER"
@@ -85,7 +70,6 @@ async def main():
     )
 
     import os
-    import uuid
 
     # This is in no way best practices, but all my prompts being searchable and separate files is a good way to make my life easier.
     import pkgutil
@@ -174,7 +158,6 @@ async def main():
     filtered_worthy_for_questions = paragraphs_processed
     if USE_SUBSET:
         filtered_worthy_for_questions = filtered_worthy_for_questions[:config["SYSTEM"]["SUBSET_SIZE"]]
-    # ### The cell below begins generating questions. SOME OF THESE MAY FAIL and have to retry due to model errors (the API branch cannot use grammars). But if you let it run you will see that the vast majority eventually get through.
 
     # control flow
     import json
@@ -221,9 +204,6 @@ async def main():
     total_non_nones = 0
     filtered_vetted_qa_tuples = []
 
-    # first filter out None sublists:
-        
-
     for sublist in vetted_qa_tuples:
         filtered_sublist = [qa for qa in sublist if qa[0] is not None]
         if filtered_sublist:
@@ -241,21 +221,8 @@ async def main():
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
-
-    # TODO turn repairing context into a "link removal" and other cleanup function
-    # And add the step back
     
-    
-    
-    # HERE WE GROUP THE QUESTIONS BY PARAGRAPH IN A DICT WHERE THE KEY IS THE PARA NUMBER (like para_0, para_1, etc. from the previous step)
-    
-    # TODO
-    
-    
-    
-    
-    ##### QATUPLES REPAIR (modify so that it iterates over the paragraph groups and calls repair on each question in each group, writing to files prefixed by para_x_q_y depending on the idx or key of the group and the idx of the question in the group) instead of just going over all questions and relying on distinct texts.
-    # This next step will also create groups, we don't need to group_by_text that will go away, we create and append to the groups as we revise the questions. That way it is compatible with the rest of the steps.
+    ##### QATUPLES REPAIR 
     
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
@@ -300,18 +267,12 @@ async def main():
     print(f"Total: {total_nones + total_non_nones}")
     print("---------------- ONTO EXAMPLES GENERATION-------------------")
 
-    ##### QATUPLES REPAIR
-
-    # Safe to delete the stuff below until the next comment about deletion ONCE THE ABOVE IS WORKING
-
     import os
 
     if not os.path.exists(multi_turn_convs_info_dir):
         os.makedirs(multi_turn_convs_info_dir)
 
     import json
-    import random
-    import itertools
 
     multi_turn_convs_info = []
 
@@ -327,7 +288,6 @@ async def main():
     limited_tasks_infocreation = [run_task_with_limit(task) for task in tasks]
     for future in tqdmasyncio.tqdm.as_completed(limited_tasks_infocreation):
         await future
-    # You can safely delete the stuff above until the other comment about deletion
 
     engine_wrapper = EngineWrapper(
         model=LARGE_LOGICAL_MODEL,
@@ -343,8 +303,6 @@ async def main():
 
     import os
     import json
-    import random
-    import itertools
     import asyncio
 
     multi_turn_convs_dir = config["PATH"]["OUTPUT"] + "/multi_turn_convs"
@@ -360,7 +318,6 @@ async def main():
             engine_wrapper,
             multi_turn_convs,
             multi_turn_convs_dir,
-            assistant_mode=ASSISTANT_MODE,
             completion_mode=COMPLETION_MODE,
             logging_level=LOG_LEVEL,
         )
@@ -370,7 +327,7 @@ async def main():
     for future in tqdmasyncio.tqdm.as_completed(limited_tasks_convwriting):
         await future
 
-    # # Yay! Now you have a dataset!
+    # Yay! Now you have a dataset!
 
     import os
     import json

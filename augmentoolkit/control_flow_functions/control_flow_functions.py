@@ -1,16 +1,6 @@
-import random
-import itertools
 import os
-import asyncio
 import json
 import re
-from tqdm import asyncio as tqdmasyncio
-from tqdm import tqdm
-import nltk
-from nltk.tokenize import sent_tokenize
-from transformers import AutoTokenizer
-import matplotlib.pyplot as plt
-from collections import Counter
 import logging
 from math import ceil
 import traceback
@@ -23,28 +13,15 @@ from augmentoolkit.utils.escape_unescaped_quotes import escape_unescaped_quotes
 from augmentoolkit.generation_functions import (
     extract_question_answer,
     process_multiturn_functions,
-    identify_duplicates,
-    extract_name,
-    random_name,
-    strip_steps,
-)
-from augmentoolkit.generation_functions.character_card_helpers import (
-    extract_capital_letters,
-    select_random_capital,
 )
 from augmentoolkit.generation_functions.format_qatuples import format_qatuples
 
 from augmentoolkit.generation_functions.generation_step_class import GenerationStep
-from augmentoolkit.generation_functions.special_instructions import special_instructions
 
 with open("./config.yaml", "r") as file:
     obj_conf = yaml.safe_load(file)
 
 DEFAULT_PROMPT_PATH = obj_conf["PATH"]["DEFAULT_PROMPTS"]
-
-tokenizer = AutoTokenizer.from_pretrained(
-        "TheBloke/OpenHermes-2.5-Mistral-7B-GPTQ"
-)
 
 def extract_qa_tuples(text):
     pattern = r'\*\*QUESTION:\*\*\s*((?:.|\n)*?)\s*\*\*ANSWER:\*\*\s*((?:.|\n)*?)(?=\s*\*\*QUESTION:\*\*|\Z)'
@@ -108,228 +85,6 @@ def write_output_to_file(output, directory, uuid):
 
 # multiturn helpers
 # These will probably be used for multiturn rapid-fire answering.
-
-
-def create_conv_starter(character):
-    charname = extract_name.extract_name(character)
-    first_words_of_card = extract_first_words(charname, character)
-    conv_starters = [  # prevents it from regurgitating the card (when combined with filtering)
-        "Ah",
-        "Oh",
-        # "You",
-        # "Really",
-        "I",
-        # "What",
-        # "So",
-        "Welcome",
-        "Hey",
-        # "Look",
-        # "Now",
-        # "Huh",
-        "It's",
-        "Hello",
-    ]
-
-    conv_starters_filtered = [
-        starter for starter in conv_starters if starter not in first_words_of_card
-    ]
-    return random.choice(conv_starters_filtered)
-
-
-def create_starting_str(qatuples):
-    author_name_letters = extract_capital_letters(qatuples[0][3])
-    starting_str = ""
-    exclusions = ["X", "Z", "Y", "Q"]
-    if author_name_letters:
-        starting_str = select_random_capital(exclusions + author_name_letters)
-    else:
-        starting_str = select_random_capital(exclusions)
-    return starting_str
-
-
-# Idea: use multiple short answers to train the task of answering multiple questions in one response. Like, "Tell me what 2+2 is then tell me who won the battle of Alesia". Two-three short answers per response should be enough.
-async def make_multiturn_character(
-    qa_tuples,
-    conv_id,
-    assistant_mode=False,
-    character_card_plan_creator=None,
-    character_card_creator=None,
-    completion_mode=None,
-):
-    if (
-        assistant_mode
-    ):  # If assistant mode is on, multiturn convs will have hardcoded information in its prompt file; but we still need to put something in the file
-        return "will_be_replaced", "will_be_replaced"
-
-    instructions = special_instructions(n=1).strip()
-    # if not completion_mode:
-    #     instructions = escape_unescaped_quotes(instructions).replace("\n", "\\n")
-    if completion_mode:
-        (
-            plan,
-            card_plan_output,
-        ) = await character_card_plan_creator.generate(
-            arguments={
-                "textname": qa_tuples[0][3],
-                "text": qa_tuples[0][2],
-                "question_answer_list": format_qatuples(qa_tuples),
-                "special_instructions": instructions,
-            }
-        )  # I will reuse the many tuples function for short question-answers, there's a lot of prompting in here already
-    else:
-        (
-            plan,
-            card_plan_output,
-        ) = await character_card_plan_creator.generate(
-            arguments={
-                "textname": qa_tuples[0][3],
-                "text": qa_tuples[0][2],
-                "question_answer_list": format_qatuples(qa_tuples),
-                "special_instructions": instructions,
-            }
-        )
-    write_output_to_file(
-        card_plan_output,
-        obj_conf["PATH"]["OUTPUT"] + "/multiturn_card_plan_generations",
-        conv_id,
-    )
-
-    starting_str = create_starting_str(qa_tuples)
-    (
-        char,
-        char_output,
-    ) = await character_card_creator.generate(
-        arguments={
-            "text": qa_tuples[0][2],
-            "textname": qa_tuples[0][3],
-            "special_instructions": instructions,
-            "plan": plan,
-            "starting_str": starting_str,
-        }
-    )  # creates a character card
-    write_output_to_file(
-        char_output, obj_conf["PATH"]["OUTPUT"] + "/multiturn_card_generations", conv_id
-    )
-    return char, instructions
-
-
-async def make_multiturn_scenario(
-    qa_tuples,
-    character,
-    conv_id,
-    assistant_mode=False,
-    scenario_plan_creator=None,
-    scenario_creator=None,
-    completion_mode=None,
-):
-    if (
-        assistant_mode
-    ):  # If assistant mode is on, multiturn convs will have hardcoded information in its prompt file; but we still need to put something in the file
-        return "will_be_replaced", "will_be_replaced"
-    if completion_mode:
-        (
-            plan,
-            scenario_plan_output,
-        ) = await scenario_plan_creator.generate(
-            arguments={
-                "question_answer_list": format_qatuples(qa_tuples),
-                "character": character,
-            }
-        )
-    else:
-        (
-            plan,
-            scenario_plan_output,
-        ) = await scenario_plan_creator.generate(
-            arguments={
-                "question_answer_list": format_qatuples(qa_tuples),
-                "character": character,
-            }
-        )
-
-    plan = fix_scenario_plan(plan, character)
-    write_output_to_file(
-        scenario_plan_output,
-        obj_conf["PATH"]["OUTPUT"] + "/multiturn_scenario_plan_generations",
-        conv_id,
-    )
-
-    variation = select_variation(character)
-    if completion_mode:
-        (
-            scenario,
-            scenario_output,
-        ) = await scenario_creator.generate(
-            arguments={
-                "question_answer_list": format_qatuples(qa_tuples),
-                "character": character,
-                "plan": plan,
-                "selected_variation": variation,
-            }
-        )  # creates a scenario based on a character card and question/answer tuple
-    else:
-        (
-            scenario,
-            scenario_output,
-        ) = await scenario_creator.generate(
-            arguments={
-                "question_answer_list": format_qatuples(qa_tuples),
-                "character": character,
-                "plan": plan,
-                "selected_variation": variation,
-            }
-        )
-    write_output_to_file(
-        scenario_output,
-        obj_conf["PATH"]["OUTPUT"] + "/multiturn_scenario_generations",
-        conv_id,
-    )
-    return scenario, plan
-
-
-async def make_multiturn_conversation_info(
-    qa_tuples,
-    assistant_mode=False,
-    character_card_plan_creator=None,
-    character_card_creator=None,
-    scenario_plan_creator=None,
-    scenario_creator=None,
-    completion_mode=None,
-):
-    conv_id = make_id()
-    if (
-        assistant_mode
-    ):  # If assistant mode is on, multiturn convs will have hardcoded information in its prompt file; but we still need to put something in the file
-        return (qa_tuples, "will", "be", "replaced", conv_id)
-    # thought_plan = create_thought_plan_many_tuples(qa_tuples,character,scenario,logic_llm) # There IS a way to make multiturn chain of thought answering work: generate each pair of messages using a separate prompt or a separate function, each of which has only the thought plan for that question/answer pair. But simply cramming in all the step-by-step things will confuse the hell out of the poor model. So for the first release version we're skipping it and just giving the response, with no reasoning, in the multiturn convs.
-    retries = 0
-    done = False
-    while not done and retries < 3:
-        retries = retries + 1
-        character, instructions = await make_multiturn_character(
-            qa_tuples,
-            conv_id,
-            assistant_mode=assistant_mode,
-            character_card_plan_creator=character_card_plan_creator,
-            character_card_creator=character_card_creator,
-            completion_mode=completion_mode,
-        )
-        if "What's your backstory?" not in character:
-            print("Failed to properly generate card, retrying")
-            continue
-        done = True
-    scenario, scenario_plan = await make_multiturn_scenario(
-        qa_tuples,
-        character,
-        conv_id,
-        assistant_mode=assistant_mode,
-        scenario_plan_creator=scenario_plan_creator,
-        scenario_creator=scenario_creator,
-        completion_mode=completion_mode,
-    )
-
-    return (qa_tuples, character, scenario, scenario_plan, conv_id)
-
 
 # Group tuples for multiturn example generation (by chunk of source text) and then run that helper (so that we can make multiturn conversations from questions based on the same paragraphs)
 def group_by_text(tuples_list):
@@ -1082,41 +837,6 @@ async def generate_qatuples_from_para(
         print(f"Q ERROR: {e}")
         traceback.print_exc()
 
-
-# Graphing code generated by GPT-4. May be suboptimal/ugly.
-def filter_and_graph(tuples, graph):
-    # Count the occurrences of None and non-None for each source text
-    source_counts = Counter()
-    for paragraph, source in tuples:
-        if paragraph is None:
-            source_counts[source] = source_counts.get(source, [0, 0])
-            source_counts[source][0] += 1
-        else:
-            source_counts[source] = source_counts.get(source, [0, 0])
-            source_counts[source][1] += 1
-    if graph:
-        # Prepare data for the graph
-        labels = list(source_counts.keys())
-        none_counts = [source_counts[source][0] for source in labels]
-        non_none_counts = [source_counts[source][1] for source in labels]
-
-        # Plotting the graph
-        x = range(len(labels))
-        plt.bar(x, none_counts, width=0.4, label="Not suitable", align="center")
-        plt.bar(x, non_none_counts, width=0.4, label="Valid Paragraphs", align="edge")
-        plt.xlabel("Source Text")
-        plt.ylabel("Number of Paragraphs")
-        plt.title("Paragraphs Suitable for Questions by Source Text")
-        plt.xticks(x, labels, rotation="vertical")
-        plt.legend()
-        plt.tight_layout()
-        plt.show()
-
-    # Filter out tuples with None and return the new list
-    filtered_list = [t for t in tuples if t[0] is not None]
-    return filtered_list
-
-
 ## Paragraph Filtering (worthy for questions?)
 async def determine_worthy(
     idx,
@@ -1170,11 +890,10 @@ async def determine_worthy(
 
 def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE"]):
     """
-    This function takes a plaintext file and chunks it into paragraphs or sentences if the paragraph exceeds max_token_length.
+    This function takes a plaintext file and chunks it into paragraphs or sentences if the paragraph exceeds max_char_length.
 
     :param file_path: Path to the plaintext file
-    :param tokenizer: SentencePiece tokenizer
-    :param max_token_length: The maximum token length for a chunk
+    :param max_char_length: The maximum char5acter length for a chunk
     :return: List of chunks with source text information
     """
     chunks_with_source = []
@@ -1302,34 +1021,6 @@ async def make_multiturn_conversation(
 
     return (conv, info[1], info[2], info[3], info[0])
 
-
-def select_variation(
-    character,
-):  # can help following the groove of the few-shot examples, in the case where you're using a slightly stupid model or low temperature
-    charname = extract_name.extract_name(character)
-    variations = [
-        # "Set against the backdrop of",
-        f"In {charname}'s ",
-        "Amidst the surroundings of ",
-        # "Within the confines of",
-        f"Within {charname}'s ",
-        f"Inside {charname}'s ",
-        # f"Inside the confines of ",
-        f"Inside the confines of {charname}'s",
-        f"Set amongst the",
-    ]
-
-    return random.choice(variations)
-
-
-def fix_scenario_plan(scenario_plan, character):
-    charname = extract_name.extract_name(character)
-    if not ("Albert" in charname):
-        if "Albert" in scenario_plan:
-            print("Random Name was used instead of Albert")
-        scenario_plan = scenario_plan.replace("Albert", random_name.random_name())
-    return scenario_plan
-
 async def create_info(
     idx,
     group,
@@ -1382,7 +1073,6 @@ async def create_conversation(
     engine_wrapper,
     multi_turn_convs,
     multi_turn_convs_dir,
-    assistant_mode=False,
     completion_mode=None,
     logging_level=logging.INFO,
 ):
@@ -1448,14 +1138,13 @@ async def create_conversation(
             )
 
             if final_conv is not None:
-                if assistant_mode:
-                    final_conv = (
-                        final_conv[0],
-                        "AI Assistant",
-                        "",
-                        "N/A",
-                        final_conv[4],
-                    )
+                final_conv = (
+                    final_conv[0],
+                    "AI Assistant",
+                    "",
+                    "N/A",
+                    final_conv[4],
+                )
                 with open(file_path, "w") as file:
                     json.dump(final_conv, file, indent=4)
 
