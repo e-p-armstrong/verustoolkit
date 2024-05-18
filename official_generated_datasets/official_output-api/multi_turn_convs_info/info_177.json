@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `sendrawtransaction` command in Verus?",
+            "The `sendrawtransaction` command is used to submit a raw transaction (serialized, hex-encoded) to the local node and network. It takes a hex string of the raw transaction as an argument and returns the transaction hash in hex.",
+            "sendrawtransaction \"hexstring\" ( allowhighfees ) Submits raw transaction (serialized, hex-encoded) to local node and network. Also see createrawtransaction and signrawtransaction calls. Arguments: 1. \"hexstring\"  (string, required) The hex string of the raw transaction) 2. allowhighfees  (boolean, optional, default=false) Allow high fees Result: \"hex\"       (string) The transaction hash in hex Examples: Create a transaction > verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\" Sign the transaction, and get back the hex > verus signrawtransaction \"myhex\" Send the transaction (signed hex) > verus sendrawtransaction \"signedhex\" As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ],
+        [
+            "What are the arguments for the `sendrawtransaction` command?",
+            "The arguments for the `sendrawtransaction` command are:\n\n1. `hexstring` (string, required): The hex string of the raw transaction.\n2. `allowhighfees` (boolean, optional, default=false): Allow high fees.",
+            "sendrawtransaction \"hexstring\" ( allowhighfees ) Submits raw transaction (serialized, hex-encoded) to local node and network. Also see createrawtransaction and signrawtransaction calls. Arguments: 1. \"hexstring\"  (string, required) The hex string of the raw transaction) 2. allowhighfees  (boolean, optional, default=false) Allow high fees Result: \"hex\"       (string) The transaction hash in hex Examples: Create a transaction > verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\" Sign the transaction, and get back the hex > verus signrawtransaction \"myhex\" Send the transaction (signed hex) > verus sendrawtransaction \"signedhex\" As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ],
+        [
+            "How can I use the `sendrawtransaction` command to send a signed transaction to the network?",
+            "To send a signed transaction to the network, you can use the `sendrawtransaction` command by passing the signed hex string as an argument. For example:\n\n```\nverus sendrawtransaction \"signedhex\"\n```",
+            "sendrawtransaction \"hexstring\" ( allowhighfees ) Submits raw transaction (serialized, hex-encoded) to local node and network. Also see createrawtransaction and signrawtransaction calls. Arguments: 1. \"hexstring\"  (string, required) The hex string of the raw transaction) 2. allowhighfees  (boolean, optional, default=false) Allow high fees Result: \"hex\"       (string) The transaction hash in hex Examples: Create a transaction > verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\" Sign the transaction, and get back the hex > verus signrawtransaction \"myhex\" Send the transaction (signed hex) > verus sendrawtransaction \"signedhex\" As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ],
+        [
+            "How can I use the `sendrawtransaction` command as a JSON RPC call?",
+            "To use the `sendrawtransaction` command as a JSON RPC call, you can use the following format:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "sendrawtransaction \"hexstring\" ( allowhighfees ) Submits raw transaction (serialized, hex-encoded) to local node and network. Also see createrawtransaction and signrawtransaction calls. Arguments: 1. \"hexstring\"  (string, required) The hex string of the raw transaction) 2. allowhighfees  (boolean, optional, default=false) Allow high fees Result: \"hex\"       (string) The transaction hash in hex Examples: Create a transaction > verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\" Sign the transaction, and get back the hex > verus signrawtransaction \"myhex\" Send the transaction (signed hex) > verus sendrawtransaction \"signedhex\" As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ],
+        [
+            "What is the relationship between `sendrawtransaction`, `createrawtransaction`, and `signrawtransaction` commands?",
+            "The `sendrawtransaction` command is used to submit a raw transaction to the network. The `createrawtransaction` command is used to create a raw transaction, and the `signrawtransaction` command is used to sign the raw transaction. These commands are used together to create, sign, and send a transaction to the network.",
+            "sendrawtransaction \"hexstring\" ( allowhighfees ) Submits raw transaction (serialized, hex-encoded) to local node and network. Also see createrawtransaction and signrawtransaction calls. Arguments: 1. \"hexstring\"  (string, required) The hex string of the raw transaction) 2. allowhighfees  (boolean, optional, default=false) Allow high fees Result: \"hex\"       (string) The transaction hash in hex Examples: Create a transaction > verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\" Sign the transaction, and get back the hex > verus signrawtransaction \"myhex\" Send the transaction (signed hex) > verus sendrawtransaction \"signedhex\" As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2d4bc694-3d8d-4fbb-8106-87c3d76d47bb"
+]

@@ -1,6 +1,0 @@
-[
-    "What is the format of the result returned by the `getexports` command?",
-    "The result is an array of objects, each containing information about a pending export transfer. The objects have the following properties: `height`, `txid`, `txoutnum`, `partialtransactionproof`, and `transfers`, which is an array of transfer objects.",
-    "getexports \"chainname\" (heightstart) (heightend) Returns pending export transfers to the specified currency from start height to end height if specified Arguments \"chainname\"           (string, required) name/ID of the currency to look for. no parameter returns current chain \"heightstart\"          (int, optional)   default=0 only return exports at or above this height \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height Result:  [{   \"height\": n,   \"txid\": \"hexid\",   \"txoutnum\": n,   \"partialtransactionproof\": \"hexstr\",   \"transfers\": [{transfer1}, {transfer2},...] }, ...] Examples: > verus getexports \"chainname\" (heightstart) (heightend) > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getexports\", \"params\": [\"chainname\" (heightstart) (heightend)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getexports"
-]

@@ -1,0 +1,6 @@
+[
+    "What does the `getdifficulty` command do in Verus?",
+    "The `getdifficulty` command returns the proof-of-work difficulty as a multiple of the minimum difficulty.",
+    "getdifficulty Returns the proof-of-work difficulty as a multiple of the minimum difficulty. Result: n.nnn    (numeric) the proof-of-work difficulty as a multiple of the minimum difficulty. Examples: > verus getdifficulty > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getdifficulty"
+]

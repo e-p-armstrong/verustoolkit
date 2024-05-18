@@ -1,6 +1,0 @@
-[
-    "How can I retrieve a raw transaction with verbose output using the Verus command line?",
-    "To retrieve a raw transaction with verbose output, you can add a `1` at the end of the `getrawtransaction` command, like this:\n```\nverus getrawtransaction \"mytxid\" 1\n```\nThis will return the raw transaction data with additional verbose information for the specified TXID.",
-    "l Examples: > verus getrawtransaction \"mytxid\" > verus getrawtransaction \"mytxid\" 1 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getrawtransaction"
-]

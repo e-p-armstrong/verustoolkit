@@ -1,0 +1,6 @@
+[
+    "What should I do after setting a new wallet address for mining rewards?",
+    "After setting a new wallet address for mining rewards, you should keep notes and associate the wallet address with the pubkey. This is to ensure that you have validated the correct pubkey for the wallet address and made no errors.",
+    "Your rewards will now be mined to that address. It would be a good idea to keep notes and associate the wallet address with the pubkey...also to double check that you did validate the correct pubkey for the wallet address, making sure you made no errors. (submitted by @Oliver Westbrook, edited by Oink.vrsc@) note: last revision date 2020-02-24.",
+    "./raw_txt_input/faq-allos03_mine_rewards_to_a_single_verus_wallet_gui_+_cli.md"
+]

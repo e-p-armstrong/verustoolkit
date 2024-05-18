@@ -1,6 +1,0 @@
-[
-    "What is the format of the result returned by the `z_listoperationids` command?",
-    "The result returned by the `z_listoperationids` command is a JSON array of strings, where each string is an operation ID belonging to the wallet.",
-    "z_listoperationids Returns the list of operation ids currently known to the wallet. Arguments: 1. \"status\"     (string, optional) Filter result by the operation's state e.g. \"success\". Result: [           (json array of string)  \"operationid\"    (string) an operation id belonging to the wallet  ,... ] Examples: > verus z_listoperationids > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/z_listoperationids"
-]

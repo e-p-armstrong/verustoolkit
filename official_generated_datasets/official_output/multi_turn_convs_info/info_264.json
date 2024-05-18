@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "How can I verify a new wallet download using Verus-Desktop?",
+            "To verify a new wallet download using Verus-Desktop, follow these steps:\n\n1. Download the new version of the wallet.\n2. Extract the archive.\n3. Open your existing Verus-Desktop, go to the *VerusID* tab, and select \"Verify Signed Data\".\n4. Choose to verify a file and use the data in the `*.signature.txt`-file.\n5. Only continue if the verification returns True.",
+            "# Guide to verify a new wallet download. Attention: Read it completely before using. ## Important General Information Wallet download page: [https://verus.io/wallet](https://verus.io/wallet) ## Using Verus-Desktop 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file through your existing Verus-Desktop, *VerusID* tab, Verify Signed Data and choose to verify a file. Only continue when this verification returns True. 4. stop your Verus-Desktop wallet 5. install the verified installer (Windows). 6. start your wallet. ## Using CLI Wallet 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file with the command `./verus verifyfile \"address or identity\" \"signature\" \"filepath/filename\"` command. Only continue when this verification returns True. 4. stop your verusdaemon verus stop 5. extract the verified archive to your current CLI-wallet location 6. start your wallet (verusd) Compiled by: Oink@ Note: creation date 2020-11-11.",
+            "./raw_txt_input/how-to_check_signatures.md"
+        ],
+        [
+            "What should I do after verifying a new wallet download using the CLI Wallet?",
+            "After verifying a new wallet download using the CLI Wallet, you should:\n\n1. Stop your verusdaemon using the command `verus stop`.\n2. Extract the verified archive to your current CLI-wallet location.\n3. Start your wallet (verusd).",
+            "# Guide to verify a new wallet download. Attention: Read it completely before using. ## Important General Information Wallet download page: [https://verus.io/wallet](https://verus.io/wallet) ## Using Verus-Desktop 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file through your existing Verus-Desktop, *VerusID* tab, Verify Signed Data and choose to verify a file. Only continue when this verification returns True. 4. stop your Verus-Desktop wallet 5. install the verified installer (Windows). 6. start your wallet. ## Using CLI Wallet 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file with the command `./verus verifyfile \"address or identity\" \"signature\" \"filepath/filename\"` command. Only continue when this verification returns True. 4. stop your verusdaemon verus stop 5. extract the verified archive to your current CLI-wallet location 6. start your wallet (verusd) Compiled by: Oink@ Note: creation date 2020-11-11.",
+            "./raw_txt_input/how-to_check_signatures.md"
+        ],
+        [
+            "What should I do after verifying a new wallet download using Verus-Desktop?",
+            "After verifying a new wallet download using Verus-Desktop, you should:\n\n1. Stop your Verus-Desktop wallet.\n2. Install the verified installer (for Windows).\n3. Start your wallet.",
+            "# Guide to verify a new wallet download. Attention: Read it completely before using. ## Important General Information Wallet download page: [https://verus.io/wallet](https://verus.io/wallet) ## Using Verus-Desktop 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file through your existing Verus-Desktop, *VerusID* tab, Verify Signed Data and choose to verify a file. Only continue when this verification returns True. 4. stop your Verus-Desktop wallet 5. install the verified installer (Windows). 6. start your wallet. ## Using CLI Wallet 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file with the command `./verus verifyfile \"address or identity\" \"signature\" \"filepath/filename\"` command. Only continue when this verification returns True. 4. stop your verusdaemon verus stop 5. extract the verified archive to your current CLI-wallet location 6. start your wallet (verusd) Compiled by: Oink@ Note: creation date 2020-11-11.",
+            "./raw_txt_input/how-to_check_signatures.md"
+        ],
+        [
+            "How can I verify a new wallet download using the CLI Wallet?",
+            "To verify a new wallet download using the CLI Wallet, follow these steps:\n\n1. Download the new version of the wallet.\n2. Extract the archive.\n3. Use the command `./verus verifyfile \"address or identity\" \"signature\" \"filepath/filename\"` to verify the signature using the data in the `*.signature.txt`-file.\n4. Only continue if the verification returns True.",
+            "# Guide to verify a new wallet download. Attention: Read it completely before using. ## Important General Information Wallet download page: [https://verus.io/wallet](https://verus.io/wallet) ## Using Verus-Desktop 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file through your existing Verus-Desktop, *VerusID* tab, Verify Signed Data and choose to verify a file. Only continue when this verification returns True. 4. stop your Verus-Desktop wallet 5. install the verified installer (Windows). 6. start your wallet. ## Using CLI Wallet 1. download the new version 2. extract the archive 3. verify the signature using the data in the `*.signature.txt`-file with the command `./verus verifyfile \"address or identity\" \"signature\" \"filepath/filename\"` command. Only continue when this verification returns True. 4. stop your verusdaemon verus stop 5. extract the verified archive to your current CLI-wallet location 6. start your wallet (verusd) Compiled by: Oink@ Note: creation date 2020-11-11.",
+            "./raw_txt_input/how-to_check_signatures.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9a0e7d15-9e40-4f27-a540-bdc7c640e197"
+]

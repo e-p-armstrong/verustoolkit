@@ -1,6 +1,0 @@
-[
-    "What is the format of the `getpendingtransfers` command, and what arguments does it take?",
-    "The format of the `getpendingtransfers` command is `getpendingtransfers \"chainname\"`, where `\"chainname\"` is an optional string argument specifying the name of the chain to look for. If no parameter is provided, the command returns the current chain in the daemon.",
-    "getpendingtransfers \"chainname\" Returns all pending transfers for a particular chain that have not yet been aggregated into an export Arguments 1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon. Result:  {  } Examples: > verus getpendingtransfers \"chainname\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getpendingtransfers"
-]

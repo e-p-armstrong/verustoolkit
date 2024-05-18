@@ -1,0 +1,6 @@
+[
+    "How can I use the `getsaplingtree` command to get the Sapling tree state at a specific height or range of heights?",
+    "You can use the `getsaplingtree` command by specifying the height or range of heights as an argument. For example, you can specify a single height `n`, a range `m,n`, or a range with a step `m,n,o`. If you don't specify a height, the command will return the latest currency state and height.",
+    "getsaplingtree \"n\" Returns the entries for a light wallet Sapling tree state. Arguments  \"n\" or \"m,n\" or \"m,n,o\"     (int or string, optional) height or inclusive range with optional step at which to get the Sapling tree state                                  If not specified, the latest currency state and height is returned Result:  [    {      \"network\": \"VRSC\",      \"height\": n,      \"hash\": \"hex\"      \"time\": n,      \"tree\": \"hex\"    },  ] Examples: > verus getsaplingtree name > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getsaplingtree\", \"params\": [name] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getsaplingtree"
+]

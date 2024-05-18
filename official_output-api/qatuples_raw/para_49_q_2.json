@@ -1,6 +1,0 @@
-[
-    "How can I use the `z_listaddresses` command to get a list of shielded addresses in my wallet?",
-    "You can use the `z_listaddresses` command in the following way to get a list of shielded addresses in your wallet:\n\n```\nverus z_listaddresses\n```\n\nAlternatively, you can use the `curl` command to send a JSON-RPC request to the Verus node:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis will return a JSON array of strings, where each string is a shielded address belonging to the wallet.",
-    "z_listaddresses ( includeWatchonly ) Returns the list of Sprout and Sapling shielded addresses belonging to the wallet. Arguments: 1. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey') Result: [           (json array of string)  \"zaddr\"      (string) a zaddr belonging to the wallet  ,... ] Examples: > verus z_listaddresses > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/z_listaddresses"
-]

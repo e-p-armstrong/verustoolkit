@@ -1,6 +1,0 @@
-[
-    "What are the optional arguments for the `listopenoffers` command?",
-    "The `listopenoffers` command has two optional arguments: `unexpired` and `expired`. Both of these arguments are boolean values and default to `true`.",
-    "listopenoffers (unexpired) (expired)' Shows offers outstanding in this wallet Arguments  unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired  expired         (bool, optional) default=true, list those offers in the wallet which are expired Result  all open offers",
-    "./raw_text_input_api_text/listopenoffers"
-]

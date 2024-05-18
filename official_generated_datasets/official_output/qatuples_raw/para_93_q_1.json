@@ -1,0 +1,6 @@
+[
+    "What are the optional arguments that can be used with the `listidentities` command?",
+    "The `listidentities` command has three optional arguments: `includecanspend`, `includecansign`, and `includewatchonly`. These arguments can be used to filter the list of identities based on the level of control or access associated with each identity.",
+    "### `listidentities (includecanspend) (includecansign) (includewatchonly)` #### Arguments:   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us",
+    "./raw_txt_input/clifaq-02_verus_commands.md"
+]

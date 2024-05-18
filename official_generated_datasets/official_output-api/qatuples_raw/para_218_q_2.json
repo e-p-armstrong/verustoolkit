@@ -1,0 +1,6 @@
+[
+    "How can I use the `listidentities` command to list all identities associated with my Verus wallet, including those I can spend, sign, and watch?",
+    "You can use the `listidentities` command with the following syntax:\n\n```\nverus listidentities true true true\n```\n\nThis will list all identities associated with your Verus wallet, including those you can spend, sign, and watch.",
+    "listidentities (includecanspend) (includecansign) (includewatchonly) Arguments   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us Result: Examples: > verus listidentities true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listidentities\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listidentities"
+]

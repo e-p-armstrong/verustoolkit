@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `ping` command in Verus?",
+    "The `ping` command in Verus is used to request a ping to be sent to all other nodes, which allows for measuring the ping time. The results of this command are provided in the `getpeerinfo`, `pingtime`, and `pingwait` fields, and are expressed in decimal seconds.",
+    "ping Requests that a ping be sent to all other nodes, to measure ping time. Results provided in getpeerinfo, pingtime and pingwait fields are decimal seconds. Ping command is handled in queue with all other commands, so it measures processing backlog, not just network ping. Examples: > verus ping > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/ping"
+]

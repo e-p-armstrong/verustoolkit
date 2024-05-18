@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `gettxoutsetinfo` command in Verus?",
-    "The `gettxoutsetinfo` command returns statistics about the unspent transaction output set in Verus. This command provides information about the current state of the blockchain, including the block height, number of transactions, number of output transactions, serialized size, serialized hash, and total amount.",
-    "gettxoutsetinfo Returns statistics about the unspent transaction output set. Note this call may take some time. Result: {  \"height\":n,   (numeric) The current block height (index)  \"bestblock\": \"hex\",  (string) the best block hash hex  \"transactions\": n,   (numeric) The number of transactions  \"txouts\": n,      (numeric) The number of output transactions  \"bytes_serialized\": n, (numeric) The serialized size  \"hash_serialized\": \"hash\",  (string) The serialized hash  \"total_amount\": x.xxx     (numeric) The total amount } Examples: > verus gettxoutsetinfo > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettxoutsetinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/gettxoutsetinfo"
-]

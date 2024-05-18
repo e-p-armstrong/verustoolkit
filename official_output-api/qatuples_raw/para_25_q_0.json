@@ -1,6 +1,0 @@
-[
-    "How can I get information about the Verus blockchain using the command line?",
-    "You can get information about the Verus blockchain using the `getblockchaininfo` command in the Verus CLI. Here's an example:\n\n```\nverus getblockchaininfo\n```\n\nThis command will provide information about the current state of the blockchain.",
-    "  Examples: > verus getblockchaininfo > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getblockchaininfo"
-]

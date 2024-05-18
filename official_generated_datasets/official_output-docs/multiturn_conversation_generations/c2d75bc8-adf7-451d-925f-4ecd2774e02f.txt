@@ -1,0 +1,410 @@
+- content: "You are a crypto expert and creative writer specializing in the Verus\
+    \ multi-chain and multi-currency blockchain protocol. You will write a short conversation\
+    \ between a curious user and a helpful AI assistant knowledgeable about Verus,\
+    \ in which the user asks some questions about Verus and the AI assistant answers\
+    \ them. The questions the user must ask will be provided; the answers the assistant\
+    \ should return will also be provided. You must use these questions and answers\
+    \ directly in your conversation.\n\n**Rules for conversation writing:**\n\n* Messages\
+    \ can take place across multiple lines.\n* The questions and answers should be\
+    \ essentially the same as provided, though you may add \"conversational fluff\"\
+    \ around the core of the questions and answers in order to make it natural-sounding.\n\
+    * The Verus AI should make the first message, introducing itself and asking if\
+    \ the user has any questions about Verus or the Verus community.\n* The user then\
+    \ asks their first question. The AI then provides an answer. And that back-and-forth\
+    \ continues until all questions are asked and all answers are provided.\n* Use\
+    \ Markdown formatting.\n* If applicable, try to make the context behind the questions\
+    \ make sense. So if a person's asking about an error, they probably aren't just\
+    \ asking about it out of the blue \u2014 they've probably encountered the error.\n\
+    * You are allowed to slightly change the wording of the questions, and remove\
+    \ duplication, in order to make the conversation flow nicer."
+  role: system
+- content: '**QUESTION:**
+
+    What causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    These errors may be caused by required dependencies for `./verusd` not being installed
+    by default on a Linux distribution. The lack of required dependencies results
+    in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    **QUESTION:**
+
+    If I run `./verusd` and encounter these errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    How can I solve them?
+
+
+    **ANSWER:**
+
+    In order to solve these errors, which are likely caused by dependencies not being
+    installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **AI Assistant:**
+
+    Hello! I''m here to help with any questions you might have about Verus. Please,
+    ask me anything!
+
+
+    **User:**
+
+    Yeah, so I''ve run into some errors and I''m not sure what''s causing them. Do
+    you know what causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **AI Assistant:**
+
+    Great question! These errors may be caused by required dependencies for `./verusd`
+    not being installed by default on a Linux distribution. The lack of required dependencies
+    results in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`. Do you have any further questions about these
+    errors?
+
+
+    **User:**
+
+    Yes, actually. If I run `./verusd` and encounter the errors I mentioned earlier,
+    how can I solve them?
+
+
+    **AI Assistant:**
+
+    Good question! In order to solve these errors, which are likely caused by dependencies
+    not being installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time. Did this solve your problem?'
+  role: assistant
+- content: "**QUESTION:**\nWhat are VerusIDs?\n\n**ANSWER:**\nVerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network.\n\n**QUESTION:**\nWhat does \"quantum-ready\
+    \ friendly crypto-addresses\" mean, in the context of Verus and VerusIDs?\n\n\
+    **ANSWER:**\nThe phrase \"quantum-ready friendly crypto-addresses,\" in the context\
+    \ of Verus and VerusIDs, refers to the resistance of VerusIDs against attack by\
+    \ quantum computers that use existing algorithms. Furthermore, with a quantum-secure\
+    \ signature scheme for transactions, it becomes possible to change an ID and have\
+    \ all the funds sent to it be made retroactively quantum resistant. VerusIDs may\
+    \ also be used to publish ID to destination mappings on other blockchains; however,\
+    \ only the Verus ecosystem can revoke, recover, or inherit funds in existing UTXOs.\n\
+    \nThe basic idea is that quantum computers, once invented, have the potential\
+    \ to break many cryptographic algorithms used to secure digital assets. Therefore,\
+    \ VerusIDs being \"quantum-ready\" means that they have been designed to be resistant\
+    \ to attempts by quantum computers (using known algorithms) to attack them, once\
+    \ such computers are created. This is an essential measure to future-proof Verus\
+    \ against exploitation by hostile actors with quantum computers.\n\n**QUESTION:**\n\
+    What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**ANSWER:**\n\
+    A number of factors make VerusIDs fully decentralized. VerusIDs can be created\
+    \ by anyone, without needing permission from a central authority, and give their\
+    \ creator complete, self-sovereign control over their own ID. The costs incurred\
+    \ creating an ID go to miners, stakers, and ID referrers \u2014 essentially, the\
+    \ community members who help maintain Verus \u2014 rather than single entity like\
+    \ a corporation or government. VerusIDs can be revoked or recovered by another\
+    \ ID if specified (by default, the revocation authority and recovery authority\
+    \ are the ID itself).\n\nEssentially, VerusIDs being fully decentralized means\
+    \ that neither their creation, usage, or recovery/revocation need to be managed\
+    \ or approved by a central authority \u2014 the community supports the transaction.\
+    \ This allows individuals using VerusID to be self-sovereign: they have full control\
+    \ over their digital identity, data, and assets.\n\n**QUESTION:**\nWhat do VerusIDs\
+    \ offer me in terms of privacy and power?\n\n**ANSWER:**\nVerusIDs offer many\
+    \ advantages, and are both private and powerful. They contain sets of zero-knowledge\
+    \ private addresses (which can belong to other people or services) that can be\
+    \ used to message, transfer money, or even vote. IDs can also privately store\
+    \ information needed by third-party applications in a set of key-value hashes.\
+    \ This allows you to own your data and provide it to applications as needed, rather\
+    \ than let the application store information about you. Information stored in\
+    \ IDs can also prove your identity to others, without giving away more information\
+    \ than needed. In this way, Verus allows for privacy as well as a powerful proof\
+    \ of identity.\n\nVerusIDs are also notable in that multiple addresses or other\
+    \ IDs can be defined as primary addresses. The agreement of some number of primary\
+    \ addresses (configurable) may be required for an ID to spend, sign, or alter\
+    \ itself. Further security is added by the fact that the revocation authority\
+    \ (the power to revoke an ID) may only be modified by the revocation authority\
+    \ itself. The same applies to the recovery authority (an authority that can recover\
+    \ a revoked address). Each of these authorities (revocation and recovery) may\
+    \ be their own identities, potentially being controlled themselves by multiple\
+    \ primary addresses.\n\nIn short, VerusIDs are private with your information,\
+    \ and configurable with who controls them and what consensus is required to change\
+    \ them."
+  role: user
+- content: "## Conversation that answers the provided questions:\n**AI Assistant:**\n\
+    Hey there! I'm here to assist you in understanding Verus. What's on your mind\
+    \ today?\n\n**User:**\nI'm really new to all this. Maybe it's a bit basic, but,\
+    \ what are VerusIDs?\n\n**AI Assistant:**\nI'll explain! VerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network. It's all right that you're new, I'm happy that\
+    \ you're interested in learning about Verus! Do you have any further questions\
+    \ about VerusIDs or Verus in general?\n\n**User:**\nActually, yes, I do, you said\
+    \ something I'm curious about. What does \"quantum-ready friendly crypto-addresses\"\
+    \ mean, in the context of Verus and VerusIDs?\n\n**AI Assistant:**\nSure, I'll\
+    \ clarify what I meant. The phrase \"quantum-ready friendly crypto-addresses,\"\
+    \ in the context of Verus and VerusIDs, refers to the resistance of VerusIDs against\
+    \ attack by quantum computers that use existing algorithms. Furthermore, with\
+    \ a quantum-secure signature scheme for transactions, it becomes possible to change\
+    \ an ID and have all the funds sent to it be made retroactively quantum resistant.\
+    \ VerusIDs may also be used to publish ID to destination mappings on other blockchains;\
+    \ however, only the Verus ecosystem can revoke, recover, or inherit funds in existing\
+    \ UTXOs.\n\nThe basic idea is that quantum computers, once invented, have the\
+    \ potential to break many cryptographic algorithms used to secure digital assets.\
+    \ Therefore, VerusIDs being \"quantum-ready\" means that they have been designed\
+    \ to be resistant to attempts by quantum computers (using known algorithms) to\
+    \ attack them, once such computers are created. This is an essential measure to\
+    \ future-proof Verus against exploitation by hostile actors with quantum computers.\
+    \ Does that make sense? Do you have any further questions?\n\n**User:**\nSomething\
+    \ you said earlier interested me. You said VerusIDs offer \"full decentralization.\"\
+    \ What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**AI\
+    \ Assistant:**\nThat's a great question! A number of factors make VerusIDs fully\
+    \ decentralized. VerusIDs can be created by anyone, without needing permission\
+    \ from a central authority, and give their creator complete, self-sovereign control\
+    \ over their own ID. The costs incurred creating an ID go to miners, stakers,\
+    \ and ID referrers \u2014 essentially, the community members who help maintain\
+    \ Verus \u2014 rather than single entity like a corporation or government. VerusIDs\
+    \ can be revoked or recovered by another ID if specified (by default, the revocation\
+    \ authority and recovery authority are the ID itself).\n\nEssentially, VerusIDs\
+    \ being fully decentralized means that neither their creation, usage, or recovery/revocation\
+    \ need to be managed or approved by a central authority \u2014 the community supports\
+    \ the transaction. This allows individuals using VerusID to be self-sovereign:\
+    \ they have full control over their digital identity, data, and assets. Does that\
+    \ answer your question, and do you have any more questions about Verus or VerusIDs?\n\
+    \n**User:**\nActually I do, a bit of a broader one. What do VerusIDs offer me\
+    \ in terms of privacy and power?\n\n**AI Assistant:**\nExcellent question! Let\
+    \ me explain. VerusIDs offer many advantages, and are both private and powerful.\
+    \ They contain sets of zero-knowledge private addresses (which can belong to other\
+    \ people or services) that can be used to message, transfer money, or even vote.\
+    \ IDs can also privately store information needed by third-party applications\
+    \ in a set of key-value hashes. This allows you to own your data and provide it\
+    \ to applications as needed, rather than let the application store information\
+    \ about you. Information stored in IDs can also prove your identity to others,\
+    \ without giving away more information than needed. In this way, Verus allows\
+    \ for privacy as well as a powerful proof of identity.\n\nVerusIDs are also notable\
+    \ in that multiple addresses or other IDs can be defined as primary addresses.\
+    \ The agreement of some number of primary addresses (configurable) may be required\
+    \ for an ID to spend, sign, or alter itself. Further security is added by the\
+    \ fact that the revocation authority (the power to revoke an ID) may only be modified\
+    \ by the revocation authority itself. The same applies to the recovery authority\
+    \ (an authority that can recover a revoked address). Each of these authorities\
+    \ (revocation and recovery) may be their own identities, potentially being controlled\
+    \ themselves by multiple primary addresses.\n\nIn short, VerusIDs are private\
+    \ with your information, and configurable with who controls them and what consensus\
+    \ is required to change them. Do you have any more questions about VerusIDs?"
+  role: assistant
+- content: '**QUESTION:**
+
+    How does the Verus protocol process transactions within a block, and what are
+    the implications of this approach?
+
+
+    **ANSWER:**
+
+    The Verus protocol processes transactions "simultaneously" within a block, as
+    opposed to processing them serially (in order) like other systems that use the
+    VM-model, such as Ethereum. This approach has several important implications:
+
+
+    1. **Elimination of front-running, back-running, and sandwich attacks**: By processing
+    transactions simultaneously, Verus eliminates the possibility of these types of
+    attacks, which can occur when transactions are processed in a specific order.
+
+    2. **Enhanced system-wide liquidity**: Verus''s approach reduces slippage by offsetting
+    conversions going to and from any given currency within the same block against
+    each other, resulting in increased liquidity.
+
+    3. **Fair pricing for all users**: Verus ensures that all users converting to
+    and from a currency within the same block receive the same fair price, with no
+    spread.
+
+
+
+    **QUESTION:**
+
+    How does Verus''s simultaneous transaction processing approach improve security
+    compared to serial processing?
+
+
+    **ANSWER:**
+
+    Verus''s simultaneous transaction processing approach eliminates front-running,
+    back-running, and sandwich attacks, which are potential security risks in serial
+    processing systems like Ethereum. By processing transactions simultaneously, Verus
+    ensures that all transactions within a block are executed in a fair and secure
+    manner, without allowing malicious actors to manipulate the order of transactions
+    to their advantage.
+
+
+
+    **QUESTION:**
+
+    How does Verus''s simultaneous transaction processing approach improve fairness
+    for users compared to serial processing?
+
+
+    **ANSWER:**
+
+    Verus''s simultaneous transaction processing approach ensures that all users converting
+    to and from a currency within the same block receive the same fair price, with
+    no spread. This means that all users are treated equally, without any advantage
+    or disadvantage based on the order in which their transactions are processed.
+
+
+
+    **QUESTION:**
+
+    How does Verus''s simultaneous transaction processing approach improve efficiency
+    compared to serial processing?
+
+
+    **ANSWER:**
+
+    Verus''s simultaneous transaction processing approach reduces slippage by offsetting
+    conversions going to and from any given currency within the same block against
+    each other, resulting in increased liquidity and efficiency. This approach also
+    eliminates the need to process transactions in a specific order, which can reduce
+    the overall processing time and improve the efficiency of the system.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **AI Assistant:**
+
+    Hi there! I''m happy to help you with any questions you have about Verus. What''s
+    on your mind today?
+
+
+    **User:**
+
+    Yeah, I''ve been trying to understand how Verus processes transactions within
+    a block, and what the implications of this approach are.
+
+
+    **AI Assistant:**
+
+    The Verus protocol processes transactions "simultaneously" within a block, as
+    opposed to processing them serially (in order) like other systems that use the
+    VM-model, such as Ethereum. This approach has several important implications:
+
+
+    1. **Elimination of front-running, back-running, and sandwich attacks**: By processing
+    transactions simultaneously, Verus eliminates the possibility of these types of
+    attacks, which can occur when transactions are processed in a specific order.
+
+    2. **Enhanced system-wide liquidity**: Verus''s approach reduces slippage by offsetting
+    conversions going to and from any given currency within the same block against
+    each other, resulting in increased liquidity.
+
+    3. **Fair pricing for all users**: Verus ensures that all users converting to
+    and from a currency within the same block receive the same fair price, with no
+    spread.
+
+
+    Do you have any follow-up questions about this, or would you like me to elaborate
+    on any of these points?
+
+
+    **User:**
+
+    Actually, yes, I do. How does Verus''s simultaneous transaction processing approach
+    improve security compared to serial processing?
+
+
+    **AI Assistant:**
+
+    Verus''s simultaneous transaction processing approach eliminates front-running,
+    back-running, and sandwich attacks, which are potential security risks in serial
+    processing systems like Ethereum. By processing transactions simultaneously, Verus
+    ensures that all transactions within a block are executed in a fair and secure
+    manner, without allowing malicious actors to manipulate the order of transactions
+    to their advantage.
+
+
+    **User:**
+
+    That makes sense. How does Verus''s simultaneous transaction processing approach
+    improve fairness for users compared to serial processing?
+
+
+    **AI Assistant:**
+
+    Verus''s simultaneous transaction processing approach ensures that all users converting
+    to and from a currency within the same block receive the same fair price, with
+    no spread. This means that all users are treated equally, without any advantage
+    or disadvantage based on the order in which their transactions are processed.
+
+
+    **User:**
+
+    And how does Verus''s simultaneous transaction processing approach improve efficiency
+    compared to serial processing?
+
+
+    **AI Assistant:**
+
+    Verus''s simultaneous transaction processing approach reduces slippage by offsetting
+    conversions going to and from any given currency within the same block against
+    each other, resulting in increased liquidity and efficiency. This approach also
+    eliminates the need to process transactions in a specific order, which can reduce
+    the overall processing time and improve the efficiency of the system.
+
+
+    Do you have any more questions about Verus''s transaction processing approach?'
+  role: assistant
+  timeout: false

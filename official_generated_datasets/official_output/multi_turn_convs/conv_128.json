@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm really curious about who put this information together. Who compiled the information about Verus and VerusIDs?\n\n**AI Assistant:**\nThe information was compiled by Oink.vrsc@. They did a great job of putting together all the details about Verus and its features.\n\n**User:**\nThat's really helpful to know. I'm also curious, when was this guide last revised?\n\n**AI Assistant:**\nThe guide was last revised on 2022-09-12. So, you can be sure that the information is up-to-date and reflects the latest developments in Verus. Do you have any more questions about Verus or VerusIDs?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Who compiled the information?",
+            "The information was compiled by Oink.vrsc@.",
+            "Information compiled by Oink.vrsc@. Note: revision date 2022-09-12.",
+            "./raw_txt_input/how-to_restore_my_wallet.md"
+        ],
+        [
+            "When was this guide last revised?",
+            "The guide was last revised on 2022-09-12.\n\nNote: The reworded question is more specific and clear about what \"this guide\" refers to, making the question and answer pair more precise and understandable.",
+            "Information compiled by Oink.vrsc@. Note: revision date 2022-09-12.",
+            "./raw_txt_input/how-to_restore_my_wallet.md"
+        ]
+    ]
+]

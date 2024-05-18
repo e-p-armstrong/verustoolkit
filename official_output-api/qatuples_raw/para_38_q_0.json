@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `scanNotarisationsDB` command in Verus?",
-    "The `scanNotarisationsDB` command is used to scan the notarisations database backwards from a specified block height for a notarisation of a given symbol.",
-    "scanNotarisationsDB blockHeight symbol [blocksLimit=1440] Scans notarisationsdb backwards from height for a notarisation of given symbol",
-    "./raw_text_input_api_text/scanNotarisationsDB"
-]

@@ -1,6 +1,0 @@
-[
-    "What are the possible types of addresses that can be specified as an argument to the `z_getnewaddress` command?",
-    "The possible types of addresses that can be specified as an argument to the `z_getnewaddress` command are \"sprout\" and \"sapling\".",
-    "z_getnewaddress ( type ) Returns a new shielded address for receiving payments. With no arguments, returns a Sapling address. Arguments: 1. \"type\"     (string, optional, default=\"sapling\") The type of address. One of [\"sprout\", \"sapling\"]. Result: \"VRSC_address\"  (string) The new shielded address. Examples: > verus z_getnewaddress > verus z_getnewaddress sapling > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/z_getnewaddress"
-]

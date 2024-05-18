@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the \"startHeight\" argument in the `z_importkey` command?",
-    "The \"startHeight\" argument in the `z_importkey` command specifies the block height to start the rescan from. This can be useful if you want to limit the scope of the rescan or if you want to resume a previously interrupted rescan.",
-    "z_importkey \"zkey\" ( rescan startHeight ) Adds a zkey (as returned by z_exportkey) to your wallet. Arguments: 1. \"zkey\"       (string, required) The zkey (see z_exportkey) 2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\" 3. startHeight     (numeric, optional, default=0) Block height to start rescan from Note: This call can take minutes to complete if rescan is true. Examples: Export a zkey > verus z_exportkey \"myaddress\" Import the zkey with rescan > verus z_importkey \"mykey\" Import the zkey with partial rescan > verus z_importkey \"mykey\" whenkeyisnew 30000 Re-import the zkey with longer partial rescan > verus z_importkey \"mykey\" yes 20000 As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/z_importkey"
-]

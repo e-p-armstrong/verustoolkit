@@ -1,6 +1,0 @@
-[
-    "How can I retrieve information about a currency on Verus, such as its status or properties?",
-    "You can use the `getcurrency` command to retrieve information about a currency on Verus. The command format is:\n```\n./verus -chain=VRSCTEST getcurrency \"CurrencyName\"\n```\nReplace \"CurrencyName\" with the actual name of the currency you want to lookup.",
-    "Entering the above command into the command-line interface wallet gives a `HEX` value as output. Take that HEX and do the following command below. \u26a0\ufe0f IMPORTANT: make sure there are enough funds in the rootID for the currency fee (200.0002 VRSC) and the initial contribution (when in parameters). ``` json ./verus -chain=VRSCTEST sendrawtransaction \"HEX\" ``` After doing the command above the currency has started, the funds from the rootID are taken, and it takes a minimum of 20 blocks (or startblock) to actually launch it (and if all preconversion goals are met). During the preconversion time frame and after the launch you can lookup all kinds of information on the currency with the following command: ``` json ./verus -chain=VRSCTEST getcurrency \"MyBrand\" ```",
-    "./raw_text_input_docs/launch-currency.md"
-]

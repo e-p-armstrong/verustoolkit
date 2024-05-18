@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help you with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI've been trying to understand the `closeoffers` command in Verus. Can you explain what it does?\n\n**AI Assistant:**\nThe `closeoffers` command is used to close all offers listed, if they are still valid and belong to the current wallet. It can also close expired offers, even if no parameters are given. Does that make sense? Do you have any more questions about the `closeoffers` command?\n\n**User:**\nActually, yes. What's the purpose of the `transparentorprivatefundsdestination` argument in the `closeoffers` command?\n\n**AI Assistant:**\nThe `transparentorprivatefundsdestination` argument specifies the destination for closing funds. It can be either a transparent or private address. Does that help clarify things?\n\n**User:**\nWhat about the `privatefundsdestination` argument? What does that do?\n\n**AI Assistant:**\nThe `privatefundsdestination` argument specifies the destination for native funds only. It must be a private address. So, it's a more specific version of the `transparentorprivatefundsdestination` argument, but only for native funds.\n\n**User:**\nOne last question. What does the `closeoffers` command return?\n\n**AI Assistant:**\nThe `closeoffers` command returns `null`. It's a command that performs an action, rather than returning a value.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `closeoffers` command in Verus?",
+            "The `closeoffers` command is used to close all offers listed, if they are still valid and belong to the current wallet. It can also close expired offers, even if no parameters are given.",
+            "closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination) Closes all offers listed, if they are still valid and belong to this wallet. Always closes expired offers, even if no parameters are given Arguments  [\"offer1_txid\", \"offer2_txid\", ...]   (array, optional) array of hex tx ids of offers to close  transparentorprivatefundsdestination     (transparent or private address, optional) destination for closing funds  privatefundsdestination           (private address, optional) destination for native funds only Result  null return",
+            "./raw_text_input_api_text/closeoffers"
+        ],
+        [
+            "What is the purpose of the `transparentorprivatefundsdestination` argument in the `closeoffers` command?",
+            "The `transparentorprivatefundsdestination` argument specifies the destination for closing funds. It can be either a transparent or private address.",
+            "closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination) Closes all offers listed, if they are still valid and belong to this wallet. Always closes expired offers, even if no parameters are given Arguments  [\"offer1_txid\", \"offer2_txid\", ...]   (array, optional) array of hex tx ids of offers to close  transparentorprivatefundsdestination     (transparent or private address, optional) destination for closing funds  privatefundsdestination           (private address, optional) destination for native funds only Result  null return",
+            "./raw_text_input_api_text/closeoffers"
+        ],
+        [
+            "What is the purpose of the `privatefundsdestination` argument in the `closeoffers` command?",
+            "The `privatefundsdestination` argument specifies the destination for native funds only. It must be a private address.",
+            "closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination) Closes all offers listed, if they are still valid and belong to this wallet. Always closes expired offers, even if no parameters are given Arguments  [\"offer1_txid\", \"offer2_txid\", ...]   (array, optional) array of hex tx ids of offers to close  transparentorprivatefundsdestination     (transparent or private address, optional) destination for closing funds  privatefundsdestination           (private address, optional) destination for native funds only Result  null return",
+            "./raw_text_input_api_text/closeoffers"
+        ],
+        [
+            "What is the return value of the `closeoffers` command?",
+            "The `closeoffers` command returns `null`.",
+            "closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination) Closes all offers listed, if they are still valid and belong to this wallet. Always closes expired offers, even if no parameters are given Arguments  [\"offer1_txid\", \"offer2_txid\", ...]   (array, optional) array of hex tx ids of offers to close  transparentorprivatefundsdestination     (transparent or private address, optional) destination for closing funds  privatefundsdestination           (private address, optional) destination for native funds only Result  null return",
+            "./raw_text_input_api_text/closeoffers"
+        ]
+    ]
+]

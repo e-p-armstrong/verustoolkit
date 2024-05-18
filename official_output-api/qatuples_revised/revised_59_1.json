@@ -1,6 +1,0 @@
-[
-    "What are the two arguments required for the `calc_MoM` command?",
-    "The two arguments required for the `calc_MoM` command are:\n\n1. `height`: The specific blockchain height at which to calculate the Momentum.\n2. `MoMdepth`: The depth at which to calculate the Momentum.",
-    "calc_MoM height MoMdepth",
-    "./raw_text_input_api_text/calc_MoM"
-]

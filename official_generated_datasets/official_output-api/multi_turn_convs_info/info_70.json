@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What does the `getdifficulty` command do in Verus?",
+            "The `getdifficulty` command returns the proof-of-work difficulty as a multiple of the minimum difficulty.",
+            "getdifficulty Returns the proof-of-work difficulty as a multiple of the minimum difficulty. Result: n.nnn    (numeric) the proof-of-work difficulty as a multiple of the minimum difficulty. Examples: > verus getdifficulty > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getdifficulty"
+        ],
+        [
+            "What format does the result of the `getdifficulty` command come in?",
+            "The result of the `getdifficulty` command comes in a numeric format, specifically `n.nnn`, where `n` represents a number.",
+            "getdifficulty Returns the proof-of-work difficulty as a multiple of the minimum difficulty. Result: n.nnn    (numeric) the proof-of-work difficulty as a multiple of the minimum difficulty. Examples: > verus getdifficulty > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getdifficulty"
+        ],
+        [
+            "How can I use the `getdifficulty` command in the Verus command line?",
+            "You can use the `getdifficulty` command in the Verus command line by simply typing `verus getdifficulty`.",
+            "getdifficulty Returns the proof-of-work difficulty as a multiple of the minimum difficulty. Result: n.nnn    (numeric) the proof-of-work difficulty as a multiple of the minimum difficulty. Examples: > verus getdifficulty > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getdifficulty"
+        ],
+        [
+            "How can I use the `getdifficulty` command using JSON-RPC?",
+            "You can use the `getdifficulty` command using JSON-RPC by sending a POST request to the Verus JSON-RPC endpoint with the following JSON data: `{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }`. This can be done using tools like `curl`. For example: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "getdifficulty Returns the proof-of-work difficulty as a multiple of the minimum difficulty. Result: n.nnn    (numeric) the proof-of-work difficulty as a multiple of the minimum difficulty. Examples: > verus getdifficulty > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getdifficulty"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "dec69204-9945-4ba4-84ed-62ceec9c7d05"
+]

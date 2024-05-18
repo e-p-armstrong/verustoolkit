@@ -1,6 +1,0 @@
-[
-    "What is the optional argument `includeWatchonly` in the `z_listaddresses` command, and what does it do?",
-    "The `includeWatchonly` argument is a boolean optional parameter that defaults to `false`. If set to `true`, it will also include watch-only addresses in the list of shielded addresses returned by the command.",
-    "z_listaddresses ( includeWatchonly ) Returns the list of Sprout and Sapling shielded addresses belonging to the wallet. Arguments: 1. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey') Result: [           (json array of string)  \"zaddr\"      (string) a zaddr belonging to the wallet  ,... ] Examples: > verus z_listaddresses > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/z_listaddresses"
-]

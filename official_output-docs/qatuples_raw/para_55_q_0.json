@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `sendrawtransaction` command in Verus, and what are the requirements for using it?",
-    "The `sendrawtransaction` command is used to launch a new currency on the Verus network. To use it, you need to provide a HEX value as input, which is obtained by running a previous command. Additionally, you must ensure that the rootID has enough funds to cover the currency fee (200.0002 VRSC) and the initial contribution.",
-    "Entering the above command into the command-line interface wallet gives a `HEX` value as output. Take that HEX and do the following command below. \u26a0\ufe0f IMPORTANT: make sure there are enough funds in the rootID for the currency fee (200.0002 VRSC) and the initial contribution (when in parameters). ``` json ./verus -chain=VRSCTEST sendrawtransaction \"HEX\" ``` After doing the command above the currency has started, the funds from the rootID are taken, and it takes a minimum of 20 blocks (or startblock) to actually launch it (and if all preconversion goals are met). During the preconversion time frame and after the launch you can lookup all kinds of information on the currency with the following command: ``` json ./verus -chain=VRSCTEST getcurrency \"MyBrand\" ```",
-    "./raw_text_input_docs/launch-currency.md"
-]

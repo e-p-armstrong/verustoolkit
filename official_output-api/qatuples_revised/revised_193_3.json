@@ -1,6 +1,0 @@
-[
-    "How can I use the `getidentity` command to retrieve a proof of an identity?",
-    "You can use the `getidentity` command with the `txproof` argument set to true to retrieve a proof of the identity. For example:\n\n`verus getidentity \"name@\" true`\n\nThis would retrieve a proof of the identity \"name@\". You can also specify the `txproofheight` argument to generate the proof from a specific block height.",
-    "getidentity \"name@ || iid\" (height) (txproof) (txproofheight) Arguments   \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity   \"height\"               (number, optional) default=current height, return identity as of this height, if -1 include mempool   \"txproof\"              (bool, optional) default=false, if true, returns proof of ID   \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof Result: Examples: > verus getidentity \"name@\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getidentity"
-]

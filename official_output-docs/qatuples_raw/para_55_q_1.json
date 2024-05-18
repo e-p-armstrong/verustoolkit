@@ -1,6 +1,0 @@
-[
-    "How long does it take for a new currency to launch on Verus after running the `sendrawtransaction` command?",
-    "After running the `sendrawtransaction` command, it takes a minimum of 20 blocks (or the specified start block) for the currency to launch, provided all preconversion goals are met.",
-    "Entering the above command into the command-line interface wallet gives a `HEX` value as output. Take that HEX and do the following command below. \u26a0\ufe0f IMPORTANT: make sure there are enough funds in the rootID for the currency fee (200.0002 VRSC) and the initial contribution (when in parameters). ``` json ./verus -chain=VRSCTEST sendrawtransaction \"HEX\" ``` After doing the command above the currency has started, the funds from the rootID are taken, and it takes a minimum of 20 blocks (or startblock) to actually launch it (and if all preconversion goals are met). During the preconversion time frame and after the launch you can lookup all kinds of information on the currency with the following command: ``` json ./verus -chain=VRSCTEST getcurrency \"MyBrand\" ```",
-    "./raw_text_input_docs/launch-currency.md"
-]

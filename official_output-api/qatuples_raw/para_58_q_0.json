@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `keypoolrefill` command in Verus?",
-    "The `keypoolrefill` command is used to fill the keypool in Verus. It can be used to refill the keypool to a specified size.",
-    "keypoolrefill ( newsize ) Fills the keypool. Arguments 1. newsize   (numeric, optional, default=100) The new keypool size Examples: > verus keypoolrefill > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/keypoolrefill"
-]

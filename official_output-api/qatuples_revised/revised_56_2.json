@@ -1,6 +1,0 @@
-[
-    "How long does the `rescanfromheight` command take to complete, and what factors affect its completion time?",
-    "The `rescanfromheight` command can take minutes or even hours to complete, depending on the size of the wallet and the height from which it is rescanning. Larger wallets and higher heights will result in longer completion times.",
-    "rescanfromheight (height) Rescans the current wallet from a specified height Arguments: 1. \"height\"   (int, optional) Defaults to 0, height to start rescanning from Note: This call can take minutes or even hours to complete on very large wallets and rescans Examples: Initiate rescan of entire chain > verus rescanfromheight Initiate rescan from block 1000000 > verus rescanfromheight 1000000",
-    "./raw_text_input_api_text/rescanfromheight"
-]

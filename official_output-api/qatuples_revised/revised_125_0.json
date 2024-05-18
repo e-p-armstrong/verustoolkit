@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `stop` command in Verus?",
-    "The `stop` command is used to stop the Verus server.",
-    "stop Stop the server.",
-    "./raw_text_input_api_text/stop"
-]

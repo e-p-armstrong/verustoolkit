@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI've been playing around with the `getrawchangeaddress` command in Verus and I'm not entirely sure what it does. Can you tell me more about its purpose?\n\n**AI Assistant:**\nThe `getrawchangeaddress` command returns a new VRSC address that can be used to receive change from raw transactions. This command is intended for use with raw transactions and not for normal use cases.\n\n**User:**\nThat helps clarify things. How can I use the `getrawchangeaddress` command in Verus using the command line?\n\n**AI Assistant:**\nTo use the `getrawchangeaddress` command in Verus using the command line, you can simply type:\n\n```\nverus getrawchangeaddress\n```\n\nThis will return a new VRSC address that can be used to receive change from raw transactions.\n\n**User:**\nWhat if I want to use the `getrawchangeaddress` command with curl instead?\n\n**AI Assistant:**\nTo use the `getrawchangeaddress` command in Verus using curl, you can use the following command:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `myusername` with your actual username and `http://127.0.0.1:27486/` with the actual URL and port number of your Verus node. This will return a new VRSC address that can be used to receive change from raw transactions.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getrawchangeaddress` command in Verus?",
+            "The `getrawchangeaddress` command returns a new VRSC address that can be used to receive change from raw transactions. This command is intended for use with raw transactions and not for normal use cases.",
+            "getrawchangeaddress Returns a new VRSC address, for receiving change. This is for use with raw transactions, NOT normal use. Result: \"address\"  (string) The address Examples: > verus getrawchangeaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawchangeaddress"
+        ],
+        [
+            "How can I use the `getrawchangeaddress` command in Verus using the command line?",
+            "To use the `getrawchangeaddress` command in Verus using the command line, you can simply type:\n\n```\nverus getrawchangeaddress\n```\n\nThis will return a new VRSC address that can be used to receive change from raw transactions.",
+            "getrawchangeaddress Returns a new VRSC address, for receiving change. This is for use with raw transactions, NOT normal use. Result: \"address\"  (string) The address Examples: > verus getrawchangeaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawchangeaddress"
+        ],
+        [
+            "How can I use the `getrawchangeaddress` command in Verus using curl?",
+            "To use the `getrawchangeaddress` command in Verus using curl, you can use the following command:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `myusername` with your actual username and `http://127.0.0.1:27486/` with the actual URL and port number of your Verus node. This will return a new VRSC address that can be used to receive change from raw transactions.",
+            "getrawchangeaddress Returns a new VRSC address, for receiving change. This is for use with raw transactions, NOT normal use. Result: \"address\"  (string) The address Examples: > verus getrawchangeaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawchangeaddress"
+        ]
+    ]
+]

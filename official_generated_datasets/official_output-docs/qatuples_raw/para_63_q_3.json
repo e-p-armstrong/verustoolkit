@@ -1,0 +1,6 @@
+[
+    "How does Verus's simultaneous transaction processing approach improve efficiency compared to serial processing?",
+    "Verus's simultaneous transaction processing approach reduces slippage by offsetting conversions going to and from any given currency within the same block against each other, resulting in increased liquidity and efficiency. This approach also eliminates the need to process transactions in a specific order, which can reduce the overall processing time and improve the efficiency of the system.",
+    "The Verus protocol solves all transactions ``simultaneously`` within a block (as opposed to serially, in order, as is done on Ethereum and all other systems which use the VM-model). This has important implications for security, fairness, and efficiency: * Elimination of front-running, back-running and sandwich attacks. * Enhancing system-wide liquidity, thus reducing slippage, as conversions going to and from any given currency within the same block are offset against each other. * Providing all users converting to and from a currency within the same block the same fair price with no spread.",
+    "./raw_text_input_docs/README_sendcurrency.md"
+]

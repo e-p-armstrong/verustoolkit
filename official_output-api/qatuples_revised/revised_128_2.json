@@ -1,6 +1,0 @@
-[
-    "How can I specify the directory where the backup file will be saved?",
-    "The directory where the backup file will be saved is set by the `-exportdir` option. You need to specify this option before running the `backupwallet` command.",
-    "backupwallet \"destination\" Safely copies wallet.dat to destination filename Arguments: 1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option. Result: \"path\"       (string) The full path of the destination file Examples: > verus backupwallet \"backupdata\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/backupwallet"
-]

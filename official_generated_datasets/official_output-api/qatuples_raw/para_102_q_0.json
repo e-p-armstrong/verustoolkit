@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getrawchangeaddress` command in Verus?",
+    "The `getrawchangeaddress` command returns a new VRSC address that can be used to receive change from raw transactions. This command is intended for use with raw transactions and not for normal use cases.",
+    "getrawchangeaddress Returns a new VRSC address, for receiving change. This is for use with raw transactions, NOT normal use. Result: \"address\"  (string) The address Examples: > verus getrawchangeaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getrawchangeaddress"
+]

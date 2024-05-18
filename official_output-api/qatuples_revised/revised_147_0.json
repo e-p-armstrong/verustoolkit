@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `coinsupply` command in Verus?",
-    "The `coinsupply` command in Verus returns coin supply information at a given block height. If no height is specified, it defaults to the current block height.",
-    "coinsupply <height> Return coin supply information at a given block height. If no height is given, the current height is used. Arguments: 1. \"height\"   (integer, optional) Block height Result: {  \"result\" : \"success\",     (string) If the request was successful.  \"coin\" : \"VRSC\",       (string) The currency symbol of the native coin of this blockchain.  \"height\" : 420,         (integer) The height of this coin supply data  \"supply\" : \"777.0\",      (float) The transparent coin supply  \"zfunds\" : \"0.777\",      (float) The shielded coin supply (in zaddrs)  \"total\" : \"777.777\",     (float) The total coin supply, i.e. sum of supply + zfunds } Examples: > verus coinsupply 420 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"coinsupply\", \"params\": [420] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/coinsupply"
-]

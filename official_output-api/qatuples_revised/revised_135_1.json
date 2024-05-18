@@ -1,6 +1,0 @@
-[
-    "How can I use the `listsinceblock` command to list transactions since a specified block using the Verus command-line interface?",
-    "You can use the `listsinceblock` command to list transactions since a specified block by running a command like this:\n\n```\nverus listsinceblock \"block_hash\" number_of_confirmations\n```\n\nReplace `block_hash` with the hash of the block you want to start listing transactions from, and `number_of_confirmations` with the number of confirmations you want to require for the transactions.",
-    ". Examples: > verus listsinceblock > verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/listsinceblock"
-]

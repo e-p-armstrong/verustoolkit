@@ -1,6 +1,0 @@
-[
-    "How can I use the `getrawchangeaddress` command in Verus using curl?",
-    "To use the `getrawchangeaddress` command in Verus using curl, you can use the following command:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `myusername` with your actual username and `http://127.0.0.1:27486/` with the actual URL and port number of your Verus node. This will return a new VRSC address that can be used to receive change from raw transactions.",
-    "getrawchangeaddress Returns a new VRSC address, for receiving change. This is for use with raw transactions, NOT normal use. Result: \"address\"  (string) The address Examples: > verus getrawchangeaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getrawchangeaddress"
-]

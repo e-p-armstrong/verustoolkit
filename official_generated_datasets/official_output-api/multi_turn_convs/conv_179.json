@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm trying to use the `calc_MoM` command, but I'm not sure what arguments I need to provide. Can you help me out?\n\n**AI Assistant:**\nThe `calc_MoM` command requires two arguments. The first argument is `height`, which specifies the specific blockchain height at which to calculate the Momentum. The second argument is `MoMdepth`, which is the depth at which to calculate the Momentum. Do you have any other questions about using `calc_MoM` or Verus in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the two arguments required for the `calc_MoM` command?",
+            "The two arguments required for the `calc_MoM` command are:\n\n1. `height`: The specific blockchain height at which to calculate the Momentum.\n2. `MoMdepth`: The depth at which to calculate the Momentum.",
+            "calc_MoM height MoMdepth",
+            "./raw_text_input_api_text/calc_MoM"
+        ]
+    ]
+]

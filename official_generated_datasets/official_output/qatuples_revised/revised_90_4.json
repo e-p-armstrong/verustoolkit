@@ -1,0 +1,6 @@
+[
+    "What is OPTION_NFT_TOKEN in Verus, and what does it represent?",
+    "OPTION_NFT_TOKEN is a flag in Verus that, when set to 2048, represents a single satoshi NFT token, which tokenizes control over the root ID.",
+    "s referrals OPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals OPTION_TOKEN = 32           // if set, this is a token, not a native currency OPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency OPTION_GATEWAY = 128          // if set, this routes external currencies OPTION_PBAAS = 256           // this is a PBaaS chain definition OPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices OPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain OPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID ```",
+    "./raw_txt_input/release_notes.md"
+]

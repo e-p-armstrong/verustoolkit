@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "When using the Verus command line interface (CLI) on Windows, how do I format the commands correctly?",
+            "When using the native Windows command prompt (`cmd.com`), you need to substitute the formatting characters as follows:\n\n* Replace the single quote character (`'`) with a double quote character (`\"`)\n* Replace the double quote character (`\"`) with a backslash followed by a double quote character (`\\\"`)\n\nNote that this formatting adjustment only applies when giving commands from the Windows command prompt. Verus Desktop will accept commands as listed in the CLI help, without any formatting changes.",
+            "# Remarks on Windows command line formatting: The CLI help shows the command format for Linux and MacOS. On the native windows command prompt (`cmd.com`) the formatting is different. * For windows substitute the shown `'`-character with the `\"`-character. * For windows substitute the shown `\"`-character with the `\\\"`-characters. Note: this only applies to giving commands from the windows command prompt. Verus Desktop will accept commands as listed. Created by Oink.vrsc@ Note: last revision date 2020-03-02.",
+            "./raw_txt_input/winfaq-01_cli_formatting.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a6619916-34c9-4d7e-9079-8675f09b1e31"
+]

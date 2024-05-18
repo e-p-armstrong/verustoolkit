@@ -1,6 +1,0 @@
-[
-    "What is the format of the result returned by the `getcurrencytrust` command?",
-    "The result returned by the `getcurrencytrust` command is a JSON object with two properties: `setratings` and `currencytrustmode`. `setratings` is an object with IDs as keys and rating values as values, while `currencytrustmode` is an integer indicating the trust mode (0 for no restriction, 1 for syncing only to approved IDs, and 2 for syncing to all IDs except those on the block list).",
-    "getcurrencytrust '[\"currencyid\",...]' Arguments \"[\"currencyid\",...]\"                    (strarray, optional) if specified, only returns rating values for specified currencies, otherwise all Result: {  \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object  \"currencytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list } Examples: > verus getcurrencytrust '[\"currencyid\",...]' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrencytrust\", \"params\": ['[\"currencyid\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getcurrencytrust"
-]

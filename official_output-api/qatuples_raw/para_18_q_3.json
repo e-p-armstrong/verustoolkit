@@ -1,6 +1,0 @@
-[
-    "How do I initiate a rescan of the entire chain using the `rescanfromheight` command?",
-    "To initiate a rescan of the entire chain, simply run the command `verus rescanfromheight` without specifying a height. This will start the rescan from the beginning of the blockchain.",
-    "rescanfromheight (height) Rescans the current wallet from a specified height Arguments: 1. \"height\"   (int, optional) Defaults to 0, height to start rescanning from Note: This call can take minutes or even hours to complete on very large wallets and rescans Examples: Initiate rescan of entire chain > verus rescanfromheight Initiate rescan from block 1000000 > verus rescanfromheight 1000000",
-    "./raw_text_input_api_text/rescanfromheight"
-]

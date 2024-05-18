@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getidentityhistory` command in Verus?",
+    "The `getidentityhistory` command is used to retrieve the history of an identity on the Verus blockchain. It returns a list of transactions related to the specified identity, filtered by height range and with optional proof of ID.",
+    "getidentityhistory \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight) Arguments   \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity   \"heightstart\"            (number, optional) default=0, only return content from this height forward, inclusive   \"heightend\"             (number, optional) default=0 which means max height, only return content up to this height,                                inclusive. -1 means also return values from the mempool.   \"txproofs\"              (bool, optional) default=false, if true, returns proof of ID   \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof Result: Examples: > verus getidentityhistory \"name@\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentityhistory\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getidentityhistory"
+]

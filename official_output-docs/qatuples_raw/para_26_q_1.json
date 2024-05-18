@@ -1,6 +1,0 @@
-[
-    "Where can I learn more about how CHIPS uses VerusID and VDXF?",
-    "You can learn more about how CHIPS uses VerusID and VDXF by reading their documentation on GitHub. Specifically, you can refer to the `id_creation_process.md` and `ids_keys_data.md` files in the `bet` repository.",
-    "::: tip VDXF in Action Learn how the CHIPS project (decentralized poker) uses [VerusID](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/id_creation_process.md) and [VDXF](https://github.com/chips-blockchain/bet/blob/verus_test/docs/verus_migration/ids_keys_data.md)",
-    "./raw_text_input_docs/README_vdxf.md"
-]

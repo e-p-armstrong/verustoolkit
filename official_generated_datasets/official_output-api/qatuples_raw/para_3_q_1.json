@@ -1,0 +1,6 @@
+[
+    "What information does the `decodescript` command return about a script?",
+    "The `decodescript` command returns a JSON object containing the following information about a script:\n\n* `asm`: The assembly code of the script.\n* `hex`: The hex-encoded public key of the script.\n* `type`: The output type of the script.\n* `reqSigs`: The number of required signatures for the script.\n* `addresses`: An array of transparent addresses associated with the script.\n* `p2sh`: The script address in Pay-to-Script-Hash (P2SH) format.",
+    "decodescript \"hex\" Decode a hex-encoded script. Arguments: 1. \"hex\"   (string) the hex encoded script Result: {  \"asm\":\"asm\",  (string) Script public key  \"hex\":\"hex\",  (string) hex encoded public key  \"type\":\"type\", (string) The output type  \"reqSigs\": n,  (numeric) The required signatures  \"addresses\": [  (json array of string)   \"address\"   (string) transparent address   ,...  ],  \"p2sh\",\"address\" (string) script address } Examples: > verus decodescript \"hexstring\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decodescript\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/decodescript"
+]

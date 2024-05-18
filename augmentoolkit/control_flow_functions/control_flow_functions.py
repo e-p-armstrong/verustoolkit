@@ -1291,3 +1291,33 @@ def convert_directory_and_process_conversations(directory_path):
     print(
         "Conversion complete. The processed master list is written to 'processed_master_list.json'."
     )
+
+
+
+def create_pretraining_set(directory_path, json_file):
+    # Initialize a variable to store the combined text of all files
+    combined_text = ""
+
+    # Iterate over each file in the directory
+    for filename in os.listdir(directory_path):
+        file_path = os.path.join(directory_path, filename)
+        
+        # Check if the current file is a file (and not a directory, etc.)
+        if os.path.isfile(file_path):
+            # Read the contents of the file
+            with open(file_path, "r") as file:
+                file_contents = file.read()
+            
+            # Append the file contents to the combined text, with a separator
+            if combined_text:
+                combined_text += "\n\n---NEW FILE---\n\n"
+            combined_text += file_contents
+
+    # Create a dictionary with the combined text
+    data = {"text": combined_text}
+
+    # Save the dictionary as a JSON file
+    with open(json_file, "w") as file:
+        json.dump(data, file)
+
+    print("JSON file saved successfully.")

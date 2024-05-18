@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `transparentorprivatefundsdestination` argument in the `closeoffers` command?",
-    "The `transparentorprivatefundsdestination` argument specifies the destination for closing funds. It can be either a transparent or private address.",
-    "closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination) Closes all offers listed, if they are still valid and belong to this wallet. Always closes expired offers, even if no parameters are given Arguments  [\"offer1_txid\", \"offer2_txid\", ...]   (array, optional) array of hex tx ids of offers to close  transparentorprivatefundsdestination     (transparent or private address, optional) destination for closing funds  privatefundsdestination           (private address, optional) destination for native funds only Result  null return",
-    "./raw_text_input_api_text/closeoffers"
-]

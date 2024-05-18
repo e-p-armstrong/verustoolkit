@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `dumpwallet` command in Verus?",
+            "The `dumpwallet` command is used to dump taddr wallet keys in a human-readable format to a file.",
+            "dumpwallet \"filename\" (omitemptytaddresses) Dumps taddr wallet keys in a human-readable format. Overwriting an existing file is not permitted. Arguments: 1. \"filename\"  (string, required) The filename, saved in folder set by verusd -exportdir option 2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet                        (do not use this option without being sure that all addresses of interest are included) Result: \"path\"      (string) The full path of the destination file Examples: > verus dumpwallet \"test\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/dumpwallet"
+        ],
+        [
+            "What is the optional \"omitemptytaddresses\" argument for the `dumpwallet` command?",
+            "The \"omitemptytaddresses\" argument is an optional boolean parameter that defaults to false. If set to true, it will export only addresses with indexed UTXOs or that control IDs in the wallet. However, it's recommended to use this option with caution, as it may omit addresses that are not of interest.",
+            "dumpwallet \"filename\" (omitemptytaddresses) Dumps taddr wallet keys in a human-readable format. Overwriting an existing file is not permitted. Arguments: 1. \"filename\"  (string, required) The filename, saved in folder set by verusd -exportdir option 2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet                        (do not use this option without being sure that all addresses of interest are included) Result: \"path\"      (string) The full path of the destination file Examples: > verus dumpwallet \"test\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/dumpwallet"
+        ],
+        [
+            "What is the result of the `dumpwallet` command?",
+            "The result of the `dumpwallet` command is the full path of the destination file where the wallet keys were saved.",
+            "dumpwallet \"filename\" (omitemptytaddresses) Dumps taddr wallet keys in a human-readable format. Overwriting an existing file is not permitted. Arguments: 1. \"filename\"  (string, required) The filename, saved in folder set by verusd -exportdir option 2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet                        (do not use this option without being sure that all addresses of interest are included) Result: \"path\"      (string) The full path of the destination file Examples: > verus dumpwallet \"test\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/dumpwallet"
+        ],
+        [
+            "How can I use the `dumpwallet` command via the command line?",
+            "You can use the `dumpwallet` command via the command line by running the following command:\n```\nverus dumpwallet \"test\"\n```\nThis will dump the wallet keys to a file named \"test\" in the folder set by the `verusd -exportdir` option.",
+            "dumpwallet \"filename\" (omitemptytaddresses) Dumps taddr wallet keys in a human-readable format. Overwriting an existing file is not permitted. Arguments: 1. \"filename\"  (string, required) The filename, saved in folder set by verusd -exportdir option 2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet                        (do not use this option without being sure that all addresses of interest are included) Result: \"path\"      (string) The full path of the destination file Examples: > verus dumpwallet \"test\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/dumpwallet"
+        ],
+        [
+            "How can I use the `dumpwallet` command via RPC?",
+            "You can use the `dumpwallet` command via RPC by sending a JSON-RPC request to the Verus daemon. Here's an example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will dump the wallet keys to a file named \"test\" in the folder set by the `verusd -exportdir` option.",
+            "dumpwallet \"filename\" (omitemptytaddresses) Dumps taddr wallet keys in a human-readable format. Overwriting an existing file is not permitted. Arguments: 1. \"filename\"  (string, required) The filename, saved in folder set by verusd -exportdir option 2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet                        (do not use this option without being sure that all addresses of interest are included) Result: \"path\"      (string) The full path of the destination file Examples: > verus dumpwallet \"test\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/dumpwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3606f857-bb28-40d7-a52e-3cbe476cb020"
+]

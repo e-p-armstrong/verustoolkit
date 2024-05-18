@@ -1,0 +1,6 @@
+[
+    "What is the output of the `migrate_createimporttransaction` function?",
+    "The output of the `migrate_createimporttransaction` function is an import transaction (importTx).",
+    "migrate_createimporttransaction burnTx payouts Create an importTx given a burnTx and the corresponding payouts, hex encoded",
+    "./raw_text_input_api_text/migrate_createimporttransaction"
+]

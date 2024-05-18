@@ -1,0 +1,6 @@
+[
+    "What is required to use the `assetchainproof` command in Verus?",
+    "The `assetchainproof` command in Verus requires a `txid` (transaction ID) to function properly.",
+    "assetchainproof needs a txid",
+    "./raw_text_input_api_text/assetchainproof"
+]

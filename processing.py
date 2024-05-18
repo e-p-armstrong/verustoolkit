@@ -4,6 +4,10 @@ async def main():
     import logging
     import yaml
     import glob
+    import augmentoolkit.generation_functions as generation_functions  # This is the package directory
+    from augmentoolkit.control_flow_functions import control_flow_functions
+    from augmentoolkit.generation_functions.engine_wrapper_class import EngineWrapper
+    import os
 
     with open("./config.yaml", "r") as f:
         config = yaml.safe_load(f)
@@ -52,24 +56,24 @@ async def main():
 
     INPUT_FOLDER = config["PATH"]["INPUT"]
 
-    # extension = ".md"
+    # Create directory if it doesn't exist
+    output_dir = config["PATH"]["OUTPUT"] + "/worthy_for_questions"
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Create pretraining set from raw inputs (pretrain first, then instruct tune)
+    control_flow_functions.create_pretraining_set(INPUT_FOLDER, os.path.join(config["PATH"]["OUTPUT"], "pretraining.json"))
+    print("Pretraining set created.")
 
     path = f"{INPUT_FOLDER}/*"# + extension
     source_texts = glob.glob(path)
 
+    print("Source texts Being Used:")
     print(source_texts)
-
-    # [ # add your texts here
-    #     "./raw_txt_input/Simple Sabotage, by the Office of Strategic Services, published 1944.txt",
-    # ]
-
-    # ## Below: Defines and imports functions that you will probably use no matter what cells in the script you choose to run:
 
     print(
         "\n\n\nIMPORTANT NOTE! Augmentoolkit prints a lot of stuff when it runs. Including tracebacks caused by model errors. Most errors are the result of the models, not the code, and any tracebacks you see were almost certainly handled. So: don't panic! You're gonna make it! Alright that's the end of this PSA. Happy dataset generation!\n\n\n"
     )
 
-    import os
 
     # This is in no way best practices, but all my prompts being searchable and separate files is a good way to make my life easier.
     import pkgutil
@@ -94,9 +98,6 @@ async def main():
     sys.path.append("./generation_functions")
     sys.path.append("./control_flow_functions")
 
-    import augmentoolkit.generation_functions as generation_functions  # This is the package directory
-    from augmentoolkit.control_flow_functions import control_flow_functions
-    from augmentoolkit.generation_functions.engine_wrapper_class import EngineWrapper
 
     # First, import all modules so they can be reloaded
     for _, module_name, _ in pkgutil.iter_modules(
@@ -125,9 +126,6 @@ async def main():
         mode=MODE,
         # quantization="gptq" # modify if you want to do stuff with the aphrodite branch
     )
-
-    import re
-    from tqdm import tqdm
     import pprint
 
     sentence_chunks = []
@@ -144,16 +142,13 @@ async def main():
         for seq in sentence_chunks
     ]
     
+    print("First 5 paragraphs processed:")
     pprint.pprint(paragraphs_processed[:5])
 
     import json
     import os
-    from tqdm import tqdm
     import asyncio
 
-    # Create directory if it doesn't exist
-    output_dir = config["PATH"]["OUTPUT"] + "/worthy_for_questions"
-    os.makedirs(output_dir, exist_ok=True)
 
     filtered_worthy_for_questions = paragraphs_processed
     if USE_SUBSET:

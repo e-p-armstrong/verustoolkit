@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHi there! I'm here to help with any questions you have about Verus. What's on your mind today?\n\n**User:**\nHey, I was thinking of trying out pool mining on a Raspberry Pi-like device. What are the requirements for that?\n\n**AI Assistant:**\nTo engage in pool mining on a Raspberry Pi-like device, you'll need a few specific things. First, you'll need a 64-bit processor with AES functions enabled. Next, you'll need a 64-bit operating system - note that Raspbian, the standard OS for Raspberry Pi, is 32-bit, so you'll need an alternative.\n\nYou'll also need an ARM release of a mining software like CCMiner or NHEQminer. Additionally, you'll need low latency internet connectivity to communicate with the mining pool. You'll also need a public address to mine to, as well as a public mining pool to connect to.\n\nKeep in mind that pool mining on a Raspberry Pi-like device might not be the most profitable or efficient way to mine, but it can be a fun project to try out! Do you have any other questions about pool mining or Verus in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the requirements for pool mining on a Raspberry Pi-like device?",
+            "To engage in pool mining on a Raspberry Pi-like device, you need:\n\n1. A 64-bit processor with AES functions enabled.\n2. A 64-bit operating system (Raspbian is standard 32-bit, so you'll need an alternative).\n3. An ARM release of a mining software like CCMiner or NHEQminer.\n4. Low latency internet connectivity.\n5. A public address to mine to.\n6. A public mining pool to connect to.",
+            "## Pool Mining * 64-bit processor with AES functions enabled * 64-bit Operation system (Raspbian is standard 32 bit) * ARM release of CCMiner or NHEQminer * Low latency internet connectivity * A public address to mine to * A public mining pool to connect to Note: Revision date 2023-01-12.",
+            "./raw_txt_input/armfaq-02_requirements.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "What inputs are required to use the `migrate_createimporttransaction` function?",
+    "To use the `migrate_createimporttransaction` function, you need to provide three inputs:\n\n1. A burn transaction (burnTx)\n2. The corresponding payouts\n3. The payouts and burn transaction must be hex encoded",
+    "migrate_createimporttransaction burnTx payouts Create an importTx given a burnTx and the corresponding payouts, hex encoded",
+    "./raw_text_input_api_text/migrate_createimporttransaction"
+]

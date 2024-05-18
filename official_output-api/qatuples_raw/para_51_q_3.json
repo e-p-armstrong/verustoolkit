@@ -1,6 +1,0 @@
-[
-    "What does the `expired` argument do in the `listopenoffers` command?",
-    "If `expired` is set to `true` (which is the default), the `listopenoffers` command will list those offers in the wallet which are expired.",
-    "listopenoffers (unexpired) (expired)' Shows offers outstanding in this wallet Arguments  unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired  expired         (bool, optional) default=true, list those offers in the wallet which are expired Result  all open offers",
-    "./raw_text_input_api_text/listopenoffers"
-]

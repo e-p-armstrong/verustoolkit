@@ -1,6 +1,0 @@
-[
-    "How can I use the `getblockdeltas` command in Verus to retrieve information about a specific block?",
-    "You can use the `getblockdeltas` command in Verus by running the following command in the terminal:\n\n```\nverus getblockdeltas <block_hash>\n```\n\nReplace `<block_hash>` with the actual hash of the block you want to retrieve information about.",
-    "Examples: > verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getblockdeltas"
-]

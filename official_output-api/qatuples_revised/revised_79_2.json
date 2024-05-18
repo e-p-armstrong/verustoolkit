@@ -1,6 +1,0 @@
-[
-    "How can I use the `refundfailedlaunch` command to refund contributions to a chain?",
-    "You can use the `refundfailedlaunch` command to refund contributions to a chain by running the following command:\n```\nverus refundfailedlaunch \"currencyid\"\n```\nReplace `\"currencyid\"` with the actual iaddress or full chain name of the chain you want to refund contributions to.",
-    "refundfailedlaunch \"currencyid\" Refunds any funds sent to the chain if they are eligible for refund. This attempts to refund all transactions for all contributors. Arguments \"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to Result: Examples: > verus refundfailedlaunch \"currencyid\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/refundfailedlaunch"
-]

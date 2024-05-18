@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm trying to figure out how to manage banned IPs and subnets in Verus. Can you help me with that? Specifically, what is the `listbanned` command used for in Verus?\n\n**AI Assistant:**\nThe `listbanned` command is used to list all banned IPs/Subnets in Verus. It's a useful tool for managing your banned list and keeping your network secure. Do you want to know how to use it?\n\n**User:**\nYes, please! How can I use the `listbanned` command to list all banned IPs/Subnets in Verus using the command line?\n\n**AI Assistant:**\nEasy one! You can use the `listbanned` command to list all banned IPs/Subnets in Verus by running the following command:\n\n```\nverus listbanned\n```\n\nJust open your terminal, type in that command, and press Enter. You should see a list of all banned IPs and subnets.\n\n**User:**\nThat's great! What if I want to use the JSON-RPC API instead? How can I use the `listbanned` command to list all banned IPs/Subnets in Verus using the JSON-RPC API?\n\n**AI Assistant:**\nTo use the `listbanned` command with the JSON-RPC API, you'll need to send a JSON-RPC request to the Verus daemon. Here's an example of how to do this using the `curl` command:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nJust replace `myusername` with your actual username, and you're good to go!\n\n**User:**\nThanks for the help! I think I've got it now.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the `listbanned` command used for in Verus?",
+            "The `listbanned` command is used to list all banned IPs/Subnets in Verus.",
+            "listbanned List all banned IPs/Subnets. Examples: > verus listbanned > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ],
+        [
+            "How can I use the `listbanned` command to list all banned IPs/Subnets in Verus using the command line?",
+            "You can use the `listbanned` command to list all banned IPs/Subnets in Verus by running the following command:\n\n```\nverus listbanned\n```",
+            "listbanned List all banned IPs/Subnets. Examples: > verus listbanned > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ],
+        [
+            "How can I use the `listbanned` command to list all banned IPs/Subnets in Verus using the JSON-RPC API?",
+            "You can use the `listbanned` command to list all banned IPs/Subnets in Verus by sending a JSON-RPC request to the Verus daemon. Here is an example of how to do this using the `curl` command:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nNote: You need to replace `myusername` with your actual username.",
+            "listbanned List all banned IPs/Subnets. Examples: > verus listbanned > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ]
+    ]
+]

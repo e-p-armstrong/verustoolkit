@@ -1,6 +1,0 @@
-[
-    "How can I define a new currency in Verus using the command line?",
-    "You can define a new currency in Verus using the `definecurrency` command followed by the JSON definition of the currency. For example:\n\n```\nverus definecurrency jsondefinition\n```",
-    "d Result: {  \"txid\" : \"transactionid\", (string) The transaction id  \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction  \"hex\" : \"data\"      (string) Raw data for signed transaction } Examples: > verus definecurrency jsondefinition > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/definecurrency"
-]

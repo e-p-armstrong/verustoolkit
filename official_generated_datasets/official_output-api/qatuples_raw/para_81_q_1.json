@@ -1,0 +1,6 @@
+[
+    "What are the required and optional arguments for the `getidentity` command?",
+    "The required argument is the identity name or i-address, which should be in the format \"name@ || iid\". The optional arguments are:\n\n* `height`: The block height at which to retrieve the identity information. If set to -1, it includes the mempool. Default is the current height.\n* `txproof`: A boolean indicating whether to return a proof of the ID. Default is false.\n* `txproofheight`: The height from which to generate the proof. Default is the value of `height`.",
+    "getidentity \"name@ || iid\" (height) (txproof) (txproofheight) Arguments   \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity   \"height\"               (number, optional) default=current height, return identity as of this height, if -1 include mempool   \"txproof\"              (bool, optional) default=false, if true, returns proof of ID   \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof Result: Examples: > verus getidentity \"name@\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getidentity"
+]

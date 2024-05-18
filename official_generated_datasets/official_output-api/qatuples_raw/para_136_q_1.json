@@ -1,0 +1,6 @@
+[
+    "How do I use the `settxfee` command to set the transaction fee to a specific amount?",
+    "You can use the `settxfee` command to set the transaction fee to a specific amount by providing the amount as an argument. For example, to set the transaction fee to 0.00001 VRSC/kB, you would use the following command:\n\n```\nverus settxfee 0.00001\n```\n\nAlternatively, you can use the RPC API to set the transaction fee using a tool like `curl`. Here's an example:\n\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "settxfee amount Set the transaction fee per kB. Arguments: 1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001 Result true|false    (boolean) Returns true if successful Examples: > verus settxfee 0.00001 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/settxfee"
+]

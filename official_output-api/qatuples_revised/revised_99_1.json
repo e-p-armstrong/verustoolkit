@@ -1,6 +1,0 @@
-[
-    "What is an \"import tx\" in the context of `migrate_completeimporttransaction`?",
-    "In the context of `migrate_completeimporttransaction`, an \"import tx\" refers to a cross-chain import transaction. This is a transaction that involves moving assets or data from one blockchain or asset chain to another.",
-    "migrate_completeimporttransaction importTx Takes a cross chain import tx with proof generated on assetchain and extends proof to target chain proof root",
-    "./raw_text_input_api_text/migrate_completeimporttransaction"
-]

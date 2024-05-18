@@ -1,6 +1,0 @@
-[
-    "How can I use the JSON-RPC API to retrieve a specific block by its block number using the `curl` command?",
-    "You can use the `curl` command to send a JSON-RPC request to the Verus server to retrieve a specific block by its block number. For example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
-    "Examples: > verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/ > verus getblock 12800 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getblock"
-]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the main change introduced by VerusHash 2.1 compared to VerusHash 2.0?",
+            "VerusHash 2.1 introduces an adjustment to the equalization technology, which is expected to tilt the balance more favorably towards CPUs, while still enabling FPGAs to operate on the hash algorithm with minor modifications.",
+            "# VerusHash 2.1 VerusHash 2.0 was the first algorithm to significantly equalize FPGAs dominance over CPUs, once they were introduced on the Verus network. While FPGAs were intentionally not blocked completely, which would simply drive the performance battle to the higher end and further into secret, the VerusHash 2.0 algorithm was developed to explicitly equalize FPGAs and modern CPUs and has met its original goals in keeping FPGA performance for the price under 2x of CPU. VerusHash 2.1 introduces an adjustment to the equalization technology, which we expect to tilt the balance a bit more favorably towards CPUs, while still enabling FPGAs to operate on the hash algorithm with minor modifications. Verus Developers have proactively reached out to FPGA manufacturers and made the new algorithm available to them, so that everyone will have an opportunity to mine and stake when the Verus economy starts to roll and identity rewards, which will not inflate the currency, but should far exceed the potential for block rewards, begin streaming from the network.",
+            "./raw_txt_input/verushash_2.1.md"
+        ],
+        [
+            "What steps have Verus developers taken to ensure a smooth transition to VerusHash 2.1 for FPGA manufacturers?",
+            "Verus developers have proactively reached out to FPGA manufacturers and made the new algorithm available to them, so that everyone will have an opportunity to mine and stake when the Verus economy starts to roll.",
+            "# VerusHash 2.1 VerusHash 2.0 was the first algorithm to significantly equalize FPGAs dominance over CPUs, once they were introduced on the Verus network. While FPGAs were intentionally not blocked completely, which would simply drive the performance battle to the higher end and further into secret, the VerusHash 2.0 algorithm was developed to explicitly equalize FPGAs and modern CPUs and has met its original goals in keeping FPGA performance for the price under 2x of CPU. VerusHash 2.1 introduces an adjustment to the equalization technology, which we expect to tilt the balance a bit more favorably towards CPUs, while still enabling FPGAs to operate on the hash algorithm with minor modifications. Verus Developers have proactively reached out to FPGA manufacturers and made the new algorithm available to them, so that everyone will have an opportunity to mine and stake when the Verus economy starts to roll and identity rewards, which will not inflate the currency, but should far exceed the potential for block rewards, begin streaming from the network.",
+            "./raw_txt_input/verushash_2.1.md"
+        ],
+        [
+            "What was the primary goal of the VerusHash 2.0 algorithm?",
+            "The primary goal of the VerusHash 2.0 algorithm was to equalize the performance of FPGAs (Field-Programmable Gate Arrays) and modern CPUs on the Verus network, ensuring that FPGAs did not dominate CPU performance.",
+            "# VerusHash 2.1 VerusHash 2.0 was the first algorithm to significantly equalize FPGAs dominance over CPUs, once they were introduced on the Verus network. While FPGAs were intentionally not blocked completely, which would simply drive the performance battle to the higher end and further into secret, the VerusHash 2.0 algorithm was developed to explicitly equalize FPGAs and modern CPUs and has met its original goals in keeping FPGA performance for the price under 2x of CPU. VerusHash 2.1 introduces an adjustment to the equalization technology, which we expect to tilt the balance a bit more favorably towards CPUs, while still enabling FPGAs to operate on the hash algorithm with minor modifications. Verus Developers have proactively reached out to FPGA manufacturers and made the new algorithm available to them, so that everyone will have an opportunity to mine and stake when the Verus economy starts to roll and identity rewards, which will not inflate the currency, but should far exceed the potential for block rewards, begin streaming from the network.",
+            "./raw_txt_input/verushash_2.1.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "da3f318e-0907-40d3-9f79-14f049baadec"
+]

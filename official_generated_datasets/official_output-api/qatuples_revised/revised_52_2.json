@@ -1,0 +1,6 @@
+[
+    "What is the result of running the `verifychain` command?",
+    "The result of running the `verifychain` command is a boolean value (true or false) indicating whether the blockchain was verified successfully or not.",
+    "verifychain ( checklevel numblocks ) Verifies blockchain database. Arguments: 1. checklevel  (numeric, optional, 0-4, default=3) How thorough the block verification is. 2. numblocks  (numeric, optional, default=288, 0=all) The number of blocks to check. Result: true|false    (boolean) Verified or not Examples: > verus verifychain > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifychain\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/verifychain"
+]

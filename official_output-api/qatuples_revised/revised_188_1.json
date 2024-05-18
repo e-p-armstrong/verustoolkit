@@ -1,6 +1,0 @@
-[
-    "What information does the `getdeprecationinfo` command return?",
-    "The `getdeprecationinfo` command returns an object with three properties:\n\n1. `version`: A numeric value representing the server version.\n2. `subversion`: A string representing the server subversion string.\n3. `deprecationheight`: A numeric value representing the block height at which the current version will deprecate and shut down.",
-    "getdeprecationinfo Returns an object containing current version and deprecation block height. Applicable only on mainnet. Result: {  \"version\": xxxxx,           (numeric) the server version  \"subversion\": \"/MagicBean:x.y.z[-v]/\",   (string) the server subversion string  \"deprecationheight\": xxxxx,      (numeric) the block height at which this version will deprecate and shut down } Examples: > verus getdeprecationinfo > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdeprecationinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getdeprecationinfo"
-]

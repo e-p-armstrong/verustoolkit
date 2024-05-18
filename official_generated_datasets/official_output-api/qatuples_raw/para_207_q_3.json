@@ -1,0 +1,6 @@
+[
+    "Can I use the `getpendingtransfers` command with a JSON-RPC request?",
+    "Yes, you can use the `getpendingtransfers` command with a JSON-RPC request. The format of the request would be:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `\"myusername\"` with your actual username, and `\"chainname\"` with the name of the chain you want to query.",
+    "getpendingtransfers \"chainname\" Returns all pending transfers for a particular chain that have not yet been aggregated into an export Arguments 1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon. Result:  {  } Examples: > verus getpendingtransfers \"chainname\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getpendingtransfers"
+]

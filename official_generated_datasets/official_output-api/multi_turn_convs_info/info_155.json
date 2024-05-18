@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `getlaunchinfo` command in Verus?",
+            "The `getlaunchinfo` command is used to retrieve the launch notarization data and partial transaction proof of the launch notarization for a specified currency ID.",
+            "getlaunchinfo \"currencyid\" Returns the launch notarization data and partial transaction proof of the launch notarization for the specifed currencyid. Arguments 1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on Result: {  \"currencydefinition\" : {},   (json) Full currency definition  \"txid\" : \"hexstr\",      (hexstr) transaction ID  \"voutnum\" : \"n\",       (number) vout index of the launch notarization  \"transactionproof\" : {},    (json) Partial transaction proof of the launch transaction and output  \"launchnotarization\" : {},   (json) Final CPBaaSNotarization clearing launch or refund  \"notarynotarization\" : {},   (json) Current notarization of this chain } Examples: > verus getlaunchinfo \"currencyid\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlaunchinfo"
+        ],
+        [
+            "What arguments does the `getlaunchinfo` command take?",
+            "The `getlaunchinfo` command takes one required argument, which is the `currencyid` (a string) that specifies the hex-encoded ID or string name to search for notarizations on.",
+            "getlaunchinfo \"currencyid\" Returns the launch notarization data and partial transaction proof of the launch notarization for the specifed currencyid. Arguments 1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on Result: {  \"currencydefinition\" : {},   (json) Full currency definition  \"txid\" : \"hexstr\",      (hexstr) transaction ID  \"voutnum\" : \"n\",       (number) vout index of the launch notarization  \"transactionproof\" : {},    (json) Partial transaction proof of the launch transaction and output  \"launchnotarization\" : {},   (json) Final CPBaaSNotarization clearing launch or refund  \"notarynotarization\" : {},   (json) Current notarization of this chain } Examples: > verus getlaunchinfo \"currencyid\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlaunchinfo"
+        ],
+        [
+            "What information does the `getlaunchinfo` command return?",
+            "The `getlaunchinfo` command returns a JSON object with the following information:\n\n* `currencydefinition`: the full currency definition\n* `txid`: the transaction ID of the launch notarization\n* `voutnum`: the vout index of the launch notarization\n* `transactionproof`: a partial transaction proof of the launch transaction and output\n* `launchnotarization`: the final CPBaaSNotarization clearing launch or refund\n* `notarynotarization`: the current notarization of this chain",
+            "getlaunchinfo \"currencyid\" Returns the launch notarization data and partial transaction proof of the launch notarization for the specifed currencyid. Arguments 1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on Result: {  \"currencydefinition\" : {},   (json) Full currency definition  \"txid\" : \"hexstr\",      (hexstr) transaction ID  \"voutnum\" : \"n\",       (number) vout index of the launch notarization  \"transactionproof\" : {},    (json) Partial transaction proof of the launch transaction and output  \"launchnotarization\" : {},   (json) Final CPBaaSNotarization clearing launch or refund  \"notarynotarization\" : {},   (json) Current notarization of this chain } Examples: > verus getlaunchinfo \"currencyid\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlaunchinfo"
+        ],
+        [
+            "How can I use the `getlaunchinfo` command to retrieve launch information for a specific currency ID?",
+            "You can use the `getlaunchinfo` command in two ways:\n\n1. Using the Verus CLI: `verus getlaunchinfo \"currencyid\"`\n2. Using the Verus JSON-RPC API: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`\n\n Replace `\"currencyid\"` with the actual currency ID you want to retrieve launch information for.",
+            "getlaunchinfo \"currencyid\" Returns the launch notarization data and partial transaction proof of the launch notarization for the specifed currencyid. Arguments 1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on Result: {  \"currencydefinition\" : {},   (json) Full currency definition  \"txid\" : \"hexstr\",      (hexstr) transaction ID  \"voutnum\" : \"n\",       (number) vout index of the launch notarization  \"transactionproof\" : {},    (json) Partial transaction proof of the launch transaction and output  \"launchnotarization\" : {},   (json) Final CPBaaSNotarization clearing launch or refund  \"notarynotarization\" : {},   (json) Current notarization of this chain } Examples: > verus getlaunchinfo \"currencyid\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlaunchinfo"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ac663ba1-9651-4b8a-943d-6ca3ed25212f"
+]

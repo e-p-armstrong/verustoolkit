@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the `invalidateblock` command in Verus?",
-    "The `invalidateblock` command is used to permanently mark a block as invalid, as if it had violated a consensus rule.",
-    "invalidateblock \"hash\" Permanently marks a block as invalid, as if it violated a consensus rule. Arguments: 1. hash  (string, required) the hash of the block to mark as invalid Result: Examples: > verus invalidateblock \"blockhash\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/invalidateblock"
-]

@@ -1,6 +1,0 @@
-[
-    "How can I use the `getblockhash` command to retrieve the hash of a block at index 1000?",
-    "You can use the `getblockhash` command by running the following command: `verus getblockhash 1000`\n\nAlternatively, you can use the JSON-RPC interface by running the following command: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`",
-    "getblockhash index Returns hash of block in best-block-chain at index provided. Arguments: 1. index     (numeric, required) The block index Result: \"hash\"     (string) The block hash Examples: > verus getblockhash 1000 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getblockhash"
-]

@@ -1,6 +1,0 @@
-[
-    "How can I use the JSON-RPC API to get information about the Verus blockchain?",
-    "You can use the JSON-RPC API to get information about the Verus blockchain by sending a request to the Verus JSON-RPC server. Here's an example using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis command sends a JSON-RPC request to the Verus server to retrieve information about the blockchain. The response will contain the requested information.\n\nNote: In this example, `myusername` should be replaced with your actual Verus username, and `http://127.0.0.1:27486/` should be replaced with the URL and port of your Verus JSON-RPC server.",
-    "  Examples: > verus getblockchaininfo > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getblockchaininfo"
-]

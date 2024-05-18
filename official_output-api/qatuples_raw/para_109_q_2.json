@@ -1,6 +1,0 @@
-[
-    "How can I use the `getmempoolinfo` command to get information about the TX memory pool using curl?",
-    "You can use the `getmempoolinfo` command to get information about the TX memory pool by running the following curl command:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `myusername` with your actual username and `http://127.0.0.1:27486/` with your actual Verus node URL.",
-    "getmempoolinfo Returns details on the active state of the TX memory pool. Result: {  \"size\": xxxxx        (numeric) Current tx count  \"bytes\": xxxxx        (numeric) Sum of all tx sizes  \"usage\": xxxxx        (numeric) Total memory usage for the mempool } Examples: > verus getmempoolinfo > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getmempoolinfo"
-]

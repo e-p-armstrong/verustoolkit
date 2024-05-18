@@ -1,6 +1,0 @@
-[
-    "What does the `getunconfirmedbalance` command do in Verus?",
-    "The `getunconfirmedbalance` command returns the server's total unconfirmed balance.",
-    "getunconfirmedbalance Returns the server's total unconfirmed balance",
-    "./raw_text_input_api_text/getunconfirmedbalance"
-]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I retrieve information about a specific transaction using the `verus` command-line tool?",
+            "You can retrieve information about a specific transaction using the `gettransaction` command. The basic syntax is `verus gettransaction <transaction_id>`. For example: `verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"`.",
+            "Examples: > verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" > verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/gettransaction"
+        ],
+        [
+            "How can I retrieve information about a specific transaction using the `curl` command and JSON-RPC?",
+            "You can retrieve information about a specific transaction using the `curl` command and JSON-RPC by sending a POST request to the Verus JSON-RPC server. The basic syntax is:\n```\ncurl --user <username> --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"<transaction_id>\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `<username>` with your Verus username and `<transaction_id>` with the ID of the transaction you want to retrieve information about. For example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will return information about the specified transaction in JSON format.",
+            "Examples: > verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" > verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/gettransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e5dc588e-ee30-4a2a-9172-2bcf874b9ac8"
+]

@@ -1,6 +1,0 @@
-[
-    "What is the output format of the `zcbenchmark` command?",
-    "The output of the `zcbenchmark` command is a list of objects, each containing a single property called `runningtime`. The `runningtime` property represents the time it took to run each sample of the benchmark. The output will have as many objects as the number of samples specified by the `samplecount` argument.",
-    "zcbenchmark benchmarktype samplecount Runs a benchmark of the selected type samplecount times, returning the running times of each sample. Output: [  {   \"runningtime\": runningtime  },  {   \"runningtime\": runningtime  }  ... ]",
-    "./raw_text_input_api_text/zcbenchmark"
-]

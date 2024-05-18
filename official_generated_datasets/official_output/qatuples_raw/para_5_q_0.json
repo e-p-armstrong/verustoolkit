@@ -1,0 +1,6 @@
+[
+    "What should I expect when importing an address with many transactions into the GUI wallet?",
+    "When importing an address with many transactions into the GUI wallet, you should expect the following:\n\n* The GUI wallet will not show any progress on the import.\n* You may receive messages indicating that the RPC daemon is not reacting.\n* The import process will take a significant amount of time to complete in the background.",
+    "### The GUI wallet will not show any progress on the import and may give messages that the RPC daemon is not reacting. It will take quite some time for the process to finish in the background, especially if the address has many transaction on it. Information compiled by Oink.vrsc@. Note: revision date 2021-05-02.",
+    "./raw_txt_input/how-to_convert-seed-to-wif.md"
+]

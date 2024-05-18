@@ -1,6 +1,0 @@
-[
-    "How do I use the `getidentitytrust` command to retrieve identity trust ratings for specific IDs?",
-    "You can use the `getidentitytrust` command to retrieve identity trust ratings for specific IDs by passing an array of IDs as an argument, like this:\n\n```\nverus getidentitytrust '[\"id1\", \"id2\",...]'\n```\n\nReplace `\"id1\", \"id2\",...` with the actual IDs you want to retrieve ratings for.",
-    "getidentitytrust '[\"id\",...]' Arguments \"[\"id\",...]\"                    (strarray, optional) if specified, only returns rating values for specified IDs, otherwise all Result: {  \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object  \"identitytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list } Examples: > verus getidentitytrust '[\"id\",...]' > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentitytrust\", \"params\": ['[\"id\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getidentitytrust"
-]

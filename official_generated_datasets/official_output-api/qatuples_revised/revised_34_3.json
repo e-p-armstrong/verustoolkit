@@ -1,0 +1,6 @@
+[
+    "How can I use the `keypoolrefill` command using the Verus JSON-RPC API?",
+    "You can use the `keypoolrefill` command using the Verus JSON-RPC API by sending a JSON-RPC request to the Verus server. The request should include the `method` field set to `keypoolrefill` and an empty `params` array. For example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "keypoolrefill ( newsize ) Fills the keypool. Arguments 1. newsize   (numeric, optional, default=100) The new keypool size Examples: > verus keypoolrefill > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/keypoolrefill"
+]

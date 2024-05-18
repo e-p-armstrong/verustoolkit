@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**AI Assistant:**\nHi there! I'm here to help with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI've been trying to learn more about the Transfer Destination construct in the Verus ecosystem, but I'm having trouble finding implementation examples. Do you know where I can find them?\n\n**AI Assistant:**\nThe Transfer Destination construct is implemented in a number of codebases across the Verus ecosystem. Specifically, you can find examples in:\n\n1. The VerusCoin core GitHub repository, where it is implemented as `CTransferDestination` in the `src/pbaas/crosschainrpc.h` file.\n2. The `verus-typescript-primitives` utility library, where it is implemented as `TransferDestination` in the `src/pbaas/TransferDestination.ts` file.\n\nThese implementations can serve as examples for understanding how the Transfer Destination construct is used in different contexts within the Verus ecosystem. Take a look and see if that helps clarify things for you!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Where can I find implementation examples of the Transfer Destination construct in the Verus ecosystem?",
+            "The Transfer Destination construct is implemented in a number of codebases across the Verus ecosystem, specifically in:\n\n1. The VerusCoin core GitHub repository, where it is implemented as `CTransferDestination` in the `src/pbaas/crosschainrpc.h` file.\n2. The `verus-typescript-primitives` utility library, where it is implemented as `TransferDestination` in the `src/pbaas/TransferDestination.ts` file.\n\nThese implementations can serve as examples for understanding how the Transfer Destination construct is used in different contexts within the Verus ecosystem.",
+            "## Implementation Examples The Transfer Destination construct is implemented in a number of codebases accross the Verus ecosystem: - [The VerusCoin core GitHub repository (as CTransferDestination)](https://github.com/VerusCoin/VerusCoin/blob/master/src/pbaas/crosschainrpc.h) - [The verus-typescript-primitives utility library (as TransferDestination)](https://github.com/VerusCoin/verus-typescript-primitives/blob/master/src/pbaas/TransferDestination.ts)",
+            "./raw_text_input_docs/transfer-destination.md"
+        ]
+    ]
+]

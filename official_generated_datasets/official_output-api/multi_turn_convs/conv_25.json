@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHi! I'm here to help with any Verus-related questions you might have. What's on your mind today?\n\n**User:**\nI'm trying to understand some of the commands in Verus. Can you tell me about the `scanNotarisationsDB` command?\n\n**AI Assistant:**\nThe `scanNotarisationsDB` command is used to scan the notarisations database backwards from a specified block height for a notarisation of a given symbol. It's a useful tool for searching for notarisations in the database.\n\n**User:**\nThat's helpful. What are the required parameters for the `scanNotarisationsDB` command?\n\n**AI Assistant:**\nThe `scanNotarisationsDB` command requires two parameters:\n\n1. `blockHeight`: The block height from which to start scanning the notarisations database.\n2. `symbol`: The symbol for which to search for a notarisation.\n\nThese two parameters are necessary to run the command successfully.\n\n**User:**\nAre there any optional parameters for the `scanNotarisationsDB` command?\n\n**AI Assistant:**\nYes, there is an optional parameter for the `scanNotarisationsDB` command. The optional parameter is `blocksLimit`, which specifies the number of blocks to scan. If you don't provide a value for `blocksLimit`, it defaults to 1440.\n\nI hope that helps! Let me know if you have any more questions about the `scanNotarisationsDB` command or Verus in general.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `scanNotarisationsDB` command in Verus?",
+            "The `scanNotarisationsDB` command is used to scan the notarisations database backwards from a specified block height for a notarisation of a given symbol.",
+            "scanNotarisationsDB blockHeight symbol [blocksLimit=1440] Scans notarisationsdb backwards from height for a notarisation of given symbol",
+            "./raw_text_input_api_text/scanNotarisationsDB"
+        ],
+        [
+            "What are the required parameters for the `scanNotarisationsDB` command?",
+            "The required parameters for the `scanNotarisationsDB` command are:\n\n1. `blockHeight`: The block height from which to start scanning the notarisations database.\n2. `symbol`: The symbol for which to search for a notarisation.",
+            "scanNotarisationsDB blockHeight symbol [blocksLimit=1440] Scans notarisationsdb backwards from height for a notarisation of given symbol",
+            "./raw_text_input_api_text/scanNotarisationsDB"
+        ],
+        [
+            "Is there an optional parameter for the `scanNotarisationsDB` command?",
+            "Yes, there is an optional parameter for the `scanNotarisationsDB` command, which is `blocksLimit`. This parameter specifies the number of blocks to scan, and its default value is 1440.",
+            "scanNotarisationsDB blockHeight symbol [blocksLimit=1440] Scans notarisationsdb backwards from height for a notarisation of given symbol",
+            "./raw_text_input_api_text/scanNotarisationsDB"
+        ]
+    ]
+]

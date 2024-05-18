@@ -1,6 +1,0 @@
-[
-    "How can I attempt to add a node to the addnode list using the `addnode` command?",
-    "You can attempt to add a node to the addnode list using the `addnode` command with the 'add' command. For example:\n```\nverus addnode \"192.168.0.6:8233\" \"add\"\n```\nThis will attempt to add the node at \"192.168.0.6:8233\" to the addnode list.",
-    "addnode \"node\" \"add|remove|onetry\" Attempts add or remove a node from the addnode list. Or try a connection to a node once. Arguments: 1. \"node\"   (string, required) The node (see getpeerinfo for nodes) 2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once Examples: > verus addnode \"192.168.0.6:8233\" \"onetry\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/addnode"
-]

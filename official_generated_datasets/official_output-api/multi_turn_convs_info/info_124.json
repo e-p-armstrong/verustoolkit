@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `stop` command in Verus?",
+            "The `stop` command is used to stop the Verus server.",
+            "stop Stop the server.",
+            "./raw_text_input_api_text/stop"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c3ec9218-546e-4dc3-a23c-54cfe5e7af4a"
+]

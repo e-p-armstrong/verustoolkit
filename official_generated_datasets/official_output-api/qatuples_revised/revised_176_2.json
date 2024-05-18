@@ -1,0 +1,6 @@
+[
+    "How can I use the `getlastimportfrom` command in the Verus command line?",
+    "You can use the `getlastimportfrom` command in the Verus command line by running the following command:\n```\nverus getlastimportfrom \"systemname\"\n```\nReplace \"systemname\" with the name or ID of the system you want to retrieve the last import from.",
+    "getlastimportfrom \"systemname\" Returns the last import from a specific originating system. Arguments 1. \"systemname\"           (string, optional) name or ID of the system to retrieve the last import from Result:  {   \"lastimport\" :         (object) last import from the indicated system on this chain    {    }   \"lastconfirmednotarization\" :  (object) last confirmed notarization of the indicated system on this chain    {    }  } Examples: > verus getlastimportfrom \"systemname\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlastimportfrom\", \"params\": [\"systemname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getlastimportfrom"
+]

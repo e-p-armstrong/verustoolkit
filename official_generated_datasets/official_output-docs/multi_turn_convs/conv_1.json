@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHello! I'm here to assist you with any questions you may have about Verus. What do you need help with today?\n\n**User:**\nI need to unlock my VerusID, which is used to access my wallet. Where can I copy and paste the code snippet to do that?\n\n**AI Assistant:**\nYou can copy and paste the code snippet into the command line interface of Verus Desktop. That should help you unlock your VerusID and access your wallet.\n\n**User:**\nOkay, I've pasted the code snippet. What's next? Do I need to perform a transaction or access my wallet somehow?\n\n**AI Assistant:**\nAfter copying and pasting the code snippet, you need to edit the necessary inputs for your specific needs. This might include specifying the transaction details, wallet address, or other relevant information. Make sure to review the code carefully and update the necessary fields before executing the command. If you're unsure about what to do next, feel free to ask and I'll do my best to guide you through the process!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Where can I copy and paste the code snippet to unlock my VerusID, which is used to access my wallet?",
+            "You can copy and paste the code snippet into the command line interface of Verus Desktop.",
+            "You can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs. In the code snippet are the minimum requirements to unlock your VerusID.",
+            "./raw_text_input_docs/setup-vault.md"
+        ],
+        [
+            "What do I need to do after copying and pasting a code snippet into the command line interface of Verus Desktop, such as a transaction or wallet command?",
+            "After copying and pasting the code snippet, you need to edit the necessary inputs for your specific needs.",
+            "You can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs. In the code snippet are the minimum requirements to unlock your VerusID.",
+            "./raw_text_input_docs/setup-vault.md"
+        ]
+    ]
+]

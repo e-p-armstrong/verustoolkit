@@ -1,6 +1,0 @@
-[
-    "How can I use the `getaccountaddress` command to get the default account address?",
-    "You can use the `getaccountaddress` command to get the default account address by running `verus getaccountaddress \"\"` or simply `verus getaccountaddress`.",
-    "getaccountaddress \"account\" DEPRECATED. Returns the current VRSC address for receiving payments to this account. Arguments: 1. \"account\"    (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Result: \"VRSC_address\"  (string) The account VRSC address Examples: > verus getaccountaddress > verus getaccountaddress \"\" > verus getaccountaddress \"myaccount\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccountaddress\", \"params\": [\"myaccount\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getaccountaddress"
-]

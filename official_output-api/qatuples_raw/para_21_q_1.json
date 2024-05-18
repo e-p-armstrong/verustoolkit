@@ -1,6 +1,0 @@
-[
-    "How can I decode a raw transaction using the Verus API?",
-    "You can decode a raw transaction using the Verus API by sending a JSON-RPC request to the Verus server. Here's an example using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nIn this example, replace `\"hexstring\"` with the actual hex string of the transaction you want to decode, and `myusername` with your actual username.",
-    "i Examples: > verus decoderawtransaction \"hexstring\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/decoderawtransaction"
-]

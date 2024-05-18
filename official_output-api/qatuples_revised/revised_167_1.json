@@ -1,6 +1,0 @@
-[
-    "What are the arguments for the `getblocksubsidy` command?",
-    "The `getblocksubsidy` command takes one optional argument: `height`, which is a numeric value representing the block height. If no height is provided, the command defaults to the current height of the chain.",
-    "getblocksubsidy height Returns block subsidy reward, taking into account the mining slow start and the founders reward, of block at index provided. Arguments: 1. height     (numeric, optional) The block height. If not provided, defaults to the current height of the chain. Result: {  \"miner\" : x.xxx      (numeric) The mining reward amount in KMD. } Examples: > verus getblocksubsidy 1000 > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockubsidy\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getblocksubsidy"
-]

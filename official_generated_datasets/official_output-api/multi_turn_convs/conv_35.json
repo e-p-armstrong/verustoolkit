@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHi there! I'm here to help you with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI'm trying to figure out how to get a list of available currencies in Verus. Can you help me with that?\n\n**AI Assistant:**\nYou can use the `listcurrencies` command to retrieve a list of available currencies in Verus. If you're using the command line, you can run the following command:\n```\nverus listcurrencies true\n```\nThis will give you a list of all the available currencies in Verus.\n\n**User:**\nThat's great, thanks! But I'm actually trying to use a JSON-RPC request to get the list of currencies. Can you help me with that?\n\n**AI Assistant:**\nTo retrieve a list of available currencies in Verus using a JSON-RPC request, you can send a request to the Verus node. Here's an example of how to do this using `curl`:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nJust replace `myusername` with your actual username and `http://127.0.0.1:27486/` with the URL of your Verus node. This should give you the list of available currencies in Verus.\n\n**User:**\nThanks so much for your help! I think I've got it now.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I use the `listcurrencies` command to retrieve a list of available currencies in Verus using the command line?",
+            "You can use the `listcurrencies` command to retrieve a list of available currencies in Verus by running the following command:\n```\nverus listcurrencies true\n```",
+            "  Examples: > verus listcurrencies true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listcurrencies"
+        ],
+        [
+            "How can I use the `listcurrencies` command to retrieve a list of available currencies in Verus using a JSON-RPC request?",
+            "You can use the `listcurrencies` command to retrieve a list of available currencies in Verus by sending a JSON-RPC request to the Verus node. Here is an example of how to do this using `curl`:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nNote that you need to replace `myusername` with your actual username and `http://127.0.0.1:27486/` with the URL of your Verus node.",
+            "  Examples: > verus listcurrencies true > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listcurrencies"
+        ]
+    ]
+]

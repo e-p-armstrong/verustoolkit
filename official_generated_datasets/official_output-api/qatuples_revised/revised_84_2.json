@@ -1,0 +1,6 @@
+[
+    "How can I use the `getlocalsolps` command in Verus?",
+    "You can use the `getlocalsolps` command in Verus by running the following command in the terminal:\n\n```\n> verus getlocalsolps\n```\n\nAlternatively, you can also use the command with the Verus JSON-RPC API by sending a request to `http://127.0.0.1:27486/` with the following JSON payload:\n\n```\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"getlocalsolps\",\n  \"params\": []\n}\n```\n\nYou can do this using the `curl` command:\n\n```\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "getlocalsolps Returns the average local solutions per second since this node was started. This is the same information shown on the metrics screen (if enabled). Result: xxx.xxxxx   (numeric) Solutions per second average Examples: > verus getlocalsolps > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getlocalsolps"
+]

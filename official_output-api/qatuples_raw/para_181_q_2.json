@@ -1,6 +1,0 @@
-[
-    "What is the default number of blocks used by the `getnetworkhashps` command to estimate the network speed?",
-    "The default number of blocks used by the `getnetworkhashps` command to estimate the network speed is 120. However, you can override this by passing in a different number of blocks as the first argument. For example: `verus getnetworkhashps 240` would use the last 240 blocks to estimate the network speed.",
-    "getnetworkhashps ( blocks height ) DEPRECATED - left for backwards-compatibility. Use getnetworksolps instead. Returns the estimated network solutions per second based on the last n blocks. Pass in [blocks] to override # of blocks, -1 specifies over difficulty averaging window. Pass in [height] to estimate the network speed at the time when a certain block was found. Arguments: 1. blocks   (numeric, optional, default=120) The number of blocks, or -1 for blocks over difficulty averaging window. 2. height   (numeric, optional, default=-1) To estimate at the time of the given height. Result: x       (numeric) Solutions per second estimated Examples: > verus getnetworkhashps > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnetworkhashps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getnetworkhashps"
-]

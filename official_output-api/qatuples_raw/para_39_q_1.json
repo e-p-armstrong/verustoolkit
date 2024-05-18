@@ -1,6 +1,0 @@
-[
-    "What is the purpose of the block hash in the `getNotarisationsForBlock` function?",
-    "The block hash is used as an input to the `getNotarisationsForBlock` function to specify which block to retrieve notarization transactions from.",
-    "getNotarisationsForBlock blockHash Takes a block hash and returns notarisation transactions within the block",
-    "./raw_text_input_api_text/getNotarisationsForBlock"
-]

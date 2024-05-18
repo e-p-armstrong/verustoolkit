@@ -1,0 +1,44 @@
+[
+    [
+        [
+            "What is the purpose of the `z_importkey` command in Verus?",
+            "The `z_importkey` command is used to add a zkey (a type of private key) to your wallet. This command is typically used after exporting a zkey using the `z_exportkey` command.",
+            "z_importkey \"zkey\" ( rescan startHeight ) Adds a zkey (as returned by z_exportkey) to your wallet. Arguments: 1. \"zkey\"       (string, required) The zkey (see z_exportkey) 2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\" 3. startHeight     (numeric, optional, default=0) Block height to start rescan from Note: This call can take minutes to complete if rescan is true. Examples: Export a zkey > verus z_exportkey \"myaddress\" Import the zkey with rescan > verus z_importkey \"mykey\" Import the zkey with partial rescan > verus z_importkey \"mykey\" whenkeyisnew 30000 Re-import the zkey with longer partial rescan > verus z_importkey \"mykey\" yes 20000 As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ],
+        [
+            "What are the arguments required for the `z_importkey` command?",
+            "The `z_importkey` command requires at least one argument, which is the \"zkey\" string. This is the private key being imported into the wallet. There are also two optional arguments: \"rescan\" and \"startHeight\". \"rescan\" determines whether to rescan the wallet for transactions, and \"startHeight\" specifies the block height to start the rescan from.",
+            "z_importkey \"zkey\" ( rescan startHeight ) Adds a zkey (as returned by z_exportkey) to your wallet. Arguments: 1. \"zkey\"       (string, required) The zkey (see z_exportkey) 2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\" 3. startHeight     (numeric, optional, default=0) Block height to start rescan from Note: This call can take minutes to complete if rescan is true. Examples: Export a zkey > verus z_exportkey \"myaddress\" Import the zkey with rescan > verus z_importkey \"mykey\" Import the zkey with partial rescan > verus z_importkey \"mykey\" whenkeyisnew 30000 Re-import the zkey with longer partial rescan > verus z_importkey \"mykey\" yes 20000 As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ],
+        [
+            "What are the possible values for the \"rescan\" argument in the `z_importkey` command?",
+            "The \"rescan\" argument in the `z_importkey` command can take three possible values: \"yes\", \"no\", or \"whenkeyisnew\". \"yes\" will rescan the entire wallet, \"no\" will not rescan the wallet, and \"whenkeyisnew\" will rescan the wallet only if the key is new.",
+            "z_importkey \"zkey\" ( rescan startHeight ) Adds a zkey (as returned by z_exportkey) to your wallet. Arguments: 1. \"zkey\"       (string, required) The zkey (see z_exportkey) 2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\" 3. startHeight     (numeric, optional, default=0) Block height to start rescan from Note: This call can take minutes to complete if rescan is true. Examples: Export a zkey > verus z_exportkey \"myaddress\" Import the zkey with rescan > verus z_importkey \"mykey\" Import the zkey with partial rescan > verus z_importkey \"mykey\" whenkeyisnew 30000 Re-import the zkey with longer partial rescan > verus z_importkey \"mykey\" yes 20000 As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ],
+        [
+            "What is the purpose of the \"startHeight\" argument in the `z_importkey` command?",
+            "The \"startHeight\" argument in the `z_importkey` command specifies the block height to start the rescan from. This can be useful if you want to limit the scope of the rescan or if you want to resume a previously interrupted rescan.",
+            "z_importkey \"zkey\" ( rescan startHeight ) Adds a zkey (as returned by z_exportkey) to your wallet. Arguments: 1. \"zkey\"       (string, required) The zkey (see z_exportkey) 2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\" 3. startHeight     (numeric, optional, default=0) Block height to start rescan from Note: This call can take minutes to complete if rescan is true. Examples: Export a zkey > verus z_exportkey \"myaddress\" Import the zkey with rescan > verus z_importkey \"mykey\" Import the zkey with partial rescan > verus z_importkey \"mykey\" whenkeyisnew 30000 Re-import the zkey with longer partial rescan > verus z_importkey \"mykey\" yes 20000 As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ],
+        [
+            "How long can the `z_importkey` command take to complete?",
+            "The `z_importkey` command can take minutes to complete if the \"rescan\" argument is set to \"yes\" or \"whenkeyisnew\", as it needs to scan the entire blockchain or a large portion of it.",
+            "z_importkey \"zkey\" ( rescan startHeight ) Adds a zkey (as returned by z_exportkey) to your wallet. Arguments: 1. \"zkey\"       (string, required) The zkey (see z_exportkey) 2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\" 3. startHeight     (numeric, optional, default=0) Block height to start rescan from Note: This call can take minutes to complete if rescan is true. Examples: Export a zkey > verus z_exportkey \"myaddress\" Import the zkey with rescan > verus z_importkey \"mykey\" Import the zkey with partial rescan > verus z_importkey \"mykey\" whenkeyisnew 30000 Re-import the zkey with longer partial rescan > verus z_importkey \"mykey\" yes 20000 As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ],
+        [
+            "How can I import a zkey using the `z_importkey` command with a partial rescan?",
+            "You can import a zkey with a partial rescan by specifying the \"whenkeyisnew\" value for the \"rescan\" argument and providing a block height for the \"startHeight\" argument. For example: `verus z_importkey \"mykey\" whenkeyisnew 30000`.",
+            "z_importkey \"zkey\" ( rescan startHeight ) Adds a zkey (as returned by z_exportkey) to your wallet. Arguments: 1. \"zkey\"       (string, required) The zkey (see z_exportkey) 2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\" 3. startHeight     (numeric, optional, default=0) Block height to start rescan from Note: This call can take minutes to complete if rescan is true. Examples: Export a zkey > verus z_exportkey \"myaddress\" Import the zkey with rescan > verus z_importkey \"mykey\" Import the zkey with partial rescan > verus z_importkey \"mykey\" whenkeyisnew 30000 Re-import the zkey with longer partial rescan > verus z_importkey \"mykey\" yes 20000 As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "567fa664-9fb2-467c-b4dc-19ff29b4a93b"
+]

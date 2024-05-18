@@ -1,0 +1,6 @@
+[
+    "What type of transactions does the `getNotarisationsForBlock` function return?",
+    "The `getNotarisationsForBlock` function returns notarization transactions within the specified block.",
+    "getNotarisationsForBlock blockHash Takes a block hash and returns notarisation transactions within the block",
+    "./raw_text_input_api_text/getNotarisationsForBlock"
+]

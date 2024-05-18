@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the deeplink URL created for a VerusPay Invoice?",
+    "The deeplink URL created for a VerusPay Invoice is used to trigger an invoice request when scanned by a VerusPay supporting wallet application, such as Verus Mobile, or linked to by an application or service.",
+    "To package a VerusPay Invoice into a deeplink or QR code readable by wallets like [Verus Mobile](https://github.com/VerusCoin/Verus-Mobile), the invoice must be serialized using the method described above, without its 20-byte [VDXF](/vdxf/) key included, and then its bytes formatted into a base64url string. Then, a deeplink URL can be created as follows: ```[vrsc::applications.wallet VDXF ID]://x-callback-url/[veruspay.vrsc::invoice VDXF ID]/[VerusPay invoice bytes in base64url format]``` In practice, this creates URLs such as `i5jtwbp6zymeay9llnraglgjqgdrffsau4://x-callback-url/iEETy7La3FTN2Sd2hNRgepek5S8x8eeUeQ/AzABpJ-uxwACFAAtMxHDi_0hkJLSrvRJgEvos77-pu-eojVjXjKBJP80KdufnpG2Ti0`, which can then be packaged into a QR code and scanned by a VerusPay supporting wallet application, or linked to by an application or service to trigger an invoice request.",
+    "./raw_text_input_docs/invoices.md"
+]

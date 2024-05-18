@@ -1,6 +1,0 @@
-[
-    "What does the `estimatepriority` command do in Verus?",
-    "The `estimatepriority` command estimates the approximate priority a zero-fee transaction needs to begin confirmation within a specified number of blocks.",
-    "estimatepriority nblocks Estimates the approximate priority a zero-fee transaction needs to begin confirmation within nblocks blocks. Arguments: 1. nblocks   (numeric) Result: n :  (numeric) estimated priority -1.0 is returned if not enough transactions and blocks have been observed to make an estimate. Example: > verus estimatepriority 6",
-    "./raw_text_input_api_text/estimatepriority"
-]

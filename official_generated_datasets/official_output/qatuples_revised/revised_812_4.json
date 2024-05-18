@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `listidentities` command in Verus?",
+    "The `listidentities` command is used to list the identities associated with a Verus wallet.",
+    "### `listidentities (includecanspend) (includecansign) (includewatchonly)` #### Arguments:   \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize   \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend   \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us",
+    "./raw_txt_input/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the result of the `getnewaddress` command?",
+    "The result of the `getnewaddress` command is a new VRSC address, returned as a string.",
+    "getnewaddress ( \"account\" ) Returns a new VRSC address for receiving payments. Arguments: 1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Result: \"VRSC_address\"  (string) The new VRSC address Examples: > verus getnewaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnewaddress"
+]

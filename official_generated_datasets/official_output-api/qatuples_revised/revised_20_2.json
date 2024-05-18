@@ -1,0 +1,6 @@
+[
+    "How can I use the `getnewaddress` command to generate a new VRSC address using the command line?",
+    "You can use the `getnewaddress` command to generate a new VRSC address by running the following command:\n```\nverus getnewaddress\n```\nAlternatively, you can use the Verus RPC interface to generate a new address by sending a JSON-RPC request to the Verus server. For example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "getnewaddress ( \"account\" ) Returns a new VRSC address for receiving payments. Arguments: 1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error. Result: \"VRSC_address\"  (string) The new VRSC address Examples: > verus getnewaddress > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnewaddress"
+]

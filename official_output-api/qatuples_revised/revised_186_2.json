@@ -1,6 +1,0 @@
-[
-    "What information does the `getgenerate` command return?",
-    "The `getgenerate` command returns a JSON object with three properties:\n\n1. `staking`: a boolean indicating if staking is on or off.\n2. `generate`: a boolean indicating if mining is on or off.\n3. `numthreads`: a numeric value indicating the processor limit for mining.",
-    "getgenerate Return if the server is set to mine and/or mint coins or not. The default is false. It is set with the command line argument -gen and -mint (or conf file settings gen and mint) It can also be set with the setgenerate call. Result {  \"staking\": true|false   (boolean) If staking is on or off (see setgenerate)  \"generate\": true|false   (boolean) If mining is on or off (see setgenerate)  \"numthreads\": n      (numeric) The processor limit for mining. (see setgenerate) } Examples: > verus getgenerate > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getgenerate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getgenerate"
-]

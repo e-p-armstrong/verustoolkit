@@ -1,0 +1,6 @@
+[
+    "What does the `getNotarisationsForBlock` function do in Verus?",
+    "The `getNotarisationsForBlock` function takes a block hash as an input and returns notarization transactions within that block.",
+    "getNotarisationsForBlock blockHash Takes a block hash and returns notarisation transactions within the block",
+    "./raw_text_input_api_text/getNotarisationsForBlock"
+]

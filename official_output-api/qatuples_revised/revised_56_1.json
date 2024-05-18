@@ -1,6 +1,0 @@
-[
-    "What is the default height from which the `rescanfromheight` command starts rescanning if no height is specified?",
-    "If no height is specified, the `rescanfromheight` command defaults to 0, which means it will start rescanning from the beginning of the blockchain.",
-    "rescanfromheight (height) Rescans the current wallet from a specified height Arguments: 1. \"height\"   (int, optional) Defaults to 0, height to start rescanning from Note: This call can take minutes or even hours to complete on very large wallets and rescans Examples: Initiate rescan of entire chain > verus rescanfromheight Initiate rescan from block 1000000 > verus rescanfromheight 1000000",
-    "./raw_text_input_api_text/rescanfromheight"
-]

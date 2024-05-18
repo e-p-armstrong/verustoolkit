@@ -1,6 +1,0 @@
-[
-    "What are the required parameters for the `scanNotarisationsDB` command?",
-    "The required parameters for the `scanNotarisationsDB` command are:\n\n1. `blockHeight`: The block height from which to start scanning the notarisations database.\n2. `symbol`: The symbol for which to search for a notarisation.",
-    "scanNotarisationsDB blockHeight symbol [blocksLimit=1440] Scans notarisationsdb backwards from height for a notarisation of given symbol",
-    "./raw_text_input_api_text/scanNotarisationsDB"
-]

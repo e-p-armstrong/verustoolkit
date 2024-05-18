@@ -1,0 +1,6 @@
+[
+    "How can I use the `getinitialcurrencystate` command in the Verus command line interface?",
+    "You can use the `getinitialcurrencystate` command in the Verus command line interface by typing `verus getinitialcurrencystate \"name\"`, replacing \"name\" with the actual name or chain ID of the chain you want to query.",
+    "getinitialcurrencystate \"name\" Returns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain. This should be used to get information about chains that are not this chain, but are being launched by it. Arguments  \"name\"          (string, required) name or chain ID of the chain to get the export transactions for Result:  [    {      \"flags\" : n,      \"initialratio\" : n,      \"initialsupply\" : n,      \"emitted\" : n,      \"supply\" : n,      \"reserve\" : n,      \"currentratio\" : n,    },  ] Examples: > verus getinitialcurrencystate name > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getinitialcurrencystate\", \"params\": [name] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getinitialcurrencystate"
+]

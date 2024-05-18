@@ -1,6 +1,0 @@
-[
-    "What is the default value of the \"rescan\" argument in the `importprivkey` command?",
-    "The default value of the \"rescan\" argument in the `importprivkey` command is `true`. This means that if you don't specify a value for \"rescan\", the wallet will be rescanned for transactions.",
-    "importprivkey \"verusprivkey\" ( \"label\" rescan ) Adds a private key (as returned by dumpprivkey) to your wallet. Arguments: 1. \"verusprivkey\"  (string, required) The private key (see dumpprivkey) 2. \"label\"      (string, optional, default=\"\") An optional label 3. rescan        (boolean, optional, default=true) Rescan the wallet for transactions Note: This call can take minutes to complete if rescan is true. Examples: Dump a private key > verus dumpprivkey \"myaddress\" Import the private key with rescan > verus importprivkey \"mykey\" Import using a label and without rescan > verus importprivkey \"mykey\" \"testing\" false As a JSON-RPC call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importprivkey\", \"params\": [\"mykey\", \"testing\", false] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/importprivkey"
-]

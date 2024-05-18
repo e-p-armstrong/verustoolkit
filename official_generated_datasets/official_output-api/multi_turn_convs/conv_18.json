@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm having some trouble with the `z_exportviewingkey` command. Can you explain what it does?\n\n**AI Assistant:**\nThe `z_exportviewingkey` command reveals the viewing key corresponding to a given zaddr (a type of private address in Verus). This viewing key can then be used with the `z_importviewingkey` command. Do you have any further questions about this command?\n\n**User:**\nActually, yes. What is the format of the `z_exportviewingkey` command?\n\n**AI Assistant:**\nThe format of the `z_exportviewingkey` command is:\n```\nverus z_exportviewingkey \"zaddr\"\n```\nWhere \"zaddr\" is the zaddr for which you want to export the viewing key. Does that make sense?\n\n**User:**\nYeah, that's helpful. What is the result of running the `z_exportviewingkey` command?\n\n**AI Assistant:**\nThe result of running the `z_exportviewingkey` command is a string representing the viewing key corresponding to the specified zaddr. Do you have any more questions about this command?\n\n**User:**\nOne more thing. Can the `z_exportviewingkey` command be used with other interfaces, such as JSON-RPC?\n\n**AI Assistant:**\nYes, the `z_exportviewingkey` command can be used with other interfaces, such as JSON-RPC. An example of using `z_exportviewingkey` with JSON-RPC is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nDoes that help?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `z_exportviewingkey` command do in Verus?",
+            "The `z_exportviewingkey` command reveals the viewing key corresponding to a given zaddr (a type of private address in Verus). This viewing key can then be used with the `z_importviewingkey` command.",
+            "z_exportviewingkey \"zaddr\" Reveals the viewing key corresponding to 'zaddr'. Then the z_importviewingkey can be used with this output Arguments: 1. \"zaddr\"  (string, required) The zaddr for the viewing key Result: \"vkey\"         (string) The viewing key Examples: > verus z_exportviewingkey \"myaddress\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportviewingkey"
+        ],
+        [
+            "What is the format of the `z_exportviewingkey` command?",
+            "The format of the `z_exportviewingkey` command is:\n```\nverus z_exportviewingkey \"zaddr\"\n```\nWhere \"zaddr\" is the zaddr for which you want to export the viewing key.",
+            "z_exportviewingkey \"zaddr\" Reveals the viewing key corresponding to 'zaddr'. Then the z_importviewingkey can be used with this output Arguments: 1. \"zaddr\"  (string, required) The zaddr for the viewing key Result: \"vkey\"         (string) The viewing key Examples: > verus z_exportviewingkey \"myaddress\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportviewingkey"
+        ],
+        [
+            "What is the result of running the `z_exportviewingkey` command?",
+            "The result of running the `z_exportviewingkey` command is a string representing the viewing key corresponding to the specified zaddr.",
+            "z_exportviewingkey \"zaddr\" Reveals the viewing key corresponding to 'zaddr'. Then the z_importviewingkey can be used with this output Arguments: 1. \"zaddr\"  (string, required) The zaddr for the viewing key Result: \"vkey\"         (string) The viewing key Examples: > verus z_exportviewingkey \"myaddress\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportviewingkey"
+        ],
+        [
+            "Can the `z_exportviewingkey` command be used with other interfaces, such as JSON-RPC?",
+            "Yes, the `z_exportviewingkey` command can be used with other interfaces, such as JSON-RPC. An example of using `z_exportviewingkey` with JSON-RPC is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "z_exportviewingkey \"zaddr\" Reveals the viewing key corresponding to 'zaddr'. Then the z_importviewingkey can be used with this output Arguments: 1. \"zaddr\"  (string, required) The zaddr for the viewing key Result: \"vkey\"         (string) The viewing key Examples: > verus z_exportviewingkey \"myaddress\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportviewingkey"
+        ]
+    ]
+]

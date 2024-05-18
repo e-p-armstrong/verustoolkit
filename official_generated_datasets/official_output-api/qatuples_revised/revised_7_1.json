@@ -1,0 +1,6 @@
+[
+    "What are the components of the output of the `zcrawkeygen` command?",
+    "The output of the `zcrawkeygen` command includes three components:\n\n1. `zcaddress`: a confidential address that can send and receive confidential values.\n2. `zcsecretkey`: a secret key associated with the zcaddress.\n3. `zcviewingkey`: a viewing key associated with the zcaddress.\n\nNote that the `zcrawkeygen` command has been deprecated, and it is recommended to use alternative methods for generating confidential addresses.",
+    "zcrawkeygen DEPRECATED. Generate a zcaddr which can send and receive confidential values. Output: {  \"zcaddress\": zcaddr,  \"zcsecretkey\": zcsecretkey,  \"zcviewingkey\": zcviewingkey, }",
+    "./raw_text_input_api_text/zcrawkeygen"
+]

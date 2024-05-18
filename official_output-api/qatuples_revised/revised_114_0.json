@@ -1,6 +1,0 @@
-[
-    "How can I register a name commitment using the Verus command line interface?",
-    "To register a name commitment using the Verus command line interface, you can use the following command:\n\n```\nverus registernamecommitment \"name\"\n```\n\nReplace `\"name\"` with the actual name you want to register.",
-    "Examples: > verus registernamecommitment \"name\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"registernamecommitment\", \"params\": [\"name\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/registernamecommitment"
-]

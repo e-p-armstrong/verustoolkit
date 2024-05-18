@@ -1,6 +1,0 @@
-[
-    "How can I use the `getnettotals` command to get information about network traffic using the Verus command line?",
-    "You can use the `getnettotals` command to get information about network traffic by running the following command:\n\n```\nverus getnettotals\n```",
-    "getnettotals Returns information about network traffic, including bytes in, bytes out, and current time. Result: {  \"totalbytesrecv\": n,  (numeric) Total bytes received  \"totalbytessent\": n,  (numeric) Total bytes sent  \"timemillis\": t    (numeric) Total cpu time } Examples: > verus getnettotals > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getnettotals"
-]

@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI'm just starting to learn about Verus, and I was wondering, what is VerusID?\n\n**AI Assistant:**\nVerusID is the first decentralized and self-sovereign identity of its kind, serving as the permanent namespace for the Verus Protocol and the foundation for creating Web3 Dapps. It's a pretty innovative concept, and I'd be happy to explain more if you're interested!\n\n**User:**\nThat sounds interesting. What is the significance of VerusID in the context of the Verus Protocol?\n\n**AI Assistant:**\nVerusID serves as the permanent namespace for the Verus Protocol, which means it provides a unique and persistent identifier for entities within the Verus ecosystem. It's a fundamental component of the protocol, and it plays a crucial role in how the ecosystem functions.\n\n**User:**\nI'm also curious about its role in creating Web3 Dapps. What is the role of VerusID in creating Web3 Dapps?\n\n**AI Assistant:**\nVerusID is a building block for creating Web3 Dapps, suggesting that it provides a fundamental component or functionality that enables the development of decentralized applications on the web. It's a key piece of the puzzle that makes it possible to build these kinds of apps, and it's what sets Verus apart from other platforms.\n\nDo you have any more questions about VerusID or its role in the Verus ecosystem?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is VerusID?",
+            "VerusID is the first decentralized and self-sovereign identity of its kind, serving as the permanent namespace for the Verus Protocol and the foundation for creating Web3 Dapps.",
+            "# IntroductionVerusID is the first decentralized and self-sovereign identity of its kind, the permanent namespace for the Verus Protocol, and the building block to create Web3 Dapps.## Feature List",
+            "./raw_text_input_docs/README_addresses.md"
+        ],
+        [
+            "What is the significance of VerusID in the context of the Verus Protocol?",
+            "VerusID serves as the permanent namespace for the Verus Protocol, which means it provides a unique and persistent identifier for entities within the Verus ecosystem.",
+            "# IntroductionVerusID is the first decentralized and self-sovereign identity of its kind, the permanent namespace for the Verus Protocol, and the building block to create Web3 Dapps.## Feature List",
+            "./raw_text_input_docs/README_addresses.md"
+        ],
+        [
+            "What is the role of VerusID in creating Web3 Dapps?",
+            "VerusID is a building block for creating Web3 Dapps, suggesting that it provides a fundamental component or functionality that enables the development of decentralized applications on the web.",
+            "# IntroductionVerusID is the first decentralized and self-sovereign identity of its kind, the permanent namespace for the Verus Protocol, and the building block to create Web3 Dapps.## Feature List",
+            "./raw_text_input_docs/README_addresses.md"
+        ]
+    ]
+]

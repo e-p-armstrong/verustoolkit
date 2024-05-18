@@ -1,6 +1,0 @@
-[
-    "Can I use the `invalidateblock` command with a JSON-RPC request?",
-    "Yes, you can use the `invalidateblock` command with a JSON-RPC request. Here's an example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `\"blockhash\"` with the actual hash of the block you want to mark as invalid, and `myusername` with your actual username.",
-    "invalidateblock \"hash\" Permanently marks a block as invalid, as if it violated a consensus rule. Arguments: 1. hash  (string, required) the hash of the block to mark as invalid Result: Examples: > verus invalidateblock \"blockhash\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/invalidateblock"
-]

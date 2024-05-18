@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `importwallet` command in Verus?",
+            "The `importwallet` command is used to import taddr keys from a wallet dump file into Verus.",
+            "importwallet \"filename\" Imports taddr keys from a wallet dump file (see dumpwallet). Arguments: 1. \"filename\"  (string, required) The wallet file Examples: Dump the wallet > verus dumpwallet \"nameofbackup\" Import the wallet > verus importwallet \"path/to/exportdir/nameofbackup\" Import using the json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ],
+        [
+            "What is the format of the `importwallet` command?",
+            "The format of the `importwallet` command is `importwallet \"filename\"`, where `\"filename\"` is the path to the wallet file.",
+            "importwallet \"filename\" Imports taddr keys from a wallet dump file (see dumpwallet). Arguments: 1. \"filename\"  (string, required) The wallet file Examples: Dump the wallet > verus dumpwallet \"nameofbackup\" Import the wallet > verus importwallet \"path/to/exportdir/nameofbackup\" Import using the json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ],
+        [
+            "How can I import a wallet using the JSON RPC call?",
+            "You can import a wallet using the JSON RPC call by sending a POST request to `http://127.0.0.1:27486/` with the following JSON data: `{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }`. You need to replace `myusername` with your actual username and `path/to/exportdir/nameofbackup` with the actual path to your wallet file.",
+            "importwallet \"filename\" Imports taddr keys from a wallet dump file (see dumpwallet). Arguments: 1. \"filename\"  (string, required) The wallet file Examples: Dump the wallet > verus dumpwallet \"nameofbackup\" Import the wallet > verus importwallet \"path/to/exportdir/nameofbackup\" Import using the json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ],
+        [
+            "What is the relationship between `dumpwallet` and `importwallet` commands in Verus?",
+            "The `dumpwallet` command is used to create a wallet dump file, and the `importwallet` command is used to import the taddr keys from that file into Verus.",
+            "importwallet \"filename\" Imports taddr keys from a wallet dump file (see dumpwallet). Arguments: 1. \"filename\"  (string, required) The wallet file Examples: Dump the wallet > verus dumpwallet \"nameofbackup\" Import the wallet > verus importwallet \"path/to/exportdir/nameofbackup\" Import using the json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d10bf982-47db-4361-a18c-86ea7f6e492a"
+]

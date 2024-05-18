@@ -1,0 +1,6 @@
+[
+    "What arguments does the `estimatepriority` command take?",
+    "The `estimatepriority` command takes one argument: `nblocks`, which is a numeric value representing the number of blocks within which the transaction is expected to begin confirmation.",
+    "estimatepriority nblocks Estimates the approximate priority a zero-fee transaction needs to begin confirmation within nblocks blocks. Arguments: 1. nblocks   (numeric) Result: n :  (numeric) estimated priority -1.0 is returned if not enough transactions and blocks have been observed to make an estimate. Example: > verus estimatepriority 6",
+    "./raw_text_input_api_text/estimatepriority"
+]

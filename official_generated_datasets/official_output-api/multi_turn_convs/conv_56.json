@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to help with any questions you might have about Verus. What's on your mind today?\n\n**User:**\nI'm trying to use the `getblockdeltas` command in Verus to retrieve information about a specific block. Can you tell me how to do that?\n\n**AI Assistant:**\nYou can use the `getblockdeltas` command in Verus by running the following command in the terminal:\n\n```\nverus getblockdeltas <block_hash>\n```\n\nJust replace `<block_hash>` with the actual hash of the block you want to retrieve information about. Easy peasy!\n\n**User:**\nThanks for that! Is there an alternative way to use the `getblockdeltas` command in Verus, such as using a JSON-RPC interface?\n\n**AI Assistant:**\nYes, you can use the `getblockdeltas` command in Verus through a JSON-RPC interface. You can do this by sending a JSON-RPC request to the Verus daemon. Here's an example of how to do this using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"<block_hash>\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nJust replace `<block_hash>` with the actual hash of the block you want to retrieve information about, and `myusername` with your actual username. This way, you can access the `getblockdeltas` command without having to use the command line.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I use the `getblockdeltas` command in Verus to retrieve information about a specific block?",
+            "You can use the `getblockdeltas` command in Verus by running the following command in the terminal:\n\n```\nverus getblockdeltas <block_hash>\n```\n\nReplace `<block_hash>` with the actual hash of the block you want to retrieve information about.",
+            "Examples: > verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockdeltas"
+        ],
+        [
+            "Is there an alternative way to use the `getblockdeltas` command in Verus, such as using a JSON-RPC interface?",
+            "Yes, you can use the `getblockdeltas` command in Verus through a JSON-RPC interface. You can do this by sending a JSON-RPC request to the Verus daemon. Here's an example of how to do this using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"<block_hash>\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `<block_hash>` with the actual hash of the block you want to retrieve information about, and `myusername` with your actual username.",
+            "Examples: > verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockdeltas"
+        ]
+    ]
+]

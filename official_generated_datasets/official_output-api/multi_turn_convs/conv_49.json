@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI'm trying to use the `minerids` command in Verus, but I'm not sure what I need to do. Can you help me out?\n\n**AI Assistant:**\nWhen using the `minerids` command in Verus, you'll need to provide a height parameter. That's a required input for the command to work properly. Do you have any questions about what the height parameter is or how to specify it?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is required when using the `minerids` command in Verus?",
+            "The `minerids` command in Verus requires a height parameter.",
+            "minerids needs height",
+            "./raw_text_input_api_text/minerids"
+        ]
+    ]
+]

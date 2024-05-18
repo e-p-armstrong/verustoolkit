@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getconnectioncount` command in Verus?",
+    "The `getconnectioncount` command returns the number of connections to other nodes in the Verus network.",
+    "getconnectioncount Returns the number of connections to other nodes. Result: n     (numeric) The connection count Examples: > verus getconnectioncount > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getconnectioncount"
+]

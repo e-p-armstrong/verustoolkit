@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `z_getbalance` command in Verus?",
+            "The `z_getbalance` command returns the balance of a transparent or private address belonging to the node's wallet.",
+            "z_getbalance \"address\" ( minconf ) Returns the balance of a taddr or zaddr belonging to the node's wallet. CAUTION: If the wallet has only an incoming viewing key for this address, then spends cannot be detected, and so the returned balance may be larger than the actual balance. Arguments: 1. \"address\"   (string) The selected address. It may be a transparent or private address and include z*, R*, and i* wildcards. 2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times. Result: amount       (numeric) The total amount in VRSC received for this address. Examples: The total amount received by address \"myaddress\" > verus z_getbalance \"myaddress\" The total amount received by address \"myaddress\" at least 5 blocks confirmed > verus z_getbalance \"myaddress\" 5 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getbalance\", \"params\": [\"myaddress\", 5] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getbalance"
+        ],
+        [
+            "What are the arguments required by the `z_getbalance` command?",
+            "The `z_getbalance` command requires two arguments:\n\n1. \"address\" (string): The selected address, which can be a transparent or private address and include z*, R*, and i* wildcards.\n2. minconf (numeric, optional, default=1): The minimum number of confirmations required for a transaction to be included in the balance calculation.",
+            "z_getbalance \"address\" ( minconf ) Returns the balance of a taddr or zaddr belonging to the node's wallet. CAUTION: If the wallet has only an incoming viewing key for this address, then spends cannot be detected, and so the returned balance may be larger than the actual balance. Arguments: 1. \"address\"   (string) The selected address. It may be a transparent or private address and include z*, R*, and i* wildcards. 2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times. Result: amount       (numeric) The total amount in VRSC received for this address. Examples: The total amount received by address \"myaddress\" > verus z_getbalance \"myaddress\" The total amount received by address \"myaddress\" at least 5 blocks confirmed > verus z_getbalance \"myaddress\" 5 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getbalance\", \"params\": [\"myaddress\", 5] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getbalance"
+        ],
+        [
+            "What is the result of the `z_getbalance` command?",
+            "The result of the `z_getbalance` command is the total amount in VRSC received for the specified address, returned as a numeric value.",
+            "z_getbalance \"address\" ( minconf ) Returns the balance of a taddr or zaddr belonging to the node's wallet. CAUTION: If the wallet has only an incoming viewing key for this address, then spends cannot be detected, and so the returned balance may be larger than the actual balance. Arguments: 1. \"address\"   (string) The selected address. It may be a transparent or private address and include z*, R*, and i* wildcards. 2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times. Result: amount       (numeric) The total amount in VRSC received for this address. Examples: The total amount received by address \"myaddress\" > verus z_getbalance \"myaddress\" The total amount received by address \"myaddress\" at least 5 blocks confirmed > verus z_getbalance \"myaddress\" 5 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getbalance\", \"params\": [\"myaddress\", 5] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getbalance"
+        ],
+        [
+            "How can I use the `z_getbalance` command to get the total amount received by an address with at least 5 blocks confirmed?",
+            "You can use the `z_getbalance` command to get the total amount received by an address with at least 5 blocks confirmed by specifying the `minconf` argument as 5, like this:\n\n`verus z_getbalance \"myaddress\" 5`\n\nAlternatively, you can use a JSON RPC call:\n\n`curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getbalance\", \"params\": [\"myaddress\", 5] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`",
+            "z_getbalance \"address\" ( minconf ) Returns the balance of a taddr or zaddr belonging to the node's wallet. CAUTION: If the wallet has only an incoming viewing key for this address, then spends cannot be detected, and so the returned balance may be larger than the actual balance. Arguments: 1. \"address\"   (string) The selected address. It may be a transparent or private address and include z*, R*, and i* wildcards. 2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times. Result: amount       (numeric) The total amount in VRSC received for this address. Examples: The total amount received by address \"myaddress\" > verus z_getbalance \"myaddress\" The total amount received by address \"myaddress\" at least 5 blocks confirmed > verus z_getbalance \"myaddress\" 5 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getbalance\", \"params\": [\"myaddress\", 5] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getbalance"
+        ],
+        [
+            "What is the caution when using the `z_getbalance` command with an incoming viewing key?",
+            "When using the `z_getbalance` command with an incoming viewing key, there is a caution that spends cannot be detected, and so the returned balance may be larger than the actual balance.",
+            "z_getbalance \"address\" ( minconf ) Returns the balance of a taddr or zaddr belonging to the node's wallet. CAUTION: If the wallet has only an incoming viewing key for this address, then spends cannot be detected, and so the returned balance may be larger than the actual balance. Arguments: 1. \"address\"   (string) The selected address. It may be a transparent or private address and include z*, R*, and i* wildcards. 2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times. Result: amount       (numeric) The total amount in VRSC received for this address. Examples: The total amount received by address \"myaddress\" > verus z_getbalance \"myaddress\" The total amount received by address \"myaddress\" at least 5 blocks confirmed > verus z_getbalance \"myaddress\" 5 As a json rpc call > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getbalance\", \"params\": [\"myaddress\", 5] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getbalance"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "dd274eb0-68b7-4e5a-a984-63c515b10ec8"
+]

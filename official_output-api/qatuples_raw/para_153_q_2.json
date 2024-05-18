@@ -1,6 +1,0 @@
-[
-    "How can I define a new currency in Verus using a JSON-RPC call?",
-    "You can define a new currency in Verus using a JSON-RPC call by sending a POST request to `http://127.0.0.1:27486/` with the following JSON data:\n\n```json\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"definecurrency\",\n  \"params\": [jsondefinition]\n}\n```\n\nYou can use `curl` to send the request:\n\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
-    "d Result: {  \"txid\" : \"transactionid\", (string) The transaction id  \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction  \"hex\" : \"data\"      (string) Raw data for signed transaction } Examples: > verus definecurrency jsondefinition > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/definecurrency"
-]

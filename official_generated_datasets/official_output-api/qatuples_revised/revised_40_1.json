@@ -1,0 +1,6 @@
+[
+    "What is the format of the result returned by the `listaddressgroupings` command?",
+    "The result returned by the `listaddressgroupings` command is a list of lists, where each inner list contains objects with the following properties:\n* `address`: a string representing the VRSC address\n* `amount`: a numeric value representing the amount in VRSC\n* `account`: an optional string representing the account (DEPRECATED)",
+    "listaddressgroupings Lists groups of addresses which have had their common ownership made public by common use as inputs or as the resulting change in past transactions Result: [  [   [    \"VRSC address\",   (string) The VRSC address    amount,         (numeric) The amount in VRSC    \"account\"       (string, optional) The account (DEPRECATED)   ]   ,...  ]  ,... ] Examples: > verus listaddressgroupings > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaddressgroupings\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listaddressgroupings"
+]

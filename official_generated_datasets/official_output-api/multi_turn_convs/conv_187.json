@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**AI Assistant:**\nHey there! I'm here to assist you in understanding Verus. What's on your mind today?\n\n**User:**\nI've been looking into the `migrate_createimporttransaction` function in Verus, and I'm not entirely sure what it does. Can you help me out?\n\n**AI Assistant:**\nThe `migrate_createimporttransaction` function is used to create an import transaction (importTx) given a burn transaction (burnTx) and the corresponding payouts, which are hex encoded. It's a useful tool for migrating transactions between different blockchain ecosystems.\n\n**User:**\nThat's helpful to know. What inputs are required to use the `migrate_createimporttransaction` function?\n\n**AI Assistant:**\nTo use the `migrate_createimporttransaction` function, you need to provide three inputs:\n\n1. A burn transaction (burnTx)\n2. The corresponding payouts\n3. The payouts and burn transaction must be hex encoded\n\nMake sure you have those inputs ready, and you'll be good to go!\n\n**User:**\nGot it! And what can I expect as the output of the `migrate_createimporttransaction` function?\n\n**AI Assistant:**\nThe output of the `migrate_createimporttransaction` function is an import transaction (importTx). This import transaction can then be used to migrate the funds from the original blockchain to the new one.\n\nDo you have any more questions about the `migrate_createimporttransaction` function or Verus in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `migrate_createimporttransaction` function in Verus?",
+            "The `migrate_createimporttransaction` function is used to create an import transaction (importTx) given a burn transaction (burnTx) and the corresponding payouts, which are hex encoded.",
+            "migrate_createimporttransaction burnTx payouts Create an importTx given a burnTx and the corresponding payouts, hex encoded",
+            "./raw_text_input_api_text/migrate_createimporttransaction"
+        ],
+        [
+            "What inputs are required to use the `migrate_createimporttransaction` function?",
+            "To use the `migrate_createimporttransaction` function, you need to provide three inputs:\n\n1. A burn transaction (burnTx)\n2. The corresponding payouts\n3. The payouts and burn transaction must be hex encoded",
+            "migrate_createimporttransaction burnTx payouts Create an importTx given a burnTx and the corresponding payouts, hex encoded",
+            "./raw_text_input_api_text/migrate_createimporttransaction"
+        ],
+        [
+            "What is the output of the `migrate_createimporttransaction` function?",
+            "The output of the `migrate_createimporttransaction` function is an import transaction (importTx).",
+            "migrate_createimporttransaction burnTx payouts Create an importTx given a burnTx and the corresponding payouts, hex encoded",
+            "./raw_text_input_api_text/migrate_createimporttransaction"
+        ]
+    ]
+]

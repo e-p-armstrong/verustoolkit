@@ -1,6 +1,0 @@
-[
-    "What are the arguments required for the `estimatefee` command?",
-    "The `estimatefee` command requires one argument: `nblocks`, which is a numeric value representing the number of blocks within which the transaction is expected to begin confirmation.",
-    "estimatefee nblocks Estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within nblocks blocks. Arguments: 1. nblocks   (numeric) Result: n :  (numeric) estimated fee-per-kilobyte minimum fee is returned if not enough transactions and blocks have been observed to make an estimate. Example: > verus estimatefee 6",
-    "./raw_text_input_api_text/estimatefee"
-]

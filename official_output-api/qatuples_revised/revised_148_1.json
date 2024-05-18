@@ -1,6 +1,0 @@
-[
-    "How can I use the `getnetworksolps` command to estimate the network speed at a specific block height?",
-    "You can use the `getnetworksolps` command by passing the block height as the second argument. For example: `verus getnetworksolps 120 1000` will estimate the network speed at the time when block 1000 was found, based on the last 120 blocks.",
-    "getnetworksolps ( blocks height ) Returns the estimated network solutions per second based on the last n blocks. Pass in [blocks] to override # of blocks, -1 specifies over difficulty averaging window. Pass in [height] to estimate the network speed at the time when a certain block was found. Arguments: 1. blocks   (numeric, optional, default=120) The number of blocks, or -1 for blocks over difficulty averaging window. 2. height   (numeric, optional, default=-1) To estimate at the time of the given height. Result: x       (numeric) Solutions per second estimated Examples: > verus getnetworksolps > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnetworksolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/getnetworksolps"
-]

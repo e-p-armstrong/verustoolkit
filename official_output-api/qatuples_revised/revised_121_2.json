@@ -1,6 +1,0 @@
-[
-    "Is there an optional parameter for the `scanNotarisationsDB` command?",
-    "Yes, there is an optional parameter for the `scanNotarisationsDB` command, which is `blocksLimit`. This parameter specifies the number of blocks to scan, and its default value is 1440.",
-    "scanNotarisationsDB blockHeight symbol [blocksLimit=1440] Scans notarisationsdb backwards from height for a notarisation of given symbol",
-    "./raw_text_input_api_text/scanNotarisationsDB"
-]

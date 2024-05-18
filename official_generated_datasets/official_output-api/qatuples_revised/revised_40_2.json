@@ -1,0 +1,6 @@
+[
+    "How can I use the `listaddressgroupings` command in the command line?",
+    "You can use the `listaddressgroupings` command in the command line by simply running `verus listaddressgroupings`.",
+    "listaddressgroupings Lists groups of addresses which have had their common ownership made public by common use as inputs or as the resulting change in past transactions Result: [  [   [    \"VRSC address\",   (string) The VRSC address    amount,         (numeric) The amount in VRSC    \"account\"       (string, optional) The account (DEPRECATED)   ]   ,...  ]  ,... ] Examples: > verus listaddressgroupings > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaddressgroupings\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listaddressgroupings"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I use the `getdeprecationinfo` command to get the current version and deprecation block height of my Verus server?",
+    "You can use the `getdeprecationinfo` command in two ways:\n\n1. Using the Verus command-line interface: `verus getdeprecationinfo`\n2. Using a JSON-RPC request: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdeprecationinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`\n\nReplace `myusername` with your actual username and `http://127.0.0.1:27486/` with your Verus server's RPC URL.",
+    "getdeprecationinfo Returns an object containing current version and deprecation block height. Applicable only on mainnet. Result: {  \"version\": xxxxx,           (numeric) the server version  \"subversion\": \"/MagicBean:x.y.z[-v]/\",   (string) the server subversion string  \"deprecationheight\": xxxxx,      (numeric) the block height at which this version will deprecate and shut down } Examples: > verus getdeprecationinfo > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdeprecationinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getdeprecationinfo"
+]

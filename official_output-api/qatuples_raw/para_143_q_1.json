@@ -1,6 +1,0 @@
-[
-    "How can I view a transaction using the Verus JSON RPC interface?",
-    "To view a transaction using the Verus JSON RPC interface, you can send a JSON RPC request to the Verus server. Here's an example using the `curl` command:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_viewtransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nIn this example, you need to replace `myusername` with your actual username and `http://127.0.0.1:27486/` with the URL of your Verus server.",
-    "Examples: > verus z_viewtransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_viewtransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
-    "./raw_text_input_api_text/z_viewtransaction"
-]

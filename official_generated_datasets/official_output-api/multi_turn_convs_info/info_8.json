@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `clearbanned` command in Verus?",
+            "The `clearbanned` command is used to clear all banned IPs.",
+            "clearbanned Clear all banned IPs. Examples: > verus clearbanned > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ],
+        [
+            "How can I clear all banned IPs using the Verus command line?",
+            "You can clear all banned IPs by running the command `verus clearbanned` in your terminal.",
+            "clearbanned Clear all banned IPs. Examples: > verus clearbanned > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ],
+        [
+            "Is there a way to clear all banned IPs using a curl request?",
+            "Yes, you can clear all banned IPs using a curl request. Here's an example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis curl request sends a JSON RPC request to the Verus server to clear all banned IPs.",
+            "clearbanned Clear all banned IPs. Examples: > verus clearbanned > curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "eea21b7e-96de-4a66-a21f-5e644ffca1cb"
+]

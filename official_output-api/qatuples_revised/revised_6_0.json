@@ -1,6 +1,0 @@
-[
-    "What does the `zcrawreceive` command do in Verus?",
-    "The `zcrawreceive` command is used to decrypt an encrypted note and check if the coin commitments are present in the blockchain. The command takes three arguments: the zero-knowledge secret key, the encrypted note, and outputs a JSON object with three properties: the amount, the decrypted note plaintext, and a boolean indicating whether the coin commitments exist in the blockchain.",
-    "zcrawreceive zcsecretkey encryptednote DEPRECATED. Decrypts encryptednote and checks if the coin commitments are in the blockchain as indicated by the \"exists\" result. Output: {  \"amount\": value,  \"note\": noteplaintext,  \"exists\": exists }",
-    "./raw_text_input_api_text/zcrawreceive"
-]
