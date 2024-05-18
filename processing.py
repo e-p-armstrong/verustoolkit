@@ -225,7 +225,7 @@ async def main():
         
 
     for sublist in vetted_qa_tuples:
-        filtered_sublist = [qa for qa in sublist if qa is not None]
+        filtered_sublist = [qa for qa in sublist if qa[0] is not None]
         if filtered_sublist:
             filtered_vetted_qa_tuples.append(filtered_sublist)
             total_nones += len(sublist) - len(filtered_sublist)
