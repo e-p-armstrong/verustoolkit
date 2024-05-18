@@ -198,8 +198,8 @@ async def main():
             total_nones += len(sublist) - len(filtered_sublist)
             total_non_nones += len(filtered_sublist)
 
-    print(f"Nones: {total_nones}")
-    print(f"Non-nones: {total_non_nones}")
+    print(f"Tossed: {total_nones}")
+    print(f"Kept: {total_non_nones}")
     print(f"Total: {total_nones + total_non_nones}")
     print("---------------- ONTO EXAMPLES GENERATION-------------------")
 
@@ -249,8 +249,8 @@ async def main():
             total_nones += len(sublist) - len(filtered_sublist)
             total_non_nones += len(filtered_sublist)
 
-    print(f"Nones: {total_nones}")
-    print(f"Non-nones: {total_non_nones}")
+    print(f"Tossed: {total_nones}")
+    print(f"Kept or Reworded: {total_non_nones}")
     print(f"Total: {total_nones + total_non_nones}")
     print("---------------- ONTO EXAMPLES GENERATION-------------------")
 
