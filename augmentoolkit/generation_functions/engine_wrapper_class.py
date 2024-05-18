@@ -83,7 +83,7 @@ class EngineWrapper:
                 stop=sampling_params["stop"],
                 max_tokens=sampling_params["max_tokens"],
                 stream=True,
-                timeout=360
+                timeout=360,
             )
             async for chunk in stream:
                 try:
@@ -91,7 +91,7 @@ class EngineWrapper:
                     # print(completion)
                 except:
                     timed_out = True
-            
+
             # completion = completion.choices[0].text
             return prompt + completion, timed_out
         if self.mode == "cohere":
@@ -129,7 +129,7 @@ class EngineWrapper:
                 top_p=sampling_params["top_p"],
                 stop=sampling_params["stop"],
                 max_tokens=sampling_params["max_tokens"],
-                stream = True,
+                stream=True,
             )
             async for chunk in stream:
                 try:
@@ -137,23 +137,28 @@ class EngineWrapper:
                     # print(completion)
                 except:
                     print("THIS RESPONSE TIMED OUT PARTWAY THROUGH GENERATION!")
-                    timed_out = True # catch timeout exception if it happens, at least this way we get whatever output has generated so far.
+                    timed_out = True  # catch timeout exception if it happens, at least this way we get whatever output has generated so far.
 
             # completion = completion.choices[0].message.content
             return completion, timed_out
         elif self.mode == "cohere":
             timed_out = False
             completion = ""
-            messages_cohereified = [ { # modify messages to use cohere's format
-                "role": "USER" if message["role"] == "user" else "CHATBOT",
-                "message": message["content"],
-            } for message in messages ]
+            messages_cohereified = [
+                {  # modify messages to use cohere's format
+                    "role": "USER" if message["role"] == "user" else "CHATBOT",
+                    "message": message["content"],
+                }
+                for message in messages
+            ]
             # print(f"\n\n=====================\nBEGIN PROMPT\nPreamble: {messages_cohereified[0]['message']}\nChat History: {messages_cohereified[1:-1]}\nMessage: {messages_cohereified[-1]['message']}\n=====================\n\n")
             stream = self.client.chat_stream(
                 model=self.model,
                 chat_history=messages_cohereified[1:-1],
                 message=messages_cohereified[-1]["message"],
-                preamble=messages_cohereified[0]["message"], # Cohere by default has a preamble, it's just a system message, th
+                preamble=messages_cohereified[0][
+                    "message"
+                ],  # Cohere by default has a preamble, it's just a system message, th
                 temperature=sampling_params["temperature"],
                 p=sampling_params["top_p"],
                 stop_sequences=sampling_params["stop"],

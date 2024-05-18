@@ -23,10 +23,14 @@ with open("./config.yaml", "r") as file:
 
 DEFAULT_PROMPT_PATH = obj_conf["PATH"]["DEFAULT_PROMPTS"]
 
+
 def extract_qa_tuples(text):
-    pattern = r'\*\*QUESTION:\*\*\s*((?:.|\n)*?)\s*\*\*ANSWER:\*\*\s*((?:.|\n)*?)(?=\s*\*\*QUESTION:\*\*|\Z)'
-    matches = re.findall(pattern, text + "\n\n**QUESTION:**", re.DOTALL) # The addition is a hack to get around the tricky lookahead problem
+    pattern = r"\*\*QUESTION:\*\*\s*((?:.|\n)*?)\s*\*\*ANSWER:\*\*\s*((?:.|\n)*?)(?=\s*\*\*QUESTION:\*\*|\Z)"
+    matches = re.findall(
+        pattern, text + "\n\n**QUESTION:**", re.DOTALL
+    )  # The addition is a hack to get around the tricky lookahead problem
     return [(question.strip(), answer.strip()) for question, answer in matches]
+
 
 def extract_steps(text, steps=[2, 4, 5]):
     """
@@ -97,8 +101,9 @@ def group_by_text(tuples_list):
         if text not in groups:
             groups[text] = []
 
-
-        print("!!GROUPS COUNT") # That time I accidentally discovered why the bug is, because I put the print in the for loop by accident. The problem is: some texts have VERY long groups, probably because there's some duplication in the source text.
+        print(
+            "!!GROUPS COUNT"
+        )  # That time I accidentally discovered why the bug is, because I put the print in the for loop by accident. The problem is: some texts have VERY long groups, probably because there's some duplication in the source text.
         print(len(groups))
         # Append the current tuple to the appropriate list
         groups[text].append((question, answer, text, textname))
@@ -168,8 +173,8 @@ async def repair_qatuple_context(
                 "### Instruction",
                 "[INST",
                 "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
+                "<|start_header_id|>",
+                "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -180,16 +185,14 @@ async def repair_qatuple_context(
         output_processor=extract_reasoning_from_context_check,
         prompt_folder=obj_conf["PATH"]["PROMPTS"],
         default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
+        use_stop=obj_conf["SYSTEM"]["STOP"],
     )
 
     # Resume normal control flow
-    
+
     # Load files if existing
-    existing_files = glob.glob(
-        os.path.join(writepath, f"revised_{idx}_*.json")
-    )
-    
+    existing_files = glob.glob(os.path.join(writepath, f"revised_{idx}_*.json"))
+
     if len(existing_files) > 0:
         print(f"revised_{idx} Already exists, loading...")
         for file_path in existing_files:
@@ -212,7 +215,7 @@ async def repair_qatuple_context(
                 except json.JSONDecodeError:
                     print("JSON decode error with the contents:", content)
         return
-    
+
     # Gen and write files if not existing
     # file_path = os.path.join(writepath, f"revised_{idx}.json")
     # if os.path.exists(file_path):
@@ -232,7 +235,7 @@ async def repair_qatuple_context(
     #         except json.JSONDecodeError:
     #             print("JSON decode error with the contents:", content)
 
-    for idy, tup in enumerate(sublist): # idy is the thing after idx, lol
+    for idy, tup in enumerate(sublist):  # idy is the thing after idx, lol
         try:
             revision_id = make_id()
             revision, revision_output = await context_repairer.generate(
@@ -255,10 +258,12 @@ async def repair_qatuple_context(
                     tup[3],
                 )  # replace the old tuple with the new one, revision doesn't have text name so we keep the old one
             elif not revision[0]:
-                vetted_qa_tuples[idx][idy] = None  # prepare item for deletion later; right now we just store it as None because indexes
+                vetted_qa_tuples[idx][
+                    idy
+                ] = None  # prepare item for deletion later; right now we just store it as None because indexes
             else:
                 pass  # if it passed, we just leave it be and do nothing
-            
+
             file_path = os.path.join(writepath, f"revised_{idx}_{idy}.json")
 
             # Write in-progress
@@ -276,10 +281,9 @@ async def repair_qatuple_context(
             print("!!! ERROR!", e)
             traceback.print_exc()
 
+
 def parse_validation_step(response):
-    if (
-        "POOR QUALITY" in response
-    ):
+    if "POOR QUALITY" in response:
         return (
             False,
             response,
@@ -327,8 +331,8 @@ async def vet_quality_loop(
                 "### Instruction",
                 "[INST",
                 "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
+                "<|start_header_id|>",
+                "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -339,7 +343,7 @@ async def vet_quality_loop(
         output_processor=parse_validation_step,
         prompt_folder=obj_conf["PATH"]["PROMPTS"],
         default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
+        use_stop=obj_conf["SYSTEM"]["STOP"],
     )
 
     # NOTE Set up generate new question step
@@ -393,6 +397,7 @@ async def vet_quality_loop(
 
     return (None, None, None, qtuple[3])
 
+
 def parse_answer_accuracy_validation(response):
     if (
         "INACCURATE" in response
@@ -439,8 +444,8 @@ async def vet_answer_accuracy_loop(
                 "### Instruction",
                 "[INST",
                 "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
+                "<|start_header_id|>",
+                "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -451,7 +456,7 @@ async def vet_answer_accuracy_loop(
         output_processor=parse_answer_accuracy_validation,
         prompt_folder=obj_conf["PATH"]["PROMPTS"],
         default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
+        use_stop=obj_conf["SYSTEM"]["STOP"],
     )
 
     # Resume normal control flow code
@@ -507,10 +512,9 @@ async def vet_answer_accuracy_loop(
 
     return (None, None, None, qtuple[3])
 
+
 def parse_validation_step(response):
-    if (
-        "IRRELEVANT" in response
-    ):
+    if "IRRELEVANT" in response:
         return (
             False,
             response,
@@ -558,8 +562,8 @@ async def vet_question_loop(
                 "### Instruction",
                 "[INST",
                 "<|eot_id|>",
-                    "<|start_header_id|>",
-                    "<|end_header_id|>",
+                "<|start_header_id|>",
+                "<|end_header_id|>",
             ],
             "temperature": 0.2,
         },
@@ -570,7 +574,7 @@ async def vet_question_loop(
         output_processor=parse_validation_step,
         prompt_folder=obj_conf["PATH"]["PROMPTS"],
         default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
+        use_stop=obj_conf["SYSTEM"]["STOP"],
     )
 
     # NOTE Set up generate new question step
@@ -637,7 +641,6 @@ async def vet_question_loop(
     return (None, None, None, qtuple[3])
 
 
-
 def extract_questions_from_response_completionmode(
     generation,
 ):  # TODO extract to non-controlflow file
@@ -666,7 +669,9 @@ def extract_question_from_response_completionmode(
         raise Exception(
             "Failed to generate questions!"
         )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
-    return questions[0] # extract only the first question, since we only redo one at a time.
+    return questions[
+        0
+    ]  # extract only the first question, since we only redo one at a time.
 
 
 def extract_question_from_response_chatmode(
@@ -677,7 +682,9 @@ def extract_question_from_response_chatmode(
         raise Exception(
             "Failed to generate questions!"
         )  # Because of how the generate step class is structured, this raise will cause a retry, as the original did. No it's not using an exception for normal control flow, if the llm screwed up that's an error.
-    return questions[0] # we extract only the first question, as we only redo questions one at a time.
+    return questions[
+        0
+    ]  # we extract only the first question, as we only redo questions one at a time.
 
 
 # Question generation ASDF
@@ -736,7 +743,7 @@ async def generate_qatuples_from_para(
             output_processor=extract_questions_from_response_completionmode,
             prompt_folder=obj_conf["PATH"]["PROMPTS"],
             default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
+            use_stop=obj_conf["SYSTEM"]["STOP"],
         )
     else:
         qatuples_generator = GenerationStep(
@@ -752,7 +759,6 @@ async def generate_qatuples_from_para(
                     "[INST]",
                     "### Instruction",
                     "[INST",
-                    
                     "<|eot_id|>",
                     "<|start_header_id|>",
                     "<|end_header_id|>",
@@ -769,7 +775,7 @@ async def generate_qatuples_from_para(
             output_processor=extract_questions_from_response_chatmode,
             prompt_folder=obj_conf["PATH"]["PROMPTS"],
             default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
+            use_stop=obj_conf["SYSTEM"]["STOP"],
         )
     # Resume normal control flow code
     try:
@@ -795,7 +801,6 @@ async def generate_qatuples_from_para(
                 "textdetails": para[1],
             }
         )
-        
 
         write_output_to_file(
             question_generation_output,
@@ -833,6 +838,7 @@ async def generate_qatuples_from_para(
     except Exception as e:
         print(f"Q ERROR: {e}")
         traceback.print_exc()
+
 
 ## Paragraph Filtering (worthy for questions?)
 async def determine_worthy(
@@ -885,6 +891,7 @@ async def determine_worthy(
         except:
             print(f"DEBUG max retries exceeded for index {idx}")
 
+
 def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE"]):
     """
     This function takes a plaintext file and chunks it into paragraphs or sentences if the paragraph exceeds max_char_length.
@@ -898,8 +905,7 @@ def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE
     char_count = 0
     source_name = file_path.replace(".txt", "")
 
-
-    with open(file_path, "r", encoding="utf-8",errors='ignore') as f:
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
         content = f.read()
     # try:
     #     with open(file_path, "r", encoding="utf-8") as f:
@@ -907,9 +913,11 @@ def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE
     # except Exception as e:
     #     print(f"\nError reading file {file_path}: {e}\n")
     #     return []
-        
-    paragraphs = content.split('\n\n')  # Assuming paragraphs are separated by two newlines # TODO change so that if the length is 1 after this, split by tabs instead
-    
+
+    paragraphs = content.split(
+        "\n\n"
+    )  # Assuming paragraphs are separated by two newlines # TODO change so that if the length is 1 after this, split by tabs instead
+
     # HOW TO DO IT probably:
     # add tokens to the paragraph until we reach the max length,
     # create chunks out of the remainder of the paragraph (split at max chunk length until it's done)
@@ -919,28 +927,30 @@ def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE
         paragraph = paragraph.strip()  # Remove leading and trailing whitespace
         if not paragraph:  # Skip empty paragraphs
             continue
-        
+
         paragraph_char_count = len(paragraph)
-        
+
         # Check if the paragraph itself exceeds the max token length
         if paragraph_char_count > max_char_length:
-            
+
             # Fallback to character chunking for this paragraph
-            end_index = max_char_length - char_count # after this we will take max_char_length chunks starting from end index until the end of the paragraph
+            end_index = (
+                max_char_length - char_count
+            )  # after this we will take max_char_length chunks starting from end index until the end of the paragraph
             current_chunk.append(paragraph[:end_index])
             # characters = list(paragraph)
             chunks_with_source.append(("".join(current_chunk), source_name))
             current_chunk = []
             while end_index < paragraph_char_count:
-                current_chunk.append(paragraph[end_index:end_index + max_char_length])
+                current_chunk.append(paragraph[end_index : end_index + max_char_length])
                 chunks_with_source.append(("".join(current_chunk), source_name))
                 current_chunk = []
                 end_index += max_char_length
-            
+
             # # handle the remainder of the paragraph
             # end_index = end_index - max_char_length
             # current_chunk.append(paragraph[end_index:])
-            
+
             # char_count = paragraph_char_count - end_index
         else:
             if char_count + paragraph_char_count <= max_char_length:
@@ -997,7 +1007,7 @@ async def ensure_multiple_answers_are_same(
 async def make_multiturn_conversation(
     info, multi_turn_conv_generator, completion_mode=None
 ):
-    
+
     if completion_mode:
         conv, conv_output = await multi_turn_conv_generator.generate(
             arguments={
@@ -1018,6 +1028,7 @@ async def make_multiturn_conversation(
 
     return (conv, info[1], info[2], info[3], info[0])
 
+
 async def create_info(
     idx,
     group,
@@ -1037,7 +1048,9 @@ async def create_info(
         with open(file_path, "r") as file:
             info = json.load(file)
 
-    multi_turn_convs_info.append([info]) # hacky-looking things because the legacy functionality was simplified.
+    multi_turn_convs_info.append(
+        [info]
+    )  # hacky-looking things because the legacy functionality was simplified.
 
 
 def read_json_files_info(directory):
@@ -1121,7 +1134,7 @@ async def create_conversation(
         logging_level=logging_level,
         prompt_folder=obj_conf["PATH"]["PROMPTS"],
         default_prompt_folder=DEFAULT_PROMPT_PATH,
-        use_stop=obj_conf["SYSTEM"]["STOP"]
+        use_stop=obj_conf["SYSTEM"]["STOP"],
     )
 
     # Skip if file already exists
@@ -1165,26 +1178,34 @@ def convert_directory_to_list(directory_path):
     simplified_list = []
     simplified_rag_list = []
 
-    for filename in os.listdir(directory_path): # for each file
-        if filename.endswith(".json"): # if it's a conversation file
-            filepath = os.path.join(directory_path, filename) # get the path
-            with open(filepath, "r") as file: # open it
+    for filename in os.listdir(directory_path):  # for each file
+        if filename.endswith(".json"):  # if it's a conversation file
+            filepath = os.path.join(directory_path, filename)  # get the path
+            with open(filepath, "r") as file:  # open it
                 try:
-                    data = json.load(file) # load its data
+                    data = json.load(file)  # load its data
                     if isinstance(data, list) and all(
-                        isinstance(item, (list, str)) for item in data # if it has the correct format
+                        isinstance(item, (list, str))
+                        for item in data  # if it has the correct format
                     ):
-                        
+
                         data_dict = {
                             "conversation": data[0],
-                            "qa_tuples": [ tup[:2] for tup in data[4] ], # only take first two items from each tuple
+                            "qa_tuples": [
+                                tup[:2] for tup in data[4]
+                            ],  # only take first two items from each tuple
                             "rag_context": data[4][0][2],
-                            "source_filename": data[4][0][3]
+                            "source_filename": data[4][0][3],
                         }
-                        master_list.append(data_dict) # append it as-is to the master-list
+                        master_list.append(
+                            data_dict
+                        )  # append it as-is to the master-list
 
                         # Extract and process conversation
-                        conversation, primary_char_desc = data[0], data[1] # first and second items are conv and char desc
+                        conversation, primary_char_desc = (
+                            data[0],
+                            data[1],
+                        )  # first and second items are conv and char desc
                         dialogues = process_multiturn_functions.extract_conversation(
                             conversation
                         )
@@ -1192,34 +1213,38 @@ def convert_directory_to_list(directory_path):
                         # Convert to simplified format
                         simplified_conversations = []
                         simplified_conversations_rag = []
-                        
+
                         # Load system prompts
-                        system_prompt_norag = obj_conf["SYSTEM"]["FINAL_ASSISTANT_PROMPT_NO_RAG"]
-                        system_prompt_rag = obj_conf["SYSTEM"]["FINAL_ASSISTANT_PROMPT_RAG"]
+                        system_prompt_norag = obj_conf["SYSTEM"][
+                            "FINAL_ASSISTANT_PROMPT_NO_RAG"
+                        ]
+                        system_prompt_rag = obj_conf["SYSTEM"][
+                            "FINAL_ASSISTANT_PROMPT_RAG"
+                        ]
                         simplified_conversations.append(
-                            {
-                                "from": "system",
-                                "value": system_prompt_norag
-                            }
+                            {"from": "system", "value": system_prompt_norag}
                         )
-                        
+
                         simplified_conversations_rag.append(
                             {
                                 "from": "system",
-                                "value": system_prompt_rag.replace("{data}", data_dict["rag_context"])
+                                "value": system_prompt_rag.replace(
+                                    "{data}", data_dict["rag_context"]
+                                ),
                             }
                         )
                         for i, (charname, message) in enumerate(
                             dialogues
                         ):  # Skipping the first message
-                            from_person = (
-                                "human" if (i % 2) == 1 else "gpt"
-                            )
+                            from_person = "human" if (i % 2) == 1 else "gpt"
                             simplified_conversations.append(
                                 {"from": from_person, "value": f"{message}"}
                             )
                             simplified_conversations_rag.append(
-                                {"from": from_person, "value": f"{message}"} # same as above, but for the RAG context
+                                {
+                                    "from": from_person,
+                                    "value": f"{message}",
+                                }  # same as above, but for the RAG context
                             )
 
                         if simplified_conversations:  # If there are any conversations
@@ -1243,7 +1268,7 @@ def convert_directory_to_list(directory_path):
     with open(write_2, "w") as file:
         for item in simplified_list:
             file.write(json.dumps(item) + "\n")
-            
+
     write_3 = obj_conf["PATH"]["OUTPUT"] + "/simplified_data_rag.jsonl"
     with open(write_3, "w") as file:
         for item in simplified_rag_list:
@@ -1268,12 +1293,13 @@ def convert_directory_and_process_conversations(directory_path):
                         isinstance(item, (list, str)) for item in data
                     ):
                         # Extract and process the conversation part
-                        conversations = process_multiturn_functions.extract_conversation(
-                            data[0]
+                        conversations = (
+                            process_multiturn_functions.extract_conversation(data[0])
                         )
                         # Convert tuples back to the formatted string as required
                         data[0] = [
-                            f"{charname}: {message}" for charname, message in conversations
+                            f"{charname}: {message}"
+                            for charname, message in conversations
                         ]
                         master_list.append(data)
                     else:
@@ -1290,7 +1316,6 @@ def convert_directory_and_process_conversations(directory_path):
     )
 
 
-
 def create_pretraining_set(directory_path, json_file):
     # Initialize a variable to store the combined text of all files
     combined_text = ""
@@ -1299,11 +1324,11 @@ def create_pretraining_set(directory_path, json_file):
     for root, dirs, files in os.walk(directory_path):
         for filename in files:
             file_path = os.path.join(root, filename)
-            
+
             # Read the contents of the file
             with open(file_path, "r") as file:
                 file_contents = file.read()
-            
+
             # Append the file contents to the combined text, with a separator
             if combined_text:
                 combined_text += "\n\n---NEW FILE---\n\n"

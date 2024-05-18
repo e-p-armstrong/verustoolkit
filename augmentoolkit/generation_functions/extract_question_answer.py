@@ -17,8 +17,8 @@ def extract_question_answer(response):
         answer = match.group(2).strip()
         return question, answer
     else:
-        response = response.replace("\\n","\n")
-        response = response.replace("\\\"","\"")
+        response = response.replace("\\n", "\n")
+        response = response.replace('\\"', '"')
         match = re.search(pattern, response)
         if match:
             question = match.group(1).strip()

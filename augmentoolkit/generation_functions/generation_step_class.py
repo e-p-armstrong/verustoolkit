@@ -5,6 +5,7 @@ import logging
 import yaml
 from augmentoolkit.generation_functions.safe_formatter import safe_format
 
+
 class GenerationStep:
     def __init__(
         self,
@@ -38,7 +39,7 @@ class GenerationStep:
         return_input_too=True,
         default_prompt_folder="prompts",
         prompt_folder="prompts",
-        use_stop = True
+        use_stop=True,
     ):
         self.prompt_path = prompt_path
         self.regex = regex
@@ -76,12 +77,11 @@ class GenerationStep:
 
         with open(full_prompt_path, "r") as pf:
             prompt = pf.read()
-            
 
         # Submit generation and return response, retrying as needed
         times_tried = 0
         if self.completion_mode:
-            prompt_formatted = safe_format(prompt,**arguments)
+            prompt_formatted = safe_format(prompt, **arguments)
             while times_tried <= self.retries:
                 try:
                     response, timeout = await self.engine_wrapper.submit_completion(
@@ -108,17 +108,18 @@ class GenerationStep:
             new_messages = []
             for message in messages:
                 try:
-                    new_messages.append({
-                        "role": message["role"],
-                        "content": safe_format(message["content"],**arguments)
-                    })
+                    new_messages.append(
+                        {
+                            "role": message["role"],
+                            "content": safe_format(message["content"], **arguments),
+                        }
+                    )
                 except Exception as e:
-                    new_messages.append({
-                        "role": message["role"],
-                        "content": message["content"]
-                    })
+                    new_messages.append(
+                        {"role": message["role"], "content": message["content"]}
+                    )
             messages = new_messages
-            
+
             # messages = [{
             #     "role": message["role"],
             #     "content": safe_format(message["content"],**arguments)
@@ -126,13 +127,14 @@ class GenerationStep:
             #             for message in messages]
             while times_tried <= self.retries:
                 try:
-                    
+
                     # strip whitespace added by yaml load
                     messages = [
                         {
                             "role": message["role"],
                             "content": message["content"].strip(),
-                        } for message in messages
+                        }
+                        for message in messages
                     ]
                     # print("\n\n\nBEGIN DEBUG")
                     # print(messages)
@@ -144,7 +146,14 @@ class GenerationStep:
                     if self.return_input_too:
                         return ret, yaml.dump(
                             messages
-                            + [{"role": "assistant", "content": response, "timeout": timeout}], default_flow_style=False
+                            + [
+                                {
+                                    "role": "assistant",
+                                    "content": response,
+                                    "timeout": timeout,
+                                }
+                            ],
+                            default_flow_style=False,
                         )
                     return ret, timeout
                 except Exception as e:

@@ -152,6 +152,7 @@ def check_conversation_length(conv, qatuples):
     else:
         return True
 
+
 def check_each_question_contains_q_from_tuples(conv, qatuples, n):
     """
     Ensures that each question contains at least n sequential characters from the corresponding question in qatuples.

@@ -1,5 +1,6 @@
 import asyncio
 
+
 async def main():
     import logging
     import yaml
@@ -51,9 +52,11 @@ async def main():
     # Create directory if it doesn't exist
     output_dir = config["PATH"]["OUTPUT"] + "/worthy_for_questions"
     os.makedirs(output_dir, exist_ok=True)
-    
+
     # Create pretraining set from raw inputs (pretrain first, then instruct tune)
-    control_flow_functions.create_pretraining_set(INPUT_FOLDER, os.path.join(config["PATH"]["OUTPUT"], "pretraining.json"))
+    control_flow_functions.create_pretraining_set(
+        INPUT_FOLDER, os.path.join(config["PATH"]["OUTPUT"], "pretraining.json")
+    )
     print("Pretraining set created.")
 
     path = f"{INPUT_FOLDER}/**/*"
@@ -66,7 +69,6 @@ async def main():
     print(
         "\n\n\nIMPORTANT NOTE! Augmentoolkit prints a lot of stuff when it runs. Including tracebacks caused by model errors. Most errors are the result of the models, not the code, and any tracebacks you see were almost certainly handled. So: don't panic! You're gonna make it! Alright that's the end of this PSA. Happy dataset generation!\n\n\n"
     )
-
 
     # This is in no way best practices, but all my prompts being searchable and separate files is a good way to make my life easier.
     import pkgutil
@@ -90,7 +92,6 @@ async def main():
 
     sys.path.append("./generation_functions")
     sys.path.append("./control_flow_functions")
-
 
     # First, import all modules so they can be reloaded
     for _, module_name, _ in pkgutil.iter_modules(
@@ -124,9 +125,7 @@ async def main():
     sentence_chunks = []
     print("Chunking text...")
     for source_text in source_texts:
-        sentence_chunks += control_flow_functions.chunking_algorithm(
-            source_text
-        )
+        sentence_chunks += control_flow_functions.chunking_algorithm(source_text)
 
     conversions = [("  ", " ")]
 
@@ -134,7 +133,7 @@ async def main():
         (control_flow_functions.fix_text(conversions, seq[0]), seq[1])
         for seq in sentence_chunks
     ]
-    
+
     print("First 5 paragraphs processed:")
     pprint.pprint(paragraphs_processed[:5])
 
@@ -142,10 +141,11 @@ async def main():
     import os
     import asyncio
 
-
     filtered_worthy_for_questions = paragraphs_processed
     if USE_SUBSET:
-        filtered_worthy_for_questions = filtered_worthy_for_questions[:config["SYSTEM"]["SUBSET_SIZE"]]
+        filtered_worthy_for_questions = filtered_worthy_for_questions[
+            : config["SYSTEM"]["SUBSET_SIZE"]
+        ]
 
     # control flow
     import json
@@ -185,7 +185,7 @@ async def main():
         await future
 
     print(
-    "-------------- QUESTIONS CREATED ------------- STATS SO FAR (may be wrong if run was continued from interruption):"
+        "-------------- QUESTIONS CREATED ------------- STATS SO FAR (may be wrong if run was continued from interruption):"
     )
     total_nones = 0
     total_non_nones = 0
@@ -208,9 +208,9 @@ async def main():
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
-    
-    ##### QATUPLES REPAIR 
-    
+
+    ##### QATUPLES REPAIR
+
     # Check for and fix the common mistake: mentioning "the text".
     writepath = config["PATH"]["OUTPUT"] + "/qatuples_revised"
     import json
