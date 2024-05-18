@@ -30,14 +30,6 @@ async def main():
         "USE_SUBSET"
     ]  # Set to True if you want to use only a small subset of the text, to test whether it plays nicely with the current setup of the notebook
 
-    REARRANGEMENTS_TO_TAKE = config["SYSTEM"][
-        "REARRANGEMENTS_TO_TAKE"
-    ]  # How many of the possible permutations of tuples in a group to take and make multiturn convs out of. Adjust higher to get more data out of less text, but it might be a bit repetitive. NOTE your eval loss will be basically worthless if you aren't careful with how you shuffle your dataset when you're about to train.
-
-    USE_FILENAMES = config["SYSTEM"][
-        "USE_FILENAMES"
-    ]  # Turn on if you want the model to use the names of your files as additional context (this is what original Augmentoolkit does). Useful if you have a small number of large input files grouped by subject matter, IE books. Turn off if you have a large number of files with meaningless names.
-
     CONCURRENCY_LIMIT = config["SYSTEM"][
         "CONCURRENCY_LIMIT"
     ]  # Adjust this number based on the rate limit constraints of your api
@@ -64,8 +56,9 @@ async def main():
     control_flow_functions.create_pretraining_set(INPUT_FOLDER, os.path.join(config["PATH"]["OUTPUT"], "pretraining.json"))
     print("Pretraining set created.")
 
-    path = f"{INPUT_FOLDER}/*"# + extension
-    source_texts = glob.glob(path)
+    path = f"{INPUT_FOLDER}/**/*"
+    all_items = glob.glob(path, recursive=True)
+    source_texts = [item for item in all_items if os.path.isfile(item)]
 
     print("Source texts Being Used:")
     print(source_texts)
@@ -182,7 +175,6 @@ async def main():
             vetted_qa_tuples=vetted_qa_tuples,
             qa_tuples_dir=qa_tuples_dir,
             double_check_counter=DOUBLE_CHECK_COUNTER,
-            use_filenames=USE_FILENAMES,
             completion_mode=COMPLETION_MODE,
             logging_level=LOG_LEVEL,
         )

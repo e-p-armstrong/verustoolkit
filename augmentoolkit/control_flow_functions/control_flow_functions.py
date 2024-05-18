@@ -688,7 +688,6 @@ async def generate_qatuples_from_para(
     vetted_qa_tuples=None,
     qa_tuples_dir=None,
     double_check_counter=3,
-    use_filenames=False,
     completion_mode=None,
     logging_level=None,
 ):
@@ -698,8 +697,6 @@ async def generate_qatuples_from_para(
     # NOTE Set up qatuple generation step #
 
     prompt_path_qatuples_gen = "qatuples_gen_no_filenames"
-    if use_filenames:
-        prompt_path_qatuples_gen = "qatuples_gen_filenames"
 
     if completion_mode:
         prompt_path_qatuples_gen = prompt_path_qatuples_gen + ".txt"
@@ -1298,12 +1295,11 @@ def create_pretraining_set(directory_path, json_file):
     # Initialize a variable to store the combined text of all files
     combined_text = ""
 
-    # Iterate over each file in the directory
-    for filename in os.listdir(directory_path):
-        file_path = os.path.join(directory_path, filename)
-        
-        # Check if the current file is a file (and not a directory, etc.)
-        if os.path.isfile(file_path):
+    # Walk through all directories and files in the directory
+    for root, dirs, files in os.walk(directory_path):
+        for filename in files:
+            file_path = os.path.join(root, filename)
+            
             # Read the contents of the file
             with open(file_path, "r") as file:
                 file_contents = file.read()
