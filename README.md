@@ -198,7 +198,8 @@ TODO discord shield, need to contact a discord server moderator and get them to 
 [![Telegram](https://img.shields.io/badge/chat-Telegram-blue?logo=telegram)](https://t.me/veruscommunity)
 
 ## Learn about the Verus project!
-Interested in a privacy-preserving, commerce-enabled, people-powered internet? Check
+Interested in a privacy-preserving, commerce-enabled, people-powered internet?
+
 [![Read more about Verus!](https://img.shields.io/badge/-Read%20more%20about%20Verus!-3165D4)](https://verus.io/)
 
 
