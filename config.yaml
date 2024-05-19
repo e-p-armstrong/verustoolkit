@@ -1,5 +1,5 @@
 API:
-  API_KEY: 567d545284e79fd028d25c51d2819c1321bae3403df833a1c63e06f725eeb3df
+  API_KEY:
   BASE_URL: https://api.together.xyz
   LARGE_LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf

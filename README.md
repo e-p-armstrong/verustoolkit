@@ -5,7 +5,7 @@ Basically: Verus info goes in, LLM dataset comes out. Train an LLM on that datas
 
 This data generation pipeline can be run 100% locally on consumer hardware, ensuring that the Verus community will never be reliant on centralized solutions like OpenAI for producing the data for its chatbots.
 
-## Recommendation: when training on Verustoolkit data, use GaLore, NOT LoRAs
+## Recommendation: when training on Verustoolkit data, use GaLore to achieve a full finetune, NOT LoRAs.
 ### (Model training config is provided in repo)
 
 ## Demo video
@@ -150,24 +150,53 @@ Field-by-field:
 See the `_model_training_configs_and_data` folder.
 
 TODO demo video -- model training
-TODO expanded description
+
+To train a model on the data produced by Verustoolkit, you can use the provided model training configurations and the data that you generated. The demo video exhaustively shows how to do this, but here's a quick rundown if you have some experience with training LLMs (or CS in general):
+
+1. Rent a GPU instance on a cloud provider like [Vast.ai](https://vast.ai/) or [Runpod](https://www.runpod.io/). If you want to be really secure against Out Of Memory issues, consider using an A100. You can also use a local GPU if you have one. Be sure to use the winglian/axolotl:main-latest docker image.
+2. Use SSH to scp the data and model training configuration YAML to the instance's `/workspace/axolotl` folder.
+3. If running on a single-GPU setup, you must run: `conda install -c conda-forge mpi4py mpich`
+4. Login to HuggingFace with `huggingface-cli login`. On HuggingFace's website, request access to the repo of the base model you are training on if needed (by default, this is `alpindale/Mistral-7B-v0.2-hf`).
+5. Then run this command from the `/workspace/axolotl` directory: `accelerate launch --use_deepspeed -m axolotl.cli.train <your config file name>.yaml`. Be sure to replace <your config file name> with the name of the config file you want to use. If you use the provided config file, it would be `config_verus.yaml`.
+6. When prompted about whether you want to use weights and biases, pick whatever option you want.
+7. Wait for the model to train. This will likely take a couple hours, but unless you're throwing an ungodly amount of data at the problem it will be done in way less than a day.
+8. `scp` your model back to your local machine. You can find the model in the `./verus_out` folder on the instance. You'll want all the .safetensors files as well as anything related to the tokenizer. The optimizer and scheduler files are optional -- you only need them if you want to continue training the model later, and they can take a long time to copy over with `scp`. For safety you probably shouldn't delete the instance until you've gotten local inference working with your new model.
+9. (optional) for inference, use llama.cpp to convert the model to a less memory-intense format (.gguf). The precise details are on the [Llama.cpp GitHub](https://github.com/ggerganov/llama.cpp), but the gist of it is that first you run `python /path/to/your/llama.cpp/repo/llama.cpp/convert.py <path to your model>` and then run `/path/to/your/llama.cpp/repo/llama.cpp/quantize <path to your model> <output path>.gguf Q8_0`. Change Q8_0 based on what level of quantization you want to use.
+10. You can then serve the local LLM file you've created using the text-generation-webui or Ollama. It is recommended to use the former, because Ollama seems to have issues stopping -- it will keep generating text way beyond what is reasonable. When run with the text-generation-webui, the LLM stops at reasonable places most of the time.
 
 # Code Guide (for contributing)
 
+The key parts of Verustoolkit are its code abstractions, and its prompts. The prompts are easy to modify and that's already been covered, but if you need to change a regex, or modify control flow, you'll need to touch code.
 
+This section will start with some common usecases/surgical changes that need to be made, and then will move on to the core structure of the codebase.
 
 ## When to Modify the Code
 
-TODO longer and fancier version of "when you want to dramatically overhaul something that isn't a prompt, or adapt it to new APIs, or change sampling parameters"
+- If you change a prompt radically and are suddenly getting generation failed issues because the Verustoolkit regexes can't parse your new outputs, then you will need to change the Verustoolkit code.
+- If you want to add a step to the pipeline, you will need to change the Verustoolkit code.
+- If you want to overhaul the Verustoolkit code to use a new API that is not compatible with (or offers additional features compared to) the OpenAI standard, you will need to change the Verustoolkit code.
+- If you want to change the sampling parameters of the pipeline, you will need to change the Verustoolkit code.
+- If you want to radically overhaul the code in any other way, you will need to change the Verustoolkit code.
 
 ## Important Files
 
-TODO describe generation_step_class and engine_wrapper_class as core abstractions; processing.py as control flow; control flow functions (needs to be renamed to utils) as utils.
+Starting from more common things to less common things:
+
+- `processing.py` is the main file that runs the pipeline. It's where the core control flow of the pipeline is defined.
+- `control_flow_functions.py` is where a large number of the helper functions that the pipeline uses are defined. Arguments, sampling parameters, and the control flow of each individual step are defined here. The difference between this and `processing.py` is that `processing.py` is the control flow of the pipeline as a whole, while `control_flow_functions.py` is mostly the control flow of each individual step. **This is where the `output processors` are defined -- if you changed prompts and are getting generation failed issues, this is where you need to look.** Look at `parse_validation_step` for an example of what an output processor is like, basically it takes the LLM response as an input and returns a QA pair.
+- `engine_wrapper_class.py` contains a class that serves as a single interface for many different LLM APIs. This is where you would need to change the code if you wanted to use a different API provider that is not OpenAI compatible.
+- `generation_step_class` contains a class that stores the parameters for a single generation step. Typically you'll change this to add additional logging if you're encountering errors after modifying a step -- the way calls to LLMs work in Augmentoolkit is that a generation step object is created with a path to a prompt and some sampling parameters, and then the object's .generate() method is called with the arguments for a specific call to the LLM. 
+- There are some other miscellaneous utility functions in the `generation_functions` folder.
+- `app.py` contains the gradio WebUI code. This is the graphic interface. The fields are based off of `config.yaml`.
 
 # Verus
 
 ## Join the Community!
-TODO discord and telegram fancy buttons
+
+
+TODO discord shield, need to contact a discord server moderator and get them to enable widgets
+
+[![Telegram](https://img.shields.io/badge/chat-Telegram-blue?logo=telegram)](https://t.me/veruscommunity)
 
 ## Learn about the Verus project!
 [https://verus.io/](https://verus.io/)
