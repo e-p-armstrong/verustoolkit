@@ -1,13 +1,13 @@
 API:
-  API_KEY:
+  API_KEY: 
   BASE_URL: https://api.together.xyz
-  LARGE_LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
-  LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
+  LARGE_LOGICAL_MODEL: NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+  LOGICAL_MODEL: NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
 PATH:
   DEFAULT_PROMPTS: ./prompts
-  INPUT: ./raw_text_input_vision_paper
+  INPUT: ./raw_text_input_wiki
   OUTPUT: ./output
-  PROMPTS: ./prompts_vision_paper
+  PROMPTS: ./prompts
 SYSTEM:
   CHUNK_SIZE: 1900
   COMPLETION_MODE: false
@@ -17,7 +17,7 @@ SYSTEM:
     community, with specialized knowledge about the Verus multi-chain and multi-currency
     blockchain protocol, as well as an understanding of crypto in general. Use your
     knowledge to help questioners understand more about Verus.
-  FINAL_ASSISTANT_PROMPT_RAG: 'You are a crypto expert AI and a member of the Verus
+FINAL_ASSISTANT_PROMPT_RAG: 'You are a crypto expert AI and a member of the Verus
     community, with specialized knowledge about the Verus multi-chain and multi-currency
     blockchain protocol, as well as an understanding of crypto in general. Use your
     knowledge and the provided context to help questioners understand more about Verus.
@@ -28,5 +28,5 @@ SYSTEM:
     {data}'
   MODE: api
   STOP: true
-  SUBSET_SIZE: 10
+  SUBSET_SIZE: 60
   USE_SUBSET: true

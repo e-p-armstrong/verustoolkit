@@ -49,10 +49,6 @@ async def main():
 
     INPUT_FOLDER = config["PATH"]["INPUT"]
 
-    # Create directory if it doesn't exist
-    output_dir = config["PATH"]["OUTPUT"] + "/worthy_for_questions"
-    os.makedirs(output_dir, exist_ok=True)
-
     # Create pretraining set from raw inputs (pretrain first, then instruct tune)
     control_flow_functions.create_pretraining_set(
         INPUT_FOLDER, os.path.join(config["PATH"]["OUTPUT"], "pretraining.json")
