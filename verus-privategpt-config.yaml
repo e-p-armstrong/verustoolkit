@@ -1,0 +1,30 @@
+# poetry install --extras "ui llms-llama-cpp vector-stores-qdrant embeddings-huggingface"
+server:
+  env_name: ${APP_ENV:local}
+
+llm:
+  mode: llamacpp
+  # Should be matching the selected model
+  max_new_tokens: 512
+  context_window: 3900
+  tokenizer: Heralax/Verus-Mistral-Scaling-Experiment
+  prompt_style: "chatml"
+
+llamacpp:
+  llm_hf_repo_id: Heralax/Verus-Mistral-Scaling-Experiment
+  llm_hf_model_file: verus-mistral-scaled-experiment.gguf
+
+embedding:
+  mode: ollama
+
+ollama:
+  embedding_model: nomic-embed-text
+  embedding_api_base: http://localhost:11434
+  keep_alive: 5m
+
+vectorstore:
+  database: qdrant
+
+qdrant:
+  path: local_data/private_gpt/qdrant
+  

@@ -163,6 +163,10 @@ To train a model on the data produced by Verustoolkit, you can use the provided 
 9. (optional) for inference, use llama.cpp to convert the model to a less memory-intense format (.gguf). The precise details are on the [Llama.cpp GitHub](https://github.com/ggerganov/llama.cpp), but the gist of it is that first you run `python /path/to/your/llama.cpp/repo/llama.cpp/convert.py <path to your model>` and then run `/path/to/your/llama.cpp/repo/llama.cpp/quantize <path to your model> <output path>.gguf Q8_0`. Change Q8_0 based on what level of quantization you want to use.
 10. You can then serve the local LLM file you've created using the text-generation-webui or Ollama. It is recommended to use the former, because Ollama seems to have issues stopping -- it will keep generating text way beyond what is reasonable. When run with the text-generation-webui, the LLM stops at reasonable places most of the time.
 
+## Chatting With Your LLM Using RAG
+
+You need to setup PrivateGPT to use RAG. This is a bit of a process, but it's worth it, as the "grounding" significantly improves the accuracy of the LLM's responses. Here's how you do it:
+
 # Code Guide (for contributing)
 
 The key parts of Verustoolkit are its code abstractions, and its prompts. The prompts are easy to modify and that's already been covered, but if you need to change a regex, or modify control flow, you'll need to touch code.
