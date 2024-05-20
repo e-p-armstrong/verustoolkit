@@ -167,6 +167,8 @@ To train a model on the data produced by Verustoolkit, you can use the provided 
 
 You need to setup PrivateGPT to use RAG. This is a bit of a process, but it's worth it, as the "grounding" significantly improves the accuracy of the LLM's responses. Here's how you do it:
 
+TODO demo video
+
 # Code Guide (for contributing)
 
 The key parts of Verustoolkit are its code abstractions, and its prompts. The prompts are easy to modify and that's already been covered, but if you need to change a regex, or modify control flow, you'll need to touch code.
