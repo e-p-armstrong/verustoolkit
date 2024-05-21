@@ -19,6 +19,9 @@ async def main():
     ):
         raise Exception("Aphrodite engine mode MUST use completion prompts!")
 
+    # Create output directory
+    if not os.path.exists(config["PATH"]["OUTPUT"]):
+        os.makedirs(config["PATH"]["OUTPUT"])
     LOGICAL_MODEL = config["API"]["LOGICAL_MODEL"]
 
     LARGE_LOGICAL_MODEL = config["API"]["LARGE_LOGICAL_MODEL"]
