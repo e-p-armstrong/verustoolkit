@@ -3,6 +3,8 @@ Verustoolkit is a fork of [Augmentoolkit](https://github.com/e-p-armstrong/augme
 
 Basically: Verus info goes in, LLM dataset comes out. Train an LLM on that dataset? It *understands* Verus, in a way that RAG cannot achieve.
 
+The Verus project is a privacy-preserving, commerce-enabled, people-powered internet. It is a multi-chain, multi-currency blockchain protocol that is designed to be a platform for the future of the internet. Verustoolkit is designed to help the Verus community train an AI that can answer questions about the Verus project, its technology, and its vision.
+
 This data generation pipeline can be run 100% locally on consumer hardware, ensuring that the Verus community will never be reliant on centralized solutions like OpenAI for producing the data for its chatbots.
 
 ## Recommendation: when training on Verustoolkit data, use GaLore to achieve a full finetune, NOT LoRAs.
@@ -23,6 +25,7 @@ Ready to get started?
 ### Code Guide (for contributing)
 0. [When to Modify the Code](#when-to-modify-the-code)
 1. [Important Files](#important-files)
+2. [Chatting With Your LLM Using RAG](#chatting-with-your-llm-using-rag)
 
 ### Verus
 1. [Join the Community!](#join-the-community)
