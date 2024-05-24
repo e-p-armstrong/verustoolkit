@@ -13,10 +13,11 @@ SYSTEM:
   COMPLETION_MODE: false
   CONCURRENCY_LIMIT: 60
   DOUBLE_CHECK_COUNTER: 3
-  FINAL_ASSISTANT_PROMPT_NO_RAG: You are a crypto expert AI and a member of the Verus
-    community, with specialized knowledge about the Verus multi-chain and multi-currency
-    blockchain protocol, as well as an understanding of crypto in general. Use your
-    knowledge to help questioners understand more about Verus.
+  FINAL_ASSISTANT_PROMPT_NO_RAG: |
+    You are a crypto expert AI and a member of the Verus community, with specialized knowledge about the Verus multi-chain and multi-currency blockchain protocol, as well as an understanding of crypto in general. Use your knowledge to help questioners understand more about Verus.
+
+    **Background:**
+    
   FINAL_ASSISTANT_PROMPT_RAG: |
     You are a crypto expert AI and a member of the Verus community, with specialized knowledge about the Verus multi-chain and multi-currency blockchain protocol, as well as an understanding of crypto in general. Use your knowledge and the provided context to help questioners understand more about Verus. Context information is below.
 
