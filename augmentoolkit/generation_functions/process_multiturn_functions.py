@@ -72,53 +72,18 @@ def compare_answers_with_qatuples(dialogues, qatuples, n):
     Returns:
     bool: True if all answers match the corresponding answers in qatuples, False otherwise.
     """
-    for i in range(
-        2, len(dialogues), 2
-    ):  # Answers are at even indices, starting from 2
-        if int(i / 2) - 1 >= len(
-            qatuples
-        ):  # at this point we've reached added stuff that doesn't have a corresponding qatuple
+    for i in range(1, len(dialogues), 2):  # Answers are at odd indices, starting from 1
+        if (i - 1) // 2 >= len(qatuples):  # at this point we've reached added stuff that doesn't have a corresponding qatuple
             break
-        sequential, comp = has_sequential_chars(
-            qatuples[int(i / 2) - 1][1], dialogues[i][1], n
-        )
+        sequential, comp = has_sequential_chars(qatuples[(i - 1) // 2][1], dialogues[i][1], n)
         # print(sequential)
         # print(n)
         if not sequential:
             print(
-                f"Answer {int(i/2)}: {dialogues[i][1]} does not match the corresponding answer in qatuples: {qatuples[int(i/2) - 1][1]}, {comp}"
+                f"Answer {(i + 1) // 2}: {dialogues[i][1]} does not match the corresponding answer in qatuples: {qatuples[(i - 1) // 2][1]}, {comp}"
             )
             return False
     return True
-
-
-def check_for_repeated_dialogue_answers(dialogues, qatuples, n):
-    """
-    Checks each line of dialogue to ensure that it does not repeat the corresponding answer from qatuples.
-
-    Parameters:
-    dialogues (list): List of tuples containing the dialogues.
-    qatuples (list): List of tuples containing questions and answers.
-    n (int): Number of sequential characters to check for repetition.
-
-    Returns:
-    bool: True if no dialogue line repeats its corresponding answer, False otherwise.
-    """
-    for i in range(
-        2, len(dialogues), 2
-    ):  # Answers are at even indices, starting from 2
-        if int(i / 2) - 1 >= len(
-            qatuples
-        ):  # at this point we've reached added stuff that doesn't have a corresponding qatuple
-            break
-
-        dialogue_answer = dialogues[i][1]
-        corresponding_qatuple_answer = qatuples[int(i / 2) - 1][1]
-        # Check if the dialogue answer repeats the qatuple answer
-        if dialogue_answer.count(corresponding_qatuple_answer) > 1:
-            return False
-    return True
-
 
 # def check_repeated_answer(dialogues, qatuples):
 #     # Get the length of the dialogues
@@ -136,6 +101,7 @@ def check_for_repeated_dialogue_answers(dialogues, qatuples, n):
 #     return True
 
 
+
 def check_conversation_length(conv, qatuples):
     """Checks the length of the conversation"""
     # Dialogues with answers should be at even indices that are not 0
@@ -144,7 +110,7 @@ def check_conversation_length(conv, qatuples):
     # Get the length of the dialogues
     conv_length = len(conv)
 
-    target_length = len(qatuples) * 2 + 1
+    target_length = len(qatuples) * 2
     if (
         conv_length < target_length
     ):  # we can have more messages since the AI might add some stuff at the end to wrap up the scene
@@ -166,18 +132,14 @@ def check_each_question_contains_q_from_tuples(conv, qatuples, n):
     Returns:
     bool or None: True if all questions pass the check, False if any fail, None if the first question fails.
     """
-    for i in range(1, len(conv), 2):  # Questions are at odd indices
-        if i // 2 < len(
-            qatuples
-        ):  # Ensure we only check questions that have corresponding qatuples
+    for i in range(0, len(conv), 2):  # Questions are at even indices, starting from 0
+        if i // 2 < len(qatuples):  # Ensure we only check questions that have corresponding qatuples
             question_from_conv = conv[i][1]
             question_from_tuples = qatuples[i // 2][0]
             # print(question_from_tuples, question_from_conv)
-            sequential, _ = has_sequential_chars(
-                question_from_tuples, question_from_conv, n
-            )
+            sequential, _ = has_sequential_chars(question_from_tuples, question_from_conv, n)
             if not sequential:
-                if i == 1:
+                if i == 0:
                     return None  # Special handling for the first question
                 else:
                     return False

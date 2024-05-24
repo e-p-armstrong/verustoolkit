@@ -1236,7 +1236,7 @@ def convert_directory_to_list(directory_path):
                         for i, (charname, message) in enumerate(
                             dialogues
                         ):  # Skipping the first message
-                            from_person = "human" if (i % 2) == 1 else "gpt"
+                            from_person = "human" if (i % 2) == 0 else "gpt"
                             simplified_conversations.append(
                                 {"from": from_person, "value": f"{message}"}
                             )
