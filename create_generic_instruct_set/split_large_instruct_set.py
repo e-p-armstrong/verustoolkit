@@ -23,6 +23,24 @@ def get_human_gpt_pairs(data):
             pairs.append(pair)
     return pairs
 
+def partition_data(pairs, limit_mb=4):
+    limit_bytes = limit_mb * 1024 * 1024  # MB to bytes
+    partitions = [[], [], []]
+    current_partition = 0
+    current_size = 0
+    
+    for pair in pairs:
+        pair_size = len(json.dumps(pair).encode('utf-8'))
+        if current_size + pair_size > limit_bytes:
+            current_partition += 1
+            current_size = 0
+            if current_partition > 2:  # Only three partitions allowed
+                break
+        partitions[current_partition].append(pair)
+        current_size += pair_size
+    
+    return partitions
+
 def main():
     # Set random seed
     random.seed(42)
@@ -32,26 +50,17 @@ def main():
     pairs = get_human_gpt_pairs(data)
 
     # Sort pairs by their JSON string length (as a proxy for 'size')
-    pairs_sorted = sorted(pairs, key=lambda x: len(x[2]["value"]), reverse=True)
+    pairs_sorted = sorted(pairs, key=lambda x: len(json.dumps(x)), reverse=True)
 
-    # Randomize the order of the top 'n' samples
-    n = 1000  # Adjust 'n' as needed based on your file size and needs
-    top_samples = pairs_sorted[:n]
-    random.shuffle(top_samples)
+    # Shuffle to avoid any ordering biases
+    random.shuffle(pairs_sorted)
 
-    # Create 3 approximately equal partitions
-    part_size = len(top_samples) // 3
-    parts = [top_samples[i * part_size:(i + 1) * part_size] for i in range(3)]
-
-    # Add leftover elements to the last partition
-    parts[-1].extend(top_samples[3 * part_size:])
+    # Partition the data
+    partitions = partition_data(pairs_sorted)
 
     # Save the data to three separate files
-    for i, part in enumerate(parts):
+    for i, part in enumerate(partitions):
         save_json(part, f'output_part_{i+1}.json')
 
 if __name__ == '__main__':
     main()
-
-
-x[2]["value"]
