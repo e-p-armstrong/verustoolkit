@@ -1,0 +1,6 @@
+[
+    "What are some of the key features of VerusID?",
+    "VerusID has several key features, including multisig capabilities, private messaging, SSID login, and SubID registration.",
+    "les, hashes and messages. | \n| **Multisig** | Multiple organizations or people can manage a VerusID. | \n| **Messages** | Send and receive completely private messages through VerusID private addresses. | \n| [**SSID login**](/verusid/login/) | Login to supported VerusID services without ever needing a password. |\n| **SubID** | Under each launched currency and token subIDs can be registered. SubIDs have the exact same features as VerusIDs, although they can not launch blockchains, currencies or tokens. |",
+    "./raw_text_input_docs/README_addresses.md"
+]

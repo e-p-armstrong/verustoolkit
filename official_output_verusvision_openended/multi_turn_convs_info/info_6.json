@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does Verus approach the classification of content, particularly when it comes to distinguishing between fact and opinion, and how does its polling system support the discovery of accepted truths and facts?",
+            "When it comes to classifying content, Verus recognizes the importance of distinguishing between fact and opinion. This distinction is crucial in ensuring that the platform supports the discovery of accepted truths and facts. To achieve this, Verus takes a nuanced approach to polling, recognizing that some classifications, such as determining the level of toxicity in content, require an objective assessment of the majority view. In contrast, opinion polls, where users are expressing their personal opinions, are treated as equally valid contributions.\n\nIn the case of polls that aim to discover accepted truths and facts, Verus voters are incentivized to provide accurate answers that align with the consensus view. This is achieved through a staking mechanism, where voters can earn or lose Verus (and potentially Virtue in later phases) based on their answers. This approach encourages voters to carefully consider the evidence and provide well-informed answers that reflect the prevailing view.\n\nBy recognizing the difference between fact and opinion, Verus's polling system is designed to support the discovery of credible emerging arguments and accepted truths. This approach is critical in promoting a culture of critical thinking, open discussion, and the pursuit of knowledge on the platform.",
+            "When classifying content, especially when you start to consider challenging classifications,\nsuch as misleading, propaganda, generally accepted fact, accurate versions of history, vs.\nclassification of what should generally be accepted as toxic or rated content that people could\nreasonably answer objectively, one must consider the difference between fact and opinion.\nSelecting the winner of an election is a matter of expressing an opinion. Classifying content\naccording to level of toxicity is a question of determining the factual answer to the question:\nwhat does the majority of the voting population believe the classification to be. Determining15whether an image in one photo is the same image as that from another is a question with\nan objective, if not determinable answer.\nTo ensure that Verus polls support polls that attempt to discover accepted truths, facts,\nand even credible emerging arguments, Verus voters will often be able to stake and either\nearn or lose Verus and in later phases, Virtue, by answering in a manner that matches\nconsensus. For other polls, which are recognized as opinion polls, all answers are equally\nvalid contributions.3.4Random Sampling as a Service",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3127e1de-b3ca-4ff0-8aaf-1cd86d77e799"
+]

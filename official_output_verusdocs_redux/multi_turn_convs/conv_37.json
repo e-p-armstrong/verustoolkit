@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to learn more about VerusID. What are some of the key features of VerusID?\n\n**AI Assistant:**\nVerusID has several key features, including multisig capabilities, private messaging, SSID login, and SubID registration. These features provide a robust and flexible digital identity system. Do you have any specific questions about these features or would you like me to explain them in more detail?\n\n**User:**\nThat's a great start! I'd love to know more about multisig. What is the purpose of multisig in VerusID?\n\n**AI Assistant:**\nMultisig in VerusID allows multiple organizations or people to manage a single VerusID, providing a way for multiple parties to jointly control and manage a digital identity. This feature is particularly useful for organizations or groups that require multiple sign-offs or approvals for certain actions. Would you like me to explain more about how multisig works in VerusID?\n\n**User:**\nThat makes sense. I'm also curious about SubIDs. What are SubIDs, and how do they relate to VerusIDs?\n\n**AI Assistant:**\nSubIDs are a type of ID that can be registered under each launched currency and token. They have the same features as VerusIDs, but they cannot launch blockchains, currencies, or tokens. SubIDs provide a way to create a hierarchical structure of IDs, with VerusIDs at the top level and SubIDs beneath them. This hierarchical structure allows for a more organized and scalable digital identity system. Do you have any more questions about SubIDs or their relationship with VerusIDs?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are some of the key features of VerusID?",
+            "VerusID has several key features, including multisig capabilities, private messaging, SSID login, and SubID registration.",
+            "les, hashes and messages. | \n| **Multisig** | Multiple organizations or people can manage a VerusID. | \n| **Messages** | Send and receive completely private messages through VerusID private addresses. | \n| [**SSID login**](/verusid/login/) | Login to supported VerusID services without ever needing a password. |\n| **SubID** | Under each launched currency and token subIDs can be registered. SubIDs have the exact same features as VerusIDs, although they can not launch blockchains, currencies or tokens. |",
+            "./raw_text_input_docs/README_addresses.md"
+        ],
+        [
+            "What is the purpose of multisig in VerusID?",
+            "Multisig in VerusID allows multiple organizations or people to manage a single VerusID, providing a way for multiple parties to jointly control and manage a digital identity.",
+            "les, hashes and messages. | \n| **Multisig** | Multiple organizations or people can manage a VerusID. | \n| **Messages** | Send and receive completely private messages through VerusID private addresses. | \n| [**SSID login**](/verusid/login/) | Login to supported VerusID services without ever needing a password. |\n| **SubID** | Under each launched currency and token subIDs can be registered. SubIDs have the exact same features as VerusIDs, although they can not launch blockchains, currencies or tokens. |",
+            "./raw_text_input_docs/README_addresses.md"
+        ],
+        [
+            "What are SubIDs, and how do they relate to VerusIDs?",
+            "SubIDs are a type of ID that can be registered under each launched currency and token. They have the same features as VerusIDs, but they cannot launch blockchains, currencies, or tokens. SubIDs provide a way to create a hierarchical structure of IDs, with VerusIDs at the top level and SubIDs beneath them.",
+            "les, hashes and messages. | \n| **Multisig** | Multiple organizations or people can manage a VerusID. | \n| **Messages** | Send and receive completely private messages through VerusID private addresses. | \n| [**SSID login**](/verusid/login/) | Login to supported VerusID services without ever needing a password. |\n| **SubID** | Under each launched currency and token subIDs can be registered. SubIDs have the exact same features as VerusIDs, although they can not launch blockchains, currencies or tokens. |",
+            "./raw_text_input_docs/README_addresses.md"
+        ]
+    ]
+]

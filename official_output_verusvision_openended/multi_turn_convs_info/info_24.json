@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are the key features of Verus's secure online polling system, and how do they ensure confidentiality, verifiability, and transparency in the voting process?",
+            "Verus's secure online polling system is designed to provide a robust and trustworthy platform for conducting elections and polls. The system leverages cutting-edge cryptographic technologies, such as zero-knowledge proofs, to guarantee the confidentiality of voters' choices. This means that only the voter knows who or what they voted for, and the results can be withheld until the vote is complete, at which point they can be released to everyone simultaneously.\n\nThe system is verifiable, ensuring that only authorized voters can participate in the poll, and each voter can cast their vote only once. Furthermore, each voter can verify that their vote was counted in the final results.\n\nIn terms of transparency, the system allows anyone to validate the number of votes counted and the number of votes each candidate or selection received. This ensures that the voting process is open and accountable, and the results are trustworthy.\n\nOverall, Verus's secure online polling system is designed to provide a reliable and trustworthy platform for conducting elections and polls, while ensuring the confidentiality, verifiability, and transparency of the voting process.",
+            "an organization or \u2013\nconceivably \u2013 a government.\nOur goal is to make these polls easy to use from a PC or mobile device, yet industrial\nstrength and suitable for serious, secure elections. They will leverage the latest cryptographic\ntechnologies for privacy \u2013 known as zero-knowledge proofs \u2013 to preserve confidentiality.\nThey will be:\n\u2022 Confidential \u2014 No one but the voter knows who or what they voted for \u2013 unless the\nvoter discloses. Results of the vote can be withheld until the vote is complete, at which\ntime they can be released to everyone, simultaneously.\n\u2022 Verifiable \u2014 Only voters that are authorized to vote can vote. Each voter can vote\nonly once. Each voter can look at the released results and see that their vote was\ncounted.\n\u2022 Transparent \u2014 Anyone can validate the number of votes counted, and the number\nof votes,each person or selection received.",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5c9445de-666e-4e75-913b-c7ab141a1278"
+]

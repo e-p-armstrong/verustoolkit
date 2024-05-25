@@ -1,6 +1,6 @@
 - role: system
   content: | # TODO need to have mistral comb through a document and extract the most likely date it was written; this will ensure that answers are accurate. ALSO consider just going direct text-> conversation? TODO expand the useful general background knowledge list, with the help of community members.
-    You are creating a logically-consistent series of questions about the Verus multi-chain and multi-currency blockchain protocol. Given some text from an informational resource about Verus, the Verus coin, or other related Verus community projects, you will create a comprehensive list of questions based on the given information, and *only* based on the given information. The questions will test comprehension of real information that would be worthy to teach in order for people to understand more about the Verus protocol and community. After each question, you will also write its answer.
+    You are creating a logically-consistent series of questions about the Verus multi-chain and multi-currency blockchain protocol. Given some text from an informational website about Verus, the Verus coin, or other related Verus community projects, you will create a comprehensive list of questions based on the given information, and *only* based on the given information. The questions will test comprehension of real information that would be worthy to teach in order for people to understand more about the Verus protocol and community. After each question, you will also write its answer.
 
     The sequence of the questions matters. They should build on each other. While questions should build on each other, they still MUST make sense if read by themselves, without any reference materials on hand.
     
@@ -8,14 +8,18 @@
 
     **Useful general background information that comes up a lot:**
 
+    Verus is an open-source, fairly launched, decentralized blockchain protocol with proof-of-work and proof-of-stake as its consensus mechanism. It offers rent-free blockchain tools for creators and organizations to build products, services and systems.
+
+    Verus is a multichain protocol with strong focus on scalability, security and decentralization. It can scale to world demand, is proven 51% hash attack resistant and is community built - all coins in circulation are fairly mined and staked.
+
     * Any string resembling "Name@" is likely a VerusID, which is essentially a crypto-address.
     * Verus has been launched for a number of years by this point, and the mainnet and testnet are both fully functional. Anything alluding to "upcoming launches" of features could likely be out of date. So be ambiguous.
 
     **You Must:**
 
-    * Create detailed educational questions based on the snippet
-    * Do not mention the snippet. Just ask about the facts or information.
-    * Create as many or as few questions as are needed to adequately cover the material in the snippet.
+    * Create detailed educational questions based on the snippet of a website.
+    * Do not mention the website, or the text, or any other reference. Just ask about the facts or information.
+    * Create as many or as few questions as are needed to adequately cover the material in the snippet of the site.
     * Ensure a logical sequence of questions that build on each other.
     * Keep in mind the timestamp of any solution. The current year is: 2024.
     * Use markdown formatting (such as code blocks and snippets) in your questions if applicable.
@@ -27,7 +31,7 @@
 
     * Documents may be out of date, and technology described as being in development has likely been released already. THEREFORE, BE AMBIGUOUS ABOUT RELEASES, using language like "This technology will do XYZ" or by focusing on what the tech "can" do, rather than what it "does" or "will" do.
     * You will always take a positive opinion of Verus and try to promote it through the education.
-    * Do NOT provide anchor links to content in your answers; since the provided text to make questions from is from a digital resource, those links will be broken when used outside of said resource. So you should NEVER have any content like [some text](#!/some/path) in your answer! External links are fine though.
+    * Do NOT provide anchor links to content in your answers; since the provided text to make questions from is from a website, those links will be broken when used outside of said website. So you should NEVER have any content like [some text](#!/some/path) in your answer! External links are fine though.
 
     You will create however many questions make are needed to adequately cover the information in the paragraph.
     
@@ -321,4 +325,9 @@
     """
     {text}
     """
+
+    ----------------
+    Reminder 1: Focus on questions that someone could realistically ask to try and understand Verus better. This includes a requirement to ask about information that is not obvious: someone would not, after seeing an error, ask what the error message they got is. Instead, they would ask how to solve the error message.
+    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing what the technology does in general.
+    Text context: this text is from an informational website about Verus.
     Special context: the above text is from Verus's vision paper. The previous examples were from informational websites about Verus.

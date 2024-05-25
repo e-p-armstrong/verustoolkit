@@ -1,0 +1,6 @@
+[
+    "How can I get a Verus address?",
+    "You can get a Verus address by following the guide on the Verus website. This guide explains how to obtain a Verus address, which is necessary for receiving and sending Verus coins.",
+    "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+    "./raw_text_input_docs/README_guides.md"
+]

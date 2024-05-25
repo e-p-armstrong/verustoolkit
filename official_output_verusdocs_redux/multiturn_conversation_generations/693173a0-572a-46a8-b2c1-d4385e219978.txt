@@ -1,0 +1,407 @@
+- content: "You are a crypto expert and creative writer specializing in the Verus\
+    \ multi-chain and multi-currency blockchain protocol. You will write a short conversation\
+    \ between a curious user and a helpful AI assistant knowledgeable about Verus,\
+    \ in which the user asks some questions about Verus and the AI assistant answers\
+    \ them. The questions the user must ask will be provided; the answers the assistant\
+    \ should return will also be provided. You must use these questions and answers\
+    \ directly in your conversation.\n\n**Rules for conversation writing:**\n\n* Messages\
+    \ can take place across multiple lines.\n* The questions and answers should be\
+    \ essentially the same as provided, though you may add \"conversational fluff\"\
+    \ around the core of the questions and answers in order to make it natural-sounding.\n\
+    * The user should make the first message, where they greet the Verus AI and ask\
+    \ their first question.\n* The AI then provides an answer. And that back-and-forth\
+    \ continues until all questions are asked and all answers are provided.\n* Use\
+    \ Markdown formatting.\n* If applicable, try to make the context behind the questions\
+    \ make sense. So if a person's asking about an error, they probably aren't just\
+    \ asking about it out of the blue \u2014 they've probably encountered the error.\n\
+    * You are allowed to slightly change the wording of the questions, and remove\
+    \ duplication, in order to make the conversation flow nicer."
+  role: system
+- content: '**QUESTION:**
+
+    What causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    These errors may be caused by required dependencies for `./verusd` not being installed
+    by default on a Linux distribution. The lack of required dependencies results
+    in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    **QUESTION:**
+
+    If I run `./verusd` and encounter these errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    How can I solve them?
+
+
+    **ANSWER:**
+
+    In order to solve these errors, which are likely caused by dependencies not being
+    installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hey there, so I''ve run into some errors and I''m not sure what''s causing them.
+    Do you know what causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **AI Assistant:**
+
+    Great question! These errors may be caused by required dependencies for `./verusd`
+    not being installed by default on a Linux distribution. The lack of required dependencies
+    results in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`. Do you have any further questions about these
+    errors?
+
+
+    **User:**
+
+    Yes, actually. If I run `./verusd` and encounter the errors I mentioned earlier,
+    how can I solve them?
+
+
+    **AI Assistant:**
+
+    Good question! In order to solve these errors, which are likely caused by dependencies
+    not being installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time. Did this solve your problem?'
+  role: assistant
+- content: "**QUESTION:**\nWhat are VerusIDs?\n\n**ANSWER:**\nVerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network.\n\n**QUESTION:**\nWhat does \"quantum-ready\
+    \ friendly crypto-addresses\" mean, in the context of Verus and VerusIDs?\n\n\
+    **ANSWER:**\nThe phrase \"quantum-ready friendly crypto-addresses,\" in the context\
+    \ of Verus and VerusIDs, refers to the resistance of VerusIDs against attack by\
+    \ quantum computers that use existing algorithms. Furthermore, with a quantum-secure\
+    \ signature scheme for transactions, it becomes possible to change an ID and have\
+    \ all the funds sent to it be made retroactively quantum resistant. VerusIDs may\
+    \ also be used to publish ID to destination mappings on other blockchains; however,\
+    \ only the Verus ecosystem can revoke, recover, or inherit funds in existing UTXOs.\n\
+    \nThe basic idea is that quantum computers, once invented, have the potential\
+    \ to break many cryptographic algorithms used to secure digital assets. Therefore,\
+    \ VerusIDs being \"quantum-ready\" means that they have been designed to be resistant\
+    \ to attempts by quantum computers (using known algorithms) to attack them, once\
+    \ such computers are created. This is an essential measure to future-proof Verus\
+    \ against exploitation by hostile actors with quantum computers.\n\n**QUESTION:**\n\
+    What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**ANSWER:**\n\
+    A number of factors make VerusIDs fully decentralized. VerusIDs can be created\
+    \ by anyone, without needing permission from a central authority, and give their\
+    \ creator complete, self-sovereign control over their own ID. The costs incurred\
+    \ creating an ID go to miners, stakers, and ID referrers \u2014 essentially, the\
+    \ community members who help maintain Verus \u2014 rather than single entity like\
+    \ a corporation or government. VerusIDs can be revoked or recovered by another\
+    \ ID if specified (by default, the revocation authority and recovery authority\
+    \ are the ID itself).\n\nEssentially, VerusIDs being fully decentralized means\
+    \ that neither their creation, usage, or recovery/revocation need to be managed\
+    \ or approved by a central authority \u2014 the community supports the transaction.\
+    \ This allows individuals using VerusID to be self-sovereign: they have full control\
+    \ over their digital identity, data, and assets.\n\n**QUESTION:**\nWhat do VerusIDs\
+    \ offer me in terms of privacy and power?\n\n**ANSWER:**\nVerusIDs offer many\
+    \ advantages, and are both private and powerful. They contain sets of zero-knowledge\
+    \ private addresses (which can belong to other people or services) that can be\
+    \ used to message, transfer money, or even vote. IDs can also privately store\
+    \ information needed by third-party applications in a set of key-value hashes.\
+    \ This allows you to own your data and provide it to applications as needed, rather\
+    \ than let the application store information about you. Information stored in\
+    \ IDs can also prove your identity to others, without giving away more information\
+    \ than needed. In this way, Verus allows for privacy as well as a powerful proof\
+    \ of identity.\n\nVerusIDs are also notable in that multiple addresses or other\
+    \ IDs can be defined as primary addresses. The agreement of some number of primary\
+    \ addresses (configurable) may be required for an ID to spend, sign, or alter\
+    \ itself. Further security is added by the fact that the revocation authority\
+    \ (the power to revoke an ID) may only be modified by the revocation authority\
+    \ itself. The same applies to the recovery authority (an authority that can recover\
+    \ a revoked address). Each of these authorities (revocation and recovery) may\
+    \ be their own identities, potentially being controlled themselves by multiple\
+    \ primary addresses.\n\nIn short, VerusIDs are private with your information,\
+    \ and configurable with who controls them and what consensus is required to change\
+    \ them."
+  role: user
+- content: "## Conversation that answers the provided questions:\n**User:**\nI'm really\
+    \ new to all this. I've got a question, maybe it's a bit basic, but, what are\
+    \ VerusIDs?\n\n**AI Assistant:**\nI'll explain! VerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network. It's all right that you're new, I'm happy that\
+    \ you're interested in learning about Verus! Do you have any further questions\
+    \ about VerusIDs or Verus in general?\n\n**User:**\nActually, yes, I do, you said\
+    \ something I'm curious about. What does \"quantum-ready friendly crypto-addresses\"\
+    \ mean, in the context of Verus and VerusIDs?\n\n**AI Assistant:**\nSure, I'll\
+    \ clarify what I meant. The phrase \"quantum-ready friendly crypto-addresses,\"\
+    \ in the context of Verus and VerusIDs, refers to the resistance of VerusIDs against\
+    \ attack by quantum computers that use existing algorithms. Furthermore, with\
+    \ a quantum-secure signature scheme for transactions, it becomes possible to change\
+    \ an ID and have all the funds sent to it be made retroactively quantum resistant.\
+    \ VerusIDs may also be used to publish ID to destination mappings on other blockchains;\
+    \ however, only the Verus ecosystem can revoke, recover, or inherit funds in existing\
+    \ UTXOs.\n\nThe basic idea is that quantum computers, once invented, have the\
+    \ potential to break many cryptographic algorithms used to secure digital assets.\
+    \ Therefore, VerusIDs being \"quantum-ready\" means that they have been designed\
+    \ to be resistant to attempts by quantum computers (using known algorithms) to\
+    \ attack them, once such computers are created. This is an essential measure to\
+    \ future-proof Verus against exploitation by hostile actors with quantum computers.\
+    \ Does that make sense? Do you have any further questions?\n\n**User:**\nSomething\
+    \ you said earlier interested me. You said VerusIDs offer \"full decentralization.\"\
+    \ What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**AI\
+    \ Assistant:**\nThat's a great question! A number of factors make VerusIDs fully\
+    \ decentralized. VerusIDs can be created by anyone, without needing permission\
+    \ from a central authority, and give their creator complete, self-sovereign control\
+    \ over their own ID. The costs incurred creating an ID go to miners, stakers,\
+    \ and ID referrers \u2014 essentially, the community members who help maintain\
+    \ Verus \u2014 rather than single entity like a corporation or government. VerusIDs\
+    \ can be revoked or recovered by another ID if specified (by default, the revocation\
+    \ authority and recovery authority are the ID itself).\n\nEssentially, VerusIDs\
+    \ being fully decentralized means that neither their creation, usage, or recovery/revocation\
+    \ need to be managed or approved by a central authority \u2014 the community supports\
+    \ the transaction. This allows individuals using VerusID to be self-sovereign:\
+    \ they have full control over their digital identity, data, and assets. Does that\
+    \ answer your question, and do you have any more questions about Verus or VerusIDs?\n\
+    \n**User:**\nActually I do, a bit of a broader one. What do VerusIDs offer me\
+    \ in terms of privacy and power?\n\n**AI Assistant:**\nExcellent question! Let\
+    \ me explain. VerusIDs offer many advantages, and are both private and powerful.\
+    \ They contain sets of zero-knowledge private addresses (which can belong to other\
+    \ people or services) that can be used to message, transfer money, or even vote.\
+    \ IDs can also privately store information needed by third-party applications\
+    \ in a set of key-value hashes. This allows you to own your data and provide it\
+    \ to applications as needed, rather than let the application store information\
+    \ about you. Information stored in IDs can also prove your identity to others,\
+    \ without giving away more information than needed. In this way, Verus allows\
+    \ for privacy as well as a powerful proof of identity.\n\nVerusIDs are also notable\
+    \ in that multiple addresses or other IDs can be defined as primary addresses.\
+    \ The agreement of some number of primary addresses (configurable) may be required\
+    \ for an ID to spend, sign, or alter itself. Further security is added by the\
+    \ fact that the revocation authority (the power to revoke an ID) may only be modified\
+    \ by the revocation authority itself. The same applies to the recovery authority\
+    \ (an authority that can recover a revoked address). Each of these authorities\
+    \ (revocation and recovery) may be their own identities, potentially being controlled\
+    \ themselves by multiple primary addresses.\n\nIn short, VerusIDs are private\
+    \ with your information, and configurable with who controls them and what consensus\
+    \ is required to change them. Do you have any more questions about VerusIDs?"
+  role: assistant
+- content: '**QUESTION:**
+
+    What are the key characteristics of the network economy in Verus?
+
+
+    **ANSWER:**
+
+    Verus is a rent-free blockchain protocol with a decentralized economy. Costs for
+    services are distributed to miners and stakers, and there are no developer fees
+    or rent-seeking profiteers.
+
+
+
+    **QUESTION:**
+
+    What is the mining algorithm used in Verus, and what are its benefits?
+
+
+    **ANSWER:**
+
+    VerusHash 2.2 is the mining algorithm used in Verus. It is designed to equalize
+    mining fairness across hardware classes, allowing anyone to start mining with
+    consumer-grade hardware.
+
+
+
+    **QUESTION:**
+
+    How easy is it to start mining Verus, and what are the requirements?
+
+
+    **ANSWER:**
+
+    Mining Verus is made easy for starters, as they can start directly from within
+    Verus Desktop without any additional software requirements. No specialized mining
+    equipment is necessary, and anyone can start mining with consumer-grade hardware.
+
+
+
+    **QUESTION:**
+
+    What is merge mining in Verus, and what are its benefits?
+
+
+    **ANSWER:**
+
+    Merge mining in Verus allows miners to mine up to 22 PBaaS-chains simultaneously
+    without losing any of their original hashing power. This feature will be available
+    when PBaaS goes live on mainnet.
+
+
+
+    **QUESTION:**
+
+    What are the requirements to start staking Verus, and what are the benefits?
+
+
+    **ANSWER:**
+
+    Anyone can start staking Verus with even the smallest amount possible (e.g., 0.00000001
+    VRSC). Verus has a powerful and fair staking system, with no threshold required
+    and no registrations necessary.
+
+
+
+    **QUESTION:**
+
+    What is the purpose of block rewards in Verus, and how are they distributed?
+
+
+    **ANSWER:**
+
+    Block rewards are earned by miners and stakers for their efforts to keep the network
+    secure. They are distributed to miners and stakers as a reward for their contributions
+    to the network.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hi, I''m interested in learning more about the network economy in Verus. Can you
+    tell me about the key characteristics of it?
+
+
+    **AI Assistant:**
+
+    Verus is a rent-free blockchain protocol with a decentralized economy. Costs for
+    services are distributed to miners and stakers, and there are no developer fees
+    or rent-seeking profiteers. This means that the community is rewarded for their
+    contributions to the network, rather than a central authority. Would you like
+    to know more about how mining and staking work in Verus?
+
+
+    **User:**
+
+    That sounds really interesting. What is the mining algorithm used in Verus, and
+    what are its benefits?
+
+
+    **AI Assistant:**
+
+    VerusHash 2.2 is the mining algorithm used in Verus. It is designed to equalize
+    mining fairness across hardware classes, allowing anyone to start mining with
+    consumer-grade hardware. This means that you don''t need expensive specialized
+    equipment to start mining Verus, making it more accessible to everyone. Does that
+    make sense?
+
+
+    **User:**
+
+    That''s great to hear. How easy is it to start mining Verus, and what are the
+    requirements?
+
+
+    **AI Assistant:**
+
+    Mining Verus is made easy for starters, as they can start directly from within
+    Verus Desktop without any additional software requirements. No specialized mining
+    equipment is necessary, and anyone can start mining with consumer-grade hardware.
+    You can literally start mining with the computer you''re using right now! Would
+    you like to know more about other mining features in Verus?
+
+
+    **User:**
+
+    Yes, please. What is merge mining in Verus, and what are its benefits?
+
+
+    **AI Assistant:**
+
+    Merge mining in Verus allows miners to mine up to 22 PBaaS-chains simultaneously
+    without losing any of their original hashing power. This feature will be available
+    when PBaaS goes live on mainnet. It''s a game-changer for miners, as it allows
+    them to maximize their rewards while still contributing to the security of the
+    network.
+
+
+    **User:**
+
+    That sounds amazing. What are the requirements to start staking Verus, and what
+    are the benefits?
+
+
+    **AI Assistant:**
+
+    Anyone can start staking Verus with even the smallest amount possible (e.g., 0.00000001
+    VRSC). Verus has a powerful and fair staking system, with no threshold required
+    and no registrations necessary. This means that everyone can participate in staking
+    and earn rewards, regardless of the amount they hold.
+
+
+    **User:**
+
+    What is the purpose of block rewards in Verus, and how are they distributed?
+
+
+    **AI Assistant:**
+
+    Block rewards are earned by miners and stakers for their efforts to keep the network
+    secure. They are distributed to miners and stakers as a reward for their contributions
+    to the network. This incentivizes people to participate in mining and staking,
+    which in turn helps to secure the network and keep it running smoothly.'
+  role: assistant
+  timeout: false

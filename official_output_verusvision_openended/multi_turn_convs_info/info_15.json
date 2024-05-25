@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does Verus' identity system ensure privacy and verification of identity properties, and what is the ultimate vision for decentralized identity verification?",
+            "Verus' identity system is designed to provide both privacy and verification of identity properties. Each identity has its own unique address, and unless the owner reveals information that links two or more identities, it is computationally infeasible to correlate one identity to another. This means that individuals can maintain multiple identities without fear of them being linked together.\n\nAt the same time, the owner of an identity can cryptographically verify statements made about identities under their control, attesting to various identity properties such as passport information, age, height, citizenship, and photo, among others. This verification is as strong as is possible with today's digital technology.\n\nThe ultimate vision of Verus is to support fully decentralized verification of identities, where individuals have complete control over their identity information and can selectively disclose it to others. This vision aims to create a system where identities are secure, private, and verifiable, without relying on centralized authorities or intermediaries. By achieving this vision, Verus aims to empower individuals with greater control over their digital identities and personal data.",
+            "Each identity will have its own, unique address. Unless its owner reveals information\nto link two or more identities, it is cryptographically hard \u2013 meaning virtually impossible\n\u2013 to correlate one identity to another. At the same time, the owner of an identity can still\ncryptographically verify statements made about identities under their control, attesting to\nidentity properties (such as passport, age, height, citizenship, photo, etc.) as strongly as\nis possible with today\u2019s digital technology. As part of the Verus vision, to be described in\nmore detail in later phases, we intend to support fully decentralized verification of identities\nthat can pr",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "213befc5-c91c-4b58-b2f9-30768185f0c6"
+]

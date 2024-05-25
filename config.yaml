@@ -1,13 +1,13 @@
 API:
-  API_KEY: d43b49fe624928487f9af975f3ffca53b89a96019e5c602fad0e45caeb1f4a9b
+  API_KEY: 9bf6a07fb5b7e401c51e4d42693443430f058f36e544cdc54a01f28d5c8be2e9
   BASE_URL: https://api.together.xyz
   LARGE_LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
 PATH:
   DEFAULT_PROMPTS: ./prompts
-  INPUT: ./raw_text_input_wiki
+  INPUT: ./raw_text_input_vision_paper
   OUTPUT: ./output
-  PROMPTS: ./prompts_open_question_mode
+  PROMPTS: ./prompts_vision_paper_override
 SYSTEM:
   CHUNK_SIZE: 1900
   COMPLETION_MODE: false

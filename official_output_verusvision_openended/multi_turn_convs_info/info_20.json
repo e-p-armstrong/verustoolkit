@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does Verus plan to create a secure, scalable, and transparent system for running and recording polls, and what are the benefits of this approach?",
+            "Verus envisions a system where polls can be run securely, transparently, and with unlimited scalability. To achieve this, Verus will utilize autochains, which are parallel voting chains created dynamically on demand for each poll in its ecosystem. This approach provides improved, isolated security for each poll, allowing for virtually unlimited scaling.\n\nThe Verus wallet, used for voting, will also have the ability to validate blocks through proof-of-stake. This means that voters who participate in validating the election will be able to earn rewards, either in Virtue (when available) or from the outputs of the payment transaction that instantiated the poll.\n\nWhen a poll is complete, the results are posted back to the main Verus chain. The chain used to run the poll can then be archived or deleted, and is typically abandoned. This approach ensures that each poll is run independently, with its own dedicated security and validation, while still maintaining transparency and verifiability.\n\nBy using blockchains as databases for permanent storage, Verus aims to create a system that is truly confidential, verifiable, and transparent. This is crucial for ensuring the integrity of polls and elections, as well as other applications that require secure and transparent data storage and processing.",
+            "decide the state of world politics. This highlights the importance of creating a system that\nis truly confidential, verifiable and transparent, and indicates the magnitude of one problem\nwe plan to solve with Verus.\n3.3.2Running, Recording, and Scaling Polls - Transient, PoS ChainsUsing autochains, Verus will dynamically create parallel voting chains on demand for each\npoll in its ecosystem. This creates improved, isolated security and allows for scaling in a\nvirtually unlimited manner.\nThe Verus wallet, which will be used for voting, will also have the ability to validate blocks\nthrough proof-of-stake, blocks which, when enabled, will allow voters who are validating the\nelection to earn rewards. These rewards will either be paid in Virtue for intrinsic polls, when\navailable, or from outputs of the payment transaction that instantiated the poll. When a\npoll is complete, results are posted back to the main Verus chain. The chain used to run it\ncan then be archived or deleted, and it is typically abandoned.\n3.3.3Poll Content and Distributed Hash TablesWhile blockchains make excellent databases for permanent",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2230a222-30e2-4068-9b98-1b8ada9ed018"
+]

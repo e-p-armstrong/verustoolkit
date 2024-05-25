@@ -1,0 +1,56 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to learn more about the Verus coin, can you help me? When was the Verus coin launched?\n\n**AI Assistant:**\nThe Verus coin was launched on 21 May 2018.\n\n**User:**\nOkay, that's good to know. What's the ticker symbol for the Verus coin?\n\n**AI Assistant:**\nThe ticker symbol for the Verus coin is VRSC.\n\n**User:**\nI'm curious about the technical aspects of the Verus blockchain. How often are blocks added to the Verus blockchain on average?\n\n**AI Assistant:**\nOn average, blocks are added to the Verus blockchain every 1 minute.\n\n**User:**\nThat's pretty fast. What's the default transaction fee on the Verus network?\n\n**AI Assistant:**\nThe default transaction fee on the Verus network is 0.0001 VRSC.\n\n**User:**\nWhat's the maximum total supply of Verus coins?\n\n**AI Assistant:**\nThe maximum total supply of Verus coins is 83,540,184 VRSC.\n\n**User:**\nI'm interested in the underlying technology of the Verus network. What consensus algorithm does the Verus network use?\n\n**AI Assistant:**\nThe Verus network uses the Verus Proof of Power consensus algorithm.\n\n**User:**\nAnd what hash algorithm is used by the Verus network?\n\n**AI Assistant:**\nThe Verus network uses the VerusHash 2.2 hash algorithm.\n\n**User:**\nI've heard that Verus has some advanced privacy features. What privacy technology does the Verus network utilize?\n\n**AI Assistant:**\nThe Verus network utilizes Zcash Sapling privacy technology.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "When was the Verus coin launched?",
+            "The Verus coin was launched on 21 May 2018.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ],
+        [
+            "What is the ticker symbol for the Verus coin?",
+            "The ticker symbol for the Verus coin is VRSC.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ],
+        [
+            "How often are blocks added to the Verus blockchain on average?",
+            "On average, blocks are added to the Verus blockchain every 1 minute.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ],
+        [
+            "What is the default transaction fee on the Verus network?",
+            "The default transaction fee on the Verus network is 0.0001 VRSC.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ],
+        [
+            "What is the maximum total supply of Verus coins?",
+            "The maximum total supply of Verus coins is 83,540,184 VRSC.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ],
+        [
+            "What consensus algorithm does the Verus network use?",
+            "The Verus network uses the Verus Proof of Power consensus algorithm.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ],
+        [
+            "What hash algorithm is used by the Verus network?",
+            "The Verus network uses the VerusHash 2.2 hash algorithm.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ],
+        [
+            "What privacy technology does the Verus network utilize?",
+            "The Verus network utilizes Zcash Sapling privacy technology.",
+            "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+            "./raw_text_input_docs/coin.md"
+        ]
+    ]
+]

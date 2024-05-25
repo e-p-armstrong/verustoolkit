@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm interested in bridging from Ethereum to Verus using Verus Mobile. Can you walk me through the process?\n\n**AI Assistant:**\nTo bridge from Ethereum to Verus using Verus Mobile, I recommend following the instructions outlined in the article \"How to participate in the Verus Ethereum Bridge Launch\" on Medium. Specifically, please follow the steps outlined in the article, excluding the part on preconverting. This should guide you through the process smoothly. Do you have any questions about the instructions or the bridging process in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I bridge from Ethereum to Verus using Verus Mobile?",
+            "To bridge from Ethereum to Verus using Verus Mobile, please refer to the instructions provided in the article \"How to participate in the Verus Ethereum Bridge Launch\" on Medium. Specifically, follow the steps outlined in the article, excluding the part on preconverting.",
+            "# How to bridge from Ethereum to Verus\n\n## Verus Mobile\nPlease read the first parts of [this article](https://medium.com/veruscoin/how-to-participate-in-the-verus-ethereum-bridge-launch-73aeeae1c76a). You can skip the part on preconverting.\n\n## MetaMask\nPlease read the first parts of [this article](https://medium.com/veruscoin/how-to-participate-in-the-verus-ethereum-bridge-launch-73aeeae1c76a). You can skip the part on preconverting.",
+            "./raw_text_input_docs/ethereum-to-verus.md"
+        ]
+    ]
+]

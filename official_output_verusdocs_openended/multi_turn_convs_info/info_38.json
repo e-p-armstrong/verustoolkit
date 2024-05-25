@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are some available guides for using Verus, and what topics do they cover?",
+            "There are several guides available for using Verus, covering a range of topics to help users get started and make the most of the platform. Here are some of the guides available:\n\n**1. Setting up Verus-cli for beginners:** This guide is designed for new users who want to set up the Verus command-line interface (CLI) from scratch. It takes you through the step-by-step process of installing and configuring the CLI, so you can start using Verus right away.\n\n**2. Setting up Verus Vault (flags) and (easy):** Verus Vault is a secure and convenient way to manage your Verus assets. There are two guides available for setting up Verus Vault: one for advanced users who want to use flags, and another for beginners who want a simpler, more user-friendly experience.\n\n**3. Diverting staking rewards to different wallet:** If you're staking Verus coins, you can earn rewards. This guide shows you how to divert those rewards to a different wallet, giving you more control over your assets.\n\n**4. Claiming refunds from Verus-Ethereum Bridge:** The Verus-Ethereum Bridge allows you to move assets between the Verus and Ethereum networks. This guide explains how to claim refunds from the bridge, in case you need to recover funds.\n\n**5. Getting a Verus address:** Finally, there's a guide on how to get a Verus address, which is essential for receiving and managing Verus coins.\n\nThese guides are designed to be easy to follow and provide step-by-step instructions for using Verus. They're a great resource for anyone who wants to get started with the platform or learn more about its features and capabilities.",
+            "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+            "./raw_text_input_docs/README_guides.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b803de43-f282-4df8-b9a4-286ed6bc34f8"
+]

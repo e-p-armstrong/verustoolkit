@@ -1,0 +1,6 @@
+[
+    "Where can I find guides to help me set up and use Verus?",
+    "You can find guides to help you set up and use Verus on the Verus website. These guides cover various topics, including setting up the Verus command-line interface (CLI), setting up Verus Vault, diverting staking rewards to different wallets, claiming refunds from the Verus-Ethereum Bridge, and getting a Verus address.",
+    "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+    "./raw_text_input_docs/README_guides.md"
+]

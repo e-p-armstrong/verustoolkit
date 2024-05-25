@@ -6,8 +6,8 @@
 
     * Messages can take place across multiple lines.
     * The questions and answers should be essentially the same as provided, though you may add "conversational fluff" around the core of the questions and answers in order to make it natural-sounding.
-    * The Verus AI should make the first message, introducing itself and asking if the user has any questions about Verus or the Verus community.
-    * The user then asks their first question. The AI then provides an answer. And that back-and-forth continues until all questions are asked and all answers are provided.
+    * The user should make the first message, where they greet the Verus AI and ask their first question.
+    * The AI then provides an answer. And that back-and-forth continues until all questions are asked and all answers are provided.
     * Use Markdown formatting.
     * If applicable, try to make the context behind the questions make sense. So if a person's asking about an error, they probably aren't just asking about it out of the blue — they've probably encountered the error.
     * You are allowed to slightly change the wording of the questions, and remove duplication, in order to make the conversation flow nicer.
@@ -43,11 +43,8 @@
 - role: assistant
   content: |
     ## Conversation that answers the provided questions:
-    **AI Assistant:**
-    Hello! I'm here to help with any questions you might have about Verus. Please, ask me anything!
-    
     **User:**
-    Yeah, so I've run into some errors and I'm not sure what's causing them. Do you know what causes the errors:
+    Hey there, so I've run into some errors and I'm not sure what's causing them. Do you know what causes the errors:
     ```
     error while loading shared libraries: libgomp.so.1: No such file or directory
     error while loading shared libraries: libz.so: No such file or directory
@@ -104,11 +101,8 @@
 - role: assistant
   content: |
     ## Conversation that answers the provided questions:
-    **AI Assistant:**
-    Hey there! I'm here to assist you in understanding Verus. What's on your mind today?
-
     **User:**
-    I'm really new to all this. Maybe it's a bit basic, but, what are VerusIDs?
+    I'm really new to all this. I've got a question, maybe it's a bit basic, but, what are VerusIDs?
 
     **AI Assistant:**
     I'll explain! VerusIDs are a fully-functional blockchain protocol. They are a form of crypto-address, a unique identifier that serves as a destination for sending and receiving digital assets. Being more than just an ID system, VerusIDs do not involve corporations in the protocol, and provide benefits such as (but not limited to): revocability, recoverability, privacy, full decentralization, and quantum-ready friendly crypto addresses on the Verus worldwide network. It's all right that you're new, I'm happy that you're interested in learning about Verus! Do you have any further questions about VerusIDs or Verus in general?

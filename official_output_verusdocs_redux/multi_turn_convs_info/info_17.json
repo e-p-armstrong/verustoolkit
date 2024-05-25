@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the approach to security in Verus DeFi, and where are the most important security layers located?",
+            "In Verus DeFi, the approach to security is to implement it at the protocol level as part of the consensus. This follows the fundamental systems design principle that the most important security layers should be located in the system/protocol itself.",
+            "* Increased security at the protocol level - Verus DeFi is implemented in the protocol as part of the consensus, following the fundamental systems design principle which says that the most important security layers should be located in the system/protocol itself.\n\n## MEV-resistance\n\nThe Verus protocol solves all transactions ``simultaneously`` within a block (as opposed to serially, in order, as is done on Ethereum and all other systems which use the VM-model). This has important implications for security, fairness, and efficiency:\n\n* Elimination of front-running, back-running and sandwich attacks.\n\n* Enhancing system-wide liquidity, thus reducing slippage, as conversions going to and from any given currency within the same block are offset against each other.\n\n* Providing all users converting to and from a currency within the same block the same fair price with no spread.",
+            "./raw_text_input_docs/README_sendcurrency.md"
+        ],
+        [
+            "What is MEV-resistance in the context of Verus, and how does it improve security and fairness?",
+            "MEV-resistance in Verus refers to the protocol's ability to solve all transactions simultaneously within a block, rather than serially as in other systems like Ethereum. This provides several benefits, including:\n\n1. Elimination of front-running, back-running, and sandwich attacks.\n2. Enhanced system-wide liquidity, reducing slippage.\n3. Providing all users with the same fair price, with no spread, when converting to and from a currency within the same block.",
+            "* Increased security at the protocol level - Verus DeFi is implemented in the protocol as part of the consensus, following the fundamental systems design principle which says that the most important security layers should be located in the system/protocol itself.\n\n## MEV-resistance\n\nThe Verus protocol solves all transactions ``simultaneously`` within a block (as opposed to serially, in order, as is done on Ethereum and all other systems which use the VM-model). This has important implications for security, fairness, and efficiency:\n\n* Elimination of front-running, back-running and sandwich attacks.\n\n* Enhancing system-wide liquidity, thus reducing slippage, as conversions going to and from any given currency within the same block are offset against each other.\n\n* Providing all users converting to and from a currency within the same block the same fair price with no spread.",
+            "./raw_text_input_docs/README_sendcurrency.md"
+        ],
+        [
+            "How does Verus's simultaneous transaction processing within a block differ from other systems like Ethereum, and what are the advantages of this approach?",
+            "Verus processes all transactions within a block simultaneously, whereas other systems like Ethereum process transactions serially, one after another. This simultaneous processing in Verus eliminates front-running, back-running, and sandwich attacks, enhances system-wide liquidity, and provides a fair price with no spread to all users converting to and from a currency within the same block.",
+            "* Increased security at the protocol level - Verus DeFi is implemented in the protocol as part of the consensus, following the fundamental systems design principle which says that the most important security layers should be located in the system/protocol itself.\n\n## MEV-resistance\n\nThe Verus protocol solves all transactions ``simultaneously`` within a block (as opposed to serially, in order, as is done on Ethereum and all other systems which use the VM-model). This has important implications for security, fairness, and efficiency:\n\n* Elimination of front-running, back-running and sandwich attacks.\n\n* Enhancing system-wide liquidity, thus reducing slippage, as conversions going to and from any given currency within the same block are offset against each other.\n\n* Providing all users converting to and from a currency within the same block the same fair price with no spread.",
+            "./raw_text_input_docs/README_sendcurrency.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3ae044a1-7947-4928-959e-93d4cc685107"
+]

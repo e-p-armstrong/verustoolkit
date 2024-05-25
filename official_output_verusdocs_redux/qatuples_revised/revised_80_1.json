@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the **Flags** component in a Verus invoice?",
+    "The **Flags** component in a Verus invoice is used to specify configurable flag bits for invoice options. This allows for customization of the invoice to accommodate different use cases and requirements.",
+    "- **Flags**: Configurable flag bits for invoice options.\n- **Amount**: The payment amount specified in the invoice.\n- **Destination**: Details about the payment destination, utilizing the [TransferDestination](/addresses/transfer-destination) construct for flexibility across different types of destinations.\n- **Requested Currency ID**: The identifier for the currency in which the payment is requested.\n- **Expiry Height**: Optionally specifies a Verus blockchain height after which the invoice is considered expired.\n- **Max Estimated Slippage**: Defines the acceptable slippage for currency conversions, if applicable. Denoted as a satoshi representation of a percentage in decimal format (between 0 and 1).\n- **Accepted Systems**: Lists blockchain systems or platforms accepted for payment other than VRSC/VRSCTEST.#### Flags",
+    "./raw_text_input_docs/invoices.md"
+]

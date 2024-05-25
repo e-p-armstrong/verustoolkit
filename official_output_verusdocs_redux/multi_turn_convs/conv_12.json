@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm curious about multisig VerusIDs. How many signatures can a multisig VerusID require, and what are some examples of possible configurations?\n\n**AI Assistant:**\nA multisig VerusID can require up to 13 out of 25 signatures. This allows for a high degree of customizability and flexibility in terms of the number of signatures required to authorize a transaction.\n\nSome possible configurations include: 13 of 25 signatures, which would require a majority of the designated signers to agree; 13 of 13 signatures, which would require all of the designated signers to agree; 1 of 25 signatures, which would allow any one of the designated signers to authorize a transaction; and 1 of 1 signature (which is equivalent to a regular non-multisig wallet), which would not require any additional signatures at all.\n\nThese are just a few examples, but the possibilities are endless, and the specific configuration will depend on the needs and preferences of the user or organization creating the multisig VerusID.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How many signatures can a multisig VerusID require, and what are some examples of possible configurations?",
+            "A multisig VerusID can require up to 13 out of 25 signatures. Some possible configurations include: 13 of 25 signatures, 13 of 13 signatures, 1 of 25 signatures, and 1 of 1 signature (which is equivalent to a regular non-multisig wallet).",
+            "# Set up multisig for VerusID\nWith multisig, you can set up a wallet that requires multiple signatures to send a transaction.\n\nFor example, you could set up a wallet that requires two out of three possible signatures before a transaction can be sent.\n\nA multisig VerusID can be up to **13 of 25 signatures**. It can also be 13 of 13; 1 of 25; and of course 1 of 1.",
+            "./raw_text_input_docs/multisig-tutorial.md"
+        ]
+    ]
+]

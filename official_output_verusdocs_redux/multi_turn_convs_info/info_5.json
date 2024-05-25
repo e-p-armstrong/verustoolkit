@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I define a new currency on the Verus network using the command line?",
+            "To define a new currency on the Verus network, you can use the `definecurrency` command with the following format:\n\n```\n./verus -chain=VRSCTEST definecurrency '{\n  \"name\":\"MyUSDC\", \n  \"options\":32, \n  \"systemid\":\"veth\", \n  \"parent\":\"vrsctest\", \n  \"launchsystemid\":\"vrsctest\", \n  \"nativecurrencyid\":{\n    \"type\":9, \n    \"address\":\"0x98339D8C260052B7ad81c28c16C0b98420f2B46a\"\n  }, \n  \"initialsupply\":0, \n  \"proofprotocol\":3\n}'\n```\n\nThis command defines a new currency called \"MyUSDC\" with specific properties such as its name, options, system ID, parent chain, and native currency ID.",
+            "``` json\n./verus -chain=VRSCTEST definecurrency '{\n  \"name\":\"MyUSDC\", \n  \"options\":32, \n  \"systemid\":\"veth\", \n  \"parent\":\"vrsctest\", \n  \"launchsystemid\":\"vrsctest\", \n  \"nativecurrencyid\":{\n    \"type\":9, \n    \"address\":\"0x98339D8C260052B7ad81c28c16C0b98420f2B46a\"\n  }, \n  \"initialsupply\":0, \n  \"proofprotocol\":3\n}'\n```\n\nAfter we put in the command, we get returned a HEX. We use this HEX to launch the currency on the network. Use the command below to launch the currency:\n\n``` json\n./verus -chain=VRSCTEST sendrawtransaction \"HEX\"\n```\n\nNow we have to wait a few blocks for the currency to be available on the network.\n\n### Export to Ethereum\nThe last step is to export the currency to Ethereum so we can see it there too. [\ud83d\udc49 Read it here](/currencies/export-to-eth/)",
+            "./raw_text_input_docs/mapping-1:1-eth.md"
+        ],
+        [
+            "What do I do with the HEX returned after defining a new currency?",
+            "After defining a new currency, you will receive a HEX code as a response. You need to use this HEX code to launch the currency on the network by running the following command:\n\n```\n./verus -chain=VRSCTEST sendrawtransaction \"HEX\"\n```\n\nThis will launch the currency on the network, and you will need to wait a few blocks for it to become available.",
+            "``` json\n./verus -chain=VRSCTEST definecurrency '{\n  \"name\":\"MyUSDC\", \n  \"options\":32, \n  \"systemid\":\"veth\", \n  \"parent\":\"vrsctest\", \n  \"launchsystemid\":\"vrsctest\", \n  \"nativecurrencyid\":{\n    \"type\":9, \n    \"address\":\"0x98339D8C260052B7ad81c28c16C0b98420f2B46a\"\n  }, \n  \"initialsupply\":0, \n  \"proofprotocol\":3\n}'\n```\n\nAfter we put in the command, we get returned a HEX. We use this HEX to launch the currency on the network. Use the command below to launch the currency:\n\n``` json\n./verus -chain=VRSCTEST sendrawtransaction \"HEX\"\n```\n\nNow we have to wait a few blocks for the currency to be available on the network.\n\n### Export to Ethereum\nThe last step is to export the currency to Ethereum so we can see it there too. [\ud83d\udc49 Read it here](/currencies/export-to-eth/)",
+            "./raw_text_input_docs/mapping-1:1-eth.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ca5b37aa-cf36-4bf9-98d3-2017797e520b"
+]

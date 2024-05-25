@@ -1,0 +1,38 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in trying out Verus, but I'm not sure where to start. Where can I find guides to help me set up and use Verus?\n\n**AI Assistant:**\nYou can find guides to help you set up and use Verus on the Verus website. These guides cover various topics, including setting up the Verus command-line interface (CLI), setting up Verus Vault, diverting staking rewards to different wallets, claiming refunds from the Verus-Ethereum Bridge, and getting a Verus address. Would you like me to point you in the direction of a specific guide?\n\n**User:**\nThat sounds great. I'm particularly interested in setting up Verus Vault. What kind of setup guides are available for Verus Vault?\n\n**AI Assistant:**\nThere are two setup guides available for Verus Vault: one for setting up Verus Vault using flags, and another for setting up Verus Vault using an easier method (Verus Vault v2). Would you like me to provide a link to these guides or walk you through the process?\n\n**User:**\nThat's really helpful. I also have a question about staking rewards. Can I divert my staking rewards to a different wallet using Verus?\n\n**AI Assistant:**\nYes, you can divert your staking rewards to a different wallet using Verus. There is a guide available on the Verus website that explains how to do this. Would you like me to provide a link to the guide or give you a brief overview of the process?\n\n**User:**\nThat's great. I've also heard about the Verus-Ethereum Bridge. How can I claim refunds from the Verus-Ethereum Bridge?\n\n**AI Assistant:**\nTo claim refunds from the Verus-Ethereum Bridge, you can follow these steps: [provide the steps or a clear link to the guide]. It's a relatively straightforward process, and the guide on the Verus website will walk you through it step-by-step.\n\n**User:**\nOne last question: How can I get a Verus address?\n\n**AI Assistant:**\nYou can get a Verus address by creating a new wallet in the Verus Desktop application or by using the Verus CLI command `getnewaddress`. Both methods are explained in the guides on the Verus website. Do you have any other questions about getting started with Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Where can I find guides to help me set up and use Verus?",
+            "You can find guides to help you set up and use Verus on the Verus website. These guides cover various topics, including setting up the Verus command-line interface (CLI), setting up Verus Vault, diverting staking rewards to different wallets, claiming refunds from the Verus-Ethereum Bridge, and getting a Verus address.",
+            "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+            "./raw_text_input_docs/README_guides.md"
+        ],
+        [
+            "What kind of setup guides are available for Verus Vault?",
+            "There are two setup guides available for Verus Vault: one for setting up Verus Vault using flags, and another for setting up Verus Vault using an easier method (Verus Vault v2).",
+            "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+            "./raw_text_input_docs/README_guides.md"
+        ],
+        [
+            "Can I divert my staking rewards to a different wallet using Verus?",
+            "Yes, you can divert your staking rewards to a different wallet using Verus. There is a guide available on the Verus website that explains how to do this.",
+            "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+            "./raw_text_input_docs/README_guides.md"
+        ],
+        [
+            "How can I claim refunds from the Verus-Ethereum Bridge?",
+            "To claim refunds from the Verus-Ethereum Bridge, you can follow these steps: [provide the steps or a clear link to the guide].",
+            "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+            "./raw_text_input_docs/README_guides.md"
+        ],
+        [
+            "How can I get a Verus address?",
+            "You can get a Verus address by creating a new wallet in the Verus Desktop application or by using the Verus CLI command `getnewaddress`.",
+            "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+            "./raw_text_input_docs/README_guides.md"
+        ]
+    ]
+]

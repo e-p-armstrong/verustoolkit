@@ -1,0 +1,6 @@
+[
+    "How can I request an unlock in Verus using the command line interface?",
+    "You can request an unlock in Verus by running the `setidentitytimelock` command with the appropriate parameters. For example:\n```\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\nThis command requests an unlock for the identity \"myid@\" at the current block height (by setting \"unlockatblock\" to 0).",
+    "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+    "./raw_text_input_docs/setup-vault-v2.md"
+]

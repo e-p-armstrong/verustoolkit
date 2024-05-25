@@ -1,0 +1,6 @@
+[
+    "What types of destinations are supported by the Transfer Destination construct?",
+    "The Transfer Destination construct supports various destination types, each serving specific purposes.",
+    "# Transfer DestinationThe Transfer Destination construct is a universal component used within the Verus blockchain network, designed to define destinations within blockchain operations comprehensively. This construct is crucial for specifying the end points in a variety of blockchain transactions, supporting a wide array of destination types to accommodate diverse blockchain functionalities and cross-chain interactions.## Core ConceptsTransfer Destination encapsulates key information necessary for blockchain transactions, including the destination type, destination-specific bytes, gateway information, and associated fees. It supports a flexible architecture for defining complex transaction paths, enhancing the blockchain's capability to handle sophisticated and multi-layered operations.### Destination TypesThe Transfer Destination construct supports various destination types, each serving specific purposes:",
+    "./raw_text_input_docs/transfer-destination.md"
+]

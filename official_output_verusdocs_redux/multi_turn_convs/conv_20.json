@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in registering a VerusID or subID, but I'm not sure about the costs. What is the cost of registering a.vETH subID?\n\n**AI Assistant:**\nThe cost of registering a.vETH subID is 0.01 vETH worth of Bridge.vETH. Would you like to know more about the registration process or how to get started with VerusIDs?\n\n**User:**\nThat's actually my next question. How can I register a VerusID or subID?\n\n**AI Assistant:**\nTo register a VerusID or subID, you can follow the instructions on the VerusID creation page. It's a straightforward process that will guide you through the necessary steps. If you need any help or have questions during the process, feel free to ask.\n\n**User:**\nI'm also interested in exploring the Verus-Ethereum Bridge and the associated tokens. What are the contract addresses for the Verus-Ethereum Bridge smart contract, VRSC token, and Bridge.vETH token on the Ethereum mainnet?\n\n**AI Assistant:**\nHere are the contract addresses you're looking for:\n\n* Verus-Ethereum Bridge smart contract: 0x71518580f36FeCEFfE0721F06bA4703218cD7F63\n* VRSC token: 0xBc2738BA63882891094C99e59a02141Ca1a1C36a\n* Bridge.vETH token: 0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2\n\nYou can use these addresses to interact with the Verus-Ethereum Bridge and the associated tokens on the Ethereum network. If you have any more questions or need further assistance, I'm here to help!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the cost of registering a.vETH subID?",
+            "The cost of registering a.vETH subID is 0.01 vETH worth of Bridge.vETH.",
+            "## .vETH subID\nRegister a .vETH subID to launch a currency with a 1-to-1 mapping of an ERC-20. The cost is 0.01 vETH worth of Bridge.vETH.\n\n[Learn here how to register a VerusID / subID.](/verusid/verusid-create/)\n\n## Contract addresses\n\n| What       |     Contract address      |\n| :------------------ | :----------------------------------------- |\n| Verus-Ethereum Bridge smart contract **mainnet**| [0x71518580f36FeCEFfE0721F06bA4703218cD7F63](https://etherscan.io/address/0x71518580f36FeCEFfE0721F06bA4703218cD7F63) |\n| **VRSC** token address| [0xBc2738BA63882891094C99E59a02141Ca1A1C36a](https://etherscan.io/token/0xbc2738ba63882891094c99e59a02141ca1a1c36a) |\n| **Bridge.vETH** token address| [0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2](https://etherscan.io/token/0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2) |",
+            "./raw_text_input_docs/README_eth-bridge.md"
+        ],
+        [
+            "How can I register a VerusID or subID?",
+            "You can register a VerusID or subID by following the instructions on the VerusID creation page.",
+            "## .vETH subID\nRegister a .vETH subID to launch a currency with a 1-to-1 mapping of an ERC-20. The cost is 0.01 vETH worth of Bridge.vETH.\n\n[Learn here how to register a VerusID / subID.](/verusid/verusid-create/)\n\n## Contract addresses\n\n| What       |     Contract address      |\n| :------------------ | :----------------------------------------- |\n| Verus-Ethereum Bridge smart contract **mainnet**| [0x71518580f36FeCEFfE0721F06bA4703218cD7F63](https://etherscan.io/address/0x71518580f36FeCEFfE0721F06bA4703218cD7F63) |\n| **VRSC** token address| [0xBc2738BA63882891094C99E59a02141Ca1A1C36a](https://etherscan.io/token/0xbc2738ba63882891094c99e59a02141ca1a1c36a) |\n| **Bridge.vETH** token address| [0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2](https://etherscan.io/token/0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2) |",
+            "./raw_text_input_docs/README_eth-bridge.md"
+        ],
+        [
+            "What are the contract addresses for the Verus-Ethereum Bridge smart contract, VRSC token, and Bridge.vETH token on the Ethereum mainnet?",
+            "The contract addresses are:\n\n* Verus-Ethereum Bridge smart contract: 0x71518580f36FeCEFfE0721F06bA4703218cD7F63\n* VRSC token: 0xBc2738BA63882891094C99e59a02141Ca1a1C36a\n* Bridge.vETH token: 0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2\n\nThese addresses can be used to interact with the Verus-Ethereum Bridge and the associated tokens on the Ethereum network.",
+            "## .vETH subID\nRegister a .vETH subID to launch a currency with a 1-to-1 mapping of an ERC-20. The cost is 0.01 vETH worth of Bridge.vETH.\n\n[Learn here how to register a VerusID / subID.](/verusid/verusid-create/)\n\n## Contract addresses\n\n| What       |     Contract address      |\n| :------------------ | :----------------------------------------- |\n| Verus-Ethereum Bridge smart contract **mainnet**| [0x71518580f36FeCEFfE0721F06bA4703218cD7F63](https://etherscan.io/address/0x71518580f36FeCEFfE0721F06bA4703218cD7F63) |\n| **VRSC** token address| [0xBc2738BA63882891094C99E59a02141Ca1A1C36a](https://etherscan.io/token/0xbc2738ba63882891094c99e59a02141ca1a1c36a) |\n| **Bridge.vETH** token address| [0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2](https://etherscan.io/token/0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2) |",
+            "./raw_text_input_docs/README_eth-bridge.md"
+        ]
+    ]
+]

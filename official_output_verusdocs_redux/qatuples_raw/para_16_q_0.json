@@ -1,0 +1,6 @@
+[
+    "How do notary witnesses ensure the security of notarizations in Verus?",
+    "Notary witnesses in Verus monitor notarizations and have the ability to auto-revoke their identities using the VerusID protocol if they were to sign for something they do not agree with. This prevents stolen key attacks, making notaries extremely hard targets to compromise.",
+    "The notary witnesses are also monitoring notarizations, and if they were to sign for something that they themselves do not agree with, they can auto-revoke their identities, using the VerusID protocol, which cannot be stopped by an attacker unless they have stolen both the keys for the notary ID and those for its revocation ID as well. This serves as a prevention for stolen key attacks, ensuring that notaries are extremely hard targets to compromise.## Bridge.vETH currency\nBridge.vETH is a 100% backed currency with 4 currencies in its reserves (VRSC, ETH, DAI, MKR), [read more on basket currencies](/currencies/). The Bridge.vETH currency function is to make the bridging of assets simple. From wherever side on the bridge you send it converts the fees that you need seamlessly.The value of Bridge.vETH increases relative to reserves when fees or interest are added to the reserves without there being new Bridge.vETH minted.",
+    "./raw_text_input_docs/README_eth-bridge.md"
+]

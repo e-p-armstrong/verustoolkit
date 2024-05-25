@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been reading a lot about Verus, and I'm really interested in understanding the underlying philosophy behind its approach to consensus. Can you tell me more about that?\n\n**AI Assistant:**\nThe core philosophy behind Verus's approach to consensus is that \"True consensus cannot be bought.\" This means that Verus believes that true consensus should not be influenced by external factors such as wealth or power, but rather should be achieved through a fair and decentralized process.\n\nThis philosophy is reflected in Verus's design, which aims to create a truly decentralized and democratic consensus mechanism that is resistant to manipulation and control by any single entity or group. By removing the influence of wealth and power, Verus seeks to create a more equitable and fair system that benefits all participants, rather than just a privileged few. Does that make sense? Do you have any further questions about Verus's approach to consensus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the core philosophy behind Verus's approach to consensus?",
+            "The core philosophy behind Verus's approach to consensus is that \"True consensus cannot be bought.\" This means that Verus believes that true consensus should not be influenced by external factors such as wealth or power, but rather should be achieved through a fair and decentralized process.",
+            "Privacy, Community, Power\nVerus consensus non emitur\n\u201cTrue consensus cannot be bought\u201d - anonymousMichael J. ToutonghiMichael F. Toutonghi\nJune 12, 2018Alex R. English",
+            "./raw_text_input_vision_paper/VerusVisionPaper"
+        ]
+    ]
+]

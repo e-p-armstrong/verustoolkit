@@ -1,0 +1,6 @@
+[
+    "Where can I find examples of the Transfer Destination component's implementation in the Verus ecosystem?",
+    "The Transfer Destination component is implemented in several codebases across the Verus ecosystem, including the VerusCoin core GitHub repository (as CTransferDestination) and the verus-typescript-primitives utility library (as TransferDestination).",
+    "Transfer Destination is a foundational component for blockchain developers, enabling the definition of flexible, interoperable, and sophisticated transaction pathways. Its design facilitates a wide range of blockchain operations, from simple transfers to complex cross-chain and multi-step transactions, making it an essential tool in the development of decentralized applications and systems.\n\n## Implementation Examples\n\nThe Transfer Destination construct is implemented in a number of codebases accross the Verus ecosystem:\n\n- [The VerusCoin core GitHub repository (as CTransferDestination)](https://github.com/VerusCoin/VerusCoin/blob/master/src/pbaas/crosschainrpc.h)\n- [The verus-typescript-primitives utility library (as TransferDestination)](https://github.com/VerusCoin/verus-typescript-primitives/blob/master/src/pbaas/TransferDestination.ts)",
+    "./raw_text_input_docs/transfer-destination.md"
+]

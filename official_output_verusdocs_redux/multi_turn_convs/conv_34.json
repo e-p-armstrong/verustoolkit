@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've learned a lot about VerusIDs, but I'm still curious about how to get started. How can I get a Verus address?\n\n**AI Assistant:**\nGetting a Verus address is easy! You can get a Verus address by downloading and using either Verus Mobile or Verus Desktop. Verus Mobile is available on the App Store and Play Store, while Verus Desktop can be downloaded for Windows, macOS, Linux, or Linux ARM from the Verus website. Once you have either Verus Mobile or Verus Desktop, you can create your own Verus address and start exploring the world of Verus!\n\n**User:**\nThat's great, I think I'll try Verus Mobile first. What are some of the features of Verus Mobile?\n\n**AI Assistant:**\nVerus Mobile is a powerful tool. One of its key features is that it allows you to bridge from Ethereum to Verus (or vice versa) within the application. This makes it easy to move assets between the two networks. Additionally, Verus Mobile enables MEV-resistant and low-cost conversions, which are part of Verus DeFi. This means you can take advantage of DeFi features like decentralized finance and trading without breaking the bank. Overall, Verus Mobile is a great way to get started with Verus and explore its many features.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I get a Verus address?",
+            "You can get a Verus address by downloading and using either Verus Mobile or Verus Desktop. Verus Mobile is available on the App Store and Play Store, while Verus Desktop can be downloaded for Windows, macOS, Linux, or Linux ARM from the Verus website.",
+            "# Get a Verus address\nThere are a few ways to get a Verus address on desktop and on mobile.\n\n## Verus Mobile\nDownload Verus Mobile from the [App Store](https://apps.apple.com/en/app/verus-mobile/id6447361908) or [Play Store](https://play.google.com/store/apps/details?id=org.autonomoussoftwarefoundation.verusmobile.android&hl=en&gl=US)\n\nUse Verus Mobile to bridge from Ethereum to Verus (or vice versa) all within the application. And use it for MEV-resistant and low-cost conversions: [more on Verus DeFi](/sendcurrency)\n\n## Verus Desktop\nDownload Verus Desktop for Windows, macOS, Linux or Linux ARM [here](https://verus.io/wallet).\n\nRun a full node (native mode) to experience all protocol features.",
+            "./raw_text_input_docs/getwallet.md"
+        ],
+        [
+            "What are some of the features of Verus Mobile?",
+            "Verus Mobile allows you to bridge from Ethereum to Verus (or vice versa) within the application. It also enables MEV-resistant and low-cost conversions, which are part of Verus DeFi.",
+            "# Get a Verus address\nThere are a few ways to get a Verus address on desktop and on mobile.\n\n## Verus Mobile\nDownload Verus Mobile from the [App Store](https://apps.apple.com/en/app/verus-mobile/id6447361908) or [Play Store](https://play.google.com/store/apps/details?id=org.autonomoussoftwarefoundation.verusmobile.android&hl=en&gl=US)\n\nUse Verus Mobile to bridge from Ethereum to Verus (or vice versa) all within the application. And use it for MEV-resistant and low-cost conversions: [more on Verus DeFi](/sendcurrency)\n\n## Verus Desktop\nDownload Verus Desktop for Windows, macOS, Linux or Linux ARM [here](https://verus.io/wallet).\n\nRun a full node (native mode) to experience all protocol features.",
+            "./raw_text_input_docs/getwallet.md"
+        ]
+    ]
+]

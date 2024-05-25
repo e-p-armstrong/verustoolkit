@@ -1,0 +1,6 @@
+[
+    "What is the benefit of using VerusID multisig?",
+    "The benefit of using VerusID multisig is that multiple organizations or people can manage a single VerusID, allowing for shared spending or signing ability.",
+    "## Signatures\nCreate unforgable, verifiable signatures with VerusID. Sign files, hashes and messages. Use the protocol to verify those signatures for free.\n\n## Multisig\nMultiple VerusIDs can have spending or signing ability of one VerusID. This means that multiple organizations or people can manage a VerusID.\n\n## Messages\nSend private messages to VerusIDs.",
+    "./raw_text_input_docs/README_addresses.md"
+]

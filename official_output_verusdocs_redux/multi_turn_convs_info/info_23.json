@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How can I launch a new currency or token using decentralized crowdfund mechanisms in Verus?",
+            "In Verus, you can launch a new currency or token using decentralized crowdfund mechanisms. This involves setting required minimum levels of worldwide participation in your preferred currencies. If the minimums are not met by the start time of your currency or token, all participants will automatically get a refund of all their preconversions, less the network fees.",
+            "## Crowdfund mechanisms\nAll currencies can be launched through decentralized crowdfund mechanisms. [Set required minimum levels](/currencies/launch-currency.html#minpreconversion) of worldwide participation in your preferred currencies. If by the start time of your currency or token, minimums are not met, all participants will automatically get a refund of all of their preconversions, less the network fees.\n\nThe launch options also provide for maximum participation in one or more currencies, pre-launch discounts, price neutral [pre-allocations](launch-currency.html#preallocations) to select VerusIDs that increase the reserve ratio to issue currencies, similarly price neutral [carve-outs of proceeds](launch-currency.html#prelaunchcarveout), and [pre-launch discounts](launch-currency.html#prelaunchdiscount) for early participants. Using VerusIDs, launches can also include vesting schedules in the pre-allocations as well.\n\n#",
+            "./raw_text_input_docs/README_currencies.md"
+        ],
+        [
+            "What are some of the launch options available for crowdfunding a new currency or token in Verus?",
+            "Verus provides various launch options for crowdfunding a new currency or token, including:\n\n1. Setting maximum participation in one or more currencies.\n2. Offering pre-launch discounts to early participants.\n3. Allowing price-neutral pre-allocations to select VerusIDs, which increase the reserve ratio to issue currencies.\n4. Providing price-neutral carve-outs of proceeds.\n5. Including vesting schedules in pre-allocations using VerusIDs.",
+            "## Crowdfund mechanisms\nAll currencies can be launched through decentralized crowdfund mechanisms. [Set required minimum levels](/currencies/launch-currency.html#minpreconversion) of worldwide participation in your preferred currencies. If by the start time of your currency or token, minimums are not met, all participants will automatically get a refund of all of their preconversions, less the network fees.\n\nThe launch options also provide for maximum participation in one or more currencies, pre-launch discounts, price neutral [pre-allocations](launch-currency.html#preallocations) to select VerusIDs that increase the reserve ratio to issue currencies, similarly price neutral [carve-outs of proceeds](launch-currency.html#prelaunchcarveout), and [pre-launch discounts](launch-currency.html#prelaunchdiscount) for early participants. Using VerusIDs, launches can also include vesting schedules in the pre-allocations as well.\n\n#",
+            "./raw_text_input_docs/README_currencies.md"
+        ],
+        [
+            "What happens if the minimum participation levels are not met during a crowdfund launch in Verus?",
+            "If the minimum participation levels are not met by the start time of your currency or token, all participants will automatically get a refund of all their preconversions, less the network fees. This ensures that participants are not left with unwanted or unsold tokens or currencies.",
+            "## Crowdfund mechanisms\nAll currencies can be launched through decentralized crowdfund mechanisms. [Set required minimum levels](/currencies/launch-currency.html#minpreconversion) of worldwide participation in your preferred currencies. If by the start time of your currency or token, minimums are not met, all participants will automatically get a refund of all of their preconversions, less the network fees.\n\nThe launch options also provide for maximum participation in one or more currencies, pre-launch discounts, price neutral [pre-allocations](launch-currency.html#preallocations) to select VerusIDs that increase the reserve ratio to issue currencies, similarly price neutral [carve-outs of proceeds](launch-currency.html#prelaunchcarveout), and [pre-launch discounts](launch-currency.html#prelaunchdiscount) for early participants. Using VerusIDs, launches can also include vesting schedules in the pre-allocations as well.\n\n#",
+            "./raw_text_input_docs/README_currencies.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "546ac965-f056-4eec-9768-a99c488ac4f6"
+]

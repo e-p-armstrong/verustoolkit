@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I get a Verus address?",
+            "You can get a Verus address by downloading and using either Verus Mobile or Verus Desktop. Verus Mobile is available on the App Store and Play Store, while Verus Desktop can be downloaded for Windows, macOS, Linux, or Linux ARM from the Verus website.",
+            "# Get a Verus address\nThere are a few ways to get a Verus address on desktop and on mobile.\n\n## Verus Mobile\nDownload Verus Mobile from the [App Store](https://apps.apple.com/en/app/verus-mobile/id6447361908) or [Play Store](https://play.google.com/store/apps/details?id=org.autonomoussoftwarefoundation.verusmobile.android&hl=en&gl=US)\n\nUse Verus Mobile to bridge from Ethereum to Verus (or vice versa) all within the application. And use it for MEV-resistant and low-cost conversions: [more on Verus DeFi](/sendcurrency)\n\n## Verus Desktop\nDownload Verus Desktop for Windows, macOS, Linux or Linux ARM [here](https://verus.io/wallet).\n\nRun a full node (native mode) to experience all protocol features.",
+            "./raw_text_input_docs/getwallet.md"
+        ],
+        [
+            "What are some of the features of Verus Mobile?",
+            "Verus Mobile allows you to bridge from Ethereum to Verus (or vice versa) within the application. It also enables MEV-resistant and low-cost conversions, which are part of Verus DeFi.",
+            "# Get a Verus address\nThere are a few ways to get a Verus address on desktop and on mobile.\n\n## Verus Mobile\nDownload Verus Mobile from the [App Store](https://apps.apple.com/en/app/verus-mobile/id6447361908) or [Play Store](https://play.google.com/store/apps/details?id=org.autonomoussoftwarefoundation.verusmobile.android&hl=en&gl=US)\n\nUse Verus Mobile to bridge from Ethereum to Verus (or vice versa) all within the application. And use it for MEV-resistant and low-cost conversions: [more on Verus DeFi](/sendcurrency)\n\n## Verus Desktop\nDownload Verus Desktop for Windows, macOS, Linux or Linux ARM [here](https://verus.io/wallet).\n\nRun a full node (native mode) to experience all protocol features.",
+            "./raw_text_input_docs/getwallet.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ee193509-0eb2-498e-8bb4-e7563107054e"
+]

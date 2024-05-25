@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I need some help with unlocking in Verus. What do I need to know to request an unlock?\n\n**AI Assistant:**\nTo request an unlock in Verus, you need to know the current block height of the blockchain. That's the key piece of information you'll need to provide.\n\n**User:**\nOkay, got it. So how do I specify the block height when requesting an unlock?\n\n**AI Assistant:**\nWhen requesting an unlock, you can specify the block height under \"unlockatblock\" by filling in the current block height minus 1. Alternatively, you can fill in 0 to immediately request an unlock. Just to clarify, if you want to unlock at the current block height, you'd set \"unlockatblock\" to the current height minus 1.\n\n**User:**\nAlright, that makes sense. How can I request an unlock in Verus using the command line interface?\n\n**AI Assistant:**\nYou can request an unlock in Verus by running the `setidentitytimelock` command with the appropriate parameters. For example:\n```\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\nThis command requests an unlock for the identity \"myid@\" at the current block height (by setting \"unlockatblock\" to 0). Just replace \"myid@\" with your actual identity, and you're good to go! Do you have any more questions about unlocking in Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What do I need to know to request an unlock in Verus?",
+            "To request an unlock in Verus, you need to know the current block height of the blockchain.",
+            "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+            "./raw_text_input_docs/setup-vault-v2.md"
+        ],
+        [
+            "How do I specify the block height when requesting an unlock in Verus?",
+            "When requesting an unlock, you can specify the block height under \"unlockatblock\" by filling in the current block height minus 1. Alternatively, you can fill in 0 to immediately request an unlock.",
+            "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+            "./raw_text_input_docs/setup-vault-v2.md"
+        ],
+        [
+            "How can I request an unlock in Verus using the command line interface?",
+            "You can request an unlock in Verus by running the `setidentitytimelock` command with the appropriate parameters. For example:\n```\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\nThis command requests an unlock for the identity \"myid@\" at the current block height (by setting \"unlockatblock\" to 0).",
+            "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+            "./raw_text_input_docs/setup-vault-v2.md"
+        ]
+    ]
+]

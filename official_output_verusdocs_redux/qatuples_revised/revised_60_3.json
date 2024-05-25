@@ -1,0 +1,6 @@
+[
+    "How can I claim refunds from the Verus-Ethereum Bridge?",
+    "To claim refunds from the Verus-Ethereum Bridge, you can follow these steps: [provide the steps or a clear link to the guide].",
+    "# Overview\n\n| Guides | \n| :----------------------- |\n| [Set up verus-cli for beginners](/guides/setup-cli/) | \n| [Set up Verus Vault (flags)](/guides/setup-vault/) | \n| [Set up Verus Vault (easy)](/guides/setup-vault-v2/) | \n| [Divert staking rewards to different wallet](/guides/divert-rewards/)   |\n| [Claim refunds from Verus-Ethereum Bridge](/guides/refunds/) |\n| [Get Verus address](/guides/getwallet/)",
+    "./raw_text_input_docs/README_guides.md"
+]
