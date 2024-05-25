@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are some key features and improvements of the Verus PBaaS platform, and how does the Verus/Ethereum Bridge work?",
+            "The Verus PBaaS platform has several key features and improvements that enable high-performance and high-transaction bandwidth for each chain. Some of these features include caching and performance improvements for advanced PBaaS functions, which allow for high transaction throughput and cross-chain transactions even under load.\n\nOne of the notable features of the Verus PBaaS platform is the Verus/Ethereum Bridge. This bridge allows for the transfer of assets between the Verus and Ethereum blockchains. The bridge is designed to be highly performant and scalable, with features such as bridgekeeping, Ethereum Gas price tracking, and reward incentives for miners and stakers.\n\nThe Verus/Ethereum Bridge allows users to move assets between the two blockchains, with rewards for bridgekeeping delivered on both the Verus and Ethereum blockchains. The bridge also includes a liquidity basket launch, which allows users to hold and earn fees on a basket of assets including vETH, USDC, and VRSCTEST. The VRSCTEST token is used as a fee converter for all cross-chain transactions between the Ethereum and Verus testnets.\n\nThe bridge can be accessed through a website, where users can move assets between the two blockchains and participate in the liquidity basket launch. Overall, the Verus/Ethereum Bridge is a powerful tool for facilitating cross-chain transactions and enables new use cases for users of both the Verus and Ethereum blockchains.",
+            "### For testnet, v0.9.6 adds the following:\n- Caching and performance improvements for advanced PBaaS functions, providing enough performance to keep high transaction bandwidth and/or cross-chain throughput under load for each chain.\n- Most hardening required for the mainnet release.\n- **The Verus/Ethereum Bridge!** v0.9.6 includes the upgraded Ethereum bridge to the Goerli testnet live with all bridgekeeping, Ethereum Gas price tracking, and reward incentive capabilities for miners and stakers. Rewards for bridgekeeping are delivered both on Verus and on the Ethereum blockchain. Access the Ethereum bridge website (https://ethtest.verus.services) to move over some Goerli Ethereum or USDC, and participate in the Bridge.vETH liquidity basket launch to hold and earn fees on a basket with vETH, USDC, and VRSCTEST used as the fee converter for all cross chain transactions between Ethereum\u2019s Goerli and VRSC testnets.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "cee6d5da-2982-4b2d-b2c8-6fec3bf22457"
+]

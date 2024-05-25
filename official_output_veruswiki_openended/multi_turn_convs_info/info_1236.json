@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the significance of setting `proofprotocol` to 2 (PROOF_CHAINID) when defining a new currency, and how does it affect the ability to mint new coins?",
+            "When defining a new currency using the `definecurrency` command in Verus, the `proofprotocol` parameter determines the consensus mechanism used to validate transactions on the chain. In the example provided, `proofprotocol` is set to 2, which corresponds to PROOF_CHAINID.\n\nPROOF_CHAINID is a consensus mechanism that allows the controller of the chain ID to mint new coins. This means that the entity controlling the chain ID has the authority to create new coins and add them to the circulating supply.\n\nTo illustrate this, let's break down the `definecurrency` command:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn this command, we're defining a new currency called \"mycoin\" on the VRSCTEST chain. The `proofprotocol` parameter is set to 2, which enables PROOF_CHAINID. This allows the controller of the chain ID to mint new coins.\n\nTo mint new coins, the controller can use the `sendcurrency` command, like this:\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\nIn this example, the controller is minting 10,000 new coins of \"mycoin\" and sending them to the address \"mike@\". The `mintnew` parameter is set to 1, indicating that new coins should be minted.\n\nIn summary, setting `proofprotocol` to 2 (PROOF_CHAINID) when defining a new currency enables the controller of the chain ID to mint new coins, providing a mechanism for centralized control over the currency's supply.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "287b8e9a-4a48-45f1-96a4-f92d08dbd838"
+]

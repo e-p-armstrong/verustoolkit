@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the Bridgekeeper and the cross-chain witness and notarization protocol in Verus, and how do they prevent potential attacks?",
+            "In Verus, the Bridgekeeper is a feature that enables permissionless bridge notarization, which allows for the secure transfer of assets between different blockchain networks. This feature is available in the graphical user interface (GUI) on the mining page and will also be available as a Node application for command-line interface (CLI) users.\n\nThe cross-chain witness and notarization protocol is a critical component of Verus's bridge functionality. In its enhanced form, as described in RC2, this protocol ensures that any notarization to be confirmed must first be publicly posted, allowing for potential invalidity to be proven. Only after this public posting can the notarization be confirmed.\n\nThis protocol enhancement was made to prevent a specific attack vector. In the previous protocol, a witnessed notarization could be posted to a chain and accepted when first seen, which created a vulnerability. An attacker could steal notary or witness keys and combine them with a 51% combined hash/stake attack to manipulate the network. By requiring notarizations to be publicly posted before confirmation, Verus's protocol ensures that notaries can detect and prevent such attacks. If a notary recognizes a signature on the chain that they don't agree with (likely due to a stolen key), they can flag it as invalid, preventing the attack from succeeding.\n\nIn summary, the Bridgekeeper and cross-chain witness and notarization protocol work together to enable secure, trustless, and permissionless asset transfers between blockchain networks, while preventing potential attacks and ensuring the integrity of the network.",
+            "- Bridgekeeper is now available for permissionless bridge notarization and selectable in the GUI on the mining page. For CLI, we will make a Node application available for testing in the next few days.\n- RC1 cross-chain witness and notarization protocol enhanced in RC2 as follows:\n - In RC2, any notarization to be confirmed must be first posted publicly to allow for potential to prove invalidity, and then later confirmed. In the prior protocol, a witnessed notarization could be posted to a chain and accepted when first seen. Upon analysis and discussion with @allbits and others, we realized that the attack vector of even stolen notary/witness keys combined with an in-secret 51% combined hash/stake attack could be prevented if we changed the protocol to first require posting the ready to finalize data and allow notaries who recognize that there is a signature on chain for something they don\u2019t agree with (likely stolen key), to simpl",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b2564807-a400-47be-bcb1-2cf024bf3b90"
+]

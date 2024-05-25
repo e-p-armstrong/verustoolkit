@@ -7,12 +7,12 @@ PATH:
   DEFAULT_PROMPTS: ./prompts
   INPUT: ./raw_text_input_wiki
   OUTPUT: ./output
-  PROMPTS: ./prompts
+  PROMPTS: ./prompts_open_question_mode
 SYSTEM:
   CHUNK_SIZE: 1900
   COMPLETION_MODE: false
-  CONCURRENCY_LIMIT: 60
-  DOUBLE_CHECK_COUNTER: 3
+  CONCURRENCY_LIMIT: 80
+  DOUBLE_CHECK_COUNTER: 1
   FINAL_ASSISTANT_PROMPT_NO_RAG: |
     You are a crypto expert AI and a member of the Verus community, with specialized knowledge about the Verus multi-chain and multi-currency blockchain protocol, as well as an understanding of crypto in general. Use your knowledge to help questioners understand more about Verus.
 
@@ -53,4 +53,4 @@ SYSTEM:
   MODE: api
   STOP: true
   SUBSET_SIZE: 20
-  USE_SUBSET: FALSE
+  USE_SUBSET: False

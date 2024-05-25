@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do you define a new currency on the Verus network and enable the controller of the chain ID to mint new coins?",
+            "To define a new currency on the Verus network, you can use the `definecurrency` command. This command allows you to specify the properties of the new currency, such as its name, options, proof protocol, currencies it can be converted from, minimum pre-conversion amounts, and initial supply.\n\nHere is an example of how to define a new currency called \"mycoin\" on the VRSCTEST chain:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn this example, the `proofprotocol` is set to 2, which corresponds to PROOF_CHAINID. This means that the controller of the chain ID will have the ability to mint new coins.\n\nTo mint new coins, the controller of the chain ID can use the `sendcurrency` command with the `mintnew` option. Here is an example of how to mint 10,000 new \"mycoin\" coins and send them to the address \"mike@\":\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\nThis command will mint 10,000 new \"mycoin\" coins and send them to the address \"mike@\". The `mintnew` option specifies that the coins should be minted, and the `amount` option specifies the number of coins to mint.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9a59ad82-135f-4968-b951-6a95fc754bea"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are some of the key features of currencies on the Verus network, and how do they interact with other blockchain networks?",
+            "On the Verus network, currencies can be launched with a range of capabilities, including the ability to accept multiple currencies and fractional reserve capabilities. One of the key features of the Verus network is its import/export protocol, which makes it easy to integrate with other blockchain networks and enables the creation of external bridges. These bridges allow for automatic sending and receiving of Verus network tokens between Verus and other blockchain networks, such as ETH/ERC20 tokens.\n\nIn the future, the Verus network will also enable dynamic merge mining and multi-chain technology, which will allow multiple Verus network blockchains to operate independently while still being merge mineable on a single hash. This means that up to 20 Verus network blockchains can be powered simultaneously, earning rewards and providing fractional currency capabilities for both on-chain tokens and native zk-SNARK supporting currencies.\n\nIt's also important to note that sending and converting currency on the Verus network is a key feature, and that currencies can be sent between Verus and other blockchain networks, such as ETH, where they can be expressed as Verus currencies on the Verus network and exposed automatically on ETH as an ERC20 token.",
+            "Currencies can be launched to accept a range of other currencies and with or without fractional reserve capabilities. Verus import/export protocol was designed to make integration with other block chains provable and easy, and there are already external bridges in progress that expect to enable automatic send/receive of any Verus network token between Verus and ETH/ERC20 tokens, where currencies can be sent between Verus and ETH, expressed as Verus currencies on the Verus network, and exposed automatically on ETH as an ERC20 token.# Preparing for Multi-chain, Dynamic Merge Mining\nWhile this 0.7.1 testnet enables on-chain token currency definition, the same advances will soon be available on the Verus merge mining and multi-chain technology which was running on testnet last year. When enabled, this will make it possible for Verus network chains to operate fully independently, yet be dynamically merge mineable along with Verus and up to 20 other Verus network blockchains on a single hash, earning rewards and powering all chains simultaneously. All network blockchains will provide the same fractional currency capabilities, both for on-chain tokens as well as native zk-SNARK supporting currencies as well.## Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "34c4250f-ffd7-4f39-9aed-ef1cf7f59a42"
+]

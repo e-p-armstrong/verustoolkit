@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does the Verus ecosystem incentivize the creation of new identities, and who benefits from this process?",
+            "In the Verus ecosystem, the creation of new identities is incentivized through a referral system that rewards not only the referrer but also their referrers, up to a certain level. Here's how it works:\n\nWhen a new identity is created, a certain amount of VRSC (the native cryptocurrency of Verus) is allocated to the referrer's ID, their referrer's ID, and so on, up to a certain level. Specifically, 20 VRSC is allocated to each of these IDs. This creates a multi-level referral system that encourages users to invite others to create new identities on the platform.\n\nIn addition to the referrers, the miner of the block in which the ID is mined also receives a reward of 20 VRSC. This incentivizes miners to participate in the network and validate transactions, including those related to identity creation.\n\nIt's worth noting that 100% of all funds that are not paid to referrers go to miners or stakers of the blockchain. This means that the Verus ecosystem is designed to reward those who contribute to its growth and security, whether through referrals, mining, or staking.\n\nOverall, the Verus ecosystem's approach to incentivizing identity creation is designed to promote adoption, security, and decentralization, while also rewarding users for their participation in the network.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "723d9857-69f2-4d56-8dd8-7512e477767e"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are the necessary steps and files needed to change Verus-Desktop from Lite Mode to Native Mode, and where can I find the standard locations for Verus files on different operating systems?",
+            "To change Verus-Desktop from Lite Mode to Native Mode, you will need to follow a few important steps and have some necessary files. Here's a step-by-step guide to help you through the process.\n\n**Standard Locations for Verus Files:**\nBefore we dive into the process, it's essential to know where to find the Verus files on your system. The standard locations for Verus files vary depending on your operating system:\n\n* On Linux, you can find the files in `~/.komodo/VRSC`.\n* On Mac OS, the files are located in `~/Library/Application Support/Komodo/VRSC`.\n* On Windows 10, you can find the files in `%AppData%\\Roaming\\Komodo\\VRSC\\`.\n* If you're unsure about the location, you can always click `Help` and then `Show Verus data folder (default)` in Verus Desktop to find the files.\n\n**Necessary Files and Links:**\nTo complete the process, you'll need to download the Verus Bootstrap from [Link 1: Download Verus Bootstrap](https://bootstrap.verus.io). Additionally, you'll need to import your Lite wallet address in Verus Desktop native using the guide from [Link 2: Import Lite wallet address in Verus Desktop native](https://wiki.verus.io/#!how-to/how-to_convert-seed-to-wif.md). Finally, you can verify signatures using [Link 3: Checking the signature](https://verus.io/verify-signatures).\n\n**Conversion Process:**\nOnce you have the necessary files and links, you can follow the guides to convert your Lite wallet to Native Mode. This process involves importing your Lite wallet address, downloading the Verus Bootstrap, and verifying signatures. Make sure to read the guides carefully and follow the instructions to avoid any errors or issues.\n\nBy following these steps and having the necessary files and links, you should be able to successfully change Verus-Desktop from Lite Mode to Native Mode.",
+            "# Guide to change Verus-Desktop from Lite Mode to Native Mode.Attention: Read completely before use.#### Important General Information### Verus `Wallet.dat`, Chaindata & `VRSC.conf` standard locations\n * Linux:\t\t`~/.komodo/VRSC`\n * Mac OS: \t`~/Library/Application Support/Komodo/VRSC`\n * Windows 10: \t`%AppData%\\Roaming\\Komodo\\VRSC\\`\n * OS independent through Verus Desktop: Click `help`, `Show Verus data folder (default)`#### Necessary files & links:Link 1: [Download Verus Bootstrap](https://bootstrap.verus.io)\nLink 2: [Import Lite wallet address in Verus Desktop native](https://wiki.verus.io/#!how-to/how-to_convert-seed-to-wif.md)\nLink 3: [Checking the signature](https://verus.io/verify-signatures)",
+            "./raw_text_input_wiki/how-to_lite_to_native.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "418360a1-4b5f-4596-b0e4-0def28f0acf0"
+]

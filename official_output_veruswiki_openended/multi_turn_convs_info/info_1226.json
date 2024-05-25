@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are OPTION_GATEWAY_NAMECONTROLLER and OPTION_NFT_TOKEN, and how do they relate to gateways and ID registration in the Verus ecosystem?",
+            "In the Verus ecosystem, OPTION_GATEWAY_NAMECONTROLLER and OPTION_NFT_TOKEN are two important options that play a crucial role in gateways and ID registration.\n\nOPTION_GATEWAY_NAMECONTROLLER, with a value of 1024, is an option that determines where top-level ID and currency registration occur. When this option is not set on a gateway, the top-level ID and currency registration happen on the launch chain. This means that if a gateway does not have this option set, it will default to using the launch chain for ID and currency registration.\n\nOn the other hand, OPTION_NFT_TOKEN, with a value of 2048, is an option that enables the creation of a single satoshi NFT (Non-Fungible Token) token. This token tokenizes control over the root ID, which means that it gives the owner of the token control over the root ID and its associated assets. This token is a unique digital asset that can be owned and transferred, and it represents a unique item or asset in the Verus ecosystem.\n\nIn summary, OPTION_GATEWAY_NAMECONTROLLER determines where ID and currency registration occur, while OPTION_NFT_TOKEN enables the creation of a unique digital asset that tokenizes control over the root ID. Both options are important for gateways and ID registration in the Verus ecosystem, and they provide flexibility and control for users and developers.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "53bcec7e-fc46-4344-ad2f-bec7f8c040c5"
+]

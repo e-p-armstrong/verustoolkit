@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I park a conversion of VRSCTEST to a new token, and later create a new token that can be converted to with either the new token or VRSCTEST, using the Verus command line?",
+            "To park a conversion of VRSCTEST to a new token, you can use the `sendcurrency` command with the `preconvert` option. This will effectively park your conversion until the new token launches. Here's an example of how to do this:\n\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"your_address@\",\"convertto\":\"new_token\",\"preconvert\":1,\"amount\":100}]'\n```\n\nThis command will park your conversion of 100 VRSCTEST to `new_token` until `new_token` launches. Once `new_token` launches, you will either find the converted amount of `new_token` in your wallet, or you will have your original VRSCTEST amount returned.\n\nLater, if you want to create a new token called `mycoin` that can be converted to with either `new_token` or VRSCTEST, you can use the `definecurrency` command. Here's an example of how to do this:\n\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"VRSCTEST\", \"new_token\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\n\nThis command defines a new token named `mycoin`. The `currencies` option specifies that `mycoin` can be converted to with either VRSCTEST or `new_token`. The `minpreconversion` option specifies the minimum amounts of VRSCTEST and `new_token` needed to convert to `mycoin`, respectively. The `initialsupply` option sets the initial supply of `mycoin` to 20,000 units.\n\nNote that the `proofprotocol` option is set to 2, which means that the controller of the chain ID can mint new coins.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "1d4207f4-4201-42cb-83bd-36641bc5333a"
+]

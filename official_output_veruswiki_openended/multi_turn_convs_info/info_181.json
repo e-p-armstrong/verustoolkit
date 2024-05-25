@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I use the `getcurrencyconverters` API to retrieve a list of currencies that meet certain reserve requirements?",
+            "The `getcurrencyconverters` API is a tool that allows you to retrieve a list of currencies that meet specific reserve requirements. To use this API, you need to run a command in the format `verus -chain=VRSCTEST getcurrencyconverters <currency1> <currency2>... <currencyN>`.\n\nHere's what the API does:\n\n* It retrieves a list of all currencies that have at least 1000 VRSC in reserve.\n* It filters out currencies that have a VRSC reserve ratio of less than 10%.\n* It only includes currencies that have all listed currencies as reserves.\n\nFor example, if you want to find all currencies that have BTC and ETH markets with sufficient liquidity, you can run the command `verus -chain=VRSCTEST getcurrencyconverters btc eth`. This will return a list of all currencies that have BTC and ETH markets at or above the liquidity threshold.\n\nBy using the `getcurrencyconverters` API, you can easily find currencies that meet your specific reserve requirements, making it a powerful tool for managing your cryptocurrency assets.",
+            "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "dc597704-d3ae-4ca1-a100-8e673cb62213"
+]

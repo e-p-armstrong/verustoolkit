@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are some potential applications of Verus ID signatures, and what makes Verus IDs unique in the context of blockchain ID implementations?",
+            "Verus ID signatures have a wide range of potential applications across various industries. With Verus ID signatures, journalists can sign their content, such as photos and videos, to establish a reputation for authenticity and counter the potential for deep-fakes. Open source projects can create their own identities and digitally sign their binary releases, ensuring that the downloaded files are verified and authentic. Additionally, signatures can be used to attest to the validity of one party by another, and can be applied to physical entry systems, workflow applications, and new earning opportunities.\n\nWhat makes Verus IDs unique is that they are a fully functional blockchain protocol, not just an ID system. Unlike most blockchain ID implementations, there is no corporation involved in the protocol, making it a decentralized and community-driven solution. This provides plenty of opportunities for identity applications, and the potential uses of Verus ID signatures are vast and varied.\n\nIn essence, Verus ID signatures provide a way to establish trust, authenticity, and verification in a decentralized manner, which can have a significant impact on various industries and use cases.",
+            "For example, using Verus ID signatures, it\u2019s possible for any journalist anywhere to sign photos, videos, and content, establish a reputation for authenticity, and counter the potential for deep-fakes to make the truth harder to find. Open source projects can now create their own identities and digitally sign their binary releases, ensuring that not only can a file be verified by hash as the one downloaded from a particular server, but by signature as the actual file initially signed by the developer or release engineer. Signatures also form the basis for any attestation of one party to the validity of another. In fact, there are so many applications for digital signatures, from things listed already, to physical entry systems, to workflow applications, to new earning opportunities that a full discussion of use cases would overwhelm these release notes.In any case, we are happy to release digital signatures for all, and we hope you enjoy using this new, simple capability, maybe even think of a new use case you\u2019d like to pursue yourself as a business opportunity on the Verus Network!# Verus ID\nVerus IDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. Verus IDs provide plenty of opportunity for identity applications. Specifically, Verus ID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3f3b247b-1c11-46ab-939c-f0cefb98ea42"
+]

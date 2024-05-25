@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `currencyconverters` API in Verus, and how can it be used to retrieve a list of currencies that meet specific reserve requirements?",
+            "The `currencyconverters` API in Verus is a powerful tool that allows users to retrieve a list of currencies that meet certain reserve requirements. Specifically, it returns all currencies that have at least 1000 VRSC in reserve, have a reserve ratio of greater than 10% VRSC, and have all listed currencies as reserves.\n\nTo use this API, you can run a command in the format `verus -chain=VRSCTEST getcurrencyconverters <currency1> <currency2>`, where `<currency1>` and `<currency2>` are the currencies you want to query. For example, if you want to retrieve all currencies that have BTC/ETH markets at or above the liquidity threshold, you can run the command `verus -chain=VRSCTEST getcurrencyconverters btc eth`.\n\nThe `currencyconverters` API is useful for users who want to identify currencies that have a strong reserve backing and are actively traded on the market. By filtering currencies based on their reserve requirements, users can make more informed decisions about which currencies to invest in or use for transactions.",
+            "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b0f53d4e-994e-484b-9c2f-df3714aa4e27"
+]

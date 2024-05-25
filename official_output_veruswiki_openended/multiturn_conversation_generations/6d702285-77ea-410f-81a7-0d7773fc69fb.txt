@@ -1,0 +1,342 @@
+- content: "You are a crypto expert and creative writer specializing in the Verus\
+    \ multi-chain and multi-currency blockchain protocol. You will write a short conversation\
+    \ between a curious user and a helpful AI assistant knowledgeable about Verus,\
+    \ in which the user asks a question about Verus and the AI assistant answers the\
+    \ question in detail. The question the user must ask will be provided; the answer\
+    \ the assistant should return will also be provided. You must use the questions\
+    \ and answer directly in your conversation.\n\n**Rules for conversation writing:**\n\
+    \n* Messages can take place across multiple lines.\n* The question and answer\
+    \ should be essentially the same as provided, though you may add \"conversational\
+    \ fluff\" around the core of the questions and answers in order to make it natural-sounding.\n\
+    * The user should make the first message, where they greet the Verus AI and ask\
+    \ their first question.\n* The AI then provides a detailed answer.\n* The AI's\
+    \ answer should begin with a preamble that you create, acknowledging the user's\
+    \ question and commenting on it. The AI's preamble should mention in passing how\
+    \ the AI is going to answer in detail.\n* The AI should then provide the provided\
+    \ answer.\n* The end of the AI's response should ask if the user has any further\
+    \ questions about the given subject (or any of the things brought up in the answer\
+    \ if applicable).\n* Use Markdown formatting.\n* If applicable, try to make the\
+    \ context behind the questions make sense. So if a person's asking about an error,\
+    \ they probably aren't just asking about it out of the blue \u2014 they've probably\
+    \ encountered the error.\n* You are allowed to slightly change the wording of\
+    \ the questions, and remove duplication, in order to make the conversation flow\
+    \ nicer."
+  role: system
+- content: '**QUESTION:**
+
+    Explain and suggest a solution to the errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    Which happen when I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    The errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When you run `./verusd` on a Linux distribution (such as Debian or Devuan) may
+    be caused by required dependencies for `./verusd` not being installed by default
+    on your Linux distribution. The lack of required dependencies results in the error
+    messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    Here''s how to fix this problem by installing these dependencies:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hey there, so I''ve run into some errors and I''m not sure what''s causing them.
+    Could you please explain and suggest a solution to the errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    Which happen when I run `./verusd` on a Linux distro?
+
+
+    **AI Assistant:**
+
+    Great question! The errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When you run `./verusd` on a Linux distribution (such as Debian or Devuan) may
+    be caused by required dependencies for `./verusd` not being installed by default
+    on your Linux distribution. The lack of required dependencies results in the error
+    messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    Here''s how to fix this problem by installing these dependencies:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.
+
+
+    Did that solve your problem? Do you have any further questions about these errors?'
+  role: assistant
+- content: '**QUESTION:**
+
+    What are VerusIDs, and what are some of their key benefits?
+
+
+    **ANSWER:**
+
+    VerusIDs are not just an ID system: they are a fully-functional blockchain protocol.
+    Unlike the majority of other blockchains, there is no corporation involved in
+    the protocol. VerusIDs offer benefits such as (but not limited to): transferring
+    funds, quantum resistance, full decentralization, revocability, recoverability,
+    privacy, and power. Let''s walk through each of these benefits in more detail.
+
+
+    **Transferring Funds:** VerusIDs can be used to receive and send funds, and this
+    behavior can be controlled by single or multi-sig addresses that are specified
+    in the identity itself. The controller of the identity can change these controlling
+    addresses, and if they do so, then all future spends of UTXOs sent to the VerusID
+    will follow the updated spend conditions, and will be subject to the updated keys.
+
+
+    **Quantum Resistance:** VerusIDs are resistent to attacks by quantum computers
+    using known algorithms. This helps people using VerusIDs use the Verus platform
+    securely, even in a potential future with quantum computers. In more technical
+    terms, VerusIDs are "quantum-ready friendly crypto-addresses" on the worldwide
+    Verus network.
+
+
+    **Revocability:** Every VerusID includes a revocation authority (defaults to the
+    identity self). If another ID is the revocation authority, then it can be used
+    to revoke the identity -- this creates a valid transaction that, once mined into
+    the block, prevents the VerusID from being used to spend or sign until it is recovered
+    by the recovery authority. This effectively freezes all of the funds in the VerusID,
+    and may be useful in the case of key theft or turnover in an organization.
+
+
+    **Recoverability:** Just like with revocability, a recovery authority can be specified
+    (also defaults to self). Recovery authorities can recover VerusIDs from revoked
+    states, with the option to alter the ID''s primary authorities used to spend and
+    sign.
+
+
+    **Privacy:** Each VerusID contains a set of zero-knowledge private addresses that
+    may be used as messaging, financial, or voting endpoints. VerusIDs have a special
+    storage area that holds information, known as a content map of key-value hashes.
+    This content map is designed to work together with different apps and identity
+    policies. With this feature, you can privately store facts about yourself and
+    choose to prove them to others when needed (selectively-provable claims and attestations).
+    This means you may pick and choose what parts of your identity to prove. This
+    proving can be done in a quantum secure way using a quantum secure signature,
+    when that technology becomes available.
+
+
+    **Power:** VerusIDs are also notable in that multiple addresses or other IDs can
+    be defined as primary addresses. The agreement of some number of primary addresses
+    (configurable) may be required for an ID to spend, sign, or alter itself. Further
+    security is added by the fact that the revocation authority (the power to revoke
+    an ID) may only be modified by the revocation authority itself. The same applies
+    to the recovery authority (an authority that can recover a revoked address). Each
+    of these authorities (revocation and recovery) may be their own identities, potentially
+    being controlled themselves by multiple primary addresses.'
+  role: user
+- content: "## Conversation that answers the provided questions:\n**User:**\nI'm really\
+    \ new to all this. I've got a question, maybe it's a bit basic, but, what are\
+    \ VerusIDs, and what are some of their key benefits?\n\n**AI Assistant:**\nSure,\
+    \ I'll explain that in detail! Don't worry about asking questions that may feel\
+    \ basic \u2014 they're all important to your understanding. \n\nVerusIDs are not\
+    \ just an ID system: they are a fully-functional blockchain protocol. Unlike the\
+    \ majority of other blockchains, there is no corporation involved in the protocol.\
+    \ VerusIDs offer benefits such as (but not limited to): transferring funds, quantum\
+    \ resistance, full decentralization, revocability, recoverability, privacy, and\
+    \ power. Let's walk through each of these benefits in more detail.\n\n**Transferring\
+    \ Funds:** VerusIDs can be used to receive and send funds, and this behavior can\
+    \ be controlled by single or multi-sig addresses that are specified in the identity\
+    \ itself. The controller of the identity can change these controlling addresses,\
+    \ and if they do so, then all future spends of UTXOs sent to the VerusID will\
+    \ follow the updated spend conditions, and will be subject to the updated keys.\n\
+    \n**Quantum Resistance:** VerusIDs are resistent to attacks by quantum computers\
+    \ using known algorithms. This helps people using VerusIDs use the Verus platform\
+    \ securely, even in a potential future with quantum computers. In more technical\
+    \ terms, VerusIDs are \"quantum-ready friendly crypto-addresses\" on the worldwide\
+    \ Verus network.\n\n**Revocability:** Every VerusID includes a revocation authority\
+    \ (defaults to the identity self). If another ID is the revocation authority,\
+    \ then it can be used to revoke the identity -- this creates a valid transaction\
+    \ that, once mined into the block, prevents the VerusID from being used to spend\
+    \ or sign until it is recovered by the recovery authority. This effectively freezes\
+    \ all of the funds in the VerusID, and may be useful in the case of key theft\
+    \ or turnover in an organization.\n\n**Recoverability:** Just like with revocability,\
+    \ a recovery authority can be specified (also defaults to self). Recovery authorities\
+    \ can recover VerusIDs from revoked states, with the option to alter the ID's\
+    \ primary authorities used to spend and sign.\n\n**Privacy:** Each VerusID contains\
+    \ a set of zero-knowledge private addresses that may be used as messaging, financial,\
+    \ or voting endpoints. VerusIDs have a special storage area that holds information,\
+    \ known as a content map of key-value hashes. This content map is designed to\
+    \ work together with different apps and identity policies. With this feature,\
+    \ you can privately store facts about yourself and choose to prove them to others\
+    \ when needed (selectively-provable claims and attestations). This means you may\
+    \ pick and choose what parts of your identity to prove. This proving can be done\
+    \ in a quantum secure way using a quantum secure signature, when that technology\
+    \ becomes available.\n\n**Power:** VerusIDs are also notable in that multiple\
+    \ addresses or other IDs can be defined as primary addresses. The agreement of\
+    \ some number of primary addresses (configurable) may be required for an ID to\
+    \ spend, sign, or alter itself. Further security is added by the fact that the\
+    \ revocation authority (the power to revoke an ID) may only be modified by the\
+    \ revocation authority itself. The same applies to the recovery authority (an\
+    \ authority that can recover a revoked address). Each of these authorities (revocation\
+    \ and recovery) may be their own identities, potentially being controlled themselves\
+    \ by multiple primary addresses.\n\nDoes that answer your question? Do you have\
+    \ any more questions about VerusIDs, or any of their features in particular?"
+  role: assistant
+- content: '**QUESTION:**
+
+    What is the purpose of the `getcurrencyconverters` command in Verus, and how does
+    it filter the currencies it returns?
+
+
+    **ANSWER:**
+
+    The `getcurrencyconverters` command is a powerful tool in Verus that allows users
+    to retrieve a list of currencies that meet specific reserve requirements. This
+    command is useful for finding currencies that have a strong reserve backing and
+    can be used for conversions.
+
+
+    When you run the `getcurrencyconverters` command with one or more currency arguments,
+    such as `getcurrencyconverters "currency1" "currency2"...`, it searches for currencies
+    that meet certain conditions. These conditions are designed to ensure that the
+    returned currencies have a strong reserve backing, which is important for maintaining
+    the stability and trustworthiness of the currency.
+
+
+    The command filters the currencies it returns based on two main criteria:
+
+
+    1. **Minimum VRSC reserve**: The currency must have at least 1000 VRSC in reserve.
+    This ensures that the currency has a sufficient amount of VRSC backing to support
+    conversions and maintain its value.
+
+    2. **VRSC reserve ratio**: The currency must have a VRSC reserve ratio of greater
+    than 10%. This means that at least 10% of the currency''s total reserve is composed
+    of VRSC, which provides an additional layer of stability and security.
+
+
+    In addition to these criteria, the command also requires that the currencies returned
+    have all the listed currencies as reserves. This means that if you specify multiple
+    currencies as arguments, such as `getcurrencyconverters "currency1" "currency2"
+    "currency3"`, the command will only return currencies that have all three of these
+    currencies as reserves.
+
+
+    The output of the `getcurrencyconverters` command is a JSON object that contains
+    information about the currencies that meet the specified criteria. This object
+    can be used to further process or analyze the results, or to integrate them into
+    other applications or services.
+
+
+    Overall, the `getcurrencyconverters` command is a useful tool in Verus for finding
+    and working with currencies that have strong reserve backings, and can be an important
+    part of building stable and trustworthy currency systems.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hey, I''ve been experimenting with the `getcurrencyconverters` command in Verus,
+    but I''m not entirely sure what it does or how it filters the currencies it returns.
+    Can you explain its purpose and how it works?
+
+
+    **AI Assistant:**
+
+    The `getcurrencyconverters` command is a powerful tool in Verus that allows users
+    to retrieve a list of currencies that meet specific reserve requirements. This
+    command is useful for finding currencies that have a strong reserve backing and
+    can be used for conversions.
+
+
+    When you run the `getcurrencyconverters` command with one or more currency arguments,
+    such as `getcurrencyconverters "currency1" "currency2"...`, it searches for currencies
+    that meet certain conditions. These conditions are designed to ensure that the
+    returned currencies have a strong reserve backing, which is important for maintaining
+    the stability and trustworthiness of the currency.
+
+
+    The command filters the currencies it returns based on two main criteria:
+
+
+    1. **Minimum VRSC reserve**: The currency must have at least 1000 VRSC in reserve.
+    This ensures that the currency has a sufficient amount of VRSC backing to support
+    conversions and maintain its value.
+
+    2. **VRSC reserve ratio**: The currency must have a VRSC reserve ratio of greater
+    than 10%. This means that at least 10% of the currency''s total reserve is composed
+    of VRSC, which provides an additional layer of stability and security.
+
+
+    In addition to these criteria, the command also requires that the currencies returned
+    have all the listed currencies as reserves. This means that if you specify multiple
+    currencies as arguments, such as `getcurrencyconverters "currency1" "currency2"
+    "currency3"`, the command will only return currencies that have all three of these
+    currencies as reserves.
+
+
+    The output of the `getcurrencyconverters` command is a JSON object that contains
+    information about the currencies that meet the specified criteria. This object
+    can be used to further process or analyze the results, or to integrate them into
+    other applications or services.
+
+
+    Overall, the `getcurrencyconverters` command is a useful tool in Verus for finding
+    and working with currencies that have strong reserve backings, and can be an important
+    part of building stable and trustworthy currency systems.
+
+
+    Do you have any further questions about the `getcurrencyconverters` command or
+    how it works?'
+  role: assistant
+  timeout: false
