@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `migrate_createimporttransaction` function in Verus?",
+            "The `migrate_createimporttransaction` function is used to create an import transaction (importTx) given a burn transaction (burnTx) and the corresponding payouts, which are hex encoded.",
+            "migrate_createimporttransaction burnTx payouts\n\nCreate an importTx given a burnTx and the corresponding payouts, hex encoded",
+            "./raw_text_input_api_text/migrate_createimporttransaction"
+        ],
+        [
+            "What are the inputs required to create an import transaction using the `migrate_createimporttransaction` function?",
+            "To create an import transaction using the `migrate_createimporttransaction` function, you need to provide a burn transaction (burnTx) and the corresponding payouts, which are hex encoded.",
+            "migrate_createimporttransaction burnTx payouts\n\nCreate an importTx given a burnTx and the corresponding payouts, hex encoded",
+            "./raw_text_input_api_text/migrate_createimporttransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2667f50a-dcf1-4d25-8665-5067f06d10ee"
+]

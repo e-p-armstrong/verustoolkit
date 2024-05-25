@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to learn more about Verus and I came across the `addnode` command. Can you tell me what its purpose is?\n\n**AI Assistant:**\nThe `addnode` command is used to add or remove a node from the addnode list, or to try a connection to a node once. It's a useful command for managing your node connections in Verus.\n\n**User:**\nThat sounds helpful. How do I use the `addnode` command to add a node to the list?\n\n**AI Assistant:**\nTo add a node to the list, you would use the `addnode` command with the \"add\" parameter, like this:\n```\nverus addnode \"node\" \"add\"\n```\nJust replace \"node\" with the actual node you want to add.\n\n**User:**\nOkay, got it! What about trying a connection to a node once? How do I do that with `addnode`?\n\n**AI Assistant:**\nTo try a connection to a node once, you would use the `addnode` command with the \"onetry\" parameter, like this:\n```\nverus addnode \"node\" \"onetry\"\n```\nAgain, just replace \"node\" with the actual node you want to try a connection to.\n\n**User:**\nThat's really helpful! Can I use the `addnode` command with a remote procedure call (RPC) interface?\n\n**AI Assistant:**\nYes, you can use the `addnode` command with a remote procedure call (RPC) interface. Here's an example using `curl`:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"node\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nJust replace \"node\" with the actual node you want to try a connection to, and \"myusername\" with your actual username.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `addnode` command in Verus?",
+            "The `addnode` command is used to add or remove a node from the addnode list, or to try a connection to a node once.",
+            "addnode \"node\" \"add|remove|onetry\"\n\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n\nExamples:\n> verus addnode \"192.168.0.6:8233\" \"onetry\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/addnode"
+        ],
+        [
+            "How do I use the `addnode` command to add a node to the list?",
+            "To add a node to the list, you would use the `addnode` command with the \"add\" parameter, like this:\n```\nverus addnode \"node\" \"add\"\n```\nReplace \"node\" with the actual node you want to add.",
+            "addnode \"node\" \"add|remove|onetry\"\n\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n\nExamples:\n> verus addnode \"192.168.0.6:8233\" \"onetry\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/addnode"
+        ],
+        [
+            "How do I use the `addnode` command to try a connection to a node once?",
+            "To try a connection to a node once, you would use the `addnode` command with the \"onetry\" parameter, like this:\n```\nverus addnode \"node\" \"onetry\"\n```\nReplace \"node\" with the actual node you want to try a connection to.",
+            "addnode \"node\" \"add|remove|onetry\"\n\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n\nExamples:\n> verus addnode \"192.168.0.6:8233\" \"onetry\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/addnode"
+        ],
+        [
+            "Can I use the `addnode` command with a remote procedure call (RPC) interface?",
+            "Yes, you can use the `addnode` command with a remote procedure call (RPC) interface. Here's an example using `curl`:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"node\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace \"node\" with the actual node you want to try a connection to, and \"myusername\" with your actual username.",
+            "addnode \"node\" \"add|remove|onetry\"\n\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n\nExamples:\n> verus addnode \"192.168.0.6:8233\" \"onetry\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/addnode"
+        ]
+    ]
+]

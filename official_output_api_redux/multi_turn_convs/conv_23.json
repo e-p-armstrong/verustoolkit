@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHi, I'm having a bit of trouble with transaction fees on Verus. How can I set the transaction fee per kB in Verus using the command line?\n\n**AI Assistant:**\nYou can set the transaction fee per kB in Verus using the `settxfee` command. The format is `verus settxfee <amount>`, where `<amount>` is the transaction fee in VRSC/kB rounded to the nearest 0.00000001.\n\n**User:**\nThat's helpful, thanks! But what's the purpose of the `settxfee` command in Verus, exactly?\n\n**AI Assistant:**\nThe `settxfee` command is used to set the transaction fee per kB in Verus. This fee is the amount of VRSC that will be charged for each kilobyte of data in a transaction.\n\n**User:**\nGot it. So what's the format of the `amount` argument in the `settxfee` command?\n\n**AI Assistant:**\nThe `amount` argument in the `settxfee` command is a numeric value that represents the transaction fee in VRSC/kB. It should be rounded to the nearest 0.00000001.\n\n**User:**\nOne last question: what does the `settxfee` command return if successful?\n\n**AI Assistant:**\nIf the `settxfee` command is successful, it returns `true`. If it fails, it returns `false`.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I set the transaction fee per kB in Verus using the command line?",
+            "You can set the transaction fee per kB in Verus using the `settxfee` command. The format is `verus settxfee <amount>`, where `<amount>` is the transaction fee in VRSC/kB rounded to the nearest 0.00000001.",
+            "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/settxfee"
+        ],
+        [
+            "What is the purpose of the `settxfee` command in Verus?",
+            "The `settxfee` command is used to set the transaction fee per kB in Verus. This fee is the amount of VRSC that will be charged for each kilobyte of data in a transaction.",
+            "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/settxfee"
+        ],
+        [
+            "What is the format of the `amount` argument in the `settxfee` command?",
+            "The `amount` argument in the `settxfee` command is a numeric value that represents the transaction fee in VRSC/kB. It should be rounded to the nearest 0.00000001.",
+            "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/settxfee"
+        ],
+        [
+            "What does the `settxfee` command return if successful?",
+            "If the `settxfee` command is successful, it returns `true`. If it fails, it returns `false`.",
+            "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/settxfee"
+        ]
+    ]
+]

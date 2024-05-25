@@ -1,0 +1,6 @@
+[
+    "What does the `migrate_completeimporttransaction` command do to the proof generated on an asset chain?",
+    "The `migrate_completeimporttransaction` command extends the proof generated on an asset chain to a target chain proof root.",
+    "migrate_completeimporttransaction importTx\n\nTakes a cross chain import tx with proof generated on assetchain and extends proof to target chain proof root",
+    "./raw_text_input_api_text/migrate_completeimporttransaction"
+]

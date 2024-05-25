@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `getrawchangeaddress` command in Verus?",
+            "The `getrawchangeaddress` command returns a new VRSC address that can be used to receive change when working with raw transactions. This command is intended for use with raw transactions, not for normal use.",
+            "getrawchangeaddress\n\nReturns a new VRSC address, for receiving change.\nThis is for use with raw transactions, NOT normal use.\n\nResult:\n\"address\"  (string) The address\n\nExamples:\n> verus getrawchangeaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawchangeaddress"
+        ],
+        [
+            "How do I use the `getrawchangeaddress` command to get a new VRSC address?",
+            "You can use the `getrawchangeaddress` command in two ways:\n\n1. Using the Verus command-line interface: `verus getrawchangeaddress`\n2. Using a JSON-RPC request: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`\n\nBoth methods will return a new VRSC address that can be used to receive change when working with raw transactions.",
+            "getrawchangeaddress\n\nReturns a new VRSC address, for receiving change.\nThis is for use with raw transactions, NOT normal use.\n\nResult:\n\"address\"  (string) The address\n\nExamples:\n> verus getrawchangeaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawchangeaddress"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2a5b6219-d7d7-4153-a4bb-629fb1b725e9"
+]

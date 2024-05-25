@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `reconsiderblock` command in Verus?",
+            "The `reconsiderblock` command in Verus is used to remove the invalidity status of a block and its descendants, and reconsider them for activation. This can be used to undo the effects of `invalidateblock`.",
+            "reconsiderblock \"hash\"\n\nRemoves invalidity status of a block and its descendants, reconsider them for activation.\nThis can be used to undo the effects of invalidateblock.\n\nArguments:\n1. hash  (string, required) the hash of the block to reconsider\n\nResult:\n\nExamples:\n> verus reconsiderblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"reconsiderblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/reconsiderblock"
+        ],
+        [
+            "What argument does the `reconsiderblock` command require?",
+            "The `reconsiderblock` command requires a single argument, which is the hash of the block to reconsider.",
+            "reconsiderblock \"hash\"\n\nRemoves invalidity status of a block and its descendants, reconsider them for activation.\nThis can be used to undo the effects of invalidateblock.\n\nArguments:\n1. hash  (string, required) the hash of the block to reconsider\n\nResult:\n\nExamples:\n> verus reconsiderblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"reconsiderblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/reconsiderblock"
+        ],
+        [
+            "How can I use the `reconsiderblock` command to reconsider a block in Verus?",
+            "You can use the `reconsiderblock` command to reconsider a block in Verus by running the command with the block's hash as an argument, like this: `verus reconsiderblock \"blockhash\"`. Alternatively, you can use the Verus JSON-RPC API to send a request with the method `reconsiderblock` and the block hash as a parameter.",
+            "reconsiderblock \"hash\"\n\nRemoves invalidity status of a block and its descendants, reconsider them for activation.\nThis can be used to undo the effects of invalidateblock.\n\nArguments:\n1. hash  (string, required) the hash of the block to reconsider\n\nResult:\n\nExamples:\n> verus reconsiderblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"reconsiderblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/reconsiderblock"
+        ],
+        [
+            "What is the opposite of the `reconsiderblock` command in Verus?",
+            "The opposite of the `reconsiderblock` command in Verus is the `invalidateblock` command. While `reconsiderblock` removes the invalidity status of a block, `invalidateblock` marks a block as invalid.",
+            "reconsiderblock \"hash\"\n\nRemoves invalidity status of a block and its descendants, reconsider them for activation.\nThis can be used to undo the effects of invalidateblock.\n\nArguments:\n1. hash  (string, required) the hash of the block to reconsider\n\nResult:\n\nExamples:\n> verus reconsiderblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"reconsiderblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/reconsiderblock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "85671549-f5b3-4fd4-855a-95e8490db9de"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `estimatefee` command in Verus?",
+    "The `estimatefee` command in Verus estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a specified number of blocks.",
+    "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+    "./raw_text_input_api_text/estimatefee"
+]

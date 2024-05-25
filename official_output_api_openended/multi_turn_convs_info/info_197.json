@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `ping` command in Verus, and how does it work?",
+            "The `ping` command in Verus is used to measure the ping time between nodes in the network. When you run the `ping` command, it sends a request to all other nodes in the network to measure the ping time. The results of this measurement are provided in the `getpeerinfo`, `pingtime`, and `pingwait` fields, and are represented in decimal seconds.\n\nIt's important to note that the `ping` command is not just measuring the network ping time, but also the processing backlog of the nodes. This means that the results may include not only the time it takes for the ping to travel between nodes, but also the time it takes for the nodes to process the ping request.\n\nThe `ping` command can be used in two ways: through the Verus command line interface or through a remote procedure call (RPC) using a tool like `curl`. An example of using the `ping` command through the Verus command line interface is:\n```\nverus ping\n```\nAn example of using the `ping` command through an RPC call using `curl` is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nIn both cases, the `ping` command will send a request to all other nodes in the network and return the results, including the ping time and processing backlog.",
+            "ping\n\nRequests that a ping be sent to all other nodes, to measure ping time.\nResults provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.\nPing command is handled in queue with all other commands, so it measures processing backlog, not just network ping.\n\nExamples:\n> verus ping \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/ping"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a857b180-42f9-4523-b128-44f59afd45f6"
+]

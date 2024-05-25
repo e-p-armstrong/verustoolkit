@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does the `z_listaddresses` command do in Verus?",
+            "The `z_listaddresses` command returns a list of all Sprout and Sapling shielded addresses belonging to the wallet. It can also include watchonly addresses if the `includeWatchonly` argument is set to `true`.",
+            "z_listaddresses ( includeWatchonly )\n\nReturns the list of Sprout and Sapling shielded addresses belonging to the wallet.\n\nArguments:\n1. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey')\n\nResult:\n[           (json array of string)\n \"zaddr\"      (string) a zaddr belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listaddresses \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_listaddresses"
+        ],
+        [
+            "How do I use the `z_listaddresses` command to get a list of shielded addresses in my Verus wallet?",
+            "You can use the `z_listaddresses` command by simply running `verus z_listaddresses` in your terminal. If you want to include watchonly addresses, you can add the `includeWatchonly` argument, like this: `verus z_listaddresses true`. You can also use the command with a JSON-RPC call, as shown in the example: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "z_listaddresses ( includeWatchonly )\n\nReturns the list of Sprout and Sapling shielded addresses belonging to the wallet.\n\nArguments:\n1. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey')\n\nResult:\n[           (json array of string)\n \"zaddr\"      (string) a zaddr belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listaddresses \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_listaddresses"
+        ],
+        [
+            "What is the format of the result returned by the `z_listaddresses` command?",
+            "The result returned by the `z_listaddresses` command is a JSON array of strings, where each string represents a shielded address belonging to the wallet.",
+            "z_listaddresses ( includeWatchonly )\n\nReturns the list of Sprout and Sapling shielded addresses belonging to the wallet.\n\nArguments:\n1. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey')\n\nResult:\n[           (json array of string)\n \"zaddr\"      (string) a zaddr belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listaddresses \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_listaddresses"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "af306ba0-9c03-4bf9-a5c8-0facde8aa6d5"
+]

@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `prioritisetransaction` command in Verus?",
+            "The `prioritisetransaction` command is used to adjust the priority of a specific transaction in the transaction selection algorithm, allowing it to be included in mined blocks at a higher (or lower) priority.",
+            "prioritisetransaction <txid> <priority delta> <fee delta>\nAccepts the transaction into mined blocks at a higher (or lower) priority\n\nArguments:\n1. \"txid\"    (string, required) The transaction id.\n2. priority delta (numeric, required) The priority to add or subtract.\n         The transaction selection algorithm considers the tx as it would have a higher priority.\n         (priority of a transaction is calculated: coinage * value_in_satoshis / txsize) \n3. fee delta   (numeric, required) The fee value (in satoshis) to add (or subtract, if negative).\n         The fee is not actually paid, only the algorithm for selecting transactions into a block\n         considers the transaction as it would have paid a higher (or lower) fee.\n\nResult\ntrue       (boolean) Returns true\n\nExamples:\n> verus prioritisetransaction \"txid\" 0.0 10000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"prioritisetransaction\", \"params\": [\"txid\", 0.0, 10000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/prioritisetransaction"
+        ],
+        [
+            "How does the `prioritisetransaction` command affect the transaction's priority and fee?",
+            "The `prioritisetransaction` command adjusts the transaction's priority by adding or subtracting a specified value to the transaction's calculated priority, which is based on the formula: `coinage * value_in_satoshis / txsize`. Additionally, it also adjusts the fee value (in satoshis) by adding or subtracting a specified amount, which is used by the algorithm to consider the transaction as if it had paid a higher (or lower) fee.",
+            "prioritisetransaction <txid> <priority delta> <fee delta>\nAccepts the transaction into mined blocks at a higher (or lower) priority\n\nArguments:\n1. \"txid\"    (string, required) The transaction id.\n2. priority delta (numeric, required) The priority to add or subtract.\n         The transaction selection algorithm considers the tx as it would have a higher priority.\n         (priority of a transaction is calculated: coinage * value_in_satoshis / txsize) \n3. fee delta   (numeric, required) The fee value (in satoshis) to add (or subtract, if negative).\n         The fee is not actually paid, only the algorithm for selecting transactions into a block\n         considers the transaction as it would have paid a higher (or lower) fee.\n\nResult\ntrue       (boolean) Returns true\n\nExamples:\n> verus prioritisetransaction \"txid\" 0.0 10000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"prioritisetransaction\", \"params\": [\"txid\", 0.0, 10000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/prioritisetransaction"
+        ],
+        [
+            "What are the required arguments for the `prioritisetransaction` command?",
+            "The `prioritisetransaction` command requires three arguments:\n\n1. `txid` (string, required): The transaction id.\n2. `priority delta` (numeric, required): The priority to add or subtract.\n3. `fee delta` (numeric, required): The fee value (in satoshis) to add or subtract.",
+            "prioritisetransaction <txid> <priority delta> <fee delta>\nAccepts the transaction into mined blocks at a higher (or lower) priority\n\nArguments:\n1. \"txid\"    (string, required) The transaction id.\n2. priority delta (numeric, required) The priority to add or subtract.\n         The transaction selection algorithm considers the tx as it would have a higher priority.\n         (priority of a transaction is calculated: coinage * value_in_satoshis / txsize) \n3. fee delta   (numeric, required) The fee value (in satoshis) to add (or subtract, if negative).\n         The fee is not actually paid, only the algorithm for selecting transactions into a block\n         considers the transaction as it would have paid a higher (or lower) fee.\n\nResult\ntrue       (boolean) Returns true\n\nExamples:\n> verus prioritisetransaction \"txid\" 0.0 10000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"prioritisetransaction\", \"params\": [\"txid\", 0.0, 10000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/prioritisetransaction"
+        ],
+        [
+            "What is the result of a successful `prioritisetransaction` command?",
+            "A successful `prioritisetransaction` command returns `true` (boolean).",
+            "prioritisetransaction <txid> <priority delta> <fee delta>\nAccepts the transaction into mined blocks at a higher (or lower) priority\n\nArguments:\n1. \"txid\"    (string, required) The transaction id.\n2. priority delta (numeric, required) The priority to add or subtract.\n         The transaction selection algorithm considers the tx as it would have a higher priority.\n         (priority of a transaction is calculated: coinage * value_in_satoshis / txsize) \n3. fee delta   (numeric, required) The fee value (in satoshis) to add (or subtract, if negative).\n         The fee is not actually paid, only the algorithm for selecting transactions into a block\n         considers the transaction as it would have paid a higher (or lower) fee.\n\nResult\ntrue       (boolean) Returns true\n\nExamples:\n> verus prioritisetransaction \"txid\" 0.0 10000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"prioritisetransaction\", \"params\": [\"txid\", 0.0, 10000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/prioritisetransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5e1bb13e-b4f2-48f9-9605-aee6119f408f"
+]

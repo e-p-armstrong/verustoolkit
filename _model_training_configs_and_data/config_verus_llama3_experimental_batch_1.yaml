@@ -34,7 +34,17 @@ datasets:
     type: sharegpt
     conversation: chatml
   - path: json
-    data_files: simplified_data_rag_VISION.jsonl
+    data_files: simplified_data_no_rag_VISION.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_rag_OPENENDED_VISION.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_OPENENDED_VISION.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
@@ -58,6 +68,16 @@ datasets:
     type: sharegpt
     conversation: chatml
   - path: json
+    data_files: simplified_data_rag_OPENENDED_WIKI.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_OPENENDED_WIKI.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
     data_files: general_assistant_split_1.jsonl
     ds_type: json
     type: sharegpt
@@ -77,6 +97,16 @@ datasets:
     type: sharegpt
     conversation: chatml
   - path: json
+    data_files: simplified_data_rag_OPENENDED_API.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_OPENENDED_API.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
     data_files: general_assistant_split_2.jsonl
     ds_type: json
     type: sharegpt
@@ -92,6 +122,16 @@ datasets:
     conversation: chatml
   - path: json
     data_files: simplified_data_no_rag_DOCS.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_rag_OPENENDED_DOCS.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_OPENENDED_DOCS.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml

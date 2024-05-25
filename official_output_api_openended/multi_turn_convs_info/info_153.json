@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does the `getlastimportfrom` command work in Verus, and what information does it provide about the last import from a specific system?",
+            "The `getlastimportfrom` command in Verus is used to retrieve information about the last import from a specific system. This command takes one optional argument, `\"systemname\"`, which is the name or ID of the system from which you want to retrieve the last import.\n\nWhen you run the `getlastimportfrom` command, it returns a JSON object with two properties: `lastimport` and `lastconfirmednotarization`. The `lastimport` property contains information about the last import from the specified system on the current chain, while the `lastconfirmednotarization` property contains information about the last confirmed notarization of the specified system on the current chain.\n\nThe `getlastimportfrom` command can be used in two ways: through the Verus command-line interface or through an HTTP request using `curl`. Here are examples of both:\n\n* Through the Verus command-line interface: `verus getlastimportfrom \"systemname\"`\n* Through an HTTP request using `curl`: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlastimportfrom\", \"params\": [\"systemname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`\n\nOverall, the `getlastimportfrom` command provides a way to retrieve information about the last import from a specific system, which can be useful for tracking the history of imports and notarizations on the Verus network.",
+            "getlastimportfrom \"systemname\"\n\nReturns the last import from a specific originating system.\n\nArguments\n1. \"systemname\"           (string, optional) name or ID of the system to retrieve the last import from\n\nResult:\n {\n   \"lastimport\" :         (object) last import from the indicated system on this chain\n    {\n    }\n   \"lastconfirmednotarization\" :  (object) last confirmed notarization of the indicated system on this chain\n    {\n    }\n }\n\nExamples:\n> verus getlastimportfrom \"systemname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlastimportfrom\", \"params\": [\"systemname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlastimportfrom"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "be0d44c5-3872-4a63-a152-593100e38973"
+]

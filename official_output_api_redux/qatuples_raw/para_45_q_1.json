@@ -1,0 +1,6 @@
+[
+    "What kind of balance does `getunconfirmedbalance` return?",
+    "`getunconfirmedbalance` returns the total unconfirmed balance of the Verus server, which means it shows the balance of transactions that have not yet been confirmed on the blockchain.",
+    "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+    "./raw_text_input_api_text/getunconfirmedbalance"
+]

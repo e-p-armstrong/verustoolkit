@@ -1,0 +1,6 @@
+[
+    "How can I use the `getblockhash` command to retrieve the block hash at a specific index?",
+    "You can use the `getblockhash` command to retrieve the block hash at a specific index by providing the index as an argument. For example, to retrieve the block hash at index 1000, you can use the command `verus getblockhash 1000`.",
+    "getblockhash index\n\nReturns hash of block in best-block-chain at index provided.\n\nArguments:\n1. index     (numeric, required) The block index\n\nResult:\n\"hash\"     (string) The block hash\n\nExamples:\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblockhash"
+]

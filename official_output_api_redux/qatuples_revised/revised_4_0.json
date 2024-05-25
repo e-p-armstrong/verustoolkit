@@ -1,0 +1,6 @@
+[
+    "How can I use the `listunspent` command to filter unspent transaction outputs (UTXOs) in Verus?",
+    "You can use the `listunspent` command with parameters to filter unspent transaction outputs (UTXOs) in Verus. For example, `verus listunspent 6 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"` filters UTXOs by minimum and maximum confirmations, and by specific addresses.",
+    "Examples\n> verus listunspent \n> verus listunspent 6 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listunspent\", \"params\": [6, 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listunspent"
+]

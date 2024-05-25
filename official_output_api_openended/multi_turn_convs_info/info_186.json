@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I use JSON RPC to retrieve a VerusID's FID (Fully Qualified ID) using the `getvdxfid` method?",
+            "To use JSON RPC to retrieve a VerusID's FID using the `getvdxfid` method, you can send a JSON RPC request to the Verus daemon using the `curl` command. Here's an example of how to do this:\n\nFirst, you need to specify the username and password for the Verus daemon using the `--user` option. You can then specify the JSON RPC request using the `--data-binary` option.\n\nThe JSON RPC request should contain the following elements:\n\n* `jsonrpc`: This specifies the JSON RPC version, which in this case is 1.0.\n* `id`: This is a unique identifier for the request, which can be any string.\n* `method`: This specifies the method to be called, which in this case is `getvdxfid`.\n* `params`: This specifies the parameters to be passed to the method, which in this case is an array containing the VerusID in the format `idname::userdefinedgroup.subgroup.publishedname`.\n\nHere's an example of what the `curl` command would look like:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nIn this example, `myusername` is the username for the Verus daemon, `idname::userdefinedgroup.subgroup.publishedname` is the VerusID for which you want to retrieve the FID, and `http://127.0.0.1:27486/` is the URL of the Verus daemon.\n\nWhen you run this command, the Verus daemon will respond with the FID of the specified VerusID in JSON format.",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getvdxfid"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b7289afa-b2b8-4511-b5ec-f02b3c1d1ca1"
+]

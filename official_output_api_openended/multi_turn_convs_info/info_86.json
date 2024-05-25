@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I use JSON RPC to sign data on the Verus platform, and what are the different parameters involved in the process?",
+            "To sign data on the Verus platform using JSON RPC, you can use the `signdata` method. This method takes a few parameters, which are:\n\n* `address`: the VerusID address of the account that will be used to sign the data.\n* `createmmr`: a boolean value indicating whether to create a Memory Map Receipt (MMR) for the signed data.\n* `data`: an array of objects, each containing the data to be signed and the encryption settings.\n\nHere's an example of how to use the `signdata` method using `curl`:\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nIn this example, the `signdata` method is called with the following parameters:\n\n* `address`: `Verus Coin Foundation.vrsc@`, which is the VerusID address of the account that will be used to sign the data.\n* `createmmr`: `true`, which indicates that an MMR should be created for the signed data.\n* `data`: an array containing a single object with two properties:\n\t+ `message`: the data to be signed, which is the string \"hello world\".\n\t+ `encrypttoaddress`: the Sapling address that the data should be encrypted to.\n\nThe `signdata` method will sign the data using the specified address and encryption settings, and return the signed data and the MMR (if created).\n\nNote that the `signdata` method is a JSON RPC method, which means it can be called using a JSON RPC client such as `curl` or a programming language like JavaScript or Python. The exact syntax and parameters may vary depending on the client and language used.",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decryptdata"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e0954532-be3d-4d3d-9151-e6988ba20680"
+]

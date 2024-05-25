@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What information is returned when querying a transaction in Verus, and what do the different fields represent?",
+            "When querying a transaction in Verus, the response returns various fields that provide detailed information about the transaction. The response includes an array of objects, each representing a transaction output. These objects contain several fields that provide information about the transaction.\n\nThe `value` field represents the amount of VRSC (Verus Coin) transferred in the transaction, and it is expressed as a numeric value. For example, `x.xxx` represents the amount of VRSC, where `x` is a numeric value.\n\nThe `valueZat` field represents the same amount as `value`, but it is expressed in zatoshis, which is a smaller unit of measurement. One VRSC is equal to 100,000,000 zatoshis. This field is also a numeric value.\n\nThe `memo` field is a hexadecimal string representation of the memo field, which is an optional field that allows the sender to attach a short message or metadata to the transaction. This field is a string of hexadecimal characters.\n\nThe `memoStr` field is only returned if the memo field contains valid UTF-8 text. This field is a string representation of the memo field, and it is human-readable. It is only returned if the memo field contains text that can be decoded to a valid UTF-8 string.\n\nIn summary, when querying a transaction in Verus, the response returns an array of objects that contain information about the transaction, including the amount transferred in VRSC and zatoshis, as well as any optional memo or metadata attached to the transaction.",
+            "  \"value\" : x.xxx         (numeric) The amount in VRSC\n   \"valueZat\" : xxxx        (numeric) The amount in zatoshis\n   \"memo\" : \"hexmemo\",       (string) Hexademical string representation of the memo field\n   \"memoStr\" : \"memo\",       (string) Only returned if memo contains valid UTF-8 text.\n  }\n  ,...\n ],\n}",
+            "./raw_text_input_api_text/z_viewtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f72a54d6-c3a3-4a76-9bdd-c92972a8a8d4"
+]

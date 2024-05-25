@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been trying to learn more about Verus, and I came across the `zcrawkeygen` command. What's its purpose in Verus?\n\n**AI Assistant:**\nThe `zcrawkeygen` command generates a zcaddr (zero-knowledge address) that can send and receive confidential values. It produces an output with three components: the zcaddress, zcsecretkey, and zcviewingkey.\n\n**User:**\nThat's helpful! What exactly does the output of the `zcrawkeygen` command contain?\n\n**AI Assistant:**\nThe `zcrawkeygen` command outputs a JSON object with three properties: `zcaddress`, `zcsecretkey`, and `zcviewingkey`. These properties are essential for sending and receiving confidential values using Verus' zero-knowledge proof technology.\n\n**User:**\nI was wondering, is the `zcrawkeygen` command still supported in Verus? Should I be using it for my projects?\n\n**AI Assistant:**\nNo, the `zcrawkeygen` command is deprecated, which means it is no longer supported or recommended for use in Verus. While it may still be present in the system, it is not guaranteed to work correctly or be compatible with the latest Verus features. I'd recommend exploring alternative approaches that are compatible with the latest Verus versions. Do you have any more questions about Verus or zero-knowledge proofs?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `zcrawkeygen` command in Verus?",
+            "The `zcrawkeygen` command generates a zcaddr (zero-knowledge address) that can send and receive confidential values. It produces an output with three components: the zcaddress, zcsecretkey, and zcviewingkey.",
+            "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ],
+        [
+            "What does the `zcrawkeygen` command output contain?",
+            "The `zcrawkeygen` command outputs a JSON object with three properties: `zcaddress`, `zcsecretkey`, and `zcviewingkey`. These properties are essential for sending and receiving confidential values using Verus' zero-knowledge proof technology.",
+            "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ],
+        [
+            "Is the `zcrawkeygen` command still supported in Verus?",
+            "No, the `zcrawkeygen` command is deprecated, which means it is no longer supported or recommended for use in Verus. While it may still be present in the system, it is not guaranteed to work correctly or be compatible with the latest Verus features.",
+            "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ]
+    ]
+]

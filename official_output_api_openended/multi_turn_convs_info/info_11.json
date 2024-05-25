@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `getlocalsolps` command in Verus, and how can you use it to retrieve information about the performance of your node?",
+            "The `getlocalsolps` command in Verus is used to retrieve the average number of local solutions per second that your node has processed since it was started. This command provides a way to monitor the performance of your node and track its ability to process solutions.\n\nThe result of the command is a numeric value that represents the average solutions per second, which can help you identify any potential issues with your node's performance. This information is also displayed on the metrics screen in the Verus interface, if it is enabled.\n\nTo use the `getlocalsolps` command, you can simply enter it into the Verus command-line interface, like this:\n\n```\n> verus getlocalsolps\n```\n\nAlternatively, you can use the `curl` command to send a JSON-RPC request to the Verus node, like this:\n\n```\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis will return the same information as the `getlocalsolps` command, but in a JSON format that can be easily parsed and used by other applications.\n\nOverall, the `getlocalsolps` command is a useful tool for monitoring the performance of your Verus node and ensuring that it is operating efficiently.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e50a144d-12ea-4248-88d4-c69f3fe61c90"
+]

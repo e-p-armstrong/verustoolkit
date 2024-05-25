@@ -1,0 +1,6 @@
+[
+    "When would I need to use the `resendwallettransactions` command?",
+    "You would typically only need to use the `resendwallettransactions` command in specific testing scenarios, as the wallet code automatically re-broadcasts unconfirmed transactions periodically. In most cases, you would not need to use this command.",
+    "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+    "./raw_text_input_api_text/resendwallettransactions"
+]

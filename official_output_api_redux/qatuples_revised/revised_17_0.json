@@ -1,0 +1,6 @@
+[
+    "What does the `scanNotarisationsDB` command do in Verus?",
+    "The `scanNotarisationsDB` command scans the notarisations database backwards from a specified block height to find a notarisation of a given symbol.",
+    "scanNotarisationsDB blockHeight symbol [blocksLimit=1440]\n\nScans notarisationsdb backwards from height for a notarisation of given symbol",
+    "./raw_text_input_api_text/scanNotarisationsDB"
+]

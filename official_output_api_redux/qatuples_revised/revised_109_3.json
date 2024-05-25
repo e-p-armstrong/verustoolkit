@@ -1,0 +1,6 @@
+[
+    "How can I use the `verifychain` command to verify my blockchain database?",
+    "You can use the `verifychain` command by running it in the Verus command-line interface or by sending a JSON-RPC request to the Verus server. The command can be used with or without arguments, depending on your specific needs. For example, you can run `verus verifychain` to verify the blockchain with the default settings, or you can specify custom values for `checklevel` and `numblocks` to customize the verification process.",
+    "verifychain ( checklevel numblocks )\n\nVerifies blockchain database.\n\nArguments:\n1. checklevel  (numeric, optional, 0-4, default=3) How thorough the block verification is.\n2. numblocks  (numeric, optional, default=288, 0=all) The number of blocks to check.\n\nResult:\ntrue|false    (boolean) Verified or not\n\nExamples:\n> verus verifychain \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifychain\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/verifychain"
+]

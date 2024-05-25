@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to get some information about the blockchain using the Verus command line. Do you know how I can do that?\n\n**AI Assistant:**\nYou can get information about the blockchain by running the command `verus getblockchaininfo`. This will provide you with the necessary details. Have you tried that already?\n\n**User:**\nThat's helpful, thanks! But, I was wondering, is there a way to get blockchain information using a different method, such as an API call? Sometimes I need to access this info programmatically.\n\n**AI Assistant:**\nYes, you can also get blockchain information by making an API call using a tool like `curl`. The format for this call would be:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will return the same information as the `verus getblockchaininfo` command. So, you can choose the method that best fits your needs. Do you have any other questions about using the Verus API or command line?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I get information about the blockchain using the Verus command line?",
+            "You can get information about the blockchain by running the command `verus getblockchaininfo`.",
+            "Examples:\n> verus getblockchaininfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockchaininfo"
+        ],
+        [
+            "Is there a way to get blockchain information using a different method, such as an API call?",
+            "Yes, you can also get blockchain information by making an API call using a tool like `curl`. The format for this call would be:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will return the same information as the `verus getblockchaininfo` command.",
+            "Examples:\n> verus getblockchaininfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockchaininfo"
+        ]
+    ]
+]

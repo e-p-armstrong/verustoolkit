@@ -1,0 +1,6 @@
+[
+    "How can I use JSON-RPC to list all available currencies on the Verus network?",
+    "To list all available currencies using JSON-RPC, you can send a JSON-RPC request to the Verus daemon. The request should include the `listcurrencies` method and the `true` parameter. Here's an example of how to do this using the `curl` command:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `myusername` with your actual username, and make sure the Verus daemon is running on `http://127.0.0.1:27486/`. The response will contain a list of all available currencies on the Verus network.",
+    "Examples:\n> verus listcurrencies true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listcurrencies"
+]

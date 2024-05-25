@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the second argument in the `getrawtransaction` command?",
+    "The second argument in the `getrawtransaction` command is an optional verbosity level. If set to 1, it will return more detailed information about the transaction. For example:\n```\nverus getrawtransaction \"mytxid\" 1\n```\nThis will return a more verbose output of the transaction data.",
+    "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getrawtransaction"
+]

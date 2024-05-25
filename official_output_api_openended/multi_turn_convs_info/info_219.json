@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the `signrawtransaction` command in Verus, and what kind of information does it return?",
+            "The `signrawtransaction` command in Verus is used to sign a raw transaction with a digital signature. This command takes a hexadecimal-encoded raw transaction as input and returns a JSON object with the signed transaction, along with information about the signing process.\n\nThe returned JSON object has several properties:\n\n* `hex`: This is the hexadecimal-encoded raw transaction with the digital signature(s) added.\n* `complete`: This is a boolean value indicating whether the transaction has a complete set of signatures.\n* `errors`: This is an array of objects containing script verification errors, if any. Each error object has the following properties:\n\t+ `txid`: The hash of the referenced, previous transaction.\n\t+ `vout`: The index of the output to be spent and used as input.\n\t+ `scriptSig`: The hexadecimal-encoded signature script.\n\t+ `sequence`: The script sequence number.\n\t+ `error`: The verification or signing error related to the input.\n\nYou can use the `signrawtransaction` command in two ways: either by running it directly in the Verus command-line interface, or by sending a JSON-RPC request to the Verus daemon using `curl`. The examples provided in the text demonstrate both methods.\n\nIn summary, the `signrawtransaction` command is an essential tool in Verus for creating and signing transactions, and its output provides valuable information about the signing process and any potential errors that may occur.",
+            "Result:\n{\n \"hex\" : \"value\",      (string) The hex-encoded raw transaction with signature(s)\n \"complete\" : true|false,  (boolean) If the transaction has a complete set of signatures\n \"errors\" : [         (json array of objects) Script verification errors (if there are any)\n  {\n   \"txid\" : \"hash\",      (string) The hash of the referenced, previous transaction\n   \"vout\" : n,        (numeric) The index of the output to spent and used as input\n   \"scriptSig\" : \"hex\",    (string) The hex-encoded signature script\n   \"sequence\" : n,      (numeric) Script sequence number\n   \"error\" : \"text\"      (string) Verification or signing error related to the input\n  }\n  ,...\n ]\n}\n\nExamples:\n> verus signrawtransaction \"myhex\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signrawtransaction\", \"params\": [\"myhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/signrawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2e5a784a-2972-4ab0-8ec0-570de8765847"
+]

@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `refundfailedlaunch` command in Verus?",
+            "The `refundfailedlaunch` command is used to refund any funds sent to a chain if they are eligible for refund. It attempts to refund all transactions for all contributors.",
+            "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/refundfailedlaunch"
+        ],
+        [
+            "How do I use the `refundfailedlaunch` command to refund contributions to a specific chain?",
+            "To use the `refundfailedlaunch` command, you need to provide the chain ID or full chain name as an argument. For example, you can run the command like this: `verus refundfailedlaunch \"currencyid\"`.",
+            "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/refundfailedlaunch"
+        ],
+        [
+            "What information do I need to provide to use the `refundfailedlaunch` command?",
+            "To use the `refundfailedlaunch` command, you need to provide the chain ID or full chain name as a required argument.",
+            "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/refundfailedlaunch"
+        ],
+        [
+            "Can I use the `refundfailedlaunch` command through an API call?",
+            "Yes, you can use the `refundfailedlaunch` command through an API call. Here is an example of how to do it using `curl`: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/refundfailedlaunch"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "33de1e8f-7b20-452b-8686-0cda93c07fdc"
+]

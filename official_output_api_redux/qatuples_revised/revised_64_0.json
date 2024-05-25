@@ -1,0 +1,6 @@
+[
+    "What does the `getlaunchinfo` command do in Verus?",
+    "The `getlaunchinfo` command returns the launch notarization data and partial transaction proof of the launch notarization for a specified currency ID.",
+    "getlaunchinfo \"currencyid\"\n\nReturns the launch notarization data and partial transaction proof of the \nlaunch notarization for the specifed currencyid.\n\nArguments\n1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on\n\nResult:\n{\n \"currencydefinition\" : {},   (json) Full currency definition\n \"txid\" : \"hexstr\",      (hexstr) transaction ID\n \"voutnum\" : \"n\",       (number) vout index of the launch notarization\n \"transactionproof\" : {},    (json) Partial transaction proof of the launch transaction and output\n \"launchnotarization\" : {},   (json) Final CPBaaSNotarization clearing launch or refund\n \"notarynotarization\" : {},   (json) Current notarization of this chain\n}\n\nExamples:\n> verus getlaunchinfo \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getlaunchinfo"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `getblocksubsidy` command in Verus, and how does it work?",
+            "The `getblocksubsidy` command in Verus is used to retrieve the block subsidy reward for a specific block height on the Verus blockchain. This command takes into account the mining slow start and the founders reward.\n\nTo use the `getblocksubsidy` command, you can specify the block height as an argument. If you don't provide a block height, the command will default to the current height of the chain.\n\nThe result of the `getblocksubsidy` command is a JSON object that contains the mining reward amount in KMD, which is the native cryptocurrency of the Verus blockchain.\n\nHere's an example of how to use the `getblocksubsidy` command:\n\n```\nverus getblocksubsidy 1000\n```\n\nThis command will return the block subsidy reward for block height 1000.\n\nAlternatively, you can use the `curl` command to access the Verus API and retrieve the block subsidy reward. Here's an example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocksubsidy\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis command will also return the block subsidy reward for block height 1000.\n\nIn summary, the `getblocksubsidy` command is a useful tool for retrieving information about block rewards on the Verus blockchain. It can be used to understand the mining reward structure and to analyze the blockchain's economic activity.",
+            "getblocksubsidy height\n\nReturns block subsidy reward, taking into account the mining slow start and the founders reward, of block at index provided.\n\nArguments:\n1. height     (numeric, optional) The block height. If not provided, defaults to the current height of the chain.\n\nResult:\n{\n \"miner\" : x.xxx      (numeric) The mining reward amount in KMD.\n}\n\nExamples:\n> verus getblocksubsidy 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockubsidy\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblocksubsidy"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "bd4914ef-196a-4fe9-bde5-9c4272181f69"
+]

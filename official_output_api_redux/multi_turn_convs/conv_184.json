@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to learn more about the `estimatefee` command in Verus. Can you tell me what it does?\n\n**AI Assistant:**\nThe `estimatefee` command in Verus estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a specified number of blocks.\n\n**User:**\nThat sounds useful. How do I actually use the `estimatefee` command, and what argument do I need to provide?\n\n**AI Assistant:**\nTo use the `estimatefee` command, you need to provide one argument, `nblocks`, which is a numeric value representing the number of blocks within which you want the transaction to begin confirmation. The command is used as follows: `verus estimatefee nblocks`.\n\n**User:**\nGot it! What can I expect as the result of the `estimatefee` command, and what happens if not enough transactions and blocks have been observed?\n\n**AI Assistant:**\nThe result of the `estimatefee` command is an estimated fee-per-kilobyte value, `n`, which is a numeric value. If not enough transactions and blocks have been observed to make an estimate, the minimum fee is returned.\n\n**User:**\nThat makes sense. Can you give me a concrete example of how to use the `estimatefee` command?\n\n**AI Assistant:**\nHere's an example of how to use the `estimatefee` command: `verus estimatefee 6`. In this example, the command estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within 6 blocks.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `estimatefee` command in Verus?",
+            "The `estimatefee` command in Verus estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a specified number of blocks.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ],
+        [
+            "How do I use the `estimatefee` command in Verus, and what argument do I need to provide?",
+            "To use the `estimatefee` command in Verus, you need to provide one argument, `nblocks`, which is a numeric value representing the number of blocks within which you want the transaction to begin confirmation. The command is used as follows: `verus estimatefee nblocks`.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ],
+        [
+            "What is the result of the `estimatefee` command in Verus, and what happens if not enough transactions and blocks have been observed?",
+            "The result of the `estimatefee` command in Verus is an estimated fee-per-kilobyte value, `n`, which is a numeric value. If not enough transactions and blocks have been observed to make an estimate, the minimum fee is returned.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ],
+        [
+            "Can you give an example of how to use the `estimatefee` command in Verus?",
+            "Here's an example of how to use the `estimatefee` command in Verus: `verus estimatefee 6`. In this example, the command estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within 6 blocks.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ]
+    ]
+]

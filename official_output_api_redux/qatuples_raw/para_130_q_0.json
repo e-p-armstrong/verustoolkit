@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getblock` command in Verus?",
+    "The `getblock` command is used to retrieve information about a specific block in the Verus blockchain. It can take a block hash or a block height as an input parameter.",
+    "Result (for verbosity = 2):\n{\n ...,           Same output as verbosity = 1.\n \"tx\" : [        (array of Objects) The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 \"tx\" result.\n     ,...\n ],\n ,...           Same output as verbosity = 1.\n}\n\nExamples:\n> verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblock 12800\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblock"
+]

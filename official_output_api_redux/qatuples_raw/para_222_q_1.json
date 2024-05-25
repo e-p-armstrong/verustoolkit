@@ -1,0 +1,6 @@
+[
+    "What are the required arguments for the `zcbenchmark` command?",
+    "The `zcbenchmark` command requires two arguments: `benchmarktype` and `samplecount`. `benchmarktype` specifies the type of benchmark to run, and `samplecount` specifies how many times to run the benchmark.",
+    "zcbenchmark benchmarktype samplecount\n\nRuns a benchmark of the selected type samplecount times,\nreturning the running times of each sample.\n\nOutput: [\n {\n  \"runningtime\": runningtime\n },\n {\n  \"runningtime\": runningtime\n }\n ...\n]",
+    "./raw_text_input_api_text/zcbenchmark"
+]

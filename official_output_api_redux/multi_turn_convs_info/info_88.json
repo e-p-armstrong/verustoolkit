@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `getnewaddress` command in Verus?",
+            "The `getnewaddress` command returns a new VRSC address that can be used to receive payments.",
+            "getnewaddress ( \"account\" )\n\nReturns a new VRSC address for receiving payments.\n\nArguments:\n1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The new VRSC address\n\nExamples:\n> verus getnewaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnewaddress"
+        ],
+        [
+            "What is the format of the `getnewaddress` command, and what is the optional argument for?",
+            "The format of the `getnewaddress` command is `getnewaddress ( \"account\" )`, where \"account\" is an optional string argument. If provided, it must be set to an empty string `\"\"` to represent the default account. Passing any other string will result in an error.",
+            "getnewaddress ( \"account\" )\n\nReturns a new VRSC address for receiving payments.\n\nArguments:\n1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The new VRSC address\n\nExamples:\n> verus getnewaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnewaddress"
+        ],
+        [
+            "What is the result of the `getnewaddress` command?",
+            "The result of the `getnewaddress` command is a new VRSC address, returned as a string.",
+            "getnewaddress ( \"account\" )\n\nReturns a new VRSC address for receiving payments.\n\nArguments:\n1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The new VRSC address\n\nExamples:\n> verus getnewaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnewaddress"
+        ],
+        [
+            "How can I use the `getnewaddress` command using the Verus command-line interface, and what is an alternative way to do it using curl?",
+            "You can use the `getnewaddress` command in the Verus command-line interface by simply typing `verus getnewaddress`. An alternative way to do it is by using curl, with a command like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "getnewaddress ( \"account\" )\n\nReturns a new VRSC address for receiving payments.\n\nArguments:\n1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The new VRSC address\n\nExamples:\n> verus getnewaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnewaddress"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "231d8771-33a1-4a45-a13c-03c5c02a60a7"
+]

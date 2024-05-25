@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `decodescript` command in Verus, and how does it work?",
+            "The `decodescript` command in Verus is used to decode a hex-encoded script and provide information about the script. The command takes one argument, which is the hex-encoded script as a string.\n\nWhen you run the `decodescript` command with a hex-encoded script, it will return a JSON object with several properties that provide information about the script. These properties include:\n\n* `asm`: the script public key in assembly language format\n* `hex`: the hex-encoded public key\n* `type`: the output type of the script\n* `reqSigs`: the number of required signatures for the script\n* `addresses`: an array of transparent addresses associated with the script\n* `p2sh`: the script address in pay-to-script-hash (P2SH) format\n\nThe `decodescript` command can be used in the Verus command-line interface or through a JSON-RPC interface using tools like `curl`.\n\nFor example, you can use the command like this:\n```\nverus decodescript \"hexstring\"\n```\nReplace `\"hexstring\"` with the actual hex-encoded script you want to decode.\n\nAlternatively, you can use `curl` to send a JSON-RPC request to the Verus server:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decodescript\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `\"myusername\"` with your actual username, and `\"hexstring\"` with the actual hex-encoded script you want to decode.\n\nThe `decodescript` command is useful for inspecting and analyzing scripts in Verus, and can be used for a variety of purposes such as troubleshooting, debugging, or simply understanding how a script works.",
+            "decodescript \"hex\"\n\nDecode a hex-encoded script.\n\nArguments:\n1. \"hex\"   (string) the hex encoded script\n\nResult:\n{\n \"asm\":\"asm\",  (string) Script public key\n \"hex\":\"hex\",  (string) hex encoded public key\n \"type\":\"type\", (string) The output type\n \"reqSigs\": n,  (numeric) The required signatures\n \"addresses\": [  (json array of string)\n   \"address\"   (string) transparent address\n   ,...\n ],\n \"p2sh\",\"address\" (string) script address\n}\n\nExamples:\n> verus decodescript \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decodescript\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decodescript"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3bf6df0d-5aa2-4c0a-bd69-ec87cda7f48c"
+]

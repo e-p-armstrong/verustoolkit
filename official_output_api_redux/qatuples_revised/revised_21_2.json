@@ -1,0 +1,6 @@
+[
+    "How can I use the `getconnectioncount` command to check the number of connections to other nodes in Verus?",
+    "You can use the `getconnectioncount` command by running `verus getconnectioncount` in the command line, or by using a JSON-RPC request with the method `getconnectioncount` and an empty parameter list, such as the example provided:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "getconnectioncount\n\nReturns the number of connections to other nodes.\n\nResult:\nn     (numeric) The connection count\n\nExamples:\n> verus getconnectioncount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getconnectioncount"
+]

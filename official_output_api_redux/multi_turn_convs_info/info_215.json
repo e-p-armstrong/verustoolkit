@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does the `getblockcount` command do in Verus?",
+            "The `getblockcount` command in Verus returns the number of blocks in the best valid block chain.",
+            "getblockcount\n\nReturns the number of blocks in the best valid block chain.\n\nResult:\nn  (numeric) The current block count\n\nExamples:\n> verus getblockcount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockcount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockcount"
+        ],
+        [
+            "What is the format of the result returned by the `getblockcount` command?",
+            "The result returned by the `getblockcount` command is a numeric value (n) representing the current block count.",
+            "getblockcount\n\nReturns the number of blocks in the best valid block chain.\n\nResult:\nn  (numeric) The current block count\n\nExamples:\n> verus getblockcount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockcount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockcount"
+        ],
+        [
+            "How can I use the `getblockcount` command to get the current block count in Verus?",
+            "You can use the `getblockcount` command in Verus by running `verus getblockcount` in the command line, or by making a JSON-RPC request to the Verus API with the method \"getblockcount\" and an empty parameter list.",
+            "getblockcount\n\nReturns the number of blocks in the best valid block chain.\n\nResult:\nn  (numeric) The current block count\n\nExamples:\n> verus getblockcount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockcount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockcount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d7954381-ea7c-43f8-b6b5-27dbd3faf91a"
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `ping` command in Verus?",
+            "The `ping` command in Verus is used to measure the ping time to all other nodes in the network. It requests that a ping be sent to all other nodes, and the results are provided in the `getpeerinfo`, `pingtime`, and `pingwait` fields, which are measured in decimal seconds.",
+            "ping\n\nRequests that a ping be sent to all other nodes, to measure ping time.\nResults provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.\nPing command is handled in queue with all other commands, so it measures processing backlog, not just network ping.\n\nExamples:\n> verus ping \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/ping"
+        ],
+        [
+            "What does the `ping` command measure, exactly?",
+            "The `ping` command measures not only the network ping time but also the processing backlog of the node. This means it takes into account the time it takes for the node to process the command, in addition to the time it takes for the network to respond.",
+            "ping\n\nRequests that a ping be sent to all other nodes, to measure ping time.\nResults provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.\nPing command is handled in queue with all other commands, so it measures processing backlog, not just network ping.\n\nExamples:\n> verus ping \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/ping"
+        ],
+        [
+            "How can I use the `ping` command in Verus?",
+            "You can use the `ping` command in Verus by running the command `verus ping` in the command line, or by using the JSON-RPC API with a command like `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "ping\n\nRequests that a ping be sent to all other nodes, to measure ping time.\nResults provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.\nPing command is handled in queue with all other commands, so it measures processing backlog, not just network ping.\n\nExamples:\n> verus ping \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/ping"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8cd4d3d7-3883-4c2a-adb3-cdcb7cd7d2c5"
+]

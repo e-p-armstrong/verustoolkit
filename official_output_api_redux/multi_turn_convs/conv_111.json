@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to retrieve block deltas using the Verus command line. Can you help me with that?\n\n**AI Assistant:**\nYou can retrieve block deltas using the `getblockdeltas` command followed by the block hash. Here's an example:\n\n```\nverus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n```\n\nJust replace the block hash with the one you're interested in, and you should be good to go! Do you have any other questions about this?\n\n**User:**\nActually, yes. How can I retrieve block deltas using a JSON-RPC request?\n\n**AI Assistant:**\nYou can retrieve block deltas using a JSON-RPC request by sending a POST request to the Verus JSON-RPC server with the `getblockdeltas` method and the block hash as a parameter. Here's an example using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nJust replace `myusername` with your actual username and the block hash with the one you're interested in. This should send the request and retrieve the block deltas for you. Let me know if you have any other questions!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I retrieve block deltas using the Verus command line?",
+            "You can retrieve block deltas using the `getblockdeltas` command followed by the block hash. Here's an example:\n\n```\nverus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n```",
+            "Examples:\n> verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockdeltas"
+        ],
+        [
+            "How can I retrieve block deltas using a JSON-RPC request?",
+            "You can retrieve block deltas using a JSON-RPC request by sending a POST request to the Verus JSON-RPC server with the `getblockdeltas` method and the block hash as a parameter. Here's an example using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "Examples:\n> verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockdeltas"
+        ]
+    ]
+]

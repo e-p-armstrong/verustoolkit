@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been trying to figure out how to clear banned IPs in Verus. What's the purpose of the `clearbanned` command?\n\n**AI Assistant:**\nThe `clearbanned` command is used to clear all banned IPs in Verus. It's a handy tool for managing your node's connections.\n\n**User:**\nThat's exactly what I needed! How can I clear all banned IPs using the Verus command line?\n\n**AI Assistant:**\nEasy one! You can clear all banned IPs using the command `verus clearbanned`. Just run that in your terminal, and you're good to go!\n\n**User:**\nIs there an alternative way to clear all banned IPs in Verus, besides using the command line?\n\n**AI Assistant:**\nYes, there is! You can also clear all banned IPs using a JSON-RPC request. An example of this is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will achieve the same result as running `verus clearbanned` on the command line.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `clearbanned` command in Verus?",
+            "The `clearbanned` command is used to clear all banned IPs in Verus.",
+            "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ],
+        [
+            "How can I clear all banned IPs using the Verus command line?",
+            "You can clear all banned IPs using the command `verus clearbanned`.",
+            "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ],
+        [
+            "Is there an alternative way to clear all banned IPs in Verus, besides using the command line?",
+            "Yes, you can also clear all banned IPs using a JSON-RPC request. An example of this is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will achieve the same result as running `verus clearbanned` on the command line.",
+            "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ]
+    ]
+]

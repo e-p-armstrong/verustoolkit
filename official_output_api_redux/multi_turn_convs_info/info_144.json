@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How can I retrieve a raw transaction using the Verus command line interface?",
+            "You can retrieve a raw transaction using the `getrawtransaction` command followed by the transaction ID (txid). The basic syntax is:\n```\nverus getrawtransaction \"mytxid\"\n```\nThis will return the raw transaction data for the specified txid.",
+            "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawtransaction"
+        ],
+        [
+            "What is the purpose of the second argument in the `getrawtransaction` command?",
+            "The second argument in the `getrawtransaction` command is an optional verbosity level. If set to 1, it will return more detailed information about the transaction. For example:\n```\nverus getrawtransaction \"mytxid\" 1\n```\nThis will return a more verbose output of the transaction data.",
+            "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawtransaction"
+        ],
+        [
+            "How can I use the `getrawtransaction` method using the JSON-RPC interface?",
+            "You can use the `getrawtransaction` method using the JSON-RPC interface by sending a JSON payload to the Verus RPC server. The basic syntax is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will send a JSON-RPC request to the Verus RPC server to retrieve the raw transaction data for the specified txid.",
+            "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "751edfa2-bc3c-4c85-a331-89d3a4a0376f"
+]

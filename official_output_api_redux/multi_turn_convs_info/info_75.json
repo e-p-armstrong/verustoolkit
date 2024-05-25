@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the required parameter for the `minerids` command in Verus?",
+            "The `minerids` command in Verus requires a `height` parameter.",
+            "minerids needs height",
+            "./raw_text_input_api_text/minerids"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d9949995-8ef2-4e4c-90d2-a94d4b30f7d7"
+]

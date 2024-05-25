@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to learn more about the Verus network. How can I view a specific transaction on the Verus network?\n\n**AI Assistant:**\nTo view a specific transaction on the Verus network, you can use the `z_viewtransaction` command, followed by the transaction ID. Here's an example:\n\n```\nverus z_viewtransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n```\n\nAlternatively, you can use the Verus RPC API to achieve the same result. For example, using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_viewtransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nDo you have any experience with using RPC APIs, or would you like more information on how to use it with Verus?\n\n**User:**\nNo, I don't have much experience with RPC APIs. How can I use the Verus RPC API to interact with the Verus network?\n\n**AI Assistant:**\nYou can use the Verus RPC API to interact with the Verus network by sending JSON RPC requests to the Verus server. For example, you can use `curl` to send a request to the server, as shown in the example above. The request should include the method, parameters, and other necessary information in JSON format.\n\nIn general, you'll need to specify the method you want to call, the parameters required for that method, and any other necessary information. The Verus RPC API will then respond with the result of the call.\n\nIf you're new to RPC APIs, it might be helpful to check out the Verus documentation for more information on the available methods, parameters, and response formats. Would you like more information on how to get started with the Verus RPC API?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I view a specific transaction on the Verus network?",
+            "You can view a specific transaction on the Verus network using the `z_viewtransaction` command, followed by the transaction ID. Here's an example:\n\n```\nverus z_viewtransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n```\n\nAlternatively, you can use the Verus RPC API to achieve the same result. For example, using `curl`:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_viewtransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "Examples:\n> verus z_viewtransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_viewtransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_viewtransaction"
+        ],
+        [
+            "How can I use the Verus RPC API to interact with the Verus network?",
+            "You can use the Verus RPC API to interact with the Verus network by sending JSON RPC requests to the Verus server. For example, you can use `curl` to send a request to the server, as shown in the example above. The request should include the method, parameters, and other necessary information in JSON format.",
+            "Examples:\n> verus z_viewtransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_viewtransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_viewtransaction"
+        ]
+    ]
+]

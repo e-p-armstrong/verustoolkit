@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `getaccountaddress` command in Verus?",
+            "The `getaccountaddress` command returns the current VRSC address for receiving payments to a specified account.",
+            "getaccountaddress \"account\"\n\nDEPRECATED. Returns the current VRSC address for receiving payments to this account.\n\nArguments:\n1. \"account\"    (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The account VRSC address\n\nExamples:\n> verus getaccountaddress \n> verus getaccountaddress \"\"\n> verus getaccountaddress \"myaccount\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccountaddress\", \"params\": [\"myaccount\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaccountaddress"
+        ],
+        [
+            "What is the required format for the \"account\" argument when using the `getaccountaddress` command?",
+            "The \"account\" argument must be set to an empty string (`\"\"`), which represents the default account. Passing any other string will result in an error.",
+            "getaccountaddress \"account\"\n\nDEPRECATED. Returns the current VRSC address for receiving payments to this account.\n\nArguments:\n1. \"account\"    (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The account VRSC address\n\nExamples:\n> verus getaccountaddress \n> verus getaccountaddress \"\"\n> verus getaccountaddress \"myaccount\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccountaddress\", \"params\": [\"myaccount\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaccountaddress"
+        ],
+        [
+            "What is the result of the `getaccountaddress` command?",
+            "The result of the `getaccountaddress` command is a string representing the account VRSC address.",
+            "getaccountaddress \"account\"\n\nDEPRECATED. Returns the current VRSC address for receiving payments to this account.\n\nArguments:\n1. \"account\"    (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The account VRSC address\n\nExamples:\n> verus getaccountaddress \n> verus getaccountaddress \"\"\n> verus getaccountaddress \"myaccount\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccountaddress\", \"params\": [\"myaccount\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaccountaddress"
+        ],
+        [
+            "Can I use the `getaccountaddress` command with a specific account name, such as \"myaccount\"?",
+            "No, you cannot use the `getaccountaddress` command with a specific account name. The \"account\" argument must be set to an empty string (`\"\"`), which represents the default account. Passing any other string, such as \"myaccount\", will result in an error.",
+            "getaccountaddress \"account\"\n\nDEPRECATED. Returns the current VRSC address for receiving payments to this account.\n\nArguments:\n1. \"account\"    (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The account VRSC address\n\nExamples:\n> verus getaccountaddress \n> verus getaccountaddress \"\"\n> verus getaccountaddress \"myaccount\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccountaddress\", \"params\": [\"myaccount\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaccountaddress"
+        ],
+        [
+            "What is the status of the `getaccountaddress` command in Verus?",
+            "The `getaccountaddress` command is deprecated, which means it is no longer recommended for use and may be removed in future versions of Verus.",
+            "getaccountaddress \"account\"\n\nDEPRECATED. Returns the current VRSC address for receiving payments to this account.\n\nArguments:\n1. \"account\"    (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The account VRSC address\n\nExamples:\n> verus getaccountaddress \n> verus getaccountaddress \"\"\n> verus getaccountaddress \"myaccount\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccountaddress\", \"params\": [\"myaccount\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaccountaddress"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "435c4bd6-db81-46ed-ba27-403a11a84a09"
+]

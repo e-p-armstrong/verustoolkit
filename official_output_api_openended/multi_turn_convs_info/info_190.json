@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I close offers on the Verus network using the `closeoffers` command, and what are the different parameters that can be used with this command?",
+            "The `closeoffers` command is used to close all offers listed in the Verus wallet, provided they are still valid and belong to the wallet. This command can be used to close expired offers even if no parameters are given.\n\nTo use the `closeoffers` command, you need to provide the necessary parameters. The first parameter is an array of hex tx ids of offers to close, which is optional. If you don't provide this parameter, the command will close all expired offers.\n\nThe second parameter is the destination for closing funds, which can be either a transparent or private address. This parameter is also optional.\n\nThe third parameter is the destination for native funds only, which must be a private address. This parameter is also optional.\n\nHere's an example of how to use the `closeoffers` command:\n\n```\ncloseoffers ('[\"offer1_txid\", \"offer2_txid\",...]') (transparentorprivatefundsdestination) (privatefundsdestination)\n```\n\nFor example, if you want to close two offers with tx ids \"offer1_txid\" and \"offer2_txid\" and send the closing funds to a transparent address \"mytransparentaddress\", you would use the following command:\n\n```\ncloseoffers ('[\"offer1_txid\", \"offer2_txid\"]') mytransparentaddress\n```\n\nIf you want to send the native funds only to a private address \"myprivateaddress\", you would use the following command:\n\n```\ncloseoffers ('[\"offer1_txid\", \"offer2_txid\"]') mytransparentaddress myprivateaddress\n```\n\nThe `closeoffers` command returns null, indicating that the command has been successfully executed.\n\nIn summary, the `closeoffers` command is a useful tool for managing offers on the Verus network. By providing the necessary parameters, you can close offers and send the closing funds to the desired destination.",
+            "closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)\n\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n\nArguments\n [\"offer1_txid\", \"offer2_txid\", ...]   (array, optional) array of hex tx ids of offers to close\n transparentorprivatefundsdestination     (transparent or private address, optional) destination for closing funds\n privatefundsdestination           (private address, optional) destination for native funds only\n\nResult\n null return",
+            "./raw_text_input_api_text/closeoffers"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "663ce48e-148a-4dda-8b2c-66a7f27f9b05"
+]

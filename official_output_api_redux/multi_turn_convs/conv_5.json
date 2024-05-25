@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been playing around with Verus and I came across the `migrate_completeimporttransaction` command. Can you tell me what its purpose is?\n\n**AI Assistant:**\nThe `migrate_completeimporttransaction` command is used to extend a proof generated on an asset chain to a target chain proof root. This is typically used in cross-chain import transactions.\n\n**User:**\nThat makes sense. What type of transaction does this command work with, exactly?\n\n**AI Assistant:**\nThe `migrate_completeimporttransaction` command works with cross-chain import transactions.\n\n**User:**\nOkay, got it. So what exactly does the `migrate_completeimporttransaction` command do to the proof generated on an asset chain?\n\n**AI Assistant:**\nThe `migrate_completeimporttransaction` command extends the proof generated on an asset chain to a target chain proof root. Does that clarify things for you? Do you have any more questions about Verus or this command?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `migrate_completeimporttransaction` command in Verus?",
+            "The `migrate_completeimporttransaction` command is used to extend a proof generated on an asset chain to a target chain proof root. This is typically used in cross-chain import transactions.",
+            "migrate_completeimporttransaction importTx\n\nTakes a cross chain import tx with proof generated on assetchain and extends proof to target chain proof root",
+            "./raw_text_input_api_text/migrate_completeimporttransaction"
+        ],
+        [
+            "What type of transaction does the `migrate_completeimporttransaction` command work with?",
+            "The `migrate_completeimporttransaction` command works with cross-chain import transactions.",
+            "migrate_completeimporttransaction importTx\n\nTakes a cross chain import tx with proof generated on assetchain and extends proof to target chain proof root",
+            "./raw_text_input_api_text/migrate_completeimporttransaction"
+        ],
+        [
+            "What does the `migrate_completeimporttransaction` command do to the proof generated on an asset chain?",
+            "The `migrate_completeimporttransaction` command extends the proof generated on an asset chain to a target chain proof root.",
+            "migrate_completeimporttransaction importTx\n\nTakes a cross chain import tx with proof generated on assetchain and extends proof to target chain proof root",
+            "./raw_text_input_api_text/migrate_completeimporttransaction"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What does the `getunconfirmedbalance` command do in Verus?",
+            "The `getunconfirmedbalance` command returns the total unconfirmed balance of the Verus server.",
+            "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+            "./raw_text_input_api_text/getunconfirmedbalance"
+        ],
+        [
+            "What kind of balance does `getunconfirmedbalance` return?",
+            "`getunconfirmedbalance` returns the total unconfirmed balance of the Verus server, which means it shows the balance of transactions that have not yet been confirmed on the blockchain.",
+            "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+            "./raw_text_input_api_text/getunconfirmedbalance"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "476ca6b4-4387-4198-af5e-ff10a65c9d72"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `z_getoperationstatus` command in Verus, and how does it work?",
+            "The `z_getoperationstatus` command in Verus is used to retrieve the status of one or more operations, along with any associated result or error data. This command allows you to monitor the progress of operations and receive updates on their status.\n\nTo use this command, you can pass an optional array of operation IDs as an argument. If you don't provide any operation IDs, the command will return the status of all operations known to the node.\n\nThe command returns a list of JSON objects, each containing information about an operation. This information can include the operation's status, result, and any error messages.\n\nYou can execute the `z_getoperationstatus` command using the Verus command-line interface or through an HTTP request using curl. Here are some examples of how to use this command:\n\n* Using the Verus command-line interface: `verus z_getoperationstatus '[\"operationid\",... ]'`\n* Using curl: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationstatus\", \"params\": ['[\"operationid\",... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`\n\nBy using the `z_getoperationstatus` command, you can keep track of the status of your operations and ensure that they are completing successfully. This can be particularly useful for complex operations or for debugging issues with your Verus node.",
+            "z_getoperationstatus ([\"operationid\", ... ])\n\nGet operation status and any associated result or error data. The operation will remain in memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationstatus '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationstatus\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationstatus"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "dcb7f9bb-d2d2-415a-8c3a-698351d81c65"
+]

@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to use the `definecurrency` command in Verus, but I'm not sure what the result format is. Can you help me with that?\n\n**AI Assistant:**\nThe result format of the `definecurrency` command in Verus is a JSON object with three properties: `txid`, `tx`, and `hex`. The `txid` property is a string representing the transaction ID, the `tx` property is a JSON object representing the transaction decoded as a transaction, and the `hex` property is a string representing the raw data for the signed transaction. Does that make sense?\n\n**User:**\nThat helps, thanks! Now, I'm trying to define a new currency using the `definecurrency` command. How do I do that?\n\n**AI Assistant:**\nYou can define a new currency using the `definecurrency` command in Verus by providing a JSON definition of the currency as an argument. For example, you can use the command `verus definecurrency jsondefinition` where `jsondefinition` is the JSON object defining the new currency. Make sure to replace `jsondefinition` with the actual JSON object that defines your new currency.\n\n**User:**\nThat's helpful, thanks! I was also wondering, can I use a remote procedure call (RPC) to define a new currency in Verus?\n\n**AI Assistant:**\nYes, you can use a remote procedure call (RPC) to define a new currency in Verus. You can do this by sending a JSON RPC request to the Verus RPC server with the `definecurrency` method and the JSON definition of the currency as a parameter. For example, you can use the command `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/` where `jsondefinition` is the JSON object defining the new currency. Just replace `myusername` with your actual username and `jsondefinition` with the actual JSON object that defines your new currency.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the result format of the `definecurrency` command in Verus?",
+            "The result format of the `definecurrency` command in Verus is a JSON object with three properties: `txid`, `tx`, and `hex`. The `txid` property is a string representing the transaction ID, the `tx` property is a JSON object representing the transaction decoded as a transaction, and the `hex` property is a string representing the raw data for the signed transaction.",
+            "Result:\n{\n \"txid\" : \"transactionid\", (string) The transaction id\n \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction\n \"hex\" : \"data\"      (string) Raw data for signed transaction\n}\n\nExamples:\n> verus definecurrency jsondefinition\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ],
+        [
+            "How can I define a new currency using the `definecurrency` command in Verus?",
+            "You can define a new currency using the `definecurrency` command in Verus by providing a JSON definition of the currency as an argument. For example, you can use the command `verus definecurrency jsondefinition` where `jsondefinition` is the JSON object defining the new currency.",
+            "Result:\n{\n \"txid\" : \"transactionid\", (string) The transaction id\n \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction\n \"hex\" : \"data\"      (string) Raw data for signed transaction\n}\n\nExamples:\n> verus definecurrency jsondefinition\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ],
+        [
+            "Can I use a remote procedure call (RPC) to define a new currency in Verus?",
+            "Yes, you can use a remote procedure call (RPC) to define a new currency in Verus. You can do this by sending a JSON RPC request to the Verus RPC server with the `definecurrency` method and the JSON definition of the currency as a parameter. For example, you can use the command `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/` where `jsondefinition` is the JSON object defining the new currency.",
+            "Result:\n{\n \"txid\" : \"transactionid\", (string) The transaction id\n \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction\n \"hex\" : \"data\"      (string) Raw data for signed transaction\n}\n\nExamples:\n> verus definecurrency jsondefinition\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getmempoolinfo` command in Verus?",
+    "The `getmempoolinfo` command returns details on the active state of the transaction (TX) memory pool, providing information such as the current transaction count, total transaction size, and total memory usage.",
+    "getmempoolinfo\n\nReturns details on the active state of the TX memory pool.\n\nResult:\n{\n \"size\": xxxxx        (numeric) Current tx count\n \"bytes\": xxxxx        (numeric) Sum of all tx sizes\n \"usage\": xxxxx        (numeric) Total memory usage for the mempool\n}\n\nExamples:\n> verus getmempoolinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getmempoolinfo"
+]

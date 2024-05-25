@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I disconnect from a specific node in Verus, and what are the different ways to do it?",
+            "In Verus, you can disconnect from a specific node using the `disconnectnode` command. This command allows you to immediately disconnect from a node that you are currently connected to.\n\nTo use the `disconnectnode` command, you need to provide the node's address as a string argument. The node address can be obtained using the `getpeerinfo` command.\n\nThere are two ways to disconnect from a node:\n\n**Method 1: Using the Verus Command Line Interface**\n\nYou can use the Verus command line interface to disconnect from a node. The format of the command is:\n```\nverus disconnectnode \"node_address\"\n```\nReplace \"node_address\" with the actual address of the node you want to disconnect from. For example:\n```\nverus disconnectnode \"192.168.0.6:8233\"\n```\n**Method 2: Using the JSON-RPC API**\n\nYou can also use the JSON-RPC API to disconnect from a node. To do this, you need to send a JSON request to the Verus server. The format of the request is:\n```\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"disconnectnode\",\n  \"params\": [\"node_address\"]\n}\n```\nReplace \"node_address\" with the actual address of the node you want to disconnect from. You can use a tool like `curl` to send the request to the Verus server. For example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nNote that you need to replace \"myusername\" with your actual username and \"http://127.0.0.1:27486/\" with the actual address of your Verus server.",
+            "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9a7483bb-4cda-4038-a757-90017c5996a5"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I retrieve information about connected peers on the Verus network?",
+            "You can retrieve information about connected peers on the Verus network using the `getpeerinfo` command. This can be done in two ways: using the Verus command-line interface or by sending a JSON-RPC request.\n\nUsing the Verus command-line interface:\n```\nverus getpeerinfo\n```\n\nUsing JSON-RPC:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpeerinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "Examples:\n> verus getpeerinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpeerinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpeerinfo"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "30cc52d8-915d-4349-9b36-6539501b3a33"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `getidentity` command in Verus, and how can it be used to retrieve information about an identity on the Verus network?",
+            "The `getidentity` command in Verus is used to retrieve information about a specific identity on the Verus network. This command takes four arguments: the identity name or i-address, a height parameter, a txproof parameter, and a txproofheight parameter.\n\nThe identity name or i-address is a required string argument that specifies the identity for which to retrieve information. This can be in the format of \"name@\" or an i-address.\n\nThe height parameter is an optional number argument that defaults to the current height of the blockchain. This parameter allows you to specify a specific height at which to retrieve the identity information. If you set this parameter to -1, the command will also include information from the memory pool.\n\nThe txproof parameter is an optional boolean argument that defaults to false. If set to true, the command will return a proof of the identity.\n\nThe txproofheight parameter is an optional number argument that defaults to the height specified in the height parameter. This parameter allows you to specify a specific height from which to generate the proof of identity.\n\nThe `getidentity` command can be used in two ways: through the Verus command-line interface or through a JSON-RPC call using a tool like curl.\n\nHere are some examples of how to use the `getidentity` command:\n\n* Using the Verus command-line interface: `verus getidentity \"name@\"`\n* Using a JSON-RPC call: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`\n\nIn summary, the `getidentity` command is a powerful tool in Verus that allows you to retrieve information about specific identities on the network, including their state at a specific height and proof of existence.",
+            "getidentity \"name@ || iid\" (height) (txproof) (txproofheight)\n\nArguments\n  \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity\n  \"height\"               (number, optional) default=current height, return identity as of this height, if -1 include mempool\n  \"txproof\"              (bool, optional) default=false, if true, returns proof of ID\n  \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof\n\nResult:\n\nExamples:\n> verus getidentity \"name@\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentity"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c1ca914f-2534-444d-ae65-bcfdae386903"
+]

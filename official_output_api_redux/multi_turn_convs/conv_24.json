@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to learn more about the Verus commands. Can you tell me what the `gettransaction` command does?\n\n**AI Assistant:**\nThe `gettransaction` command retrieves detailed information about a specific transaction in your wallet, identified by its transaction ID (`txid`). Do you have any more questions about this command or would you like to know more about how to use it?\n\n**User:**\nYes, I'd like to know more. What are the required and optional arguments for the `gettransaction` command?\n\n**AI Assistant:**\nThe `gettransaction` command requires one argument: `txid`, which is a string representing the transaction ID of the transaction you want to retrieve information about. Additionally, there is an optional argument `includeWatchonly`, which is a boolean that defaults to `false`. If set to `true`, it includes watch-only addresses in the balance calculation and details.\n\n**User:**\nI'm not entirely sure what the `includeWatchonly` argument does. Can you explain it in more detail?\n\n**AI Assistant:**\nThe `includeWatchonly` argument, when set to `true`, includes watch-only addresses in the balance calculation and details of the transaction information retrieved by the `gettransaction` command. If set to `false` (default), watch-only addresses are not included. This can be useful if you want to see the full picture of a transaction's impact on your wallet, including any watch-only addresses that may be affected. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `gettransaction` command do in Verus?",
+            "The `gettransaction` command retrieves detailed information about a specific transaction in your wallet, identified by its transaction ID (`txid`).",
+            "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_api_text/gettransaction"
+        ],
+        [
+            "What are the required and optional arguments for the `gettransaction` command?",
+            "The `gettransaction` command requires one argument: `txid`, which is a string representing the transaction ID of the transaction you want to retrieve information about. Additionally, there is an optional argument `includeWatchonly`, which is a boolean that defaults to `false`. If set to `true`, it includes watch-only addresses in the balance calculation and details.",
+            "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_api_text/gettransaction"
+        ],
+        [
+            "What does the `includeWatchonly` argument do in the `gettransaction` command?",
+            "The `includeWatchonly` argument, when set to `true`, includes watch-only addresses in the balance calculation and details of the transaction information retrieved by the `gettransaction` command. If set to `false` (default), watch-only addresses are not included.",
+            "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_api_text/gettransaction"
+        ]
+    ]
+]

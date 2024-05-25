@@ -1,0 +1,6 @@
+[
+    "What is the equivalent JSON RPC call for the `sendmany` command?",
+    "The equivalent JSON RPC call for the `sendmany` command is:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendmany\", \"params\": [\"\", \"{\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\":0.01,\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\":0.02}\", 6, \"testing\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis JSON RPC call sends the same transaction as the `sendmany` command, but uses the JSON RPC protocol to communicate with the Verus node.",
+    "Send two amounts to two different addresses, subtract fee from amount:\n> verus sendmany \"\" \"{\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\":0.01,\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\":0.02}\" 1 \"\" \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendmany\", \"params\": [\"\", \"{\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\":0.01,\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\":0.02}\", 6, \"testing\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/sendmany"
+]

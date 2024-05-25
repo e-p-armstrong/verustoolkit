@@ -1,0 +1,6 @@
+[
+    "What does the `getsaplingtree` command do in Verus?",
+    "The `getsaplingtree` command returns the entries for a light wallet Sapling tree state. It can take an optional argument specifying the height or an inclusive range with an optional step at which to get the Sapling tree state.",
+    "getsaplingtree \"n\"\n\nReturns the entries for a light wallet Sapling tree state.\n\nArguments\n  \"n\" or \"m,n\" or \"m,n,o\"     (int or string, optional) height or inclusive range with optional step at which to get the Sapling tree state\n                                  If not specified, the latest currency state and height is returned\n\nResult:\n  [\n    {\n      \"network\": \"VRSC\",\n      \"height\": n,\n      \"hash\": \"hex\"\n      \"time\": n,\n      \"tree\": \"hex\"\n    },\n  ]\n\nExamples:\n> verus getsaplingtree name\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getsaplingtree\", \"params\": [name] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getsaplingtree"
+]

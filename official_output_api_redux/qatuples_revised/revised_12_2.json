@@ -1,0 +1,6 @@
+[
+    "What does the `includeWatchonly` argument do in the `gettransaction` command?",
+    "The `includeWatchonly` argument, when set to `true`, includes watch-only addresses in the balance calculation and details of the transaction information retrieved by the `gettransaction` command. If set to `false` (default), watch-only addresses are not included.",
+    "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+    "./raw_text_input_api_text/gettransaction"
+]

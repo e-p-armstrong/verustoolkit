@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `resendwallettransactions` command in Verus, and how does it work?",
+            "The `resendwallettransactions` command in Verus is a tool used for testing purposes. Its primary function is to immediately re-broadcast unconfirmed wallet transactions to all peers in the network. This command can be useful in certain testing scenarios where you want to ensure that unconfirmed transactions are propagated to the entire network quickly.\n\nHere's how it works: when you run `resendwallettransactions`, Verus will re-broadcast all unconfirmed transactions from your wallet to all connected peers. This can help to speed up the confirmation process for these transactions, especially in cases where the network is not functioning as expected.\n\nIt's important to note that this command is intended only for testing purposes and should not be used in a production environment. The wallet code in Verus is designed to periodically re-broadcast unconfirmed transactions automatically, so there is usually no need to use this command in normal operation.\n\nThe `resendwallettransactions` command returns an array of transaction IDs that were re-broadcast as a result of the command. This can be useful for tracking the status of specific transactions and ensuring that they have been properly propagated to the network.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5e78a79a-af91-4748-ab60-cc3cccb5cf02"
+]

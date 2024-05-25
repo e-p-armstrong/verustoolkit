@@ -1,0 +1,6 @@
+[
+    "What is the opposite of the `reconsiderblock` command in Verus?",
+    "The opposite of the `reconsiderblock` command in Verus is the `invalidateblock` command. While `reconsiderblock` removes the invalidity status of a block, `invalidateblock` marks a block as invalid.",
+    "reconsiderblock \"hash\"\n\nRemoves invalidity status of a block and its descendants, reconsider them for activation.\nThis can be used to undo the effects of invalidateblock.\n\nArguments:\n1. hash  (string, required) the hash of the block to reconsider\n\nResult:\n\nExamples:\n> verus reconsiderblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"reconsiderblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/reconsiderblock"
+]

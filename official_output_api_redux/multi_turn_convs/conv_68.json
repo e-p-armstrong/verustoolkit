@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been trying to get a better understanding of some of the commands in Verus. Can you tell me what the `getlocalsolps` command does?\n\n**AI Assistant:**\nThe `getlocalsolps` command returns the average local solutions per second since this node was started. It's a useful way to get an idea of your node's performance.\n\n**User:**\nThat's helpful, thanks! What kind of information does the `getlocalsolps` command provide, exactly?\n\n**AI Assistant:**\nThe `getlocalsolps` command provides the average number of local solutions per second, which is also displayed on the metrics screen if enabled. So, it gives you a sense of how many solutions your node is finding per second.\n\n**User:**\nGot it! How can I use the `getlocalsolps` command in Verus?\n\n**AI Assistant:**\nYou can use the `getlocalsolps` command in two ways: either by running `verus getlocalsolps` in the command line or by sending a JSON-RPC request using `curl` with the method `getlocalsolps` and an empty parameter list. Both methods will give you the average local solutions per second since the node was started.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `getlocalsolps` command do in Verus?",
+            "The `getlocalsolps` command returns the average local solutions per second since this node was started.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ],
+        [
+            "What kind of information does the `getlocalsolps` command provide?",
+            "The `getlocalsolps` command provides the average number of local solutions per second, which is also displayed on the metrics screen if enabled.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ],
+        [
+            "How can I use the `getlocalsolps` command in Verus?",
+            "You can use the `getlocalsolps` command in two ways: either by running `verus getlocalsolps` in the command line or by sending a JSON-RPC request using `curl` with the method `getlocalsolps` and an empty parameter list.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ]
+    ]
+]

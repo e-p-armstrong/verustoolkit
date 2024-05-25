@@ -1,0 +1,6 @@
+[
+    "How can I decode a raw transaction using the Verus command-line interface?",
+    "You can decode a raw transaction using the `decoderawtransaction` command in the Verus command-line interface, followed by the hex string of the transaction. The format of the command is:\n```\nverus decoderawtransaction \"hexstring\"\n```\nReplace \"hexstring\" with the actual hex string of the transaction you want to decode.",
+    "Examples:\n> verus decoderawtransaction \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/decoderawtransaction"
+]

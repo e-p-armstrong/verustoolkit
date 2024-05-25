@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I import a wallet file into Verus, and what are the different ways to do so?",
+            "Importing a wallet file into Verus is a crucial step in managing your digital assets. Verus provides a simple and intuitive way to import your wallet file using the `importwallet` command. This command allows you to import taddr keys from a wallet dump file, which can be generated using the `dumpwallet` command.\n\nTo import a wallet file, you need to provide the path to the wallet file as an argument to the `importwallet` command. For example, if your wallet file is named \"nameofbackup\" and is located in a directory \"exportdir\", you can import it using the following command:\n\n```\nverus importwallet \"path/to/exportdir/nameofbackup\"\n```\n\nAlternatively, you can also use the JSON RPC call to import the wallet file. This method allows you to import the wallet file programmatically using a tool like `curl`. Here's an example of how to use `curl` to import a wallet file:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nIn this example, you need to replace \"myusername\" with your actual username, and \"path/to/exportdir/nameofbackup\" with the actual path to your wallet file.\n\nIt's important to note that before you can import a wallet file, you need to dump the wallet using the `dumpwallet` command. This command generates a wallet dump file that can be used to import the wallet into Verus. Here's an example of how to dump the wallet:\n\n```\nverus dumpwallet \"nameofbackup\"\n```\n\nOverall, importing a wallet file into Verus is a straightforward process that can be done using the `importwallet` command or the JSON RPC call. By following these steps, you can easily manage your digital assets and keep them secure.",
+            "importwallet \"filename\"\n\nImports taddr keys from a wallet dump file (see dumpwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus dumpwallet \"nameofbackup\"\n\nImport the wallet\n> verus importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7eebfa5b-ca54-466f-a760-26c331170d8f"
+]

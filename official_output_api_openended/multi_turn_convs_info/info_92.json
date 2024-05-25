@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are some ways to retrieve peer information from a Verus node, and what are the formatting requirements for doing so?",
+            "To retrieve peer information from a Verus node, you can use either the Verus command-line interface or a RESTful API call using a tool like curl.\n\n**Using the Verus Command-Line Interface:**\nOne way to get peer information is by using the `verus` command-line interface. Specifically, you can use the `getpeerinfo` command to retrieve a list of connected peers and their relevant information. The format for this command is simply:\n```\nverus getpeerinfo\n```\nThis will output a list of peers connected to your Verus node, along with their IP addresses, connection times, and other relevant details.\n\n**Using a RESTful API Call with curl:**\nAnother way to retrieve peer information is by using a RESTful API call with a tool like curl. To do this, you'll need to send a JSON-RPC request to the Verus node's API endpoint. The format for this request is as follows:\n```\ncurl --user <username> --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpeerinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nHere, `<username>` should be replaced with your actual Verus node username. The `--data-binary` flag specifies the JSON-RPC request payload, which includes the `method` field set to `getpeerinfo` and an empty `params` array. The `-H` flag specifies the `Content-Type` header as `text/plain`, and the final argument is the URL of the Verus node's API endpoint (in this case, `http://127.0.0.1:27486/`).\n\nIn both cases, the Verus node will respond with a list of connected peers and their relevant information.",
+            "Examples:\n> verus getpeerinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpeerinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpeerinfo"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "faf67c03-1ec2-4d54-8464-415c82e37958"
+]

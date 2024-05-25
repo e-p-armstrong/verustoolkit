@@ -1,0 +1,6 @@
+[
+    "What are the required and optional arguments for the `gettxoutproof` command?",
+    "The required argument is a JSON array of txids to filter, and the optional argument is the block hash, which specifies the block in which the transaction is included.",
+    "gettxoutproof [\"txid\",...] ( blockhash )\n\nReturns a hex-encoded proof that \"txid\" was included in a block.\n\nNOTE: By default this function only works sometimes. This is when there is an\nunspent output in the utxo for this transaction. To make it always work,\nyou need to maintain a transaction index, using the -txindex command line option or\nspecify the block in which the transaction is included in manually (by blockhash).\n\nReturn the raw transaction data.\n\nArguments:\n1. \"txids\"    (string) A json array of txids to filter\n  [\n   \"txid\"   (string) A transaction hash\n   ,...\n  ]\n2. \"block hash\" (string, optional) If specified, looks for txid in the block with this hash\n\nResult:\n\"data\"      (string) A string that is a serialized, hex-encoded data for the proof.",
+    "./raw_text_input_api_text/gettxoutproof"
+]

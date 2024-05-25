@@ -1,0 +1,6 @@
+[
+    "How do I use the `estimatepriority` command in Verus?",
+    "To use the `estimatepriority` command, you need to specify the number of blocks (`nblocks`) as an argument. The command will then return an estimated priority value as a result.",
+    "estimatepriority nblocks\n\nEstimates the approximate priority\na zero-fee transaction needs to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated priority\n\n-1.0 is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatepriority 6",
+    "./raw_text_input_api_text/estimatepriority"
+]

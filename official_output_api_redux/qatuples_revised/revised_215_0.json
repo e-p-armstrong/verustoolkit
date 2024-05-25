@@ -1,0 +1,6 @@
+[
+    "What does the `getblockcount` command do in Verus?",
+    "The `getblockcount` command in Verus returns the number of blocks in the best valid block chain.",
+    "getblockcount\n\nReturns the number of blocks in the best valid block chain.\n\nResult:\nn  (numeric) The current block count\n\nExamples:\n> verus getblockcount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockcount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblockcount"
+]

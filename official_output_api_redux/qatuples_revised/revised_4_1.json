@@ -1,0 +1,6 @@
+[
+    "Can I use the `listunspent` command with a JSON RPC interface in Verus?",
+    "Yes, you can use the `listunspent` command with a JSON RPC interface in Verus. For example, you can use `curl` to send a JSON RPC request to the Verus server, like this: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listunspent\", \"params\": [6, 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+    "Examples\n> verus listunspent \n> verus listunspent 6 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listunspent\", \"params\": [6, 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listunspent"
+]

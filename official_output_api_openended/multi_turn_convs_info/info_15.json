@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can you use the `listunspent` command in Verus to retrieve a list of unspent transaction outputs, and what are the different ways to specify the parameters for this command?",
+            "The `listunspent` command in Verus is used to retrieve a list of unspent transaction outputs (UTXOs) that can be used to create new transactions. This command can be used in different ways to specify the parameters for retrieving the UTXOs.\n\n**Basic usage:**\nThe basic usage of the `listunspent` command is by simply running `verus listunspent`. This will retrieve a list of all unspent transaction outputs in the wallet.\n\n**Specifying minimum and maximum confirmations:**\nYou can specify the minimum and maximum number of confirmations required for the UTXOs by adding two integer parameters to the command. For example, `verus listunspent 6 9999999` will retrieve a list of UTXOs with at least 6 confirmations and at most 9999999 confirmations.\n\n**Specifying addresses:**\nYou can also specify a list of addresses to retrieve UTXOs for by adding a JSON array of addresses as a parameter to the command. For example, `verus listunspent 6 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"` will retrieve a list of UTXOs with at least 6 confirmations and at most 9999999 confirmations for the specified addresses.\n\n**Using JSON-RPC:**\nThe `listunspent` command can also be used with JSON-RPC by sending a JSON request to the Verus daemon. The JSON request should contain the method `listunspent`, the parameters for the command, and a request ID. For example, the following command can be used to retrieve a list of UTXOs using JSON-RPC:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listunspent\", \"params\": [6, 9999999, [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]]}' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will send a JSON request to the Verus daemon to retrieve a list of UTXOs with at least 6 confirmations and at most 9999999 confirmations for the specified addresses.",
+            "Examples\n> verus listunspent \n> verus listunspent 6 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listunspent\", \"params\": [6, 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listunspent"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "13063c7f-e8d5-4e6b-84ae-42189800aee0"
+]

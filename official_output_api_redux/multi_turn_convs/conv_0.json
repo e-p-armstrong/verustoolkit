@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm trying to use the `calc_MoM` command, but I'm not sure what parameters I need to provide. Can you help me out?\n\n**AI Assistant:**\nThe `calc_MoM` command requires two parameters: `height` and `MoMdepth`. These parameters are necessary to calculate the Momentum (MoM) score, which is an important metric in the Verus ecosystem. Do you have any questions about what these parameters represent or how to use them?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the parameters required to run the `calc_MoM` command?",
+            "The `calc_MoM` command requires two parameters: `height` and `MoMdepth`.",
+            "calc_MoM height MoMdepth",
+            "./raw_text_input_api_text/calc_MoM"
+        ]
+    ]
+]

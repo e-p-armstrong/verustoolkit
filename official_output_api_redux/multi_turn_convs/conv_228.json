@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been experimenting with the `getnetworksolps` command in Verus, but I'm not entirely sure what it does. Can you help me out?\n\n**AI Assistant:**\nThe `getnetworksolps` command estimates the network solutions per second based on the last n blocks. It can be used to gauge the current or past network speed. Do you have any specific questions about how to use it or what it does?\n\n**User:**\nActually, yes. How do I use the `getnetworksolps` command to estimate the network speed at a specific block height?\n\n**AI Assistant:**\nYou can use the `getnetworksolps` command to estimate the network speed at a specific block height by passing the block height as the second argument. For example: `verus getnetworksolps 120 1000` would estimate the network speed at block height 1000. Do you have any more questions about this?\n\n**User:**\nWhat is the default number of blocks used by the `getnetworksolps` command to estimate the network speed?\n\n**AI Assistant:**\nThe default number of blocks used by the `getnetworksolps` command to estimate the network speed is 120. If you don't specify a number, it will use 120 blocks to make the estimate.\n\n**User:**\nWhat does passing -1 as the first argument to the `getnetworksolps` command do?\n\n**AI Assistant:**\nPassing -1 as the first argument to the `getnetworksolps` command specifies that the command should use blocks over the difficulty averaging window to estimate the network speed. This can give you a different perspective on the network speed, depending on what you're trying to measure.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getnetworksolps` command in Verus?",
+            "The `getnetworksolps` command estimates the network solutions per second based on the last n blocks. It can be used to gauge the current or past network speed.",
+            "getnetworksolps ( blocks height )\n\nReturns the estimated network solutions per second based on the last n blocks.\nPass in [blocks] to override # of blocks, -1 specifies over difficulty averaging window.\nPass in [height] to estimate the network speed at the time when a certain block was found.\n\nArguments:\n1. blocks   (numeric, optional, default=120) The number of blocks, or -1 for blocks over difficulty averaging window.\n2. height   (numeric, optional, default=-1) To estimate at the time of the given height.\n\nResult:\nx       (numeric) Solutions per second estimated\n\nExamples:\n> verus getnetworksolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnetworksolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnetworksolps"
+        ],
+        [
+            "How do I use the `getnetworksolps` command to estimate the network speed at a specific block height?",
+            "You can use the `getnetworksolps` command to estimate the network speed at a specific block height by passing the block height as the second argument. For example: `verus getnetworksolps 120 1000` would estimate the network speed at block height 1000.",
+            "getnetworksolps ( blocks height )\n\nReturns the estimated network solutions per second based on the last n blocks.\nPass in [blocks] to override # of blocks, -1 specifies over difficulty averaging window.\nPass in [height] to estimate the network speed at the time when a certain block was found.\n\nArguments:\n1. blocks   (numeric, optional, default=120) The number of blocks, or -1 for blocks over difficulty averaging window.\n2. height   (numeric, optional, default=-1) To estimate at the time of the given height.\n\nResult:\nx       (numeric) Solutions per second estimated\n\nExamples:\n> verus getnetworksolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnetworksolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnetworksolps"
+        ],
+        [
+            "What is the default number of blocks used by the `getnetworksolps` command to estimate the network speed?",
+            "The default number of blocks used by the `getnetworksolps` command to estimate the network speed is 120.",
+            "getnetworksolps ( blocks height )\n\nReturns the estimated network solutions per second based on the last n blocks.\nPass in [blocks] to override # of blocks, -1 specifies over difficulty averaging window.\nPass in [height] to estimate the network speed at the time when a certain block was found.\n\nArguments:\n1. blocks   (numeric, optional, default=120) The number of blocks, or -1 for blocks over difficulty averaging window.\n2. height   (numeric, optional, default=-1) To estimate at the time of the given height.\n\nResult:\nx       (numeric) Solutions per second estimated\n\nExamples:\n> verus getnetworksolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnetworksolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnetworksolps"
+        ],
+        [
+            "What does passing -1 as the first argument to the `getnetworksolps` command do?",
+            "Passing -1 as the first argument to the `getnetworksolps` command specifies that the command should use blocks over the difficulty averaging window to estimate the network speed.",
+            "getnetworksolps ( blocks height )\n\nReturns the estimated network solutions per second based on the last n blocks.\nPass in [blocks] to override # of blocks, -1 specifies over difficulty averaging window.\nPass in [height] to estimate the network speed at the time when a certain block was found.\n\nArguments:\n1. blocks   (numeric, optional, default=120) The number of blocks, or -1 for blocks over difficulty averaging window.\n2. height   (numeric, optional, default=-1) To estimate at the time of the given height.\n\nResult:\nx       (numeric) Solutions per second estimated\n\nExamples:\n> verus getnetworksolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnetworksolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnetworksolps"
+        ]
+    ]
+]

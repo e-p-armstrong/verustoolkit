@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `zcsamplejoinsplit` command in Verus?",
+    "The `zcsamplejoinsplit` command in Verus is used to perform a joinsplit operation and return the resulting JSDescription.",
+    "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+    "./raw_text_input_api_text/zcsamplejoinsplit"
+]

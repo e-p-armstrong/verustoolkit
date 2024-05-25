@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to figure out how to work with wallets in Verus. Can you tell me what the purpose of the `z_importwallet` command is?\n\n**AI Assistant:**\nThe `z_importwallet` command is used to import taddr and zaddr keys from a wallet export file in Verus. It's a handy tool for bringing your existing wallet data into Verus.\n\n**User:**\nThat's great! I think I need to import a wallet. How do I do that using the command line?\n\n**AI Assistant:**\nTo import a wallet in Verus using the command line, you can use the `z_importwallet` command followed by the path to the wallet file. For example:\n\n```\nverus z_importwallet \"path/to/exportdir/nameofbackup\"\n```\n\nJust replace `\"path/to/exportdir/nameofbackup\"` with the actual path to your wallet file.\n\n**User:**\nWhat about exporting a wallet? How do I do that using the command line?\n\n**AI Assistant:**\nTo export a wallet in Verus using the command line, you can use the `z_exportwallet` command followed by the name of the backup file. For example:\n\n```\nverus z_exportwallet \"nameofbackup\"\n```\n\nThis will create a new backup file with the specified name.\n\n**User:**\nI've seen some JSON RPC stuff floating around. Can I import a wallet in Verus using a JSON RPC call?\n\n**AI Assistant:**\nYes, you can import a wallet in Verus using a JSON RPC call. Here's an example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nJust replace `myusername` with your actual username and `path/to/exportdir/nameofbackup` with the actual path to your wallet file.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `z_importwallet` command in Verus?",
+            "The `z_importwallet` command is used to import taddr and zaddr keys from a wallet export file in Verus.",
+            "z_importwallet \"filename\"\n\nImports taddr and zaddr keys from a wallet export file (see z_exportwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus z_exportwallet \"nameofbackup\"\n\nImport the wallet\n> verus z_importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importwallet"
+        ],
+        [
+            "How do I import a wallet in Verus using the command line?",
+            "To import a wallet in Verus using the command line, you can use the `z_importwallet` command followed by the path to the wallet file. For example:\n\n```\nverus z_importwallet \"path/to/exportdir/nameofbackup\"\n```",
+            "z_importwallet \"filename\"\n\nImports taddr and zaddr keys from a wallet export file (see z_exportwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus z_exportwallet \"nameofbackup\"\n\nImport the wallet\n> verus z_importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importwallet"
+        ],
+        [
+            "How do I export a wallet in Verus using the command line?",
+            "To export a wallet in Verus using the command line, you can use the `z_exportwallet` command followed by the name of the backup file. For example:\n\n```\nverus z_exportwallet \"nameofbackup\"\n```",
+            "z_importwallet \"filename\"\n\nImports taddr and zaddr keys from a wallet export file (see z_exportwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus z_exportwallet \"nameofbackup\"\n\nImport the wallet\n> verus z_importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importwallet"
+        ],
+        [
+            "Can I import a wallet in Verus using a JSON RPC call?",
+            "Yes, you can import a wallet in Verus using a JSON RPC call. Here's an example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nNote that you need to replace `myusername` with your actual username and `path/to/exportdir/nameofbackup` with the actual path to your wallet file.",
+            "z_importwallet \"filename\"\n\nImports taddr and zaddr keys from a wallet export file (see z_exportwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus z_exportwallet \"nameofbackup\"\n\nImport the wallet\n> verus z_importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importwallet"
+        ]
+    ]
+]

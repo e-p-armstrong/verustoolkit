@@ -1,0 +1,6 @@
+[
+    "How can I use the `z_listoperationids` command to get a list of operation IDs?",
+    "You can use the `z_listoperationids` command by running `verus z_listoperationids` in the command line, or by making a JSON-RPC request to the Verus server with the method `z_listoperationids` and an empty parameter list. For example, you can use the `curl` command to make a JSON-RPC request: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`",
+    "z_listoperationids\n\nReturns the list of operation ids currently known to the wallet.\n\nArguments:\n1. \"status\"     (string, optional) Filter result by the operation's state e.g. \"success\".\n\nResult:\n[           (json array of string)\n \"operationid\"    (string) an operation id belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listoperationids \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_listoperationids"
+]

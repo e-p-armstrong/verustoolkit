@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been experimenting with the Verus CLI and I came across the `getunconfirmedbalance` command. What does it do?\n\n**AI Assistant:**\nThe `getunconfirmedbalance` command returns the total unconfirmed balance of the Verus server. It's a useful command for checking the balance of unconfirmed transactions.\n\n**User:**\nThat's interesting. So, what kind of balance does `getunconfirmedbalance` return, exactly?\n\n**AI Assistant:**\n`getunconfirmedbalance` returns the total unconfirmed balance of the Verus server, which means it shows the balance of transactions that have not yet been confirmed on the blockchain. It gives you an idea of the transactions that are still pending confirmation.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `getunconfirmedbalance` command do in Verus?",
+            "The `getunconfirmedbalance` command returns the total unconfirmed balance of the Verus server.",
+            "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+            "./raw_text_input_api_text/getunconfirmedbalance"
+        ],
+        [
+            "What kind of balance does `getunconfirmedbalance` return?",
+            "`getunconfirmedbalance` returns the total unconfirmed balance of the Verus server, which means it shows the balance of transactions that have not yet been confirmed on the blockchain.",
+            "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+            "./raw_text_input_api_text/getunconfirmedbalance"
+        ]
+    ]
+]

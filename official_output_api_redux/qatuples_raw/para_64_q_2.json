@@ -1,0 +1,6 @@
+[
+    "How can I use the `keypoolrefill` command to fill the keypool with a custom size?",
+    "You can use the `keypoolrefill` command with an optional argument `newsize` to specify the new keypool size. For example, `verus keypoolrefill 200` would fill the keypool with a size of 200.",
+    "keypoolrefill ( newsize )\n\nFills the keypool.\n\nArguments\n1. newsize   (numeric, optional, default=100) The new keypool size\n\nExamples:\n> verus keypoolrefill \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/keypoolrefill"
+]

@@ -1,0 +1,6 @@
+[
+    "What kind of information does the `getlocalsolps` command provide?",
+    "The `getlocalsolps` command provides the average number of local solutions per second, which is also displayed on the metrics screen if enabled.",
+    "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getlocalsolps"
+]

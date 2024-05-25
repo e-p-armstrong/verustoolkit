@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What information can be associated with a transaction in Verus?",
+            "In Verus, a transaction can have associated information such as a comment and a \"to\" comment. These are optional fields that can be included in the transaction data.",
+            "ch (1 Jan 1970 GMT).\n  \"txid\": \"transactionid\", (string) The transaction id. Available for 'send' and 'receive' category of transactions.\n  \"time\": xxx,       (numeric) The transaction time in seconds since epoch (Jan 1 1970 GMT).\n  \"timereceived\": xxx,   (numeric) The time received in seconds since epoch (Jan 1 1970 GMT). Available for 'send' and 'receive' category of transactions.\n  \"comment\": \"...\",    (string) If a comment is associated with the transaction.\n  \"to\": \"...\",      (string) If a comment to is associated with the transaction.\n ],\n \"lastblock\": \"lastblockhash\"   (string) The hash of the last block\n}",
+            "./raw_text_input_api_text/listsinceblock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "6653a8b8-2e5c-454a-978c-3f6e64cc9153"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `rescanfromheight` command in Verus, and how do I use it?",
+    "The `rescanfromheight` command is used to rescan the current wallet from a specified height. This command can be used to initiate a rescan of the entire chain or from a specific block height. To use this command, you can run `verus rescanfromheight` to rescan the entire chain, or `verus rescanfromheight <height>` to rescan from a specific block height, replacing `<height>` with the desired block number.",
+    "rescanfromheight (height)\n\nRescans the current wallet from a specified height\n\nArguments:\n1. \"height\"   (int, optional) Defaults to 0, height to start rescanning from\n\nNote: This call can take minutes or even hours to complete on very large wallets and rescans\n\nExamples:\n\nInitiate rescan of entire chain\n> verus rescanfromheight\n\nInitiate rescan from block 1000000\n> verus rescanfromheight 1000000",
+    "./raw_text_input_api_text/rescanfromheight"
+]

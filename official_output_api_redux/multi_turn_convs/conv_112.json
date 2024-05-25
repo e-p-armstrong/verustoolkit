@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to understand some of the functions in Verus. Can you help me with this one? What is the purpose of the `getNotarisationsForBlock` function in Verus?\n\n**AI Assistant:**\nThe `getNotarisationsForBlock` function in Verus takes a block hash as input and returns notarization transactions within the specified block. It's a way to retrieve notarization information for a specific block in the Verus blockchain. Does that make sense? Do you have any other questions about this function or Verus in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getNotarisationsForBlock` function in Verus?",
+            "The `getNotarisationsForBlock` function in Verus takes a block hash as input and returns notarization transactions within the specified block.",
+            "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ]
+    ]
+]

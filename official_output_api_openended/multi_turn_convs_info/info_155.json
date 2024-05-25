@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `z_getoperationresult` command in Verus, and how do you use it to retrieve the result and status of an operation?",
+            "The `z_getoperationresult` command in Verus is used to retrieve the result and status of an operation that has finished, and then remove the operation from memory. This command takes an optional argument, which is a list of operation IDs that you are interested in. If no operation IDs are provided, the command will examine all operations known to the node.\n\nThe result of the command is a list of JSON objects, each containing information about the operation, such as its result and status.\n\nTo use the `z_getoperationresult` command, you can use the Verus command-line interface or make a JSON-RPC request to the Verus node. Here are some examples of how to use the command:\n\nUsing the Verus command-line interface:\n```\nverus z_getoperationresult '[\"operationid\",... ]'\n```\nMaking a JSON-RPC request to the Verus node:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\",... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nIn both cases, you need to replace `\"operationid\"` with the actual ID of the operation you want to retrieve the result for. If you want to retrieve the results for multiple operations, you can provide a list of operation IDs.\n\nBy using the `z_getoperationresult` command, you can programmatically retrieve the results of operations that have finished, and then remove them from memory to free up resources. This can be useful in a variety of scenarios, such as when you need to automate the processing of operations or when you want to build a custom application on top of Verus.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "0ed63125-6926-431e-8314-8abcbb37f9f9"
+]

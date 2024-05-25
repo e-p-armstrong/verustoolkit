@@ -1,0 +1,6 @@
+[
+    "What are \"memo\" and \"memoStr\" in a Verus transaction, and how do they relate to each other?",
+    "In a Verus transaction, \"memo\" is a hexadecimal string representation of the memo field, which is a field that can store additional information or metadata about the transaction. \"memoStr\", on the other hand, is a string representation of the memo field, but only if the memo contains valid UTF-8 text. If the memo does not contain valid UTF-8 text, \"memoStr\" will not be returned.",
+    "  \"value\" : x.xxx         (numeric) The amount in VRSC\n   \"valueZat\" : xxxx        (numeric) The amount in zatoshis\n   \"memo\" : \"hexmemo\",       (string) Hexademical string representation of the memo field\n   \"memoStr\" : \"memo\",       (string) Only returned if memo contains valid UTF-8 text.\n  }\n  ,...\n ],\n}",
+    "./raw_text_input_api_text/z_viewtransaction"
+]

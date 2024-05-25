@@ -1,0 +1,6 @@
+[
+    "How can I use the `getdifficulty` command in Verus?",
+    "You can use the `getdifficulty` command in Verus by running `verus getdifficulty` in the command line, or by making an RPC request using a tool like `curl`. The command takes no parameters and returns the current proof-of-work difficulty as a numeric value.",
+    "getdifficulty\n\nReturns the proof-of-work difficulty as a multiple of the minimum difficulty.\n\nResult:\nn.nnn    (numeric) the proof-of-work difficulty as a multiple of the minimum difficulty.\n\nExamples:\n> verus getdifficulty \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdifficulty\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getdifficulty"
+]

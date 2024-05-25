@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to understand some of the commands in Verus. Can you tell me about the `resendwallettransactions` command? What's its purpose?\n\n**AI Assistant:**\nThe `resendwallettransactions` command is intended for testing purposes and is used to immediately re-broadcast unconfirmed wallet transactions to all peers. This command is not typically needed as the wallet code automatically re-broadcasts transactions periodically. It's mostly used in specific testing scenarios.\n\n**User:**\nThat helps, thanks! What does the `resendwallettransactions` command return, exactly?\n\n**AI Assistant:**\nThe `resendwallettransactions` command returns an array of transaction IDs that were re-broadcast. So, you'll get a list of the transactions that were re-sent to the network.\n\n**User:**\nGot it. When would I actually need to use the `resendwallettransactions` command? Is it something I should be doing regularly?\n\n**AI Assistant:**\nNo, you wouldn't typically need to use the `resendwallettransactions` command in everyday usage. As I mentioned earlier, the wallet code automatically re-broadcasts unconfirmed transactions periodically, so you wouldn't need to use this command in most cases. You would only need to use it in specific testing scenarios, where you need to forcibly re-broadcast transactions for testing purposes.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `resendwallettransactions` command in Verus?",
+            "The `resendwallettransactions` command is intended for testing purposes and is used to immediately re-broadcast unconfirmed wallet transactions to all peers. This command is not typically needed as the wallet code automatically re-broadcasts transactions periodically.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ],
+        [
+            "What does the `resendwallettransactions` command return?",
+            "The `resendwallettransactions` command returns an array of transaction IDs that were re-broadcast.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ],
+        [
+            "When would I need to use the `resendwallettransactions` command?",
+            "You would typically only need to use the `resendwallettransactions` command in specific testing scenarios, as the wallet code automatically re-broadcasts unconfirmed transactions periodically. In most cases, you would not need to use this command.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ]
+    ]
+]

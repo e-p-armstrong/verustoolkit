@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What information does the `getmempoolinfo` command provide about the transaction memory pool in Verus, and how can I access this information using the Verus command line and a JSON-RPC request?",
+            "The `getmempoolinfo` command in Verus returns details about the active state of the transaction (TX) memory pool. This command is useful for monitoring the performance and health of the network.\n\nWhen you run the `getmempoolinfo` command, Verus returns a JSON object with three key-value pairs:\n\n* `size`: This is the current count of transactions in the memory pool.\n* `bytes`: This is the total size of all transactions in the memory pool, in bytes.\n* `usage`: This is the total memory usage for the memory pool, in bytes.\n\nYou can access this information using the Verus command line by simply running the command `verus getmempoolinfo`. Alternatively, you can also use a JSON-RPC request to access this information. To do this, you can use the `curl` command with the following format:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `myusername` with your actual Verus username, and make sure to use the correct port number (in this case, 27486) for your Verus node.",
+            "getmempoolinfo\n\nReturns details on the active state of the TX memory pool.\n\nResult:\n{\n \"size\": xxxxx        (numeric) Current tx count\n \"bytes\": xxxxx        (numeric) Sum of all tx sizes\n \"usage\": xxxxx        (numeric) Total memory usage for the mempool\n}\n\nExamples:\n> verus getmempoolinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getmempoolinfo"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c19f8843-64d2-47d9-b548-ec759ef3c0da"
+]

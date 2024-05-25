@@ -1,0 +1,6 @@
+[
+    "What are the arguments that can be passed to the `verifychain` command?",
+    "The `verifychain` command takes two optional arguments: `checklevel` and `numblocks`.\n\n* `checklevel` is a numeric value between 0 and 4 that determines how thorough the block verification is. The default value is 3.\n* `numblocks` is a numeric value that specifies the number of blocks to check. The default value is 288, and a value of 0 means to check all blocks.",
+    "verifychain ( checklevel numblocks )\n\nVerifies blockchain database.\n\nArguments:\n1. checklevel  (numeric, optional, 0-4, default=3) How thorough the block verification is.\n2. numblocks  (numeric, optional, default=288, 0=all) The number of blocks to check.\n\nResult:\ntrue|false    (boolean) Verified or not\n\nExamples:\n> verus verifychain \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifychain\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/verifychain"
+]

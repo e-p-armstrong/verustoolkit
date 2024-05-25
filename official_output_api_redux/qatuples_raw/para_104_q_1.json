@@ -1,0 +1,6 @@
+[
+    "What are the required and optional arguments for the `gettransaction` command?",
+    "The `gettransaction` command requires one argument: `txid`, which is a string representing the transaction ID of the transaction you want to retrieve information about. Additionally, there is an optional argument `includeWatchonly`, which is a boolean that defaults to `false`. If set to `true`, it includes watch-only addresses in the balance calculation and details.",
+    "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+    "./raw_text_input_api_text/gettransaction"
+]

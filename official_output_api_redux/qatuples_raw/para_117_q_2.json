@@ -1,0 +1,6 @@
+[
+    "How do I use the `addnode` command to try a connection to a node once?",
+    "To try a connection to a node once, you would use the `addnode` command with the \"onetry\" parameter, like this:\n```\nverus addnode \"node\" \"onetry\"\n```\nReplace \"node\" with the actual node you want to try a connection to.",
+    "addnode \"node\" \"add|remove|onetry\"\n\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n\nExamples:\n> verus addnode \"192.168.0.6:8233\" \"onetry\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/addnode"
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `revokeidentity` command in Verus?",
+            "The `revokeidentity` command is used to revoke an identity in Verus. It can be used to revoke an identity by its name or ID.",
+            "revokeidentity \"nameorID\" (returntx) (tokenrevoke) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrevoke\"           (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to revoke\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus revokeidentity \"nameorID\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"revokeidentity\", \"params\": [\"nameorID\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/revokeidentity"
+        ],
+        [
+            "What are the optional arguments for the `revokeidentity` command?",
+            "The optional arguments for the `revokeidentity` command are:\n1. `returntx`: a boolean value that defaults to `false`. If set to `true`, the transaction is signed by the wallet and returned instead of being sent.\n2. `tokenrevoke`: a boolean value that defaults to `false`. If set to `true`, the tokenized ID control token, if one exists, will be used to revoke.\n3. `feeoffer`: a value that specifies a non-standard fee amount to pay for the transaction.\n4. `sourceoffunds`: a string that specifies a transparent or private address to source all funds for fees, which helps to preserve the privacy of the identity.",
+            "revokeidentity \"nameorID\" (returntx) (tokenrevoke) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrevoke\"           (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to revoke\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus revokeidentity \"nameorID\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"revokeidentity\", \"params\": [\"nameorID\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/revokeidentity"
+        ],
+        [
+            "How can I use the `revokeidentity` command to revoke an identity in Verus?",
+            "You can use the `revokeidentity` command to revoke an identity in Verus by running a command like this:\n```\nverus revokeidentity \"nameorID\"\n```\nAlternatively, you can also use the Verus JSON-RPC API to revoke an identity by sending a request like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"revokeidentity\", \"params\": [\"nameorID\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "revokeidentity \"nameorID\" (returntx) (tokenrevoke) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrevoke\"           (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to revoke\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus revokeidentity \"nameorID\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"revokeidentity\", \"params\": [\"nameorID\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/revokeidentity"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "26f26e56-cd13-408c-b71e-95160e9e071c"
+]

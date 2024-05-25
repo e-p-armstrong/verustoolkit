@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I use the `kvsearch` command in Verus to search for a key stored on an asset chain, and what information can I expect to receive from this search?",
+            "The `kvsearch` command in Verus allows you to search for a key stored on an asset chain. This feature is only available for asset chains.\n\nTo use the `kvsearch` command, you need to provide the key you want to search for as an argument. You can do this by running the command `verus kvsearch <key>`.\n\nWhen you run the `kvsearch` command, Verus will search the chain for the specified key and return a result in JSON format. The result will contain the following information:\n\n* `coin`: The chain on which the key is stored.\n* `currentheight`: The current height of the chain.\n* `key`: The key that was searched for.\n* `keylen`: The length of the key.\n* `owner`: The hex string representing the owner of the key.\n* `height`: The height at which the key was stored.\n* `expiration`: The height at which the key will expire.\n* `flags`: A numeric value indicating whether the key was created with a password (1) or not (0).\n* `value`: The stored value associated with the key.\n* `valuesize`: The amount of characters stored in the value.\n\nYou can also use the `kvsearch` command with the Verus JSON-RPC API by sending a JSON request to the Verus server. An example of this is shown in the documentation.\n\nOverall, the `kvsearch` command provides a way to retrieve information about a key stored on an asset chain, including the chain it's stored on, the owner of the key, and the associated value.",
+            "kvsearch key\n\nSearch for a key stored via the kvupdate command. This feature is only available for asset chains.\n\nArguments:\n1. key           (string, required) search the chain for this key\n\nResult:\n{\n \"coin\": \"xxxxx\",     (string) chain the key is stored on\n \"currentheight\": xxxxx,   (numeric) current height of the chain\n \"key\": \"xxxxx\",      (string) key\n \"keylen\": xxxxx,      (string) length of the key \n \"owner\": \"xxxxx\"     (string) hex string representing the owner of the key \n \"height\": xxxxx,      (numeric) height the key was stored at\n \"expiration\": xxxxx,    (numeric) height the key will expire\n \"flags\": x         (numeric) 1 if the key was created with a password; 0 otherwise.\n \"value\": \"xxxxx\",     (string) stored value\n \"valuesize\": xxxxx     (string) amount of characters stored\n}\n\nExamples:\n> verus kvsearch examplekey\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"kvsearch\", \"params\": [examplekey] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/kvsearch"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "77b00ab3-58f5-466b-aebc-313a482b3fd9"
+]

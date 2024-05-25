@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "How can I retrieve the history of an identity on the Verus network?",
+            "You can use the `getidentityhistory` command to retrieve the history of an identity on the Verus network. The command takes several arguments, including the identity's name or i-address, a start height, an end height, and options to include transaction proofs and specify the height for generating a proof.",
+            "getidentityhistory \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight)\n\nArguments\n  \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity\n  \"heightstart\"            (number, optional) default=0, only return content from this height forward, inclusive\n  \"heightend\"             (number, optional) default=0 which means max height, only return content up to this height,\n                                inclusive. -1 means also return values from the mempool.\n  \"txproofs\"              (bool, optional) default=false, if true, returns proof of ID\n  \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof\n\nResult:\n\nExamples:\n> verus getidentityhistory \"name@\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentityhistory\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentityhistory"
+        ],
+        [
+            "What are the required and optional arguments for the `getidentityhistory` command?",
+            "The `getidentityhistory` command requires one argument, which is the identity's name followed by \"@\" or its i-address. The optional arguments include:\n\n* `heightstart`: the starting block height for the history (default is 0)\n* `heightend`: the ending block height for the history (default is 0, which means the current block height; -1 includes the mempool)\n* `txproofs`: a boolean indicating whether to include transaction proofs (default is false)\n* `txproofheight`: the height from which to generate a proof (default is the current block height)",
+            "getidentityhistory \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight)\n\nArguments\n  \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity\n  \"heightstart\"            (number, optional) default=0, only return content from this height forward, inclusive\n  \"heightend\"             (number, optional) default=0 which means max height, only return content up to this height,\n                                inclusive. -1 means also return values from the mempool.\n  \"txproofs\"              (bool, optional) default=false, if true, returns proof of ID\n  \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof\n\nResult:\n\nExamples:\n> verus getidentityhistory \"name@\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentityhistory\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentityhistory"
+        ],
+        [
+            "How can I use the `getidentityhistory` command to retrieve the history of an identity, including transaction proofs?",
+            "To retrieve the history of an identity, including transaction proofs, you can use the `getidentityhistory` command with the `txproofs` argument set to true. For example:\n\n`verus getidentityhistory \"name@\" true`\n\nThis command will retrieve the history of the identity \"name@\" and include transaction proofs.",
+            "getidentityhistory \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight)\n\nArguments\n  \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity\n  \"heightstart\"            (number, optional) default=0, only return content from this height forward, inclusive\n  \"heightend\"             (number, optional) default=0 which means max height, only return content up to this height,\n                                inclusive. -1 means also return values from the mempool.\n  \"txproofs\"              (bool, optional) default=false, if true, returns proof of ID\n  \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof\n\nResult:\n\nExamples:\n> verus getidentityhistory \"name@\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentityhistory\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentityhistory"
+        ],
+        [
+            "Can I use the `getidentityhistory` command to retrieve the history of an identity from a specific block height range?",
+            "Yes, you can use the `getidentityhistory` command to retrieve the history of an identity from a specific block height range by specifying the `heightstart` and `heightend` arguments. For example:\n\n`verus getidentityhistory \"name@\" 100 200 true`\n\nThis command will retrieve the history of the identity \"name@\" from block height 100 to 200, inclusive, and include transaction proofs.",
+            "getidentityhistory \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight)\n\nArguments\n  \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity\n  \"heightstart\"            (number, optional) default=0, only return content from this height forward, inclusive\n  \"heightend\"             (number, optional) default=0 which means max height, only return content up to this height,\n                                inclusive. -1 means also return values from the mempool.\n  \"txproofs\"              (bool, optional) default=false, if true, returns proof of ID\n  \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof\n\nResult:\n\nExamples:\n> verus getidentityhistory \"name@\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentityhistory\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentityhistory"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c8ffdfb0-1579-4142-ad50-a00d781529b7"
+]

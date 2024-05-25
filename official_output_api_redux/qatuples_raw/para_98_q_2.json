@@ -1,0 +1,6 @@
+[
+    "How can I use the `getblockcount` command to get the current block count in Verus?",
+    "You can use the `getblockcount` command in Verus by running `verus getblockcount` in the command line, or by making a JSON-RPC request to the Verus API with the method \"getblockcount\" and an empty parameter list.",
+    "getblockcount\n\nReturns the number of blocks in the best valid block chain.\n\nResult:\nn  (numeric) The current block count\n\nExamples:\n> verus getblockcount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockcount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblockcount"
+]

@@ -1,0 +1,6 @@
+[
+    "Can you give an example of how to use the `estimatefee` command in Verus?",
+    "Here's an example of how to use the `estimatefee` command in Verus: `verus estimatefee 6`. In this example, the command estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within 6 blocks.",
+    "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+    "./raw_text_input_api_text/estimatefee"
+]

@@ -1,0 +1,6 @@
+[
+    "Can I overwrite an existing file using the `dumpwallet` command?",
+    "No, overwriting an existing file is not permitted when using the `dumpwallet` command.",
+    "dumpwallet \"filename\" (omitemptytaddresses)\n\nDumps taddr wallet keys in a human-readable format. Overwriting an existing file is not permitted.\n\nArguments:\n1. \"filename\"  (string, required) The filename, saved in folder set by verusd -exportdir option\n2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet\n                        (do not use this option without being sure that all addresses of interest are included)\n\nResult:\n\"path\"      (string) The full path of the destination file\n\nExamples:\n> verus dumpwallet \"test\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/dumpwallet"
+]

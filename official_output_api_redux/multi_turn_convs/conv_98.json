@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been playing around with the Verus commands and I'm wondering, what is the purpose of the `getblockdeltas` command in Verus?\n\n**AI Assistant:**\nThe `getblockdeltas` command returns information about a given block and its transactions in Verus. It's a really useful tool for exploring the blockchain.\n\n**User:**\nI tried using it, but it didn't seem to work. Why does the `getblockdeltas` command not work by default?\n\n**AI Assistant:**\nThe `getblockdeltas` command is disabled by default. To enable it, you need to restart Verus with the `-experimentalfeatures` and `-insightexplorer` command-line options, or add these two lines to the Verus configuration file: `experimentalfeatures=1` and `insightexplorer=1`. Once you do that, it should work as expected.\n\n**User:**\nOkay, got it. So, what's the required argument for the `getblockdeltas` command?\n\n**AI Assistant:**\nThe required argument for the `getblockdeltas` command is the block hash, which must be a string. Just pass in the block hash you're interested in, and the command will return the relevant information.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getblockdeltas` command in Verus?",
+            "The `getblockdeltas` command returns information about a given block and its transactions in Verus.",
+            "getblockdeltas \"blockhash\"Returns information about the given block and its transactions.WARNING: getblockdeltas is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-insightexplorer commandline options, or add these two lines\nto the zcash.conf file:experimentalfeatures=1\ninsightexplorer=1Arguments:\n1. \"hash\"     (string, required) The block hash",
+            "./raw_text_input_api_text/getblockdeltas"
+        ],
+        [
+            "Why does the `getblockdeltas` command not work by default?",
+            "The `getblockdeltas` command is disabled by default. To enable it, you need to restart Verus with the `-experimentalfeatures` and `-insightexplorer` command-line options, or add these two lines to the Verus configuration file: `experimentalfeatures=1` and `insightexplorer=1`.",
+            "getblockdeltas \"blockhash\"Returns information about the given block and its transactions.WARNING: getblockdeltas is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-insightexplorer commandline options, or add these two lines\nto the zcash.conf file:experimentalfeatures=1\ninsightexplorer=1Arguments:\n1. \"hash\"     (string, required) The block hash",
+            "./raw_text_input_api_text/getblockdeltas"
+        ],
+        [
+            "What is the required argument for the `getblockdeltas` command?",
+            "The required argument for the `getblockdeltas` command is the block hash, which must be a string.",
+            "getblockdeltas \"blockhash\"Returns information about the given block and its transactions.WARNING: getblockdeltas is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-insightexplorer commandline options, or add these two lines\nto the zcash.conf file:experimentalfeatures=1\ninsightexplorer=1Arguments:\n1. \"hash\"     (string, required) The block hash",
+            "./raw_text_input_api_text/getblockdeltas"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "How do I use the `getpendingtransfers` command to retrieve pending transfers for a specific chain?",
+    "To retrieve pending transfers for a specific chain, you can use the `getpendingtransfers` command with the chain name as an argument, like this: `verus getpendingtransfers \"chainname\"`. If you omit the chain name, it will default to the current chain in the daemon.",
+    "getpendingtransfers \"chainname\"\n\nReturns all pending transfers for a particular chain that have not yet been aggregated into an export\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n\nResult:\n {\n }\n\nExamples:\n> verus getpendingtransfers \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getpendingtransfers"
+]

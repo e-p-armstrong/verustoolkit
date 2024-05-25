@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do you control the generation of new blocks in Verus using the `setgenerate` command, and what are the different options available?",
+            "The `setgenerate` command in Verus allows you to turn on or off the generation of new blocks, which can be done through either mining/generation or minting/staking. This command has two arguments: `generate` and `genproclimit`.\n\nThe `generate` argument is a required boolean value that determines whether generation is turned on (true) or off (false). When set to true, generation is turned on, and when set to false, both mining/generation and minting/staking are turned off.\n\nThe `genproclimit` argument is an optional numeric value that sets the processor limit when generation is turned on. If set to -1, the processor limit is unlimited, meaning that all available processors can be used for generation. If set to 0, minting/staking is turned on instead of mining/generation.\n\nHere are some examples of how to use the `setgenerate` command:\n\n* To turn on generation with a limit of one processor, use `verus setgenerate true 1`.\n* To turn on minting/staking, use `verus setgenerate true 0`.\n* To check the current generation setting, use `verus getgenerate`.\n* To turn off generation and minting, use `verus setgenerate false`.\n\nAdditionally, the `setgenerate` command can be used with JSON RPC by sending a POST request to the Verus daemon with the required parameters.\n\nIn summary, the `setgenerate` command provides a flexible way to control the generation of new blocks in Verus, allowing users to choose between mining/generation and minting/staking, and to set processor limits for generation.",
+            "setgenerate generate ( genproclimit )\n\nSet 'generate' true to turn either mining/generation or minting/staking on and false to turn both off.\nMining is limited to 'genproclimit' processors, -1 is unlimited, setgenerate true with 0 genproclimit turns on staking\nSee the getgenerate call for the current setting.\n\nArguments:\n1. generate     (boolean, required) Set to true to turn on generation, off to turn off.\n2. genproclimit   (numeric, optional) Set processor limit when generation is on. Can be -1 for unlimited, 0 to turn on staking.\n\nExamples:\n\nSet the generation on with a limit of one processor\n> verus setgenerate true 1\n\nTurn minting/staking on\n> verus setgenerate true 0\n\nCheck the setting\n> verus getgenerate\n\nTurn off generation and minting\n> verus setgenerate false\n\nUsing json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setgenerate\", \"params\": [true, 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setgenerate"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "16e2f58d-1674-4236-9a4b-9c3c442610de"
+]

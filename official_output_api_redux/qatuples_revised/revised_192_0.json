@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `generate` function in Verus, and how can it be used?",
+    "The `generate` function in Verus is used to mine blocks immediately, before the RPC call returns. This function can only be used on the regtest network. It takes one argument, `numblocks`, which specifies the number of blocks to be generated. The result is an array of block hashes that were generated.",
+    "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+    "./raw_text_input_api_text/generate"
+]

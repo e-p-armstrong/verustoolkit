@@ -1,0 +1,6 @@
+[
+    "What does the `noOrphans` option do when used with the `getblockhashes` command?",
+    "The `noOrphans` option, when set to `true`, will only include blocks on the main chain in the result.",
+    "getblockhashes timestamp\n\nReturns array of hashes of blocks within the timestamp range provided.\n\nArguments:\n1. high     (numeric, required) The newer block timestamp\n2. low     (numeric, required) The older block timestamp\n3. options   (string, required) A json object\n  {\n   \"noOrphans\":true  (boolean) will only include blocks on the main chain\n   \"logicalTimes\":true  (boolean) will include logical timestamps with hashes\n  }\n\nResult:\n[\n \"hash\"     (string) The block hash\n]\n[\n {\n  \"blockhash\": (string) The block hash\n  \"logicalts\": (numeric) The logical timestamp\n }\n]\n\nExamples:\n> verus getblockhashes 1231614698 1231024505\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhashes\", \"params\": [1231614698, 1231024505] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblockhashes 1231614698 1231024505 '{\"noOrphans\":false, \"logicalTimes\":true}'",
+    "./raw_text_input_api_text/getblockhashes"
+]

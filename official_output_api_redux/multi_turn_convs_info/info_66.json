@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `zcsamplejoinsplit` command in Verus?",
+            "The `zcsamplejoinsplit` command in Verus is used to perform a joinsplit operation and return the resulting JSDescription.",
+            "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+            "./raw_text_input_api_text/zcsamplejoinsplit"
+        ],
+        [
+            "What is a JSDescription in the context of Verus, and how is it related to the `zcsamplejoinsplit` command?",
+            "A JSDescription is a data structure in Verus that describes a joinsplit operation. The `zcsamplejoinsplit` command generates a JSDescription as its output, which contains information about the joinsplit operation, such as the inputs, outputs, and transaction details.",
+            "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+            "./raw_text_input_api_text/zcsamplejoinsplit"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "621838a8-af39-4037-b6b4-a0fc28dd18b3"
+]

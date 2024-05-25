@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `zcrawjoinsplit` command in Verus?",
+            "The `zcrawjoinsplit` command is used to splice a joinsplit into a raw transaction. It takes inputs and outputs as JSON objects, where inputs are unilaterally confidential and outputs are confidential between the sender and receiver.",
+            "zcrawjoinsplit rawtx inputs outputs vpub_old vpub_new\n inputs: a JSON object mapping {note: zcsecretkey, ...}\n outputs: a JSON object mapping {zcaddr: value, ...}\n\nDEPRECATED. Splices a joinsplit into rawtx. Inputs are unilaterally confidential.\nOutputs are confidential between sender/receiver. The vpub_old and\nvpub_new values are globally public and move transparent value into\nor out of the confidential value store, respectively.\n\nNote: The caller is responsible for delivering the output enc1 and\nenc2 to the appropriate recipients, as well as signing rawtxout and\nensuring it is mined. (A future RPC call will deliver the confidential\npayments in-band on the blockchain.)\n\nOutput: {\n \"encryptednote1\": enc1,\n \"encryptednote2\": enc2,\n \"rawtxn\": rawtxout\n}",
+            "./raw_text_input_api_text/zcrawjoinsplit"
+        ],
+        [
+            "What are the inputs and outputs of the `zcrawjoinsplit` command?",
+            "The inputs of the `zcrawjoinsplit` command are a JSON object mapping `{note: zcsecretkey,...}`, where each note is associated with a confidential key. The outputs are a JSON object mapping `{zcaddr: value,...}`, where each zcaddr is associated with a value.",
+            "zcrawjoinsplit rawtx inputs outputs vpub_old vpub_new\n inputs: a JSON object mapping {note: zcsecretkey, ...}\n outputs: a JSON object mapping {zcaddr: value, ...}\n\nDEPRECATED. Splices a joinsplit into rawtx. Inputs are unilaterally confidential.\nOutputs are confidential between sender/receiver. The vpub_old and\nvpub_new values are globally public and move transparent value into\nor out of the confidential value store, respectively.\n\nNote: The caller is responsible for delivering the output enc1 and\nenc2 to the appropriate recipients, as well as signing rawtxout and\nensuring it is mined. (A future RPC call will deliver the confidential\npayments in-band on the blockchain.)\n\nOutput: {\n \"encryptednote1\": enc1,\n \"encryptednote2\": enc2,\n \"rawtxn\": rawtxout\n}",
+            "./raw_text_input_api_text/zcrawjoinsplit"
+        ],
+        [
+            "What is the role of `vpub_old` and `vpub_new` in the `zcrawjoinsplit` command?",
+            "The `vpub_old` and `vpub_new` values are globally public and are used to move transparent value into or out of the confidential value store, respectively.",
+            "zcrawjoinsplit rawtx inputs outputs vpub_old vpub_new\n inputs: a JSON object mapping {note: zcsecretkey, ...}\n outputs: a JSON object mapping {zcaddr: value, ...}\n\nDEPRECATED. Splices a joinsplit into rawtx. Inputs are unilaterally confidential.\nOutputs are confidential between sender/receiver. The vpub_old and\nvpub_new values are globally public and move transparent value into\nor out of the confidential value store, respectively.\n\nNote: The caller is responsible for delivering the output enc1 and\nenc2 to the appropriate recipients, as well as signing rawtxout and\nensuring it is mined. (A future RPC call will deliver the confidential\npayments in-band on the blockchain.)\n\nOutput: {\n \"encryptednote1\": enc1,\n \"encryptednote2\": enc2,\n \"rawtxn\": rawtxout\n}",
+            "./raw_text_input_api_text/zcrawjoinsplit"
+        ],
+        [
+            "What is the responsibility of the caller when using the `zcrawjoinsplit` command?",
+            "The caller is responsible for delivering the output `enc1` and `enc2` to the appropriate recipients, as well as signing `rawtxout` and ensuring it is mined.",
+            "zcrawjoinsplit rawtx inputs outputs vpub_old vpub_new\n inputs: a JSON object mapping {note: zcsecretkey, ...}\n outputs: a JSON object mapping {zcaddr: value, ...}\n\nDEPRECATED. Splices a joinsplit into rawtx. Inputs are unilaterally confidential.\nOutputs are confidential between sender/receiver. The vpub_old and\nvpub_new values are globally public and move transparent value into\nor out of the confidential value store, respectively.\n\nNote: The caller is responsible for delivering the output enc1 and\nenc2 to the appropriate recipients, as well as signing rawtxout and\nensuring it is mined. (A future RPC call will deliver the confidential\npayments in-band on the blockchain.)\n\nOutput: {\n \"encryptednote1\": enc1,\n \"encryptednote2\": enc2,\n \"rawtxn\": rawtxout\n}",
+            "./raw_text_input_api_text/zcrawjoinsplit"
+        ],
+        [
+            "What is the expected output of the `zcrawjoinsplit` command?",
+            "The expected output of the `zcrawjoinsplit` command is a JSON object containing three fields: `\"encryptednote1\": enc1`, `\"encryptednote2\": enc2`, and `\"rawtxn\": rawtxout`.",
+            "zcrawjoinsplit rawtx inputs outputs vpub_old vpub_new\n inputs: a JSON object mapping {note: zcsecretkey, ...}\n outputs: a JSON object mapping {zcaddr: value, ...}\n\nDEPRECATED. Splices a joinsplit into rawtx. Inputs are unilaterally confidential.\nOutputs are confidential between sender/receiver. The vpub_old and\nvpub_new values are globally public and move transparent value into\nor out of the confidential value store, respectively.\n\nNote: The caller is responsible for delivering the output enc1 and\nenc2 to the appropriate recipients, as well as signing rawtxout and\nensuring it is mined. (A future RPC call will deliver the confidential\npayments in-band on the blockchain.)\n\nOutput: {\n \"encryptednote1\": enc1,\n \"encryptednote2\": enc2,\n \"rawtxn\": rawtxout\n}",
+            "./raw_text_input_api_text/zcrawjoinsplit"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7758155d-d749-4574-b39a-3236cccad3a2"
+]

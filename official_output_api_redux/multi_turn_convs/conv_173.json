@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been experimenting with some Verus commands, and I'm not entirely sure what the `zcrawreceive` command does. Can you explain its purpose?\n\n**AI Assistant:**\nThe `zcrawreceive` command is used to decrypt an encrypted note and check if the coin commitments are present in the blockchain. It takes two arguments: a Zero-Knowledge (ZK) secret key and an encrypted note. This command is useful for verifying the existence of a specific note on the blockchain.\n\n**User:**\nThat helps clarify things. What is the output format of the `zcrawreceive` command? I'm not sure what to expect when I run it.\n\n**AI Assistant:**\nThe output of the `zcrawreceive` command is a JSON object with three properties:\n\n1. `amount`: the value of the decrypted note.\n2. `note`: the plaintext of the decrypted note.\n3. `exists`: a boolean indicating whether the coin commitments are present in the blockchain.\n\nSo, when you run the command, you'll get a JSON object with these three properties that provide information about the decrypted note.\n\n**User:**\nOne more question about the output. What does the `exists` property in the `zcrawreceive` output indicate?\n\n**AI Assistant:**\nThe `exists` property in the `zcrawreceive` output indicates whether the coin commitments are present in the blockchain. If `exists` is `true`, it means that the coin commitments are present in the blockchain, and if `exists` is `false`, it means that they are not. This property is useful for determining whether a specific note is already spent or not.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `zcrawreceive` command in Verus?",
+            "The `zcrawreceive` command is used to decrypt an encrypted note and check if the coin commitments are present in the blockchain. It takes two arguments: a Zero-Knowledge (ZK) secret key and an encrypted note.",
+            "zcrawreceive zcsecretkey encryptednote\n\nDEPRECATED. Decrypts encryptednote and checks if the coin commitments\nare in the blockchain as indicated by the \"exists\" result.\n\nOutput: {\n \"amount\": value,\n \"note\": noteplaintext,\n \"exists\": exists\n}",
+            "./raw_text_input_api_text/zcrawreceive"
+        ],
+        [
+            "What is the output format of the `zcrawreceive` command?",
+            "The output of the `zcrawreceive` command is a JSON object with three properties:\n\n1. `amount`: the value of the decrypted note.\n2. `note`: the plaintext of the decrypted note.\n3. `exists`: a boolean indicating whether the coin commitments are present in the blockchain.",
+            "zcrawreceive zcsecretkey encryptednote\n\nDEPRECATED. Decrypts encryptednote and checks if the coin commitments\nare in the blockchain as indicated by the \"exists\" result.\n\nOutput: {\n \"amount\": value,\n \"note\": noteplaintext,\n \"exists\": exists\n}",
+            "./raw_text_input_api_text/zcrawreceive"
+        ],
+        [
+            "What does the `exists` property in the `zcrawreceive` output indicate?",
+            "The `exists` property in the `zcrawreceive` output indicates whether the coin commitments are present in the blockchain. If `exists` is `true`, it means that the coin commitments are present in the blockchain, and if `exists` is `false`, it means that they are not.",
+            "zcrawreceive zcsecretkey encryptednote\n\nDEPRECATED. Decrypts encryptednote and checks if the coin commitments\nare in the blockchain as indicated by the \"exists\" result.\n\nOutput: {\n \"amount\": value,\n \"note\": noteplaintext,\n \"exists\": exists\n}",
+            "./raw_text_input_api_text/zcrawreceive"
+        ]
+    ]
+]

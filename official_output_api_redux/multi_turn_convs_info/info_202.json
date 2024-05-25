@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `setminingdistribution` command in Verus?",
+            "The `setminingdistribution` command is used to set multiple mining outputs with amounts that will be used to calculate relative outputs to each address for any reward.",
+            "setminingdistribution ( \"jsonminingdistribution\" )\n\nSets multiple mining outputs with amounts that will be used to calculate relative outputs to each address for any reward\n\nArguments:\n   {\n    \"uniquedestination1\":value  (key/number, required) valid destination address and relative value output to it\n    \"uniquedestination2\":value  (key/number, optional) destination address and relative value output\n    ...\n   }\n\nResult:\nNULL for success, exceptoin otherwise\n\nExamples:\n> verus setminingdistribution {\"myaddress\":0.5, \"otheraddress\":0.5}\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setminingdistribution\", \"params\": [{\"myaddress\":0.5, \"otheraddress\":0.5}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setminingdistribution"
+        ],
+        [
+            "What is the format of the argument for the `setminingdistribution` command?",
+            "The argument for the `setminingdistribution` command is a JSON object with destination addresses as keys and relative values as numbers. For example: `{\"myaddress\":0.5, \"otheraddress\":0.5}`.",
+            "setminingdistribution ( \"jsonminingdistribution\" )\n\nSets multiple mining outputs with amounts that will be used to calculate relative outputs to each address for any reward\n\nArguments:\n   {\n    \"uniquedestination1\":value  (key/number, required) valid destination address and relative value output to it\n    \"uniquedestination2\":value  (key/number, optional) destination address and relative value output\n    ...\n   }\n\nResult:\nNULL for success, exceptoin otherwise\n\nExamples:\n> verus setminingdistribution {\"myaddress\":0.5, \"otheraddress\":0.5}\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setminingdistribution\", \"params\": [{\"myaddress\":0.5, \"otheraddress\":0.5}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setminingdistribution"
+        ],
+        [
+            "What is the result of a successful `setminingdistribution` command?",
+            "A successful `setminingdistribution` command returns NULL.",
+            "setminingdistribution ( \"jsonminingdistribution\" )\n\nSets multiple mining outputs with amounts that will be used to calculate relative outputs to each address for any reward\n\nArguments:\n   {\n    \"uniquedestination1\":value  (key/number, required) valid destination address and relative value output to it\n    \"uniquedestination2\":value  (key/number, optional) destination address and relative value output\n    ...\n   }\n\nResult:\nNULL for success, exceptoin otherwise\n\nExamples:\n> verus setminingdistribution {\"myaddress\":0.5, \"otheraddress\":0.5}\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setminingdistribution\", \"params\": [{\"myaddress\":0.5, \"otheraddress\":0.5}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setminingdistribution"
+        ],
+        [
+            "How can I set multiple mining outputs using the `setminingdistribution` command?",
+            "You can set multiple mining outputs using the `setminingdistribution` command by passing a JSON object with multiple destination addresses and their corresponding relative values. For example: `verus setminingdistribution {\"myaddress\":0.5, \"otheraddress\":0.5, \"thirdaddress\":0.1}`.",
+            "setminingdistribution ( \"jsonminingdistribution\" )\n\nSets multiple mining outputs with amounts that will be used to calculate relative outputs to each address for any reward\n\nArguments:\n   {\n    \"uniquedestination1\":value  (key/number, required) valid destination address and relative value output to it\n    \"uniquedestination2\":value  (key/number, optional) destination address and relative value output\n    ...\n   }\n\nResult:\nNULL for success, exceptoin otherwise\n\nExamples:\n> verus setminingdistribution {\"myaddress\":0.5, \"otheraddress\":0.5}\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setminingdistribution\", \"params\": [{\"myaddress\":0.5, \"otheraddress\":0.5}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setminingdistribution"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "0139e49e-3d2d-4b2b-84d6-0d24a64a016a"
+]

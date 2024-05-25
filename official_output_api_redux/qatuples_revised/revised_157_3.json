@@ -1,0 +1,6 @@
+[
+    "How can I use the `getblocksubsidy` command to get the block subsidy reward for a specific block height?",
+    "You can use the `getblocksubsidy` command by providing the block height as an argument, like this: `verus getblocksubsidy <height>`. For example, to get the block subsidy reward for block 1000, you would use `verus getblocksubsidy 1000`.",
+    "getblocksubsidy height\n\nReturns block subsidy reward, taking into account the mining slow start and the founders reward, of block at index provided.\n\nArguments:\n1. height     (numeric, optional) The block height. If not provided, defaults to the current height of the chain.\n\nResult:\n{\n \"miner\" : x.xxx      (numeric) The mining reward amount in KMD.\n}\n\nExamples:\n> verus getblocksubsidy 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockubsidy\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblocksubsidy"
+]

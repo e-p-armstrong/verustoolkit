@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the \"stop\" command in Verus, and what happens when you use it?",
+            "The \"stop\" command in Verus is used to stop the Verus server. When you run the \"stop\" command, it terminates the Verus server process, effectively shutting down the Verus node. This can be useful in various situations, such as when you need to perform maintenance, update the Verus software, or simply stop the node from running.\n\nWhen you use the \"stop\" command, all active connections to the Verus network are closed, and the node ceases to participate in the network. Any ongoing transactions or processes are interrupted, and the node is no longer able to receive or send data.\n\nIt's essential to note that stopping the Verus server does not affect the integrity of the blockchain or the security of your VerusIDs and associated assets. Your data remains secure, and you can restart the server whenever you're ready to resume using Verus.\n\nIn summary, the \"stop\" command is a simple yet important tool in Verus, allowing you to control the operation of your node and ensure its proper functioning.",
+            "stop\n\nStop the server.",
+            "./raw_text_input_api_text/stop"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "68b89fe9-d54a-4faf-9ebe-f1399f674690"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I use the `getnotarizationproofs` command to retrieve notarization proofs using the command line?",
+    "You can use the `getnotarizationproofs` command to retrieve notarization proofs by running the following command:\n```\nverus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n},...]'\n```\nReplace the `type`, `evidence`, `proveheight`, and `atheight` fields with the appropriate values for your use case.",
+    "Examples:\n> verus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnotarizationproofs"
+]

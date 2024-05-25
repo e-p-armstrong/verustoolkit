@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I get detailed information about a specific transaction in my Verus wallet, and what options do I have for customizing the information that is returned?",
+            "You can use the `gettransaction` command in Verus to retrieve detailed information about a specific transaction in your wallet. This command requires a minimum of one argument, which is the transaction ID (`txid`) of the transaction you want to retrieve information about.\n\nThe basic syntax for this command is:\n```\ngettransaction \"txid\"\n```\nReplace `\"txid\"` with the actual transaction ID of the transaction you're interested in.\n\nBy default, the `gettransaction` command will return information about the transaction, including its details and balance calculation, but it will only include transactions that are directly associated with your wallet. If you want to include transactions that are associated with watch-only addresses in your wallet, you can add an optional second argument, `includeWatchonly`, and set it to `true`.\n\nThe syntax for this would be:\n```\ngettransaction \"txid\" true\n```\nThis will return the same information as before, but it will also include transactions associated with watch-only addresses in your wallet.\n\nThe `gettransaction` command is a useful tool for managing your transactions and keeping track of your wallet's activity. By using it, you can get a clear picture of your transaction history and make more informed decisions about your wallet's management.",
+            "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_api_text/gettransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7bf294fc-102a-47a8-a9fe-a754c7c9f49c"
+]

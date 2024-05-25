@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I use the `listsinceblock` command to list transactions since a specific block using the command line?",
+            "You can use the `listsinceblock` command by specifying the block hash and the number of confirmations as arguments. For example:\n\n```\nverus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n```\n\nThis command will list transactions since the block with the specified hash and with at least 6 confirmations.",
+            "Examples:\n> verus listsinceblock \n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listsinceblock"
+        ],
+        [
+            "Can I use the `listsinceblock` command with a JSON-RPC request?",
+            "Yes, you can use the `listsinceblock` command with a JSON-RPC request. Here's an example of how to do it:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nThis command sends a JSON-RPC request to the Verus node at `http://127.0.0.1:27486/` with the `listsinceblock` method and the specified block hash and number of confirmations as parameters.",
+            "Examples:\n> verus listsinceblock \n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listsinceblock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "bee78bb8-4723-45d7-8a0b-46f1552e82d7"
+]

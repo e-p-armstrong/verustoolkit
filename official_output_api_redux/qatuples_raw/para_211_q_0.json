@@ -1,0 +1,6 @@
+[
+    "What is the `getcurrencytrust` command used for in Verus?",
+    "The `getcurrencytrust` command is used to retrieve rating values for specified currencies in Verus. If no specific currencies are specified, it returns rating values for all currencies.",
+    "getcurrencytrust '[\"currencyid\",...]'\n\nArguments\n\"[\"currencyid\",...]\"                    (strarray, optional) if specified, only returns rating values for specified currencies, otherwise all\n\nResult:\n{\n \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object\n \"currencytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list\n}\n\nExamples:\n> verus getcurrencytrust '[\"currencyid\",...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrencytrust\", \"params\": ['[\"currencyid\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getcurrencytrust"
+]

@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about Verus commands. What is the purpose of the `getidentitytrust` command in Verus, and how do I use it?\n\n**AI Assistant:**\nThe `getidentitytrust` command is used to retrieve rating values for specified IDs or all IDs. You can use it by providing an optional argument, which is a string array of IDs. If no IDs are specified, it returns rating values for all IDs.\n\n**User:**\nThat's great, thanks! So, what does the result of the `getidentitytrust` command look like?\n\n**AI Assistant:**\nThe result of the `getidentitytrust` command is a JSON object with two properties: `setratings` and `identitytrustmode`. `setratings` is an object that maps IDs to their corresponding rating values, and `identitytrustmode` is an integer that indicates the current trust mode, which can be 0 (no restriction on sync), 1 (only sync to IDs rated approved), or 2 (sync to all IDs but those on the block list).\n\n**User:**\nOkay, got it. So, how can I use the `getidentitytrust` command to retrieve rating values for specific IDs?\n\n**AI Assistant:**\nYou can use the `getidentitytrust` command to retrieve rating values for specific IDs by providing an array of IDs as an argument. For example, you can use the command `verus getidentitytrust '[\"id1\", \"id2\",...]'` to retrieve rating values for `id1`, `id2`, and so on.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getidentitytrust` command in Verus, and how do I use it?",
+            "The `getidentitytrust` command is used to retrieve rating values for specified IDs or all IDs. You can use it by providing an optional argument, which is a string array of IDs. If no IDs are specified, it returns rating values for all IDs.",
+            "getidentitytrust '[\"id\",...]'\n\nArguments\n\"[\"id\",...]\"                    (strarray, optional) if specified, only returns rating values for specified IDs, otherwise all\n\nResult:\n{\n \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object\n \"identitytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list\n}\n\nExamples:\n> verus getidentitytrust '[\"id\",...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentitytrust\", \"params\": ['[\"id\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentitytrust"
+        ],
+        [
+            "What does the result of the `getidentitytrust` command look like?",
+            "The result of the `getidentitytrust` command is a JSON object with two properties: `setratings` and `identitytrustmode`. `setratings` is an object that maps IDs to their corresponding rating values, and `identitytrustmode` is an integer that indicates the current trust mode, which can be 0 (no restriction on sync), 1 (only sync to IDs rated approved), or 2 (sync to all IDs but those on the block list).",
+            "getidentitytrust '[\"id\",...]'\n\nArguments\n\"[\"id\",...]\"                    (strarray, optional) if specified, only returns rating values for specified IDs, otherwise all\n\nResult:\n{\n \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object\n \"identitytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list\n}\n\nExamples:\n> verus getidentitytrust '[\"id\",...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentitytrust\", \"params\": ['[\"id\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentitytrust"
+        ],
+        [
+            "How can I use the `getidentitytrust` command to retrieve rating values for specific IDs?",
+            "You can use the `getidentitytrust` command to retrieve rating values for specific IDs by providing an array of IDs as an argument. For example, you can use the command `verus getidentitytrust '[\"id1\", \"id2\",...]'` to retrieve rating values for `id1`, `id2`, and so on.",
+            "getidentitytrust '[\"id\",...]'\n\nArguments\n\"[\"id\",...]\"                    (strarray, optional) if specified, only returns rating values for specified IDs, otherwise all\n\nResult:\n{\n \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object\n \"identitytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list\n}\n\nExamples:\n> verus getidentitytrust '[\"id\",...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentitytrust\", \"params\": ['[\"id\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentitytrust"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getblockdeltas` command in Verus?",
+    "The `getblockdeltas` command returns information about a given block and its transactions in Verus.",
+    "getblockdeltas \"blockhash\"Returns information about the given block and its transactions.WARNING: getblockdeltas is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-insightexplorer commandline options, or add these two lines\nto the zcash.conf file:experimentalfeatures=1\ninsightexplorer=1Arguments:\n1. \"hash\"     (string, required) The block hash",
+    "./raw_text_input_api_text/getblockdeltas"
+]

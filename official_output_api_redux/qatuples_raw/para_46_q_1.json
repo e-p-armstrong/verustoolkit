@@ -1,0 +1,6 @@
+[
+    "How can I use the `listbanned` command in Verus to get a list of banned IPs/Subnets?",
+    "You can use the `listbanned` command in Verus by running `verus listbanned` in the command line. Alternatively, you can also use the Verus RPC interface with a tool like `curl` to list banned IPs/Subnets. An example of how to do this is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listbanned"
+]

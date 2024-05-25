@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `zcrawkeygen` command in Verus?",
+    "The `zcrawkeygen` command generates a zcaddr (zero-knowledge address) that can send and receive confidential values. It produces an output with three components: the zcaddress, zcsecretkey, and zcviewingkey.",
+    "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+    "./raw_text_input_api_text/zcrawkeygen"
+]

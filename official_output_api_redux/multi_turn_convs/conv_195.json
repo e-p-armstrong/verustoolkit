@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been playing around with Verus and I'm curious about the `getnettotals` command. What does it do?\n\n**AI Assistant:**\nThe `getnettotals` command returns information about network traffic in Verus, including the total bytes received, total bytes sent, and the current CPU time. Would you like to know more about the specific information it returns?\n\n**User:**\nActually, yes, I do. What information does the `getnettotals` command return?\n\n**AI Assistant:**\nThe `getnettotals` command returns a JSON object with three properties: `totalbytesrecv`, which is the total number of bytes received; `totalbytessent`, which is the total number of bytes sent; and `timemillis`, which is the total CPU time in milliseconds.\n\n**User:**\nThat's helpful to know! How can I use the `getnettotals` command in Verus?\n\n**AI Assistant:**\nYou can use the `getnettotals` command in Verus by running `verus getnettotals` in the command line. Additionally, you can also use it with curl by sending a JSON-RPC request to the Verus daemon. The example provided in the documentation shows how to do this.\n\n**User:**\nOne last question: what's the purpose of the `getnettotals` command in Verus?\n\n**AI Assistant:**\nThe purpose of the `getnettotals` command is to provide information about the network traffic and CPU usage of the Verus node. This can be useful for monitoring and troubleshooting purposes. It can help you identify issues with your node or optimize its performance.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `getnettotals` command do in Verus?",
+            "The `getnettotals` command returns information about network traffic in Verus, including the total bytes received, total bytes sent, and the current CPU time.",
+            "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnettotals"
+        ],
+        [
+            "What information does the `getnettotals` command return?",
+            "The `getnettotals` command returns a JSON object with three properties:\n\n* `totalbytesrecv`: the total number of bytes received\n* `totalbytessent`: the total number of bytes sent\n* `timemillis`: the total CPU time in milliseconds",
+            "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnettotals"
+        ],
+        [
+            "How can I use the `getnettotals` command in Verus?",
+            "You can use the `getnettotals` command in Verus by running `verus getnettotals` in the command line. Additionally, you can also use it with curl by sending a JSON-RPC request to the Verus daemon. The example provided in the documentation shows how to do this.",
+            "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnettotals"
+        ],
+        [
+            "What is the purpose of the `getnettotals` command in Verus?",
+            "The purpose of the `getnettotals` command is to provide information about the network traffic and CPU usage of the Verus node. This can be useful for monitoring and troubleshooting purposes.",
+            "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnettotals"
+        ]
+    ]
+]

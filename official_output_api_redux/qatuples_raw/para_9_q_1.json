@@ -1,0 +1,6 @@
+[
+    "What is the required argument for the `getblockhash` command?",
+    "The required argument for the `getblockhash` command is the block index, which is a numeric value.",
+    "getblockhash index\n\nReturns hash of block in best-block-chain at index provided.\n\nArguments:\n1. index     (numeric, required) The block index\n\nResult:\n\"hash\"     (string) The block hash\n\nExamples:\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblockhash"
+]

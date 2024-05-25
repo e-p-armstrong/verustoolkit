@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `listaddressgroupings` command in Verus?",
+            "The `listaddressgroupings` command in Verus is used to list groups of addresses that have had their common ownership made public by common use as inputs or as the resulting change in past transactions.",
+            "listaddressgroupings\n\nLists groups of addresses which have had their common ownership\nmade public by common use as inputs or as the resulting change\nin past transactions\n\nResult:\n[\n [\n  [\n   \"VRSC address\",   (string) The VRSC address\n   amount,         (numeric) The amount in VRSC\n   \"account\"       (string, optional) The account (DEPRECATED)\n  ]\n  ,...\n ]\n ,...\n]\n\nExamples:\n> verus listaddressgroupings \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaddressgroupings\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listaddressgroupings"
+        ],
+        [
+            "What kind of information does the `listaddressgroupings` command provide about each address?",
+            "The `listaddressgroupings` command provides the following information about each address: the VRSC address, the amount in VRSC, and optionally, the account (although the account field is deprecated).",
+            "listaddressgroupings\n\nLists groups of addresses which have had their common ownership\nmade public by common use as inputs or as the resulting change\nin past transactions\n\nResult:\n[\n [\n  [\n   \"VRSC address\",   (string) The VRSC address\n   amount,         (numeric) The amount in VRSC\n   \"account\"       (string, optional) The account (DEPRECATED)\n  ]\n  ,...\n ]\n ,...\n]\n\nExamples:\n> verus listaddressgroupings \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaddressgroupings\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listaddressgroupings"
+        ],
+        [
+            "How can I use the `listaddressgroupings` command to get a list of address groupings in Verus?",
+            "You can use the `listaddressgroupings` command in two ways: either by running `verus listaddressgroupings` on the command line, or by sending a JSON-RPC request to the Verus server using a tool like `curl`. The `curl` command would look like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaddressgroupings\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "listaddressgroupings\n\nLists groups of addresses which have had their common ownership\nmade public by common use as inputs or as the resulting change\nin past transactions\n\nResult:\n[\n [\n  [\n   \"VRSC address\",   (string) The VRSC address\n   amount,         (numeric) The amount in VRSC\n   \"account\"       (string, optional) The account (DEPRECATED)\n  ]\n  ,...\n ]\n ,...\n]\n\nExamples:\n> verus listaddressgroupings \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaddressgroupings\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listaddressgroupings"
+        ],
+        [
+            "What does the `listaddressgroupings` command reveal about the ownership of addresses?",
+            "The `listaddressgroupings` command reveals that the addresses in each group have common ownership, as they have been used together as inputs or as the resulting change in past transactions.",
+            "listaddressgroupings\n\nLists groups of addresses which have had their common ownership\nmade public by common use as inputs or as the resulting change\nin past transactions\n\nResult:\n[\n [\n  [\n   \"VRSC address\",   (string) The VRSC address\n   amount,         (numeric) The amount in VRSC\n   \"account\"       (string, optional) The account (DEPRECATED)\n  ]\n  ,...\n ]\n ,...\n]\n\nExamples:\n> verus listaddressgroupings \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaddressgroupings\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listaddressgroupings"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d27d5261-6798-4fbc-8c4f-f25e5956fe84"
+]

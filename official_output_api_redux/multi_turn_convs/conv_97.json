@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in using JSON RPC to interact with Verus. Can you tell me how to do that?\n\n**AI Assistant:**\nYou can use JSON RPC to interact with Verus by sending a JSON-formatted request to the Verus server. The request should include the JSON RPC version, a unique ID for the request, the method you want to call, and any necessary parameters. Do you want to know more about the format of the request?\n\n**User:**\nYes, please. What is the format of a JSON RPC request to Verus?\n\n**AI Assistant:**\nA JSON RPC request to Verus should be in the following format:\n```\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"unique_request_id\",\n  \"method\": \"method_name\",\n  \"params\": [\"parameter1\", \"parameter2\",...]\n}\n```\nThis format is pretty standard for JSON RPC requests. Do you want to know how to send this request to the Verus server using a tool like `curl`?\n\n**User:**\nYes, that would be helpful. How can I use `curl` to send a JSON RPC request to Verus?\n\n**AI Assistant:**\nYou can use `curl` to send a JSON RPC request to Verus by specifying the JSON data as a binary string, setting the content type to `text/plain`, and providing the Verus server URL. Here's an example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nJust replace the `myusername` and `http://127.0.0.1:27486/` with your own Verus server credentials and URL. This should send the JSON RPC request to the Verus server and return the response.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I use JSON RPC to interact with Verus?",
+            "You can use JSON RPC to interact with Verus by sending a JSON-formatted request to the Verus server. The request should include the JSON RPC version, a unique ID for the request, the method you want to call, and any necessary parameters.",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getvdxfid"
+        ],
+        [
+            "What is the format of a JSON RPC request to Verus?",
+            "A JSON RPC request to Verus should be in the following format:\n```\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"unique_request_id\",\n  \"method\": \"method_name\",\n  \"params\": [\"parameter1\", \"parameter2\",...]\n}\n```",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getvdxfid"
+        ],
+        [
+            "How can I use `curl` to send a JSON RPC request to Verus?",
+            "You can use `curl` to send a JSON RPC request to Verus by specifying the JSON data as a binary string, setting the content type to `text/plain`, and providing the Verus server URL. Here's an example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getvdxfid"
+        ]
+    ]
+]

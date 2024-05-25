@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getnettotals` command in Verus?",
+    "The purpose of the `getnettotals` command is to provide information about the network traffic and CPU usage of the Verus node. This can be useful for monitoring and troubleshooting purposes.",
+    "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnettotals"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I use the `getidentity` command in Verus to retrieve a proof of an identity?",
+    "To retrieve a proof of an identity using the `getidentity` command in Verus, you need to set the `txproof` argument to true. For example:\n```\ngetidentity \"name@\" true\n```\nThis will return a proof of the ID as of the current height. You can also specify a specific height from which to generate the proof using the `txproofheight` argument.",
+    "getidentity \"name@ || iid\" (height) (txproof) (txproofheight)\n\nArguments\n  \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity\n  \"height\"               (number, optional) default=current height, return identity as of this height, if -1 include mempool\n  \"txproof\"              (bool, optional) default=false, if true, returns proof of ID\n  \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof\n\nResult:\n\nExamples:\n> verus getidentity \"name@\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getidentity"
+]

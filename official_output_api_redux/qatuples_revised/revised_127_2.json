@@ -1,0 +1,6 @@
+[
+    "Where is the destination file saved when using the `backupwallet` command?",
+    "The destination file is saved in the directory set by the `-exportdir` option.",
+    "backupwallet \"destination\"\n\nSafely copies wallet.dat to destination filename\n\nArguments:\n1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option.\n\nResult:\n\"path\"       (string) The full path of the destination file\n\nExamples:\n> verus backupwallet \"backupdata\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/backupwallet"
+]

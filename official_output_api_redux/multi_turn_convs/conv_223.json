@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been using Verus for a while now, and I was wondering about some of the commands. Specifically, what is the purpose of the `stop` command in Verus?\n\n**AI Assistant:**\nThe `stop` command is used to stop the Verus server. It is a basic command that allows you to shut down the Verus server when you're finished using it or need to restart it. It's a pretty straightforward command, but an important one to know if you're going to be working with Verus regularly.\n\nDo you have any other questions about Verus commands or usage? I'm here to help!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `stop` command in Verus?",
+            "The `stop` command is used to stop the Verus server. It is a basic command that allows you to shut down the Verus server when you're finished using it or need to restart it.",
+            "stop\n\nStop the server.",
+            "./raw_text_input_api_text/stop"
+        ]
+    ]
+]

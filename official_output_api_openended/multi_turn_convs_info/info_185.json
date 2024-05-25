@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `z_validatepaymentdisclosure` command in Verus, and how do I enable and use it?",
+            "The `z_validatepaymentdisclosure` command in Verus is used to validate a payment disclosure. A payment disclosure is a way to reveal information about a transaction, such as the sender, recipient, and amount, in a secure and private manner.\n\n**Enabling the Command:**\nBy default, the `z_validatepaymentdisclosure` command is disabled for safety reasons. To enable it, you need to restart the Verus daemon (`verusd`) with the `-experimentalfeatures` and `-paymentdisclosure` command-line options. Alternatively, you can add the following lines to your `verus.conf` file:\n```\nexperimentalfeatures=1\npaymentdisclosure=1\n```\n**Using the Command:**\nOnce enabled, you can use the `z_validatepaymentdisclosure` command to validate a payment disclosure. The command takes a single argument, which is a hex data string with a \"zpd:\" prefix. This string represents the payment disclosure to be validated.\n\nYou can use the command in two ways:\n\n1. Through the Verus command-line interface:\n```\nverus z_validatepaymentdisclosure \"zpd:706462ff004c561a0447ba2ec51184e6c204...\"\n```\n2. Through JSON-RPC using `curl`:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_validatepaymentdisclosure\", \"params\": [\"zpd:706462ff004c561a0447ba2ec51184e6c204...\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nIn both cases, the command will validate the payment disclosure and return the result. Note that the `z_validatepaymentdisclosure` command is an experimental feature, and its use may have implications for the security and privacy of your transactions.",
+            "z_validatepaymentdisclosure \"paymentdisclosure\"\n\nValidates a payment disclosure.\n\nEXPERIMENTAL FEATURE\n\nWARNING: z_validatepaymentdisclosure is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-paymentdisclosure commandline options, or add these two lines\nto the zcash.conf file:\n\nexperimentalfeatures=1\npaymentdisclosure=1\n\nArguments:\n1. \"paymentdisclosure\"   (string, required) Hex data string, with \"zpd:\" prefix.\n\nExamples:\n> verus z_validatepaymentdisclosure \"zpd:706462ff004c561a0447ba2ec51184e6c204...\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_validatepaymentdisclosure\", \"params\": [\"zpd:706462ff004c561a0447ba2ec51184e6c204...\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_validatepaymentdisclosure"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "4c325981-bf47-4855-ab3c-0a2dc91a001c"
+]

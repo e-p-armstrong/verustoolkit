@@ -1,0 +1,6 @@
+[
+    "Is there an alternative way to get a block template using HTTP requests?",
+    "Yes, you can also get a block template using HTTP requests. You can use a tool like `curl` to send a JSON-RPC request to the Verus RPC server. The command would look something like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis command sends a JSON-RPC request to the Verus RPC server at `http://127.0.0.1:27486/` with the method `getblocktemplate` and no parameters. The response will contain the block template.",
+    "Examples:\n> verus getblocktemplate \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblocktemplate"
+]

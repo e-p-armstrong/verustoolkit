@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `gettxoutsetinfo` command in Verus, and what kind of information does it return about the unspent transaction output set?",
+            "The `gettxoutsetinfo` command in Verus is used to retrieve statistics about the unspent transaction output set. This command can take some time to execute, as it needs to gather and process various data. The result of this command is a JSON object that contains several key-value pairs, which provide insight into the current state of the unspent transaction output set.\n\nHere's a breakdown of the information returned by `gettxoutsetinfo`:\n\n1. **Height**: The current block height, which is an index representing the number of blocks in the blockchain.\n2. **Best Block**: The hash of the best block, which is the most recent block in the blockchain that has been verified by the network.\n3. **Transactions**: The total number of transactions in the unspent transaction output set.\n4. **Txouts**: The number of output transactions in the unspent transaction output set.\n5. **Bytes Serialized**: The serialized size of the unspent transaction output set, which represents the amount of data required to store the set.\n6. **Hash Serialized**: The serialized hash of the unspent transaction output set, which is a unique identifier for the set.\n7. **Total Amount**: The total amount of currency in the unspent transaction output set.\n\nBy using the `gettxoutsetinfo` command, developers and users can gain a better understanding of the current state of the Verus blockchain, including the number of transactions, the total amount of currency in circulation, and the size of the unspent transaction output set. This information can be useful for a variety of purposes, such as monitoring the health of the network, analyzing transaction patterns, or optimizing wallet performance.",
+            "gettxoutsetinfo\n\nReturns statistics about the unspent transaction output set.\nNote this call may take some time.\n\nResult:\n{\n \"height\":n,   (numeric) The current block height (index)\n \"bestblock\": \"hex\",  (string) the best block hash hex\n \"transactions\": n,   (numeric) The number of transactions\n \"txouts\": n,      (numeric) The number of output transactions\n \"bytes_serialized\": n, (numeric) The serialized size\n \"hash_serialized\": \"hash\",  (string) The serialized hash\n \"total_amount\": x.xxx     (numeric) The total amount\n}\n\nExamples:\n> verus gettxoutsetinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettxoutsetinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/gettxoutsetinfo"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f5c936de-0ecc-4f50-81d2-49cf11042b49"
+]

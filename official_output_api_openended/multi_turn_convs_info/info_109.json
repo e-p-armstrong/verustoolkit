@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I use the `getaddressesbyaccount` command in Verus to retrieve a list of addresses associated with a specific account, and what are the parameters and results of this command?",
+            "The `getaddressesbyaccount` command in Verus is used to retrieve a list of addresses associated with a specific account. This command is deprecated, but it can still be used to retrieve addresses for a given account.\n\nTo use this command, you need to provide one argument, which is the account name. Note that the account name must be set to an empty string (`\"\"`)) to represent the default account. If you pass any other string, it will result in an error.\n\nThe result of this command is a JSON array of strings, where each string is a VRSC address associated with the given account.\n\nHere's an example of how to use this command:\n\n```\nverus getaddressesbyaccount \"\"\n```\n\nYou can also use the `curl` command to call this method via the JSON-RPC API:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressesbyaccount\", \"params\": [\"\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nIn this example, the `getaddressesbyaccount` method is called with an empty string as the account name, and the result is a list of addresses associated with the default account.\n\nNote that the `getaddressesbyaccount` command is deprecated, and it's recommended to use alternative methods to retrieve addresses associated with an account.",
+            "getaddressesbyaccount \"account\"\n\nDEPRECATED. Returns the list of addresses for the given account.\n\nArguments:\n1. \"account\" (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n[           (json array of string)\n \"VRSC_address\" (string) a VRSC address associated with the given account\n ,...\n]\n\nExamples:\n> verus getaddressesbyaccount \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressesbyaccount\", \"params\": [\"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressesbyaccount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "264bb1b8-284a-43b5-8e2b-2fa966c8a1d9"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the effect of setting `rescan` to `true` when using the `importprivkey` command?",
+    "If `rescan` is set to `true` (which is the default), the wallet will be rescanned for transactions after importing the private key. This process can take several minutes to complete.",
+    "importprivkey \"verusprivkey\" ( \"label\" rescan )\n\nAdds a private key (as returned by dumpprivkey) to your wallet.\n\nArguments:\n1. \"verusprivkey\"  (string, required) The private key (see dumpprivkey)\n2. \"label\"      (string, optional, default=\"\") An optional label\n3. rescan        (boolean, optional, default=true) Rescan the wallet for transactions\n\nNote: This call can take minutes to complete if rescan is true.\n\nExamples:\n\nDump a private key\n> verus dumpprivkey \"myaddress\"\n\nImport the private key with rescan\n> verus importprivkey \"mykey\"\n\nImport using a label and without rescan\n> verus importprivkey \"mykey\" \"testing\" false\n\nAs a JSON-RPC call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importprivkey\", \"params\": [\"mykey\", \"testing\", false] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/importprivkey"
+]

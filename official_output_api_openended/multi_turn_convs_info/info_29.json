@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I retrieve the hash of a block in the best-block-chain using the Verus command line interface, and what are the required parameters for this operation?",
+            "To retrieve the hash of a block in the best-block-chain using the Verus command line interface, you can use the `getblockhash` command. This command requires a single argument, the `index` of the block for which you want to retrieve the hash.\n\nThe `index` parameter is a numeric value that specifies the position of the block in the best-block-chain. For example, if you want to retrieve the hash of the 1000th block in the best-block-chain, you would use the command `verus getblockhash 1000`.\n\nThe result of the `getblockhash` command is a string that represents the hash of the block at the specified index. This hash can be used to identify the block and verify its integrity.\n\nIn addition to using the command line interface, you can also use the Verus JSON-RPC API to retrieve the block hash. To do this, you would send a JSON-RPC request to the Verus server with the `getblockhash` method and the `index` parameter. For example, using the `curl` command, you could use the following command:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis would send a JSON-RPC request to the Verus server to retrieve the hash of the 1000th block in the best-block-chain.\n\nOverall, the `getblockhash` command is a useful tool for retrieving information about blocks in the Verus blockchain, and can be used in a variety of applications, from block explorers to wallet software.",
+            "getblockhash index\n\nReturns hash of block in best-block-chain at index provided.\n\nArguments:\n1. index     (numeric, required) The block index\n\nResult:\n\"hash\"     (string) The block hash\n\nExamples:\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockhash"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8dd96a96-9e0c-48cd-b890-8c6c5e9e8b82"
+]

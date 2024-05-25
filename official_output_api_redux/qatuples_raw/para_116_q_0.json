@@ -1,0 +1,6 @@
+[
+    "What does the `getaddressesbyaccount` command do in Verus?",
+    "The `getaddressesbyaccount` command returns a list of addresses associated with a specific account in Verus.",
+    "getaddressesbyaccount \"account\"\n\nDEPRECATED. Returns the list of addresses for the given account.\n\nArguments:\n1. \"account\" (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n[           (json array of string)\n \"VRSC_address\" (string) a VRSC address associated with the given account\n ,...\n]\n\nExamples:\n> verus getaddressesbyaccount \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressesbyaccount\", \"params\": [\"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getaddressesbyaccount"
+]

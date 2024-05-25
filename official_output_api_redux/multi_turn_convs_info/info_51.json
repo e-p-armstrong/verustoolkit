@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `getaddresstxids` command in Verus?",
+            "The `getaddresstxids` command returns a list of transaction IDs (txids) associated with one or more addresses. This command requires the address index to be enabled.",
+            "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddresstxids"
+        ],
+        [
+            "What arguments are required to use the `getaddresstxids` command?",
+            "The `getaddresstxids` command requires three arguments:\n\n1. A list of base58check encoded addresses (`addresses`).\n2. A start block height (`start`).\n3. An end block height (`end`).",
+            "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddresstxids"
+        ],
+        [
+            "What is the format of the result returned by the `getaddresstxids` command?",
+            "The result returned by the `getaddresstxids` command is a list of transaction IDs (txids), each represented as a string.",
+            "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddresstxids"
+        ],
+        [
+            "How can I use the `getaddresstxids` command to retrieve transaction IDs for a specific address?",
+            "You can use the `getaddresstxids` command to retrieve transaction IDs for a specific address by providing the address as a string in the `addresses` argument, along with the desired start and end block heights. For example:\n\n```\nverus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"], \"start\": 0, \"end\": 100}'\n```\n\nThis command would return a list of transaction IDs associated with the specified address, between block heights 0 and 100.",
+            "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddresstxids"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "64aa61c1-429d-4053-9ba3-2bcfe482906b"
+]

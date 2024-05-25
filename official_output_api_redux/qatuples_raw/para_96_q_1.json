@@ -1,0 +1,6 @@
+[
+    "Can I use other tools to interact with Verus, aside from the command line interface?",
+    "Yes, aside from the command line interface, you can also use tools like `curl` to interact with Verus. For example, you can use the following command to retrieve information about a specific currency:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrency\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis allows you to access Verus functionality using JSON-RPC over HTTP.",
+    "Examples:\n> verus getcurrency \"currencyname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrency\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getcurrency"
+]

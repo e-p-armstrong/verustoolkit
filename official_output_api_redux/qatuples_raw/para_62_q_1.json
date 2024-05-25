@@ -1,0 +1,6 @@
+[
+    "What is the format of a JSON RPC request to Verus?",
+    "A JSON RPC request to Verus should be in the following format:\n```\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"unique_request_id\",\n  \"method\": \"method_name\",\n  \"params\": [\"parameter1\", \"parameter2\",...]\n}\n```",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getvdxfid"
+]

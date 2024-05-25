@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does the `z_getnewaddress` command do in Verus?",
+            "The `z_getnewaddress` command returns a new shielded address for receiving payments in Verus.",
+            "z_getnewaddress ( type )\n\nReturns a new shielded address for receiving payments.\n\nWith no arguments, returns a Sapling address.\n\nArguments:\n1. \"type\"     (string, optional, default=\"sapling\") The type of address. One of [\"sprout\", \"sapling\"].\n\nResult:\n\"VRSC_address\"  (string) The new shielded address.\n\nExamples:\n> verus z_getnewaddress \n> verus z_getnewaddress sapling\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getnewaddress"
+        ],
+        [
+            "What types of shielded addresses can I generate using the `z_getnewaddress` command?",
+            "You can generate two types of shielded addresses using the `z_getnewaddress` command: Sapling and Sprout. By default, the command generates a Sapling address, but you can specify the type of address you want to generate by passing an argument. For example, `z_getnewaddress sapling` generates a Sapling address, while `z_getnewaddress sprout` generates a Sprout address.",
+            "z_getnewaddress ( type )\n\nReturns a new shielded address for receiving payments.\n\nWith no arguments, returns a Sapling address.\n\nArguments:\n1. \"type\"     (string, optional, default=\"sapling\") The type of address. One of [\"sprout\", \"sapling\"].\n\nResult:\n\"VRSC_address\"  (string) The new shielded address.\n\nExamples:\n> verus z_getnewaddress \n> verus z_getnewaddress sapling\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getnewaddress"
+        ],
+        [
+            "How can I use the `z_getnewaddress` command to generate a new shielded address for receiving payments in Verus?",
+            "You can use the `z_getnewaddress` command in several ways to generate a new shielded address for receiving payments in Verus. Here are a few examples:\n\n1. `verus z_getnewaddress` - This generates a new Sapling address by default.\n2. `verus z_getnewaddress sapling` - This generates a new Sapling address.\n3. `verus z_getnewaddress sprout` - This generates a new Sprout address.\n4. You can also use the command with curl, as shown in the example: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`\n\nIn all cases, the command returns a new shielded address as a string.",
+            "z_getnewaddress ( type )\n\nReturns a new shielded address for receiving payments.\n\nWith no arguments, returns a Sapling address.\n\nArguments:\n1. \"type\"     (string, optional, default=\"sapling\") The type of address. One of [\"sprout\", \"sapling\"].\n\nResult:\n\"VRSC_address\"  (string) The new shielded address.\n\nExamples:\n> verus z_getnewaddress \n> verus z_getnewaddress sapling\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getnewaddress"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f0daf3c0-a6dd-4324-8f2f-1ed3fc9f6525"
+]

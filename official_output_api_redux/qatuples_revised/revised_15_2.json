@@ -1,0 +1,6 @@
+[
+    "Can I use a remote procedure call (RPC) to define a new currency in Verus?",
+    "Yes, you can use a remote procedure call (RPC) to define a new currency in Verus. You can do this by sending a JSON RPC request to the Verus RPC server with the `definecurrency` method and the JSON definition of the currency as a parameter. For example, you can use the command `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/` where `jsondefinition` is the JSON object defining the new currency.",
+    "Result:\n{\n \"txid\" : \"transactionid\", (string) The transaction id\n \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction\n \"hex\" : \"data\"      (string) Raw data for signed transaction\n}\n\nExamples:\n> verus definecurrency jsondefinition\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/definecurrency"
+]

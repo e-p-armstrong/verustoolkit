@@ -1,0 +1,6 @@
+[
+    "What does the `z_listoperationids` command do in Verus?",
+    "The `z_listoperationids` command returns a list of operation IDs currently known to the wallet. It can also filter the result by the operation's state, such as \"success\", if specified.",
+    "z_listoperationids\n\nReturns the list of operation ids currently known to the wallet.\n\nArguments:\n1. \"status\"     (string, optional) Filter result by the operation's state e.g. \"success\".\n\nResult:\n[           (json array of string)\n \"operationid\"    (string) an operation id belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listoperationids \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_listoperationids"
+]

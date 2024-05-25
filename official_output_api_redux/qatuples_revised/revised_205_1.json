@@ -1,0 +1,6 @@
+[
+    "What is the required argument for the `importwallet` command?",
+    "The required argument for the `importwallet` command is the \"filename\" of the wallet file, which is a string.",
+    "importwallet \"filename\"\n\nImports taddr keys from a wallet dump file (see dumpwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus dumpwallet \"nameofbackup\"\n\nImport the wallet\n> verus importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/importwallet"
+]

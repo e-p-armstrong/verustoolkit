@@ -1,0 +1,6 @@
+[
+    "How can I generate a specific number of blocks using the `generate` function in Verus?",
+    "You can generate a specific number of blocks using the `generate` function by specifying the number of blocks as an argument. For example, to generate 11 blocks, you would use the command `verus generate 11`.",
+    "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+    "./raw_text_input_api_text/generate"
+]

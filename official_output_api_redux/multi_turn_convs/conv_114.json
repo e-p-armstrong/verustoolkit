@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to understand some of the commands in Verus. What does the `getpendingtransfers` command do?\n\n**AI Assistant:**\nThe `getpendingtransfers` command returns all pending transfers for a particular chain that have not yet been aggregated into an export.\n\n**User:**\nThat makes sense. How do I use the `getpendingtransfers` command to retrieve pending transfers for a specific chain?\n\n**AI Assistant:**\nTo retrieve pending transfers for a specific chain, you can use the `getpendingtransfers` command with the chain name as an argument, like this: `verus getpendingtransfers \"chainname\"`. If you omit the chain name, it will default to the current chain in the daemon.\n\n**User:**\nWhat can I expect as the result of the `getpendingtransfers` command?\n\n**AI Assistant:**\nThe result of the `getpendingtransfers` command is an empty object (`{ }`).\n\n**User:**\nIs the `getpendingtransfers` command limited to the Verus CLI, or can I use it with other interfaces, like curl?\n\n**AI Assistant:**\nYou can use the `getpendingtransfers` command with other interfaces, such as curl. For example, you can use the following command: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`. This allows you to access the `getpendingtransfers` command from other tools and scripts.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `getpendingtransfers` command do in Verus?",
+            "The `getpendingtransfers` command returns all pending transfers for a particular chain that have not yet been aggregated into an export.",
+            "getpendingtransfers \"chainname\"\n\nReturns all pending transfers for a particular chain that have not yet been aggregated into an export\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n\nResult:\n {\n }\n\nExamples:\n> verus getpendingtransfers \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpendingtransfers"
+        ],
+        [
+            "How do I use the `getpendingtransfers` command to retrieve pending transfers for a specific chain?",
+            "To retrieve pending transfers for a specific chain, you can use the `getpendingtransfers` command with the chain name as an argument, like this: `verus getpendingtransfers \"chainname\"`. If you omit the chain name, it will default to the current chain in the daemon.",
+            "getpendingtransfers \"chainname\"\n\nReturns all pending transfers for a particular chain that have not yet been aggregated into an export\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n\nResult:\n {\n }\n\nExamples:\n> verus getpendingtransfers \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpendingtransfers"
+        ],
+        [
+            "What is the result format of the `getpendingtransfers` command?",
+            "The result of the `getpendingtransfers` command is an empty object (`{ }`).",
+            "getpendingtransfers \"chainname\"\n\nReturns all pending transfers for a particular chain that have not yet been aggregated into an export\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n\nResult:\n {\n }\n\nExamples:\n> verus getpendingtransfers \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpendingtransfers"
+        ],
+        [
+            "Can I use the `getpendingtransfers` command with other interfaces, such as curl?",
+            "Yes, you can use the `getpendingtransfers` command with other interfaces, such as curl. For example, you can use the following command: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "getpendingtransfers \"chainname\"\n\nReturns all pending transfers for a particular chain that have not yet been aggregated into an export\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n\nResult:\n {\n }\n\nExamples:\n> verus getpendingtransfers \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpendingtransfers"
+        ]
+    ]
+]

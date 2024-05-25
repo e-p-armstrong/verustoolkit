@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `setaccount` command in Verus?",
+            "The `setaccount` command is used to associate a Verus address with an account. However, this command is deprecated and should not be used.",
+            "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ],
+        [
+            "What are the arguments required for the `setaccount` command?",
+            "The `setaccount` command requires two arguments:\n\n1. \"VRSC_address\" (string, required): The Verus address to be associated with an account.\n2. \"account\" (string, required): MUST be set to the empty string \"\" to represent the default account.",
+            "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ],
+        [
+            "What happens if I pass a non-empty string as the \"account\" argument in the `setaccount` command?",
+            "If you pass a non-empty string as the \"account\" argument in the `setaccount` command, it will result in an error.",
+            "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ],
+        [
+            "Is the `setaccount` command still supported in Verus?",
+            "No, the `setaccount` command is deprecated and should not be used. It is not supported in Verus.",
+            "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "78150780-c4d1-4eb1-aa57-ba7e854bcb85"
+]

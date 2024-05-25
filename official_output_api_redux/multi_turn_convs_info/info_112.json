@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `recoveridentity` command in Verus?",
+            "The `recoveridentity` command is used to recover an identity in Verus. It takes a JSON identity as an argument and can be customized with additional optional arguments to control the recovery process.",
+            "recoveridentity \"jsonidentity\" (returntx) (tokenrecover) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrecover\"          (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to recover\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/recoveridentity"
+        ],
+        [
+            "What are the optional arguments for the `recoveridentity` command, and what do they do?",
+            "The optional arguments for the `recoveridentity` command are:\n\n* `returntx`: If set to `true`, the transaction is signed by the wallet and returned instead of being sent.\n* `tokenrecover`: If set to `true`, the tokenized ID control token, if one exists, will be used to recover the identity.\n* `feeoffer`: A non-standard fee amount to pay for the transaction.\n* `sourceoffunds`: A transparent or private address to source all funds for fees to preserve the privacy of the identity.",
+            "recoveridentity \"jsonidentity\" (returntx) (tokenrecover) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrecover\"          (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to recover\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/recoveridentity"
+        ],
+        [
+            "How do I use the `recoveridentity` command to recover an identity in Verus?",
+            "You can use the `recoveridentity` command in Verus by running the following command in the terminal:\n```\nverus recoveridentity '{\"name\" : \"myname\"}'\n```\nReplace `\"myname\"` with the actual name of the identity you want to recover. You can also add optional arguments as needed.",
+            "recoveridentity \"jsonidentity\" (returntx) (tokenrecover) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrecover\"          (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to recover\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/recoveridentity"
+        ],
+        [
+            "Is there an alternative way to use the `recoveridentity` command besides using the terminal?",
+            "Yes, you can also use the `recoveridentity` command through an HTTP API using `curl`. Here's an example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `myusername` with your actual username and `myname` with the actual name of the identity you want to recover.",
+            "recoveridentity \"jsonidentity\" (returntx) (tokenrecover) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrecover\"          (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to recover\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/recoveridentity"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "0de72066-4fca-4d2a-92bb-6210c956fc65"
+]

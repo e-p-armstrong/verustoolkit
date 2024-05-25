@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `getblock` command in Verus?",
+            "The `getblock` command is used to retrieve information about a specific block in the Verus blockchain. It can take a block hash or a block height as an input parameter.",
+            "Result (for verbosity = 2):\n{\n ...,           Same output as verbosity = 1.\n \"tx\" : [        (array of Objects) The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 \"tx\" result.\n     ,...\n ],\n ,...           Same output as verbosity = 1.\n}\n\nExamples:\n> verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblock 12800\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblock"
+        ],
+        [
+            "What is the difference in the output of the `getblock` command when using verbosity levels 1 and 2?",
+            "When using verbosity level 1, the `getblock` command returns a standard output with basic information about the block. When using verbosity level 2, the command returns additional information, including an array of transaction objects in the format of the `getrawtransaction` RPC.",
+            "Result (for verbosity = 2):\n{\n ...,           Same output as verbosity = 1.\n \"tx\" : [        (array of Objects) The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 \"tx\" result.\n     ,...\n ],\n ,...           Same output as verbosity = 1.\n}\n\nExamples:\n> verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblock 12800\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblock"
+        ],
+        [
+            "How can I use the `getblock` command to retrieve information about a specific block in Verus?",
+            "You can use the `getblock` command by specifying the block hash or block height as an input parameter. For example, you can use the command `verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"` to retrieve information about a block with the specified hash, or `verus getblock 12800` to retrieve information about block number 12800. Alternatively, you can use the `curl` command to send a JSON-RPC request to the Verus node.",
+            "Result (for verbosity = 2):\n{\n ...,           Same output as verbosity = 1.\n \"tx\" : [        (array of Objects) The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 \"tx\" result.\n     ,...\n ],\n ,...           Same output as verbosity = 1.\n}\n\nExamples:\n> verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblock 12800\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblock"
+        ],
+        [
+            "What is the format of the transaction objects returned by the `getblock` command when using verbosity level 2?",
+            "The transaction objects returned by the `getblock` command when using verbosity level 2 are in the format of the `getrawtransaction` RPC. This format provides detailed information about each transaction in the block.",
+            "Result (for verbosity = 2):\n{\n ...,           Same output as verbosity = 1.\n \"tx\" : [        (array of Objects) The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 \"tx\" result.\n     ,...\n ],\n ,...           Same output as verbosity = 1.\n}\n\nExamples:\n> verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblock 12800\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "54685d4c-d96f-4dd3-98b7-42fd4864a38c"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the relationship between `migrate_converttoexport` and `migrate_createimporttransaction` in Verus?",
+    "The `migrate_converttoexport` method is used to prepare a transaction for export from one chain, and the `migrate_createimporttransaction` method is used to create a corresponding import transaction on another chain. The output of `migrate_converttoexport` is used as input to `migrate_createimporttransaction` to complete the cross-chain transfer.",
+    "migrate_converttoexport rawTx dest_symbol export_amount\n\nConvert a raw transaction to a cross-chain export.\nIf neccesary, the transaction should be funded using fundrawtransaction.\nFinally, the transaction should be signed using signrawtransaction\nThe finished export transaction, plus the payouts, should be passed to the \"migrate_createimporttransaction\" method on a KMD node to get the corresponding import transaction.",
+    "./raw_text_input_api_text/migrate_converttoexport"
+]

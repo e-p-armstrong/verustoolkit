@@ -1,0 +1,6 @@
+[
+    "What does the `getnetworkhashps` command do in Verus?",
+    "The `getnetworkhashps` command estimates the network solutions per second based on the last n blocks. It is deprecated and left for backwards-compatibility, with the recommendation to use `getnetworksolps` instead.",
+    "getnetworkhashps ( blocks height )\n\nDEPRECATED - left for backwards-compatibility. Use getnetworksolps instead.\n\nReturns the estimated network solutions per second based on the last n blocks.\nPass in [blocks] to override # of blocks, -1 specifies over difficulty averaging window.\nPass in [height] to estimate the network speed at the time when a certain block was found.\n\nArguments:\n1. blocks   (numeric, optional, default=120) The number of blocks, or -1 for blocks over difficulty averaging window.\n2. height   (numeric, optional, default=-1) To estimate at the time of the given height.\n\nResult:\nx       (numeric) Solutions per second estimated\n\nExamples:\n> verus getnetworkhashps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnetworkhashps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnetworkhashps"
+]

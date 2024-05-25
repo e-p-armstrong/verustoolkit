@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `scanNotarisationsDB` command in Verus, and how can it be used to find notarizations of a specific symbol?",
+            "The `scanNotarisationsDB` command is a tool in Verus that allows users to search for notarizations of a specific symbol in the notarisations database. This command is useful for finding and verifying notarizations that have taken place on the Verus network.\n\nThe command takes three parameters: `blockHeight`, `symbol`, and an optional `blocksLimit`. The `blockHeight` parameter specifies the starting point for the search, with the command scanning the notarisations database backwards from that height. The `symbol` parameter specifies the symbol for which the user is searching for notarizations. The `blocksLimit` parameter, which defaults to 1440 if not specified, limits the number of blocks that the command will scan.\n\nBy using the `scanNotarisationsDB` command, users can search for notarizations of a specific symbol and retrieve information about those notarizations. This can be useful for a variety of purposes, such as verifying the authenticity of a notarization or tracking the history of notarizations for a particular symbol.\n\nFor example, if a user wanted to search for notarizations of the symbol \"VRS\" starting from block height 1000, they could use the following command:\n```\nscanNotarisationsDB 1000 VRS\n```\nThis would scan the notarisations database backwards from block height 1000 and return any notarizations of the symbol \"VRS\" that it finds.",
+            "scanNotarisationsDB blockHeight symbol [blocksLimit=1440]\n\nScans notarisationsdb backwards from height for a notarisation of given symbol",
+            "./raw_text_input_api_text/scanNotarisationsDB"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "0f48ef7f-2bea-4cb6-b434-bc52ad632e6b"
+]

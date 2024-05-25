@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `estimatefee` command in Verus, and how does it estimate the fee per kilobyte for a transaction to begin confirmation within a specified number of blocks?",
+            "The `estimatefee` command in Verus is used to estimate the approximate fee per kilobyte required for a transaction to begin confirmation within a specified number of blocks. This command takes one argument, `nblocks`, which is a numeric value representing the number of blocks within which the transaction is expected to be confirmed.\n\nThe result of the `estimatefee` command is a numeric value, `n`, which represents the estimated fee-per-kilobyte required for the transaction to be confirmed within the specified number of blocks. If there are not enough transactions and blocks observed to make an estimate, the minimum fee is returned.\n\nIn essence, the `estimatefee` command provides users with an estimate of the fee required to ensure that their transaction is confirmed within a certain timeframe, taking into account the current network conditions and transaction volume. This information can be useful for users who need to prioritize their transactions and want to ensure that they are confirmed quickly.\n\nFor example, if a user wants to estimate the fee required for a transaction to be confirmed within 6 blocks, they can use the command `verus estimatefee 6`. The result would be the estimated fee-per-kilobyte required for the transaction to be confirmed within 6 blocks.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "99149423-0e85-4a21-a595-2cec306f69c8"
+]

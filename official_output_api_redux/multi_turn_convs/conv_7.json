@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to interact with Verus using JSON RPC, but I'm not sure about the format of the request. Can you help me out?\n\n**AI Assistant:**\nA JSON RPC request to Verus is a JSON object with the following properties: `jsonrpc` (a string specifying the JSON RPC version), `id` (a string identifying the request), `method` (a string specifying the method to be called), and `params` (an array of parameters for the method). This is the basic structure you need to follow for any JSON RPC request to Verus.\n\n**User:**\nThat helps, thanks! Now, I'm trying to sign and encrypt a message using the `signdata` method. Can you walk me through how to do that?\n\n**AI Assistant:**\nYou can use the `signdata` method to sign and encrypt a message in Verus by making a JSON RPC request with the `method` set to `signdata` and the `params` set to an array containing a JSON object with the following properties: `address` (the address to use for signing), `createmmr` (a boolean indicating whether to create a mini-master private key), `data` (an array of objects containing the data to be signed and encrypted, including the message and the address to encrypt to). This will allow you to sign and encrypt your message using Verus. Let me know if you have any more questions about this process!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the format of a JSON RPC request to Verus?",
+            "A JSON RPC request to Verus is a JSON object with the following properties: `jsonrpc` (a string specifying the JSON RPC version), `id` (a string identifying the request), `method` (a string specifying the method to be called), and `params` (an array of parameters for the method).",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decryptdata"
+        ],
+        [
+            "How can I use the `signdata` method to sign and encrypt a message in Verus?",
+            "You can use the `signdata` method to sign and encrypt a message in Verus by making a JSON RPC request with the `method` set to `signdata` and the `params` set to an array containing a JSON object with the following properties: `address` (the address to use for signing), `createmmr` (a boolean indicating whether to create a mini-master private key), `data` (an array of objects containing the data to be signed and encrypted, including the message and the address to encrypt to).",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decryptdata"
+        ]
+    ]
+]

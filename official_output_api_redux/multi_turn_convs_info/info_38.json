@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the purpose of the `getexports` command in Verus?",
+            "The `getexports` command in Verus is used to retrieve pending export transfers to a specified currency within a specific height range.",
+            "getexports \"chainname\" (heightstart) (heightend)\n\nReturns pending export transfers to the specified currency from start height to end height if specified\n\nArguments\n\"chainname\"           (string, required) name/ID of the currency to look for. no parameter returns current chain\n\"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n\"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height\n\nResult:\n [{\n   \"height\": n,   \"txid\": \"hexid\",   \"txoutnum\": n,   \"partialtransactionproof\": \"hexstr\",   \"transfers\": [{transfer1}, {transfer2},...] }, ...]\n\nExamples:\n> verus getexports \"chainname\" (heightstart) (heightend)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getexports\", \"params\": [\"chainname\" (heightstart) (heightend)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getexports"
+        ],
+        [
+            "What are the required and optional arguments for the `getexports` command?",
+            "The `getexports` command requires a \"chainname\" argument, which is the name or ID of the currency to look for. The \"heightstart\" and \"heightend\" arguments are optional, with default values of 0 and maxheight, respectively. These optional arguments allow you to specify a range of heights to search for exports.",
+            "getexports \"chainname\" (heightstart) (heightend)\n\nReturns pending export transfers to the specified currency from start height to end height if specified\n\nArguments\n\"chainname\"           (string, required) name/ID of the currency to look for. no parameter returns current chain\n\"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n\"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height\n\nResult:\n [{\n   \"height\": n,   \"txid\": \"hexid\",   \"txoutnum\": n,   \"partialtransactionproof\": \"hexstr\",   \"transfers\": [{transfer1}, {transfer2},...] }, ...]\n\nExamples:\n> verus getexports \"chainname\" (heightstart) (heightend)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getexports\", \"params\": [\"chainname\" (heightstart) (heightend)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getexports"
+        ],
+        [
+            "What does the result of the `getexports` command look like?",
+            "The result of the `getexports` command is a JSON array of objects, each containing information about an export transfer. The objects include the following properties: \"height\", \"txid\", \"txoutnum\", \"partialtransactionproof\", and \"transfers\". The \"transfers\" property is an array of transfer objects.",
+            "getexports \"chainname\" (heightstart) (heightend)\n\nReturns pending export transfers to the specified currency from start height to end height if specified\n\nArguments\n\"chainname\"           (string, required) name/ID of the currency to look for. no parameter returns current chain\n\"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n\"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height\n\nResult:\n [{\n   \"height\": n,   \"txid\": \"hexid\",   \"txoutnum\": n,   \"partialtransactionproof\": \"hexstr\",   \"transfers\": [{transfer1}, {transfer2},...] }, ...]\n\nExamples:\n> verus getexports \"chainname\" (heightstart) (heightend)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getexports\", \"params\": [\"chainname\" (heightstart) (heightend)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getexports"
+        ],
+        [
+            "How can I use the `getexports` command to retrieve pending export transfers for a specific currency?",
+            "You can use the `getexports` command to retrieve pending export transfers for a specific currency by running the command with the currency's name or ID as an argument, like this: `verus getexports \"chainname\"`. You can also specify a height range by adding the \"heightstart\" and \"heightend\" arguments, like this: `verus getexports \"chainname\" 100 200`.",
+            "getexports \"chainname\" (heightstart) (heightend)\n\nReturns pending export transfers to the specified currency from start height to end height if specified\n\nArguments\n\"chainname\"           (string, required) name/ID of the currency to look for. no parameter returns current chain\n\"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n\"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height\n\nResult:\n [{\n   \"height\": n,   \"txid\": \"hexid\",   \"txoutnum\": n,   \"partialtransactionproof\": \"hexstr\",   \"transfers\": [{transfer1}, {transfer2},...] }, ...]\n\nExamples:\n> verus getexports \"chainname\" (heightstart) (heightend)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getexports\", \"params\": [\"chainname\" (heightstart) (heightend)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getexports"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3c4624ac-198b-4653-a320-0c0ae7c7cdc6"
+]

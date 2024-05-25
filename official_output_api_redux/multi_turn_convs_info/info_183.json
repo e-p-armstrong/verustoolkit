@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the \"nodes\" field used for in a Verus blockchain definition?",
+            "The \"nodes\" field in a Verus blockchain definition is an optional array of objects that specifies up to 8 nodes that can be used to connect to the blockchain. Each node object can contain two optional fields: \"nodeidentity\" and \"paymentaddress\". \"nodeidentity\" is a string that specifies the internet, TOR, or other supported address for the node, and \"paymentaddress\" is an integer that specifies the rewards payment address for the node.",
+            "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+            "./raw_text_input_api_text/getcurrency"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "cb1a8452-a812-4338-a628-d01fac17f30f"
+]

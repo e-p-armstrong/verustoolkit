@@ -1,0 +1,6 @@
+[
+    "How can I use the `ping` command in Verus?",
+    "You can use the `ping` command in Verus by running the command `verus ping` in the command line, or by using the JSON-RPC API with a command like `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+    "ping\n\nRequests that a ping be sent to all other nodes, to measure ping time.\nResults provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.\nPing command is handled in queue with all other commands, so it measures processing backlog, not just network ping.\n\nExamples:\n> verus ping \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/ping"
+]

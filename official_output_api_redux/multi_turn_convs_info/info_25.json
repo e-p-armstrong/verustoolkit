@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `resendwallettransactions` command in Verus?",
+            "The `resendwallettransactions` command is intended for testing purposes and is used to immediately re-broadcast unconfirmed wallet transactions to all peers. This command is not typically needed as the wallet code automatically re-broadcasts transactions periodically.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ],
+        [
+            "What does the `resendwallettransactions` command return?",
+            "The `resendwallettransactions` command returns an array of transaction IDs that were re-broadcast.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ],
+        [
+            "When would I need to use the `resendwallettransactions` command?",
+            "You would typically only need to use the `resendwallettransactions` command in specific testing scenarios, as the wallet code automatically re-broadcasts unconfirmed transactions periodically. In most cases, you would not need to use this command.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b7e06321-48be-4303-9ae8-510e21ee7dd5"
+]

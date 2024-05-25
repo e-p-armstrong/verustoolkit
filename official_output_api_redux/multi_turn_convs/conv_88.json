@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to use the `z_shieldcoinbase` command in Verus from the command line. Can you please help me with that?\n\n**AI Assistant:**\nYou can use the `z_shieldcoinbase` command in Verus from the command line by running a command like this:\n```\nverus z_shieldcoinbase \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"\n```\nThis command takes two parameters: the first is the coinbase transaction to be shielded, and the second is the shielded output. Just replace the example parameters with your own and you're good to go!\n\n**User:**\nThat's helpful, thanks! But I'm actually using Verus with a JSON-RPC interface. Can you tell me how to use the `z_shieldcoinbase` command with a JSON-RPC request?\n\n**AI Assistant:**\nYou can use the `z_shieldcoinbase` command in Verus using a JSON-RPC request by sending a request like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis request sends a JSON-RPC request to the Verus node at `http://127.0.0.1:27486/` with the `z_shieldcoinbase` method and the required parameters. Just replace the example parameters and username with your own, and you should be good to go!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I use the `z_shieldcoinbase` command in Verus from the command line?",
+            "You can use the `z_shieldcoinbase` command in Verus from the command line by running a command like this:\n```\nverus z_shieldcoinbase \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"\n```\nThis command takes two parameters: the first is the coinbase transaction to be shielded, and the second is the shielded output.",
+            "Examples:\n> verus z_shieldcoinbase \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_shieldcoinbase"
+        ],
+        [
+            "How can I use the `z_shieldcoinbase` command in Verus using a JSON-RPC request?",
+            "You can use the `z_shieldcoinbase` command in Verus using a JSON-RPC request by sending a request like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis request sends a JSON-RPC request to the Verus node at `http://127.0.0.1:27486/` with the `z_shieldcoinbase` method and the required parameters.",
+            "Examples:\n> verus z_shieldcoinbase \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_shieldcoinbase"
+        ]
+    ]
+]

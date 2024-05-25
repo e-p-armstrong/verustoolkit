@@ -1,0 +1,6 @@
+[
+    "What is the output format of the `zcrawreceive` command?",
+    "The output of the `zcrawreceive` command is a JSON object with three properties:\n\n1. `amount`: the value of the decrypted note.\n2. `note`: the plaintext of the decrypted note.\n3. `exists`: a boolean indicating whether the coin commitments are present in the blockchain.",
+    "zcrawreceive zcsecretkey encryptednote\n\nDEPRECATED. Decrypts encryptednote and checks if the coin commitments\nare in the blockchain as indicated by the \"exists\" result.\n\nOutput: {\n \"amount\": value,\n \"note\": noteplaintext,\n \"exists\": exists\n}",
+    "./raw_text_input_api_text/zcrawreceive"
+]

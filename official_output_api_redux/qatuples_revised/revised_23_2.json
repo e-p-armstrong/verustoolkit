@@ -1,0 +1,6 @@
+[
+    "How can I use the `gettxoutsetinfo` command in Verus?",
+    "You can use the `gettxoutsetinfo` command in Verus by running it directly in the Verus command line interface, like this:\n```\nverus gettxoutsetinfo\n```\nAlternatively, you can also use the command through an HTTP request using a tool like `curl`, like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettxoutsetinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "gettxoutsetinfo\n\nReturns statistics about the unspent transaction output set.\nNote this call may take some time.\n\nResult:\n{\n \"height\":n,   (numeric) The current block height (index)\n \"bestblock\": \"hex\",  (string) the best block hash hex\n \"transactions\": n,   (numeric) The number of transactions\n \"txouts\": n,      (numeric) The number of output transactions\n \"bytes_serialized\": n, (numeric) The serialized size\n \"hash_serialized\": \"hash\",  (string) The serialized hash\n \"total_amount\": x.xxx     (numeric) The total amount\n}\n\nExamples:\n> verus gettxoutsetinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettxoutsetinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/gettxoutsetinfo"
+]

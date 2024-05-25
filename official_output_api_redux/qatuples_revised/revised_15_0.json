@@ -1,0 +1,6 @@
+[
+    "What is the result format of the `definecurrency` command in Verus?",
+    "The result format of the `definecurrency` command in Verus is a JSON object with three properties: `txid`, `tx`, and `hex`. The `txid` property is a string representing the transaction ID, the `tx` property is a JSON object representing the transaction decoded as a transaction, and the `hex` property is a string representing the raw data for the signed transaction.",
+    "Result:\n{\n \"txid\" : \"transactionid\", (string) The transaction id\n \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction\n \"hex\" : \"data\"      (string) Raw data for signed transaction\n}\n\nExamples:\n> verus definecurrency jsondefinition\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/definecurrency"
+]

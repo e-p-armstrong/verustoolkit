@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `zcsamplejoinsplit` command in Verus, and what does it return?",
+    "The `zcsamplejoinsplit` command is used in Verus to perform a joinsplit operation and return a `JSDescription`. \n\nIn the context of Verus, a joinsplit is a complex operation that combines multiple transactions into a single transaction, allowing for more efficient and private transactions. The joinsplit operation is a key component of Verus's zero-knowledge proof technology, which enables users to conduct transactions without revealing the amounts or parties involved.\n\nWhen you run the `zcsamplejoinsplit` command, it will generate a joinsplit transaction and return a `JSDescription`, which is a descriptive object that contains information about the joinsplit transaction. This `JSDescription` can be used to further process or analyze the transaction.\n\nIn essence, the `zcsamplejoinsplit` command is a tool that allows developers and users to experiment with and understand the joinsplit operation in Verus, which is crucial for building more advanced and privacy-focused applications on the Verus platform.",
+    "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+    "./raw_text_input_api_text/zcsamplejoinsplit"
+]

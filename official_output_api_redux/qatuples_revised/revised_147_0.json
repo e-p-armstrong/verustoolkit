@@ -1,0 +1,6 @@
+[
+    "What is the difference between \"value\" and \"valueZat\" in a Verus transaction?",
+    "In a Verus transaction, \"value\" represents the amount in VRSC (Verus Coin), whereas \"valueZat\" represents the amount in zatoshis, which is a smaller unit of currency (similar to satoshis in Bitcoin). Zatoshis are used to express smaller amounts of VRSC.",
+    "  \"value\" : x.xxx         (numeric) The amount in VRSC\n   \"valueZat\" : xxxx        (numeric) The amount in zatoshis\n   \"memo\" : \"hexmemo\",       (string) Hexademical string representation of the memo field\n   \"memoStr\" : \"memo\",       (string) Only returned if memo contains valid UTF-8 text.\n  }\n  ,...\n ],\n}",
+    "./raw_text_input_api_text/z_viewtransaction"
+]

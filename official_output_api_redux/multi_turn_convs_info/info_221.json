@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What does the `z_getoperationresult` command do in Verus?",
+            "The `z_getoperationresult` command retrieves the result and status of an operation that has finished, and then removes the operation from memory.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ],
+        [
+            "What arguments does the `z_getoperationresult` command take?",
+            "The `z_getoperationresult` command takes an optional argument, an array of operation IDs, specifying which operations to retrieve results for. If no operation IDs are provided, the command will examine all operations known to the node.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ],
+        [
+            "What is the format of the result returned by the `z_getoperationresult` command?",
+            "The result of the `z_getoperationresult` command is an array of JSON objects, each containing the result and status of an operation.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ],
+        [
+            "How can I use the `z_getoperationresult` command to retrieve the result of a specific operation?",
+            "You can use the `z_getoperationresult` command to retrieve the result of a specific operation by providing the operation ID as an argument. For example, you can use the command `verus z_getoperationresult '[\"operationid\"]'` or make a JSON-RPC request using `curl` with the operation ID as a parameter.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7e229e84-8e97-4463-bf20-64bcef4c3479"
+]

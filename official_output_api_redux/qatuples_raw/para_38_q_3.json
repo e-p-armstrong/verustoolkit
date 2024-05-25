@@ -1,0 +1,6 @@
+[
+    "How can I check the current generation setting using the Verus command line?",
+    "You can check the current generation setting using the `getgenerate` command. This command will return the current setting for generation, including whether it is on or off and the number of processors being used.",
+    "setgenerate generate ( genproclimit )\n\nSet 'generate' true to turn either mining/generation or minting/staking on and false to turn both off.\nMining is limited to 'genproclimit' processors, -1 is unlimited, setgenerate true with 0 genproclimit turns on staking\nSee the getgenerate call for the current setting.\n\nArguments:\n1. generate     (boolean, required) Set to true to turn on generation, off to turn off.\n2. genproclimit   (numeric, optional) Set processor limit when generation is on. Can be -1 for unlimited, 0 to turn on staking.\n\nExamples:\n\nSet the generation on with a limit of one processor\n> verus setgenerate true 1\n\nTurn minting/staking on\n> verus setgenerate true 0\n\nCheck the setting\n> verus getgenerate\n\nTurn off generation and minting\n> verus setgenerate false\n\nUsing json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setgenerate\", \"params\": [true, 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/setgenerate"
+]

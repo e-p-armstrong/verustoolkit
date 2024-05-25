@@ -1,0 +1,6 @@
+[
+    "Why does the `getblockdeltas` command not work by default?",
+    "The `getblockdeltas` command is disabled by default. To enable it, you need to restart Verus with the `-experimentalfeatures` and `-insightexplorer` command-line options, or add these two lines to the Verus configuration file: `experimentalfeatures=1` and `insightexplorer=1`.",
+    "getblockdeltas \"blockhash\"Returns information about the given block and its transactions.WARNING: getblockdeltas is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-insightexplorer commandline options, or add these two lines\nto the zcash.conf file:experimentalfeatures=1\ninsightexplorer=1Arguments:\n1. \"hash\"     (string, required) The block hash",
+    "./raw_text_input_api_text/getblockdeltas"
+]

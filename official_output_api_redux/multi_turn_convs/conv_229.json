@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've got a question about the Verus CLI. How can I disconnect from a specific node using the Verus CLI?\n\n**AI Assistant:**\nYou can disconnect from a specific node using the `disconnectnode` command, followed by the node's address as a string argument. For example:\n```\nverus disconnectnode \"192.168.0.6:8233\"\n```\nThis will immediately disconnect from the specified node. Do you have any other questions about the `disconnectnode` command or the Verus CLI in general?\n\n**User:**\nThat's helpful, thanks! What is the purpose of the `disconnectnode` command in Verus?\n\n**AI Assistant:**\nThe `disconnectnode` command is used to immediately disconnect from a specific node in the Verus network. This can be useful for managing node connections and troubleshooting network issues. It gives you control over which nodes you're connected to and helps you resolve any connection-related problems.\n\n**User:**\nGot it, that makes sense. Can I use the `disconnectnode` command with a JSON-RPC request?\n\n**AI Assistant:**\nYes, you can use the `disconnectnode` command with a JSON-RPC request. For example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will send a JSON-RPC request to disconnect from the specified node. JSON-RPC requests can be a convenient way to interact with the Verus node programmatically.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I disconnect from a specific node using the Verus CLI?",
+            "You can disconnect from a specific node using the `disconnectnode` command, followed by the node's address as a string argument. For example:\n```\nverus disconnectnode \"192.168.0.6:8233\"\n```\nThis will immediately disconnect from the specified node.",
+            "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ],
+        [
+            "What is the purpose of the `disconnectnode` command in Verus?",
+            "The `disconnectnode` command is used to immediately disconnect from a specific node in the Verus network. This can be useful for managing node connections and troubleshooting network issues.",
+            "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ],
+        [
+            "Can I use the `disconnectnode` command with a JSON-RPC request?",
+            "Yes, you can use the `disconnectnode` command with a JSON-RPC request. For example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will send a JSON-RPC request to disconnect from the specified node.",
+            "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ]
+    ]
+]

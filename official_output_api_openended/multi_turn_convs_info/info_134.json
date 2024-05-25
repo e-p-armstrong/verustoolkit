@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I use the `getimports` command in Verus to retrieve all imports into a specific currency, and what are the optional parameters I can use to filter the results by block range?",
+            "The `getimports` command in Verus is used to retrieve a list of all imports into a specific currency. This command can be used to fetch imports for the current chain in the daemon, or for a specific chain by providing the chain name as an argument.\n\nThe basic syntax of the command is:\n```\ngetimports \"chainname\" (startheight) (endheight)\n```\nHere, `\"chainname\"` is the name of the chain for which you want to retrieve imports. If you omit this parameter, the command will default to the current chain in the daemon.\n\nThe `(startheight)` and `(endheight)` parameters are optional and allow you to filter the results by a specific block range. `startheight` specifies the starting block height, and `endheight` specifies the ending block height. If you omit these parameters, the command will return all imports for the specified chain, without any block range filtering.\n\nFor example, to retrieve all imports for a chain named \"chainname\", you can use the following command:\n```\nverus getimports \"chainname\"\n```\nAlternatively, you can use the `curl` command to send a JSON-RPC request to the Verus daemon, like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getimports\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThe result of the `getimports` command is a JSON object that contains a list of all imports into the specified currency, optionally filtered by the specified block range.",
+            "getimports \"chainname\" (startheight) (endheight)\n\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n1. (startheight)           (number, optional) startheight default == 0\n1. (endheight)            (number, optional) endheight default == 0\n\nResult:\n {\n }\n\nExamples:\n> verus getimports \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getimports\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getimports"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "48eb25ca-0e89-41b6-9f79-40502dfbc83f"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I use the `getimports` command to retrieve imports for a specific chain?",
+    "You can use the `getimports` command to retrieve imports for a specific chain by specifying the chain name as the first argument. For example:\n\n`verus getimports \"chainname\"`\n\nAlternatively, you can use the `curl` command to send a JSON-RPC request to the Verus daemon:\n\n`curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getimports\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`",
+    "getimports \"chainname\" (startheight) (endheight)\n\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n1. (startheight)           (number, optional) startheight default == 0\n1. (endheight)            (number, optional) endheight default == 0\n\nResult:\n {\n }\n\nExamples:\n> verus getimports \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getimports\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getimports"
+]

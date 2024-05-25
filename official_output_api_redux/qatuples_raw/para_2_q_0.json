@@ -1,0 +1,6 @@
+[
+    "How can I list the most recent transactions in the Verus system using the command line?",
+    "To list the most recent transactions in the Verus system, you can use the `listtransactions` command. The basic syntax for this command is:\n```\nverus listtransactions\n```\nThis will display the most recent 10 transactions in the system.",
+    "Examples:\n\nList the most recent 10 transactions in the systems\n> verus listtransactions\n\nList transactions 100 to 120\n> verus listtransactions \"*\" 20 100\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listtransactions"
+]

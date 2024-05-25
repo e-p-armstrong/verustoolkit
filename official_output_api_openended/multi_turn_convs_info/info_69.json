@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I list all available currencies on the Verus network, and what are some ways to do it?",
+            "To list all available currencies on the Verus network, you can use the `listcurrencies` command. This command can be used in two ways: through the Verus command-line interface (CLI) or through the Verus JSON-RPC API.\n\n**Using the Verus CLI:**\nTo list all available currencies using the Verus CLI, you can simply run the following command:\n```\nverus listcurrencies true\n```\nThis command will return a list of all available currencies on the Verus network.\n\n**Using the Verus JSON-RPC API:**\nTo list all available currencies using the Verus JSON-RPC API, you can send a JSON-RPC request to the Verus daemon. Here's an example of how to do it using the `curl` command:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis command sends a JSON-RPC request to the Verus daemon, which will return a list of all available currencies on the Verus network.\n\nIn both cases, the `true` parameter specifies that you want to list all available currencies, including those that are not enabled by default.\n\nBy using the `listcurrencies` command, you can easily discover and explore the various currencies available on the Verus network, and take advantage of the platform's flexibility and customizability.",
+            "Examples:\n> verus listcurrencies true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listcurrencies"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "08ad2582-e3db-4e44-8c86-5609656a0658"
+]

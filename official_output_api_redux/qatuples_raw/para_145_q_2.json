@@ -1,0 +1,6 @@
+[
+    "Can I use `curl` to retrieve notarization proofs from a Verus node?",
+    "Yes, you can use `curl` to retrieve notarization proofs from a Verus node by sending a JSON-RPC request to the node. Here's an example:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n},...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `myusername` with your actual username, and `http://127.0.0.1:27486/` with the URL and port of your Verus node.",
+    "Examples:\n> verus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnotarizationproofs"
+]

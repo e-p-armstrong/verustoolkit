@@ -1,0 +1,6 @@
+[
+    "How can I use the `getmempoolinfo` command to get information about the transaction memory pool?",
+    "You can use the `getmempoolinfo` command in two ways:\n\n1. Run `verus getmempoolinfo` in the command line.\n2. Use a tool like `curl` to send a JSON-RPC request to the Verus node, with the following format:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `myusername` with your actual username and `http://127.0.0.1:27486/` with the URL of your Verus node.",
+    "getmempoolinfo\n\nReturns details on the active state of the TX memory pool.\n\nResult:\n{\n \"size\": xxxxx        (numeric) Current tx count\n \"bytes\": xxxxx        (numeric) Sum of all tx sizes\n \"usage\": xxxxx        (numeric) Total memory usage for the mempool\n}\n\nExamples:\n> verus getmempoolinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getmempoolinfo"
+]

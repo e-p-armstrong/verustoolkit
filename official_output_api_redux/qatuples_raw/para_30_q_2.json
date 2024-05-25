@@ -1,0 +1,6 @@
+[
+    "How can I use the `invalidateblock` command to mark a block as invalid in Verus?",
+    "You can use the `invalidateblock` command in Verus by running the following command in the Verus CLI: `verus invalidateblock \"blockhash\"`. Replace `\"blockhash\"` with the actual hash of the block you want to mark as invalid. Alternatively, you can use the Verus JSON-RPC API to send a request to `http://127.0.0.1:27486/` with the method `invalidateblock` and the parameter `[\"blockhash\"]`.",
+    "invalidateblock \"hash\"\n\nPermanently marks a block as invalid, as if it violated a consensus rule.\n\nArguments:\n1. hash  (string, required) the hash of the block to mark as invalid\n\nResult:\n\nExamples:\n> verus invalidateblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/invalidateblock"
+]

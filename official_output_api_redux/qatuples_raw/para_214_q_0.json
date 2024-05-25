@@ -1,0 +1,6 @@
+[
+    "How can I disconnect from a specific node using the Verus CLI?",
+    "You can disconnect from a specific node using the `disconnectnode` command, followed by the node's address as a string argument. For example:\n```\nverus disconnectnode \"192.168.0.6:8233\"\n```\nThis will immediately disconnect from the specified node.",
+    "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/disconnectnode"
+]

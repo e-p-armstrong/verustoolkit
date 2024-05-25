@@ -1,0 +1,6 @@
+[
+    "What information does the `getnettotals` command return?",
+    "The `getnettotals` command returns a JSON object with three properties:\n\n* `totalbytesrecv`: the total number of bytes received\n* `totalbytessent`: the total number of bytes sent\n* `timemillis`: the total CPU time in milliseconds",
+    "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnettotals"
+]

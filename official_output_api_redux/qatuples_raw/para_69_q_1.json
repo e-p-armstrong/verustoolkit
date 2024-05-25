@@ -1,0 +1,6 @@
+[
+    "What are the parameters required to run the `calc_MoM` command?",
+    "The `calc_MoM` command requires two parameters: `height` and `MoMdepth`.",
+    "calc_MoM height MoMdepth",
+    "./raw_text_input_api_text/calc_MoM"
+]

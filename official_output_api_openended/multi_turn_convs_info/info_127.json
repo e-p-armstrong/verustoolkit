@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does the `estimatepriority` command work in Verus, and what does it estimate?",
+            "The `estimatepriority` command in Verus is a tool that helps estimate the approximate priority required for a zero-fee transaction to begin confirmation within a specified number of blocks. This command takes one argument, `nblocks`, which is a numeric value representing the number of blocks within which the transaction is expected to be confirmed.\n\nWhen you run the `estimatepriority` command, it analyzes the current transaction and block data to provide an estimate of the priority required for a zero-fee transaction to be confirmed within the specified `nblocks`. The result is a numeric value, `n`, which represents the estimated priority.\n\nIt's important to note that if there is not enough data available, such as not enough transactions and blocks having been observed, the command will return a value of -1.0, indicating that an estimate cannot be made.\n\nHere's an example of how to use the `estimatepriority` command: `verus estimatepriority 6`. In this example, the command is estimating the priority required for a zero-fee transaction to begin confirmation within 6 blocks.\n\nOverall, the `estimatepriority` command is a useful tool for understanding the priority requirements for zero-fee transactions and can help users plan and optimize their transactions accordingly.",
+            "estimatepriority nblocks\n\nEstimates the approximate priority\na zero-fee transaction needs to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated priority\n\n-1.0 is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatepriority 6",
+            "./raw_text_input_api_text/estimatepriority"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "702a055b-e16a-4af6-9d4e-7e101716819b"
+]

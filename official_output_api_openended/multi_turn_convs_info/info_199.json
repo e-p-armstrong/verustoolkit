@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `z_exportwallet` command in Verus, and how does it work?",
+            "The `z_exportwallet` command in Verus is used to export all wallet keys, both transparent (taddr) and shielded (zaddr), in a human-readable format. This command allows users to save their wallet keys to a file, which can be useful for backup and security purposes.\n\nTo use the `z_exportwallet` command, you need to provide two arguments: the filename and an optional boolean parameter `omitemptytaddresses`. The filename is a string that specifies the name of the file where the wallet keys will be saved. The file will be saved in the folder set by the `verusd -exportdir` option.\n\nThe `omitemptytaddresses` parameter is an optional boolean flag that defaults to `false`. If set to `true`, the command will only export addresses that have indexed UTXOs (Unspent Transaction Outputs) or control IDs in the wallet. This means that only addresses with actual transactions or IDs associated with them will be included in the export. If you're not sure about which addresses to include, it's recommended to leave this parameter at its default value of `false`.\n\nThe result of the `z_exportwallet` command is the full path of the destination file where the wallet keys are saved.\n\nYou can use the `z_exportwallet` command in two ways: either by running it directly in the Verus command-line interface or by sending a JSON-RPC request to the Verus daemon. The examples provided in the documentation show how to do both.",
+            "z_exportwallet \"filename\" (omitemptytaddresses)\n\nExports all wallet keys, for taddr and zaddr, in a human-readable format. Overwriting an existing file is not permitted.\n\nArguments:\n1. \"filename\"      (string, required) The filename, saved in folder set by verusd -exportdir option\n2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet\n                        (do not use this option without being sure that all addresses of interest are included)\n\nResult:\n\"path\"      (string) The full path of the destination file\n\nExamples:\n> verus z_exportwallet \"test\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "387c59c0-ee26-47a8-8870-e92669ed753d"
+]

@@ -1,0 +1,6 @@
+[
+    "What does the `zcrawkeygen` command output contain?",
+    "The `zcrawkeygen` command outputs a JSON object with three properties: `zcaddress`, `zcsecretkey`, and `zcviewingkey`. These properties are essential for sending and receiving confidential values using Verus' zero-knowledge proof technology.",
+    "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+    "./raw_text_input_api_text/zcrawkeygen"
+]

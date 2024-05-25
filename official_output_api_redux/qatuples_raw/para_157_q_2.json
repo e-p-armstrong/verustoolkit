@@ -1,0 +1,6 @@
+[
+    "How can I use the `getrawtransaction` method using the JSON-RPC interface?",
+    "You can use the `getrawtransaction` method using the JSON-RPC interface by sending a JSON payload to the Verus RPC server. The basic syntax is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will send a JSON-RPC request to the Verus RPC server to retrieve the raw transaction data for the specified txid.",
+    "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getrawtransaction"
+]

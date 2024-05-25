@@ -1,0 +1,6 @@
+[
+    "What are the required and optional arguments for the `importaddress` command?",
+    "The `importaddress` command takes three arguments:\n\n1. `\"address\"` (string, required): The address to be imported.\n2. `\"label\"` (string, optional, default=\"\"): An optional label for the imported address.\n3. `rescan` (boolean, optional, default=true): A flag indicating whether to rescan the wallet for transactions.",
+    "importaddress \"address\" ( \"label\" rescan )\n\nAdds an address or script (in hex) that can be watched as if it were in your wallet but cannot be used to spend.\n\nArguments:\n1. \"address\"     (string, required) The address\n2. \"label\"      (string, optional, default=\"\") An optional label\n3. rescan        (boolean, optional, default=true) Rescan the wallet for transactions\n\nNote: This call can take minutes to complete if rescan is true.\n\nExamples:\n\nImport an address with rescan\n> verus importaddress \"myaddress\"\n\nImport using a label without rescan\n> verus importaddress \"myaddress\" \"testing\" false\n\nAs a JSON-RPC call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importaddress\", \"params\": [\"myaddress\", \"testing\", false] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/importaddress"
+]

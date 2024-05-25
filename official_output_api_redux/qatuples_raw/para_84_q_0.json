@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `stop` command in Verus?",
+    "The `stop` command is used to stop the Verus server. It is a basic command that allows you to shut down the Verus server when you're finished using it or need to restart it.",
+    "stop\n\nStop the server.",
+    "./raw_text_input_api_text/stop"
+]

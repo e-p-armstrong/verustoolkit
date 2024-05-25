@@ -1,0 +1,6 @@
+[
+    "What is the result of the `estimatefee` command in Verus, and what happens if not enough transactions and blocks have been observed?",
+    "The result of the `estimatefee` command in Verus is an estimated fee-per-kilobyte value, `n`, which is a numeric value. If not enough transactions and blocks have been observed to make an estimate, the minimum fee is returned.",
+    "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+    "./raw_text_input_api_text/estimatefee"
+]

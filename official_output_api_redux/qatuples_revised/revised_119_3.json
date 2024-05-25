@@ -1,0 +1,6 @@
+[
+    "What does the `settxfee` command return if successful?",
+    "If the `settxfee` command is successful, it returns `true`. If it fails, it returns `false`.",
+    "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/settxfee"
+]

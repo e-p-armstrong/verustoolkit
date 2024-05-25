@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I use the `z_shieldcoinbase` command in Verus, and what are the different ways to execute it?",
+            "The `z_shieldcoinbase` command in Verus is used to shield a coinbase transaction. There are two ways to execute this command: using the Verus executable directly and using the JSON-RPC API with `curl`.\n\n**Using the Verus Executable:**\nTo use the `z_shieldcoinbase` command directly with the Verus executable, you can use the following format:\n\n```\nverus z_shieldcoinbase < Transparent Address > < zaddr >\n```\n\nReplace `< Transparent Address >` with the transparent address of the coinbase transaction you want to shield, and `< zaddr >` with the z-addr where you want to shield the transaction to.\n\nFor example:\n\n```\nverus z_shieldcoinbase \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"\n```\n\n**Using the JSON-RPC API with `curl`:**\nAlternatively, you can use the JSON-RPC API to execute the `z_shieldcoinbase` command using `curl`. The format for this is:\n\n```\ncurl --user <username> --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"<Transparent Address>\", \"<zaddr>\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `<username>` with your Verus username, `<Transparent Address>` with the transparent address of the coinbase transaction you want to shield, and `<zaddr>` with the z-addr where you want to shield the transaction to.\n\nFor example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nIn both cases, the `z_shieldcoinbase` command will shield the specified coinbase transaction to the specified z-addr.",
+            "Examples:\n> verus z_shieldcoinbase \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_shieldcoinbase"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "99159f79-bbbb-4a7d-85d5-aa5cb3e65440"
+]

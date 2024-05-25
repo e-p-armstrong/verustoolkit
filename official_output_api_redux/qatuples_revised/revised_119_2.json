@@ -1,0 +1,6 @@
+[
+    "What is the format of the `amount` argument in the `settxfee` command?",
+    "The `amount` argument in the `settxfee` command is a numeric value that represents the transaction fee in VRSC/kB. It should be rounded to the nearest 0.00000001.",
+    "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/settxfee"
+]

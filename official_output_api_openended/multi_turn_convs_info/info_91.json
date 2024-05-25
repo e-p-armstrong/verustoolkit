@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `getoffers` command in Verus, and how can it be used to retrieve open offers for a specific currency or ID?",
+            "The `getoffers` command in Verus is used to retrieve all open offers for a specific currency or ID. This command can be used to find both sale and purchase offers for a particular currency or ID.\n\nThe command requires three arguments:\n\n1. `currencyorid`: This is a string that specifies the currency or ID for which you want to retrieve open offers. It is a required argument.\n2. `iscurrency`: This is a boolean argument that is optional and defaults to `false`. If set to `false`, the command will look for ID offers. If set to `true`, the command will look for currency offers.\n3. `withtx`: This is another optional boolean argument that defaults to `false`. If set to `true`, the command will return the serialized hex of the exchange transaction for signing.\n\nThe result of the `getoffers` command is a list of all available offers for or in the indicated currency or ID.\n\nThe command can be used in two ways: through the Verus command line interface or through a JSON-RPC request. The command line interface example is:\n```\nverus getoffers \"currencyorid\" (iscurrency)\n```\nThe JSON-RPC request example is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nIn summary, the `getoffers` command is a useful tool in Verus for finding open offers for a specific currency or ID, and can be used to facilitate trading and other transactions on the platform.",
+            "getoffers \"currencyorid\" (iscurrency) (withtx)\n\nReturns all open offers for a specific currency or ID\n\nArguments\n1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase\n2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies\n3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing\n\nResult:\nall available offers for or in the indicated currency or ID are displayed\n\nExamples:\n> verus getoffers \"currencyorid\" (iscurrency)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getoffers"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "838809a5-bb28-49db-aecc-abc03e062e24"
+]

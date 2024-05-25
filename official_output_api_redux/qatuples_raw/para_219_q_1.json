@@ -1,0 +1,6 @@
+[
+    "What is the format of a JSON RPC request to Verus?",
+    "A JSON RPC request to Verus is a JSON object with the following properties: `jsonrpc` (a string specifying the JSON RPC version), `id` (a string identifying the request), `method` (a string specifying the method to be called), and `params` (an array of parameters for the method).",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/decryptdata"
+]

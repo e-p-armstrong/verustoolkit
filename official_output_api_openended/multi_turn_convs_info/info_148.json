@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I use the `getrawtransaction` command in Verus to retrieve information about a specific transaction, and what are the different ways to use this command?",
+            "The `getrawtransaction` command in Verus is used to retrieve information about a specific transaction on the blockchain. This command can be used in different ways to retrieve different levels of transaction information.\n\n**Basic Usage:**\nThe basic usage of the `getrawtransaction` command is to retrieve the raw transaction data for a specific transaction ID. The syntax for this is:\n```\nverus getrawtransaction \"mytxid\"\n```\nReplace `\"mytxid\"` with the actual transaction ID you want to retrieve information about.\n\n**Verbose Mode:**\nTo retrieve more detailed information about the transaction, you can use the `getrawtransaction` command with the verbose mode enabled. The syntax for this is:\n```\nverus getrawtransaction \"mytxid\" 1\n```\nThe `1` at the end of the command enables verbose mode, which provides more detailed information about the transaction.\n\n**Using JSON-RPC:**\nVerus also supports JSON-RPC, which allows you to interact with the Verus daemon using a JSON-based protocol. You can use `curl` to send a JSON-RPC request to the Verus daemon to retrieve transaction information. The syntax for this is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `\"myusername\"` with your actual username, and `\"mytxid\"` with the actual transaction ID you want to retrieve information about.\n\nIn summary, the `getrawtransaction` command in Verus can be used to retrieve information about a specific transaction on the blockchain, and can be used in different ways to retrieve different levels of transaction information.",
+            "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9eb611e5-0454-47e1-8ca0-93f7ea3f34a2"
+]

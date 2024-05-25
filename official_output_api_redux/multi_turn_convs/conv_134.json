@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to understand the `keypoolrefill` command in Verus. What is its purpose?\n\n**AI Assistant:**\nThe `keypoolrefill` command is used to fill the keypool in Verus. It's a simple but important command that helps maintain the keypool.\n\n**User:**\nThat's helpful. If I use the `keypoolrefill` command without specifying a new size, what is the default keypool size?\n\n**AI Assistant:**\nIf you use the `keypoolrefill` command without specifying a new size, the default keypool size is 100.\n\n**User:**\nWhat if I want to customize the keypool size? Can I do that with the `keypoolrefill` command?\n\n**AI Assistant:**\nYes, you can use the `keypoolrefill` command with an optional argument `newsize` to specify the new keypool size. For example, `verus keypoolrefill 200` would fill the keypool with a size of 200.\n\n**User:**\nThat's great. I'm also wondering if I can use the `keypoolrefill` command through a JSON-RPC interface?\n\n**AI Assistant:**\nYes, you can use the `keypoolrefill` command through a JSON-RPC interface. An example of how to do this is shown in the documentation: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `keypoolrefill` command in Verus?",
+            "The `keypoolrefill` command is used to fill the keypool in Verus.",
+            "keypoolrefill ( newsize )\n\nFills the keypool.\n\nArguments\n1. newsize   (numeric, optional, default=100) The new keypool size\n\nExamples:\n> verus keypoolrefill \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/keypoolrefill"
+        ],
+        [
+            "What is the default keypool size when using the `keypoolrefill` command without specifying a new size?",
+            "The default keypool size when using the `keypoolrefill` command without specifying a new size is 100.",
+            "keypoolrefill ( newsize )\n\nFills the keypool.\n\nArguments\n1. newsize   (numeric, optional, default=100) The new keypool size\n\nExamples:\n> verus keypoolrefill \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/keypoolrefill"
+        ],
+        [
+            "How can I use the `keypoolrefill` command to fill the keypool with a custom size?",
+            "You can use the `keypoolrefill` command with an optional argument `newsize` to specify the new keypool size. For example, `verus keypoolrefill 200` would fill the keypool with a size of 200.",
+            "keypoolrefill ( newsize )\n\nFills the keypool.\n\nArguments\n1. newsize   (numeric, optional, default=100) The new keypool size\n\nExamples:\n> verus keypoolrefill \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/keypoolrefill"
+        ],
+        [
+            "Can I use the `keypoolrefill` command through a JSON-RPC interface?",
+            "Yes, you can use the `keypoolrefill` command through a JSON-RPC interface. An example of how to do this is shown in the documentation: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "keypoolrefill ( newsize )\n\nFills the keypool.\n\nArguments\n1. newsize   (numeric, optional, default=100) The new keypool size\n\nExamples:\n> verus keypoolrefill \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/keypoolrefill"
+        ]
+    ]
+]

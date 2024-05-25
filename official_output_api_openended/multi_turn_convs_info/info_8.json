@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I get the number of connections to other nodes using the Verus command line interface, and what format will the result be in?",
+            "To get the number of connections to other nodes using the Verus command line interface, you can use the `getconnectioncount` command. This command returns the number of connections to other nodes in the Verus network.\n\nThe result of the `getconnectioncount` command will be a numeric value, `n`, which represents the total number of connections to other nodes.\n\nYou can use the `getconnectioncount` command in two ways:\n\n1. **Using the Verus command line interface:** Simply type `verus getconnectioncount` in your terminal to get the connection count.\n2. **Using curl:** You can also use curl to send a JSON-RPC request to the Verus node. The format of the request would be:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nIn this case, replace `myusername` with your actual username, and `http://127.0.0.1:27486/` with the URL of your Verus node.\n\nRegardless of the method you choose, the result will be a numeric value representing the number of connections to other nodes.",
+            "getconnectioncount\n\nReturns the number of connections to other nodes.\n\nResult:\nn     (numeric) The connection count\n\nExamples:\n> verus getconnectioncount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getconnectioncount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2cbc7d88-30fc-43dd-8550-a081db6272be"
+]

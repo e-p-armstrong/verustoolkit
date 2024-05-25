@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `zcbenchmark` command in Verus?",
+    "The `zcbenchmark` command is used to run a benchmark of a specific type a certain number of times, and returns the running times of each sample.",
+    "zcbenchmark benchmarktype samplecount\n\nRuns a benchmark of the selected type samplecount times,\nreturning the running times of each sample.\n\nOutput: [\n {\n  \"runningtime\": runningtime\n },\n {\n  \"runningtime\": runningtime\n }\n ...\n]",
+    "./raw_text_input_api_text/zcbenchmark"
+]

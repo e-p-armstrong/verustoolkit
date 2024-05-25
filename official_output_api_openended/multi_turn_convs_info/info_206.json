@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I import a wallet export file into Verus using the `z_importwallet` command?",
+            "The `z_importwallet` command is used to import taddr and zaddr keys from a wallet export file into Verus. To do this, you need to specify the filename of the wallet export file as an argument.\n\nThe basic syntax of the command is:\n```\nverus z_importwallet \"filename\"\n```\nHere, `\"filename\"` is the path to the wallet export file that you want to import.\n\nBefore you can import a wallet, you need to export it first using the `z_exportwallet` command. For example, to export a wallet, you can use the following command:\n```\nverus z_exportwallet \"nameofbackup\"\n```\nThis will create a wallet export file with the specified name.\n\nOnce you have the export file, you can import it using the `z_importwallet` command. For example:\n```\nverus z_importwallet \"path/to/exportdir/nameofbackup\"\n```\nReplace `\"path/to/exportdir/nameofbackup\"` with the actual path to your wallet export file.\n\nAlternatively, you can also import the wallet using a JSON RPC call. To do this, you can use the following command:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `\"myusername\"` with your actual username, and `\"path/to/exportdir/nameofbackup\"` with the actual path to your wallet export file.\n\nNote that the `z_importwallet` command only imports the taddr and zaddr keys from the wallet export file, and does not import any other wallet data.",
+            "z_importwallet \"filename\"\n\nImports taddr and zaddr keys from a wallet export file (see z_exportwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus z_exportwallet \"nameofbackup\"\n\nImport the wallet\n> verus z_importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a46119fc-d42f-4e55-988c-65b267c9d47c"
+]

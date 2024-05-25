@@ -1,0 +1,6 @@
+[
+    "What is a JSDescription in the context of Verus, and how is it related to the `zcsamplejoinsplit` command?",
+    "A JSDescription is a data structure in Verus that describes a joinsplit operation. The `zcsamplejoinsplit` command generates a JSDescription as its output, which contains information about the joinsplit operation, such as the inputs, outputs, and transaction details.",
+    "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+    "./raw_text_input_api_text/zcsamplejoinsplit"
+]

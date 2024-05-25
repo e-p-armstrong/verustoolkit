@@ -1,0 +1,6 @@
+[
+    "How do I clear all banned IPs in Verus?",
+    "In Verus, you can use the `clearbanned` command to remove all banned IPs from your system. This is useful when you want to start with a clean slate and remove any IP addresses that were previously banned.\n\nTo use the `clearbanned` command, you can simply run it in your Verus client without any additional parameters. Here's an example:\n\n```\nverus clearbanned\n```\n\nAlternatively, you can also use the Verus API to clear banned IPs. To do this, you can use the `curl` command to send a request to the Verus API. Here's an example:\n\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nIn this example, you'll need to replace `myusername` with your actual Verus username.\n\nRegardless of which method you choose, the `clearbanned` command will remove all banned IPs from your system, allowing you to start fresh.",
+    "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/clearbanned"
+]

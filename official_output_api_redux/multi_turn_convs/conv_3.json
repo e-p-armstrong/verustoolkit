@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm trying to use the `assetchainproof` command in Verus, but I'm not sure what I need to do. Can you help me out?\n\n**AI Assistant:**\nTo use the `assetchainproof` command in Verus, you need to provide a transaction ID (txid). Do you have a specific txid you're trying to work with? If you need help finding the txid or using the `assetchainproof` command, I'd be happy to guide you through it.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is required to use the `assetchainproof` command in Verus?",
+            "To use the `assetchainproof` command in Verus, you need to provide a transaction ID (txid).",
+            "assetchainproof needs a txid",
+            "./raw_text_input_api_text/assetchainproof"
+        ]
+    ]
+]

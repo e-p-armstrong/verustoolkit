@@ -1,0 +1,6 @@
+[
+    "How can I use JSON RPC to interact with Verus?",
+    "You can use JSON RPC to interact with Verus by sending a JSON-formatted request to the Verus server. The request should include the JSON RPC version, a unique ID for the request, the method you want to call, and any necessary parameters.",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getvdxfid"
+]

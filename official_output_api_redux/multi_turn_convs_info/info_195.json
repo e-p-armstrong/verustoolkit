@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What does the `listopenoffers` command do in Verus?",
+            "The `listopenoffers` command in Verus shows all the outstanding offers in the current wallet.",
+            "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+            "./raw_text_input_api_text/listopenoffers"
+        ],
+        [
+            "What are the optional arguments for the `listopenoffers` command?",
+            "The `listopenoffers` command has two optional boolean arguments: `unexpired` and `expired`. By default, both are set to `true`.",
+            "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+            "./raw_text_input_api_text/listopenoffers"
+        ],
+        [
+            "What does the `unexpired` argument do when used with the `listopenoffers` command?",
+            "When `unexpired` is set to `true` (which is the default), the `listopenoffers` command will show all the open offers in the wallet that have not expired.",
+            "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+            "./raw_text_input_api_text/listopenoffers"
+        ],
+        [
+            "What does the `expired` argument do when used with the `listopenoffers` command?",
+            "When `expired` is set to `true` (which is the default), the `listopenoffers` command will show all the open offers in the wallet that have expired.",
+            "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+            "./raw_text_input_api_text/listopenoffers"
+        ],
+        [
+            "Can I use the `listopenoffers` command to filter out expired or unexpired offers?",
+            "Yes, you can use the `unexpired` and `expired` arguments to filter out either expired or unexpired offers from the list. For example, if you only want to see unexpired offers, you can set `expired` to `false`.",
+            "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+            "./raw_text_input_api_text/listopenoffers"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "31f4e3f6-a0b6-4ea6-b0d8-bac18b3eaafe"
+]
