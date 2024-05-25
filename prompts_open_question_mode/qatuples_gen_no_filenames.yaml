@@ -1,8 +1,10 @@
 - role: system
-  content: | # TODO need to have mistral comb through a document and extract the most likely date it was written; this will ensure that answers are accurate. ALSO consider just going direct text-> conversation? TODO expand the useful general background knowledge list, with the help of community members.
+  content: | # TODO need to have mistral comb through a document and extract the most likely date it was written; this will ensure that answers are accurate. ALSO consider just going direct text-> conversation? TODO expand the useful general background knowledge list, with the help of community members. TODO TODO TODO must add more correct information to what `./verus` is.
     You are creating a logically-consistent question about the Verus multi-chain and multi-currency blockchain protocol. Given some text from an informational website about Verus, the Verus coin, or other related Verus community projects, you will create an open-ended question with a  comprehensive, detailed answer based on the given information, and *only* based on the given information. The question will test comprehension of real information that would be worthy to teach in order for people to understand more about the Verus protocol and community. After the question, you will also write its answer.
 
     The question should be an open-ended one that brings together multiple concepts from the provided information, and requires thought, length, and detail to answer fully. Still, the answer should be entirely derivable from the provided information.
+
+    A good rule of thumb is to essentially ask a question that the provided information would be a decent answer to.
     
     The question must ask about information that a user of Verus might ask about. Think questions about the nature of important concepts, lists of key features, primary benefits, pros and cons, contrasts with other platforms, summaries...
 
@@ -11,6 +13,8 @@
     * Any string resembling "Name@" is likely a VerusID, which is essentially a crypto-address.
     * Verus has been launched for a number of years by this point, and the mainnet and testnet are both fully functional. Anything alluding to "upcoming launches" of features could likely be out of date. So be ambiguous.
     * PoP, in the context of Verus, usually refers to "Proof of Power," which is a hybrid consensus algorithm that uses a statistical function that combines Proof of Work (PoW) and Proof of Stake (PoS) to validate each block.
+    * Many verus commands are done by running `./verus` and then providing the input on a normal command line. This executable is in the verus project. TODO factcheck.
+    * `./verusd` starts the Verus daemon.
 
     **You Must:**
 
@@ -37,7 +41,7 @@
     
     Do not explicitly mention the provided text or the context in the questions themselves — just ask about the concepts related to the questions.
 
-    If the text does not allow for a detailed or thoughtful question, just make as broad of one as you can.
+    If the text does not allow for a detailed or thoughtful question, just make as broad of one as you can. Remember, a good rule of thumb is to ask a question that the provided information would be a good answer to, in total.
 - role: user
   content: |
     Text to make a question from: 
@@ -218,10 +222,14 @@
 - role: assistant
   content: | # Not "how can you" but instead "how can I" that's what I'm going to implement. Interesting I'm learning more about crypto as I do this: a "bridge" is for converting between different currencies? Maybe using a shared pool of stuff? Not sure about the second bit.
     **QUESTION:**
-    How can I park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the command line?
+    Please show me how to park a conversion of VRSCTEST to a new token before that token launches, how to define a new token called "mycoin", and how to define a PBaaS chain, using the command line?
 
     **ANSWER:**
-    To park a conversion of VRSCTEST to a new token before the token launches, you can use the `sendcurrency` command with the following format:
+    To accomplish this you will need to use Verus on the command line with different inputs. In order, here's how to park the conversion of VRSCTEST to a new token before it launches, and how to defien a PBaaS chain. 
+    
+
+    **Parking Conversion of VRSCTEST:**
+    To park a conversion of VRSCTEST to a new token before a new token launches, you can use the `sendcurrency` command. For example, let's say you are parking conversion of VRSCTEST to a new token called `gold` before it launches. Here's the format you need to use:
 
     ```
     ./verus -chain=VRSCTEST sendcurrency "*" '[{"address":"your_address@","convertto":"gold","preconvert":1,"amount":100}]'
@@ -229,11 +237,8 @@
 
     This will effectively park your conversion until the GOLD token launches. After the launch, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned.
 
-    **QUESTION:**
-    How can I create a new token called "mycoin" using the command line, which can be converted to with either GOLD or VRSCTEST? Assume that GOLD is a new token that just launched.
-
-    **ANSWER:**
-    In order to create a new token called "mycoin" using the command line, you must run a command to define the currency's properties. Here's an example of such a command:
+    **Create New Token Called `mycoin`**
+    In order to create a new token called `mycoin` using the command line, you must run a command to define the currency's properties. Here's an example, where we define the currencies that can be converted to `mycoin` to be `vrsctest` and `gold` from the previous example. The command you would use is:
 
     ```
     ./verus -chain=VRSCTEST definecurrency '{"name":"mycoin","options":33, "proofprotocol":2,"currencies":["vrsctest", "gold"],"minpreconversion":[10000,5.1298]}, "initialsupply":20000'
@@ -247,20 +252,8 @@
     4. `"minpreconversion": [10000,5.1298]` defines the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin, respectively.
     5. `initialsupply` sets the initial supply of mycoin to 20,000 units.
 
-    **QUESTION:**
-    What does it mean if `proofprotocol` is set to 2 when defining a new token?
-
-    **ANSWER:**
-    When `proofprotocol` is set to 2 when defining a new token, it means that the proof protocol is set to PROOF_CHAINID, which means that the controller of the chain ID may mint new tokens. This can be done with a command like the following example:
-    ```
-    ./verus -chain=VRSCTEST sendcurrency "mycoin@" '[{"address":"mike@","currency":"mycoin","mintnew":1,"amount":10000}]'
-    ```
-
-    **QUESTION:**
-    How can I define a PBaaS blockchain using Verus?
-
-    **ANSWER:**
-    You can define a PBaaS blockchain using a single command line command with Verus. You need to pass two JSON objects, one for the PBaaS blockchain, and another for the overridable defaults of the bridge. Here's an example of how to define a PBaaS blockchain:
+    **Defining a PBaaS Blockchain**
+    You can define a PBaaS blockchain using a single command line command with Verus. You need to pass two JSON objects, one for the PBaaS blockchain, and another for the overridable defaults of the bridge. Here's an example of how to define a PBaaS blockchain named `PBaaSChain`:
 
     ```shell
     ./verus -chain=vrsctest definecurrency '{"name":"PBaaSChain","options":264,"currencies":["VRSCTEST"],"conversions":[1],"eras":[{"reward":1200000000,"decay":0,"halving":0,"eraend":0}],"notaries":["Notary1@","Notary2@","Notary3@"],"minnotariesconfirm":2,"nodes":[{"networkaddress":"111.111.111.111:10000","nodeidentity":"Node1@"},{"networkaddress":"111.111.111.112:10000","nodeidentity":"Node2@"}],"gatewayconvertername":"Bridge","gatewayconverterissuance":1000000}' '{"currencies":["VRSCTEST","PBaaSChain","USD"],"initialcontributions":[371747.20398827,0,1000000],"initialsupply":3000000}'
@@ -281,24 +274,6 @@
     1. `currencies` defines the currency tickers that the bridge supports (including the native coins of the chains being bridged).
     2. `initialcontributions` specifies the initial liquidity for each currency in the bridge.
     3. `initialsupply` gives the initial supply for the bridge's native token.
-
-    **QUESTION:**
-    How can I export an ID to a PBaaS chain using the command line and Verus?
-
-    **ANSWER:**
-    You can accomplish this with a single command on the command line — the sendcurrency command. Here's an example, where the ID "IDNAME@" is exported to "PBaaSChainName."
-    
-    ```
-    verus -chain=VRSCTEST sendcurrency "*" '[{"address":"IDNAME@","exportto":"PBaaSChainName","exportid":"true","amount":100,"currency":"vrsctest"}]'
-    ```
-
-    Some parts of this command you should be aware of:
-    1. The `sendcurrency` command takes two arguments when exporting an ID: a string `"*"` and another string containing the options.
-    2. `address` is the ID being exported.
-    3. `exportto` is the chain being exported to.
-    4. `exportid` indicates that in this case, `sendcurrency` is being used to export an ID.
-    5. `amount` specifies the amount of currency being sent.
-    6. `currency` specifies the type of currency being sent.
 - role: user
   content: |
     Text to make a question from: 

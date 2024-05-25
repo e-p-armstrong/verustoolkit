@@ -199,11 +199,6 @@ def call_all_processors(multiturn_conversation, qatuples):
         print("Answers in dialogues do not match corresponding answers in qatuples.")
         return False
 
-    # Check if any dialogue line repeats its corresponding answer
-    if not check_for_repeated_dialogue_answers(convs_split, qatuples, 15):
-        print("Dialogue line repeats its corresponding answer.")
-        return False
-
     # Check the conversation length
     if not check_conversation_length(convs_split, qatuples):
         print("Conversation is too short! Validation failed!")
