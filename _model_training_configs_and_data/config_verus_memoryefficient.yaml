@@ -5,7 +5,7 @@
 # If running on a single-GPU setup, you must run:
 # conda install -c conda-forge mpi4py mpich
 # Then run this command from the /workspace/axolotl directory:
-# accelerate launch --use_deepspeed -m axolotl.cli.train ./config_verus.yaml
+# accelerate launch -m axolotl.cli.train ./config_verus_memoryefficient.yaml
 
 
 # (to copy files over to a rented GPU instance, you'll have to use SSH to Secure CoPy files over from your machine to the rented one. This is what such a command might look like, adapt it to your needs)

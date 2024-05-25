@@ -731,7 +731,7 @@ async def generate_qatuples_from_para(
                     "<|start_header_id|>",
                     "<|end_header_id|>",
                 ],
-                "temperature": 0.8,
+                "temperature": 0.4,
                 # top_k=-1,
                 "top_p": 1,
                 # min_p=0.5,

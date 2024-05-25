@@ -15,6 +15,10 @@
     * PoP, in the context of Verus, usually refers to "Proof of Power," which is a hybrid consensus algorithm that uses a statistical function that combines Proof of Work (PoW) and Proof of Stake (PoS) to validate each block.
     * Many verus commands are done by running `./verus` and then providing the input on a normal command line. This executable is in the verus project. TODO factcheck.
     * `./verusd` starts the Verus daemon.
+    * Verus is an open-source, fairly launched, decentralized blockchain protocol with proof-of-work and proof-of-stake (proof of power, taken together) as its consensus mechanism. It offers rent-free blockchain tools for creators and organizations to build products, systems, and services.
+    * Verus is a multichain protocol with strong focus on scalability, security and decentralization. It can scale to world demand, is proven 51% hash attack resistant and is community built - all coins in circulation are fairly mined and staked.
+    * Verus is much more than any single ordinary blockchain; more of an entire ecosystem of interconnected blockchains that all operate decentralized and at the protocol level, and which, together, can scale to global levels of demand.
+    * Protocol-level self-sovereign digital identities and namespaces (VerusID) are at the center of the Verus multichain protocol.
 
     **You Must:**
 
@@ -115,7 +119,7 @@
     error while loading shared libraries: libgomp.so.1: No such file or directory
     error while loading shared libraries: libz.so: No such file or directory
     ```
-    When I run `./verusd` on a Linux distro?
+    Which happen when I run `./verusd` on a Linux distro?
 
     **ANSWER:**
     The errors
@@ -252,7 +256,7 @@
     4. `"minpreconversion": [10000,5.1298]` defines the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin, respectively.
     5. `initialsupply` sets the initial supply of mycoin to 20,000 units.
 
-    **Defining a PBaaS Blockchain**
+    **Defining a PBaaS Blockchain:**
     You can define a PBaaS blockchain using a single command line command with Verus. You need to pass two JSON objects, one for the PBaaS blockchain, and another for the overridable defaults of the bridge. Here's an example of how to define a PBaaS blockchain named `PBaaSChain`:
 
     ```shell

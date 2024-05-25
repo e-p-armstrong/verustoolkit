@@ -6,7 +6,7 @@
 
     * Messages can take place across multiple lines.
     * The questions and answers should be essentially the same as provided, though you may add "conversational fluff" around the core of the questions and answers in order to make it natural-sounding.
-    * The user should make the first message, where they greet the Verus AI and ask their first question..
+    * The user should make the first message, where they greet the Verus AI and ask their first question.
     * The AI then provides an answer. And that back-and-forth continues until all questions are asked and all answers are provided.
     * Use Markdown formatting.
     * If applicable, try to make the context behind the questions make sense. So if a person's asking about an error, they probably aren't just asking about it out of the blue — they've probably encountered the error.
