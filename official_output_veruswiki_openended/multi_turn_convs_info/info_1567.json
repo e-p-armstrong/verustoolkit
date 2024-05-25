@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I convert and export funds from a PBaaS chain to VRSCTEST, and what is the role of the Bridge in this process?",
+            "To convert and export funds from a PBaaS chain to VRSCTEST, you can use the `sendcurrency` command with Verus. Here's an example of how to do this:\n\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\n\nThis command will convert 10 units of the PBaaS chain's native currency to VRSCTEST and export them to the VRSCTEST chain.\n\nThe Bridge plays a crucial role in this process. It acts as an intermediary between the PBaaS chain and the VRSCTEST chain, facilitating the conversion and export of funds. The Bridge is a special type of currency that allows for the transfer of value between different chains. In this case, the Bridge is used to convert the PBaaS chain's native currency to VRSCTEST and then export it to the VRSCTEST chain.\n\nThe `via` parameter in the command specifies that the conversion and export should be done through the Bridge. The Bridge's role is to provide a seamless and trustless way to transfer value between different chains, making it possible to move funds between chains without the need for a central authority.\n\nIn summary, the Bridge is a key component of the Verus ecosystem that enables the conversion and export of funds between different chains, and it plays a critical role in facilitating the transfer of value between the PBaaS chain and the VRSCTEST chain in this example.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7ab02a59-6762-4c0e-a413-a4d440095914"
+]

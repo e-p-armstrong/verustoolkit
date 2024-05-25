@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I use the `sendcurrency` API to send and convert funds on the Verus testnet, and what are some examples of how to use it?",
+            "The `sendcurrency` API allows you to send and convert funds on the Verus testnet. **Note that all testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**.\n\nHere are some examples of how to use the `sendcurrency` API:\n\n**Sending VRSCTEST from a single address to a single recipient:**\nTo send VRSCTEST from a single address (e.g., `bob@`) to a single recipient (e.g., `alice@`), you can use the following command:\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\nThis command will send 10 units of VRSCTEST from the address `bob@` to the address `alice@`.\n\n**Sending VRSCTEST from all private wallet funds to multiple recipients:**\nTo send VRSCTEST from all private wallet funds to multiple recipients with friendly-name z-addresses (e.g., `alice@:private` and `bob@:private`), you can use the following command:\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\":10}]'\n```\nThis command will send 10 units of VRSCTEST from all private wallet funds to the addresses `alice@:private` and `bob@:private`.\n\nIn both examples, the `sendcurrency` API is used to specify the sender's address, the recipient's address, the currency being sent (VRSCTEST), and the amount being sent. The `*Z` wildcard in the second example indicates that all private wallet funds should be used as the sender's address.\n\nThe `sendcurrency` API provides a flexible way to send and convert funds on the Verus testnet, allowing you to specify multiple recipients, amounts, and currencies in a single transaction.",
+            "#### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "52475a7b-81e7-433d-8d51-e369ea4a9174"
+]

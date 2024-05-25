@@ -1,0 +1,373 @@
+- content: "You are a crypto expert and creative writer specializing in the Verus\
+    \ multi-chain and multi-currency blockchain protocol. You will write a short conversation\
+    \ between a curious user and a helpful AI assistant knowledgeable about Verus,\
+    \ in which the user asks a question about Verus and the AI assistant answers the\
+    \ question in detail. The question the user must ask will be provided; the answer\
+    \ the assistant should return will also be provided. You must use the questions\
+    \ and answer directly in your conversation.\n\n**Rules for conversation writing:**\n\
+    \n* Messages can take place across multiple lines.\n* The question and answer\
+    \ should be essentially the same as provided, though you may add \"conversational\
+    \ fluff\" around the core of the questions and answers in order to make it natural-sounding.\n\
+    * The user should make the first message, where they greet the Verus AI and ask\
+    \ their first question.\n* The AI then provides a detailed answer.\n* The AI's\
+    \ answer should begin with a preamble that you create, acknowledging the user's\
+    \ question and commenting on it. The AI's preamble should mention in passing how\
+    \ the AI is going to answer in detail.\n* The AI should then provide the provided\
+    \ answer.\n* The end of the AI's response should ask if the user has any further\
+    \ questions about the given subject (or any of the things brought up in the answer\
+    \ if applicable).\n* Use Markdown formatting.\n* If applicable, try to make the\
+    \ context behind the questions make sense. So if a person's asking about an error,\
+    \ they probably aren't just asking about it out of the blue \u2014 they've probably\
+    \ encountered the error.\n* You are allowed to slightly change the wording of\
+    \ the questions, and remove duplication, in order to make the conversation flow\
+    \ nicer."
+  role: system
+- content: '**QUESTION:**
+
+    Explain and suggest a solution to the errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    Which happen when I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    The errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When you run `./verusd` on a Linux distribution (such as Debian or Devuan) may
+    be caused by required dependencies for `./verusd` not being installed by default
+    on your Linux distribution. The lack of required dependencies results in the error
+    messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    Here''s how to fix this problem by installing these dependencies:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hey there, so I''ve run into some errors and I''m not sure what''s causing them.
+    Could you please explain and suggest a solution to the errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    Which happen when I run `./verusd` on a Linux distro?
+
+
+    **AI Assistant:**
+
+    Great question! The errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When you run `./verusd` on a Linux distribution (such as Debian or Devuan) may
+    be caused by required dependencies for `./verusd` not being installed by default
+    on your Linux distribution. The lack of required dependencies results in the error
+    messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    Here''s how to fix this problem by installing these dependencies:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.
+
+
+    Did that solve your problem? Do you have any further questions about these errors?'
+  role: assistant
+- content: '**QUESTION:**
+
+    What are VerusIDs, and what are some of their key benefits?
+
+
+    **ANSWER:**
+
+    VerusIDs are not just an ID system: they are a fully-functional blockchain protocol.
+    Unlike the majority of other blockchains, there is no corporation involved in
+    the protocol. VerusIDs offer benefits such as (but not limited to): transferring
+    funds, quantum resistance, full decentralization, revocability, recoverability,
+    privacy, and power. Let''s walk through each of these benefits in more detail.
+
+
+    **Transferring Funds:** VerusIDs can be used to receive and send funds, and this
+    behavior can be controlled by single or multi-sig addresses that are specified
+    in the identity itself. The controller of the identity can change these controlling
+    addresses, and if they do so, then all future spends of UTXOs sent to the VerusID
+    will follow the updated spend conditions, and will be subject to the updated keys.
+
+
+    **Quantum Resistance:** VerusIDs are resistent to attacks by quantum computers
+    using known algorithms. This helps people using VerusIDs use the Verus platform
+    securely, even in a potential future with quantum computers. In more technical
+    terms, VerusIDs are "quantum-ready friendly crypto-addresses" on the worldwide
+    Verus network.
+
+
+    **Revocability:** Every VerusID includes a revocation authority (defaults to the
+    identity self). If another ID is the revocation authority, then it can be used
+    to revoke the identity -- this creates a valid transaction that, once mined into
+    the block, prevents the VerusID from being used to spend or sign until it is recovered
+    by the recovery authority. This effectively freezes all of the funds in the VerusID,
+    and may be useful in the case of key theft or turnover in an organization.
+
+
+    **Recoverability:** Just like with revocability, a recovery authority can be specified
+    (also defaults to self). Recovery authorities can recover VerusIDs from revoked
+    states, with the option to alter the ID''s primary authorities used to spend and
+    sign.
+
+
+    **Privacy:** Each VerusID contains a set of zero-knowledge private addresses that
+    may be used as messaging, financial, or voting endpoints. VerusIDs have a special
+    storage area that holds information, known as a content map of key-value hashes.
+    This content map is designed to work together with different apps and identity
+    policies. With this feature, you can privately store facts about yourself and
+    choose to prove them to others when needed (selectively-provable claims and attestations).
+    This means you may pick and choose what parts of your identity to prove. This
+    proving can be done in a quantum secure way using a quantum secure signature,
+    when that technology becomes available.
+
+
+    **Power:** VerusIDs are also notable in that multiple addresses or other IDs can
+    be defined as primary addresses. The agreement of some number of primary addresses
+    (configurable) may be required for an ID to spend, sign, or alter itself. Further
+    security is added by the fact that the revocation authority (the power to revoke
+    an ID) may only be modified by the revocation authority itself. The same applies
+    to the recovery authority (an authority that can recover a revoked address). Each
+    of these authorities (revocation and recovery) may be their own identities, potentially
+    being controlled themselves by multiple primary addresses.'
+  role: user
+- content: "## Conversation that answers the provided questions:\n**User:**\nI'm really\
+    \ new to all this. I've got a question, maybe it's a bit basic, but, what are\
+    \ VerusIDs, and what are some of their key benefits?\n\n**AI Assistant:**\nSure,\
+    \ I'll explain that in detail! Don't worry about asking questions that may feel\
+    \ basic \u2014 they're all important to your understanding. \n\nVerusIDs are not\
+    \ just an ID system: they are a fully-functional blockchain protocol. Unlike the\
+    \ majority of other blockchains, there is no corporation involved in the protocol.\
+    \ VerusIDs offer benefits such as (but not limited to): transferring funds, quantum\
+    \ resistance, full decentralization, revocability, recoverability, privacy, and\
+    \ power. Let's walk through each of these benefits in more detail.\n\n**Transferring\
+    \ Funds:** VerusIDs can be used to receive and send funds, and this behavior can\
+    \ be controlled by single or multi-sig addresses that are specified in the identity\
+    \ itself. The controller of the identity can change these controlling addresses,\
+    \ and if they do so, then all future spends of UTXOs sent to the VerusID will\
+    \ follow the updated spend conditions, and will be subject to the updated keys.\n\
+    \n**Quantum Resistance:** VerusIDs are resistent to attacks by quantum computers\
+    \ using known algorithms. This helps people using VerusIDs use the Verus platform\
+    \ securely, even in a potential future with quantum computers. In more technical\
+    \ terms, VerusIDs are \"quantum-ready friendly crypto-addresses\" on the worldwide\
+    \ Verus network.\n\n**Revocability:** Every VerusID includes a revocation authority\
+    \ (defaults to the identity self). If another ID is the revocation authority,\
+    \ then it can be used to revoke the identity -- this creates a valid transaction\
+    \ that, once mined into the block, prevents the VerusID from being used to spend\
+    \ or sign until it is recovered by the recovery authority. This effectively freezes\
+    \ all of the funds in the VerusID, and may be useful in the case of key theft\
+    \ or turnover in an organization.\n\n**Recoverability:** Just like with revocability,\
+    \ a recovery authority can be specified (also defaults to self). Recovery authorities\
+    \ can recover VerusIDs from revoked states, with the option to alter the ID's\
+    \ primary authorities used to spend and sign.\n\n**Privacy:** Each VerusID contains\
+    \ a set of zero-knowledge private addresses that may be used as messaging, financial,\
+    \ or voting endpoints. VerusIDs have a special storage area that holds information,\
+    \ known as a content map of key-value hashes. This content map is designed to\
+    \ work together with different apps and identity policies. With this feature,\
+    \ you can privately store facts about yourself and choose to prove them to others\
+    \ when needed (selectively-provable claims and attestations). This means you may\
+    \ pick and choose what parts of your identity to prove. This proving can be done\
+    \ in a quantum secure way using a quantum secure signature, when that technology\
+    \ becomes available.\n\n**Power:** VerusIDs are also notable in that multiple\
+    \ addresses or other IDs can be defined as primary addresses. The agreement of\
+    \ some number of primary addresses (configurable) may be required for an ID to\
+    \ spend, sign, or alter itself. Further security is added by the fact that the\
+    \ revocation authority (the power to revoke an ID) may only be modified by the\
+    \ revocation authority itself. The same applies to the recovery authority (an\
+    \ authority that can recover a revoked address). Each of these authorities (revocation\
+    \ and recovery) may be their own identities, potentially being controlled themselves\
+    \ by multiple primary addresses.\n\nDoes that answer your question? Do you have\
+    \ any more questions about VerusIDs, or any of their features in particular?"
+  role: assistant
+- content: '**QUESTION:**
+
+    What are the requirements and options for creating a currency on a Verus blockchain,
+    and how do these options affect the behavior of the currency?
+
+
+    **ANSWER:**
+
+    To create a currency on a Verus blockchain, the identity it is named after must
+    be minted on the same blockchain. This means that the identity must exist and
+    be active on the blockchain before the currency can be created. Additionally,
+    the same symbol cannot be reused for another currency or blockchain, even if the
+    identity is transferred, revoked, or recovered, unless the currency or blockchain
+    has been deactivated as of a specified end block.
+
+
+    When creating a currency, there are several options that can be specified to customize
+    its behavior. These options are represented as a bitwise integer, where each bit
+    corresponds to a specific option. The available options are:
+
+
+    1. `OPTION_FRACTIONAL`: Allows reserve conversion using base calculations when
+    set. This option enables fractional reserve conversions, which can be useful for
+    certain types of currencies.
+
+    2. `OPTION_ID_ISSUANCE`: If set, IDs may only be created by the controlling ID.
+    This option restricts the creation of new IDs to the controlling ID, which can
+    be useful for maintaining control over the currency.
+
+    3. `OPTION_ID_STAKING`: All IDs on the chain stake equally, rather than value-based
+    staking. This option changes the staking mechanism to a flat rate, rather than
+    a value-based system.
+
+    4. `OPTION_ID_REFERRALS`: If set, this chain supports referrals. This option enables
+    referrals, which can be used to incentivize users to participate in the currency.
+
+    5. `OPTION_ID_REFERRALREQUIRED`: If set, this chain requires referrals. This option
+    makes referrals mandatory, which can be useful for ensuring that users are properly
+    incentivized.
+
+    6. `OPTION_TOKEN`: If set, this is a token, not a native currency. This option
+    specifies that the currency is a token, rather than a native currency.
+
+    7. `OPTION_SINGLECURRENCY`: For PBaaS chains or gateways to potentially restrict
+    to single currency. This option restricts the currency to a single currency, which
+    can be useful for certain types of applications.
+
+    8. `OPTION_GATEWAY`: If set, this routes external currencies. This option enables
+    the currency to route external currencies, which can be useful for integrating
+    with other blockchain systems.
+
+
+    These options can be combined using bitwise operations to create a customized
+    set of options for the currency. For example, to enable fractional reserve conversions
+    and restrict ID creation to the controlling ID, the options would be `OPTION_FRACTIONAL
+    | OPTION_ID_ISSUANCE`.
+
+
+    It''s also important to note that all funds required to start the currency and
+    for initial conversion amounts must be available to spend from the identity with
+    the same name and ID as the currency being defined. This ensures that the currency
+    is properly funded and can operate as intended.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    I''m interested in creating a currency on a Verus blockchain, but I''m not sure
+    what the requirements and options are. Can you explain what''s needed to create
+    a currency and how the options affect its behavior?
+
+
+    **AI Assistant:**
+
+    Creating a currency on a Verus blockchain is a great way to customize your blockchain
+    experience. To help you get started, I''ll break down the requirements and options
+    for creating a currency.
+
+
+    To create a currency on a Verus blockchain, the identity it is named after must
+    be minted on the same blockchain. This means that the identity must exist and
+    be active on the blockchain before the currency can be created. Additionally,
+    the same symbol cannot be reused for another currency or blockchain, even if the
+    identity is transferred, revoked, or recovered, unless the currency or blockchain
+    has been deactivated as of a specified end block.
+
+
+    When creating a currency, there are several options that can be specified to customize
+    its behavior. These options are represented as a bitwise integer, where each bit
+    corresponds to a specific option. The available options are:
+
+
+    1. `OPTION_FRACTIONAL`: Allows reserve conversion using base calculations when
+    set. This option enables fractional reserve conversions, which can be useful for
+    certain types of currencies.
+
+    2. `OPTION_ID_ISSUANCE`: If set, IDs may only be created by the controlling ID.
+    This option restricts the creation of new IDs to the controlling ID, which can
+    be useful for maintaining control over the currency.
+
+    3. `OPTION_ID_STAKING`: All IDs on the chain stake equally, rather than value-based
+    staking. This option changes the staking mechanism to a flat rate, rather than
+    a value-based system.
+
+    4. `OPTION_ID_REFERRALS`: If set, this chain supports referrals. This option enables
+    referrals, which can be used to incentivize users to participate in the currency.
+
+    5. `OPTION_ID_REFERRALREQUIRED`: If set, this chain requires referrals. This option
+    makes referrals mandatory, which can be useful for ensuring that users are properly
+    incentivized.
+
+    6. `OPTION_TOKEN`: If set, this is a token, not a native currency. This option
+    specifies that the currency is a token, rather than a native currency.
+
+    7. `OPTION_SINGLECURRENCY`: For PBaaS chains or gateways to potentially restrict
+    to single currency. This option restricts the currency to a single currency, which
+    can be useful for certain types of applications.
+
+    8. `OPTION_GATEWAY`: If set, this routes external currencies. This option enables
+    the currency to route external currencies, which can be useful for integrating
+    with other blockchain systems.
+
+
+    These options can be combined using bitwise operations to create a customized
+    set of options for the currency. For example, to enable fractional reserve conversions
+    and restrict ID creation to the controlling ID, the options would be `OPTION_FRACTIONAL
+    | OPTION_ID_ISSUANCE`.
+
+
+    It''s also important to note that all funds required to start the currency and
+    for initial conversion amounts must be available to spend from the identity with
+    the same name and ID as the currency being defined. This ensures that the currency
+    is properly funded and can operate as intended.
+
+
+    Do you have any questions about these options or how to combine them? Are you
+    considering creating a currency with specific features or restrictions?'
+  role: assistant
+  timeout: false

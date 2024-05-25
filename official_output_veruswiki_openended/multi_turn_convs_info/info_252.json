@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I use the `sendcurrency` command to park a conversion of VRSCTEST to a new token before it launches, and how can I later create a new token that can be converted to with either the new token or VRSCTEST?",
+            "To park a conversion of VRSCTEST to a new token before it launches, you can use the `sendcurrency` command. This command allows you to convert your VRSCTEST to a new token, but the conversion will not take place until the new token is launched. Here's an example of how to use the command:\n\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\n\nIn this example, the `sendcurrency` command is used to convert 100 VRSCTEST to a new token called GOLD. The `preconvert` option is set to 1, which means that the conversion will not take place until the GOLD token is launched. Once the GOLD token is launched, you will either receive 0.975 GOLD in your wallet, or your VRSCTEST will be returned to you.\n\nIf the new token launches successfully, you can later create a new token that can be converted to with either the new token or VRSCTEST. To do this, you can use the `definecurrency` command. Here's an example of how to create a new token called MYCOIN that can be converted to with either GOLD or VRSCTEST:\n\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\n\nIn this example, the `definecurrency` command is used to create a new token called MYCOIN. The `currencies` option is set to `[\"vrsctest\", \"gold\"]`, which means that MYCOIN can be converted to with either VRSCTEST or GOLD. The `minpreconversion` option is set to `[10000,5.1298]`, which means that at least 10,000 VRSCTEST or 5.1298 GOLD are required to convert to MYCOIN. The `initialsupply` option is set to 20,000, which means that the initial supply of MYCOIN is 20,000 units.",
+            "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "67a2d781-98a3-4e65-8c7a-38c62093f7b1"
+]

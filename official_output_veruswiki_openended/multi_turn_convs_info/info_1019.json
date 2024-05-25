@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I use Verus to convert VRSCTEST to a new token before it launches, and what are the possible outcomes of this conversion? Additionally, how can I create a new token that can be converted to or from this new token or VRSCTEST?",
+            "Verus provides a way to convert VRSCTEST to a new token before it launches, effectively \"parking\" the conversion until the token is available. This can be done using the `sendcurrency` command with the `convertto` and `preconvert` options.\n\nHere's an example of how to park a conversion of 100 VRSCTEST to a new token called GOLD:\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nThis command will effectively park the conversion of 100 VRSCTEST to GOLD until GOLD launches. Once GOLD launches, there are two possible outcomes:\n\n1. You will receive 0.975 GOLD in your wallet, which is the converted amount of VRSCTEST.\n2. If the conversion is not successful, you will have your original 100 VRSCTEST returned to your wallet.\n\nAssuming the conversion to GOLD is successful, you can later create a new token called MYCOIN that can be converted to or from GOLD or VRSCTEST. This can be done by defining the properties of MYCOIN using the `definecurrency` command.\n\nHere's an example of how to define MYCOIN:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines MYCOIN as a new token that can be converted to or from VRSCTEST or GOLD. The `options` property specifies the token's properties, such as its proof protocol and conversion ratios. The `currencies` property lists the tokens that MYCOIN can be converted to or from, and the `minpreconversion` property specifies the minimum amounts required for conversion. Finally, the `initialsupply` property sets the initial supply of MYCOIN.\n\nBy creating MYCOIN in this way, you can enable conversions between MYCOIN, GOLD, and VRSCTEST, providing a flexible and powerful way to manage your tokens on the Verus network.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "fc91e83e-0839-4499-8e81-3f33a7d14350"
+]

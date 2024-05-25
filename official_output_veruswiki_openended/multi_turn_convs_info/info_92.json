@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do you manage identities in Verus, specifically with regards to locking and unlocking IDs, and what are conversion queries in Verus?",
+            "In Verus, managing identities involves understanding how to lock and unlock IDs, as well as how to use conversion queries to retrieve information about currencies.\n\n**Locking and Unlocking IDs:**\nIn Verus, IDs can be locked and unlocked using the `updateidentity` command. There are two types of locks: time locks and time delays.\n\n**Time Locks:**\nA time lock is used to define the unlock height of an identity. This means that the ID will be unlocked at a specific block height. To set!",
+            "k is fractal, enabling an unlimited number of simultaneously operating, interoperable blockchains.\n### Locking and Unlocking IDs\n- **Time Lock:**\nThe timelock parameter defines the unlock height of the identity.\n```\nverus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 0, \"timelock\": <Unlock block height>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n```\n- **Time Delay:**\nThe timelock parameter defines how many blocks to delay an ID's unlock when the flags are set back to an unlocked state.\n```\nverus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n```\n- Revoking an identity will clear its locked status, regardless of time delay or unlock height.\n- A locked identity cannot revoke itself.\n## Conversion Queries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "04441b49-d394-424d-98ac-ce039271684f"
+]

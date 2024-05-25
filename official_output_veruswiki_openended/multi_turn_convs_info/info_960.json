@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is VerusHash, and how does it aim to equalize the performance of FPGAs and CPUs in the Verus network?",
+            "VerusHash is a cryptographic algorithm used in the Verus network to facilitate mining and staking activities. The VerusHash 2.0 algorithm was designed to equalize the performance of Field-Programmable Gate Arrays (FPGAs) and Central Processing Units (CPUs), ensuring that both types of hardware can operate efficiently on the network. This approach aimed to prevent FPGAs from dominating the network, which could have driven the performance battle towards more expensive and exclusive hardware.\n\nThe VerusHash 2.1 algorithm is an updated version of the original, which introduces an adjustment to the equalization technology. This update is expected to further balance the performance of CPUs and FPGAs, making CPUs more competitive while still allowing FPGAs to operate on the network with minor modifications. The Verus development team has proactively shared the new algorithm with FPGA manufacturers, ensuring that all parties can prepare for the upcoming changes and participate in the Verus economy.\n\nIn essence, VerusHash is designed to promote a more decentralized and inclusive mining and staking environment, where a variety of hardware configurations can participate and contribute to the network's security and integrity. By equalizing the performance of FPGAs and CPUs, VerusHash helps to prevent any single type of hardware from dominating the network, thereby promoting a more diverse and resilient ecosystem.",
+            "# VerusHash 2.1\n\nVerusHash 2.0 was the first algorithm to significantly equalize FPGAs dominance over CPUs, once they were introduced on the Verus network. While FPGAs were intentionally not blocked completely, which would simply drive the performance battle to the higher end and further into secret, the VerusHash 2.0 algorithm was developed to explicitly equalize FPGAs and modern CPUs and has met its original goals in keeping FPGA performance for the price under 2x of CPU. VerusHash 2.1 introduces an adjustment to the equalization technology, which we expect to tilt the balance a bit more favorably towards CPUs, while still enabling FPGAs to operate on the hash algorithm with minor modifications. Verus Developers have proactively reached out to FPGA manufacturers and made the new algorithm available to them, so that everyone will have an opportunity to mine and stake when the Verus economy starts to roll and identity rewards, which will not inflate the currency, but should far exceed the potential for block rewards, begin streaming from the network.",
+            "./raw_text_input_wiki/verushash_2.1.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "0138af20-65a2-4879-b143-e39b36ecf20e"
+]

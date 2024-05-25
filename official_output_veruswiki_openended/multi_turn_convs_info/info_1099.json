@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the purpose of the `getcurrencyconverters` command in Verus, and how does it filter the currencies it returns?",
+            "The `getcurrencyconverters` command is a powerful tool in Verus that allows users to retrieve a list of currencies that meet specific reserve requirements. This command is useful for finding currencies that have a strong reserve backing and can be used for conversions.\n\nWhen you run the `getcurrencyconverters` command with one or more currency arguments, such as `getcurrencyconverters \"currency1\" \"currency2\"...`, it searches for currencies that meet certain conditions. These conditions are designed to ensure that the returned currencies have a strong reserve backing, which is important for maintaining the stability and trustworthiness of the currency.\n\nThe command filters the currencies it returns based on two main criteria:\n\n1. **Minimum VRSC reserve**: The currency must have at least 1000 VRSC in reserve. This ensures that the currency has a sufficient amount of VRSC backing to support conversions and maintain its value.\n2. **VRSC reserve ratio**: The currency must have a VRSC reserve ratio of greater than 10%. This means that at least 10% of the currency's total reserve is composed of VRSC, which provides an additional layer of stability and security.\n\nIn addition to these criteria, the command also requires that the currencies returned have all the listed currencies as reserves. This means that if you specify multiple currencies as arguments, such as `getcurrencyconverters \"currency1\" \"currency2\" \"currency3\"`, the command will only return currencies that have all three of these currencies as reserves.\n\nThe output of the `getcurrencyconverters` command is a JSON object that contains information about the currencies that meet the specified criteria. This object can be used to further process or analyze the results, or to integrate them into other applications or services.\n\nOverall, the `getcurrencyconverters` command is a useful tool in Verus for finding and working with currencies that have strong reserve backings, and can be an important part of building stable and trustworthy currency systems.",
+            "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "6d702285-77ea-410f-81a7-0d7773fc69fb"
+]

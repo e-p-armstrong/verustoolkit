@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What does the `getblockchaininfo` command do in Verus, and what kind of information can I expect to receive from it?",
+            "The `getblockchaininfo` command in Verus is a utility command that provides various state information about the blockchain processing. When you run this command, it returns an object containing a range of data related to the current state of the blockchain.\n\nThe information returned by `getblockchaininfo` can be useful for a variety of purposes, such as monitoring the health and performance of the blockchain, troubleshooting issues, or gathering data for analytics and reporting.\n\nSome examples of the types of information that `getblockchaininfo` might return include:\n\n* Blockchain statistics, such as the current block height, block hash, and difficulty target\n* Information about the node's connection to the network, such as the number of connected peers and the node's current sync status\n* Data about the blockchain's transaction processing, such as the number of unconfirmed transactions, the transaction pool size, and the average transaction confirmation time\n* Details about the node's resource utilization, such as CPU usage, memory usage, and disk usage\n\nBy providing a comprehensive overview of the blockchain's state, `getblockchaininfo` can be a valuable tool for developers, node operators, and anyone else interested in understanding the inner workings of the Verus blockchain.",
+            "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c2d4821a-4c16-44bf-96af-f5ee74fa0b99"
+]

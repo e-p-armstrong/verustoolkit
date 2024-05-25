@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the significance of the result `true` when verifying a signature in Verus, and what are some key aspects of the v0.8.0 update?",
+            "In Verus, when verifying a signature, a result of `true` indicates that the signature is valid. This means that the digital signature, which is used to prove ownership of a particular VerusID, has been successfully verified and is authentic.\n\nRegarding the v0.8.0 update, it is a non-mandatory but recommended update that brings several improvements to the Verus ecosystem. One important aspect of this update is that it is mandatory for those who want to use the testnet, which will be reset as of v0.8.0. This update includes several key features and bug fixes that enhance the overall functionality and security of the Verus platform.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY, RECOMMENDED v0.8.0 UPDATE.\nThis release is mandatory for those who want to use the testnet, which will be reset as of v0.8.0.Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "bddc8ecb-81e0-4f12-a1ea-334d91be08a5"
+]

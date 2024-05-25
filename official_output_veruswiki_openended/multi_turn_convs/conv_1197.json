@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I have a couple of questions about Verus. Firstly, when verifying a signature, what does the `true` response indicate? And secondly, what are some key features of the v0.8.0-1 update?\n\n**AI Assistant:**\nI'd be happy to help clarify those for you.\n\nWhen verifying a signature in Verus, a response of `true` indicates that the signature is valid. This means that the signature was successfully verified and is authentic. So, if you receive a `true` response, you can be confident that the signature is legitimate.\n\nRegarding the v0.8.0-1 update, it is a non-mandatory update that includes a testnet fix for the Ethereum bridge. This update is required for users who want to continue using the current testnet. The update also includes other features and improvements, although the exact details are not specified. It's essential for users to stay up-to-date with the latest updates to ensure they can continue to use Verus' features, such as the Ethereum bridge, without any issues.\n\nDo you have any more questions about signature verification or the v0.8.0-1 update?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `true` response indicate when verifying a signature, and what are some key features of the v0.8.0-1 update in Verus?",
+            "When verifying a signature in Verus, a response of `true` indicates that the signature is valid. This means that the signature was successfully verified and is authentic.\n\nRegarding the v0.8.0-1 update, it is a non-mandatory update that includes a testnet fix for the Ethereum bridge. This update is required for users who want to continue using the current testnet. The update also includes other features and improvements, although the exact details are not specified. It's essential for users to stay up-to-date with the latest updates to ensure they can continue to use Verus' features, such as the Ethereum bridge, without any issues.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-1 UPDATEThis release includes a testnet fix for the Ethereum bridge and is required for those who want to continue using the current testnet.v0.8.0 and v0.8.0-1 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

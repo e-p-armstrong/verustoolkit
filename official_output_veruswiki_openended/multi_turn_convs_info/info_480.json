@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I use the `sendcurrency` API to send and convert funds on the Verus testnet, and what are some examples of how to use it?",
+            "The `sendcurrency` API is a powerful tool in the Verus ecosystem that allows you to send and convert funds on the testnet. It's essential to note that all testnet coins and currencies have no value and will disappear whenever the VRSCTEST network is reset.\n\nTo use the `sendcurrency` API, you need to specify the sender's address, the recipient's address, the currency being sent, and the amount. Here are some examples of how to use the `sendcurrency` API:\n\n**Sending VRSCTEST from a Single Address**\nYou can send VRSCTEST from a single address to a single recipient using the following command:\n```json\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\nThis command sends 10 VRSCTEST from the address `bob@` to the address `alice@`.\n\n**Sending VRSCTEST from All Private Wallet Funds**\nYou can also send VRSCTEST from all private wallet funds to multiple recipients using friendly-name z-addresses. Here's an example:\n```json\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\":20}]'\n```\nThis command sends 10 VRSCTEST from all private wallet funds to `alice@:private` and 20 VRSCTEST to `bob@:private`.\n\nIn both examples, you need to specify the sender's address, the recipient's address, the currency being sent, and the amount. The `sendcurrency` API provides a flexible way to manage your funds on the Verus testnet.",
+            "## Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n  ```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "921d3718-63fc-4463-8337-2b098739875a"
+]

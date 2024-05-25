@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does the `getcurrencyconverters` API work in Verus, and what kind of information does it provide about currencies?",
+            "The `getcurrencyconverters` API in Verus is a powerful tool that allows users to retrieve information about currencies that meet specific liquidity and reserve ratio criteria.\n\nTo use the `getcurrencyconverters` API, you need to specify the currencies you are interested in, for example, `btc` and `eth`. The API will then return a list of all currencies that have markets for the specified currencies (in this case, `btc` and `eth`) and meet the following conditions:\n\n1. They have at least 1000 VRSC in reserve.\n2. They have a reserve ratio of greater than 10%.\n3. They have all listed currencies as reserves.\n\nThe `getcurrencyconverters` API is useful for identifying currencies that have a high level of liquidity and are backed by a sufficient amount of VRSC reserves. This information can be important for users who want to convert between different currencies or participate in decentralized finance (DeFi) activities.\n\nThe API is easy to use and can be accessed through the Verus command-line interface. Simply type `verus -chain=VRSCTEST getcurrencyconverters <currency1> <currency2>`, replacing `<currency1>` and `<currency2>` with the currencies you are interested in, and the API will return the relevant information.\n\nOverall, the `getcurrencyconverters` API is a valuable tool for anyone interested in exploring the Verus ecosystem and making informed decisions about their cryptocurrency investments.",
+            "ueries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8a90e735-ce82-48d4-8bc5-2044cd53ca6f"
+]

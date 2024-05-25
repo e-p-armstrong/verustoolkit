@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I import multiple WIFs (Wallet Import Formats) for private addresses in one batch using the Verus command line interface?",
+            "To import multiple WIFs for private addresses in one batch using the Verus command line interface, you need to follow a specific process. Here's a step-by-step guide:\n\n**Step 1: Access the Coin Settings**\nFirst, navigate to the `settings` section of your Verus GUI wallet and select the chain you want to use in the top-right corner.\n\n**Step 2: Import WIFs (Except the Last One)**\nFor every WIF except the final one, run the following command:\n```\nrun z_importkey \"<wif>\" \"no\"\n```\nReplace `<wif>` with the actual WIF (like the one you got from the `convertpassphrase` command earlier).\n\n**Step 3: Import the Final WIF**\nFor the final WIF, run the following command:\n```\nrun z_importkey \"<wif>\" \"yes\" 1\n```\nThis command will trigger the chain to rescan all addresses in your wallet, including all the addresses you just imported.\n\n**Important Note:**\nPlease be patient during the import process, as it may take some time to complete, especially if the address has many transactions on it. The GUI wallet may not show any progress on the import and may give messages that the RPC daemon is not reacting. However, the process will continue to run in the background until it finishes.\n\nBy following these steps, you can successfully import multiple WIFs for private addresses in one batch using the Verus command line interface.",
+            "## Importing multiple WIFs in one batch for private addresses\nTo import your address, go to `settings` --> `Coin Settings`, select the chain you want to use in the top-right corner and enter the following command for every WIF except for the final one:\n```\nrun z_importkey \"<wif>\" \"no\"\n```\nImport the final WIF with this command:\n```\nrun z_importkey \"<wif>\" \"yes\" 1\n```\nThe last command triggers the chain to rescan all addresses in your wallet, including all the addresses you just imported.\nReplace `<wif>` with the actual **wif** (like the one you got from the `convertpassphrase` command earlier).\n\nNote: Don't use the WIF from the example above, but use the one from the CLI-interface in Verus Desktop.\n\n### The GUI wallet will not show any progress on the import and may give messages that the RPC daemon is not reacting. It will take quite some time for the process to finish in the background, especially if the address has many transaction on it.\n\nInformation compiled by Oink.vrsc@.\n\nNote: revision date 2021-05-02.",
+            "./raw_text_input_wiki/how-to_convert-seed-to-wif.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9e0cefce-b577-4176-9f1a-ffadfda2997b"
+]
