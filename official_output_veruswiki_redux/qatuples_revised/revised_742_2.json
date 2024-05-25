@@ -1,0 +1,6 @@
+[
+    "How can I use the `getblockhash` command with a remote Verus node using curl?",
+    "You can use the `getblockhash` command with a remote Verus node using curl by sending a JSON-RPC request with the `getblockhash` method and the block index as a parameter. For example:\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "### `getblockhash index`\nReturns hash of block in best-block-chain at index provided.#### Arguments:\n```\nindex     (numeric, required) The block index\n```\n#### Result:\n```\n\"hash\"     (string) The block hash\n```\nExamples:\n```bash\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getblockhashes timestamp`\nReturns array of hashes of blocks within the timestamp range provided.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I check my immature balance in Verus Desktop wallet?",
+    "You can check your immature balance in Verus Desktop wallet by looking at your wallet dashboard, where it is displayed between the `Transparent Balance` and `Private Balance`.",
+    "# Question: How can I check my immature balance in a graphical Wallets?\n\n## Verus Desktop\n\nVerus Desktop shows your immature balance in your wallet dashboard, between the `Transparant Balance` and `Private Balance`.\n\n## Agama (Deprecated)\n1. In the Agama wallet click on the hamburger menu (the three stripes) on the top right\n2. click on `Settings`\n3. click on the item `</> CLI`\n4. Select `VRSC` as coin\n6. Type the following command: `getwalletinfo`\n7. click `Execute`\n8. scroll down and find \"immature_balance\": which will give you the amount of time-locked coins in your wallet.\n\n(submitted by @karero)\n\nNote: last revision date 2020-04-24.",
+    "./raw_text_input_wiki/faq-allos16_how_can_i_check_my_immature_balance_in_the_gui.md"
+]

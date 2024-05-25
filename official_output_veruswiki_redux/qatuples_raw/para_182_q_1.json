@@ -1,0 +1,6 @@
+[
+    "How do I use the `getcurrencyconverters` command to retrieve a list of currencies that meet the reserve requirements?",
+    "You can use the `getcurrencyconverters` command by specifying the currencies you're interested in, like this: `getcurrencyconverters \"currency1\" \"currency2\"... | 'json object'`. This will return a list of currencies that meet the reserve requirements and have all the specified currencies as reserves.",
+    "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

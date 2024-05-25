@@ -1,0 +1,6 @@
+[
+    "What happens to the files that match the criteria specified by the `find` command?",
+    "The files that match the criteria specified by the `find` command are deleted using the `rm` command. This is specified by the `-exec rm {}` option.",
+    "# Keep only last 6 days - BE SURE to fully understand how it works, as every \"rm\" command!\nfind $DEST_FOLDER/wallet* -type f -mtime +6 -exec rm {} ;\n```\n\n(submitted by @TexWiller)\n\nNote: last revision date 2020-02-26.",
+    "./raw_text_input_wiki/faq-lin05_daily_cloud_backup.md"
+]

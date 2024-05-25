@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm playing around with creating a new currency with Verus, and I was wondering what the `proofprotocol` setting does when defining a new currency.\n\n**AI Assistant:**\nThe `proofprotocol` setting controls who can mint new coins in the currency. In this example, `proofprotocol` is set to 2, which is `PROOF_CHAINID`. This means that the controller of the chain ID can mint new coins. Does that make sense?\n\n**User:**\nThat helps, thanks! So, how can I actually mint new coins in a currency I created with Verus?\n\n**AI Assistant:**\nTo mint new coins in a currency you created with Verus, you can use the `sendcurrency` command with the `mintnew` option. For example:\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\nThis command mints 10,000 new coins in the \"mycoin\" currency and sends them to the address \"mike@\". Give it a try!\n\n**User:**\nI've been experimenting with the Verus testnet, and I think I've made a bit of a mess. What do I need to do to reset the Verus testnet?\n\n**AI Assistant:**\nDon't worry, it's easy to reset the Verus testnet! To start fresh, you just need to delete the following directories:\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```\nThis will remove any existing testnet data, and you can start over from scratch.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `proofprotocol` setting control when defining a new currency with Verus?",
+            "The `proofprotocol` setting controls who can mint new coins in the currency. In this example, `proofprotocol` is set to 2, which is `PROOF_CHAINID`. This means that the controller of the chain ID can mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\n## Testnet Reset Instructions\n**Please delete the following directories before launching the testnet:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How can I mint new coins in a currency I created with Verus?",
+            "To mint new coins in a currency you created with Verus, you can use the `sendcurrency` command with the `mintnew` option. For example:\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\nThis command mints 10,000 new coins in the \"mycoin\" currency and sends them to the address \"mike@\".",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\n## Testnet Reset Instructions\n**Please delete the following directories before launching the testnet:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What do I need to do to reset the Verus testnet?",
+            "To reset the Verus testnet, you need to delete the following directories:\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```\nThis will remove any existing testnet data and allow you to start fresh.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\n## Testnet Reset Instructions\n**Please delete the following directories before launching the testnet:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

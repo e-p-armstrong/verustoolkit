@@ -1,0 +1,6 @@
+[
+    "How do I specify the timing of a task in a crontab file?",
+    "In a crontab file, the timing of a task is specified using five asterisks (`*`) and numbers. The format is: `minute hour day_of_month month day_of_week command`. For example, `*/5 * * * *` means the task will run every 5 minutes, `0 * * * *` means the task will run on the hour every hour, and `0 12 * * *` means the task will run every day at 12 PM.",
+    "In the following, the `*/5` is every 5 min, the `0` is on the hour every hour, the `0 12` is every day at 12 PM.\n\n##### CRONTAB\n\n```bash\n# m h dom mon dow  command\n*/5 * * * * /home/user/checkfornewblocks.sh\n0 * * * * /home/user/checkifverusdisrunning.sh\n0 12 * * * /home/user/backupwallet.sh\n```\nNote: For any emails sent (for backup of dat file for example) make sure to enforce TLS security in postfix by adding the following line to your /etc/postfix/main.cf\n`smtp_tls_security_level=encrypt`\n\n(submitted by @J Oliver Westbrook)\n\nNote: last revision date 2021-03-09.",
+    "./raw_text_input_wiki/faq-lin03_linux_scripts_make_life_easy.md"
+]

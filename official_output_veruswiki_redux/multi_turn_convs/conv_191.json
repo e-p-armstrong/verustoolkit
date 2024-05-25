@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm still trying to understand how VerusIDs work. Can you tell me, how are the fees distributed when creating an identity on the Verus network?\n\n**AI Assistant:**\nWhen creating an identity on the Verus network, the fees are distributed as follows:\n\n* 20 VRSC to the referrer's ID\n* 20 VRSC to the referrer's referrer's ID\n* 20 VRSC to the referrer's referrer's referrer's ID\n* 20 VRSC to the miner of the block in which the ID is mined\n\nAdditionally, 100% of all funds that are not paid to referrers go to miners or stakers of the blockchain. Does that clarify how the fees are distributed?\n\n**User:**\nThat helps, but I'm still a bit unclear about what happens to the funds that aren't paid to referrers. Can you explain that a bit more?\n\n**AI Assistant:**\nAny funds that are not paid to referrers when creating an identity on the Verus network go to miners or stakers of the blockchain. So, in essence, the community members who help maintain the Verus network by mining or staking are rewarded with these funds. This incentivizes people to participate in the network and helps to keep it secure and running smoothly. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How are the fees distributed when creating an identity on the Verus network?",
+            "When creating an identity on the Verus network, the fees are distributed as follows:\n\n* 20 VRSC to the referrer's ID\n* 20 VRSC to the referrer's referrer's ID\n* 20 VRSC to the referrer's referrer's referrer's ID\n* 20 VRSC to the miner of the block in which the ID is mined\n\nAdditionally, 100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens to the funds that are not paid to referrers when creating an identity on the Verus network?",
+            "Any funds that are not paid to referrers when creating an identity on the Verus network go to miners or stakers of the blockchain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

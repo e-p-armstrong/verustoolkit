@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I create a new token that can be converted to with either GOLD or VRSCTEST?",
+            "To create a new token that can be converted to with either GOLD or VRSCTEST, you need to define the token's properties using the `definecurrency` command. The specific command will depend on the desired properties of your token, such as its name, options, proof protocol, and conversion ratios.",
+            "y VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9229c96c-f149-4cc2-a178-51733860ea4b"
+]

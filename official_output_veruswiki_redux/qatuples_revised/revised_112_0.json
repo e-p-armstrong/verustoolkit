@@ -1,0 +1,6 @@
+[
+    "What does the `sendcurrency` command with `preconvert` set to 1 do, and what are the possible outcomes?",
+    "The `sendcurrency` command with `preconvert` set to 1 allows you to park a conversion of VRSCTEST to a new token (in this case, GOLD) before the token launches. When the token launches, you will either receive the converted amount of GOLD in your wallet or have your original VRSCTEST amount returned.",
+    "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

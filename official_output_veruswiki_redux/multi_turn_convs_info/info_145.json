@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What does `proofprotocol` set to 2 (PROOF_CHAINID) mean when defining a new currency, such as \"mycoin\", in Verus?",
+            "When `proofprotocol` is set to 2 (PROOF_CHAINID) when defining a new currency, it means that the controller of the chain ID has the ability to mint new coins. This permission allows the chain ID controller to create new coins and add them to the circulating supply.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How can the controller of the chain ID mint new coins in a currency like \"mycoin\" that has `proofprotocol` set to 2 (PROOF_CHAINID)?",
+            "The controller of the chain ID can mint new coins in a currency like \"mycoin\" by using the `sendcurrency` command with the `mintnew` option. For example:\n\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\n\nThis command would mint 10,000 new \"mycoin\" coins and send them to the address \"mike@\".",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b734c13e-d0be-4952-8992-69f218233e3c"
+]

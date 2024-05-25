@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What might cause errors when running `./verusd` on a Linux distribution like Debian or Devuan?",
+            "The errors might be caused by missing dependencies that are not installed by default on the Linux distribution. Specifically, the `libgomp` and `zlib1g-dev` libraries might be required but not present.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory\n# error while loading shared libraries: libz.so: No such file or directory\n\nWhen running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`.\n\nTo solve this you need to install the libgomp and zlib1g-dev libraries:\n`sudo apt-get install libgomp1 zlib1g-dev`\n\nSolution supplied by: Oink.vrsc@\n\nNote: revision date 2021-12-01.",
+            "./raw_text_input_wiki/armfaq-01_libgomp.so.1.md"
+        ],
+        [
+            "How can I resolve the errors `error while loading shared libraries: libgomp.so.1: No such file or directory` and `error while loading shared libraries: libz.so: No such file or directory` when running `./verusd` on a Linux distribution?",
+            "To resolve these errors, you need to install the missing dependencies, specifically the `libgomp` and `zlib1g-dev` libraries. You can do this by running the command `sudo apt-get install libgomp1 zlib1g-dev`.",
+            "# error while loading shared libraries: libgomp.so.1: No such file or directory\n# error while loading shared libraries: libz.so: No such file or directory\n\nWhen running `./verusd` on a Linux distro (eg Debian or Devuan), not all dependencies may be installed by default, resulting in the errormessage `error while loading shared libraries: libgomp.so.1: No such file or directory` or `error while loading shared libraries: libz.so: No such file or directory`.\n\nTo solve this you need to install the libgomp and zlib1g-dev libraries:\n`sudo apt-get install libgomp1 zlib1g-dev`\n\nSolution supplied by: Oink.vrsc@\n\nNote: revision date 2021-12-01.",
+            "./raw_text_input_wiki/armfaq-01_libgomp.so.1.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3fe3d2bf-965d-488b-8bd8-1f89864845a8"
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What are the essential steps to set up my Verus wallet?",
+            "The essential steps to set up your Verus wallet include installing or updating the latest version of the wallet, making a backup of your wallet, and installing the bootstrap.",
+            "If you followed these steps, you will have installed/updated the latest version of a wallet for verus, made a backup of your wallet and installed the bootstrap. If desired you can remove the downloaded bootstrap archive to free up space on your hard drive.\n\n### Optional:\nWatch this video with an explanation how to accomplish the steps above: [Bootstrapping your wallet manually](https://youtu.be/ILr8vDgfPHI)\n\nInformation compiled by Oink.vrsc@.\n\nNote: revision date 2024-04-07.",
+            "./raw_text_input_wiki/how-to_bootstrap.md"
+        ],
+        [
+            "Is there a visual guide available to help me with the setup process?",
+            "Yes, there is a video available that provides an explanation of how to accomplish the setup steps. You can watch the video titled \"Bootstrapping your wallet manually\" to get a better understanding of the process.",
+            "If you followed these steps, you will have installed/updated the latest version of a wallet for verus, made a backup of your wallet and installed the bootstrap. If desired you can remove the downloaded bootstrap archive to free up space on your hard drive.\n\n### Optional:\nWatch this video with an explanation how to accomplish the steps above: [Bootstrapping your wallet manually](https://youtu.be/ILr8vDgfPHI)\n\nInformation compiled by Oink.vrsc@.\n\nNote: revision date 2024-04-07.",
+            "./raw_text_input_wiki/how-to_bootstrap.md"
+        ],
+        [
+            "Do I need to keep the bootstrap archive after setting up my wallet?",
+            "No, you don't need to keep the bootstrap archive after setting up your wallet. You can remove it to free up space on your hard drive if desired.",
+            "If you followed these steps, you will have installed/updated the latest version of a wallet for verus, made a backup of your wallet and installed the bootstrap. If desired you can remove the downloaded bootstrap archive to free up space on your hard drive.\n\n### Optional:\nWatch this video with an explanation how to accomplish the steps above: [Bootstrapping your wallet manually](https://youtu.be/ILr8vDgfPHI)\n\nInformation compiled by Oink.vrsc@.\n\nNote: revision date 2024-04-07.",
+            "./raw_text_input_wiki/how-to_bootstrap.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e47a44fa-e693-4a1b-b3ce-346b8cc2292f"
+]

@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "How can I retrieve the hash of a specific block in the best-block-chain using Verus?",
+            "You can use the `getblockhash` command with the block index as an argument to retrieve the hash of a specific block in the best-block-chain. For example, `verus getblockhash 1000` would return the hash of the block at index 1000.",
+            "### `getblockhash index`\nReturns hash of block in best-block-chain at index provided.#### Arguments:\n```\nindex     (numeric, required) The block index\n```\n#### Result:\n```\n\"hash\"     (string) The block hash\n```\nExamples:\n```bash\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getblockhashes timestamp`\nReturns array of hashes of blocks within the timestamp range provided.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the format of the result returned by the `getblockhash` command?",
+            "The result returned by the `getblockhash` command is a string representing the block hash.",
+            "### `getblockhash index`\nReturns hash of block in best-block-chain at index provided.#### Arguments:\n```\nindex     (numeric, required) The block index\n```\n#### Result:\n```\n\"hash\"     (string) The block hash\n```\nExamples:\n```bash\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getblockhashes timestamp`\nReturns array of hashes of blocks within the timestamp range provided.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I use the `getblockhash` command with a remote Verus node using curl?",
+            "You can use the `getblockhash` command with a remote Verus node using curl by sending a JSON-RPC request with the `getblockhash` method and the block index as a parameter. For example:\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "### `getblockhash index`\nReturns hash of block in best-block-chain at index provided.#### Arguments:\n```\nindex     (numeric, required) The block index\n```\n#### Result:\n```\n\"hash\"     (string) The block hash\n```\nExamples:\n```bash\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getblockhashes timestamp`\nReturns array of hashes of blocks within the timestamp range provided.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the purpose of the `getblockhashes` command in Verus?",
+            "The `getblockhashes` command returns an array of hashes of blocks within a specified timestamp range.",
+            "### `getblockhash index`\nReturns hash of block in best-block-chain at index provided.#### Arguments:\n```\nindex     (numeric, required) The block index\n```\n#### Result:\n```\n\"hash\"     (string) The block hash\n```\nExamples:\n```bash\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getblockhashes timestamp`\nReturns array of hashes of blocks within the timestamp range provided.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a8227bc9-499b-41f4-a687-43ee6df14535"
+]

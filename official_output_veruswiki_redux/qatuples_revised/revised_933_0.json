@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getcurrencyconverters` command in Verus?",
+    "The `getcurrencyconverters` command retrieves a list of currencies that meet specific reserve requirements, specifically having at least 1000 VRSC in reserve and a VRSC reserve ratio of more than 10%. Additionally, the listed currencies must be included as reserves.",
+    "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

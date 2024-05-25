@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I have some questions about transactions on Verus. What happens if a transaction is sent from the currency ID of a centralized currency?\n\n**AI Assistant:**\nIf a transaction is sent from the currency ID of a centralized currency, this creates new currency to send. Do you have any more questions about transactions or currency on Verus?\n\n**User:**\nActually, yes. What is the purpose of the \"minconf\" option when sending a transaction?\n\n**AI Assistant:**\nThe \"minconf\" option allows you to specify the minimum number of confirmations required for funds to be considered valid for use in a transaction. By default, this is set to 1, but you can increase this number to require more confirmations before the funds are considered usable. Does that make sense?\n\n**User:**\nYeah, that does. Another question: how can I specify a custom fee amount for a transaction?\n\n**AI Assistant:**\nYou can specify a custom fee amount for a transaction using the \"feeamount\" option. This allows you to set a specific fee amount instead of using the default miner's fee. Easy peasy!\n\n**User:**\nOne more thing. What happens if I set \"returntxtemplate\" to true when sending a transaction?\n\n**AI Assistant:**\nIf you set \"returntxtemplate\" to true, the transaction information will be returned without submitting the transaction to the chain. This allows you to preview the transaction details without actually sending the transaction. The default value for this option is false, which means the transaction will be submitted to the chain normally. Do you have any more questions about transactions on Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens if a transaction is sent from the currency ID of a centralized currency?",
+            "If a transaction is sent from the currency ID of a centralized currency, this creates new currency to send.",
+            "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the purpose of the \"minconf\" option when sending a transaction?",
+            "The \"minconf\" option allows you to specify the minimum number of confirmations required for funds to be considered valid for use in a transaction. By default, this is set to 1, but you can increase this number to require more confirmations before the funds are considered usable.",
+            "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I specify a custom fee amount for a transaction?",
+            "You can specify a custom fee amount for a transaction using the \"feeamount\" option. This allows you to set a specific fee amount instead of using the default miner's fee.",
+            "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What happens if I set \"returntxtemplate\" to true when sending a transaction?",
+            "If you set \"returntxtemplate\" to true, the transaction information will be returned without submitting the transaction to the chain. This allows you to preview the transaction details without actually sending the transaction. The default value for this option is false, which means the transaction will be submitted to the chain normally.",
+            "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

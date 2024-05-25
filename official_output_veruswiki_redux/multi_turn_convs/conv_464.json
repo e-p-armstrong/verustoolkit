@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI've been experimenting with Verus and I'm interested in creating a new token. How can I create a new token that can be converted to with either GOLD or VRSCTEST?\n\n**AI Assistant:**\nTo create a new token that can be converted to with either GOLD or VRSCTEST, you need to define the token's properties using the `definecurrency` command. The specific command will depend on the desired properties of your token, such as its name, options, proof protocol, and conversion ratios.\n\nFor example, you'll need to specify the token's name, its total supply, and the conversion ratios to GOLD and VRSCTEST. You may also want to consider other options, such as whether the token should be mineable, or if it should have a specific proof protocol.\n\nDo you have any experience with the `definecurrency` command, or would you like more guidance on how to use it?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I create a new token that can be converted to with either GOLD or VRSCTEST?",
+            "To create a new token that can be converted to with either GOLD or VRSCTEST, you need to define the token's properties using the `definecurrency` command. The specific command will depend on the desired properties of your token, such as its name, options, proof protocol, and conversion ratios.",
+            "y VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

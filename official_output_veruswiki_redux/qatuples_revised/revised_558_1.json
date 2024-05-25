@@ -1,0 +1,6 @@
+[
+    "What does the `-rpcservertimeout` option control in Verus, and why might I want to change its value?",
+    "The `-rpcservertimeout` option controls the timeout during HTTP requests in Verus. You might want to change its value if you're experiencing issues with requests taking too long or timing out, or if you need to adjust the timeout for specific use cases or network conditions.",
+    "`-rpcservertimeout=<n>`\n    Timeout during HTTP requests (default: 30)\n\ncompiled by Oink.vrsc@.\nNote: last revision date 2024-05-03.",
+    "./raw_text_input_wiki/clifaq-01_verusd_options.md"
+]

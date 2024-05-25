@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can digital signatures, specifically those using Verus ID, be used to establish authenticity and trust in various applications?",
+            "Digital signatures using Verus ID can be used to establish authenticity and trust in various applications, such as:\n\n* Journalists can sign photos, videos, and content to establish a reputation for authenticity and counter the potential for deep-fakes.\n* Open source projects can create their own identities and digitally sign their binary releases, ensuring that files can be verified by signature as the actual file initially signed by the developer or release engineer.\n* Digital signatures can be used in physical entry systems, workflow applications, and new earning opportunities.",
+            "For example, using Verus ID signatures, it\u2019s possible for any journalist anywhere to sign photos, videos, and content, establish a reputation for authenticity, and counter the potential for deep-fakes to make the truth harder to find. Open source projects can now create their own identities and digitally sign their binary releases, ensuring that not only can a file be verified by hash as the one downloaded from a particular server, but by signature as the actual file initially signed by the developer or release engineer. Signatures also form the basis for any attestation of one party to the validity of another. In fact, there are so many applications for digital signatures, from things listed already, to physical entry systems, to workflow applications, to new earning opportunities that a full discussion of use cases would overwhelm these release notes.In any case, we are happy to release digital signatures for all, and we hope you enjoy using this new, simple capability, maybe even think of a new use case you\u2019d like to pursue yourself as a business opportunity on the Verus Network!# Verus ID\nVerus IDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. Verus IDs provide plenty of opportunity for identity applications. Specifically, Verus ID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the key feature of Verus IDs that sets them apart from other blockchain ID implementations?",
+            "Verus IDs are a fully functional blockchain protocol, not just an ID system, and there is no corporation involved in the protocol. This sets them apart from most blockchain ID implementations.",
+            "For example, using Verus ID signatures, it\u2019s possible for any journalist anywhere to sign photos, videos, and content, establish a reputation for authenticity, and counter the potential for deep-fakes to make the truth harder to find. Open source projects can now create their own identities and digitally sign their binary releases, ensuring that not only can a file be verified by hash as the one downloaded from a particular server, but by signature as the actual file initially signed by the developer or release engineer. Signatures also form the basis for any attestation of one party to the validity of another. In fact, there are so many applications for digital signatures, from things listed already, to physical entry systems, to workflow applications, to new earning opportunities that a full discussion of use cases would overwhelm these release notes.In any case, we are happy to release digital signatures for all, and we hope you enjoy using this new, simple capability, maybe even think of a new use case you\u2019d like to pursue yourself as a business opportunity on the Verus Network!# Verus ID\nVerus IDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. Verus IDs provide plenty of opportunity for identity applications. Specifically, Verus ID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9888d810-0d2e-432d-bb98-83bdac4ecf3d"
+]

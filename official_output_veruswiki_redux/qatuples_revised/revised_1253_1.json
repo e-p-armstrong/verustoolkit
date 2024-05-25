@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getcurrencyconverters` command in Verus?",
+    "The `getcurrencyconverters` command is used to find all currencies on the Verus network that have markets for a specific pair of currencies. This command is useful for discovering currencies that have liquidity in a specific market, allowing users to make informed decisions about their currency conversions.",
+    "o, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

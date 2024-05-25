@@ -1,0 +1,6 @@
+[
+    "What information can I expect to receive when I use the `getblocktemplate` command with Verus?",
+    "When you use the `getblocktemplate` command with Verus, you can expect to receive a response that includes information about the next block to be mined. This information includes:\n1. The maximum allowed size of the block (in bytes), represented by the \"mint\" field.\n2. The current timestamp in seconds since the Unix epoch (January 1, 1970, GMT), represented by the \"curtime\" field.\n3. The compressed target of the next block, represented by the \"bits\" field.\n4. The height of the next block, represented by the \"height\" field.",
+    "mit\" : n,          (numeric) limit of block size\n \"curtime\" : ttt,          (numeric) current timestamp in seconds since epoch (Jan 1 1970 GMT)\n \"bits\" : \"xxx\",          (string) compressed target of next block\n \"height\" : n            (numeric) The height of the next block\n}\n```\nExamples:\n```bash\n> verus getblocktemplate\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

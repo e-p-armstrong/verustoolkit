@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I need some help with my Verus testnet. I've got a bit of a mess on my hands and I want to start fresh. How do I reset my Verus testnet?\n\n**AI Assistant:**\nNo problem! Resetting your Verus testnet is a pretty straightforward process. First, make sure Verus is closed and no testnet daemon is running. Then, you'll need to delete the following directories depending on your operating system:\n\n* If you're on Linux, delete `~/.komodo/vrsctest` and `~/.verustest`.\n* If you're on Mac OS, delete `~/Library/Application Support/Komodo/vrsctest` and `~/Library/Application Support/VerusTest`.\n* If you're on Windows 10, delete `%AppData%\\Roaming\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest`.\n\nAfter deleting the directories, restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest, and re-add verustest native). That should reset your testnet and you can start fresh!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I reset my Verus testnet?",
+            "To reset your Verus testnet, make sure Verus is closed and no testnet daemon is running. Then, delete the following directories:\n\n* On Linux: `~/.komodo/vrsctest` and `~/.verustest`\n* On Mac OS: `~/Library/Application Support/Komodo/vrsctest` and `~/Library/Application Support/VerusTest`\n* On Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest`\n\nAfter deleting the directories, restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest, and re-add verustest native).",
+            "# Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):\n\n- Linux: `~/.komodo/vrsctest`, `~/.verustest`\n- Mac OS: `~/Library/Application Support/Komodo/vrsctest`, `~/Library/Application\\ Support/VerusTest`\n- Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest`\n\nInformation compiled by Oink.vrsc@ from Verus Release Notes.\n\nNote: revision date 2023-05-15.",
+            "./raw_text_input_wiki/how-to_reset_testnet.md"
+        ]
+    ]
+]

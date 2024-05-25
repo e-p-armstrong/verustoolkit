@@ -1,0 +1,6 @@
+[
+    "How can I mint new coins in a currency with PROOF_CHAINID proof protocol?",
+    "To mint new coins in a currency with PROOF_CHAINID proof protocol, you can use the `sendcurrency` command with the `mintnew` option. The basic format is:\n```\n./verus -chain=<chain_name> sendcurrency \"<currency_id>@'\" '[{\"address\":\"<receiver_address>\",\"currency\":\"<currency_name>\",\"mintnew\":1,\"amount\":<amount>}]'\n```\n Replace `<chain_name>` with the name of the chain, `<currency_id>` with the ID of the currency, `<receiver_address>` with the address that will receive the minted coins, `<currency_name>` with the name of the currency, and `<amount>` with the amount of coins to be minted.",
+    "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

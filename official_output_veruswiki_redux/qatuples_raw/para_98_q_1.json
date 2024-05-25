@@ -1,0 +1,6 @@
+[
+    "What happens to my funds after I shield them to a z-addr?",
+    "After your funds have moved to the z-addr and are confirmed, you can freely send them to any address. If you send them to a transparent address (R-address), they will be eligible for staking.",
+    "To just shield a single address, specify that as the first argument:\n\n`verus z_shieldcoinbase <YOUR R-ADDRESS> <YOUR zs-ADDRESS>`\n\nOnce the funds have moved to the zaddr and are confirmed, you can freely send them to any address, They will be eligble for staking id sent to a transpartent address (R-address).\n\nTo send from a certain zaddr to a transparent address, use z_sendmany. The following command sends 10 Verus to a given transparent address, ID address or ID-name.\nExample: `verus z_sendmany zcZpfuzzJqmNJ3fUJekvbnyuxuJe9eAURAHrMCvN2Nr7VuWjakb1LEw6j2etPcCnr45BRot7MaMbipuS5da162BfuUkFGxx '[{\"amount\":10,\"address\":\"Verus Coin Foundation@\"}]'`\n\nNote: revision date 2020-02-12.",
+    "./raw_text_input_wiki/how-to_shield_via_cli.md"
+]

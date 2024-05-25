@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I export a certain amount of currency from a PBaaS chain to VRSCTEST using the command line and Verus?",
+            "You can export a certain amount of currency from a PBaaS chain to VRSCTEST using the `sendcurrency` command with the following format:\n\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"your_address\",\"amount\":amount_to_send, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\n\nReplace `your_address` with the ID of the sender, and `amount_to_send` with the amount of currency you want to export.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does the `via` parameter do in the `sendcurrency` command when exporting currency from a PBaaS chain to VRSCTEST?",
+            "The `via` parameter specifies the bridge to use when exporting currency from a PBaaS chain to VRSCTEST. In this case, it's set to `\"Bridge.PBaaSChain\"`, which means that the Bridge on the PBaaSChain will be used to facilitate the export.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "95520990-0730-4143-be26-504c01d4ebac"
+]

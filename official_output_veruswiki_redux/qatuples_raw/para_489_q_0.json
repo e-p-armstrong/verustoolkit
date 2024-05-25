@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `OPTION_SINGLECURRENCY` flag in Verus?",
+    "The `OPTION_SINGLECURRENCY` flag, with a value of 64, is used to restrict a PBaaS chain or gateway to a single currency. This flag is useful when you want to limit the functionality of a chain or gateway to only work with one specific currency.",
+    " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

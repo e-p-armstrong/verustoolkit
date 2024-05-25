@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What information does the `getnettotals` command in Verus provide?",
+            "The `getnettotals` command in Verus returns an object containing three pieces of information: `totalbytesrecv` (the total number of bytes received), `totalbytessent` (the total number of bytes sent), and `timemillis` (the total CPU time).",
+            "#### Result:\n```json\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n```\nExamples:\n```bash\n> verus getnettotals\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getnetworkinfo`\nReturns an object containing various state info regarding P2P networking.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I use the `getnettotals` command in Verus?",
+            "You can use the `getnettotals` command in Verus by running `verus getnettotals` in the command line or by using a JSON-RPC request, such as `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "#### Result:\n```json\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n```\nExamples:\n```bash\n> verus getnettotals\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getnetworkinfo`\nReturns an object containing various state info regarding P2P networking.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the purpose of the `getnetworkinfo` command in Verus?",
+            "The `getnetworkinfo` command in Verus returns an object containing various state information regarding P2P networking. This command provides a way to get information about the current state of the network.",
+            "#### Result:\n```json\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n```\nExamples:\n```bash\n> verus getnettotals\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getnetworkinfo`\nReturns an object containing various state info regarding P2P networking.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b1c02459-cc70-4b56-8b2b-2911bbde904f"
+]

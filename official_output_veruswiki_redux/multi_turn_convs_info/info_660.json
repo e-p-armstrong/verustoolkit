@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I properly format my commands in the Windows command line when using Verus?",
+            "To properly format your commands in the Windows command line when using Verus, you should use specific syntax and formatting rules. For example, you can use the following format: `verus-cli command [options]`.",
+            "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "Where are the standard locations for Verus-Desktop installations on Windows?",
+            "The standard locations for Verus-Desktop installations on Windows are [insert actual locations, e.g. \"C:\\Program Files\\Verus\" and \"%AppData%\\Verus\"]. Knowing these locations can help you troubleshoot issues or find the files you need to configure your Verus setup.",
+            "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+            "./raw_text_input_wiki/index.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "098b12c7-e0a5-4882-9a99-d8d994615735"
+]

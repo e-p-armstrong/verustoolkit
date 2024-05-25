@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "I was having trouble syncing to the Verus test network and performing cross-chain operations. Will this upgrade (v0.9.9) fix these issues?",
+            "Yes, this upgrade (v0.9.9) should fix all known testnet issues, including difficulties with syncing and performing cross-chain operations. You should be able to fully sync to the network and resume cross-chain operations without any issues.",
+            "3. **This upgrade fixes all known testnet issues with no reset**: Using v0.9.9, you should be able to sync fully and resume all cross-chain operations on the Verus test network, if you were not able to perform cross-chain operations or sync to the network on the prior version. As mentioned, someone seems to have mined with an intermediate version along the way on testnet and made the network unavailable without a bootstrap on the older daemon. This version should fix that issue as well as any cross-chain difficulties. Auto-notarization will be enabled on testnet in sync when the testfork executes. Until then, all witnessed cross-chain operations should be able to resume, if they have had difficulty. **(Testnet until the #LaunchPBaaS release)**",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happened on the testnet that caused issues with syncing and cross-chain operations?",
+            "Someone mined with an intermediate version of the daemon on the testnet, which made the network unavailable without a bootstrap on the older daemon. This upgrade (v0.9.9) should fix this issue.",
+            "3. **This upgrade fixes all known testnet issues with no reset**: Using v0.9.9, you should be able to sync fully and resume all cross-chain operations on the Verus test network, if you were not able to perform cross-chain operations or sync to the network on the prior version. As mentioned, someone seems to have mined with an intermediate version along the way on testnet and made the network unavailable without a bootstrap on the older daemon. This version should fix that issue as well as any cross-chain difficulties. Auto-notarization will be enabled on testnet in sync when the testfork executes. Until then, all witnessed cross-chain operations should be able to resume, if they have had difficulty. **(Testnet until the #LaunchPBaaS release)**",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Will I be able to perform witnessed cross-chain operations on the testnet after this upgrade?",
+            "Yes, this upgrade should enable you to resume witnessed cross-chain operations on the testnet, even if you were having difficulties previously.",
+            "3. **This upgrade fixes all known testnet issues with no reset**: Using v0.9.9, you should be able to sync fully and resume all cross-chain operations on the Verus test network, if you were not able to perform cross-chain operations or sync to the network on the prior version. As mentioned, someone seems to have mined with an intermediate version along the way on testnet and made the network unavailable without a bootstrap on the older daemon. This version should fix that issue as well as any cross-chain difficulties. Auto-notarization will be enabled on testnet in sync when the testfork executes. Until then, all witnessed cross-chain operations should be able to resume, if they have had difficulty. **(Testnet until the #LaunchPBaaS release)**",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e27c90d2-5011-422f-a28b-54d200e9b73a"
+]

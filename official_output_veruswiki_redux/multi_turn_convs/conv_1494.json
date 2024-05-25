@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to understand some of the options available in Verus. Can you explain the purpose of the `OPTION_GATEWAY_NAMECONTROLLER` option?\n\n**AI Assistant:**\nThe `OPTION_GATEWAY_NAMECONTROLLER` option, with a value of 1024, controls where top-level ID and currency registration occurs when not set on a gateway. Specifically, it causes registration to happen on the launch chain. Does that make sense? Do you have any other questions about this option or Verus in general?\n\n**User:**\nThat helps clarify things. Another option I'm not sure about is `OPTION_NFT_TOKEN`. What's the purpose of that one?\n\n**AI Assistant:**\nThe `OPTION_NFT_TOKEN` option, with a value of 2048, enables the creation of a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This means that the NFT represents ownership and control of the root ID. Does that help? Do you have any more questions about Verus options or anything else?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `OPTION_GATEWAY_NAMECONTROLLER` option in Verus?",
+            "The `OPTION_GATEWAY_NAMECONTROLLER` option, with a value of 1024, controls where top-level ID and currency registration occurs when not set on a gateway. Specifically, it causes registration to happen on the launch chain.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `OPTION_NFT_TOKEN` option in Verus?",
+            "The `OPTION_NFT_TOKEN` option, with a value of 2048, enables the creation of a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This means that the NFT represents ownership and control of the root ID.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

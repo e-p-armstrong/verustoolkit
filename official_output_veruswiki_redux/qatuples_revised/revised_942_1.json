@@ -1,0 +1,6 @@
+[
+    "What do the \"heightstart\" and \"heightend\" arguments do in a Verus command?",
+    "The \"heightstart\" and \"heightend\" arguments are used to filter exports based on their block height. \"heightstart\" specifies the minimum block height, and \"heightend\" specifies the maximum block height. By default, \"heightstart\" is set to 0, and \"heightend\" is set to the maximum height, which means that all exports will be returned unless these arguments are specified.",
+    "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

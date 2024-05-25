@@ -1,0 +1,6 @@
+[
+    "What happens if I set \"returntxtemplate\" to true when sending a transaction?",
+    "If you set \"returntxtemplate\" to true, the transaction information will be returned without submitting the transaction to the chain. This allows you to preview the transaction details without actually sending the transaction. The default value for this option is false, which means the transaction will be submitted to the chain normally.",
+    "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,6 @@
+[
+    "What criteria do currencies need to meet to be returned by the `getcurrencyconverters` API?",
+    "Currencies need to meet the following criteria to be returned by the `getcurrencyconverters` API:\n\n1. They must have at least 1000 VRSC in reserve.\n2. They must have a reserve ratio greater than 10%.\n3. They must have all listed currencies as reserves.\n\nIf a currency meets these criteria, it will be included in the results returned by the `getcurrencyconverters` API.",
+    "ueries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

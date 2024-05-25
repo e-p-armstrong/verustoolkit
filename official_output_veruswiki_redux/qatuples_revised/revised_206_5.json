@@ -1,0 +1,6 @@
+[
+    "What is an NFT token in Verus, and what does the OPTION_NFT_TOKEN flag do?",
+    "In Verus, an NFT token is a single satoshi token that tokenizes control over the root ID. The OPTION_NFT_TOKEN flag, with a value of 2048, is used to indicate that a token is an NFT token.",
+    "a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

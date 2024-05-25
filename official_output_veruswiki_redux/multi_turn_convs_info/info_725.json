@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What information is provided about each network upgrade in the \"upgrades\" object?",
+            "The \"upgrades\" object provides information about each network upgrade, including the branch ID, name, activation height, status, and additional information about the upgrade.",
+            " rules for new-version blocks\n      \"status\": xx,    (boolean) true if threshold reached\n      \"found\": xx,    (numeric) number of blocks with the new version found\n      \"required\": xx,   (numeric) number of blocks required to trigger\n      \"window\": xx,    (numeric) maximum size of examined window of recent blocks\n    },\n    \"reject\": { ... }   (object) progress toward rejecting pre-softfork blocks (same fields as \"enforce\")\n   }, ...\n ],\n \"upgrades\": {        (object) status of network upgrades\n   \"xxxx\" : {        (string) branch ID of the upgrade\n    \"name\": \"xxxx\",    (string) name of upgrade\n    \"activationheight\": xxxxxx, (numeric) block height of activation\n    \"status\": \"xxxx\",   (string) status of upgrade\n    \"info\": \"xxxx\",    (string) additional information about upgrade\n   }, ...\n },\n \"consensus\": {        (object) branch IDs of the current and upcoming consensus rules\n   \"chaintip\": \"xxxxxxxx\",  (string) branch ID used to validate the current chain tip\n   \"nextblock\": \"xxxxxxxx\"  (string) branch ID that the next block will be validated under\n }\n}\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2e876191-687b-4465-b966-96cdc364bdcf"
+]

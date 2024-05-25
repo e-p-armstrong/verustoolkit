@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What does it mean if the result of a signature verification is `true`?",
+            "If the result of a signature verification is `true`, it means that the signature is valid.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY, RECOMMENDED v0.8.0 UPDATE.\nThis release is mandatory for those who want to use the testnet, which will be reset as of v0.8.0.Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "4b284536-60be-4a7c-8a08-f9780b5beb09"
+]

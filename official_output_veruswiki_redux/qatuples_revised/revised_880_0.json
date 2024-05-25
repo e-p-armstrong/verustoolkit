@@ -1,0 +1,6 @@
+[
+    "What are the basic parameters needed to convert and export a currency using the `sendcurrency` command in Verus?",
+    "To convert and export a currency using the `sendcurrency` command in Verus, you need to specify the following parameters:\n\n1. `address`: the ID of the account that owns the currency being converted and exported.\n2. `amount`: the amount of currency being converted and exported.\n3. `convertto`: the currency to which the original currency is being converted.\n4. `exportto`: the chain or destination to which the converted currency is being exported.\n5. `via`: the bridge or intermediate chain used for the conversion and export process.",
+    "ress\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

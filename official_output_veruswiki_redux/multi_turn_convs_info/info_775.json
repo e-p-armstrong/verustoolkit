@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What information can I retrieve about an ID using the `getidentity` command in Verus?",
+            "The `getidentity` command in Verus allows you to retrieve information about an ID, including:\n1. The i-address of the identity that can recover this ID when revoked (`\"recovery\": \"xxx\"`).\n2. The timelock (`\"timelock\": 0`).\n3. The revocation status (`\"status\": \"xxxx\"`), which can be either \"Active\" or \"Revoked\".\n4. Whether the node running the command can spend UTXOs on this ID (`\"canspendfor\": xxxx`, a boolean value).\n5. Whether the node running the command can sign for this ID (`\"cansignfor\": xxxx`, a boolean value).\n6. The block height at which the current ID information was put on the chain (`\"blockheight\": n`).\n7. The transaction ID at the block height (`\"txid\": \"xxxx\"`).\n8. The vout number of the TXID (`\"vout\": n`).",
+            "xxx\",  (text) the i-address of the identity that can recover this ID when revoked\n  \"timelock\": 0          (integer) Timelock\n },\n \"status\": \"xxxx\",         (text) The revocation status (\"Active\"|\"Revoked\")\n \"canspendfor\": xxxx,       (boolean) Can the node running the command spend UTXOs on this ID (True|False)\n \"cansignfor\": xxxx,        (boolean) Can the node running the command sign for this ID (True|False)\n \"blockheight\": n,         (integer) blockheight the current ID info was put on the chain\n \"txid\": \"xxxx\",          (string) Transaction ID at blockheight to put the current ID data on the chain\n \"vout\": n             (integer) voutnumber of the TXID\n}\n```\n####Examples:\n```bash\n> verus getidentity \"name@\"\n> verus getidentity \"i5v3h9FWVdRFbNHU7DfcpGykQjRaHtMqu7\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I use the `getidentity` command in Verus?",
+            "You can use the `getidentity` command in Verus by running it with an ID as an argument, like this:\n```\nverus getidentity \"name@\"\n```\nAlternatively, you can also use the `curl` command to send a JSON-RPC request to the Verus node, like this:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "xxx\",  (text) the i-address of the identity that can recover this ID when revoked\n  \"timelock\": 0          (integer) Timelock\n },\n \"status\": \"xxxx\",         (text) The revocation status (\"Active\"|\"Revoked\")\n \"canspendfor\": xxxx,       (boolean) Can the node running the command spend UTXOs on this ID (True|False)\n \"cansignfor\": xxxx,        (boolean) Can the node running the command sign for this ID (True|False)\n \"blockheight\": n,         (integer) blockheight the current ID info was put on the chain\n \"txid\": \"xxxx\",          (string) Transaction ID at blockheight to put the current ID data on the chain\n \"vout\": n             (integer) voutnumber of the TXID\n}\n```\n####Examples:\n```bash\n> verus getidentity \"name@\"\n> verus getidentity \"i5v3h9FWVdRFbNHU7DfcpGykQjRaHtMqu7\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b4ab13aa-c7a1-473f-be67-5fcb12780490"
+]

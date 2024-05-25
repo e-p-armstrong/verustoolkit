@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How has the cross-chain witness and notarization protocol been enhanced in the latest release?",
+            "The latest release has introduced a significant enhancement to the cross-chain witness and notarization protocol. Now, any notarization to be confirmed must be first posted publicly, allowing for potential invalidity to be proven, before it is later confirmed. This change prevents potential attack vectors, such as stolen notary/witness keys combined with a secret 51% combined hash/stake attack.",
+            "- Bridgekeeper is now available for permissionless bridge notarization and selectable in the GUI on the mining page. For CLI, we will make a Node application available for testing in the next few days.\n- RC1 cross-chain witness and notarization protocol enhanced in RC2 as follows:\n - In RC2, any notarization to be confirmed must be first posted publicly to allow for potential to prove invalidity, and then later confirmed. In the prior protocol, a witnessed notarization could be posted to a chain and accepted when first seen. Upon analysis and discussion with @allbits and others, we realized that the attack vector of even stolen notary/witness keys combined with an in-secret 51% combined hash/stake attack could be prevented if we changed the protocol to first require posting the ready to finalize data and allow notaries who recognize that there is a signature on chain for something they don\u2019t agree with (likely stolen key), to simpl",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the benefit of requiring notarizations to be posted publicly before confirmation?",
+            "Requiring notarizations to be posted publicly before confirmation allows notaries to recognize and potentially refute invalid notarizations, such as those made with stolen keys. This adds an additional layer of security to the protocol, preventing potential attacks and ensuring the integrity of the network.",
+            "- Bridgekeeper is now available for permissionless bridge notarization and selectable in the GUI on the mining page. For CLI, we will make a Node application available for testing in the next few days.\n- RC1 cross-chain witness and notarization protocol enhanced in RC2 as follows:\n - In RC2, any notarization to be confirmed must be first posted publicly to allow for potential to prove invalidity, and then later confirmed. In the prior protocol, a witnessed notarization could be posted to a chain and accepted when first seen. Upon analysis and discussion with @allbits and others, we realized that the attack vector of even stolen notary/witness keys combined with an in-secret 51% combined hash/stake attack could be prevented if we changed the protocol to first require posting the ready to finalize data and allow notaries who recognize that there is a signature on chain for something they don\u2019t agree with (likely stolen key), to simpl",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8ae835fd-f802-4fb9-8142-00401fff8c60"
+]

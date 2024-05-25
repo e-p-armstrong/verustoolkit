@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What happens to existing transactions when I update my identity to use a new, quantum-secure address type?",
+            "When you update your identity to use a new, quantum-secure address type, all existing transactions sent to that identity will be subject to the spend conditions of the new address type. This means that if you have multiple transactions sent to your identity, upgrading to a quantum-secure address will retroactively secure all of those transactions under the control of the new address.",
+            "ain, all transactions sent to an identity that is updated to be under the control of the new address type will be subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How does Verus ensure the security of my transactions when I update my identity to use a new address type?",
+            "Verus ensures the security of your transactions by retroactively applying the spend conditions of the new address type to all existing transactions sent to your identity. This means that even if you have a large number of transactions sent to your identity, upgrading to a quantum-secure address will secure all of those transactions, protecting them from potential quantum attacks.",
+            "ain, all transactions sent to an identity that is updated to be under the control of the new address type will be subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What are the benefits of using quantum-secure addresses in Verus?",
+            "The benefits of using quantum-secure addresses in Verus include retroactive security for all existing transactions sent to your identity, protecting your transactions from potential quantum attacks. This ensures that your transactions remain secure, even if quantum computers become a reality.",
+            "ain, all transactions sent to an identity that is updated to be under the control of the new address type will be subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "560656f4-de54-4800-86dd-902a691e8b51"
+]

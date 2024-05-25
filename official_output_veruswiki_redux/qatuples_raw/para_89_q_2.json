@@ -1,0 +1,6 @@
+[
+    "Are there any special considerations I need to keep in mind when using the Verus command-line interface on a Windows system?",
+    "Yes, there are special considerations to keep in mind when using the Verus command-line interface on a Windows system. You can find more information on Windows command line formatting in the [Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md).",
+    "## CLI wallet specific Information\n[Verusd options list](#!faq-cli/clifaq-01_verusd_options.md) ***`UPDATED to v1.2.2-4`***\n[Verus command list](#!faq-cli/clifaq-02_verus_commands.md) ***`UPDATED to v1.2.2-4`***\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n\n## Q&A Archive\n[Q&A questions channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-questions-20200728.html)\n[Q&A reward channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-reward-20200728.html)\n\nNote: last revision date 2024-05-03.",
+    "./raw_text_input_wiki/index.md"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I create a new token that can be converted to with either GOLD or VRSCTEST?",
+    "You can create a new token that can be converted to with either GOLD or VRSCTEST by defining the token's properties and options. This typically involves specifying the token's name, options, currencies it can be converted to, and other relevant details.",
+    "find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

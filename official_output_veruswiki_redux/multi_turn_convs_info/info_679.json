@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "Where can I find information on the available options for the `verusd` command?",
+            "You can find information on the available options for the `verusd` command by running the command with the `--help` option or by consulting the Verus documentation.",
+            "## CLI wallet specific Information\n[Verusd options list](#!faq-cli/clifaq-01_verusd_options.md) ***`UPDATED to v1.2.2-4`***\n[Verus command list](#!faq-cli/clifaq-02_verus_commands.md) ***`UPDATED to v1.2.2-4`***\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n\n## Q&A Archive\n[Q&A questions channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-questions-20200728.html)\n[Q&A reward channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-reward-20200728.html)\n\nNote: last revision date 2024-05-03.",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "Where can I find a list of all the commands available in the Verus command-line interface?",
+            "You can find a list of all the commands available in the Verus command-line interface in the Verus command list.",
+            "## CLI wallet specific Information\n[Verusd options list](#!faq-cli/clifaq-01_verusd_options.md) ***`UPDATED to v1.2.2-4`***\n[Verus command list](#!faq-cli/clifaq-02_verus_commands.md) ***`UPDATED to v1.2.2-4`***\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n\n## Q&A Archive\n[Q&A questions channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-questions-20200728.html)\n[Q&A reward channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-reward-20200728.html)\n\nNote: last revision date 2024-05-03.",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "Are there any special considerations I need to keep in mind when using the Verus command-line interface on a Windows system?",
+            "Yes, there are special considerations to keep in mind when using the Verus command-line interface on a Windows system. You can find more information on Windows command line formatting.",
+            "## CLI wallet specific Information\n[Verusd options list](#!faq-cli/clifaq-01_verusd_options.md) ***`UPDATED to v1.2.2-4`***\n[Verus command list](#!faq-cli/clifaq-02_verus_commands.md) ***`UPDATED to v1.2.2-4`***\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n\n## Q&A Archive\n[Q&A questions channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-questions-20200728.html)\n[Q&A reward channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-reward-20200728.html)\n\nNote: last revision date 2024-05-03.",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "Are there any archives of Q&A sessions about Verus that I can refer to?",
+            "Yes, there are archives of Q&A sessions about Verus that you can refer to. You can find archives of Q&A questions and reward channels from Verus-WhiteBIT in 2020, for example. These archives may provide valuable information and insights about Verus.",
+            "## CLI wallet specific Information\n[Verusd options list](#!faq-cli/clifaq-01_verusd_options.md) ***`UPDATED to v1.2.2-4`***\n[Verus command list](#!faq-cli/clifaq-02_verus_commands.md) ***`UPDATED to v1.2.2-4`***\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n\n## Q&A Archive\n[Q&A questions channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-questions-20200728.html)\n[Q&A reward channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-reward-20200728.html)\n\nNote: last revision date 2024-05-03.",
+            "./raw_text_input_wiki/index.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "6c368e12-f390-4961-ae23-e7c9fe4c3e55"
+]

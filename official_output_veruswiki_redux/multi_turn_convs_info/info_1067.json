@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What information does the `getrawtransaction` method in Verus provide about a transaction?",
+            "The `getrawtransaction` method in Verus provides information about a transaction, including the block time in seconds since the epoch (January 1, 1970, GMT).",
+            "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I retrieve the raw transaction data for a specific transaction ID using the Verus command-line interface?",
+            "You can retrieve the raw transaction data for a specific transaction ID using the `getrawtransaction` method in the Verus command-line interface. The basic syntax is `verus getrawtransaction \"mytxid\"`, where `\"mytxid\"` is the ID of the transaction you want to retrieve.",
+            "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I retrieve the raw transaction data for a specific transaction ID with additional information, such as the block time, using the Verus command-line interface?",
+            "You can retrieve the raw transaction data for a specific transaction ID with additional information, such as the block time, by adding an extra parameter to the `getrawtransaction` method. The syntax is `verus getrawtransaction \"mytxid\" 1`, where `\"mytxid\"` is the ID of the transaction you want to retrieve, and `1` indicates that you want to include additional information, such as the block time.",
+            "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I retrieve the raw transaction data for a specific transaction ID using the Verus JSON-RPC interface?",
+            "You can retrieve the raw transaction data for a specific transaction ID using the Verus JSON-RPC interface by sending a JSON-RPC request to the Verus server. The request should include the method `getrawtransaction`, the transaction ID, and any additional parameters you want to include, such as `1` for additional information like the block time. An example of the JSON-RPC request is:\n```json\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"getrawtransaction\",\n  \"params\": [\"mytxid\", 1]\n}\n```\nYou can send this request using a tool like `curl`, specifying the URL of the Verus server and the JSON-RPC request data.",
+            "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c8d388ae-dcd3-49d9-a8ae-6df5c0cddbdf"
+]

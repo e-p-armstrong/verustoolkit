@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What kind of warranty or liability does the Verus software come with?",
+            "The Verus software is provided \"AS IS\", without any warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement. Additionally, the authors or copyright holders are not liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.",
+            "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**MacOS:** https://www.virustotal.com/#/file/d96bd2afb5db178dbc07cbe1708892e3d08c6b7984c32a0064a3dcfb2d2943dc/detection\n**Linux:** https://www.virustotal.com/#/file/1b08617478b2b84c3d1181a6f93f9bc6359ac57e2c434acd8e57d8b603988a9f/detection\n**Windows:**\nhttps://www.virustotal.com/#/file/040fa02e57c2e55fd0f5fc70ef8b8ea7c38e54c10fa16e967a147c9614d1fe50/detectionAvast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\n# IMPORTANT: CRITICAL UPDATE -- UPGRADE IMMEDIATELY****COMBINATION SECURITY FIX AND INITIAL PBaaS PREPARATION****",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Why might my antivirus software flag the Verus software as \"not-a-virus\" or \"PUP\"?",
+            "The Verus software may be flagged by antivirus software such as Avast or Kaspersky as \"not-a-virus\" or \"PUP\" (Potentially Unwanted Program) because it is mining software, which can be installed by a third party to exploit your PC. This is a false positive warning, and you can find more information about it in the resources provided.",
+            "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**MacOS:** https://www.virustotal.com/#/file/d96bd2afb5db178dbc07cbe1708892e3d08c6b7984c32a0064a3dcfb2d2943dc/detection\n**Linux:** https://www.virustotal.com/#/file/1b08617478b2b84c3d1181a6f93f9bc6359ac57e2c434acd8e57d8b603988a9f/detection\n**Windows:**\nhttps://www.virustotal.com/#/file/040fa02e57c2e55fd0f5fc70ef8b8ea7c38e54c10fa16e967a147c9614d1fe50/detectionAvast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\n# IMPORTANT: CRITICAL UPDATE -- UPGRADE IMMEDIATELY****COMBINATION SECURITY FIX AND INITIAL PBaaS PREPARATION****",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b381cbb7-a3b3-4383-bf30-8ebc52df2d1f"
+]

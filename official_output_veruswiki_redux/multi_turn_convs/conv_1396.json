@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to recover an identity in Verus and I'm not sure how to do it. Can you help me out?\n\n**AI Assistant:**\nRecovering an identity in Verus is actually a pretty straightforward process. You can do it using the command line with the `recoveridentity` command. The basic syntax is:\n```\nverus recoveridentity '{\"name\" : \"your_identity_name\"}'\n```\nJust replace `\"your_identity_name\"` with the actual name of the identity you want to recover.\n\n**User:**\nThat's great, thanks! But is there another way to recover an identity in Verus, besides using the command line?\n\n**AI Assistant:**\nYes, you can also recover an identity in Verus using a JSON-RPC call. This can be done using a tool like `curl`. The basic syntax is:\n```\ncurl --user your_username --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": [{\"name\" : \"your_identity_name\"}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nJust replace `\"your_username\"` with your actual username, and `\"your_identity_name\"` with the actual name of the identity you want to recover.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I recover an identity in Verus using the command line?",
+            "You can recover an identity in Verus using the `recoveridentity` command. The basic syntax is:\n```\nverus recoveridentity '{\"name\" : \"your_identity_name\"}'\n```\nReplace `\"your_identity_name\"` with the actual name of the identity you want to recover.",
+            "Examples:\n```bash\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Is there another way to recover an identity in Verus, besides using the command line?",
+            "Yes, you can also recover an identity in Verus using a JSON-RPC call. This can be done using a tool like `curl`. The basic syntax is:\n```\ncurl --user your_username --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": [{\"name\" : \"your_identity_name\"}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `\"your_username\"` with your actual username, and `\"your_identity_name\"` with the actual name of the identity you want to recover.",
+            "Examples:\n```bash\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

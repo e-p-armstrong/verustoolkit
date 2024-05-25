@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in creating my own currency on Verus. What is required to create a currency with a specific name on Verus?\n\n**AI Assistant:**\nTo create a currency with a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once. So, for example, if you want to create a currency called \"mycoin\", you would need to have an ID called \"mycoin\" and be the controller of that ID.\n\n**User:**\nThat's helpful, thanks! I understand that creating a currency is one use case for tokens on Verus, but what are some other examples of use cases for creating a token on Verus, aside from a traditional currency?\n\n**AI Assistant:**\nAn example of a use case for creating a token on Verus, aside from a traditional currency, is a Kickstarter-like token, such as \"mycoin@\". This token can be used to represent a business or project, and can be used for crowdfunding or other purposes. For instance, you could create a token to represent shares in a company, or to track ownership of a specific asset. The possibilities are quite broad, and tokens on Verus offer a lot of flexibility and customization options. Do you have any other questions about creating tokens on Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is required to create a currency with a specific name on Verus?",
+            "To create a currency with a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is an example of a use case for creating a token on Verus, aside from a traditional currency?",
+            "An example of a use case for creating a token on Verus, aside from a traditional currency, is a Kickstarter-like token, such as \"mycoin@\". This token can be used to represent a business or project, and can be used for crowdfunding or other purposes.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

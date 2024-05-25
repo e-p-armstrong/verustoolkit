@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been experimenting with Verus commands, and I'm not entirely sure what one of them does. Can you tell me what the `getlocalsolps` command does in Verus?\n\n**AI Assistant:**\nThe `getlocalsolps` command returns the average local solutions per second since this node was started. It's a useful command for monitoring the performance of your node.\n\n**User:**\nThat helps, thanks! What's the format of the result returned by the `getlocalsolps` command?\n\n**AI Assistant:**\nThe result returned by the `getlocalsolps` command is a numeric value representing the average solutions per second, in the format `xxx.xxxxx`. So, you'll see a decimal value with five digits after the decimal point.\n\n**User:**\nIs there another way to view the information provided by the `getlocalsolps` command, or do I always have to use the command to get this info?\n\n**AI Assistant:**\nActually, yes, there is another way to view this information. The same information is also shown on the metrics screen if it is enabled. So, you can toggle the metrics screen on and off to view the average local solutions per second, without having to use the `getlocalsolps` command every time.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `getlocalsolps` command do in Verus?",
+            "The `getlocalsolps` command returns the average local solutions per second since this node was started.",
+            "### `getlocalsolps`\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).#### Result:\nxxx.xxxxx   (numeric) Solutions per second average",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the format of the result returned by the `getlocalsolps` command?",
+            "The result returned by the `getlocalsolps` command is a numeric value representing the average solutions per second, in the format `xxx.xxxxx`.",
+            "### `getlocalsolps`\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).#### Result:\nxxx.xxxxx   (numeric) Solutions per second average",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Is there another way to view the information provided by the `getlocalsolps` command?",
+            "Yes, the same information is also shown on the metrics screen if it is enabled.",
+            "### `getlocalsolps`\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).#### Result:\nxxx.xxxxx   (numeric) Solutions per second average",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

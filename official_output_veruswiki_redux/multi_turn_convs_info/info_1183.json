@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What does the output `true` indicate when verifying a signature in Verus?",
+            "The output `true` indicates that the signature is valid.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n**This update is required to continue participating on the testnet launched in v0.7.2**Verus v0.7.2-1 is a non-mandatory but highly recommended Verus node and wallet upgrade, with fully decentralized finance and liquidity system activated on the new Verus testnet. While most of the new capabilities in this release are focused on testnet, the mainnet support does include some performance improvements and also fixes an issue that may occur in an edge case of revocation and recovery of IDs, which can result in a revoked ID being irrecoverable from an earlier version than v0.7.2.## Testnet Reset\nThe testnet was deleted and relaunched on v0.7.2. **IF YOU HAVE LAST LAUNCHED VRSCTEST FROM A VERSION PRIOR TO v0.7.2, PLEASE FOLLOW THE INSTRUCTIONS AT THE BOTTOM OF THE RELEASE NOTES BEFORE RUNNING THIS UPDATE**",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What are the key benefits of upgrading to Verus v0.7.2-1?",
+            "The key benefits of upgrading to Verus v0.7.2-1 include:\n\n1. Fully decentralized finance and liquidity system activated on the new Verus testnet.\n2. Performance improvements on the mainnet.\n3. Fixing an issue that may occur in an edge case of revocation and recovery of IDs, which can result in a revoked ID being irrecoverable from an earlier version.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n**This update is required to continue participating on the testnet launched in v0.7.2**Verus v0.7.2-1 is a non-mandatory but highly recommended Verus node and wallet upgrade, with fully decentralized finance and liquidity system activated on the new Verus testnet. While most of the new capabilities in this release are focused on testnet, the mainnet support does include some performance improvements and also fixes an issue that may occur in an edge case of revocation and recovery of IDs, which can result in a revoked ID being irrecoverable from an earlier version than v0.7.2.## Testnet Reset\nThe testnet was deleted and relaunched on v0.7.2. **IF YOU HAVE LAST LAUNCHED VRSCTEST FROM A VERSION PRIOR TO v0.7.2, PLEASE FOLLOW THE INSTRUCTIONS AT THE BOTTOM OF THE RELEASE NOTES BEFORE RUNNING THIS UPDATE**",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What should I do if I have last launched VRSCTEST from a version prior to v0.7.2?",
+            "If you have last launched VRSCTEST from a version prior to v0.7.2, you should follow the instructions provided in the version v0.7.2 release notes before running this update.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n**This update is required to continue participating on the testnet launched in v0.7.2**Verus v0.7.2-1 is a non-mandatory but highly recommended Verus node and wallet upgrade, with fully decentralized finance and liquidity system activated on the new Verus testnet. While most of the new capabilities in this release are focused on testnet, the mainnet support does include some performance improvements and also fixes an issue that may occur in an edge case of revocation and recovery of IDs, which can result in a revoked ID being irrecoverable from an earlier version than v0.7.2.## Testnet Reset\nThe testnet was deleted and relaunched on v0.7.2. **IF YOU HAVE LAST LAUNCHED VRSCTEST FROM A VERSION PRIOR TO v0.7.2, PLEASE FOLLOW THE INSTRUCTIONS AT THE BOTTOM OF THE RELEASE NOTES BEFORE RUNNING THIS UPDATE**",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happened to the testnet with the release of Verus v0.7.2?",
+            "The testnet was deleted and relaunched with the release of Verus v0.7.2.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n**This update is required to continue participating on the testnet launched in v0.7.2**Verus v0.7.2-1 is a non-mandatory but highly recommended Verus node and wallet upgrade, with fully decentralized finance and liquidity system activated on the new Verus testnet. While most of the new capabilities in this release are focused on testnet, the mainnet support does include some performance improvements and also fixes an issue that may occur in an edge case of revocation and recovery of IDs, which can result in a revoked ID being irrecoverable from an earlier version than v0.7.2.## Testnet Reset\nThe testnet was deleted and relaunched on v0.7.2. **IF YOU HAVE LAST LAUNCHED VRSCTEST FROM A VERSION PRIOR TO v0.7.2, PLEASE FOLLOW THE INSTRUCTIONS AT THE BOTTOM OF THE RELEASE NOTES BEFORE RUNNING THIS UPDATE**",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "46ceb4d1-39c7-44e2-a512-a2ccad1d0a53"
+]

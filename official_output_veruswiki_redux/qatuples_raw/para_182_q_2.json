@@ -1,0 +1,6 @@
+[
+    "What are the reserve requirements for a currency to be included in the list returned by `getcurrencyconverters`?",
+    "To be included in the list, a currency must have at least 1000 VRSC in reserve and a VRSC reserve ratio of more than 10%.",
+    "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

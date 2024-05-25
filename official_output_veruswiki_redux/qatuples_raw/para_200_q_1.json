@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the \"minconf\" option when sending a transaction?",
+    "The \"minconf\" option allows you to specify the minimum number of confirmations required for funds to be considered valid for use in a transaction. By default, this is set to 1, but you can increase this number to require more confirmations before the funds are considered usable.",
+    "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

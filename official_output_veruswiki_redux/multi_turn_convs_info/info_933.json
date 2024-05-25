@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `getcurrencyconverters` command in Verus?",
+            "The `getcurrencyconverters` command retrieves a list of currencies that meet specific reserve requirements, specifically having at least 1000 VRSC in reserve and a VRSC reserve ratio of more than 10%. Additionally, the listed currencies must be included as reserves.",
+            "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How do I use the `getcurrencyconverters` command to retrieve a list of currencies that meet the reserve requirements?",
+            "You can use the `getcurrencyconverters` command by specifying the currencies you're interested in, like this: `getcurrencyconverters \"currency1\" \"currency2\"... | 'json object'`. This will return a list of currencies that meet the reserve requirements and have all the specified currencies as reserves.",
+            "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What are the reserve requirements for a currency to be included in the list returned by `getcurrencyconverters`?",
+            "To be included in the list, a currency must have at least 1000 VRSC in reserve and a VRSC reserve ratio of more than 10%.",
+            "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "53c8e19f-464a-4878-9571-9fa462b2bf2d"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I use the `getcurrencyconverters` command to retrieve currencies that have a specific market, such as BTC/ETH?",
+    "You can use the `getcurrencyconverters` command with the specific currencies you're interested in as arguments. For example, to retrieve all currencies that have a BTC/ETH market at or above the liquidity threshold, you can run the following command:\n\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\n\nThis will return a list of currencies that meet the specified conditions and have a BTC/ETH market.",
+    "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

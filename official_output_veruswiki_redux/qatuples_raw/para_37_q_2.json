@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the address `RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ` in the example mining command?",
+    "The address `RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ` is the Veruscoin Foundation donation address. You should replace it with your own Verus address to receive mining rewards.",
+    "- Run your miner as you normally would, with `nice -n 19 ` placed in front of the command you normally use,\n  for example:\n   `nice -n 19 ./ccminer -a verus -o stratum+tcp://pool.verus.io:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.Donator -t 6`\n - make sure you replace the pool (`stratum+tcp://pool.verus.io:9999`) with your prefered pool and the address\n  (`RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ`) with your own address. The address shown in this line is the veruscoin\n  foundation donation address. If desired change the identifier (`Donator`) to a name that easily identifies the\n  miner to you.\n\nCreated by Oink.vrsc@.\n\nNote: last revision date 2020-11-11.",
+    "./raw_text_input_wiki/faq-lin08_low_priority_mining.html.md"
+]

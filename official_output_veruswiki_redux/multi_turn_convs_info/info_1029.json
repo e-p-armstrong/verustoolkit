@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I decode a raw transaction in Verus using the command line?",
+            "To decode a raw transaction in Verus using the command line, you can use the `decoderawtransaction` command. Here's an example:\n\n```\nverus decoderawtransaction \"hexstring\"\n```\n\nReplace `\"hexstring\"` with the actual hexadecimal string representing the raw transaction.",
+            "tput note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}\n```\nExamples:\n```bash\n> verus decoderawtransaction \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I decode a raw transaction in Verus using a JSON-RPC call?",
+            "To decode a raw transaction in Verus using a JSON-RPC call, you can use the `decoderawtransaction` method. Here's an example using `curl`:\n\n```bash\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\n\nReplace `\"hexstring\"` with the actual hexadecimal string representing the raw transaction, and `myusername` with your actual username.",
+            "tput note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}\n```\nExamples:\n```bash\n> verus decoderawtransaction \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f302007f-1ed1-4606-bb13-527ddd7d9f00"
+]

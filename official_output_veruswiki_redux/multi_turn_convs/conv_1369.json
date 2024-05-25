@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHi, I'm trying to use the `getidentitycontent` command, but I'm not sure what parameters are required. Can you help me out?\n\n**AI Assistant:**\nThe `getidentitycontent` command requires several parameters to function correctly. Let me break them down for you:\n\nTo use the `getidentitycontent` command, you'll need to provide the following parameters:\n\n1. `name@ || iid`: This is the identity name or ID for which you want to retrieve content.\n2. `heightstart`: This is the starting block height for the content retrieval.\n3. `heightend`: This is the ending block height for the content retrieval.\n4. `txproofs`: This parameter is related to transaction proofs.\n5. `txproofheight`: This parameter is related to the height of transaction proofs.\n6. `vdxfkey`: This parameter is related to the Verus ID X.509 fingerprint key.\n\nMake sure to provide all of these parameters correctly, and the `getidentitycontent` command should work as expected. If you have any more questions or need further clarification, feel free to ask!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the required parameters for the `getidentitycontent` command?",
+            "The `getidentitycontent` command requires the following parameters:\n\n1. `name@ || iid`: This is the identity name or ID for which you want to retrieve content.\n2. `heightstart`: This is the starting block height for the content retrieval.\n3. `heightend`: This is the ending block height for the content retrieval.\n4. `txproofs`: This parameter is related to transaction proofs.\n5. `txproofheight`: This parameter is related to the height of transaction proofs.\n6. `vdxfkey`: This parameter is related to the Verus ID X.509 fingerprint key.",
+            "### `getidentitycontent \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight) (vdxfkey)`",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

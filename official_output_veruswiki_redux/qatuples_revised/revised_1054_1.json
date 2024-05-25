@@ -1,0 +1,6 @@
+[
+    "What is the OPTION_NFT_TOKEN flag used for in Verus?",
+    "The OPTION_NFT_TOKEN flag, set to 2048, is used to create a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This means that the NFT token represents ownership and control of the root ID.",
+    "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How can I create a new token called \"mycoin\" using the command line, which can be converted to with either VRSCTEST or GOLD?",
+            "To create a new token called \"mycoin\" using the command line, you can use the `definecurrency` command with the following format:\n\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\n\nThis command defines a new token named \"mycoin\". Some important notes about this configuration:\n\n1. `proofprotocol` being set to 2 means that it's set to PROOF_CHAINID. This means that the controller of the chain ID can mint new coins.\n2. `options` is a configurable integer, in this case set to 97.\n3. `currencies` lists which tokens can be converted to mycoin.\n4. `\"minpreconversion\": [10000,5.1298]` defines the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin, respectively.\n5. `initialsupply` sets the initial supply of mycoin to 20,000 units.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```**Launching the testnet:**\n```\n./verusd -chain=VRSCTEST\n```\n# Disclaimer",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does it mean if `proofprotocol` is set to 2 when defining a new token?",
+            "When `proofprotocol` is set to 2 when defining a new token, it means that the proof protocol is set to PROOF_CHAINID, which means that the controller of the chain ID may mint new tokens. This can be done with a command like the following example:\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```**Launching the testnet:**\n```\n./verusd -chain=VRSCTEST\n```\n# Disclaimer",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How can I launch the testnet for VRSCTEST?",
+            "To launch the testnet for VRSCTEST, you can simply run the following command:\n```\n./verusd -chain=VRSCTEST\n```\nThis will start the testnet for VRSCTEST.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```**Launching the testnet:**\n```\n./verusd -chain=VRSCTEST\n```\n# Disclaimer",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e4bb0c69-03dc-4436-af81-ac2df6c4ea98"
+]

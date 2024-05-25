@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been trying to figure out the `decodescript` command in Verus. Can you tell me what its purpose is?\n\n**AI Assistant:**\nThe `decodescript` command in Verus is used to decode a script that has been encoded in hexadecimal (hex) format. It's a useful tool for working with scripts in Verus.\n\n**User:**\nThat's helpful to know. How do I actually use the `decodescript` command to decode a hex-encoded script?\n\n**AI Assistant:**\nTo decode a hex-encoded script in Verus, you can use the `decodescript` command followed by the hex-encoded script, like this: `decodescript \"hex\"`. This will decode the script and display the result. Make sure to replace `\"hex\"` with the actual hex-encoded script you want to decode.\n\n**User:**\nGot it! What kind of input does the `decodescript` command expect, anyway?\n\n**AI Assistant:**\nThe `decodescript` command expects a hex-encoded script as input. You can provide the hex-encoded script as a string, and the command will take care of decoding it for you.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `decodescript` command in Verus?",
+            "The `decodescript` command in Verus is used to decode a script that has been encoded in hexadecimal (hex) format.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How do I use the `decodescript` command to decode a hex-encoded script in Verus?",
+            "To decode a hex-encoded script in Verus, you can use the `decodescript` command followed by the hex-encoded script, like this: `decodescript \"hex\"`. This will decode the script and display the result.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What kind of input does the `decodescript` command expect?",
+            "The `decodescript` command expects a hex-encoded script as input.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

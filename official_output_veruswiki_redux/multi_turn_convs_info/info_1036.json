@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `decodescript` command in Verus?",
+            "The `decodescript` command in Verus is used to decode a script that has been encoded in hexadecimal (hex) format.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How do I use the `decodescript` command to decode a hex-encoded script in Verus?",
+            "To decode a hex-encoded script in Verus, you can use the `decodescript` command followed by the hex-encoded script, like this: `decodescript \"hex\"`. This will decode the script and display the result.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What kind of input does the `decodescript` command expect?",
+            "The `decodescript` command expects a hex-encoded script as input.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e71985da-edd9-4127-96c8-eb27bbe66629"
+]

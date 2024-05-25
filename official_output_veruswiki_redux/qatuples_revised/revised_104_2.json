@@ -1,0 +1,6 @@
+[
+    "What are the reserve requirements for a currency to be included in the results of the `currencyconverters` API?",
+    "To be included in the results of the `currencyconverters` API, a currency must have at least 1000 VRSC in reserve and a reserve ratio of at least 10% VRSC. Additionally, the currency must have all listed currencies as reserves.",
+    "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

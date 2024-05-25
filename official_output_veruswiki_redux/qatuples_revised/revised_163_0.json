@@ -1,0 +1,6 @@
+[
+    "How does the referral system work in Verus when creating an identity?",
+    "When creating an identity in Verus, the referral system rewards the referrer's ID, the referrer's referrer's ID, and the referrer's referrer's referrer's ID with 20 VRSC each. Additionally, the miner of the block in which the ID is mined also receives 20 VRSC.",
+    "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+    "./raw_text_input_wiki/release_notes.md"
+]

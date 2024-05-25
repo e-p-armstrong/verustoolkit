@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `-rpcservertimeout` option in Verus, and what is its default value?",
+    "The `-rpcservertimeout` option in Verus is used to set a timeout for HTTP requests. Its default value is 30 seconds.",
+    "`-rpcservertimeout=<n>`\n    Timeout during HTTP requests (default: 30)\n\ncompiled by Oink.vrsc@.\nNote: last revision date 2024-05-03.",
+    "./raw_text_input_wiki/clifaq-01_verusd_options.md"
+]

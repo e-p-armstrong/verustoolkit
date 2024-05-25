@@ -1,0 +1,6 @@
+[
+    "What are some of the key performance improvements in Verus version 0.9.6 for testnet?",
+    "Verus version 0.9.6 for testnet includes caching and performance improvements for advanced PBaaS functions, which enables high transaction bandwidth and cross-chain throughput under load for each chain.",
+    "### For testnet, v0.9.6 adds the following:\n- Caching and performance improvements for advanced PBaaS functions, providing enough performance to keep high transaction bandwidth and/or cross-chain throughput under load for each chain.\n- Most hardening required for the mainnet release.\n- **The Verus/Ethereum Bridge!** v0.9.6 includes the upgraded Ethereum bridge to the Goerli testnet live with all bridgekeeping, Ethereum Gas price tracking, and reward incentive capabilities for miners and stakers. Rewards for bridgekeeping are delivered both on Verus and on the Ethereum blockchain. Access the Ethereum bridge website (https://ethtest.verus.services) to move over some Goerli Ethereum or USDC, and participate in the Bridge.vETH liquidity basket launch to hold and earn fees on a basket with vETH, USDC, and VRSCTEST used as the fee converter for all cross chain transactions between Ethereum\u2019s Goerli and VRSC testnets.",
+    "./raw_text_input_wiki/release_notes.md"
+]

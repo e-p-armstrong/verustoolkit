@@ -1,0 +1,6 @@
+[
+    "How does the `OPTION_NFT_TOKEN` option work in Verus?",
+    "The `OPTION_NFT_TOKEN` option in Verus, set to 2048, enables the creation of a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This allows for decentralized control and management of the root ID.",
+    "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

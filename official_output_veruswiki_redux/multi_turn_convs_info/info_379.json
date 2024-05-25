@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I send VRSCTEST from a PBaaS chain to the VRSCTEST chain using the command line and Verus?",
+            "You can send VRSCTEST from a PBaaS chain to the VRSCTEST chain using the `sendcurrency` command with the following format:\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThis command sends 10 units of the PBaaSChain's native currency to the address `RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv` on the VRSCTEST chain, using the Bridge.PBaaSChain to facilitate the transfer.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does the `convertto` parameter do in the `sendcurrency` command?",
+            "The `convertto` parameter in the `sendcurrency` command specifies the currency that the sent amount should be converted to on the destination chain. In this case, `convertto` is set to `VRSCTEST`, which means that the sent amount will be converted to VRSCTEST on the VRSCTEST chain.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "6e672ad4-457b-4e38-af9e-e56b93d6c979"
+]

@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm interested in mining Verus. Where can I find information about Verus mining pools?\n\n**AI Assistant:**\nYou can find information about Verus mining pools online by searching for Verus mining pool resources or by visiting websites that provide information on cryptocurrency mining pools. There are many resources available that list and compare different mining pools, so you should be able to find what you're looking for with a quick search. Do you have any experience with mining, or is this a new venture for you?\n\n**User:**\nNo, I'm new to mining. I've been using the Verus wallet, but I've run into an issue. My Verus wallet is stuck on a specific block number and no longer synchronizes properly. What should I do?\n\n**AI Assistant:**\nSorry to hear that! If your Verus wallet is stuck on a specific block number and no longer synchronizes properly, there are a few troubleshooting steps you can try. First, try restarting your wallet and see if that resolves the issue. Also, make sure your internet connection is stable and working properly. Additionally, ensure that your wallet is up to date, as an outdated wallet can cause synchronization issues. If none of these steps work, you may need to seek further assistance from the Verus support team. Have you tried any of these steps already?\n\n**User:**\nThanks for the help! I had another issue recently. I accidentally sent funds to a B-address and cannot move those funds. Is there anything I can do?\n\n**AI Assistant:**\nOh no, that's frustrating! If you accidentally sent funds to a B-address and cannot move those funds, you may need to use specialized tools or seek assistance from a qualified expert to recover your funds. Unfortunately, recovering funds from a B-address can be a complex process, and it's not something that can be easily resolved without some technical expertise. I would recommend reaching out to the Verus community or a trusted expert for guidance on how to proceed. Have you considered reaching out to the Verus support team for assistance with this issue?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Where can I find information about Verus mining pools?",
+            "You can find information about Verus mining pools online by searching for Verus mining pool resources or by visiting websites that provide information on cryptocurrency mining pools.",
+            "ng_pools.md)\n[Verus Wallet & VRSC.conf standard locations](#!faq-allos/faq-allos24_wallet.dat_and_vrsc.conf_location.md)\n[My wallet is stuck on block number XXXX. It does not synchronize properly anymore.](#!faq-allos/faq-allos25_wallet_not_synced.md)\n[I accidentally send funds to a B-address and cannot move those funds](#!faq-allos/faq-allos26_sent_funds_to_b-address.md)",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "What should I do if my Verus wallet is stuck on a specific block number and no longer synchronizes properly?",
+            "If your Verus wallet is stuck on a specific block number and no longer synchronizes properly, try troubleshooting steps such as restarting your wallet, checking your internet connection, and ensuring that your wallet is up to date. If the issue persists, you may need to seek further assistance from the Verus support team.",
+            "ng_pools.md)\n[Verus Wallet & VRSC.conf standard locations](#!faq-allos/faq-allos24_wallet.dat_and_vrsc.conf_location.md)\n[My wallet is stuck on block number XXXX. It does not synchronize properly anymore.](#!faq-allos/faq-allos25_wallet_not_synced.md)\n[I accidentally send funds to a B-address and cannot move those funds](#!faq-allos/faq-allos26_sent_funds_to_b-address.md)",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "What can I do if I accidentally sent funds to a B-address and cannot move those funds?",
+            "If you accidentally sent funds to a B-address and cannot move those funds, you may need to use specialized tools or seek assistance from a qualified expert to recover your funds.",
+            "ng_pools.md)\n[Verus Wallet & VRSC.conf standard locations](#!faq-allos/faq-allos24_wallet.dat_and_vrsc.conf_location.md)\n[My wallet is stuck on block number XXXX. It does not synchronize properly anymore.](#!faq-allos/faq-allos25_wallet_not_synced.md)\n[I accidentally send funds to a B-address and cannot move those funds](#!faq-allos/faq-allos26_sent_funds_to_b-address.md)",
+            "./raw_text_input_wiki/index.md"
+        ]
+    ]
+]

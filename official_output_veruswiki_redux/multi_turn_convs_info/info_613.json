@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the relationship between an ID and a currency in Verus?",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level.\nFirst, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\nof course, since this is a test currency, I send myself some to start. The identity of the curre",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How can I define a currency in Verus?",
+            "To define a currency in Verus, you can use the `definecurrency` command. For example, to define a currency called \"gold\", you can run the following command:\n\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\n\nThis command defines the properties of the currency, such as its name, options, convertible currencies, conversion rates, and pre-allocations.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level.\nFirst, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\nof course, since this is a test currency, I send myself some to start. The identity of the curre",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of pre-allocations when defining a currency in Verus?",
+            "Pre-allocations are used to allocate a certain amount of the currency to specific IDs before the currency is launched. In the example command, the pre-allocation `{\"mike@\":50000000.00000000}` allocates 50,000,000 units of the \"gold\" currency to the ID \"mike@\".",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level.\nFirst, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\nof course, since this is a test currency, I send myself some to start. The identity of the curre",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How can I use Verus to create a token with utility or product value?",
+            "Verus allows you to create tokens with utility or product value by defining a currency with specific properties and pre-allocations. For example, you can create a token called \"mycoin\" that represents a Kickstarter-like offering, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level. You can define the properties of the token using the `definecurrency` command, and then allocate the tokens to specific IDs or use cases.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level.\nFirst, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\nof course, since this is a test currency, I send myself some to start. The identity of the curre",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "6da1c78d-5328-4611-a035-8b5163042d02"
+]

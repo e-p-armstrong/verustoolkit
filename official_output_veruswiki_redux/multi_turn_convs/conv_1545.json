@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been going through the Verus options and I'm not entirely sure what they do. Can you help me out with the OPTION_GATEWAY_NAMECONTROLLER option?\n\n**AI Assistant:**\nThe OPTION_GATEWAY_NAMECONTROLLER option, set to 1024, determines the behavior of gateway name and currency registration. When this option is not set on a gateway, the top-level ID and currency registration occur on the launch chain. Does that make sense? Do you have any further questions about this option or Verus in general?\n\n**User:**\nYes, actually, I do. What does the OPTION_NFT_TOKEN option do in Verus?\n\n**AI Assistant:**\nThe OPTION_NFT_TOKEN option, set to 2048, enables the creation of a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This allows for unique, indivisible, and verifiable ownership of the root ID. It's an interesting feature, and I'd be happy to explain more if you'd like. Do you have any other questions about Verus options or Verus in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the OPTION_GATEWAY_NAMECONTROLLER option in Verus?",
+            "The OPTION_GATEWAY_NAMECONTROLLER option, set to 1024, determines the behavior of gateway name and currency registration. When this option is not set on a gateway, the top-level ID and currency registration occur on the launch chain.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does the OPTION_NFT_TOKEN option do in Verus?",
+            "The OPTION_NFT_TOKEN option, set to 2048, enables the creation of a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This allows for unique, indivisible, and verifiable ownership of the root ID.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "How do I specify the range of block heights to return exports for in a Verus command?",
+    "You can specify the range of block heights to return exports for by using the \"heightstart\" and \"heightend\" arguments. For example, if you want to return exports between block heights 100 and 200, you would set \"heightstart\" to 100 and \"heightend\" to 200.",
+    "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

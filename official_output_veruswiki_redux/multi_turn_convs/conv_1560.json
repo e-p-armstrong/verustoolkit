@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey there! I've been using Verus commands, but I'm not entirely sure about some of the arguments. Can you help me out? What is the purpose of the \"chainname\" argument in a Verus command?\n\n**AI Assistant:**\nThe \"chainname\" argument is used to specify the name of the chain to look for in a Verus command. If no parameter is provided, the command will return the current chain in the daemon. Do you have any other questions about Verus commands or arguments?\n\n**User:**\nActually, yes! I've also been wondering about the \"heightstart\" and \"heightend\" arguments. What do they do in a Verus command?\n\n**AI Assistant:**\nThe \"heightstart\" and \"heightend\" arguments are used to filter exports based on their block height. \"heightstart\" specifies the minimum block height, and \"heightend\" specifies the maximum block height. By default, \"heightstart\" is set to 0, and \"heightend\" is set to the maximum height, which means that all exports will be returned unless these arguments are specified.\n\n**User:**\nThat makes sense. So, how do I specify the range of block heights to return exports for in a Verus command?\n\n**AI Assistant:**\nYou can specify the range of block heights to return exports for by using the \"heightstart\" and \"heightend\" arguments. For example, if you want to return exports between block heights 100 and 200, you would set \"heightstart\" to 100 and \"heightend\" to 200. Does that help?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the \"chainname\" argument in a Verus command?",
+            "The \"chainname\" argument is used to specify the name of the chain to look for in a Verus command. If no parameter is provided, the command will return the current chain in the daemon.",
+            "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What do the \"heightstart\" and \"heightend\" arguments do in a Verus command?",
+            "The \"heightstart\" and \"heightend\" arguments are used to filter exports based on their block height. \"heightstart\" specifies the minimum block height, and \"heightend\" specifies the maximum block height. By default, \"heightstart\" is set to 0, and \"heightend\" is set to the maximum height, which means that all exports will be returned unless these arguments are specified.",
+            "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How do I specify the range of block heights to return exports for in a Verus command?",
+            "You can specify the range of block heights to return exports for by using the \"heightstart\" and \"heightend\" arguments. For example, if you want to return exports between block heights 100 and 200, you would set \"heightstart\" to 100 and \"heightend\" to 200.",
+            "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

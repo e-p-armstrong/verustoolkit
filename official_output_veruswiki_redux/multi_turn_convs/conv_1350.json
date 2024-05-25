@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I've got a question about using the `sendcurrency` command. What happens when I use it to convert my VRSCTEST to GOLD before GOLD is launched?\n\n**AI Assistant:**\nWhen you use the `sendcurrency` command to convert your VRSCTEST to GOLD before GOLD is launched, it effectively parks your conversion until the GOLD token launches. Once GOLD launches, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned. So, don't worry, your funds will be safely stored until the conversion can be completed. Do you have any more questions about using `sendcurrency` or the conversion process?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens when I use the `sendcurrency` command to convert my VRSCTEST to GOLD before GOLD is launched?",
+            "When you use the `sendcurrency` command to convert your VRSCTEST to GOLD before GOLD is launched, it effectively parks your conversion until the GOLD token launches. Once GOLD launches, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned.",
+            "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

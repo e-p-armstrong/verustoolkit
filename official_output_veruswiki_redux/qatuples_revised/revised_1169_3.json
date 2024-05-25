@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `listtransactions` command in Verus?",
+    "The `listtransactions` command is used to retrieve a list of transactions for a specific account, skipping a specified number of transactions from the start. It can be used to get a list of recent transactions for an account, or to get a list of transactions starting from a specific point in the account's transaction history.",
+    "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

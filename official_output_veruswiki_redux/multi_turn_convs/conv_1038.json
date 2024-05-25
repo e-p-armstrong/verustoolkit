@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm trying to understand how the `sendcurrency` command works. Let's say I use it to convert VRSCTEST to a new token, like GOLD, before the token launches. What happens in this scenario?\n\n**AI Assistant:**\nWhen you use the `sendcurrency` command to convert VRSCTEST to a new token (like GOLD) before the token launches, your conversion is effectively parked until the token launches. Once the token launches, you will either find the converted amount of GOLD in your wallet (in this case, 0.975 GOLD), or you will have your original VRSCTEST amount returned.\n\nSo, in essence, your conversion is put on hold until the new token is available, and then it's either completed successfully or reverted back to the original state. Does that make sense? Do you have any more questions about using `sendcurrency` or token conversions in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens when I use the `sendcurrency` command to convert VRSCTEST to a new token (like GOLD) before the token launches?",
+            "When you use the `sendcurrency` command to convert VRSCTEST to a new token (like GOLD) before the token launches, your conversion is effectively parked until the token launches. Once the token launches, you will either find the converted amount of GOLD in your wallet (in this case, 0.975 GOLD), or you will have your original VRSCTEST amount returned.",
+            "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

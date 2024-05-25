@@ -1,0 +1,6 @@
+[
+    "How do I export my wallet using the Windows CLI?",
+    "To export your wallet using the Windows CLI, run the command `verus z_exportwallet <mywalletexport>`.",
+    "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+    "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to understand some of the options in Verus. Can you help me out? What is the purpose of the OPTION_GATEWAY_NAMECONTROLLER option?\n\n**AI Assistant:**\nThe OPTION_GATEWAY_NAMECONTROLLER option, set to 1024, determines where top-level ID and currency registration occur when not set on a gateway. Specifically, it causes registration to happen on the launch chain. Does that make sense?\n\n**User:**\nYeah, that helps. What about the OPTION_NFT_TOKEN option? What's the purpose of that?\n\n**AI Assistant:**\nThe OPTION_NFT_TOKEN option, set to 2048, enables the creation of a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This allows for unique, tradable assets to be created on the Verus network. It's a pretty powerful feature, and it opens up a lot of possibilities for creating custom assets on the Verus platform. Do you have any more questions about these options or Verus in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the OPTION_GATEWAY_NAMECONTROLLER option in Verus?",
+            "The OPTION_GATEWAY_NAMECONTROLLER option, set to 1024, determines where top-level ID and currency registration occur when not set on a gateway. Specifically, it causes registration to happen on the launch chain.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the OPTION_NFT_TOKEN option in Verus?",
+            "The OPTION_NFT_TOKEN option, set to 2048, enables the creation of a single satoshi NFT (non-fungible token) that tokenizes control over the root ID. This allows for unique, tradable assets to be created on the Verus network.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "How do I properly format my commands in the Windows command line when using Verus?",
+    "To properly format your commands in the Windows command line when using Verus, you should follow specific guidelines for command line formatting. These guidelines can be found in the Verus documentation, specifically in the section on Windows command line formatting.",
+    "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+    "./raw_text_input_wiki/index.md"
+]

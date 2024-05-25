@@ -1,0 +1,6 @@
+[
+    "What kind of information can I expect to receive when I run the `getblockchaininfo` command?",
+    "When you run the `getblockchaininfo` command, you can expect to receive an object containing various state information regarding blockchain processing. This information may include details about the current state of the blockchain, such as block height, difficulty, and other relevant metrics.",
+    "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

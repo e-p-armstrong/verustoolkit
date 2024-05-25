@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I verify the authenticity of a Verus download using the command line?",
+            "You can verify the authenticity of a Verus download using the `verifyfile` or `verifyhash` commands. The `verifyfile` command takes three arguments: the identity of the signer, the signature, and the file path. The `verifyhash` command takes three arguments: the identity of the signer, the signature, and the file checksum.\n\nHere's an example of how to use `verifyfile`:\n```\n./verus verifyfile \"Verus Coin Foundation@\" AfLZDAABQR9H2eDMg7vKCrf7KmJt/4+8Vi4FMJSrer93IUNCMhkw63JHnCXrIv1GysI3nhkY3qoCXGpWQiIBlk6pzA/+Ztg8 /Downloads/Verus-CLI-Linux-v0.6.2-amd64.tar.gz\n```\n\nAnd here's an example of how to use `verifyhash`:\n```\n./verus verifyhash \"Verus Coin Foundation@\" AfLZDAABQR9H2eDMg7vKCrf7KmJt/4+8Vi4FMJSrer93IUNCMhkw63JHnCXrIv1GysI3nhkY3qoCXGpWQiIBlk6pzA/+Ztg8 0eb57c65fc05daa34a55863f12987d4127cd8dd8c8fdce36df206e900598c9fe\n```\n\nIf the signature is valid, the result will be `true`.",
+            "## Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation@\".\n### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation@\" AfLZDAABQR9H2eDMg7vKCrf7KmJt/4+8Vi4FMJSrer93IUNCMhkw63JHnCXrIv1GysI3nhkY3qoCXGpWQiIBlk6pzA/+Ztg8 /Downloads/Verus-CLI-Linux-v0.6.2-amd64.tar.gz\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation@\" AfLZDAABQR9H2eDMg7vKCrf7KmJt/4+8Vi4FMJSrer93IUNCMhkw63JHnCXrIv1GysI3nhkY3qoCXGpWQiIBlk6pzA/+Ztg8 0eb57c65fc05daa34a55863f12987d4127cd8dd8c8fdce36df206e900598c9fe\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Notable Changes\n- z_importviewingkey and z_exportviewingkey for Sapling to enable confidential, verifiable, and transparent voting# Verus ID\nVerusIDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. VerusIDs provide plenty of opportunity for identity applications. Specifically, VerusID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `verifyfile` and `verifyhash` commands in Verus?",
+            "The `verifyfile` and `verifyhash` commands are used to verify the authenticity and integrity of Verus downloads. They ensure that the downloaded file has not been tampered with or corrupted during transmission, and that it comes from a trusted source (in this case, the Verus Coin Foundation).",
+            "## Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation@\".\n### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation@\" AfLZDAABQR9H2eDMg7vKCrf7KmJt/4+8Vi4FMJSrer93IUNCMhkw63JHnCXrIv1GysI3nhkY3qoCXGpWQiIBlk6pzA/+Ztg8 /Downloads/Verus-CLI-Linux-v0.6.2-amd64.tar.gz\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation@\" AfLZDAABQR9H2eDMg7vKCrf7KmJt/4+8Vi4FMJSrer93IUNCMhkw63JHnCXrIv1GysI3nhkY3qoCXGpWQiIBlk6pzA/+Ztg8 0eb57c65fc05daa34a55863f12987d4127cd8dd8c8fdce36df206e900598c9fe\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Notable Changes\n- z_importviewingkey and z_exportviewingkey for Sapling to enable confidential, verifiable, and transparent voting# Verus ID\nVerusIDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. VerusIDs provide plenty of opportunity for identity applications. Specifically, VerusID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a0517850-4730-4788-be80-cb176527006b"
+]

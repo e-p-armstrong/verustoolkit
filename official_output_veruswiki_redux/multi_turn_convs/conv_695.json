@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been wondering, how does the referral system work in Verus when creating an identity?\n\n**AI Assistant:**\nWhen creating an identity in Verus, the referral system rewards the referrer's ID, the referrer's referrer's ID, and the referrer's referrer's referrer's ID with 20 VRSC each. Additionally, the miner of the block in which the ID is mined also receives 20 VRSC. It's a great way to incentivize users to participate in the network and help others create their identities.\n\n**User:**\nThat's really interesting. What happens to the remaining funds after the referrers and miners are paid when creating an identity in Verus?\n\n**AI Assistant:**\n100% of the remaining funds that are not paid to referrers go to the miners or stakers of the blockchain. This ensures that the network is secure, decentralized, and that those who support it are rewarded for their efforts. The Verus ecosystem is designed to be fair and transparent, and this mechanism helps to maintain that.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How does the referral system work in Verus when creating an identity?",
+            "When creating an identity in Verus, the referral system rewards the referrer's ID, the referrer's referrer's ID, and the referrer's referrer's referrer's ID with 20 VRSC each. Additionally, the miner of the block in which the ID is mined also receives 20 VRSC.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens to the remaining funds after the referrers and miners are paid when creating an identity in Verus?",
+            "100% of the remaining funds that are not paid to referrers go to the miners or stakers of the blockchain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

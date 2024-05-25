@@ -1,0 +1,6 @@
+[
+    "What happens to my previous transactions if I upgrade my VerusID to a quantum secure address?",
+    "When you upgrade your VerusID to a quantum secure address, all previous transactions sent to your original identity name/address will be retroactively secured under the control of that address. This means that even if you had 1000 transactions sent to your original address, they will all be protected by the quantum secure address after the upgrade.",
+    "s as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+    "./raw_text_input_wiki/release_notes.md"
+]

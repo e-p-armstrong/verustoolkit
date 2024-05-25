@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "Why do Avast and Kaspersky flag the Verus software as \"not-a-virus\" or \"PUP\"?",
+            "Avast and Kaspersky flag the Verus software as \"not-a-virus\" or \"PUP\" (Potentially Unwanted Program) because it includes mining software, which could potentially be used by a third party to exploit your PC. This is a false positive warning, and you can learn more about it by reviewing the resources provided.",
+            "Avast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\nAt block 800200, The Verus mainnet protocol was updated to include VerusID. This update is the latest for the upgraded Verus mainnet.# Notable Changes\n- Fix accretion of coinbases in mempool# Verus ID\nVerusIDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. VerusIDs provide plenty of opportunity for identity applications. Specifically, VerusID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What changes were made to the Verus mainnet protocol at block 800200?",
+            "At block 800200, the Verus mainnet protocol was updated to include VerusID. This update also fixed the accretion of coinbases in the mempool.",
+            "Avast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\nAt block 800200, The Verus mainnet protocol was updated to include VerusID. This update is the latest for the upgraded Verus mainnet.# Notable Changes\n- Fix accretion of coinbases in mempool# Verus ID\nVerusIDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. VerusIDs provide plenty of opportunity for identity applications. Specifically, VerusID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is VerusID, and how does it differ from other blockchain ID implementations?",
+            "VerusID is a fully functional blockchain protocol, not just an ID system. Unlike most blockchain ID implementations, there is no corporation involved in the protocol. VerusIDs provide opportunities for identity applications and offer features such as quantum-ready friendly crypto addresses, full decentralization, revocability, recoverability, and privacy.",
+            "Avast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\nAt block 800200, The Verus mainnet protocol was updated to include VerusID. This update is the latest for the upgraded Verus mainnet.# Notable Changes\n- Fix accretion of coinbases in mempool# Verus ID\nVerusIDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. VerusIDs provide plenty of opportunity for identity applications. Specifically, VerusID provides:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "0da8a424-a407-4041-93ba-a3374031f7c7"
+]

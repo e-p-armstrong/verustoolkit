@@ -1,0 +1,6 @@
+[
+    "What information does the `getnettotals` command in Verus provide?",
+    "The `getnettotals` command in Verus returns an object containing three pieces of information: `totalbytesrecv` (the total number of bytes received), `totalbytessent` (the total number of bytes sent), and `timemillis` (the total CPU time).",
+    "#### Result:\n```json\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n```\nExamples:\n```bash\n> verus getnettotals\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getnetworkinfo`\nReturns an object containing various state info regarding P2P networking.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

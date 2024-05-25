@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getunconfirmedbalance` command in Verus?",
+    "The `getunconfirmedbalance` command returns the server's total unconfirmed balance.",
+    "Examples:\n```bash\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getunconfirmedbalance`\nReturns the server's total unconfirmed balance### `getwalletinfo`\nReturns an object containing various wallet state info.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

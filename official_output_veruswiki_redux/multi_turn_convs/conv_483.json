@@ -1,0 +1,14 @@
+[
+    "**User:**\nI'm getting a better understanding of VerusIDs, but I'm still a bit unclear on how they relate to currencies in Verus. Can you explain the relationship between an ID and a currency in Verus?\n\n**AI Assistant:**\nIn Verus, an ID with a specific name is required to create a currency of the same name. The controller of this ID has the exclusive right to create a currency with that name, and they can only do so once. This means that if you want to create a currency, you need to have an ID with the same name, and you can only create that currency once. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the relationship between an ID and a currency in Verus?",
+            "In Verus, an ID with a specific name is required to create a currency of the same name. The controller of this ID has the exclusive right to create a currency with that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

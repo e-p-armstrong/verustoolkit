@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getblockchaininfo` command in Verus?",
+    "The `getblockchaininfo` command returns an object containing various state information regarding blockchain processing. This command is useful for getting an overview of the current state of the blockchain.",
+    "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

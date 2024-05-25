@@ -1,0 +1,6 @@
+[
+    "How do I use the `decodescript` command to decode a hex-encoded script in Verus?",
+    "To decode a hex-encoded script in Verus, you can use the `decodescript` command followed by the hex-encoded script, like this: `decodescript \"hex\"`. This will decode the script and display the result.",
+    "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

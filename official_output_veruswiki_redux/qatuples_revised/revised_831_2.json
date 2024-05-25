@@ -1,0 +1,6 @@
+[
+    "Can I use JSON RPC to interact with Verus and create digital signatures?",
+    "Yes, you can use JSON RPC to interact with Verus and create digital signatures. You can use a command like:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"identity\":\"your_identity.vrsc@\", \"message\":\"your_message\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nReplace `myusername` with your Verus username, `your_identity.vrsc@` with the VerusID you want to use, and `your_message` with the text you want to sign.",
+    "```\n#### Examples\nCreate the signature\n```bash\n> verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'\n```\nVerify the signature\n```bash\n> verus verifydata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'\n```\nAs json rpc\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

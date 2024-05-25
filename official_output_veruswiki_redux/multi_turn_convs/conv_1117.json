@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about blocks in Verus. How can I determine when an immature block will mature (unlock) in Verus?\n\n**AI Assistant:**\nTo determine when an immature block will mature, you can follow these steps:\n\n1. Get the current block height (\"blocks\") and the \"blockstomaturity\" value, which represents the distance to maturity of the transaction in question.\n2. Apply the formula: blockstomaturity / 1440 = days to maturity (unlocking).\n\nFor example, if blockstomaturity is 925558, you would calculate 925558 / 1440 = 643 days.\n\nDoes that make sense? Do you have any questions about what the \"blockstomaturity\" value actually represents?\n\n**User:**\nActually, yes, I do! What is the purpose of the \"blockstomaturity\" value in Verus?\n\n**AI Assistant:**\nThe \"blockstomaturity\" value represents the number of blocks between the current block height and where the transaction will unlock (mature). It is used to calculate the number of days until the block matures. Think of it as a countdown to when the block will be fully mature and ready to use.\n\nBy knowing the \"blockstomaturity\" value, you can plan ahead and anticipate when your transaction will be fully confirmed and available for use. Do you have any more questions about blocks or transactions in Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I determine when an immature block will mature (unlock) in Verus?",
+            "To determine when an immature block will mature, you can follow these steps:\n\n1. Get the current block height (\"blocks\") and the \"blockstomaturity\" value, which represents the distance to maturity of the transaction in question.\n2. Apply the formula: blockstomaturity / 1440 = days to maturity (unlocking).\n\nFor example, if blockstomaturity is 925558, you would calculate 925558 / 1440 = 643 days.",
+            "# Question: How do I know when an immature block will \"unlock\" (mature)?\n\n## Procedure:\n1. Get the values of the current block height (\"blocks\") and the \"blockstomaturity\" the distance to maturity of the transaction in question. (i.e. the number of blocks between current block height and where it unlocks. You can see the number is decreasing all the time, and if you add it to the current block height you'll see a constant.)\n2. Apply this formula: blockstomaturity / 1440 = days to maturity (unlocking)\n  e.g. 925558/1440=643 days\n\n(submitted by @J Oliver Westbrook, edited by @elvinsophus )",
+            "./raw_text_input_wiki/faq-allos01_immature_block_unlock_time_calculation_manual_calculation.md"
+        ],
+        [
+            "What is the purpose of the \"blockstomaturity\" value in Verus?",
+            "The \"blockstomaturity\" value represents the number of blocks between the current block height and where the transaction will unlock (mature). It is used to calculate the number of days until the block matures.",
+            "# Question: How do I know when an immature block will \"unlock\" (mature)?\n\n## Procedure:\n1. Get the values of the current block height (\"blocks\") and the \"blockstomaturity\" the distance to maturity of the transaction in question. (i.e. the number of blocks between current block height and where it unlocks. You can see the number is decreasing all the time, and if you add it to the current block height you'll see a constant.)\n2. Apply this formula: blockstomaturity / 1440 = days to maturity (unlocking)\n  e.g. 925558/1440=643 days\n\n(submitted by @J Oliver Westbrook, edited by @elvinsophus )",
+            "./raw_text_input_wiki/faq-allos01_immature_block_unlock_time_calculation_manual_calculation.md"
+        ]
+    ]
+]

@@ -1,0 +1,44 @@
+[
+    [
+        [
+            "What is the purpose of the `OPTION_SINGLECURRENCY` option when defining a token or currency in Verus?",
+            "The `OPTION_SINGLECURRENCY` option, with a value of 64, is used to restrict a PBaaS chain or gateway to a single currency. This means that the chain or gateway will only support transactions in that specific currency.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does the `OPTION_GATEWAY` option do when setting up a currency or token in Verus?",
+            "The `OPTION_GATEWAY` option, with a value of 128, indicates that the currency or token is a gateway that routes external currencies. This allows the gateway to connect to and facilitate transactions with other external currencies.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `OPTION_PBAAS` option when defining a token or currency in Verus?",
+            "The `OPTION_PBAAS` option, with a value of 256, indicates that the token or currency is a PBaaS (Private Blockchain as a Service) chain definition. This is a specific type of blockchain implementation that provides a private and customizable blockchain solution.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does the `OPTION_GATEWAY_CONVERTER` option do when setting up a PBaaS gateway in Verus?",
+            "The `OPTION_GATEWAY_CONVERTER` option, with a value of 512, indicates that the gateway is a default converter for a specific PBaaS gateway. This means that it will publish prices for the gateway and facilitate currency conversions.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `OPTION_GATEWAY_NAMECONTROLLER` option when setting up a gateway in Verus?",
+            "The `OPTION_GATEWAY_NAMECONTROLLER` option, with a value of 1024, determines where top-level ID and currency registration occurs. If this option is not set on a gateway, registration happens on the launch chain. Otherwise, it happens on the gateway.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is an NFT token in the context of Verus, and how is it represented by the `OPTION_NFT_TOKEN` option?",
+            "In the context of Verus, an NFT (Non-Fungible Token) token is a unique, single-satosh\u00ed token that tokenizes control over the root ID. The `OPTION_NFT_TOKEN` option, with a value of 2048, represents this type of token.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e5ddb485-825f-4c92-a923-a8a9d92d9617"
+]

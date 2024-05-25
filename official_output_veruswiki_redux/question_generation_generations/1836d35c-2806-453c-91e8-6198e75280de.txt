@@ -1,0 +1,438 @@
+- content: "You are creating a logically-consistent series of questions about the\
+    \ Verus multi-chain and multi-currency blockchain protocol. Given some text from\
+    \ an informational website about Verus, the Verus coin, or other related Verus\
+    \ community projects, you will create a comprehensive list of questions based\
+    \ on the given information, and *only* based on the given information. The questions\
+    \ will test comprehension of real information that would be worthy to teach in\
+    \ order for people to understand more about the Verus protocol and community.\
+    \ After each question, you will also write its answer.\n\nThe sequence of the\
+    \ questions matters. They should build on each other. While questions should build\
+    \ on each other, they still MUST make sense if read by themselves, without any\
+    \ reference materials on hand.\n\nThe questions must ask about information that\
+    \ a user of Verus might ask about. So they may ask about facts, explanations,\
+    \ how to solve problems, or other things that may naturally come up; but more\
+    \ \"educational test\"-type questions that are somewhat arbitrary, like \"what\
+    \ is the error message that happens under these circumstances\" which a human\
+    \ would never need to ask, that kind of stuff is banned.\n\n**Useful general background\
+    \ information that comes up a lot:**\n\nVerus is an open-source, fairly launched,\
+    \ decentralized blockchain protocol with proof-of-work and proof-of-stake as its\
+    \ consensus mechanism. It offers rent-free blockchain tools for creators and organizations\
+    \ to build products, services and systems.\n\nVerus is a multichain protocol with\
+    \ strong focus on scalability, security and decentralization. It can scale to\
+    \ world demand, is proven 51% hash attack resistant and is community built - all\
+    \ coins in circulation are fairly mined and staked.\n\n* Any string resembling\
+    \ \"Name@\" is likely a VerusID, which is essentially a crypto-address.\n* Verus\
+    \ has been launched for a number of years by this point, and the mainnet and testnet\
+    \ are both fully functional. Anything alluding to \"upcoming launches\" of features\
+    \ could likely be out of date. So be ambiguous.\n\n**You Must:**\n\n* Create detailed\
+    \ educational questions based on the snippet of a website.\n* Do not mention the\
+    \ website, or the text, or any other reference. Just ask about the facts or information.\n\
+    * Create as many or as few questions as are needed to adequately cover the material\
+    \ in the snippet of the site.\n* Ensure a logical sequence of questions that build\
+    \ on each other.\n* Keep in mind the timestamp of any solution. The current year\
+    \ is: 2024.\n* Use markdown formatting (such as code blocks and snippets) in your\
+    \ questions if applicable.\n* Focus on important information that is relevant\
+    \ to understanding Verus. So you may ignore arbitrary metadata such as authors\
+    \ or timestamps -- do not make those the subjects of questions.\n* Keep in mind\
+    \ that the provided text snippet may cut off abruptly. Work around this.\n* Include\
+    \ the information from the given paragraph alongside a simpler explanation of\
+    \ some underlying concepts, if possible.\n\n**Note:**\n\n* Documents may be out\
+    \ of date, and technology described as being in development has likely been released\
+    \ already. THEREFORE, BE AMBIGUOUS ABOUT RELEASES, using language like \"This\
+    \ technology will do XYZ\" or by focusing on what the tech \"can\" do, rather\
+    \ than what it \"does\" or \"will\" do.\n* You will always take a positive opinion\
+    \ of Verus and try to promote it through the education.\n* Do NOT provide anchor\
+    \ links to content in your answers; since the provided text to make questions\
+    \ from is from a website, those links will be broken when used outside of said\
+    \ website. So you should NEVER have any content like [some text](#!/some/path)\
+    \ in your answer! External links are fine though.\n\nYou will create however many\
+    \ questions make are needed to adequately cover the information in the paragraph.\n\
+    \nDo not explicitly mention the provided text or the context in the questions\
+    \ themselves \u2014 just ask about the concepts related to the questions.\n\n\
+    If the text allows for an open-ended question, consider starting with an open-ended\
+    \ question that gets at some broader information and helps teach high-level understanding,\
+    \ before you start working your way down the paragraph making questions from the\
+    \ top to the bottom. If the paragraph does not really allow for an open-ended\
+    \ question, and is rather constrained (like a how-to) then consider just starting\
+    \ with a \"normal\" question, from the perspective of a user of Verus, which asks\
+    \ about information that's important to know."
+  role: system
+- content: "Text to make questions from: \n\"\"\"\n# error while loading shared libraries:\
+    \ libgomp.so.1: No such file or directory\n# error while loading shared libraries:\
+    \ libz.so: No such file or directory\n\nWhen running `./verusd` on a Linux distro\
+    \ (eg Debian or Devuan), not all dependencies may be installed by default, resulting\
+    \ in the errormessage `error while loading shared libraries: libgomp.so.1: No\
+    \ such file or directory` or `error while loading shared libraries: libz.so: No\
+    \ such file or directory`.\n\nTo solve this you need to install the libgomp and\
+    \ zlib1g-dev libraries:\n`sudo apt-get install libgomp1 zlib1g-dev`\n\nSolution\
+    \ supplied by: Oink.vrsc@\n\nNote: revision date 2021-12-01.\n\"\"\"\n\n----------------\n\
+    Reminder 1: Focus on questions that someone could realistically ask to try and\
+    \ understand Verus better. This includes a requirement to ask about information\
+    \ that is not obvious: someone would not, after seeing an error, ask what the\
+    \ error message they got is. Instead, they would ask how to solve the error message.\n\
+    Reminder 2: Be ambiguous about timestamps and future releases. Dodge by describing\
+    \ what the technology does in general."
+  role: user
+- content: '**QUESTION:**
+
+    What causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    These errors may be caused by required dependencies for `./verusd` not being installed
+    by default on a Linux distribution. The lack of required dependencies results
+    in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    **QUESTION:**
+
+    If I run `./verusd` and encounter these errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    How can I solve them?
+
+
+    **ANSWER:**
+
+    In order to solve these errors, which are likely caused by dependencies not being
+    installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: assistant
+- content: "Text to make questions from: \n\"\"\"\nrusID\n\n**VerusIDs** are a fully\
+    \ functional blockchain protocol, not just an ID system. There is no corporation\
+    \ involved in the protocol, unlike most blockchain ID implementations. **VerusIDs**\
+    \ provide plenty of opportunity for identity applications. Specifically, **VerusID**\
+    \ provides:\n\n### Quantum-ready friendly crypto-addresses on the worldwide Verus\
+    \ network\nVerusIDs can be used to receive and send funds, which are controlled\
+    \ by the single or multi-sig addresses specified in the identity itself. If these\
+    \ controlling addresses or the single or multi-sig properties are changed, which\
+    \ can be done by the controller of the identity, all future spends of UTXOs sent\
+    \ to that identity follow the updated spend conditions and are subject to the\
+    \ updated keys. Although Verus 0.6.2 does not include quantum resistant signatures\
+    \ for transactions, VerusIDs are themselves resistant to quantum attack with known\
+    \ algorithms, and we have already started to integrate a quantum secure signature\
+    \ scheme, which we expect to activate on mainnet early next year. When that is\
+    \ available, it will be possible to change an ID and have all of the funds sent\
+    \ to it made retroactively quantum resistant. VerusIDs can also be used to publish\
+    \ ID->destination address mappings on other blockchains, but only the Verus ecosystem\
+    \ has the ability to revoke, recover, inherit, funds in existing UTXOs.\n\n###\
+    \ Fully Decentralized Protocol\nAnyone can create one and have complete, self\
+    \ sovereign control over it without permission to do so. All costs to create an\
+    \ ID go to miners, stakers, and ID referrers. VerusIDs are:\n\n* Revocable --\
+    \ each ID includes a revocation authority, which defaults to the identity self.\
+    \ If another ID is specified as the revocation authority it can be used to revoke\
+    \ the identity, which creates a valid transaction that, once mined into a block,\
+    \ prevents the identity from being used to spend or sign until it is recovered,\
+    \ effectively freezing all of its funds, for example, in the case of key theft\
+    \ or turnover in an organization.\n\n* Recoverable -- each ID also includes a\
+    \ separate recovery authority, which also defaults to self. If another ID is specified\
+    \ as the recovery authority it can be used to recover the ID from its revoked\
+    \ state, with the option to alter the primary authorities used to spend and sign.\n\
+    \n* Private - Each ID contains a set of zero-knowledge private addresses, which\
+    \ can be used as messaging, financial, or voting endpoints, and each ID also contains\
+    \ a content map of key-value hashes, intended to be used alongside applications\
+    \ and various identity policies to provide everything from private yet selectively\
+    \ provable claims and attestations to selectively provable components of a strong\
+    \ identity, attested to with a quantum secure signature when that is available.\n\
+    \n* Powerful - Multiple addresses or other IDs can be defined as primary addresses,\
+    \ and any number of those may be required to spend, sign, or alter the identity\
+    \ (N of M). The revocation authority may only be altered by the revocation authority,\
+    \ and the same applies to the recovery authority, either of which may be another\
+    \ identity with its own N of M multisig contro\n\"\"\"\n\n----------------\nReminder\
+    \ 1: Focus on questions that someone could realistically ask to try and understand\
+    \ Verus better. This includes a requirement to ask about information that is not\
+    \ obvious: someone would not, after seeing an error, ask what the error message\
+    \ they got is. Instead, they would ask how to solve the error message.\nReminder\
+    \ 2: Be ambiguous about timestamps and future releases. Dodge by describing what\
+    \ the technology does in general."
+  role: user
+- content: "**QUESTION:**\nWhat are VerusIDs?\n\n**ANSWER:**\nVerusIDs are a fully-functional\
+    \ blockchain protocol. Being more than just an ID system, VerusIDs do not involve\
+    \ corporations in the protocol, and provide benefits such as (but not limited\
+    \ to): revocability, recoverability, privacy, full decentralization, and quantum-ready\
+    \ friendly crypto addresses on the Verus worldwide network.\n\nThey are a form\
+    \ of crypto-address, a unique identifier that serves as a destination for sending\
+    \ and receiving digital assets. \n\n**QUESTION:**\nWhat does \"quantum-ready friendly\
+    \ crypto-addresses\" mean, in the context of Verus and VerusIDs?\n\n**ANSWER:**\n\
+    The phrase \"quantum-ready friendly crypto-addresses,\" in the context of Verus\
+    \ and VerusIDs, refers to the resistance of VerusIDs against attack by quantum\
+    \ computers that use existing algorithms. Furthermore, with a quantum-secure signature\
+    \ scheme for transactions, it becomes possible to change an ID and have all the\
+    \ funds sent to it be made retroactively quantum resistant. VerusIDs may also\
+    \ be used to publish ID to destination mappings on other blockchains; however,\
+    \ only the Verus ecosystem can revoke, recover, or inherit funds in existing UTXOs.\n\
+    \nThe basic idea is that quantum computers, once invented, have the potential\
+    \ to break many cryptographic algorithms used to secure digital assets. Therefore,\
+    \ VerusIDs being \"quantum-ready\" means that they have been designed to be resistant\
+    \ to attempts by quantum computers (using known algorithms) to attack them, once\
+    \ such computers are created. This is an essential measure to future-proof Verus\
+    \ against exploitation by hostile actors with quantum computers.\n\n**QUESTION:**\n\
+    What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**ANSWER:**\n\
+    VerusIDs can be created by anyone, without needing permission from a central authority,\
+    \ and give their creator complete, self-sovereign control over their ID. The costs\
+    \ incurred creating an ID go to miners, stakers, and ID referrers \u2014 essentially,\
+    \ the community members who help maintain Verus \u2014 rather than single entity\
+    \ like a corporation or government. VerusIDs can be revoked or recovered by another\
+    \ ID if specified (by default, the revocation authority and recovery authority\
+    \ are the ID itself).\n\nEssentially, VerusIDs being fully decentralized means\
+    \ that neither their creation, usage, or recovery/revocation need to be managed\
+    \ or approved by a central authority \u2014 the community supports the transaction.\
+    \ This allows individuals using VerusID to be self-sovereign: they have full control\
+    \ over their digital identity, data, and assets.\n\n**QUESTION:**\nWhat do VerusIDs\
+    \ offer me in terms of privacy and power?\n\n**ANSWER:**\nVerusIDs offer many\
+    \ advantages, and are both private and powerful. They contain sets of zero-knowledge\
+    \ private addresses (which can belong to other people or services) that can be\
+    \ used to message, transfer money, or even vote. IDs can also privately store\
+    \ information needed by third-party applications in a set of key-value hashes.\
+    \ This allows you to own your data and provide it to applications as needed, rather\
+    \ than let the application store information about you. Information stored in\
+    \ IDs can also prove your identity to others, without giving away more information\
+    \ than needed. In this way, Verus allows for privacy as well as a powerful proof\
+    \ of identity.\n\nVerusIDs are also notable in that multiple addresses or other\
+    \ IDs can be defined as primary addresses. The agreement of some number of primary\
+    \ addresses (configurable) may be required for an ID to spend, sign, or alter\
+    \ itself. Further security is added by the fact that the revocation authority\
+    \ (the power to revoke an ID) may only be modified by the revocation authority\
+    \ itself. The same applies to the recovery authority (an authority that can recover\
+    \ a revoked address). Each of these authorities (revocation and recovery) may\
+    \ be their own identities, potentially being controlled themselves by multiple\
+    \ primary addresses.\n\nIn short, VerusIDs are private with your information,\
+    \ and configurable with who controls them and what consensus is required to change\
+    \ them."
+  role: assistant
+- content: "Text to make questions from: \n\"\"\"\n```\n./verus -chain=VRSCTEST sendcurrency\
+    \ \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\"\
+    :100}]'\n```\nthat would effectively park my conversion until the token launches,\
+    \ at which point, I will either find 0.975 GOLD in my wallet, or I will have my\
+    \ VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which\
+    \ can be converted to with either GOLD or VRSCTEST, I can create mycoin with:\n\
+    \n  ```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\"\
+    :33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\"\
+    :[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol\
+    \ to 2, which is PROOF_CHAINID. That means that the controller of the chain ID\
+    \ can mint new coins as follows:\n\n  ```\n./verus -chain=VRSCTEST sendcurrency\
+    \ \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"\
+    amount\":10000}]'\n```\n\n#### Defining a PBaaS blockchain\n```json\n  {\n  \"\
+    name\": \"PBaaSChain\",\n  \"options\": 264,\n  \"currencies\": [\n    \"VRSCTEST\"\
+    \n  ],\n  \"conversions\": [\n    1\n  ],\n  \"eras\": [\n    {\n      \"reward\"\
+    : 1200000000,\n      \"decay\": 0,\n      \"halving\": 0,\n      \"eraend\": 0\n\
+    \    }\n  ],\n  \"notaries\": [\n    \"Notary1@\",\n    \"Notary2@\",\n    \"\
+    Notary3@\"\n  ],\n  \"minnotariesconfirm\": 2,\n  \"nodes\": [\n    {\n      \"\
+    networkaddress\": \"111.111.111.111:10000\",\n      \"nodeidentity\": \"Node1@\"\
+    \n    },\n    {\n      \"networkaddress\": \"111.111.111.112:10000\",\n      \"\
+    nodeidentity\": \"Node2@\"\n    }\n  ],\n  \"gatewayconvertername\": \"Bridge\"\
+    ,\n  \"gatewayconverterissuance\": 1000000\n}\n```\nThe bridge definition has\
+    \ overridable defaults\n```json\n  {\n  \"currencies\": [\n    \"VRSCTEST\",\n\
+    \    \"PBaaSChain\",\n    \"USD\"\n  ],\n  \"initialcontributions\": [\n    380228.12033701,\n\
+    \    0,\n    1000000\n  ],\n  \"initialsupply\": 3000000\n}\n```\n\nNow pass those\
+    \ definitions to `definecurrency`\n```shell\n./verus -chain=vrsctest definecurrency\
+    \ '{\"name\":\"PBaaSChain\",\"options\":264,\"currencies\":[\"VRSCTEST\"],\"conversions\"\
+    :[1],\"eras\":[{\"reward\":1200000000,\"decay\":0,\"halving\":0,\"eraend\":0}],\"\
+    notaries\":[\"Notary1@\",\"Notary2@\",\"Notary3@\"],\"minnotariesconfirm\":2,\"\
+    nodes\":[{\"networkaddress\":\"111.111.111.111:10000\",\"nodeidentity\":\"Node1@\"\
+    },{\"networkaddress\":\"111.111.111.112:10000\",\"nodeidentity\":\"Node2@\"}],\"\
+    gatewayconvertername\":\"Bridge\",\"gatewayconverterissuance\":1000000}' '{\"\
+    currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\"initialcontributions\":[371747.20398827,0,1000000],\"\
+    initialsupply\":3000000}'\n```\n#### Exporting an ID to a PBaaS chain\n```\nverus\
+    \ -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"IDNAME@\",\"exportto\":\"\
+    PBaaSChainName\",\"exportid\":\"true\",\"amount\":100,\"currency\":\"vrsctest\"\
+    }]'\n```\n\"\"\"\n\n----------------\nReminder 1: Focus on questions that someone\
+    \ could realistically ask to try and understand Verus better. This includes a\
+    \ requirement to ask about information that is not obvious: someone would not,\
+    \ after seeing an error, ask what the error message they got is. Instead, they\
+    \ would ask how to solve the error message.\nReminder 2: Be ambiguous about timestamps\
+    \ and future releases. Dodge by describing what the technology does in general."
+  role: user
+- content: "**QUESTION:**\nHow can I park a conversion of VRSCTEST to a new token\
+    \ (like GOLD) before that token launches, using the command line?\n\n**ANSWER:**\n\
+    To park a conversion of VRSCTEST to a new token before the token launches, you\
+    \ can use the `sendcurrency` command with the following format:\n\n```\n./verus\
+    \ -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"your_address@\",\"convertto\"\
+    :\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\n\nThis will effectively park\
+    \ your conversion until the GOLD token launches. After the launch, you will either\
+    \ find the converted amount of GOLD in your wallet, or you will have your original\
+    \ VRSCTEST amount returned.\n\n**QUESTION:**\nHow can I create a new token called\
+    \ \"mycoin\" using the command line, which can be converted to with either GOLD\
+    \ or VRSCTEST? Assume that GOLD is a new token that just launched.\n\n**ANSWER:**\n\
+    In order to create a new token called \"mycoin\" using the command line, you must\
+    \ run a command to define the currency's properties. Here's an example of such\
+    \ a command:\n\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\"\
+    ,\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"\
+    minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\n\nThis command\
+    \ defines a new token named \"mycoin\". Some important notes about this configuration:\n\
+    \n1. `proofprotocol` being set to 2 means that it's set to PROOF_CHAINID. This\
+    \ means that the controller of the chain ID can mint new coins.\n2. `options`\
+    \ is a configurable integer, in this case set to 33.\n3. `currencies` lists which\
+    \ tokens can be converted to mycoin.\n4. `\"minpreconversion\": [10000,5.1298]`\
+    \ defines the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin,\
+    \ respectively.\n5. `initialsupply` sets the initial supply of mycoin to 20,000\
+    \ units.\n\n**QUESTION:**\nWhat does it mean if `proofprotocol` is set to 2 when\
+    \ defining a new token?\n\n**ANSWER:**\nWhen `proofprotocol` is set to 2 when\
+    \ defining a new token, it means that the proof protocol is set to PROOF_CHAINID,\
+    \ which means that the controller of the chain ID may mint new tokens. This can\
+    \ be done with a command like the following example:\n```\n./verus -chain=VRSCTEST\
+    \ sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"\
+    mintnew\":1,\"amount\":10000}]'\n```\n\n**QUESTION:**\nHow can I define a PBaaS\
+    \ blockchain using Verus?\n\n**ANSWER:**\nYou can define a PBaaS blockchain using\
+    \ a single command line command with Verus. You need to pass two JSON objects,\
+    \ one for the PBaaS blockchain, and another for the overridable defaults of the\
+    \ bridge. Here's an example of how to define a PBaaS blockchain:\n\n```shell\n\
+    ./verus -chain=vrsctest definecurrency '{\"name\":\"PBaaSChain\",\"options\":264,\"\
+    currencies\":[\"VRSCTEST\"],\"conversions\":[1],\"eras\":[{\"reward\":1200000000,\"\
+    decay\":0,\"halving\":0,\"eraend\":0}],\"notaries\":[\"Notary1@\",\"Notary2@\"\
+    ,\"Notary3@\"],\"minnotariesconfirm\":2,\"nodes\":[{\"networkaddress\":\"111.111.111.111:10000\"\
+    ,\"nodeidentity\":\"Node1@\"},{\"networkaddress\":\"111.111.111.112:10000\",\"\
+    nodeidentity\":\"Node2@\"}],\"gatewayconvertername\":\"Bridge\",\"gatewayconverterissuance\"\
+    :1000000}' '{\"currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\"initialcontributions\"\
+    :[371747.20398827,0,1000000],\"initialsupply\":3000000}'\n```\n\nNote the following\
+    \ important information used when defining the PBaaS blockchain:\n\n1. The \"\
+    name\" field defines the name of the chain.\n2. The \"options\" property is an\
+    \ integer, in this case it's set to 264.\n2. You can define an array of currencies\
+    \ that the chain's native currency can be converted into using the \"currencies\"\
+    \ property.\n3. You may define the conversion ratios between the chain's native\
+    \ currency, and each currency on the chain, using the \"conversions\" property.\n\
+    4. The \"eras\" property defines the block reward, reward decay, halving, and\
+    \ end of each \"era\" in the chain's lifecycle\n5. \"notaries\" is a list of the\
+    \ VerusIDs that will serve as notaries on the chain.\n6. \"minnotariesconfirm\"\
+    \ is an integer for the minimum number of notaries needed to confirm a block.\n\
+    7. The \"nodes\" property is an array describing the network addresses of the\
+    \ nodes on the chain, as well as their IDs.\n\nNote that the bridge definition\
+    \ default overrides are a separate string from the currency definition properties.\
+    \ The bridge can be used to move funds on and off the PBaaS chain. The bridge's\
+    \ JSON object has some of its own properties:\n1. `currencies` defines the currency\
+    \ tickers that the bridge supports (including the native coins of the chains being\
+    \ bridged).\n2. `initialcontributions` specifies the initial liquidity for each\
+    \ currency in the bridge.\n3. `initialsupply` gives the initial supply for the\
+    \ bridge's native token.\n\n**QUESTION:**\nHow can I export an ID to a PBaaS chain\
+    \ using the command line and Verus?\n\n**ANSWER:**\nYou can accomplish this with\
+    \ a single command on the command line \u2014 the sendcurrency command. Here's\
+    \ an example, where the ID \"IDNAME@\" is exported to \"PBaaSChainName.\"\n\n\
+    ```\nverus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"IDNAME@\",\"exportto\"\
+    :\"PBaaSChainName\",\"exportid\":\"true\",\"amount\":100,\"currency\":\"vrsctest\"\
+    }]'\n```\n\nSome parts of this command you should be aware of:\n1. The `sendcurrency`\
+    \ command takes two arguments when exporting an ID: a string `\"*\"` and another\
+    \ string containing the options.\n2. `address` is the ID being exported.\n3. `exportto`\
+    \ is the chain being exported to.\n4. `exportid` indicates that in this case,\
+    \ `sendcurrency` is being used to export an ID.\n5. `amount` specifies the amount\
+    \ of currency being sent.\n6. `currency` specifies the type of currency being\
+    \ sent."
+  role: assistant
+- content: "Text to make questions from: \n\"\"\"\nTo create a currency of a specific\
+    \ name, you need an ID of the same name. The controller of this ID is the only\
+    \ one who can create a currency of that name, and they can only do so once.\n\
+    So, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@,\
+    \ and one named mike@. I would like to have one currency, gold@,\nthat I somehow\
+    \ launch in a way that maps it in a way that can be widely trusted to a specific,\
+    \ auditable store of gold.\nI also would like to launch a token called mycoin@,\
+    \ which is something like a Kickstarter, where a business, \"my\", offers to attribute\
+    \ the coins some utility or product value if the purchase exceeds a certain level.\n\
+    First, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST\
+    \ definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"\
+    ],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\"\
+    :50000000.00000000}]}'\n```\nof course, since this is a test currency, I send\
+    \ myself some to start. The identity of the currency must be funded with at least\
+    \ 10 VRSCTEST before sending the transaction returned from this command to\ninitiate\
+    \ a currency launch that will start at 50 blocks from when it was made (default),\
+    \ and that must have 1000 VRSCTEST preconverted at 0.01 VRSCTEST per GOLD in order\
+    \ to launch.\nall of this happens as part of the mining process, since mining\
+    \ the blocks that launch a currency earn the 0.025% conversion fees of participation\n\
+    in the launch, converting VRSCTEST to GOLD. I could send the following command\
+    \ before the block where GOLD token launches.\nAfter it launches, the only way\
+    \ at present to create new tokens is with a centralized issuance option. To convert\
+    \ VRSCTEST to GOLD, you could issue the command:\n```\n./verus -chain=VRSCTEST\
+    \ sen\n\"\"\"\n\n----------------\nReminder 1: Focus on questions that someone\
+    \ could realistically ask to try and understand Verus better. This includes a\
+    \ requirement to ask about information that is not obvious: someone would not,\
+    \ after seeing an error, ask what the error message they got is. Instead, they\
+    \ would ask how to solve the error message.\nReminder 2: Be ambiguous about timestamps\
+    \ and future releases. Dodge by describing what the technology does in general.\n\
+    Text context: this text is from an informational website about Verus."
+  role: user
+- content: '**QUESTION:**
+
+    What is required to create a currency with a specific name in Verus?
+
+
+    **ANSWER:**
+
+    To create a currency with a specific name, you need an ID of the same name. The
+    controller of this ID is the only one who can create a currency of that name,
+    and they can only do so once.
+
+
+    **QUESTION:**
+
+    How do I define a new currency, such as "gold", and what are the requirements
+    for launching it?
+
+
+    **ANSWER:**
+
+    To define a new currency, you can use the `definecurrency` command with the required
+    parameters. For example, to define a currency called "gold", you would use the
+    following command:
+
+
+    ```
+
+    ./verus -chain=VRSCTEST definecurrency ''{"name":"gold","options":96,"currencies":["vrsctest"],"conversions":[0.01],"minpreconversion":[1000],"preallocations":[{"mike@":50000000.00000000}]}''
+
+    ```
+
+
+    To launch the currency, you need to fund the identity of the currency with at
+    least 10 VRSCTEST and have 1000 VRSCTEST preconverted at 0.01 VRSCTEST per GOLD.
+    The currency launch will start 50 blocks from when the transaction is made, and
+    miners will earn 0.025% conversion fees by participating in the launch.
+
+
+    **QUESTION:**
+
+    How do I convert VRSCTEST to GOLD after the GOLD token has launched?
+
+
+    **ANSWER:**
+
+    After the GOLD token has launched, you can convert VRSCTEST to GOLD using the
+    `send` command. For example:
+
+
+    ```
+
+    ./verus -chain=VRSCTEST send...
+
+    ```
+
+
+    The exact command will depend on the specific conversion you want to make.'
+  role: assistant
+  timeout: false

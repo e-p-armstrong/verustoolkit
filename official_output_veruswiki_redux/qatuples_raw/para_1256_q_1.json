@@ -1,0 +1,6 @@
+[
+    "How can I convert VRSCTEST to a new token, like GOLD, using the command line?",
+    "To convert VRSCTEST to GOLD, you can use the `sendcurrency` command with the following format:\n\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"your_address@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\n\nThis command effectively parks your conversion until the GOLD token launches. After the launch, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned.",
+    "he only way at present to create new tokens is with a centralized issuance option. To convert VRSCTEST to GOLD, you could issue the command:\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What happens to my parked conversion once the new token, like GOLD, launches?",
+            "Once the new token, like GOLD, launches, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned. In this specific example, you would find 0.975 GOLD in your wallet, or you would have your VRSCTEST back.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2377ae8a-cc92-444c-b278-6199e82ee8cc"
+]

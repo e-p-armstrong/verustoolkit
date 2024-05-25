@@ -1,0 +1,6 @@
+[
+    "What does the `getimports` command do in Verus?",
+    "The `getimports` command returns all imports into a specific currency, optionally filtered by a specific block range.",
+    "### `getimports \"chainname\" (startheight) (endheight)`\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n#### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   default=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

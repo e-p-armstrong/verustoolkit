@@ -1,0 +1,6 @@
+[
+    "How can I get information about my wallet's balances, including immature and staking balances, using Verus?",
+    "You can get information about your wallet's balances, including immature and staking balances, by running the command `verus getwalletinfo`.",
+    "get info about your wallet, (immature & staking) balances:\n`verus getwalletinfo`\n\nSending VRSC coins from your verus wallet to and another VRSC address (only public address in this case, seperate command for z-addresses I think):\n`verus sendtoaddress \"<VRSC_address>\" <AMOUNT> \"<Some comments here>\"`\n\nListing the latest VRSC transactions:\n`verus listtransactions`\n\nShield reward coins from all public addresses:\n`verus z_shieldcoinbase \"*\" \"<z-ADDRESS>\"`\n\nTransfer X VRSX from any (P-, i- and z-) address to any (P-, i- and z-) address:\n`verus z_sendmany \"<z-, i- or P-ADDRESS>\" '[{\"amount\":<X>, \"address\":\"<Z-, i- or P-ADDRESS>\"}]'`\n\nCheck the Operation Status of your z_sendmany command (or z_shieldconbase):\n`verus z_getoperationstatus`\n\nDisclaimer: Always read up before using a verus-cli command, more info on each command can be found using the following:\n`verus help`\n\nAdded by @Crupti, @Oliver Westbrook and Oink.vrsc@\nnote: last revision date 2020-05-09.",
+    "./raw_text_input_wiki/faq-allos10_useful_cli_commands.md"
+]

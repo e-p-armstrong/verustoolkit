@@ -1,0 +1,6 @@
+[
+    "Can I use a Raspberry Pi ARM board to mine Verus coins?",
+    "No, Raspberry Pi ARM boards lack some instruction sets required for mining. However, if you have a Raspberry Pi3 or Pi4, you can use them as staking devices if you install an ARM64 operating system.",
+    "# Updating the ARM CLI wallet.Attention: Read it completely before use.## Necessary files:Link 1: [Download latest Wallet](https://verus.io/wallet)## Verus `Wallet.dat`, Chaindata & `VRSC.conf` standard locations\n * ARM Linux:\t\t`~/.komodo/VRSC`Note: Due to the size of the blockchain, on an ARM installation this directory is usually stored on a mounted external hard drive.\nThis will have its own file path that was specified when the drive was mounted.\nThus the path to `~/.komodo/VRSC` directory is likely to be user-specified & thus non-standard on an ARM.---(NB This version is aimed at inexperienced users, so it includes the associated routine/basic Linux commands.\nYou will need access to the relevant directories, which may require sudo priveleges)(NB Raspberry Pi ARM boards lack some instruction sets to mine, though the Pi3 & Pi4 are ARM64 & can be used as staking devices if an ARM64 operating system is installed)---## Procedure:",
+    "./raw_text_input_wiki/armfaq-03_updating.md"
+]

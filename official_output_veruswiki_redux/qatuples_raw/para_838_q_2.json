@@ -1,0 +1,6 @@
+[
+    "What are the implications of setting `proofprotocol` to PROOF_CHAINID for a currency?",
+    "Setting `proofprotocol` to PROOF_CHAINID for a currency means that the controller of the chain ID has the ability to mint new coins. This allows for more control over the currency supply and can be useful in certain use cases, such as decentralized finance (DeFi) applications or tokenized assets. However, it also means that the controller of the chain ID has significant power over the currency, which can be a centralizing factor.",
+    "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,6 @@
+[
+    "Where are the standard locations for Verus-Desktop installations on Windows?",
+    "The standard locations for Verus-Desktop installations on Windows can be found in the Verus documentation, specifically in the section on standard locations for Verus-Desktop installations. Knowing these locations can help you troubleshoot issues or find the files you need to configure your Verus setup.",
+    "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+    "./raw_text_input_wiki/index.md"
+]

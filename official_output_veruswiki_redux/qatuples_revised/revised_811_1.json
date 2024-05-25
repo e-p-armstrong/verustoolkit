@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `sourceoffunds` parameter in Verus transactions?",
+    "The `sourceoffunds` parameter is an optional address or ID that you can specify as the source of funds for your transaction. If you don't specify a value, the transparent wildcard \"*\" will be used, which means that the funds can come from any available source.",
+    "rn a transaction for additional\n                      signatures rather than committing it\nfeeoffer              (amount, optional)\n                      amount to offer miner/staker for the registration\n                      fee, if missing, uses standard price\nsourceoffunds           (addressorid, optional) optional address to use for source of funds. if not specified, transparent wildcard \"*\" is used\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

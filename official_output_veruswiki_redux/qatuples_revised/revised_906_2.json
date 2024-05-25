@@ -1,0 +1,6 @@
+[
+    "What does the result of the `getminingdistribution` command look like?",
+    "The result of the `getminingdistribution` command is a JSON object that contains information about the mining distribution. If the mining distribution is not set, the result will be a NULL object. If it is set, the result will be an object with key-value pairs, where each key is a unique destination address and the value is the relative value output to that address.",
+    "Examples:\n```bash\n> verus getlocalsolps\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getminingdistribution`\nRetrieves current mining distribution#### Arguments\nNONE#### Result:\n```\nNULL object if not set\nIf set:\n{\n \"uniquedestination1\":value  (key/number) valid destination address and relative value output to it\n \"uniquedestination2\":value  (key/number) destination address and relative value output\n ...\n}\n```#### Examples:\n```bash\n> verus getminingdistribution\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getminingdistribution\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

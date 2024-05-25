@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the first step in the procedure, `./verus z_shieldcoinbase \"*\"`?",
+    "The purpose of the first step is to capture all coinbases, which are mined coins that are not yet staking. This command allows you to collect these coins and prepare them for further use.",
+    "## Procedure:\n1) `./verus z_shieldcoinbase \"*\"` my_private_address_without_quotationmarks\nthis capture all so called coinbases, i.e. mined coins that are not yet staking.\nyou have to wait 100 blocks (minutes) after receiving them before being able to move them.\nwait for a few minutes for the tx to be confirmed.\n2) `./verus z_getbalance <my_private_address_without_quotationmarks>` this is to substract the 0.0001 VRSC fee from the balance in the next step.\n3) `./verus z_sendmany <my_private_address_without_quotationmarks> '[{\"address\":\"<my_transparent_address>\",\"amount\":<95.9998>}]'`\namount is minus 0.0001 from balance and without quotation marks.\n(4) to verify: `./verus z_gettotalbalance`\nafter a few minutes (operations from private addresses are a bit time consuming)\n\nNote: I am always using the same private address.\n\n(submitted by @karero, based on @dukeleto)\n\nNote: last revision date 2020-04-12.",
+    "./raw_text_input_wiki/faq-allos17_unshield_coin_rewards_and_get_them_staking_in_cli.md"
+]

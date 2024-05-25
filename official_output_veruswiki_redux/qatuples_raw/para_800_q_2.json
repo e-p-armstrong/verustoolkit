@@ -1,0 +1,6 @@
+[
+    "What happens if a Verus community uses both Komodo notarizations and their own proof of power protocol for their PBaaS chain?",
+    "If a Verus community uses both Komodo notarizations and their own proof of power protocol for their PBaaS chain, the Komodo notarizations will help maintain a stable chain tip, but the PBaaS chain will still prioritize its own internal consensus mechanism and witnessed tips. This ensures that the chain remains secure and stable, even if there are multiple notarization mechanisms in place.",
+    "mmunity opts to use the Komodo notary service, Komodo notarizations will continue to ensure a stable chain tip, but no matter what other notarizations are present, PBaaS chains will always follow their proof of power protocol and lock to their witnessed tips as well.",
+    "./raw_text_input_wiki/release_notes.md"
+]

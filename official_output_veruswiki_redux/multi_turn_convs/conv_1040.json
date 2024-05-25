@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got Verus set up on my machine, but I'm not entirely sure if everything is working as it should. How do I know when the Verus Daemon is operational and mining is working correctly?\n\n**AI Assistant:**\nOnce the Verus Daemon is operational, you'll see a message indicating that mining is working correctly, such as \"256 mega hashes complete - working\". This indicates that the daemon is successfully generating blocks and mining is operational. If you see this message, you can be confident that everything is up and running smoothly.\n\n**User:**\nThat's great, thanks for the help! I've got one more question. I'm running the daemon in Tmux, but I'm not sure how to detach from the process. How do I do that?\n\n**AI Assistant:**\nTo detach from the Verus Daemon process in Tmux, press `[ctrl]&b d`. This will detach you from the process, allowing you to continue using your terminal while the daemon runs in the background. You can then close your terminal or move on to other tasks without interrupting the daemon's operation. Give it a try!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I know when the Verus Daemon is operational and mining is working correctly?",
+            "Once the Verus Daemon is operational, you'll see a message indicating that mining is working correctly, such as \"256 mega hashes complete - working\". This indicates that the daemon is successfully generating blocks and mining is operational.",
+            "g++-multilib -y`\n Install Tmux a terminal multiplexer with which you can run threads in the background see https://en.wikipedia.org/wiki/Tmux\n `sudo apt-get install tmux -y`\n Start tmux:\n `tmux`\n Launch Verus Daemon with or without number of threads\n (usually number of threads equals number of cores or double of that if the processor support hyper threading well)\n `~/verus-cli/verusd -gen -genproclimit`\n `~/verus-cli/verusd -gen -genproclimit=24`\n Once mining is operational \u2013 again this may take some time \u2013\n you\u2019ll see: 256 mega hashes complete - working\n then detach tmux\n`[ctrl]&b d`",
+            "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+        ],
+        [
+            "How do I detach from the Verus Daemon process in Tmux?",
+            "To detach from the Verus Daemon process in Tmux, press `[ctrl]&b d`. This will detach you from the process, allowing you to continue using your terminal while the daemon runs in the background.",
+            "g++-multilib -y`\n Install Tmux a terminal multiplexer with which you can run threads in the background see https://en.wikipedia.org/wiki/Tmux\n `sudo apt-get install tmux -y`\n Start tmux:\n `tmux`\n Launch Verus Daemon with or without number of threads\n (usually number of threads equals number of cores or double of that if the processor support hyper threading well)\n `~/verus-cli/verusd -gen -genproclimit`\n `~/verus-cli/verusd -gen -genproclimit=24`\n Once mining is operational \u2013 again this may take some time \u2013\n you\u2019ll see: 256 mega hashes complete - working\n then detach tmux\n`[ctrl]&b d`",
+            "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+        ]
+    ]
+]

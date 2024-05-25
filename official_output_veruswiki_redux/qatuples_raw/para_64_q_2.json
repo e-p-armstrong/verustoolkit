@@ -1,0 +1,6 @@
+[
+    "What if the `./verus getinfo` command also throws an error?",
+    "If the `./verus getinfo` command throws an error, you can use the command `ps fax | grep verus` to check if any Verus-related processes are running. This command lists all processes running on your system, and the `grep verus` part filters the output to show only processes that contain the string \"verus\". If you see a process listed that corresponds to the Verus daemon (verusd) with a child process of Komodo and its command-line arguments, it means that Komodo is indeed running.",
+    "# ERROR: Cannot Get a lock on data directory /root/.komodo/VRSC.\n\nKomodo is probably already running.\n\n## Procedure:\n\nIt just means you can't start it when it's already running. If it isn't running we can take a look at it.\nCheck to see if it is running by running:\n\n`./verus getinfo`\n\nIf it's running you'll get info back, if it isn't you'll get an error.\nIf that throws an error, it's worth checking using this command:\n\n`ps fax | grep verus`\n\nand seeing if any processes are listed besides the process you're using to search.\nYou would see verusd with a child process of komodo and all its cli arguments.\n\n(submitted by @keda666, solution written by englal.vrsc@)\n\nNote: last revision date 2020-02-26.",
+    "./raw_text_input_wiki/faq-lin04_cannot_obtain_lock.md"
+]

@@ -1,0 +1,6 @@
+[
+    "How can I verify that a block was minted and a staking reward was received in Verus?",
+    "To confirm that a block was minted and a staking reward was received, you can look for the following characteristics:\n\n1. The block hash does not have many leading zeros.\n2. The last transaction in your wallet has no fee, is sent from the same address it is sent to, and the coinbase is also sent to the same address. This is the easiest way to confirm.\n3. The POS difficulty is encoded in the low 32 bits of the nonce, with 96 of the next nonce bits reserved as zero, followed by a random hash at the top half.",
+    "# Question: How do you know a block was minted (staking reward)?\n\nYou can see the following characteristics:\n1. a block hash without a lot of leading zeros\n2. a last transaction that in your wallet has no fee, is from the same address that it is to, which is also the address the coinbase is to (easiest confirmation) and\n3. The POS difficulty is encoded in the low 32 bits of the nonce with 96 of the next nonce bits as zero/reserved, then a random hash at the top half\n\n(submitted by @keda666)",
+    "./raw_text_input_wiki/faq-allos09_how_do_you_know_a_block_was_minted_staking_reward.md"
+]

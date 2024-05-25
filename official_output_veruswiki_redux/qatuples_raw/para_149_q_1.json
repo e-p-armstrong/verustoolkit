@@ -1,0 +1,6 @@
+[
+    "How can I verify a digital signature using Verus?",
+    "You can verify a digital signature using Verus by running the `verifydata` command with the identity, message, and signature you want to verify. The basic format is:\n```\nverus verifydata '{\"identity\":\"your_identity.vrsc@\", \"message\":\"your_message\", \"signature\":\"base64sig\"}'\n```\nReplace `your_identity.vrsc@` with the VerusID used to create the signature, `your_message` with the original message, and `base64sig` with the actual signature.",
+    "```\n#### Examples\nCreate the signature\n```bash\n> verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'\n```\nVerify the signature\n```bash\n> verus verifydata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'\n```\nAs json rpc\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

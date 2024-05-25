@@ -1,0 +1,6 @@
+[
+    "Can I use the `getcurrencyconverters` API to find currencies that have multiple specific markets, such as BTC/ETH and LTC/USD?",
+    "Yes, you can use the `getcurrencyconverters` API to find currencies that have multiple specific markets. You can simply list the markets you're interested in, separated by spaces, as arguments to the command. For example: `verus -chain=VRSCTEST getcurrencyconverters btc eth ltc usd`.",
+    "ueries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

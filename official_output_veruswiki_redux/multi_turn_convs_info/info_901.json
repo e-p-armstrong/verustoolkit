@@ -1,0 +1,44 @@
+[
+    [
+        [
+            "What is the purpose of the `closeoffers` command in Verus?",
+            "The `closeoffers` command in Verus is used to close all valid offers listed that belong to the wallet. It can also close expired offers, even if no parameters are provided.",
+            "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What are the arguments required for the `closeoffers` command?",
+            "The `closeoffers` command takes three arguments:\n\n1. An array of hex tx ids of offers to close (optional)\n2. A transparent or private address as the destination for closing funds (optional)\n3. A private address as the destination for native funds only (optional)",
+            "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What happens if I don't provide any parameters to the `closeoffers` command?",
+            "If you don't provide any parameters to the `closeoffers` command, it will still close all expired offers.",
+            "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the purpose of the `getoffers` command in Verus?",
+            "The `getoffers` command in Verus is used to retrieve all open offers for a specific currency or ID.",
+            "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What are the arguments required for the `getoffers` command?",
+            "The `getoffers` command takes three arguments:\n\n1. A currency or ID to retrieve offers for\n2. A boolean indicating whether the first argument is a currency (optional)\n3. A boolean indicating whether to include transaction information (optional)",
+            "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the return value of the `closeoffers` command?",
+            "The `closeoffers` command returns null.",
+            "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8fd9d478-7ab1-4d34-959d-20867e5a3304"
+]

@@ -1,0 +1,6 @@
+[
+    "What changes were made to the Verus mainnet protocol at block 800200?",
+    "At block 800200, the Verus mainnet protocol was updated to include VerusID. This update also fixed the accretion of coinbases in the mempool.",
+    "Avast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\nAt block 800200, The Verus mainnet protocol was updated to include VerusID. This update is the latest for the upgraded Verus mainnet.# Notable Changes\n- Fix accretion of coinbases in mempool# Verus ID\nVerusIDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. VerusIDs provide plenty of opportunity for identity applications. Specifically, VerusID provides:",
+    "./raw_text_input_wiki/release_notes.md"
+]

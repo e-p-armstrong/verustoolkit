@@ -1,0 +1,6 @@
+[
+    "What is required to use Sapling compatible, transparent mobile transactions on the Verus Coin or Zcash networks?",
+    "To use Sapling compatible, transparent mobile transactions on the Verus Coin or Zcash networks, you need Verus Enhanced Agama v 0.4.0c.",
+    "- All versions of the Verus Coin wallet from **0.4.0** and later have support for **Sapling high performance zero knowledge transactions**, which will activate on the Verus Coin Network at block **227520**. In addition to basic Sapling support, 0.4.0c includes support for Sapling compatible, transparent mobile transactions. **For lite mode usage on the Verus Coin or Zcash networks, you will need Verus Enhanced Agama v 0.4.0c.**- In addition to Sapling and support for Stake Guard transactions, which all versions **0.4.0** or later have, 0.4.0c also includes a powerful *\u201cCheat Catcher\u201d* that can earn money as miners and stakers who use it protect the Verus Coin network by catching stakers who are staking for rewards in a selfish way that does not contribute to converging the network on one blockchain. **The new \u201cCheat Catcher\u201d support requires a Sapling z-address, either passed in to the CLI wallet with the \u201c-cheatcatcher=zaddress\u201d option, or added in the Settings->App config of the enhanced Agama GUI.**",
+    "./raw_text_input_wiki/release_notes.md"
+]

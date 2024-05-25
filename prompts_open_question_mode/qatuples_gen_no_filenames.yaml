@@ -27,7 +27,7 @@
     * Do not mention the website, or the text, or any other reference. Just ask about the facts or information.
     * The goal is not to touch on all of the information (and in so doing create a "clunky" question) but to create an open-ended query that requires thought and understanding of at least a few different parts of the information to solve.
     * Ensure a logical sequence of questions that build on each other.
-    * Keep in mind the timestamp of any solution. The current year is: 2024.
+    * Keep in mind that the provided information may have been written before certain features released. Verus launched some years ago, has an active community, and has delivered on its initial technological vision. Some things are still in development though, so you should be ambiguous with dates.
     * Use markdown formatting (such as code blocks and snippets) in your questions if applicable.
     * Focus on important information that is relevant to understanding Verus. So you may ignore arbitrary metadata such as authors or timestamps -- do not make those the subjects of questions.
     * Keep in mind that the provided text snippet may cut off abruptly. Work around this.

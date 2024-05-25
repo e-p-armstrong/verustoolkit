@@ -1,0 +1,6 @@
+[
+    "How can I list a specific range of transactions, for example transactions 100 to 120?",
+    "You can list a specific range of transactions by using the `listtransactions` command with additional parameters. The format is:\n\n```\nverus listtransactions \"*\" <count> <skip>\n```\n\nIn this case, you would use:\n\n```\nverus listtransactions \"*\" 20 100\n```\n\nThis command will return transactions 100 to 120.",
+    "Examples:List the most recent 10 transactions in the systems\n```bash\n> verus listtransactions\n```\nList transactions 100 to 120\n```bash\n> verus listtransactions \"*\" 20 100\n```\nAs a json rpc call\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listunspent ( minconf maxconf [\"address\",...] inludeshared )`\nReturns array of unspent transaction outputs with between minconf and maxconf (inclusive) confirmations.\nOptionally filter to only include txouts paid to specified addresses.\nResults are an array of Objects, each of which has:\n{txid, vout, scriptPubKey, amount, confirmations}",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `find` command in the given script?",
+    "The purpose of the `find` command is to search for files in the specified `$DEST_FOLDER` directory that match the criteria specified, and then execute a command on those files.",
+    "# Keep only last 6 days - BE SURE to fully understand how it works, as every \"rm\" command!\nfind $DEST_FOLDER/wallet* -type f -mtime +6 -exec rm {} ;\n```\n\n(submitted by @TexWiller)\n\nNote: last revision date 2020-02-26.",
+    "./raw_text_input_wiki/faq-lin05_daily_cloud_backup.md"
+]

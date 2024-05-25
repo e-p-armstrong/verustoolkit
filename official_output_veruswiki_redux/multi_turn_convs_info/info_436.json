@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How can I convert and export a currency from a PBaaS chain to VRSCTEST using the command line and Verus?",
+            "To convert and export a currency from a PBaaS chain to VRSCTEST, you can use the `sendcurrency` command with the following format:\n\n```\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"your_address\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\n\nThis command will convert the specified amount of currency from the PBaaS chain to VRSCTEST and export it to the VRSCTEST chain.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "fae1da34-1797-4c13-acc5-b126638505f6"
+]

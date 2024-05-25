@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does it mean if the result of a signature verification is `true`?",
+            "If the result of a signature verification is `true`, it indicates that the signature is valid.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```Announcing v1.0.1 - MANDATORY Mainnet Upgrade, UPGRADE TO v1.0.1 OR LATER IS MANDATORY FOR CONTINUED MAINNET AND TESTNET USE AFTER MAY 21, 2023, EXPECTED BLOCK #2546600### Issues addressed\nIn addition to fixing an issue discovered by cautionfun#3236 on the current public testnet, this version also addresses an issue discovered during additional coverage testing in the oracle based, reversible rip-cord implementations to ensure the ability for the network to respond to any unexpected events quickly, safely, and without compromise to decentralization.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Why is it important to upgrade to v1.0.1 or later for continued mainnet and testnet use?",
+            "Upgrading to v1.0.1 or later is mandatory for continued mainnet and testnet use because it addresses critical issues discovered in the previous version, including one found on the public testnet and another found during additional coverage testing. This upgrade ensures the ability of the network to respond to unexpected events quickly, safely, and without compromising decentralization.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```Announcing v1.0.1 - MANDATORY Mainnet Upgrade, UPGRADE TO v1.0.1 OR LATER IS MANDATORY FOR CONTINUED MAINNET AND TESTNET USE AFTER MAY 21, 2023, EXPECTED BLOCK #2546600### Issues addressed\nIn addition to fixing an issue discovered by cautionfun#3236 on the current public testnet, this version also addresses an issue discovered during additional coverage testing in the oracle based, reversible rip-cord implementations to ensure the ability for the network to respond to any unexpected events quickly, safely, and without compromise to decentralization.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What kind of issues does v1.0.1 address?",
+            "v1.0.1 addresses issues related to the oracle-based, reversible rip-cord implementations, which are critical for the network's ability to respond to unexpected events. It also fixes an issue discovered on the public testnet, ensuring the continued stability and security of the network.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```Announcing v1.0.1 - MANDATORY Mainnet Upgrade, UPGRADE TO v1.0.1 OR LATER IS MANDATORY FOR CONTINUED MAINNET AND TESTNET USE AFTER MAY 21, 2023, EXPECTED BLOCK #2546600### Issues addressed\nIn addition to fixing an issue discovered by cautionfun#3236 on the current public testnet, this version also addresses an issue discovered during additional coverage testing in the oracle based, reversible rip-cord implementations to ensure the ability for the network to respond to any unexpected events quickly, safely, and without compromise to decentralization.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3a96ef21-4ea5-46ce-a0c7-dfe7328b196e"
+]

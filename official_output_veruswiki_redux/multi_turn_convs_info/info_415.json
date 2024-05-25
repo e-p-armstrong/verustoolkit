@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does it mean when the result of a signature validation is `true`?",
+            "When the result of a signature validation is `true`, it means that the signature is valid.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-2 UPDATEThis daemon release includes a fix that simplifies some bridge transactions, and is the version you should run on testnet when the Ethereum bridge does launch for a good experience.v0.8.0 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the v0.8.0-2 UPDATE for the Verus daemon?",
+            "The v0.8.0-2 UPDATE for the Verus daemon includes a fix that simplifies some bridge transactions, and is recommended to run on the testnet for a good experience, especially when the Ethereum bridge is launched.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-2 UPDATEThis daemon release includes a fix that simplifies some bridge transactions, and is the version you should run on testnet when the Ethereum bridge does launch for a good experience.v0.8.0 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the significance of running the v0.8.0-2 UPDATE on the testnet?",
+            "Running the v0.8.0-2 UPDATE on the testnet is recommended to ensure a good experience, particularly when the Ethereum bridge is launched. This suggests that the update is important for compatibility and smooth operation with the Ethereum bridge on the testnet.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-2 UPDATEThis daemon release includes a fix that simplifies some bridge transactions, and is the version you should run on testnet when the Ethereum bridge does launch for a good experience.v0.8.0 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "1d81c7d4-26c2-45d9-a3fb-a34413bf138f"
+]

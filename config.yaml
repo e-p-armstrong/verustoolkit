@@ -5,9 +5,9 @@ API:
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
 PATH:
   DEFAULT_PROMPTS: ./prompts
-  INPUT: ./raw_text_input_vision_paper
+  INPUT: ./raw_text_input_wiki
   OUTPUT: ./output
-  PROMPTS: ./prompts_open_question_mode
+  PROMPTS: ./prompts
 SYSTEM:
   CHUNK_SIZE: 1900
   COMPLETION_MODE: false
@@ -53,4 +53,4 @@ SYSTEM:
   MODE: api
   STOP: true
   SUBSET_SIZE: 20
-  USE_SUBSET: true
+  USE_SUBSET: FALSE

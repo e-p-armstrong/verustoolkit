@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How are the fees distributed when creating an identity on the Verus network?",
+            "When creating an identity on the Verus network, the fees are distributed as follows:\n\n* 20 VRSC to the referrer's ID\n* 20 VRSC to the referrer's referrer's ID\n* 20 VRSC to the referrer's referrer's referrer's ID\n* 20 VRSC to the miner of the block in which the ID is mined\n\nAdditionally, 100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens to the funds that are not paid to referrers when creating an identity on the Verus network?",
+            "Any funds that are not paid to referrers when creating an identity on the Verus network go to miners or stakers of the blockchain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d387708c-fec0-4668-97e5-a1c7857bc2cf"
+]

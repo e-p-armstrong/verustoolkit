@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I reset my Verus testnet?",
+            "To reset your Verus testnet, make sure Verus is closed and no testnet daemon is running. Then, delete the following directories:\n\n* On Linux: `~/.komodo/vrsctest` and `~/.verustest`\n* On Mac OS: `~/Library/Application Support/Komodo/vrsctest` and `~/Library/Application Support/VerusTest`\n* On Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest`\n\nAfter deleting the directories, restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest, and re-add verustest native).",
+            "# Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):\n\n- Linux: `~/.komodo/vrsctest`, `~/.verustest`\n- Mac OS: `~/Library/Application Support/Komodo/vrsctest`, `~/Library/Application\\ Support/VerusTest`\n- Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest`\n\nInformation compiled by Oink.vrsc@ from Verus Release Notes.\n\nNote: revision date 2023-05-15.",
+            "./raw_text_input_wiki/how-to_reset_testnet.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "37facf9b-7830-444c-903b-933e4423ac47"
+]

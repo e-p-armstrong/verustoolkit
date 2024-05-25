@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What does the \"lastblock\" field represent in a transaction response?",
+            "The \"lastblock\" field represents the hash of the last block in the blockchain.",
+            "or moves\n                     outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n  \"vout\" : n,        (numeric) the vout value\n  \"fee\": x.xxx,       (numeric) The amount of the fee in VRSC. This is negative and only available for the 'send' category of transactions.\n  \"confirmations\": n,    (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n  \"blockhash\": \"hashvalue\",   (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n  \"blockindex\": n,     (numeric) The block index containing the transaction. Available for 'send' and 'receive' category of transactions.\n  \"blocktime\": xxx,     (numeric) The block time in seconds since epoch (1 Jan 1970 GMT).\n  \"txid\": \"transactionid\", (string) The transaction id. Available for 'send' and 'receive' category of transactions.\n  \"time\": xxx,       (numeric) The transaction time in seconds since epoch (Jan 1 1970 GMT).\n  \"timereceived\": xxx,   (numeric) The time received in seconds since epoch (Jan 1 1970 GMT). Available for 'send' and 'receive' category of transactions.\n  \"comment\": \"...\",    (string) If a comment is associated with the transaction.\n  \"to\": \"...\",      (string) If a comment to is associated with the transaction.\n ],\n \"lastblock\": \"lastblockhash\"   (string) The hash of the last block\n}\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8cfcf967-364d-4cc6-8adf-dd48216bfbfb"
+]

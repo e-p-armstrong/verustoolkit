@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been playing around with the Verus CLI and I came across the `getcurrencyconverters` command. Can you tell me what I can do with it?\n\n**AI Assistant:**\nThe `getcurrencyconverters` command in Verus can be used to retrieve a list of currencies that have markets for the specified currencies at or above a certain liquidity threshold. It's a really useful tool for exploring the Verus ecosystem. Do you have a specific use case in mind or would you like more information on how to use it?\n\n**User:**\nThat sounds interesting. How can I use the `getcurrencyconverters` command to find currencies that have markets for BTC and ETH?\n\n**AI Assistant:**\nYou can use the `getcurrencyconverters` command to find currencies that have markets for BTC and ETH by running the following command:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis command will return a list of currencies that have BTC/ETH markets at or above the liquidity threshold. Just replace `VRSCTEST` with the chain you're working on, and you're good to go!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What can I do with the `getcurrencyconverters` command in Verus?",
+            "The `getcurrencyconverters` command in Verus can be used to retrieve a list of currencies that have markets for the specified currencies at or above a certain liquidity threshold.",
+            "o, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How can I use the `getcurrencyconverters` command to find currencies that have markets for BTC and ETH?",
+            "You can use the `getcurrencyconverters` command to find currencies that have markets for BTC and ETH by running the following command:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis command will return a list of currencies that have BTC/ETH markets at or above the liquidity threshold.",
+            "o, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,38 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHi! I've been playing around with Verus and I have a few questions. When I'm verifying a signature, what does the output \"true\" indicate?\n\n**AI Assistant:**\nThe output \"true\" indicates that the signature is valid.\n\n**User:**\nThat's great, thanks! I've also been looking at the APIs, and I was wondering, what is the purpose of the `getcurrencybalance` API in Verus?\n\n**AI Assistant:**\nThe `getcurrencybalance` API allows you to retrieve multi-currency balances on transparent, private addresses, and identities.\n\n**User:**\nI've also noticed some changes to the `z_getbalance` API. Can you tell me what's changed?\n\n**AI Assistant:**\nThe `z_getbalance` API has been updated to support the \"z*\" wildcard.\n\n**User:**\nI'm also interested in DeFi features on the Verus testnet. Can I use private z-addresses to source funds for DeFi features?\n\n**AI Assistant:**\nYes, on the Verus testnet, you can source funds for DeFi features from private z-addresses.\n\n**User:**\nFinally, I just updated my Verus Desktop software. Do I need to reset the testnet after the upgrade?\n\n**AI Assistant:**\nNo, there is no testnet reset required after this upgrade. You're good to go!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the output \"true\" indicate when verifying a signature?",
+            "The output \"true\" indicates that the signature is valid.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing NON-MANDATORY CLI upgrade v0.7.2-6, with primarily testnet improvements. Mainnet features are effectively unchanged from v0.7.2-4, with only \"z*\" added as a new, supported wildcard to the `z_getbalance` API.\nThis release includes the following improvements and updates for testnet:\n- Add `getcurrencybalance` API to get multi-currency balances on transparent/private addresses and identities.\n- Optimize multi-currency operators and UTXO selection\n- Display unlocked balance in `getwalletinfo`\n- Add support for \"z*\" wildcard in `z_getbalance`\n## The Verus DeFi Testnet -- THERE IS NO TESTNET RESET\nAll new 'sendcurrency' features described above now work on both mainnet and testnet. In addition, testnet can source funds for DeFi features from private z-addresses as well.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `getcurrencybalance` API in Verus?",
+            "The `getcurrencybalance` API allows you to retrieve multi-currency balances on transparent, private addresses, and identities.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing NON-MANDATORY CLI upgrade v0.7.2-6, with primarily testnet improvements. Mainnet features are effectively unchanged from v0.7.2-4, with only \"z*\" added as a new, supported wildcard to the `z_getbalance` API.\nThis release includes the following improvements and updates for testnet:\n- Add `getcurrencybalance` API to get multi-currency balances on transparent/private addresses and identities.\n- Optimize multi-currency operators and UTXO selection\n- Display unlocked balance in `getwalletinfo`\n- Add support for \"z*\" wildcard in `z_getbalance`\n## The Verus DeFi Testnet -- THERE IS NO TESTNET RESET\nAll new 'sendcurrency' features described above now work on both mainnet and testnet. In addition, testnet can source funds for DeFi features from private z-addresses as well.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What changes have been made to the `z_getbalance` API?",
+            "The `z_getbalance` API has been updated to support the \"z*\" wildcard.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing NON-MANDATORY CLI upgrade v0.7.2-6, with primarily testnet improvements. Mainnet features are effectively unchanged from v0.7.2-4, with only \"z*\" added as a new, supported wildcard to the `z_getbalance` API.\nThis release includes the following improvements and updates for testnet:\n- Add `getcurrencybalance` API to get multi-currency balances on transparent/private addresses and identities.\n- Optimize multi-currency operators and UTXO selection\n- Display unlocked balance in `getwalletinfo`\n- Add support for \"z*\" wildcard in `z_getbalance`\n## The Verus DeFi Testnet -- THERE IS NO TESTNET RESET\nAll new 'sendcurrency' features described above now work on both mainnet and testnet. In addition, testnet can source funds for DeFi features from private z-addresses as well.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I use private z-addresses to source funds for DeFi features on the Verus testnet?",
+            "Yes, on the Verus testnet, you can source funds for DeFi features from private z-addresses.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing NON-MANDATORY CLI upgrade v0.7.2-6, with primarily testnet improvements. Mainnet features are effectively unchanged from v0.7.2-4, with only \"z*\" added as a new, supported wildcard to the `z_getbalance` API.\nThis release includes the following improvements and updates for testnet:\n- Add `getcurrencybalance` API to get multi-currency balances on transparent/private addresses and identities.\n- Optimize multi-currency operators and UTXO selection\n- Display unlocked balance in `getwalletinfo`\n- Add support for \"z*\" wildcard in `z_getbalance`\n## The Verus DeFi Testnet -- THERE IS NO TESTNET RESET\nAll new 'sendcurrency' features described above now work on both mainnet and testnet. In addition, testnet can source funds for DeFi features from private z-addresses as well.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Do I need to reset the testnet after upgrading my Verus Desktop software?",
+            "No, there is no testnet reset required after this upgrade.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing NON-MANDATORY CLI upgrade v0.7.2-6, with primarily testnet improvements. Mainnet features are effectively unchanged from v0.7.2-4, with only \"z*\" added as a new, supported wildcard to the `z_getbalance` API.\nThis release includes the following improvements and updates for testnet:\n- Add `getcurrencybalance` API to get multi-currency balances on transparent/private addresses and identities.\n- Optimize multi-currency operators and UTXO selection\n- Display unlocked balance in `getwalletinfo`\n- Add support for \"z*\" wildcard in `z_getbalance`\n## The Verus DeFi Testnet -- THERE IS NO TESTNET RESET\nAll new 'sendcurrency' features described above now work on both mainnet and testnet. In addition, testnet can source funds for DeFi features from private z-addresses as well.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

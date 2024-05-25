@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What does the result of an operation in Verus contain?",
+            "The result of an operation in Verus contains an \"operationid\" which is a string that can be used to retrieve the status of the operation using the \"z_getoperationstatus\" command.",
+            "#### Result:\n1. \"operationid\"     (string) An operationid to pass to z_getoperationstatus to get the result of the operation.\n2. If (returntxtemplate) is true  \n```json\n {\n  \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies the need to be input to the transaction\n  \"hextx\" : \"hexstring\"         The transaction with all specified outputs and no inputs\n }\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What additional information is returned if \"returntxtemplate\" is set to true in an operation result?",
+            "If \"returntxtemplate\" is set to true, the operation result will also contain a JSON object with two properties: \"outputtotals\" and \"hextx\". \"outputtotals\" is a currency value map that represents the total outputs in all currencies that need to be input to the transaction. \"hextx\" is a hexadecimal string that represents the transaction with all specified outputs and no inputs.",
+            "#### Result:\n1. \"operationid\"     (string) An operationid to pass to z_getoperationstatus to get the result of the operation.\n2. If (returntxtemplate) is true  \n```json\n {\n  \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies the need to be input to the transaction\n  \"hextx\" : \"hexstring\"         The transaction with all specified outputs and no inputs\n }\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "92fa2fbb-ca1d-4868-acb9-39959eeb7610"
+]

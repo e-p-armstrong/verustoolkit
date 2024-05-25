@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI've got one more question. Who compiled the information I've been reading about VerusIDs?\n\n**AI Assistant:**\nThe information was compiled by `Mercadinaut.vrsc@`.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Who compiled the information?",
+            "The information was compiled by `Mercadinaut.vrsc@`.",
+            "Information compiled by `Mercadinaut.vrsc@`.\n\nNote: creation date 2021-05-16.",
+            "./raw_text_input_wiki/armfaq-03_updating.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "What are the required and optional arguments for the `sendrawtransaction` command?",
+    "The required argument is \"hexstring\", which is a string representing the hex-encoded raw transaction. The optional argument is \"allowhighfees\", a boolean value that defaults to false, which allows high fees if set to true.",
+    "### `sendrawtransaction \"hexstring\" ( allowhighfees )`\nSubmits raw transaction (serialized, hex-encoded) to local node and network.Also see createrawtransaction and signrawtransaction calls.#### Arguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees#### Result:\n\"hex\"       (string) The transaction hash in hexExamples:",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

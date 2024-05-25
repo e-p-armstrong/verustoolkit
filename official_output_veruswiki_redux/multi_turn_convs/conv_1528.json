@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to create a new currency with Verus and I'm not sure about the `proofprotocol` option. Can you explain what it does?\n\n**AI Assistant:**\nThe `proofprotocol` option determines how new coins can be minted in the currency. In this specific example, setting `proofprotocol` to 2 (PROOF_CHAINID) means that the controller of the chain ID has the ability to mint new coins. Does that make sense?\n\n**User:**\nThat helps clarify things. So, how does the controller of the chain ID actually mint new coins in a currency with `proofprotocol` set to PROOF_CHAINID?\n\n**AI Assistant:**\nThe controller of the chain ID can mint new coins by using the `sendcurrency` command with the `mintnew` option set to 1. This allows them to mint a specified amount of new coins and send them to a specific address.\n\n**User:**\nWhat are the implications of setting `proofprotocol` to PROOF_CHAINID when defining a new currency?\n\n**AI Assistant:**\nSetting `proofprotocol` to PROOF_CHAINID gives the controller of the chain ID the authority to mint new coins, allowing them to control the supply of the currency. This can be useful for certain use cases, such as creating a centralized currency or token with a controlled supply.\n\n**User:**\nI see. Can anyone mint new coins in a currency with `proofprotocol` set to PROOF_CHAINID, or is it limited to specific users or roles?\n\n**AI Assistant:**\nOnly the controller of the chain ID can mint new coins in a currency with `proofprotocol` set to PROOF_CHAINID. This is a deliberate design choice to ensure that coin creation is controlled and limited to a specific entity or role.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `proofprotocol` option when defining a new currency with Verus?",
+            "The `proofprotocol` option determines how new coins can be minted in the currency. In this specific example, setting `proofprotocol` to 2 (PROOF_CHAINID) means that the controller of the chain ID has the ability to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How does the controller of the chain ID mint new coins in a currency with `proofprotocol` set to PROOF_CHAINID?",
+            "The controller of the chain ID can mint new coins by using the `sendcurrency` command with the `mintnew` option set to 1. This allows them to mint a specified amount of new coins and send them to a specific address.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What are the implications of setting `proofprotocol` to PROOF_CHAINID when defining a new currency?",
+            "Setting `proofprotocol` to PROOF_CHAINID gives the controller of the chain ID the authority to mint new coins, allowing them to control the supply of the currency. This can be useful for certain use cases, such as creating a centralized currency or token with a controlled supply.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can anyone mint new coins in a currency with `proofprotocol` set to PROOF_CHAINID, or is it limited to specific users or roles?",
+            "Only the controller of the chain ID can mint new coins in a currency with `proofprotocol` set to PROOF_CHAINID. This is a deliberate design choice to ensure that coin creation is controlled and limited to a specific entity or role.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

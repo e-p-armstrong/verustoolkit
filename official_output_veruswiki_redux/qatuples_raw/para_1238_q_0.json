@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getcurrencyconverters` API in Verus?",
+    "The `getcurrencyconverters` API in Verus retrieves a list of all currencies that meet certain liquidity and reserve ratio criteria. Specifically, it returns currencies that have at least 1000 VRSC in reserve and a reserve ratio of greater than 10%. Additionally, these currencies must have all listed currencies as reserves.",
+    "ueries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

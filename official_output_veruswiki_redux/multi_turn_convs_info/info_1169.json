@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "What is the purpose of the `listsinceblock` command in Verus?",
+            "The `listsinceblock` command is used to retrieve a list of transactions that have occurred since a specified block. It can be used to get a list of recent transactions, or to get a list of transactions starting from a specific block.",
+            "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I use the `listsinceblock` command to get a list of transactions starting from a specific block?",
+            "You can use the `listsinceblock` command to get a list of transactions starting from a specific block by providing the block hash and the number of transactions you want to retrieve. For example, `verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6` would retrieve the 6 most recent transactions starting from the block with the specified hash.",
+            "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I use the `listsinceblock` command with a JSON-RPC request?",
+            "Yes, you can use the `listsinceblock` command with a JSON-RPC request. You can send a JSON-RPC request to the Verus server with the method `listsinceblock` and the required parameters, such as the block hash and the number of transactions to retrieve. For example, `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`",
+            "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the purpose of the `listtransactions` command in Verus?",
+            "The `listtransactions` command is used to retrieve a list of transactions for a specific account, skipping a specified number of transactions from the start. It can be used to get a list of recent transactions for an account, or to get a list of transactions starting from a specific point in the account's transaction history.",
+            "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How can I use the `listtransactions` command to get a list of transactions for an account?",
+            "You can use the `listtransactions` command to get a list of transactions for an account by providing the account name, the number of transactions to skip, and the number of transactions to retrieve. For example, `verus listtransactions \"myaccount\" 0 10` would retrieve the 10 most recent transactions for the account \"myaccount\", starting from the beginning of the account's transaction history.",
+            "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d5674bd6-00dc-4794-bb94-6ae67fd5a4c0"
+]

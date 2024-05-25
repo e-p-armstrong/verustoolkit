@@ -1,0 +1,6 @@
+[
+    "What kind of input does the `decodescript` command expect?",
+    "The `decodescript` command expects a hex-encoded script as input.",
+    "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

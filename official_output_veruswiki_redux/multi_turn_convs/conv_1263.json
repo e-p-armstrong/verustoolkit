@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to automate some tasks with Verus, and I've heard that crontab files can be useful for that. What is the purpose of a crontab file in the context of Verus?\n\n**AI Assistant:**\nA crontab file is used to schedule tasks to run at specific times or intervals. In the context of Verus, it can be used to automate various tasks, such as checking for new blocks, checking if Verus is running, and backing up the wallet. By using a crontab file, you can ensure that these tasks are performed regularly without needing to manually initiate them.\n\n**User:**\nThat's really helpful! But how do I specify the timing of a task in a crontab file? I'm not familiar with the format.\n\n**AI Assistant:**\nIn a crontab file, the timing of a task is specified using five asterisks (`*`) and numbers. The format is: `minute hour day_of_month month day_of_week command`. For example, `*/5 * * * *` means the task will run every 5 minutes, `0 * * * *` means the task will run on the hour every hour, and `0 12 * * *` means the task will run every day at 12 PM. You can adjust the timing to fit your needs by modifying the numbers and asterisks.\n\n**User:**\nI think I understand that now. One more question: I've been setting up email notifications for my Verus node, and I came across the `smtp_tls_security_level=encrypt` line in the `/etc/postfix/main.cf` file. What's the purpose of that line?\n\n**AI Assistant:**\nThe `smtp_tls_security_level=encrypt` line in the `/etc/postfix/main.cf` file is used to enforce TLS security in Postfix, which is necessary for sending emails securely. This is particularly important when sending sensitive information, such as backup files, via email. By setting the security level to `encrypt`, you ensure that your emails are protected from interception and tampering.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of a crontab file in the context of Verus?",
+            "A crontab file is used to schedule tasks to run at specific times or intervals. In the context of Verus, it can be used to automate various tasks, such as checking for new blocks, checking if Verus is running, and backing up the wallet.",
+            "In the following, the `*/5` is every 5 min, the `0` is on the hour every hour, the `0 12` is every day at 12 PM.\n\n##### CRONTAB\n\n```bash\n# m h dom mon dow  command\n*/5 * * * * /home/user/checkfornewblocks.sh\n0 * * * * /home/user/checkifverusdisrunning.sh\n0 12 * * * /home/user/backupwallet.sh\n```\nNote: For any emails sent (for backup of dat file for example) make sure to enforce TLS security in postfix by adding the following line to your /etc/postfix/main.cf\n`smtp_tls_security_level=encrypt`\n\n(submitted by @J Oliver Westbrook)\n\nNote: last revision date 2021-03-09.",
+            "./raw_text_input_wiki/faq-lin03_linux_scripts_make_life_easy.md"
+        ],
+        [
+            "How do I specify the timing of a task in a crontab file?",
+            "In a crontab file, the timing of a task is specified using five asterisks (`*`) and numbers. The format is: `minute hour day_of_month month day_of_week command`. For example, `*/5 * * * *` means the task will run every 5 minutes, `0 * * * *` means the task will run on the hour every hour, and `0 12 * * *` means the task will run every day at 12 PM.",
+            "In the following, the `*/5` is every 5 min, the `0` is on the hour every hour, the `0 12` is every day at 12 PM.\n\n##### CRONTAB\n\n```bash\n# m h dom mon dow  command\n*/5 * * * * /home/user/checkfornewblocks.sh\n0 * * * * /home/user/checkifverusdisrunning.sh\n0 12 * * * /home/user/backupwallet.sh\n```\nNote: For any emails sent (for backup of dat file for example) make sure to enforce TLS security in postfix by adding the following line to your /etc/postfix/main.cf\n`smtp_tls_security_level=encrypt`\n\n(submitted by @J Oliver Westbrook)\n\nNote: last revision date 2021-03-09.",
+            "./raw_text_input_wiki/faq-lin03_linux_scripts_make_life_easy.md"
+        ],
+        [
+            "What is the purpose of the `smtp_tls_security_level=encrypt` line in the `/etc/postfix/main.cf` file?",
+            "The `smtp_tls_security_level=encrypt` line in the `/etc/postfix/main.cf` file is used to enforce TLS security in Postfix, which is necessary for sending emails securely. This is particularly important when sending sensitive information, such as backup files, via email.",
+            "In the following, the `*/5` is every 5 min, the `0` is on the hour every hour, the `0 12` is every day at 12 PM.\n\n##### CRONTAB\n\n```bash\n# m h dom mon dow  command\n*/5 * * * * /home/user/checkfornewblocks.sh\n0 * * * * /home/user/checkifverusdisrunning.sh\n0 12 * * * /home/user/backupwallet.sh\n```\nNote: For any emails sent (for backup of dat file for example) make sure to enforce TLS security in postfix by adding the following line to your /etc/postfix/main.cf\n`smtp_tls_security_level=encrypt`\n\n(submitted by @J Oliver Westbrook)\n\nNote: last revision date 2021-03-09.",
+            "./raw_text_input_wiki/faq-lin03_linux_scripts_make_life_easy.md"
+        ]
+    ]
+]

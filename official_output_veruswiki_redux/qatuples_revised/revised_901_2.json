@@ -1,0 +1,6 @@
+[
+    "What happens if I don't provide any parameters to the `closeoffers` command?",
+    "If you don't provide any parameters to the `closeoffers` command, it will still close all expired offers.",
+    "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

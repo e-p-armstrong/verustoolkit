@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does it mean to set `proofprotocol` to 2 when defining a new currency in Verus?",
+            "When `proofprotocol` is set to 2 when defining a new currency in Verus, it means that the controller of the chain ID can mint new coins. This is known as PROOF_CHAINID.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How does the controller of the chain ID mint new coins in Verus?",
+            "The controller of the chain ID can mint new coins by using the `sendcurrency` command with the `mintnew` option. For example, to mint 10,000 new coins of \"mycoin\" to the address \"mike@\", the command would be:\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\nThis command sends 10,000 new \"mycoin\" coins to the address \"mike@\", effectively minting them.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of defining a new currency in Verus, and what are some of the properties that can be configured when defining a new currency?",
+            "Defining a new currency in Verus allows for the creation of a new digital asset that can be used for various purposes. Some of the properties that can be configured when defining a new currency include:\n\n* `name`: the name of the currency\n* `options`: an integer that can be used to customize the behavior of the currency\n* `proofprotocol`: the proof protocol used by the currency, which determines how new coins are minted\n* `currencies`: an array of currencies that the new currency can be converted to\n* `minpreconversion`: an array of minimum amounts required for conversion\n* `initialsupply`: the initial supply of the new currency\n\nThese properties can be configured using the `definecurrency` command, as shown in the example.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "79a70c29-712e-4517-8aed-fad95c04fff9"
+]

@@ -1,0 +1,6 @@
+[
+    "What happens if a transaction is sent from the currency ID of a centralized currency?",
+    "If a transaction is sent from the currency ID of a centralized currency, this creates new currency to send.",
+    "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

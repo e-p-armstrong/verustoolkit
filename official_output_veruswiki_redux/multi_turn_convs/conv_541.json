@@ -1,0 +1,38 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've got some questions about options in Verus. What is the purpose of the OPTION_SINGLECURRENCY option in Verus?\n\n**AI Assistant:**\nThe OPTION_SINGLECURRENCY option is used to restrict a PBaaS chain or gateway to a single currency. This means that only one currency can be used on the chain or gateway. Would you like to know more about other options in Verus?\n\n**User:**\nYes, that's interesting. What does the OPTION_GATEWAY option do in Verus?\n\n**AI Assistant:**\nThe OPTION_GATEWAY option is used to route external currencies. This means that it allows currencies from outside the chain or gateway to be used. Do you have any more questions about gateways in Verus?\n\n**User:**\nThat makes sense. What is the purpose of the OPTION_GATEWAY_CONVERTER option in Verus?\n\n**AI Assistant:**\nThe OPTION_GATEWAY_CONVERTER option is used to specify a default converter for a PBaaS gateway. This converter will publish prices for the gateway. Would you like to know more about converters or gateways in Verus?\n\n**User:**\nI'm not sure. What is the purpose of the OPTION_GATEWAY_NAMECONTROLLER option in Verus?\n\n**AI Assistant:**\nThe OPTION_GATEWAY_NAMECONTROLLER option is used to control top-level ID and currency registration on a gateway. If this option is not set, registration happens on the launch chain. Do you have any more questions about registration in Verus?\n\n**User:**\nActually, I do. What is an NFT token in Verus, and what does the OPTION_NFT_TOKEN option do?\n\n**AI Assistant:**\nAn NFT token is a type of token that represents a unique asset or piece of data. The OPTION_NFT_TOKEN option is used to create a single satoshi NFT token, which tokenizes control over the root ID. This allows for more flexibility and control over the ID. Do you have any more questions about NFT tokens or IDs in Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the OPTION_SINGLECURRENCY option in Verus?",
+            "The OPTION_SINGLECURRENCY option is used to restrict a PBaaS chain or gateway to a single currency. This means that only one currency can be used on the chain or gateway.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does the OPTION_GATEWAY option do in Verus?",
+            "The OPTION_GATEWAY option is used to route external currencies. This means that it allows currencies from outside the chain or gateway to be used.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the OPTION_GATEWAY_CONVERTER option in Verus?",
+            "The OPTION_GATEWAY_CONVERTER option is used to specify a default converter for a PBaaS gateway. This converter will publish prices for the gateway.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the OPTION_GATEWAY_NAMECONTROLLER option in Verus?",
+            "The OPTION_GATEWAY_NAMECONTROLLER option is used to control top-level ID and currency registration on a gateway. If this option is not set, registration happens on the launch chain.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is an NFT token in Verus, and what does the OPTION_NFT_TOKEN option do?",
+            "An NFT token is a type of token that represents a unique asset or piece of data. The OPTION_NFT_TOKEN option is used to create a single satoshi NFT token, which tokenizes control over the root ID.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

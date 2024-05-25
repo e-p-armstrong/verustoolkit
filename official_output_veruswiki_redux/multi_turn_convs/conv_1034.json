@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to understand some of the basics of Verus. Can you help me out? What does it mean if the result of a signature verification is `true`?\n\n**AI Assistant:**\nIf the result of a signature verification is `true`, it means that the signature is valid. That's a good sign!\n\n**User:**\nThanks for clarifying that! I've also been hearing about a v0.8.0-1 update. What's the purpose of that update?\n\n**AI Assistant:**\nThe v0.8.0-1 update is a non-mandatory update that includes a testnet fix for the Ethereum bridge. It is required for those who want to continue using the current testnet. So, if you're using the testnet, you'll want to make sure to update to take advantage of the fix.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does it mean if the result of a signature verification is `true`?",
+            "If the result of a signature verification is `true`, it means that the signature is valid.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-1 UPDATEThis release includes a testnet fix for the Ethereum bridge and is required for those who want to continue using the current testnet.v0.8.0 and v0.8.0-1 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the v0.8.0-1 update?",
+            "The v0.8.0-1 update is a non-mandatory update that includes a testnet fix for the Ethereum bridge. It is required for those who want to continue using the current testnet.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-1 UPDATEThis release includes a testnet fix for the Ethereum bridge and is required for those who want to continue using the current testnet.v0.8.0 and v0.8.0-1 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

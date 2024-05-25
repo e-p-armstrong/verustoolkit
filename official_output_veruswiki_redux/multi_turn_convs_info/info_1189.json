@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is included in the txt file for verifying downloads in Verus?",
+            "The txt file for verifying downloads in Verus includes the signer, standard sha256 file checksum, and signature.",
+            "## Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation Releases@\".\n1) Extract downloaded archive\n2) Verify signature for the extracted archive using the extracted text file.\n3) Extract archive to desired directory\n### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation Releases@\" \"AYUoIQABQR8xuMk0N7mT6KmiXJ5VKJnZR27+udobzfV0DTlb5S98KC5mYJRITYBta+vRvYtKF2EUCaPdQZsa+pMSawjEflRN\" \"/Downloads/Verus-CLI-Linux-v0.9.4-x86_64/Verus-CLI-Linux-v0.9.4-x86_64.tar.gz\"\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation Releases@\" \"AYUoIQABQR8xuMk0N7mT6KmiXJ5VKJnZR27+udobzfV0DTlb5S98KC5mYJRITYBta+vRvYtKF2EUCaPdQZsa+pMSawjEflRN\" 8b2c32a13f1154a97644207076c6f73ef774c7897029b1f0d5018677645955b7\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing v0.9.3, NON-MANDATORY FOR MAINNET -- MANDATORY FOR TESTNET USEThis release fixes one issue on mainnet where a node using -connect=\u201dnetworkaddress\u201d may still attempt to connect to other nodes.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c2ec2ae8-8dc1-495a-bbbd-7e3de3360660"
+]

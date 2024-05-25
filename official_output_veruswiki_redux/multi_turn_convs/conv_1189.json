@@ -1,0 +1,32 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm looking to get started with Verus and I was wondering about the different types of wallets available. Can you tell me a bit about that?\n\n**AI Assistant:**\nThere are several types of wallets available for Verus, including:\n\n1. Desktop wallet (available on GitHub)\n2. CLI wallet (available on GitHub)\n3. Mobile wallet (available for Android and iOS)\n4. Paper wallet (available on the Verus Paper wallet website)\n\nThese wallets allow you to store, send, and receive Verus coins, and each has its own unique features and benefits. Do you have a preferred type of wallet in mind?\n\n**User:**\nThat's helpful, thanks! I think I'll start with the desktop wallet. How can I download the Verus bootstrap to get started?\n\n**AI Assistant:**\nYou can download the Verus bootstrap from the Verus bootstrap website ([https://bootstrap.verus.io](https://bootstrap.verus.io)). The bootstrap will help you get started with the desktop wallet and sync with the Verus network. Let me know if you have any trouble with the download or setup process!\n\n**User:**\nI've got the bootstrap set up, and I'm wondering about VerusPay. What is it, and how can I set it up?\n\n**AI Assistant:**\nVerusPay is a payment system for Verus. It allows you to easily send and receive Verus coins, and it's a great way to integrate Verus into your online business or personal transactions. To set up VerusPay, you can follow the setup guide on the VerusPay website ([https://veruspay.io/setup/](https://veruspay.io/setup/)). The guide will walk you through the process step-by-step.\n\n**User:**\nOne last question: where can I find the latest releases of the Verus desktop wallet?\n\n**AI Assistant:**\nYou can find the latest releases of the Verus desktop wallet on the Verus-Desktop repository on GitHub ([https://github.com/VerusCoin/Verus-Desktop/releases](https://github.com/VerusCoin/Verus-Desktop/releases)). This is where the Verus development team releases new updates and features, so it's a good idea to check back regularly to stay up-to-date.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the different types of wallets available for Verus?",
+            "There are several types of wallets available for Verus, including:\n\n1. Desktop wallet (available on GitHub)\n2. CLI wallet (available on GitHub)\n3. Mobile wallet (available for Android and iOS)\n4. Paper wallet (available on the Verus Paper wallet website)",
+            "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ],
+        [
+            "How can I download the Verus bootstrap?",
+            "You can download the Verus bootstrap from the Verus bootstrap website ([https://bootstrap.verus.io](https://bootstrap.verus.io)).",
+            "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ],
+        [
+            "What is VerusPay, and how can I set it up?",
+            "VerusPay is a payment system for Verus. You can set up VerusPay by following the setup guide on the VerusPay website ([https://veruspay.io/setup/](https://veruspay.io/setup/)).",
+            "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ],
+        [
+            "Where can I find the latest releases of the Verus desktop wallet?",
+            "You can find the latest releases of the Verus desktop wallet on the Verus-Desktop repository on GitHub ([https://github.com/VerusCoin/Verus-Desktop/releases](https://github.com/VerusCoin/Verus-Desktop/releases)).",
+            "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ]
+    ]
+]

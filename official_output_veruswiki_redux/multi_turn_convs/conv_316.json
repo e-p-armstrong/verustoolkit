@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've got a question about converting VRSCTEST to a new token. How can I park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the `sendcurrency` command?\n\n**AI Assistant:**\nYou can park a conversion of VRSCTEST to a new token before that token launches by using the `sendcurrency` command with the following format:\n\n```\nST sendcurrency \"*\" '[{\"address\":\"your_address@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\n\nThis will effectively park your conversion until the GOLD token launches. After the launch, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned.\n\n**User:**\nThat makes sense. But what happens to my parked cryptocurrency conversion when a new cryptocurrency is launched?\n\n**AI Assistant:**\nWhen a new cryptocurrency is launched, your parked conversion will be processed. You will either find the converted amount of the new cryptocurrency in your wallet, or you will have your original cryptocurrency amount returned.\n\n**User:**\nI noticed that you mentioned setting `preconvert` to 1 in the `sendcurrency` command. What are the implications of setting `preconvert` to 1 when using the `sendcurrency` command?\n\n**AI Assistant:**\nSetting `preconvert` to 1 when using the `sendcurrency` command allows you to park a conversion of VRSCTEST to a new token before that token launches. This means that the conversion will be processed when the new token launches, and you will either receive the converted amount of the new token or have your original VRSCTEST amount returned. It's a way to reserve a conversion before the new token is available.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I park a conversion of VRSCTEST to a new token (like GOLD) before that token launches, using the `sendcurrency` command?",
+            "You can park a conversion of VRSCTEST to a new token before that token launches by using the `sendcurrency` command with the following format:\n\n```\nST sendcurrency \"*\" '[{\"address\":\"your_address@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\n\nThis will effectively park your conversion until the GOLD token launches. After the launch, you will either find the converted amount of GOLD in your wallet, or you will have your original VRSCTEST amount returned.",
+            "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens to my parked cryptocurrency conversion when a new cryptocurrency is launched?",
+            "When a new cryptocurrency is launched, your parked conversion will be processed. You will either find the converted amount of the new cryptocurrency in your wallet, or you will have your original cryptocurrency amount returned.",
+            "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What are the implications of setting `preconvert` to 1 when using the `sendcurrency` command?",
+            "Setting `preconvert` to 1 when using the `sendcurrency` command allows you to park a conversion of VRSCTEST to a new token before that token launches. This means that the conversion will be processed when the new token launches, and you will either receive the converted amount of the new token or have your original VRSCTEST amount returned.",
+            "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

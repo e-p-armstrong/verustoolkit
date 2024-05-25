@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about using the `sendcurrency` command with the `preconvert` option. What happens to my tokens if the target token launches after I use this command?\n\n**AI Assistant:**\nIf the target token launches after you use the `sendcurrency` command with the `preconvert` option, you will either find the converted amount of the target token in your wallet or have your original token amount returned. So, you don't have to worry about losing your tokens if the target token takes some time to launch. Do you have any other questions about using `sendcurrency` with `preconvert`?\n\n**User:**\nThat's good to know, thanks! Another question I have is about creating new tokens. Can I create a new token that can be converted to with either GOLD or VRSCTEST?\n\n**AI Assistant:**\nYes, you can create a new token that can be converted to with either GOLD or VRSCTEST. This can be done by defining the properties of the new token, including the currencies it can be converted to. So, you have the flexibility to create tokens that can be easily converted to other currencies, making it convenient for users. Do you have any questions about the process of creating a new token or defining its properties?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens to my tokens if the target token launches after I use the `sendcurrency` command with the `preconvert` option?",
+            "If the target token launches after you use the `sendcurrency` command with the `preconvert` option, you will either find the converted amount of the target token in your wallet or have your original token amount returned.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I create a new token that can be converted to with either GOLD or VRSCTEST?",
+            "Yes, you can create a new token that can be converted to with either GOLD or VRSCTEST. This can be done by defining the properties of the new token, including the currencies it can be converted to.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

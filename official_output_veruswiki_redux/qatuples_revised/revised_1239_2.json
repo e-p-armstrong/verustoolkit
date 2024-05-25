@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `zcsamplejoinsplit` command?",
+    "The `zcsamplejoinsplit` command performs a joinsplit and returns the JSDescription.",
+    "Note: The caller is responsible for delivering the output enc1 and enc2 to the appropriate recipients, as well as signing rawtxout and ensuring it is mined. (A future RPC call will deliver the confidential payments in-band on the blockchain.)\n\nOutput:\n```json\n{\n\"encryptednote1\": enc1,\n\"encryptednote2\": enc2,\n\"rawtxn\": rawtxout\n}\n```\n\n### `zcrawkeygen`\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput:\n```json\n{\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}\n```\n\n### `zcrawreceive zcsecretkey encryptednote`\nDEPRECATED. Decrypts encryptednote and checks if the coin commitments\nare in the blockchain as indicated by the \"exists\" result.\n\nOutput:\n```json\n{\n \"amount\": value,\n \"note\": noteplaintext,\n \"exists\": exists\n}\n```\n\n### `zcsamplejoinsplit`\nPerform a joinsplit and return the JSDescription.\n\ncompiled by Oink.vrsc@, additions by Mike@, grewalsatinder@ and allbits@\n\nNote: last revision date 2024-05-03.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

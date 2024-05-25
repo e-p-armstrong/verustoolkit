@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the expected result of a Verus transaction?",
+            "The expected result of a Verus transaction is a transaction ID, which is a hexadecimal string (hexstr). This transaction ID serves as a unique identifier for the transaction and can be used to track its status and verify its completion.",
+            "ansparent or private address to source all funds for fees to preserve privacy of the identity\n```\n#### Result:\ntransactionid          (hexstr)",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3e195ac8-e576-4012-8a34-153f4a1740c9"
+]

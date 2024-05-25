@@ -1,0 +1,6 @@
+[
+    "What is required to create a new token called \"mycoin\"?",
+    "To create a new token called \"mycoin\", you need to have either GOLD or VRSCTEST. With one of these tokens, you can define the properties of \"mycoin\" using a command like `definecurrency`.",
+    "o with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

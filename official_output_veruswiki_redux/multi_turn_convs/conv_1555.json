@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to learn more about Verus commands. What does the `getinitialcurrencystate \"name\"` command do in Verus?\n\n**AI Assistant:**\nThe `getinitialcurrencystate \"name\"` command returns the total amount of preconversions that have been confirmed on the blockchain for a specified PBaaS chain. It's a helpful command for getting information about the initial state of a currency on a specific chain.\n\n**User:**\nThat makes sense. When would I use the `getinitialcurrencystate \"name\"` command?\n\n**AI Assistant:**\nYou would use the `getinitialcurrencystate \"name\"` command to get information about PBaaS chains that are not the current chain, but are being launched by it. This command is particularly useful when you need to know the initial state of a currency on a chain that's not the one you're currently on. Does that help clarify things?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `getinitialcurrencystate \"name\"` command do in Verus?",
+            "The `getinitialcurrencystate \"name\"` command returns the total amount of preconversions that have been confirmed on the blockchain for a specified PBaaS chain.",
+            "### `getinitialcurrencystate \"name\"`\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "When would I use the `getinitialcurrencystate \"name\"` command?",
+            "You would use the `getinitialcurrencystate \"name\"` command to get information about PBaaS chains that are not the current chain, but are being launched by it.",
+            "### `getinitialcurrencystate \"name\"`\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

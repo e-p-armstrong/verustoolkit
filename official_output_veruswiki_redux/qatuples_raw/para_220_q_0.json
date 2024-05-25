@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `sendrawtransaction` command in Verus?",
+    "The `sendrawtransaction` command is used to submit a raw transaction (serialized and hex-encoded) to the local node and network.",
+    "### `sendrawtransaction \"hexstring\" ( allowhighfees )`\nSubmits raw transaction (serialized, hex-encoded) to local node and network.Also see createrawtransaction and signrawtransaction calls.#### Arguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees#### Result:\n\"hex\"       (string) The transaction hash in hexExamples:",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

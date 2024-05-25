@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to understand the results of operations in Verus. Can you tell me what the result of an operation in Verus contains?\n\n**AI Assistant:**\nThe result of an operation in Verus contains an \"operationid\" which is a string that can be used to retrieve the status of the operation using the \"z_getoperationstatus\" command. This operationid is a unique identifier for the operation, and it's how you can keep track of its status.\n\n**User:**\nThat's helpful, thanks! I also noticed that there's an option to set \"returntxtemplate\" to true in an operation result. What additional information is returned if I do that?\n\n**AI Assistant:**\nIf \"returntxtemplate\" is set to true, the operation result will also contain a JSON object with two properties: \"outputtotals\" and \"hextx\". \"outputtotals\" is a currency value map that represents the total outputs in all currencies that need to be input to the transaction. \"hextx\" is a hexadecimal string that represents the transaction with all specified outputs and no inputs. This can be really useful if you need to build the transaction manually or inspect its details.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the result of an operation in Verus contain?",
+            "The result of an operation in Verus contains an \"operationid\" which is a string that can be used to retrieve the status of the operation using the \"z_getoperationstatus\" command.",
+            "#### Result:\n1. \"operationid\"     (string) An operationid to pass to z_getoperationstatus to get the result of the operation.\n2. If (returntxtemplate) is true  \n```json\n {\n  \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies the need to be input to the transaction\n  \"hextx\" : \"hexstring\"         The transaction with all specified outputs and no inputs\n }\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What additional information is returned if \"returntxtemplate\" is set to true in an operation result?",
+            "If \"returntxtemplate\" is set to true, the operation result will also contain a JSON object with two properties: \"outputtotals\" and \"hextx\". \"outputtotals\" is a currency value map that represents the total outputs in all currencies that need to be input to the transaction. \"hextx\" is a hexadecimal string that represents the transaction with all specified outputs and no inputs.",
+            "#### Result:\n1. \"operationid\"     (string) An operationid to pass to z_getoperationstatus to get the result of the operation.\n2. If (returntxtemplate) is true  \n```json\n {\n  \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies the need to be input to the transaction\n  \"hextx\" : \"hexstring\"         The transaction with all specified outputs and no inputs\n }\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

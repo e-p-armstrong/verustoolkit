@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the \"chainname\" argument in a Verus command?",
+    "The \"chainname\" argument is used to specify the name of the chain to look for in a Verus command. If no parameter is provided, the command will return the current chain in the daemon.",
+    "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

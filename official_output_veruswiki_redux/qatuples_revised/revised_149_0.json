@@ -1,0 +1,6 @@
+[
+    "What is the relationship between an ID and a currency in Verus?",
+    "In Verus, an ID is required to create a currency of a specific name. The controller of the ID is the only one who can create a currency of that name, and they can only do so once. This means that the ID and currency share the same name, and the ID's controller has exclusive control over the creation of the currency.",
+    "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+    "./raw_text_input_wiki/release_notes.md"
+]

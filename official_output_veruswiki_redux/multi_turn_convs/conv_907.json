@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been thinking about creating my own currency in Verus. What is required to create a currency with a specific name in Verus?\n\n**AI Assistant:**\nTo create a currency with a specific name in Verus, you need an ID with the same name. The controller of this ID is the only one who can create a currency with that name, and they can only do so once. Does that make sense? Do you have any more questions about creating a currency in Verus?\n\n**User:**\nThat's helpful, thanks! I was wondering, who has the authority to create a currency with a specific name in Verus?\n\n**AI Assistant:**\nGood question! The controller of the ID with the same name as the currency has the authority to create a currency with that name in Verus. This ensures that only one person or entity has control over the creation of a currency with a specific name.\n\n**User:**\nOkay, got it. And what about if someone else wants to create a currency with the same name? Can multiple currencies with the same name be created in Verus?\n\n**AI Assistant:**\nNo, only one currency with a specific name can be created in Verus, and it can only be created by the controller of the ID with the same name. This prevents confusion and ensures that each currency has a unique identity. Is there anything else you'd like to know about creating currencies in Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is required to create a currency with a specific name in Verus?",
+            "To create a currency with a specific name in Verus, you need an ID with the same name. The controller of this ID is the only one who can create a currency with that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Who has the authority to create a currency with a specific name in Verus?",
+            "The controller of the ID with the same name as the currency has the authority to create a currency with that name in Verus.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can multiple currencies with the same name be created in Verus?",
+            "No, only one currency with a specific name can be created in Verus, and it can only be created by the controller of the ID with the same name.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

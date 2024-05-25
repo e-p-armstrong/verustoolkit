@@ -1,0 +1,6 @@
+[
+    "What is the role of the `via` option in the `sendcurrency` command?",
+    "The `via` option specifies the gateway or bridge through which the currency should be converted and exported. For example, setting `via` to Bridge.PBaaSChain indicates that the conversion and export should be done via the Bridge.PBaaSChain gateway.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

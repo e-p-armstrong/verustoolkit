@@ -1,0 +1,6 @@
+[
+    "What is the `feeoffer` parameter used for in Verus transactions?",
+    "The `feeoffer` parameter is an optional amount that you can specify to offer to miners or stakers as a registration fee for your transaction. If you don't specify a value, the standard price will be used.",
+    "rn a transaction for additional\n                      signatures rather than committing it\nfeeoffer              (amount, optional)\n                      amount to offer miner/staker for the registration\n                      fee, if missing, uses standard price\nsourceoffunds           (addressorid, optional) optional address to use for source of funds. if not specified, transparent wildcard \"*\" is used\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

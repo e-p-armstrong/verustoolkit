@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the relationship between an ID and a currency in Verus?",
+            "In Verus, a currency can be created with a specific name only by the controller of an ID with the same name. This means that if you want to create a currency called \"gold@\", you need to have an ID called \"gold@\" and be its controller. Additionally, a currency can only be created once by the controller of the corresponding ID.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the significance of having an ID with the same name as the currency you want to create?",
+            "Having an ID with the same name as the currency you want to create is necessary because only the controller of that ID can create a currency with that name. This ensures that the creator of the currency has control over it and can manage its properties.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f8744de6-5bd6-482f-bea9-bcd2ef1128dd"
+]

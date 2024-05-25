@@ -1,0 +1,6 @@
+[
+    "How can I retrieve the raw transaction data for a specific transaction ID with additional information, such as the block time, using the Verus command-line interface?",
+    "You can retrieve the raw transaction data for a specific transaction ID with additional information, such as the block time, by adding an extra parameter to the `getrawtransaction` method. The syntax is `verus getrawtransaction \"mytxid\" 1`, where `\"mytxid\"` is the ID of the transaction you want to retrieve, and `1` indicates that you want to include additional information, such as the block time.",
+    "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the maximum transaction size in Verus, and how does it change over time?",
+    "The maximum transaction size in Verus is 100,000 bytes before Sapling activates, and 2,000,000 bytes once Sapling activates. This is a consensus rule that constrains any limits set by the caller or other parameters.",
+    "The number of UTXOs and notes selected for merging can be limited by the caller. If the transparent limit parameter is set to zero, and Overwinter is not yet active, the `-mempooltxinputlimit` option will determine the number of UTXOs. After Overwinter has activated `-mempooltxinputlimit` is ignored and having a transparent input limit of zero will mean limit the number of UTXOs based on the size of the transaction. Any limit is constrained by the consensus rule defining a maximum transaction size of 100000 bytes before Sapling, and 2000000 bytes once Sapling activates.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

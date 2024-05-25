@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What does the `getinitialcurrencystate \"name\"` command do in Verus?",
+            "The `getinitialcurrencystate \"name\"` command returns the total amount of preconversions that have been confirmed on the blockchain for a specified PBaaS chain.",
+            "### `getinitialcurrencystate \"name\"`\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "When would I use the `getinitialcurrencystate \"name\"` command?",
+            "You would use the `getinitialcurrencystate \"name\"` command to get information about PBaaS chains that are not the current chain, but are being launched by it.",
+            "### `getinitialcurrencystate \"name\"`\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "29a65445-1eee-4b66-9ca5-3b627a2149ad"
+]

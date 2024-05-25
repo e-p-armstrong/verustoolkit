@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getcurrency` command in Verus?",
+    "The `getcurrency` command returns a complete definition for any given chain if it is registered on the blockchain. If no chain name is specified, it returns the chain definition of the current chain.",
+    "### `getcurrency \"currencyname\"`\nReturns a complete definition for any given chain if it is registered on the blockchain. If the chain requested is NULL, chain definition of the current chain is returned.#### Arguments:\n```\n1. \"currencyname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n```\n#### Result:\n```json\n{\n \"version\" : n,             (int) version of this chain definition\n \"name\" : \"string\",           (string) name or symbol of the chain, same as passed\n \"fullyqualifiedname\" : \"string\",    (string) name or symbol of the chain with all parent namespaces, separated by \".\"\n \"currencyid\" : \"i-address\",      (string) string that represents t",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

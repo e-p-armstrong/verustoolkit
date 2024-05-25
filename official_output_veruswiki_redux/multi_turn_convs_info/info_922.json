@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are the components of a PBaaS blockchain definition in Verus?",
+            "A PBaaS blockchain definition in Verus consists of several components, including:\n\n1. `name`: The name of the blockchain.\n2. `options`: An integer value that configures various properties of the blockchain.\n3. `currencies`: A list of currencies that can be used on the blockchain.\n4. `conversions`: A list of conversion rates between the currencies.\n5. `eras`: A list of eras, each with its own block reward, decay, halving, and era end settings.\n6. `notaries`: A list of VerusIDs that serve as notaries on the blockchain.\n7. `minnotariesconfirm`: The minimum number of notaries required to confirm a block.\n8. `nodes`: A list of nodes on the blockchain, including their network addresses and node identities.\n9. `gatewayconvertername`: The name of the gateway converter.\n10. `gatewayconverterissuance`: The initial issuance of the gateway converter's native token.",
+            "## Defining a PBaaS blockchain\n```json\n{\n\"name\": \"PBaaSChain\",\n\"options\": 330,\n\"currencies\": [\n\"VRSCTEST\"\n],\n\"conversions\": [\n1\n],\n\"eras\": [\n{\n\"reward\": 1200000000,\n\"decay\": 0,\n\"halving\": 0,\n\"eraend\": 0\n}\n],\n\"notaries\": [\n\"Notary1@\",\n\"Notary2@\",\n\"Notary3@\",\n],\n\"minnotariesconfirm\": 2,\n\"nodes\": [\n{\n\"networkaddress\": \"111.111.111.111:10000\",\n\"nodeidentity\": \"Node1@\"\n},\n{\n \"networkaddress\": \"111.111.111.112:10000\",\n\"nodeidentity\": \"Node2@\"\n}\n],\n\"gatewayconvertername\": \"Bridge\",\n\"gatewayconverterissuance\": 1000000\n}\n```\nThe bridge definition has overridable defaults\n```json\n{\n\"currencies\": [\n\"VRSCTEST\",\n\"PBaaSChain\",\n\"USD\"\n],\n\"initialcontributions\": [\n380228.12033701,\n0,\n1000000\n],\n\"initialsupply\": 3000000\n}\n```Now pass those definitions to `definecurrency`\n```json\n./verus -chain=vrsctest definecurrency '{\"name\":\"PBaaSChain\",\"options\":330,\"currencies\":[\"VRSCTEST\"],\"conversions\":[1],\"eras\":[{\"reward\":1200000000,\"decay\":0,\"halving\":0,\"eraend\":0}],\"notaries\":[\"Notary1@\",\"Notary2@\",\"Notary3@\"],\"minnotariesconfirm\":2,\"nodes\":[{\"networkaddress\":\"111.111.111.111:10000\",\"nodeidentity\":\"Node1@\"},{\"networkaddress\":\"111.111.111.112:10000\",\"nodeidentity\":\"Node2@\"}],\"gatewayconvertername\":\"Bridge\",\"gatewayconverterissuance\":1000000}' '{\"currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\"initialcontributions\":[371747.20398827,0,1000000],\"initialsupply\":3000000}'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2f4f37d7-ff13-4277-bb6d-75d3bc90b49e"
+]

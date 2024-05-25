@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've got some more questions about VerusIDs. What happens to existing transactions sent to my VerusID if I upgrade to a quantum secure address?\n\n**AI Assistant:**\nWhen you upgrade to a quantum secure address, all existing transactions sent to your VerusID will be retroactively secured under the control of that address. This means that even if you have a large number of transactions (e.g. 1000) sent to your identity name/address, they will all be secured by the quantum secure address once it's available. You don't have to worry about losing control of your transactions or having them compromised.\n\n**User:**\nThat's great to know! How does Verus protect my transactions against potential quantum attacks?\n\n**AI Assistant:**\nVerus is designed to be quantum-ready, which means that it has the ability to retroactively secure transactions sent to a VerusID once a quantum secure address is available. This ensures that even if a quantum computer is developed in the future, your transactions will still be secure. Verus is committed to protecting your transactions and assets from potential threats, including those posed by quantum computers.\n\n**User:**\nWhat's the benefit of using a VerusID for receiving transactions?\n\n**AI Assistant:**\nOne of the benefits of using a VerusID for receiving transactions is that it allows you to easily upgrade to a quantum secure address in the future, which will retroactively secure all existing transactions sent to that address. This provides an additional layer of security and protection against potential quantum attacks. By using a VerusID, you can ensure that your transactions are protected and secure, even in the face of emerging threats. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens to existing transactions sent to my VerusID if I upgrade to a quantum secure address?",
+            "When you upgrade to a quantum secure address, all existing transactions sent to your VerusID will be retroactively secured under the control of that address. This means that even if you have a large number of transactions (e.g. 1000) sent to your identity name/address, they will all be secured by the quantum secure address once it's available.",
+            "subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How does Verus protect my transactions against potential quantum attacks?",
+            "Verus is designed to be quantum-ready, which means that it has the ability to retroactively secure transactions sent to a VerusID once a quantum secure address is available. This ensures that even if a quantum computer is developed in the future, your transactions will still be secure.",
+            "subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the benefit of using a VerusID for receiving transactions?",
+            "One of the benefits of using a VerusID for receiving transactions is that it allows you to easily upgrade to a quantum secure address in the future, which will retroactively secure all existing transactions sent to that address. This provides an additional layer of security and protection against potential quantum attacks.",
+            "subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

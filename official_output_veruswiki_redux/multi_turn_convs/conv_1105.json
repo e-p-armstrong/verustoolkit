@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been thinking about creating a new currency on the Verus platform, but I'm not sure what's required. Can you help me out? What is required to create a currency with a specific name on the Verus platform?\n\n**AI Assistant:**\nTo create a currency with a specific name on the Verus platform, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once. That's the basic requirement, but there's more to it. Do you want to know more about the significance of having an ID with the same name as the currency you want to create?\n\n**User:**\nYes, that would be great! I'm curious about why that's a requirement. What is the significance of having an ID with the same name as the currency you want to create?\n\n**AI Assistant:**\nHaving an ID with the same name as the currency you want to create grants the controller of that ID the sole authority to create a currency with that name. This ensures that the creator of the currency has full control over its creation and management. It's like having a unique identifier that proves you're the rightful owner of that currency name. This way, Verus ensures that there's no confusion or conflict between different currencies with the same name. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is required to create a currency with a specific name on the Verus platform?",
+            "To create a currency with a specific name on the Verus platform, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business,",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the significance of having an ID with the same name as the currency you want to create?",
+            "Having an ID with the same name as the currency you want to create grants the controller of that ID the sole authority to create a currency with that name. This ensures that the creator of the currency has full control over its creation and management.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business,",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

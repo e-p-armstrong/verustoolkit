@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I have a question about using Verus commands. What happens when I use the command `sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` and the token I'm converting to hasn't launched yet?\n\n**AI Assistant:**\nWhen you use this command, your conversion is effectively parked until the token launches. Once the token launches, you will either receive the converted amount of the new token (in this case, GOLD) in your wallet, or you will have your original VRSCTEST amount returned. So, you don't have to worry about losing your funds, and you can just wait for the token to launch. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens when I use the command `sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` and the token I'm converting to hasn't launched yet?",
+            "When you use this command, your conversion is effectively parked until the token launches. Once the token launches, you will either receive the converted amount of the new token (in this case, GOLD) in your wallet, or you will have your original VRSCTEST amount returned.",
+            "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

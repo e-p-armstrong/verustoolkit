@@ -1,0 +1,6 @@
+[
+    "How can I use the `getimports` command to get all imports into a specific currency?",
+    "You can use the `getimports` command by specifying the name of the chain and optionally, a block range. For example, to get all imports into a chain named \"mychain\", you would run `getimports \"mychain\"`. If you want to get imports between specific block heights, you can add the `heightstart` and `heightend` arguments, like this: `getimports \"mychain\" 100 200`.",
+    "### `getimports \"chainname\" (startheight) (endheight)`\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n#### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   default=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

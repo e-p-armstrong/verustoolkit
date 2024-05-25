@@ -1,0 +1,6 @@
+[
+    "What does it mean when the result of a signature validation is `true`?",
+    "When the result of a signature validation is `true`, it means that the signature is valid.",
+    "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-2 UPDATEThis daemon release includes a fix that simplifies some bridge transactions, and is the version you should run on testnet when the Ethereum bridge does launch for a good experience.v0.8.0 Updates include:",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm having some trouble with my Verus wallet. I'm not sure what's going on, but I think it might have something to do with forking, network problems, or maybe I just have an old version of the wallet. Do you know what I should do?\n\n**AI Assistant:**\nSorry to hear that! If you're experiencing issues with forking, network problems, or having an old version of the wallet, I recommend referring to the Verus wiki's FAQ section, specifically the article on \"Recover from forking, network or old wallet problems\". This article provides guidance on how to resolve these issues. Have you already checked the wiki, or would you like me to walk you through it?\n\n**User:**\nNo, I haven't checked the wiki yet. But I was wondering, who contributed to that resource on resolving forking, network, and old wallet issues in Verus?\n\n**AI Assistant:**\nThe resource on resolving forking, network, and old wallet issues in Verus was contributed by Oink.vrsc@ and Thoskk.vrsc@. They're part of the Verus community and have done a great job in putting together this helpful resource. Now, would you like me to guide you through the steps to resolve your issue, or would you rather check out the wiki article on your own?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What should I do if I encounter issues with forking, network problems, or having an old version of the wallet?",
+            "If you encounter issues with forking, network problems, or having an old version of the wallet, you should refer to the Verus wiki's FAQ section, specifically the article on \"Recover from forking, network or old wallet problems\". This article provides guidance on how to resolve these issues.",
+            "If the problem persists, continue with this WIKI: [Recover from forking, network or old wallet problems](https://wiki.verus.io/#!faq-allos/faq-allos19_what_should_i_do_if_i_end_up_on_my_own_fork_because_of_a_network_issue_or_having_an_old_version_of_the_wallet.md)\n\nSubmitted by Oink.vrsc@ & Thoskk.vrsc@\n\nNote: last revision date 2023-06-03.",
+            "./raw_text_input_wiki/faq-allos25_wallet_not_synced.md"
+        ],
+        [
+            "Who contributed to the resource on resolving forking, network, and old wallet issues in Verus?",
+            "The resource on resolving forking, network, and old wallet issues in Verus was contributed by Oink.vrsc@ and Thoskk.vrsc@.",
+            "If the problem persists, continue with this WIKI: [Recover from forking, network or old wallet problems](https://wiki.verus.io/#!faq-allos/faq-allos19_what_should_i_do_if_i_end_up_on_my_own_fork_because_of_a_network_issue_or_having_an_old_version_of_the_wallet.md)\n\nSubmitted by Oink.vrsc@ & Thoskk.vrsc@\n\nNote: last revision date 2023-06-03.",
+            "./raw_text_input_wiki/faq-allos25_wallet_not_synced.md"
+        ]
+    ]
+]

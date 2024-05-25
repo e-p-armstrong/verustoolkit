@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does the error \"Cannot Get a lock on data directory /root/.komodo/VRSC\" mean when trying to start Verus?",
+            "This error typically indicates that Verus is already running and cannot be started again while it's still active. It's a lock issue with the data directory.",
+            "# ERROR: Cannot Get a lock on data directory /root/.komodo/VRSC.\n\nKomodo is probably already running.\n\n## Procedure:\n\nIt just means you can't start it when it's already running. If it isn't running we can take a look at it.\nCheck to see if it is running by running:\n\n`./verus getinfo`\n\nIf it's running you'll get info back, if it isn't you'll get an error.\nIf that throws an error, it's worth checking using this command:\n\n`ps fax | grep verus`\n\nand seeing if any processes are listed besides the process you're using to search.\nYou would see verusd with a child process of komodo and all its cli arguments.\n\n(submitted by @keda666, solution written by englal.vrsc@)\n\nNote: last revision date 2020-02-26.",
+            "./raw_text_input_wiki/mac-faq01_obtain_lock.md"
+        ],
+        [
+            "How can I check if Verus is already running?",
+            "You can check if Verus is running by using the command `./verus getinfo`. If Verus is running, you will receive information back. If not, you'll get an error.",
+            "# ERROR: Cannot Get a lock on data directory /root/.komodo/VRSC.\n\nKomodo is probably already running.\n\n## Procedure:\n\nIt just means you can't start it when it's already running. If it isn't running we can take a look at it.\nCheck to see if it is running by running:\n\n`./verus getinfo`\n\nIf it's running you'll get info back, if it isn't you'll get an error.\nIf that throws an error, it's worth checking using this command:\n\n`ps fax | grep verus`\n\nand seeing if any processes are listed besides the process you're using to search.\nYou would see verusd with a child process of komodo and all its cli arguments.\n\n(submitted by @keda666, solution written by englal.vrsc@)\n\nNote: last revision date 2020-02-26.",
+            "./raw_text_input_wiki/mac-faq01_obtain_lock.md"
+        ],
+        [
+            "What if `./verus getinfo` throws an error? How can I further investigate if Verus is running?",
+            "If `./verus getinfo` throws an error, you can use the command `ps fax | grep verus` to see if any Verus-related processes are running. This command will list all processes, and you can check if there's a process named `verusd` with a child process of `komodo` and its command-line arguments.",
+            "# ERROR: Cannot Get a lock on data directory /root/.komodo/VRSC.\n\nKomodo is probably already running.\n\n## Procedure:\n\nIt just means you can't start it when it's already running. If it isn't running we can take a look at it.\nCheck to see if it is running by running:\n\n`./verus getinfo`\n\nIf it's running you'll get info back, if it isn't you'll get an error.\nIf that throws an error, it's worth checking using this command:\n\n`ps fax | grep verus`\n\nand seeing if any processes are listed besides the process you're using to search.\nYou would see verusd with a child process of komodo and all its cli arguments.\n\n(submitted by @keda666, solution written by englal.vrsc@)\n\nNote: last revision date 2020-02-26.",
+            "./raw_text_input_wiki/mac-faq01_obtain_lock.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b5d2ffc0-e2fc-4e17-bd53-b6511124ad5c"
+]

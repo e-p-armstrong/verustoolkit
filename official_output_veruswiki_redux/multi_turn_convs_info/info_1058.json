@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `sendrawtransaction` command in Verus?",
+            "The `sendrawtransaction` command is used to submit a raw transaction (serialized and hex-encoded) to the local node and network.",
+            "### `sendrawtransaction \"hexstring\" ( allowhighfees )`\nSubmits raw transaction (serialized, hex-encoded) to local node and network.Also see createrawtransaction and signrawtransaction calls.#### Arguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees#### Result:\n\"hex\"       (string) The transaction hash in hexExamples:",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What are the required and optional arguments for the `sendrawtransaction` command?",
+            "The required argument is \"hexstring\", which is a string representing the hex-encoded raw transaction. The optional argument is \"allowhighfees\", a boolean value that defaults to false, which allows high fees if set to true.",
+            "### `sendrawtransaction \"hexstring\" ( allowhighfees )`\nSubmits raw transaction (serialized, hex-encoded) to local node and network.Also see createrawtransaction and signrawtransaction calls.#### Arguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees#### Result:\n\"hex\"       (string) The transaction hash in hexExamples:",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the result of using the `sendrawtransaction` command?",
+            "The result of using the `sendrawtransaction` command is a string representing the transaction hash in hex.",
+            "### `sendrawtransaction \"hexstring\" ( allowhighfees )`\nSubmits raw transaction (serialized, hex-encoded) to local node and network.Also see createrawtransaction and signrawtransaction calls.#### Arguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees#### Result:\n\"hex\"       (string) The transaction hash in hexExamples:",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5e774eb5-4d38-4ecf-afe2-e458db675535"
+]

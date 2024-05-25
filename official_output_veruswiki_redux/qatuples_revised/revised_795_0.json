@@ -1,0 +1,6 @@
+[
+    "How can I recover an identity in Verus using the command line?",
+    "You can recover an identity in Verus using the `recoveridentity` command. The basic syntax is:\n```\nverus recoveridentity '{\"name\" : \"your_identity_name\"}'\n```\nReplace `\"your_identity_name\"` with the actual name of the identity you want to recover.",
+    "Examples:\n```bash\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

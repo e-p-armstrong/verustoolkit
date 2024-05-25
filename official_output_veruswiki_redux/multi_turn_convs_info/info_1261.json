@@ -1,0 +1,38 @@
+[
+    [
+        [
+            "How do I export my wallet using Verus Desktop?",
+            "To export your wallet using Verus Desktop, follow these steps:\n\n1. Go to `Settings`, then `Coin Settings`.\n2. Click in the textbox shown there.\n3. Enter `run z_exportwallet <mywalletexport>` and press Enter to execute the command.",
+            "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+            "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+        ],
+        [
+            "How do I export my wallet using Agama?",
+            "To export your wallet using Agama, follow these steps:\n\n1. Go to `Settings`.\n2. Scroll to the bottom and click `CLI`.\n3. Select `VRSC` in that section.\n4. Type `z_exportwallet <mywalletexport>` and click the button below to run it.",
+            "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+            "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+        ],
+        [
+            "How do I export my wallet using the Linux CLI?",
+            "To export your wallet using the Linux CLI, run the command `./verus z_exportwallet <mywalletexport>`.",
+            "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+            "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+        ],
+        [
+            "How do I export my wallet using the Windows CLI?",
+            "To export your wallet using the Windows CLI, run the command `verus z_exportwallet <mywalletexport>`.",
+            "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+            "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+        ],
+        [
+            "What are the restrictions on the filename I use to export my wallet?",
+            "The filename you use to export your wallet can only contain letters and figures, no other characters. This means that the filename **cannot** have a file extension.",
+            "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+            "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "607cf732-7c84-43bb-b176-600ab6bc8dec"
+]

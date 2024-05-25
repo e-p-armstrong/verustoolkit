@@ -1,0 +1,6 @@
+[
+    "What does the `proofprotocol` option do when defining a new currency in Verus?",
+    "The `proofprotocol` option specifies the proof protocol used by the currency. In the example given, `proofprotocol` is set to 2, which corresponds to PROOF_CHAINID. This means that the controller of the chain ID has the ability to mint new coins.",
+    "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

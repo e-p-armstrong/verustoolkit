@@ -1,0 +1,6 @@
+[
+    "How can I retrieve the raw transaction data for a specific transaction ID using the Verus JSON-RPC interface?",
+    "You can retrieve the raw transaction data for a specific transaction ID using the Verus JSON-RPC interface by sending a JSON-RPC request to the Verus server. The request should include the method `getrawtransaction`, the transaction ID, and any additional parameters you want to include, such as `1` for additional information like the block time. An example of the JSON-RPC request is:\n```json\n{\n  \"jsonrpc\": \"1.0\",\n  \"id\": \"curltest\",\n  \"method\": \"getrawtransaction\",\n  \"params\": [\"mytxid\", 1]\n}\n```\nYou can send this request using a tool like `curl`, specifying the URL of the Verus server and the JSON-RPC request data.",
+    "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to understand the API in Verus. What is the purpose of the `getcurrencyconverters` API?\n\n**AI Assistant:**\nThe `getcurrencyconverters` API retrieves a list of currencies that meet certain conditions. These conditions include having at least 1000 VRSC in reserve, a VRSC reserve ratio greater than 10%, and having all listed currencies as reserves. Does that make sense? Do you have any further questions about the `getcurrencyconverters` API?\n\n**User:**\nActually, yes, I do. How can I use the `getcurrencyconverters` API to find currencies that have markets for specific pairs, such as BTC and ETH?\n\n**AI Assistant:**\nYou can use the `getcurrencyconverters` API by running a command like the following:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis will return a list of currencies that have BTC/ETH markets at or above the liquidity threshold. You can replace `btc` and `eth` with any other currency pair you're interested in, and the API will return the list of currencies that have markets for that pair.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getcurrencyconverters` API in Verus?",
+            "The `getcurrencyconverters` API retrieves a list of currencies that meet certain conditions. These conditions include having at least 1000 VRSC in reserve, a VRSC reserve ratio greater than 10%, and having all listed currencies as reserves.",
+            "verters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How can I use the `getcurrencyconverters` API to find currencies that have markets for specific pairs, such as BTC and ETH?",
+            "You can use the `getcurrencyconverters` API by running a command like the following:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis will return a list of currencies that have BTC/ETH markets at or above the liquidity threshold.",
+            "verters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

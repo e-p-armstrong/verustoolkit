@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to query a transaction on the Verus network and I was wondering, what are the required and optional arguments for a specific Verus transaction query?\n\n**AI Assistant:**\nThe required argument is \"txid\" which is a string representing the transaction id. The optional argument is \"includeWatchonly\" which is a boolean with a default value of false, used to determine whether to include watchonly addresses in balance calculation and details.\n\n**User:**\nThat's helpful, thanks! Can you tell me a bit more about the \"includeWatchonly\" argument? What does it do exactly?\n\n**AI Assistant:**\nThe \"includeWatchonly\" argument is a boolean that determines whether to include watchonly addresses in balance calculation and details when querying a transaction on the Verus network. If set to true, it will include these addresses; if set to false (default), it will not. This can be useful depending on how you want to view the transaction details. Do you have any other questions about Verus transaction queries?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the required and optional arguments for a specific Verus transaction query?",
+            "The required argument is \"txid\" which is a string representing the transaction id. The optional argument is \"includeWatchonly\" which is a boolean with a default value of false, used to determine whether to include watchonly addresses in balance calculation and details.",
+            "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What does the \"includeWatchonly\" argument do in a Verus transaction query?",
+            "The \"includeWatchonly\" argument is a boolean that determines whether to include watchonly addresses in balance calculation and details when querying a transaction on the Verus network. If set to true, it will include these addresses; if set to false (default), it will not.",
+            "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

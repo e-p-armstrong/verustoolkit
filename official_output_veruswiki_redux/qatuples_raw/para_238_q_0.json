@@ -1,0 +1,6 @@
+[
+    "What are the required and optional arguments for a specific Verus transaction query?",
+    "The required argument is \"txid\" which is a string representing the transaction id. The optional argument is \"includeWatchonly\" which is a boolean with a default value of false, used to determine whether to include watchonly addresses in balance calculation and details.",
+    "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]
