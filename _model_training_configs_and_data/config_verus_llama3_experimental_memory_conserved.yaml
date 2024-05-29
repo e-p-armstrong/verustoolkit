@@ -5,7 +5,7 @@
 # If running on a single-GPU setup, you must run:
 # conda install -c conda-forge mpi4py mpich
 # Then run this command from the /workspace/axolotl directory:
-# accelerate launch --use_deepspeed -m axolotl.cli.train ./config_verus_llama3.yaml
+# accelerate launch --use_deepspeed -m axolotl.cli.train config_verus_llama3_experimental_batch_1.yaml
 
 # Next up, try not sample packing to handle unexpected pos?
 
@@ -194,7 +194,7 @@ auto_resume_from_checkpoints: false
 eval_steps: 10
 saves_per_epoch: 1
 eval_sample_packing: false
-save_total_limit: 3
+save_total_limit: 4
 debug:
 deepspeed: deepspeed_configs/zero2.json
 special_tokens:
