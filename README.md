@@ -1,11 +1,16 @@
 # Verustoolkit - Train AI To Understand Verus
 Verustoolkit is a fork of [Augmentoolkit](https://github.com/e-p-armstrong/augmentoolkit/tree/master) that takes any conceivable written information about the Verus project — websites, API documentation, the vision paper, and more — and turns it into conversational training data for an LLM.
 
+The resulting LLM, having been trained on the information about Verus, can then educate users new and old about the Verus project. In the spirit of the Verus project, Verustoolkit is fully open-sourced with a permissive license, and can be run locally on consumer hardware. The chatbot is also open-sourced.
+
 Basically: Verus info goes in, LLM dataset comes out. Train an LLM on that dataset? It *understands* Verus, in a way that RAG cannot achieve.
 
-The Verus project is a privacy-preserving, commerce-enabled, people-powered internet. It is a multi-chain, multi-currency blockchain protocol that is designed to be a platform for the future of the internet. Verustoolkit is designed to help the Verus community train an AI that can answer questions about the Verus project, its technology, and its vision.
-
 This data generation pipeline can be run 100% locally on consumer hardware, ensuring that the Verus community will never be reliant on centralized solutions like OpenAI for producing the data for its chatbots.
+
+### What is Verus?
+
+Verus is an open-source, fairly-launched multi-chain blockchain protocol with unlimited scale. The goal of the Verus project is to create a privacy-preserving, commerce-enabled, people-powered internet. Verustoolkit is designed to help the Verus community train an AI that can answer questions about the Verus project, its technology, and its vision.
+
 
 ## Recommendation: when training on Verustoolkit data, use GaLore to achieve a full finetune, NOT LoRAs.
 ### (Model training config is provided in repo)
@@ -151,9 +156,7 @@ Field-by-field:
 
 See the `_model_training_configs_and_data` folder.
 
-TODO demo video -- model training
-
-To train a model on the data produced by Verustoolkit, you can use the provided model training configurations and the data that you generated. The demo video exhaustively shows how to do this, but here's a quick rundown if you have some experience with training LLMs (or CS in general):
+To train a model on the data produced by Verustoolkit, you can use the provided model training configurations and the data that you generated. The second demo video exhaustively shows how to do this, but here's a quick rundown if you have some experience with training LLMs (or CS in general):
 
 1. Rent a GPU instance on a cloud provider like [Vast.ai](https://vast.ai/) or [Runpod](https://www.runpod.io/). If you want to be really secure against Out Of Memory issues, consider using an A100. You can also use a local GPU if you have one. Be sure to use the winglian/axolotl:main-latest docker image.
 2. Use SSH to scp the data and model training configuration YAML to the instance's `/workspace/axolotl` folder.
