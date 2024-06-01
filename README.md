@@ -202,7 +202,7 @@ Starting from more common things to less common things:
 ## Join the Community!
 
 
-TODO discord shield, need to contact a discord server moderator and get them to enable widgets
+[![Discord](https://img.shields.io/badge/chat-Discord-blue?logo=discord)](https://verus.io/discord)
 
 [![Telegram](https://img.shields.io/badge/chat-Telegram-blue?logo=telegram)](https://t.me/veruscommunity)
 
