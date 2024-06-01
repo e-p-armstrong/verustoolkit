@@ -213,4 +213,9 @@ Interested in a privacy-preserving, commerce-enabled, people-powered internet?
 
 
 ## Have questions? Ask the AI trained to answer them!
-TODO huggingface link when model is public.
+
+![Chat with the custom LLM right now!](https://huggingface.co/VerusCommunity/llama-3-verus-8-epochs-revision-1)
+
+(It will later be available on the Verus Destktop app, where it can run locally.)
+
+If you really want a human to answer your questions,  you can go to the Discord or Telegram links above and ask there. Someone will be happy to help you out.
