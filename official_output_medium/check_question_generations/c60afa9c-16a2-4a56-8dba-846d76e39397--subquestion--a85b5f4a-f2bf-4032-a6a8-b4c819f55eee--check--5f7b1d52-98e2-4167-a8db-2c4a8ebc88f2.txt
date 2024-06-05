@@ -217,7 +217,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text provides a step-by-step guide on how to obtain
-    VRSCTEST coins and create a chain using the PBaaS (Private Blockchain as a Service)
+    VRSCTEST coins and create a chain using the PBaaS (Public Blockchain as a Service)
     feature in the Verus wallet.
 
     #### Type of Information: The information is instructional, walking the reader

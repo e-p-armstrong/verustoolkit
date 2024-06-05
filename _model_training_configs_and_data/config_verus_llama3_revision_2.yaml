@@ -188,7 +188,7 @@ datasets:
 dataset_prepared_path: last_run_prepared
 output_dir: ./verus-out
 
-sequence_len: 3000
+sequence_len: 5000
 sample_packing: true
 pad_to_sequence_len: true
 
@@ -198,8 +198,8 @@ wandb_watch:
 wandb_run_id:
 wandb_log_model:
 
-gradient_accumulation_steps: 8
-micro_batch_size: 1
+gradient_accumulation_steps: 1
+micro_batch_size: 6
 num_epochs: 6
 optimizer: paged_adamw_8bit
 lr_scheduler: cosine

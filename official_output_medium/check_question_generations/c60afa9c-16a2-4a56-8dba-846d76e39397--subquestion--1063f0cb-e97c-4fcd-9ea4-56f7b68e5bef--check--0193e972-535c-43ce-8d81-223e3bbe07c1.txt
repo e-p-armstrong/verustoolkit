@@ -217,7 +217,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text provides a step-by-step guide on how to create
-    a chain using PBaaS (Private Blockchain as a Service) on the Verus testnet.
+    a chain using PBaaS (Public Blockchain as a Service) on the Verus testnet.
 
     #### Type of Information: The information is instructional, walking the reader
     through a process.

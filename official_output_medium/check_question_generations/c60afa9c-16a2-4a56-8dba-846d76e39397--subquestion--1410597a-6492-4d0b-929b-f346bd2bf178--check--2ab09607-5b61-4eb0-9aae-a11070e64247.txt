@@ -217,7 +217,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text provides a step-by-step guide on how to obtain
-    VRSCTEST coins and start exploring PBaaS (Private Blockchain as a Service).
+    VRSCTEST coins and start exploring PBaaS (Public Blockchain as a Service).
 
     #### Type of Information: The information is instructional, providing a clear
     process to follow.

@@ -224,7 +224,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text explains the capabilities of Verus, specifically
-    its PBaaS (Private Blockchain as a Service) feature, which allows users to create
+    its PBaaS (Public Blockchain as a Service) feature, which allows users to create
     their own tokens, currencies, and even full-fledged blockchains.
 
     #### Type of Information: The information is descriptive/educational, teaching
