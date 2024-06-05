@@ -5,7 +5,7 @@
 # If running on a single-GPU setup, you must run:
 # conda install -c conda-forge mpi4py mpich
 # Then run this command from the /workspace/axolotl directory:
-# accelerate launch --use_deepspeed -m axolotl.cli.train config_verus_llama3_experimental_batch_1.yaml
+# accelerate launch --use_deepspeed -m axolotl.cli.train config_verus_llama3_revision_2.yaml
 
 # Next up, try not sample packing to handle unexpected pos?
 
@@ -28,144 +28,157 @@ datasets:
     data_files: pretraining_vision.json
     ds_type: json
     type: completion
-
   - path: json
     data_files: simplified_data_rag_VISION.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
-
   - path: json
     data_files: simplified_data_no_rag_VISION.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
-
   - path: json
     data_files: simplified_data_rag_OPENENDED_VISION.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_no_rag_OPENENDED_VISION.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
-    data_files: general_assistant_split_0.jsonl
+    data_files: evol_split_1.json
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
-    data_files: unnatural_instructions_split_0.jsonl
+    data_files: unnatural_split_1.json
     ds_type: json
     type: sharegpt
     conversation: chatml
-
+  - path: json
+    data_files: pretraining_medium.json
+    ds_type: json
+    type: completion
+  - path: json
+    data_files: simplified_data_rag_MEDIUM.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_MEDIUM.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_rag_OPENENDED_MEDIUM.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_OPENENDED_MEDIUM.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: orca_split_1.json
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: orca_split_2.json
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
   - path: json
     data_files: pretraining_wiki.json
     ds_type: json
     type: completion
-
   - path: json
     data_files: simplified_data_rag_WIKI.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_no_rag_WIKI.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_rag_OPENENDED_WIKI.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_no_rag_OPENENDED_WIKI.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
-    data_files: general_assistant_split_1.jsonl
+    data_files: cot_alpaca_split_1.json
     ds_type: json
     type: sharegpt
     conversation: chatml
-
+  - path: json
+    data_files: unnatural_split_2.json
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
   - path: json
     data_files: pretraining_api.json
     ds_type: json
     type: completion
-
   - path: json
     data_files: simplified_data_rag_API.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_no_rag_API.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_rag_OPENENDED_API.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_no_rag_OPENENDED_API.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
-    data_files: general_assistant_split_2.jsonl
+    data_files: cot_alpaca_split_2.json
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
-    data_files: unnatural_instructions_split_1.jsonl
+    data_files: unnatural_split_2.json
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: pretraining_docs.json
     ds_type: json
     type: completion
-    
   - path: json
     data_files: simplified_data_rag_DOCS.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_no_rag_DOCS.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_rag_OPENENDED_DOCS.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
-
   - path: json
     data_files: simplified_data_no_rag_OPENENDED_DOCS.jsonl
     ds_type: json
@@ -187,10 +200,10 @@ wandb_log_model:
 
 gradient_accumulation_steps: 8
 micro_batch_size: 1
-num_epochs: 8
+num_epochs: 6
 optimizer: paged_adamw_8bit
 lr_scheduler: cosine
-learning_rate: 2e-5
+learning_rate: 1e-5
 noisy_embedding_alpha: 0 # no noisy embedding to ensure maximal memorization 
 
 train_on_inputs: false

@@ -1,6 +1,6 @@
 .DS_Store
 **/*.pyc
 output*
-
+_old_orca_splits
 log.txt
 filter_*

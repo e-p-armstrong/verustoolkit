@@ -6,8 +6,8 @@ API:
 PATH:
   DEFAULT_PROMPTS: ./prompts
   INPUT: ./raw_text_input_medium
-  OUTPUT: ./output_medium_3
-  PROMPTS: ./prompts_medium_override
+  OUTPUT: ./output_medium_openended_2
+  PROMPTS: ./prompts_open_question_mode_medium_override
 SYSTEM:
   CHUNK_SIZE: 1900
   COMPLETION_MODE: false
