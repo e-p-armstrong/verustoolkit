@@ -1,0 +1,388 @@
+- content: "You are a crypto expert and creative writer specializing in the Verus\
+    \ multi-chain and multi-currency blockchain protocol. You will write a short conversation\
+    \ between a curious user and a helpful AI assistant knowledgeable about Verus,\
+    \ in which the user asks some questions about Verus and the AI assistant answers\
+    \ them. The questions the user must ask will be provided; the answers the assistant\
+    \ should return will also be provided. You must use these questions and answers\
+    \ directly in your conversation.\n\n**Rules for conversation writing:**\n\n* Messages\
+    \ can take place across multiple lines.\n* The questions and answers should be\
+    \ essentially the same as provided, though you may add \"conversational fluff\"\
+    \ around the core of the questions and answers in order to make it natural-sounding.\n\
+    * The user should make the first message, where they greet the Verus AI and ask\
+    \ their first question.\n* The AI then provides an answer. And that back-and-forth\
+    \ continues until all questions are asked and all answers are provided.\n* Use\
+    \ Markdown formatting.\n* If applicable, try to make the context behind the questions\
+    \ make sense. So if a person's asking about an error, they probably aren't just\
+    \ asking about it out of the blue \u2014 they've probably encountered the error.\n\
+    * You are allowed to slightly change the wording of the questions, and remove\
+    \ duplication, in order to make the conversation flow nicer."
+  role: system
+- content: '**QUESTION:**
+
+    What causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    These errors may be caused by required dependencies for `./verusd` not being installed
+    by default on a Linux distribution. The lack of required dependencies results
+    in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    **QUESTION:**
+
+    If I run `./verusd` and encounter these errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    How can I solve them?
+
+
+    **ANSWER:**
+
+    In order to solve these errors, which are likely caused by dependencies not being
+    installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hey there, so I''ve run into some errors and I''m not sure what''s causing them.
+    Do you know what causes the errors:
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When I run `./verusd` on a Linux distro?
+
+
+    **AI Assistant:**
+
+    Great question! These errors may be caused by required dependencies for `./verusd`
+    not being installed by default on a Linux distribution. The lack of required dependencies
+    results in the error messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`. Do you have any further questions about these
+    errors?
+
+
+    **User:**
+
+    Yes, actually. If I run `./verusd` and encounter the errors I mentioned earlier,
+    how can I solve them?
+
+
+    **AI Assistant:**
+
+    Good question! In order to solve these errors, which are likely caused by dependencies
+    not being installed by default on a Linux distro, try the following:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time. Did this solve your problem?'
+  role: assistant
+- content: "**QUESTION:**\nWhat are VerusIDs?\n\n**ANSWER:**\nVerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network.\n\n**QUESTION:**\nWhat does \"quantum-ready\
+    \ friendly crypto-addresses\" mean, in the context of Verus and VerusIDs?\n\n\
+    **ANSWER:**\nThe phrase \"quantum-ready friendly crypto-addresses,\" in the context\
+    \ of Verus and VerusIDs, refers to the resistance of VerusIDs against attack by\
+    \ quantum computers that use existing algorithms. Furthermore, with a quantum-secure\
+    \ signature scheme for transactions, it becomes possible to change an ID and have\
+    \ all the funds sent to it be made retroactively quantum resistant. VerusIDs may\
+    \ also be used to publish ID to destination mappings on other blockchains; however,\
+    \ only the Verus ecosystem can revoke, recover, or inherit funds in existing UTXOs.\n\
+    \nThe basic idea is that quantum computers, once invented, have the potential\
+    \ to break many cryptographic algorithms used to secure digital assets. Therefore,\
+    \ VerusIDs being \"quantum-ready\" means that they have been designed to be resistant\
+    \ to attempts by quantum computers (using known algorithms) to attack them, once\
+    \ such computers are created. This is an essential measure to future-proof Verus\
+    \ against exploitation by hostile actors with quantum computers.\n\n**QUESTION:**\n\
+    What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**ANSWER:**\n\
+    A number of factors make VerusIDs fully decentralized. VerusIDs can be created\
+    \ by anyone, without needing permission from a central authority, and give their\
+    \ creator complete, self-sovereign control over their own ID. The costs incurred\
+    \ creating an ID go to miners, stakers, and ID referrers \u2014 essentially, the\
+    \ community members who help maintain Verus \u2014 rather than single entity like\
+    \ a corporation or government. VerusIDs can be revoked or recovered by another\
+    \ ID if specified (by default, the revocation authority and recovery authority\
+    \ are the ID itself).\n\nEssentially, VerusIDs being fully decentralized means\
+    \ that neither their creation, usage, or recovery/revocation need to be managed\
+    \ or approved by a central authority \u2014 the community supports the transaction.\
+    \ This allows individuals using VerusID to be self-sovereign: they have full control\
+    \ over their digital identity, data, and assets.\n\n**QUESTION:**\nWhat do VerusIDs\
+    \ offer me in terms of privacy and power?\n\n**ANSWER:**\nVerusIDs offer many\
+    \ advantages, and are both private and powerful. They contain sets of zero-knowledge\
+    \ private addresses (which can belong to other people or services) that can be\
+    \ used to message, transfer money, or even vote. IDs can also privately store\
+    \ information needed by third-party applications in a set of key-value hashes.\
+    \ This allows you to own your data and provide it to applications as needed, rather\
+    \ than let the application store information about you. Information stored in\
+    \ IDs can also prove your identity to others, without giving away more information\
+    \ than needed. In this way, Verus allows for privacy as well as a powerful proof\
+    \ of identity.\n\nVerusIDs are also notable in that multiple addresses or other\
+    \ IDs can be defined as primary addresses. The agreement of some number of primary\
+    \ addresses (configurable) may be required for an ID to spend, sign, or alter\
+    \ itself. Further security is added by the fact that the revocation authority\
+    \ (the power to revoke an ID) may only be modified by the revocation authority\
+    \ itself. The same applies to the recovery authority (an authority that can recover\
+    \ a revoked address). Each of these authorities (revocation and recovery) may\
+    \ be their own identities, potentially being controlled themselves by multiple\
+    \ primary addresses.\n\nIn short, VerusIDs are private with your information,\
+    \ and configurable with who controls them and what consensus is required to change\
+    \ them."
+  role: user
+- content: "## Conversation that answers the provided questions:\n**User:**\nI'm really\
+    \ new to all this. I've got a question, maybe it's a bit basic, but, what are\
+    \ VerusIDs?\n\n**AI Assistant:**\nI'll explain! VerusIDs are a fully-functional\
+    \ blockchain protocol. They are a form of crypto-address, a unique identifier\
+    \ that serves as a destination for sending and receiving digital assets. Being\
+    \ more than just an ID system, VerusIDs do not involve corporations in the protocol,\
+    \ and provide benefits such as (but not limited to): revocability, recoverability,\
+    \ privacy, full decentralization, and quantum-ready friendly crypto addresses\
+    \ on the Verus worldwide network. It's all right that you're new, I'm happy that\
+    \ you're interested in learning about Verus! Do you have any further questions\
+    \ about VerusIDs or Verus in general?\n\n**User:**\nActually, yes, I do, you said\
+    \ something I'm curious about. What does \"quantum-ready friendly crypto-addresses\"\
+    \ mean, in the context of Verus and VerusIDs?\n\n**AI Assistant:**\nSure, I'll\
+    \ clarify what I meant. The phrase \"quantum-ready friendly crypto-addresses,\"\
+    \ in the context of Verus and VerusIDs, refers to the resistance of VerusIDs against\
+    \ attack by quantum computers that use existing algorithms. Furthermore, with\
+    \ a quantum-secure signature scheme for transactions, it becomes possible to change\
+    \ an ID and have all the funds sent to it be made retroactively quantum resistant.\
+    \ VerusIDs may also be used to publish ID to destination mappings on other blockchains;\
+    \ however, only the Verus ecosystem can revoke, recover, or inherit funds in existing\
+    \ UTXOs.\n\nThe basic idea is that quantum computers, once invented, have the\
+    \ potential to break many cryptographic algorithms used to secure digital assets.\
+    \ Therefore, VerusIDs being \"quantum-ready\" means that they have been designed\
+    \ to be resistant to attempts by quantum computers (using known algorithms) to\
+    \ attack them, once such computers are created. This is an essential measure to\
+    \ future-proof Verus against exploitation by hostile actors with quantum computers.\
+    \ Does that make sense? Do you have any further questions?\n\n**User:**\nSomething\
+    \ you said earlier interested me. You said VerusIDs offer \"full decentralization.\"\
+    \ What does it mean for VerusIDs to be a fully decentralized protocol?\n\n**AI\
+    \ Assistant:**\nThat's a great question! A number of factors make VerusIDs fully\
+    \ decentralized. VerusIDs can be created by anyone, without needing permission\
+    \ from a central authority, and give their creator complete, self-sovereign control\
+    \ over their own ID. The costs incurred creating an ID go to miners, stakers,\
+    \ and ID referrers \u2014 essentially, the community members who help maintain\
+    \ Verus \u2014 rather than single entity like a corporation or government. VerusIDs\
+    \ can be revoked or recovered by another ID if specified (by default, the revocation\
+    \ authority and recovery authority are the ID itself).\n\nEssentially, VerusIDs\
+    \ being fully decentralized means that neither their creation, usage, or recovery/revocation\
+    \ need to be managed or approved by a central authority \u2014 the community supports\
+    \ the transaction. This allows individuals using VerusID to be self-sovereign:\
+    \ they have full control over their digital identity, data, and assets. Does that\
+    \ answer your question, and do you have any more questions about Verus or VerusIDs?\n\
+    \n**User:**\nActually I do, a bit of a broader one. What do VerusIDs offer me\
+    \ in terms of privacy and power?\n\n**AI Assistant:**\nExcellent question! Let\
+    \ me explain. VerusIDs offer many advantages, and are both private and powerful.\
+    \ They contain sets of zero-knowledge private addresses (which can belong to other\
+    \ people or services) that can be used to message, transfer money, or even vote.\
+    \ IDs can also privately store information needed by third-party applications\
+    \ in a set of key-value hashes. This allows you to own your data and provide it\
+    \ to applications as needed, rather than let the application store information\
+    \ about you. Information stored in IDs can also prove your identity to others,\
+    \ without giving away more information than needed. In this way, Verus allows\
+    \ for privacy as well as a powerful proof of identity.\n\nVerusIDs are also notable\
+    \ in that multiple addresses or other IDs can be defined as primary addresses.\
+    \ The agreement of some number of primary addresses (configurable) may be required\
+    \ for an ID to spend, sign, or alter itself. Further security is added by the\
+    \ fact that the revocation authority (the power to revoke an ID) may only be modified\
+    \ by the revocation authority itself. The same applies to the recovery authority\
+    \ (an authority that can recover a revoked address). Each of these authorities\
+    \ (revocation and recovery) may be their own identities, potentially being controlled\
+    \ themselves by multiple primary addresses.\n\nIn short, VerusIDs are private\
+    \ with your information, and configurable with who controls them and what consensus\
+    \ is required to change them. Do you have any more questions about VerusIDs?"
+  role: assistant
+- content: '**QUESTION:**
+
+    What are some of the common challenges that entrepreneurs face when starting a
+    new crypto project?
+
+
+    **ANSWER:**
+
+    Some common challenges that entrepreneurs face when starting a new crypto project
+    include finding funding, deciding whether to do an ICO or pre-mine, organizing
+    the receiving and sending of funds, dealing with legal matters, and setting up
+    a blockchain with enough miners. Additionally, entrepreneurs may struggle with
+    getting liquidity in their coin, navigating legal issues related to ICOs and IEOs,
+    and trusting third-party services.
+
+
+
+    **QUESTION:**
+
+    How can I get funding for my crypto project, and whatewisdoms should I consider
+    when doing so?
+
+
+    **ANSWER:**
+
+    Getting funding for a crypto project can be a challenging and scary task. Considerations
+    include deciding whether to do an ICO, how to organize receiving and sending funds,
+    and how to handle liability issues. It''s also important to think about what happens
+    if the minimum funding goal isn''t reached or if it''s exceeded. Additionally,
+    entrepreneurs should consider alternative ways to get skin in the game, such as
+    pre-mining, and weigh the pros and cons of each option.
+
+
+
+    **QUESTION:**
+
+    What are some of the legal considerations that I should be aware of when starting
+    a crypto project?
+
+
+    **ANSWER:**
+
+    When starting a crypto project, it''s essential to be aware of the legal implications
+    of different funding options, such as ICOs and IEOs. Additionally, entrepreneurs
+    should consider the legal frameworks surrounding private investments and third-party
+    services. Some governments may have specific regulations or restrictions on crypto
+    investments, which should also be taken into account.
+
+
+
+    **QUESTION:**
+
+    How can I set up a blockchain for my crypto project, and what are some of the
+    challenges involved?
+
+
+    **ANSWER:**
+
+    Setting up a blockchain for a crypto project can be a complex task. Entrepreneurs
+    need to consider how to get a blockchain running with enough miners, which can
+    be a challenging task, especially for small projects. One option is to start with
+    self-paid infrastructure and hope that others will join in mining the chain. However,
+    this can be a daunting task, and entrepreneurs should be prepared to overcome
+    these challenges.
+
+
+
+    --------
+
+    Special note: this most recent set of questions and answers is from Verus''s vision
+    paper. The previous examples were from informational websites about Verus.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hey there, I''m thinking of starting a new crypto project. What are some of the
+    common challenges that entrepreneurs face when starting a new crypto project?
+
+
+    **AI Assistant:**
+
+    Congratulations on your new project! Some common challenges that entrepreneurs
+    face when starting a new crypto project include finding funding, deciding whether
+    to do an ICO or pre-mine, organizing the receiving and sending of funds, dealing
+    with legal matters, and setting up a blockchain with enough miners. Additionally,
+    entrepreneurs may struggle with getting liquidity in their coin, navigating legal
+    issues related to ICOs and IEOs, and trusting third-party services. Do you have
+    a specific area you''d like to focus on?
+
+
+    **User:**
+
+    Yeah, funding is a big concern for me. How can I get funding for my crypto project,
+    and what considerations should I keep in mind when doing so?
+
+
+    **AI Assistant:**
+
+    Getting funding for a crypto project can be a challenging and scary task. Considerations
+    include deciding whether to do an ICO, how to organize receiving and sending funds,
+    and how to handle liability issues. It''s also important to think about what happens
+    if the minimum funding goal isn''t reached or if it''s exceeded. Additionally,
+    entrepreneurs should consider alternative ways to get skin in the game, such as
+    pre-mining, and weigh the pros and cons of each option. You should also think
+    about how to ensure transparency and accountability in your funding process. Do
+    you have any specific funding options in mind?
+
+
+    **User:**
+
+    Another thing I''m worried about is legal issues. What are some of the legal considerations
+    that I should be aware of when starting a crypto project?
+
+
+    **AI Assistant:**
+
+    When starting a crypto project, it''s essential to be aware of the legal implications
+    of different funding options, such as ICOs and IEOs. Additionally, entrepreneurs
+    should consider the legal frameworks surrounding private investments and third-party
+    services. Some governments may have specific regulations or restrictions on crypto
+    investments, which should also be taken into account. You should also think about
+    compliance with anti-money laundering and know-your-customer regulations. It''s
+    a good idea to consult with a legal expert to ensure you''re covering all your
+    bases.
+
+
+    **User:**
+
+    Finally, I''m not sure how to set up a blockchain for my crypto project. Can you
+    give me some advice on that?
+
+
+    **AI Assistant:**
+
+    Setting up a blockchain for a crypto project can be a complex task. Entrepreneurs
+    need to consider how to get a blockchain running with enough miners, which can
+    be a challenging task, especially for small projects. One option is to start with
+    self-paid infrastructure and hope that others will join in mining the chain. However,
+    this can be a daunting task, and entrepreneurs should be prepared to overcome
+    these challenges. You may want to consider partnering with existing blockchain
+    networks or seeking out expert advice to help you navigate this process. Do you
+    have any experience with blockchain development?'
+  role: assistant
+  timeout: false

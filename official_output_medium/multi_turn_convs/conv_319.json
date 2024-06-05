@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in registering a VerusID, but I want to know more about the costs involved. How much does it cost to register a VerusID, and who receives the payment?\n\n**AI Assistant:**\nThe cost to register a VerusID is 100 VRSC. The payment goes to the miner or staker of the block that contains the VerusID registration. So, the community members who help maintain the Verus network are rewarded for their efforts.\n\n**User:**\nThat makes sense. But what if I have a referral when registering a VerusID? How does the payment get distributed in that case?\n\n**AI Assistant:**\nIf you have a referral when registering a VerusID, the cost of registration is actually lower, at 80 VRSC. The remaining 20 VRSC goes to the referrer as a reward for referring you. If the referrer also has a referrer, they also receive 20 VRSC. Up to 3 referrers can receive 20 VRSC each, and the remaining 20-60 VRSC goes to the miner or staker of the block. This incentivizes referrals and helps grow the Verus community.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How much does it cost to register a VerusID, and who receives the payment?",
+            "It costs 100 VRSC to register a VerusID. The payment goes to the miner or staker of the block that contains the VerusID registration.",
+            "VRSC, all of which goes to the miner or staker of the block that contains that VerusID registration.\nIf someone has a referral, their VerusID costs 80 VRSC, and 20 VRSC goes to the referrer. If the referrer has a referrer, they also get 20 VRSC. Up to 3 referrers get 20 VRSC each and the remaining 20\u201360 VRSC goes to the miner or staker of the block.",
+            "./raw_text_input_medium/Is Verus Poised to Challenge Ethereum_-2020-08-18 21:41:03"
+        ],
+        [
+            "What happens if someone has a referral when registering a VerusID? How does the payment get distributed?",
+            "If someone has a referral when registering a VerusID, the cost of registration is 80 VRSC, and 20 VRSC goes to the referrer. If the referrer also has a referrer, they also receive 20 VRSC. Up to 3 referrers can receive 20 VRSC each, and the remaining 20-60 VRSC goes to the miner or staker of the block.",
+            "VRSC, all of which goes to the miner or staker of the block that contains that VerusID registration.\nIf someone has a referral, their VerusID costs 80 VRSC, and 20 VRSC goes to the referrer. If the referrer has a referrer, they also get 20 VRSC. Up to 3 referrers get 20 VRSC each and the remaining 20\u201360 VRSC goes to the miner or staker of the block.",
+            "./raw_text_input_medium/Is Verus Poised to Challenge Ethereum_-2020-08-18 21:41:03"
+        ]
+    ]
+]

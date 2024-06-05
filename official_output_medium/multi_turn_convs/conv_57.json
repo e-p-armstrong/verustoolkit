@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in trying out Verus for myself. Where can I download the Verus software?\n\n**AI Assistant:**\nYou can download the Verus software from the official Verus website: https://veruscoin.io/#download. Make sure to only download from the official website to ensure you're getting the genuine software.\n\n**User:**\nI've downloaded the software. What should I do with it now?\n\n**AI Assistant:**\nOnce you've downloaded the Verus software, you should unzip the compressed folder to a location on your computer where you can easily launch it from, such as your Desktop. It's a good idea to rename the folder to \"Verus v<x>\" where \"<x>\" is the current version, so you can keep track of which version you're running. This will help you stay organized and ensure you're always using the latest version.\n\n**User:**\nOkay, I've unzipped the folder. How do I launch the Verus wallet software?\n\n**AI Assistant:**\nTo launch the Verus wallet software, locate the Agama app within the unzipped folder and launch it. On the first screen, select VRSC from the drop-down menu under \"Lite (SPV) Mode\" and then choose \"Create new wallet\". This will get you started with creating your own Verus wallet. Do you have any more questions about getting started with Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Where can I download the Verus software?",
+            "You can download the Verus software from the official Verus website: https://veruscoin.io/#download.",
+            "://veruscoin.io/#download\nStep 2\nUnzip the compressed folder to your Desktop or somewhere you can easily launch it from. I recommend renaming the folder to \u201cVerus v0.5.x\u201d where \u201cx\u201d is the current version, that way you keep track which version you\u2019re running.\nStep 3\nLaunch the Agama app located within the folder and upon the first screen, use the drop down under \u201cLite (SPV) Mode\u201d to select VRSC, then choose \u201cCreate new wallet\u201d:",
+            "./raw_text_input_medium/How to Start CPU Mining Verus Coin VRSC from Your Computer  in Under 5 Minutes-2019-01-18 17:13:58"
+        ],
+        [
+            "What should I do with the downloaded Verus software?",
+            "Once you've downloaded the Verus software, you should unzip the compressed folder to a location on your computer where you can easily launch it from, such as your Desktop. It's a good idea to rename the folder to \"Verus v<x>\" where \"<x>\" is the current version, so you can keep track of which version you're running.",
+            "://veruscoin.io/#download\nStep 2\nUnzip the compressed folder to your Desktop or somewhere you can easily launch it from. I recommend renaming the folder to \u201cVerus v0.5.x\u201d where \u201cx\u201d is the current version, that way you keep track which version you\u2019re running.\nStep 3\nLaunch the Agama app located within the folder and upon the first screen, use the drop down under \u201cLite (SPV) Mode\u201d to select VRSC, then choose \u201cCreate new wallet\u201d:",
+            "./raw_text_input_medium/How to Start CPU Mining Verus Coin VRSC from Your Computer  in Under 5 Minutes-2019-01-18 17:13:58"
+        ],
+        [
+            "How do I launch the Verus wallet software?",
+            "To launch the Verus wallet software, locate the Agama app within the unzipped folder and launch it. On the first screen, select VRSC from the drop-down menu under \"Lite (SPV) Mode\" and then choose \"Create new wallet\".",
+            "://veruscoin.io/#download\nStep 2\nUnzip the compressed folder to your Desktop or somewhere you can easily launch it from. I recommend renaming the folder to \u201cVerus v0.5.x\u201d where \u201cx\u201d is the current version, that way you keep track which version you\u2019re running.\nStep 3\nLaunch the Agama app located within the folder and upon the first screen, use the drop down under \u201cLite (SPV) Mode\u201d to select VRSC, then choose \u201cCreate new wallet\u201d:",
+            "./raw_text_input_medium/How to Start CPU Mining Verus Coin VRSC from Your Computer  in Under 5 Minutes-2019-01-18 17:13:58"
+        ]
+    ]
+]

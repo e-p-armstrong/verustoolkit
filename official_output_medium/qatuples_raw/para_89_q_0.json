@@ -1,0 +1,6 @@
+[
+    "What is the recommended approach to securing and backing up my Verus wallet?",
+    "To secure and back up your Verus wallet, it is recommended to keep your wallet.dat file in a secure location, such as a safe or under your watch. Additionally, regularly back up your wallet.dat file to ensure that your wallet is secure and up-to-date. It is not practical to back up the entire VRSC folder, as it is very large.",
+    "secured, in a secure location or under your watch, and that your wallet.dat file is kept securely and regularly backed up. The entire VRSC folder will be impractical to backup, it\u2019s very large. So simply backup the wallet.dat file within.\nPart 3 \u2014 Importing Your \u201cLite mode\u201d Wallet to Agama Native\nIn case you started out with \u201cLite mode\u201d and now are running in Native, with a new wallet public address, you may want to import your Lite mode wallet to your Native wallet.\nStep 1\nIn the upper left of Verus Agama in Native mode, you\u2019ll see an \u201cImport key\u201d button, click this and a modal will appear. Simply enter the Seed used to create your \u201cLite mode\u201d wallet and click Import:",
+    "./raw_text_input_medium/How to Earn VRSC Mining with Your CPU and Staking Mined Coins!-2019-01-11 19:50:07"
+]

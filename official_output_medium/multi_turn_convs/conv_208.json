@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI want to learn more about Verus. What are the official websites for Verus?\n\n**AI Assistant:**\nFor official information about Verus, you can visit their websites at verus.io and docs.verus.io. These are the best places to find reliable and up-to-date information about Verus.\n\n**User:**\nThat's great, thanks! Where can I find updates and information about Verus from the lead developer?\n\n**AI Assistant:**\nYou can find updates and information about Verus from the lead developer, Mike Toutonghi, through community videos and updates. Mike regularly shares his insights and updates on the project's progress, so that's a great way to stay informed about what's happening with Verus.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the official websites for Verus?",
+            "The official websites for Verus are verus.io and docs.verus.io.",
+            "New Websites Launched\nThe new websites verus.io and docs.verus.io are now online.\nCommunity Videos\nLead developer Mike Toutonghi gave the community mind-blowing updates on Verus. Listen here.\nThanks for reading. That\u2019s it from me. Until next month!\nPlease subscribe to the monthly recap so you\u2019ll get it each month in your mailbox.",
+            "./raw_text_input_medium/October 2021\u200a\u2014\u200aVerus Monthly Recap-2021-11-01 13:35:21"
+        ],
+        [
+            "Where can I find updates and information about Verus from the lead developer?",
+            "You can find updates and information about Verus from the lead developer, Mike Toutonghi, through community videos and updates.",
+            "New Websites Launched\nThe new websites verus.io and docs.verus.io are now online.\nCommunity Videos\nLead developer Mike Toutonghi gave the community mind-blowing updates on Verus. Listen here.\nThanks for reading. That\u2019s it from me. Until next month!\nPlease subscribe to the monthly recap so you\u2019ll get it each month in your mailbox.",
+            "./raw_text_input_medium/October 2021\u200a\u2014\u200aVerus Monthly Recap-2021-11-01 13:35:21"
+        ]
+    ]
+]

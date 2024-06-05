@@ -1,0 +1,6 @@
+[
+    "How do I start mining Verus and what do I need to do to keep it running?",
+    "To start mining Verus, you need to run a script. Once the script is running, you'll see it start mining. To keep it running, simply leave the terminal window open.",
+    "Step 3\nYou\u2019ll see the script kick off and start mining! Leave the window open to mine. If you want to shut down the script, in Linux and Mac press CTRL + Z while the terminal is in focus.\nOn Windows press CTRL + C and then Y to terminate.Step 4\nLastly, if you want to see the status of your workers (or just single worker if you\u2019re only using one computer to mine), visit the pool mining site where you\u2019ve chosen to mine and find their Worker Stats section. For example, here are two different pools and their Stats sections (LuckPool on the left, Ginasis on the right):",
+    "./raw_text_input_medium/How to Start CPU Mining Verus Coin VRSC from Your Computer  in Under 5 Minutes-2019-01-18 17:13:58"
+]

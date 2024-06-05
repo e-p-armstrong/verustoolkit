@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can I extend Verus Smart Transactions if I want to, and how would I do that?",
+            "Yes, you can extend Verus Smart Transactions if you want to. You can do this on your own PBaaS chain, and you can choose to share your extensions or not. Additionally, the Verus community can collaborate on protocol extensions that include forms of VM and/or ZKVM extension points, working within the framework of the core primitives that are fundamental to Verus.",
+            "cies, blockchains, and liquidity baskets have very rich capabilities from launch to continued operation.\nExtending Verus Smart Transactions\nIf someone wants to extend smart transactions, that is an option, but they either don\u2019t have to, or if they really have a reason to do so, they can do it on their PBaaS chain, share or not share back (lots of reasons to do so), and now that we have the core primitive framework as a foundation, we can certainly collaborate on a kind of protocol extension that is likely to include forms of VM and/or ZKVM extension points in the current protocol, to work within the framework of the core primitives that are fundamental to Verus and that we believe are crucial for safe financial infrastructure, yet generally missing in other systems.\nTry Yourself! \u2705\nLook up docs.verus.io to use many API commands (e.g. launching currencies, tokens & liquidity pools).\nOr look up the complete command list here.\nJoin the community. Learn about the protocol. Use Verus & build.\n\u27a1\ufe0f Join the community on Discord\nFollow on Twitter\nGo to verus.io",
+            "./raw_text_input_medium/Verus Smart Transactions vs. Smart Contracts-2023-07-27 14:24:48"
+        ],
+        [
+            "How can I learn more about using Verus and building on the platform?",
+            "You can learn more about using Verus and building on the platform by checking out the documentation at docs.verus.io, which includes many API commands for launching currencies, tokens, and liquidity pools. You can also look up the complete command list, join the community on Discord, follow Verus on Twitter, and visit verus.io for more information.",
+            "cies, blockchains, and liquidity baskets have very rich capabilities from launch to continued operation.\nExtending Verus Smart Transactions\nIf someone wants to extend smart transactions, that is an option, but they either don\u2019t have to, or if they really have a reason to do so, they can do it on their PBaaS chain, share or not share back (lots of reasons to do so), and now that we have the core primitive framework as a foundation, we can certainly collaborate on a kind of protocol extension that is likely to include forms of VM and/or ZKVM extension points in the current protocol, to work within the framework of the core primitives that are fundamental to Verus and that we believe are crucial for safe financial infrastructure, yet generally missing in other systems.\nTry Yourself! \u2705\nLook up docs.verus.io to use many API commands (e.g. launching currencies, tokens & liquidity pools).\nOr look up the complete command list here.\nJoin the community. Learn about the protocol. Use Verus & build.\n\u27a1\ufe0f Join the community on Discord\nFollow on Twitter\nGo to verus.io",
+            "./raw_text_input_medium/Verus Smart Transactions vs. Smart Contracts-2023-07-27 14:24:48"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "fce376d7-779e-4e39-8c01-3d0611ab95c8"
+]

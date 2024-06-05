@@ -1,0 +1,6 @@
+[
+    "What should I do if I started with \"Lite mode\" and now want to import my wallet to Native mode?",
+    "If you started with \"Lite mode\" and now want to import your wallet to Native mode, you can do so by clicking the \"Import key\" button in the upper left of Verus Agama in Native mode. Then, enter the Seed used to create your \"Lite mode\" wallet and click Import. This will allow you to import your Lite mode wallet to your Native wallet.",
+    "secured, in a secure location or under your watch, and that your wallet.dat file is kept securely and regularly backed up. The entire VRSC folder will be impractical to backup, it\u2019s very large. So simply backup the wallet.dat file within.\nPart 3 \u2014 Importing Your \u201cLite mode\u201d Wallet to Agama Native\nIn case you started out with \u201cLite mode\u201d and now are running in Native, with a new wallet public address, you may want to import your Lite mode wallet to your Native wallet.\nStep 1\nIn the upper left of Verus Agama in Native mode, you\u2019ll see an \u201cImport key\u201d button, click this and a modal will appear. Simply enter the Seed used to create your \u201cLite mode\u201d wallet and click Import:",
+    "./raw_text_input_medium/How to Earn VRSC Mining with Your CPU and Staking Mined Coins!-2019-01-11 19:50:07"
+]
