@@ -365,13 +365,13 @@
   role: user
 - content: '**QUESTION:**
 
-    How do I define a new currency and set up a Private Blockchain as a Service (PBaaS)
+    How do I define a new currency and set up a Public Blockchain as a Service (PBaaS)
     chain on the Verus network, using the `definecurrency` command?
 
 
     **ANSWER:**
 
-    To define a new currency and set up a Private Blockchain as a Service (PBaaS)
+    To define a new currency and set up a Public Blockchain as a Service (PBaaS)
     chain on the Verus network, you will need to use the `definecurrency` command.
     This command takes two JSON objects as input: one for the PBaaS chain definition,
     and another for the bridge definition defaults.

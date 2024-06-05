@@ -409,7 +409,7 @@
 
 
     The `OPTION_PBAAS` option, when set to 256, indicates that the currency definition
-    is for a PBaaS (Private Blockchain as a Service) chain.
+    is for a PBaaS (Public Blockchain as a Service) chain.
 
 
     ----------------

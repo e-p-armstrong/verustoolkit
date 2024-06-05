@@ -460,7 +460,7 @@
     **QUESTION:**
 
 
-    When can we expect to see the Private Blockchain as a Service (PBaaS) features
+    When can we expect to see the Public Blockchain as a Service (PBaaS) features
     and interoperability capabilities on the mainnet?
 
 

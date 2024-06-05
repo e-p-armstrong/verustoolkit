@@ -314,7 +314,7 @@
     \ of information and an unlimited number of token types, or \"colors\", while\
     \ avoiding the scaling issues of a single blockchain?\n\"\"\"\n\nSupposed answer\
     \ to the question (this is what you are fact-checking):\n\"\"\"\nVerus plans to\
-    \ use a novel approach of highly scalable PBaaS (Private Blockchain as a Service)\
+    \ use a novel approach of highly scalable PBaaS (Public Blockchain as a Service)\
     \ autochains, which will reward Verus miners and node operators as provisioning\
     \ agents. This approach provides significant scale and security benefits by isolating\
     \ transaction processing for each application instance on its own blockchain.\n\

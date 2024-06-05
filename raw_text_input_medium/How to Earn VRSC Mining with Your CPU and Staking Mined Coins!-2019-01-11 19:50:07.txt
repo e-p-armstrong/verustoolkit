@@ -1,0 +1,86 @@
+Title: How to Earn VRSC Mining with Your CPU and Staking Mined Coins!
+Article URL: https://medium.com/veruscoin/how-to-earn-vrsc-solo-mining-with-your-cpu-and-staking-mined-coins-aa27da76882c
+Content:
+
+How to Earn VRSC Solo Mining with Your CPU and Staking Mined Coins!
+Easy step by step guide to CPU solo mining Verus Coin (VRSC) on your computer using the Verus Agama wallet + How to Stake and earn more VRSC
+Quick Access Tip: Already understand the different ways to mine? Skip down to Part 2!
+Part 1 — Jump in the Pool or Solo It..or Both?
+Pool mining is a great way to participate in the distributed securing of a blockchain while earning rewards often sooner and more regularly than “solo mining”. Whether solo or pool mining however, ultimately the results should be about the same as far as coins earned.
+Solo Mining doesn’t have to be “solo” either! You can split your computer power, mining solo AND pool simultaneously. Whether using just CPU power, or a combination of CPU and GPU, running the pool miner and Agama side by side is no problem.
+What Exactly is Pool Mining?
+In pool mining, many workers are pooling computer resources and as a result, any rewards from blocks found by the pool are distributed fairly to all pool participants. If, for example, you had a pool with 24 miners and each contributed the exact same hash power to the pool, then when a block reward of 24 was won for a block found by the pool, each person would receive 1 coin.
+Pool mining is the quickest way to get started mining Verus and earning VRSC. To learn how, check out my simple 5 minute quick start guide to CPU mining here:
+How to Start CPU Mining Verus Coin VRSC from Your Computer in Under 5 Minutes
+A Dummies Step by Step Guide to Pool Mining Verus Coin with a CPU!medium.com
+And What’s Solo Mining Again?
+In solo mining, you run a fully synchronized node and mine the blockchain directly from your Verus wallet. This is also a really great way to help secure the network, becoming a fully synced node of the blockchain while mining…and for any block found you get the full block reward. You may not find a block for a while, so rewards may be more sporadic, but a full 24 coins when you do win a block.
+“Dual Mining” with Your CPU
+If you use your CPU to “dual mine” pool and solo, simply “split” your CPU thread power between the two. If your CPU has, say, 8 threads (common for a 4 Core CPU) you can assign 4 threads to Pool mining and 4 threads to Solo mining. While you should have the same earning potential either way (minus very small pool mining fees), this gives you the opportunity to earn a steady stream of VRSC and every once in a while get that “bump” of 24 coins in a single block mined from your solo miner.
+To set up dual mining in this way, simply follow this guide for setting up the Solo side and then follow my 5 min quick start guide for setting up the Pool side…making sure to assign the threads you want for each (if you split between just assign half to solo and half to pool).
+Mining with Your CPU and GPU
+If you have a modern and capable CPU AND GPU (for now that means Nvidia for GPU), you can mine using both of these hardware types simultaneously. You can split up your CPU power however you like, Pool mining only, Solo mining only, or both.
+You can then loop your GPU into the party using the CCMiner available from Verus Discord community member Chris of LOUD Mining. The latest build is available at https://github.com/monkins1010/ccminer/releases/tag/Verus2
+Part 2 — Setting Up Solo Mining with Verus Agama
+Solo mining with Verus enhanced Agama is extremely simple to get setup and started. It takes a little bit more time than setting up Pool mining because you’re setting up a full node (Native mode) of Verus and syncing up the Verus blockchain.
+Solo mining is one of the best ways to participate in the decentralization and securing of the Verus blockchain and you earn VRSC for it! Also, by enabling Staking in the Verus Agama wallet, mined coins can begin earning you even more Verus Coin (after shielding and unshielding them, details in Part 4).
+Okay let’s begin!
+Step 1
+Download and unzip the portable Verus enhanced Agama for your OS at https://veruscoin.io/#download
+Open Verus enhanced Agama and on the first screen, choose VRSC from the “Native mode” drop down and at the next screen, you’ll see that the chain is loading…and notice in the upper left it will say “Native”:
+
+
+Step 2
+Wait for the chain to sync (you’ll see a percentage in the blue loading bar) to 100%. Once synced up, a Mining button will appear just below “Transactions History”. Expand it and set the number of CPU threads you want to Solo mine with, then click “Start mining”:
+
+Step 3 (optional)
+You can also click “Start Staking” if you’d like to stake any VRSC balance. Keep in mind that if you make a copy of your wallet.dat file and use it on multiple Solo mining computers, you should only activate Staking on ONE of these iterations. If every Solo miner uses it’s own, individual wallet, you can stake on each.
+Bottom line: Only activate Staking ONCE PER WALLET or you will risk losing staked rewards, because Verus has solved the Nothing at Stake problem at the blockchain level, using Stake Guard and the decentralization of the network. You can read more here!
+Step 4
+You are now Solo Mining! You can view your hash rate and stop the miner at any time using the buttons in Agama:
+Screenshot “slightly” modified for effect!
+NOTE: Verus Agama MUST REMAIN OPEN AND ONLINE to actively mine or stake
+Step 5
+Verus (Native Agama and CLI) creates a wallet.dat which is located in a hidden VRSC folder. This file should be kept SECURE and you should regularly BACK IT UP.
+The wallet.dat file for VRSC is located in the following locations for various OS’s:
+On Windows: %AppData%\Komodo\VRSC 
+On Mac: ~/Library/Application\ Support/Komodo/VRSC 
+On Linux: ~/.komodo/VRSC
+This means your solo miner should be kept secure at all times. If you have a lot of trouble with managing your browsing activity, getting malware often, etc., you should NOT use that computer to mine. Make sure your mining rig is password secured, in a secure location or under your watch, and that your wallet.dat file is kept securely and regularly backed up. The entire VRSC folder will be impractical to backup, it’s very large. So simply backup the wallet.dat file within.
+Part 3 — Importing Your “Lite mode” Wallet to Agama Native
+In case you started out with “Lite mode” and now are running in Native, with a new wallet public address, you may want to import your Lite mode wallet to your Native wallet.
+Step 1
+In the upper left of Verus Agama in Native mode, you’ll see an “Import key” button, click this and a modal will appear. Simply enter the Seed used to create your “Lite mode” wallet and click Import:
+
+When the import starts you’ll see a message in the lower right and another when the import has successfully completed:
+
+
+Success! Your Lite mode wallet address is now a part of your wallet.dat file.
+Part 4 — Earn More VRSC by Staking Verus Coin!
+You can also participate in Staking using the Native mode of the Verus wallet, activating staking by having a VRSC mature balance and starting Staking from the same Mining button in Agama.
+Staking is a great way to keep earning VRSC on your mined rewards or any VRSC you purchased on an exchange. For a balance in Verus to actively stake on the blockchain, it needs to be “mature” , in the form of a UTXO(s) and have at least 150 block confirmations as such.
+A newly mined or minted (won from staking) block will mature after 100 block confirmations (about 100 min). After reaching maturity, because it came from the coinbase, it needs to first be shielded and unshielded, which results in a UTXO (unspent transaction output).
+If the VRSC in your wallet balance comes from someone else, is paid out from your pool mining efforts, or is from an exchange buy, it’s already in UTXO format and will begin staking within 150 block confirmations of coming into your wallet (as long as Staking is enabled on the wallet).
+Let’s talk about how to shield coins you mined from solo mining or minted from staking!
+Step 1
+Generate a new shielded wallet address. This is a 1 time step, once you’ve generated it, you can keep using it for future shielding/unshielding. To create your “zs” address, in Verus Agama first click Receive, then click “Get New Address” and select “Private Address (Sapling)”. You’ll see a confirmation in the lower right that it generated a new address.
+
+
+Step 2
+Now copy the new “zs” address you generated by clicking the 3 vertical dots next to it and selecting “copy pub key”. For easy access in the future, you may want to save this to a text file.
+
+Step 3
+Now you’re ready to Shield your coinbase transactions…the mined or minted coins. Click “Send” and select the option to “Shield all recent coinbase transactions”. Then paste your “zs” address in the “Send To” field and click “Shield Funds”…you’ll come to a confirmation screen, check that your “zs” address is correct and click “Confirm”:
+
+After a few seconds it will complete and you can click “Make Another Transaction” to return to the main Send screen.
+Step 4
+After the coins have been shielded and at least 1 confirmation reached on that transaction, you can Unshield them. To check confirmations, go to the “Transactions” screen and wait for at least 1 confirmation.
+Next, you’re ready to Unshield. For this step, you’re sending from a Private address, the “zs” address you just shielded to…to a Transparent address, where it will stake. Copy the Transparent address you want to use, from your “Receive” screen in Verus Agama by clicking the 3 vertical dots next to the Transparent (public) address where you want your staking balance to be…and copy pub key.
+Then return to the “Send” screen and choose the “Send from a private address” option. Choose your private address with the balance you just shielded, paste your Transparent address (begins with “R”) into the “Send To” field and for Amount choose All (or an amount you want to unshield to a UTXO). Then click the Send button…Confirm…and you’re set!
+
+You can return to the Transactions screen to verify your new transparent balance and see the confirmations coming in…after 150 confirmations your mature transparent balance, now in UTXO form, will be staking!
+Join the Verus Community
+You are now mining, helping secure the Verus blockchain, and earning VRSC!
+What next?
+Besides the incredible strong development, delivering cutting edge technology and ground breaking innovations (learn more about it here), Verus is a 100% community project and has a thriving and active Discord. Whether you need help or want to find ways to contribute (and earn more Verus!) joining the official Verus Discord is a great next step!
+Hope you found this guide helpful and as simple and easy to follow as I intended. When you do join the Verus Discord look me up (I’m John Westbrook#1979 there) and say hi, and feel free to ask for any help you may need!

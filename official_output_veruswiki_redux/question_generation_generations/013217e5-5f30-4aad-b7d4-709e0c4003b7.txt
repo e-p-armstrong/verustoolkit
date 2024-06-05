@@ -406,7 +406,7 @@
     **ANSWER:**
 
     The "CRITICAL UPDATE" is crucial because it provides a combination of security
-    fixes and initial preparation for PBaaS (Private Blockchain as a Service). It
+    fixes and initial preparation for PBaaS (Public Blockchain as a Service). It
     is essential to upgrade immediately to ensure the security and integrity of your
     Verus system.'
   role: assistant

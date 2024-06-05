@@ -1,0 +1,77 @@
+Title: VerusCoin Successfully Activates Sapling with New Improvements to Verus Wallet, Electrum Server…
+Article URL: https://medium.com/veruscoin/veruscoin-successfully-activates-sapling-with-new-improvements-to-verus-wallet-electrum-server-35b44d8bad5c
+Content:
+
+VerusCoin Successfully Activates Sapling with New Improvements to Verus Wallet, Electrum Server and Pool Software
+Latest Developments: Verus Wallet v0.4.0c and later with Stake Guard (NoS Solution) and Other Improved Features; Verus Electrum Server with Sapling Support; Sapling Compatible Pool Software
+
+The Sapling upgrade has activated on VerusCoin blockchain at blockheight 227520 and the latest innovations, improvements and features are now active for all users running Verus Wallet v0.4.0c and newer. Users are already actively taking some of the revolutionary features for a “spin” with reports of near 1 second (and some sub-1 second) shielded transactions!
+In tests with a basic 1GB VPS, for example, I clocked 1.29sec shielding time for shielding a coinbase. This same server would utilize nearly 4 GB of Swap and take between 6 and 10 minutes prior to the activation.
+If you have not yet upgraded, follow these steps to upgrade to the latest version now:
+How to Update or Install Verus GUI Wallet v0.4.0h for Linux or Windows
+Verus Wallet v0.4.0c Release Notes
+This update, released prior to Sapling activation on the VerusCoin blockchain, includes some important and groundbreaking features and tech. Verus v0.4.0 saw the innovation and advancements of Sapling support, the first Crypto-Condition “Stake Guard” which implements a mechanism for finding and catching cheated stake blocks and effectively solving “Nothing at Stake”…the big Proof of Stake theoretical problem.
+In the “c” and later (currently at “h”) edition of Verus, a few new exciting improvements and features have been added.
+Catching Cheaters
+As you may have read in the Verus Official Release Notes for v0.4.0, the first Crypto-Condition of Verus called Stake Guard was added in lieu of Sapling activation. As of Verus v0.4.0c the Stake Guard CC has activated and can now earn users extra Verus coins by catching cheaters.
+The Stake Guard technology built into Verus Wallet actively identifies staking wallets which are claiming duplicate blocks on more than one version of the blockchain, using the same staked coins. Once a cheater is identified, the mining or staking wallet which found the cheater is able to spend any actual single reward the cheating wallet won from the main chain.
+With the new Verus-enhanced features of Sapling and Stake Guard activated as of block height 227520, any miner or staker can enable Stake Guard (see below for instructions) and their node (native wallet) will begin “hunting for” and catching any cheaters found.
+Users assign a new Sapling zs-address as their “cheatcatcher” address for collecting the coinbases from any found cheated blocks. Only the single coinbase that generated on the main chain (not the forks) of a given cheated stake block height are able to be claimed by a cheat catcher. No new coins are minted and no double spending occurs from any forked chain either by the cheater or the miner who caught the cheater.
+Once you’ve set your Stake Guard zs-address, your full “Native Mode” wallet which is either mining or staking will also be hunting down any instances where the same winning coins are being used across different forks and with the same private key. If your wallet finds such a fork, your wallet will hold the cryptographic proof and spend the single real stake reward from the main chain of that block height. This is done automagically by your wallet at the time of that cheater’s stake reward becoming mature and by utilizing the Stake Guard CC’s condition, to allow a proven cheat spend to spend the coinbase in question.
+Any miner or staker who sets the “cheatcatcher” zs-address parameter may find an additional shielded coinbase in their cheat catching address! Again, this is not new coins being created, it’s literally spending the cheaters single “legitimate” coinbase from the block height at which they cheated, sending it to your zs-address before they can spend it.
+Miners and stakers may also earn a cheat reward from Stake Guard when they don’t earn a normal block reward as it is an equally fair functionality (when enabled) across the entire network of miners and stakers, not weighted by staking or mining power, rather dependent on which wallet “sees” the identifiable cheated fork.
+Beyond setting your wallet up to catch cheaters, another important implication of this advancement is to also ensure you are not inadvertently cheating. If you stake on the same wallet across multiple computers, you will most likely lose your staked rewards. You should only stake from one wallet per computer at any time. While you can open the same wallet on two computers, make sure only one of those is staking and the other is not to avoid losing your coinbase rewards!
+How to Enable Stake Guard:
+Enabling Stake Guard is simple. Following are steps for both CLI and GUI.
+For CLI Wallet:
+First generate a new Sapling-type zs-address with command: 
+ ./verus-cli/verus z_getnewaddress sapling which will echo back your new zs-address.
+Start your Verus daemon with the parameter -cheatcatcher=zsaddr where “zsaddr” is your new zs-address.
+For example, to start the daemon staking and with Stake Guard enabled, you would run: ./verus-cli/verusd -mint -cheatcatcher=zsaddr
+For GUI Wallet:
+First generate a new Sapling-type zs-address from the Send section by choosing “Private Address (Sapling)” from the Get New Address drop down:
+
+Next, copy that new address by clicking the 3 vertical dots on the left of the new “zs” address in your list, and clicking “Copy Pub Key”
+
+Navigate to the Settings (top right menu) and expand “App Config (config.json)”, then scroll down and paste your zs-address into the field labeled “Your VRSC sapling address for receiving funds cheaters attempt to steal”
+
+Lastly, save your settings by scrolling down and clicking “Save app config”. For good measure, close Verus Agama, wait for it to shutdown completely, then open again.
+
+Lite Mode Sapling Transactions
+The Verus v0.4.0f GUI wallet has new support coded in for Sapling-compatible Lite Mode transactions. With the new developments to the Verus Electrum server, enabling Sapling support, users are able to perform the new zs-address lightning-fast shielding transactions within the lite wallet! This support is for both VerusCoin and Zcash networks when using the “d” version of the Verus GUI wallet.
+Improved Multi-Coin Support
+Another important improvement Verus made in this version of the wallet is better support for multiple coins. Verus wallet supports Bitcoin, Litecoin, Zcash (with Sapling enabled), and Dash by default along with most of the Komodo ecosystem coins.
+Verus is also working to include Pirate (ARRR) in a future release and will continue to keep the wallet on the cutting edge as a multi-coin wallet.
+Additional Fixes and Improvements
+This edition of the Verus wallet also fixes a few other issues and improvements, including:
+Fixed: Some non-Latin usernames cause failure to load
+Fixed: Wallet balance can get out of sync with blockchain when staking
+To fix any out-of-sync issues, perform a Rescan by doing the following:
+For CLI
+Add the parameter -rescan when starting the daemon
+For GUI
+When starting the GUI click “Activate Coin”, not the dropdown shortcut
+Choose “Verus” from the modal and select “Native mode”
+Select the “daemon param: rescan” option
+Click “Activate Coin”
+Further Important Developments by Verus
+In addition to this important and ground-breaking update to the Wallet, Verus completed two very important developments in support of the newly improved blockchain upgrade: Electrum and Pool Software.
+Sapling Enabled Electrum Server
+Verus has enhanced their Electrum Server for Sapling support, making Lite Mode Sapling Z-Transactions possible. Lead developer Mike Toutonghi first noticed that his attempts at finding an Electrum server which would support the new Sapling transactions, were fruitless.
+As a result, Mike coded the support into the Verus Electrum server, which has been fully tested and seamlessly activated along with the blockchain Sapling activation at VerusCoin block height 227520.
+The Verus Electrum server is able to be used to successfully handle Sapling transactions for “Lite Mode” of Verus and Zcash from the latest Verus v0.4.0f wallet update. This support has been tested and is deployed on Verus’ Electrum Server for use with all lite mode transactions.
+Sapling Enabled Pool Software
+Being thorough and excellent are two very important qualities to which Verus holds true. Providing fully Sapling compatible pool software is another example of this commitment to the community and the project.
+Verus has coded Sapling support into the Pool Software. This software can be used by any Zcash fork which activates Sapling!
+Get involved in Verus and the Verus community
+Visit https://veruscoin.io
+Discord https://discord.gg/VRKMP2S
+Resources
+How to Update or Install Verus GUI Enhanced Agama Wallet
+Verus Coin v0.4.0 Official Release Notes
+How Verus Solved Nothing at Stake and Weak Subjectivity for Proof of Work
+Everything You Need to Know About the Zcash Sapling Upgrade
+Ben’s Pocket Guide to VerusCoin for Dummies and Smart People
+Komodo Ecosystem Spotlight: Verus Coin
+Komodo AMA Spotlights VerusCoin
+Formation of The Verus Coin Foundation with a Vision of PBaaS

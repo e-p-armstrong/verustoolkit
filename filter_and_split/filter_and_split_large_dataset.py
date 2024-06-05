@@ -51,7 +51,7 @@ def take_megabytes_of_data(sorted_json_data: list, megabytes: int) -> list:
     return split
 
 if __name__ == "__main__":
-    sorted_json_data = read_and_sort_data("orca_slim_dedup_cgato.json")
+    sorted_json_data = read_and_sort_data("unnatural_instructions.parquet")
     split_data = take_megabytes_of_data(sorted_json_data, 12)
     
     # Write each split to a file

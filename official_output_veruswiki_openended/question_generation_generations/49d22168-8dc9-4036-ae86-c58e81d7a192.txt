@@ -381,7 +381,7 @@
     allows for the transfer of assets between them.
 
 
-    **OPTION_PBAAS (256)**: This option defines a PBaaS (Private Blockchain as a Service)
+    **OPTION_PBAAS (256)**: This option defines a PBaaS (Public Blockchain as a Service)
     chain. A PBaaS chain is a private blockchain network that can be used by a single
     organization or entity.
 

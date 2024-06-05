@@ -324,7 +324,7 @@
     \ (based on text):\n\"\"\"\nWhat is the Verus approach to solving the problem\
     \ of scalability and security in blockchain technology?\n\"\"\"\n\nSupposed answer\
     \ to the question (this is what you are fact-checking):\n\"\"\"\nThe Verus approach\
-    \ involves using highly scalable PBaaS (Private Blockchain as a Service) autochains,\
+    \ involves using highly scalable PBaaS (Public Blockchain as a Service) autochains,\
     \ which provide an extra dimension of information and an unlimited number of token\
     \ types or \"colors\". This approach isolates transaction processing for each\
     \ application instance on its own blockchain, providing significant scale and\

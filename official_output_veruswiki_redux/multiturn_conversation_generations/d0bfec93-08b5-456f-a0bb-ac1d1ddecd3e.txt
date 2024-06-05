@@ -248,7 +248,7 @@
 
     **ANSWER:**
 
-    A PBaaS (Private Blockchain as a Service) blockchain is a type of blockchain that
+    A PBaaS (Public Blockchain as a Service) blockchain is a type of blockchain that
     allows users to create their own private blockchain networks. In Verus, a PBaaS
     blockchain is defined using a JSON object that specifies various properties of
     the blockchain, such as its name, options, currencies, conversions, eras, notaries,
@@ -301,7 +301,7 @@
 
     **AI Assistant:**
 
-    A PBaaS (Private Blockchain as a Service) blockchain is a type of blockchain that
+    A PBaaS (Public Blockchain as a Service) blockchain is a type of blockchain that
     allows users to create their own private blockchain networks. In Verus, a PBaaS
     blockchain is defined using a JSON object that specifies various properties of
     the blockchain, such as its name, options, currencies, conversions, eras, notaries,

@@ -311,7 +311,7 @@
 
     """
 
-    In the context of a PBaaS (Private Blockchain as a Service) chain, Komodo notarizations
+    In the context of a PBaaS (Public Blockchain as a Service) chain, Komodo notarizations
     can play a role in ensuring the stability of the chain tip. However, it''s essential
     to understand that PBaaS chains are designed to operate independently, following
     their own proof of power protocol.

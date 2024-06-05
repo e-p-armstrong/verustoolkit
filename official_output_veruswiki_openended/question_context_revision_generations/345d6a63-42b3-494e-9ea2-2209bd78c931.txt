@@ -408,7 +408,7 @@
     \ to create their own token currency or even a full-fledged, multi-currency, ID-issuing\
     \ blockchain that can interact with the Verus chain. This blockchain can be configured\
     \ to be 50% POW/50% POS, making it 51% hash attack resistant. Moreover, these\
-    \ blockchains, known as PBaaS (Private Blockchain as a Service) chains, can be\
+    \ blockchains, known as PBaaS (Public Blockchain as a Service) chains, can be\
     \ merge-mineable and stakeable with other blockchains in the Verus network, enabling\
     \ greater interoperability and scalability.\n\nAnother key feature of the Verus\
     \ protocol is its integrated DeFi liquidity pools and fractional currency baskets.\

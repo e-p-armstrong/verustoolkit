@@ -234,14 +234,14 @@
   role: assistant
 - content: '**QUESTION:**
 
-    How do I define a Private Blockchain as a Service (PBaaS) blockchain using Verus,
+    How do I define a Public Blockchain as a Service (PBaaS) blockchain using Verus,
     including its properties, nodes, notaries, and bridge configuration, and what
     are the key components of this definition?
 
 
     **ANSWER:**
 
-    To define a Private Blockchain as a Service (PBaaS) blockchain using Verus, you
+    To define a Public Blockchain as a Service (PBaaS) blockchain using Verus, you
     need to provide a JSON object with specific properties that describe the blockchain''s
     configuration. This definition is then passed to the `definecurrency` command.
 
@@ -319,7 +319,7 @@
 
     **User:**
 
-    I''m interested in defining a Private Blockchain as a Service (PBaaS) blockchain
+    I''m interested in defining a Public Blockchain as a Service (PBaaS) blockchain
     using Verus. Can you walk me through the process and explain what properties,
     nodes, notaries, and bridge configuration I need to define, as well as the key
     components of this definition?
@@ -327,7 +327,7 @@
 
     **AI Assistant:**
 
-    To define a Private Blockchain as a Service (PBaaS) blockchain using Verus, you
+    To define a Public Blockchain as a Service (PBaaS) blockchain using Verus, you
     need to provide a JSON object with specific properties that describe the blockchain''s
     configuration. This definition is then passed to the `definecurrency` command.
 

@@ -214,7 +214,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text appears to be a JSON object definition for a
-    PBaaS (Private Blockchain as a Service) blockchain, detailing various components
+    PBaaS (Public Blockchain as a Service) blockchain, detailing various components
     and their data types.
 
     #### Type of Information: The information is technical and structural, outlining

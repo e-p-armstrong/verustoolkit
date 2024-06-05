@@ -1,0 +1,109 @@
+Title: #2 Ben’s Pocket Guide to Verus Coin for Dummies And Smart People Too.
+Article URL: https://medium.com/veruscoin/a-pocket-guide-to-verus-coin-f0c86e976c33
+Content:
+
+Verus virtus potest esse emit / True virtue cannot be bought — anonymous
+
+#2 Ben’s Pocket Guide to Verus Coin for Dummies And Smart People Too.
+A brief overview of this extremely decentralized and fairly launched project that takes aim at solving big problems with fake news, trust in election results and voting as well as restoring your privacy when you vote. This post will give you all the reasons you want to mine, stake and be involved with Verus Coin.
+With Verus, we plan to create a platform upon which we will build voting and even election systems that support our vision of enabling a better society through blockchain. To run simultaneous polls across disparate populations on one blockchain-based system, we need another dimension of information — one that retains privacy, and is anchored to a primary store of value, Verus.
+First Public Blockchains as a Service project (PBaaS).
+First fairly mined coin to create a foundation, over 4MM raised through community contributions of mined coins to sustain the long-term vision.
+A fair launch with nothing held back and no pre-mine which means mining started for everyone at the same time.
+The World’s fastest CPU hash and ASIC resistant right down to it’s DNA, which means maximum decentralization because of the low mining barrier.
+50% Proof of Work and 50% Proof of Stake which means you can put your coins to work mining(make sure to shield and unshield the coins you mine)
+Secured by delayed proof of work. A Friendly fork of Komodo, which means it benefits from delayed proof of work (creates a restore point on Bitcoin’s blockchain in case of attack).
+Did not do a ICO or try to raise funds. Solely focused on building working tech.
+Credible. Mike Toutonghi is Lead Dev and was Former Vice President and Technical Fellow at Microsoft, recognized founder and architect of Microsoft’s .Net platform, ex-Technical Fellow of Microsoft’s advertising platform, ex-CTO, Parallels Corporation, experienced distributed computing and machine learning architect.
+Mounting a 51% hash attack against such a hybrid algorithm operating at 50% proof of work and 50% proof of stake, even if there were such a thing as a Verus ASIC in the hands of a few, would effectively require much more than 51% of the network hash power and/or a great deal of the Verus coin supply as well. — Mike Toutonghi
+What problem is Verus Coin solving?
+The project solves the problems people face when they give up their privacy to vote or have a voice. It’s about being able to authenticate who you are in a trustless election or vote without giving up your identity or data, and being able to trust the results.
+We believe that this technology can be world-changing in critical public systems like polls and voting, as well as identity systems and learning from the whole of human knowledge. — Mike Toutonghi
+Why is privacy and anonymity important?
+The more someone knows about you, the more power they can have over you. We live in the a Golden Age for big data, advanced algorithms and machine learning, yet the average citizen has no idea how much can be known about them from the data they freely or inadvertently give away, or how that can be used to manipulate their decisions and opinions.
+Importantly, one of the key parts of democracy is the secret ballot. Nobody should know how you voted so they can’t influence your vote in any way.
+With blockchain voting, the information that registers on the blockchain shouldn’t include identifiable information. This means that information about the sender of the voting token has to be hidden. There are different ways to accomplish this, including zero knowledge proofs, ring transactions, or various encryption methods. Each has its benefits, drawbacks, and technical challenges. True anonymity at the same time as verified identity is the big challenge of blockchain voting.
+- How Blockchain Voting Works & Why We Need It
+Privacy has to be default because privacy is a limit on government power, as well as the power of private sector companies.
+The transparency paradox: big data collects all kinds of personal data about individuals, but its own operations are completely opaque.
+The identity paradox: big data seeks to identify at the expense of individual and collective identity.
+The power paradox: while seen as useful for public interest, big data privileges governments and corporate entities at the expense of ordinary individuals.
+- HOW BIG DATA CAN BE USED AGAINST YOU
+Remember the story about how Target figured out a teen girl was pregnant before her Father did?
+If we send someone a catalog and say, ‘Congratulations on your first child!’ and they’ve never told us they’re pregnant, that’s going to make some people uncomfortable,” Pole told me. “We are very conservative about compliance with all privacy laws. But even if you’re following the law, you can do things where people get queasy.
+- HOW COMPANIES LEARN YOUR SECRETS
+If you ask an expert what Verus Coin is, you might hear this…
+The biggest asset we see Verus creating in today’s modern world is a secure, scalable, trustless voting system, able to be used in all different kinds of electoral models, in parallel with a secure, scalable identification system. This combination would allow everyone in either a governed society, corporation, or any group to have a chance to fairly contribute to their community, and have their opinion represented without having to worry about corruption, or fraud. — Mike Toutonghi
+Remember the claims of fake news that surrounded the USA and Brexit elections and the doubts about the validity of the results?
+It has to happen without anyone thinking it’s propaganda, because the moment you think ‘that’s propaganda’ the next question is: ‘Who’s put that out?’
+- CAMBRIDGE ANALYTICA CEO ALEXANDER NIX DESCRIBES “SHADOW” ELECTION TACTICS
+If your Grandma asked you what Verus Coin was, you might say…
+It means when you cast a vote or answer a question you can validate your identity without your data or losing your anonymity. This means only the vote itself counts while ensuring the validity of the results. Take the example of a local election. It would mean you could prove you were a citizen of your country and locality and entitled to vote without giving up your identity or data to the people running the election.
+How will the government/corporations benefit?
+A secure, scalable, trustless voting system, able to be used in all different kinds of electoral models, in parallel with a secure, scalable identification system. This combination would allow everyone in either a governed society, corporation, or any group to have a chance to fairly contribute to their community, and have their opinion represented without having to worry about corruption, or fraud or repercussion.
+The $VRSC Coin uses and purpose.
+An obvious use is that it’ll be used to mine more coins because Verus Coin is 50% Proof of Stake. This means that the more coins you own, the more mining power you have.
+Even your Grandma could mine this with her old Wins 95 laptop!
+$VRSC will of course be used to power polls, votes and elections using autochains. These autochains can be as temporary or as durable as needed.
+And, Nodes will be paid for routing transactions and ranked for performance and stability. To keep the network strong.
+There are also genuine cryptocurrency uses for $VRSC too, however, I don’t want to over-egg the pudding!
+Infographic created by community member @M_eyse
+So far, Verus Coin has proven to be working tech and NO hype.
+It’s asking us to participate in taking back our privacy and to be part of a movement that will be world-changing in critical public systems like polls and voting, as well as identity systems.
+Forget the hype — build things… — Ivan on Tech
+It’s a project that’s building working tech right out of the gate, with minimal fuss and marketing. There is no marketing team because this isn’t about raising funds and paying big bonuses. It’s about a decentralized movement and a strong, involved community.
+Infographic created by community member @M_eyse
+Let’s review Verus Coin’s key features…
+A completely new proof of work / proof of stake hybrid algorithm with 50% of each for maximum protection against 51% attacks, further backed by Komodo platform’s delegated proof of work, which offers additional attack protection and recycles Bitcoin’s hashpower, making Verus coin possibly the most attack resistant decentralized blockchain in existence. Delayed proof of work basically creates a system restore or checkpoint on Bitcoin’s chain. Because Bitcoin has by far the largest hashrate it’s incredibly secure.
+Infographic created by community member @M_eyse
+The fastest proof of work has in the world by far on CPUs, furthering the goal of extreme decentralization by making Verus Coin mineable by anyone with a PC or laptop.
+From what I understand, even though GPUs will soon be able to mine Verus, the performance tests discussed in Discord suggest that CPUs will be effective for mining indefinitely, at least until ASICs are developed for VerusHash.
+This is a project aiming to protect people’s identities and data when they vote, so it makes sense they have Zero knowledge proofs (zk-SNARKs) for maximum privacy, enabling a mix of bitcoin style transactions that are openly explorable combined with completely, provably zero knowledge transactions, where sender, receiver, and amount are mathematically, provably private and can include encrypted messages as well.
+At launch there were larger, time locked rewards to the earliest participants, ensuring no risk of significant supply entering the market and being dumped all at once.
+The VerusHash mining algorithm is built to provide a solution to the current ASIC situation in crypto. Not only is it the fastest CPU mining algorithm in the world right now, but because of the fact that it leverages extreme integration in modern day processors, effectively treating their internals as mini, high speed ASICs, it allows people to mine easily from their laptop or PC and actually earn as much VRSC for their investment as even big miners, because they aren’t competing with specialized, purpose-built machines or on an algorithm where GPUs have a major advantage. — @MikeToutonghi
+From the very beginning, all mining and staking rewards equal to or over 192 Verus were time locked for release and first use randomly over the next 25 months.
+Infographic created by community member @M_eyse
+As of the next halving where rewards halve to 96 Verus, they will not be time locked and will be available for staking or trading within 100 blocks from being staked or mined.
+Project Roadmap
+DELIVERED Phase One — Mainnet, 50/50 PoW/PoS , Time Locks and Fair Launch
+WORKING ON Phase Two — Autochains, Polls and Verus Mobile
+Phase Three — Identity, and Proof of Virtue
+Phase Four — Integrated Machine Learning, Content and Storage
+Graphic found in the White Paper
+What’s Next? The Verus Coin Foundation.
+Talked to senior team members and I understand there will be a Verus Foundation which will have one purpose, to realise the Verus Vision. It’ll be setup right from the start, have a legal entity, and it’ll concentrate every resource available to sustainable success that isn’t reliant on one person or one entity. My understanding is this is close to being announced from conversations I’ve had with the team in Discord and the lawyers may be notable. I’ll update this post when that happens with some cold hard facts.
+EDIT: this has now been announced…
+Announcing Formation of The Verus Coin Foundation with a Vision of Public Blockchains as a Service…
+July 30, 2018 — Announcing the Verus Coin Foundation, endowed with over 4 million Verus Coins — dedicated to realizing…medium.com
+All The Videos
+Crypto Rich — In-Depth Interview on Verus
+Crypto Rich — How to Mine Verus
+Part 1 of DigitSpin Crypto
+Part 2 of DigitSpin Crypto
+All The Resources
+Website + White Paper + Vision Paper + Launch Announcement
+Wallets / Mining + Explorer
+Bitcointalk + GitHub
+Exchanges: digitalprice.io
+Discord
+Twitter
+Medium
+Reddit
+Email Newsletter
+Read more posts about Verus…
+10 min read on Everything You Need to Know About the Upcoming Zcash Sapling Upgrade which Verus Coin will be the first to activate by John Westbrook.
+Everything You Need to Know About the Upcoming Zcash Sapling Upgrade: Why It’s So Important and…
+INSIDE: How Zcash’s new upgrade Sapling, set to activate in late October 2018, promises to deliver the most innovative…medium.com
+3 min read on How to mine from the command line by Guillaume Van Hemmen.
+VerusCoin (VRSC) CLI mining
+You want to mine some VerusCoin but you feel lost on how to do it? Do not worry, this article will explain to you how…medium.com
+16 min read on How to Setup a Verus (VRSC) Staking Server with Email Alerts Using Ubuntu and a $5 DigitalOcean Droplet by John Westbrook.
+How to Setup a Verus (VRSC) Staking Server with Email Alerts Using Ubuntu and a $5 DigitalOcean…
+Step by Step Guide to Setting Up a DigitalOcean Droplet Server to Stake Verus VRSC Cryptocurrency Using Ubuntu Linux…medium.com
+7 min read on ‘Why we should all be Interested in the Verus Coin’ by Randy Fish.
+Why we should all be Interested in the Verus Coin
+Verus is the name of a decentralized digital currency coin which I have recently discovered.medium.com
+Read more of the Pocket Guides I’ve written…
+A Pocket Guide Series on Coins for Dummies And Smart People Too.
+Initially I’ll be focusing on projects that are adopting the Komodo Platform’s tech, and updating this page each time I…medium.com
+Your questions and comments are welcome and appreciated.

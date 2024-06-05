@@ -409,7 +409,7 @@
 
 
     The `OPTION_PBAAS` currency option in Verus indicates that the currency is a PBaaS
-    (Private Blockchain as a Service) chain definition. This means that the currency
+    (Public Blockchain as a Service) chain definition. This means that the currency
     is part of a private blockchain service that allows for customizable blockchain
     solutions.
 

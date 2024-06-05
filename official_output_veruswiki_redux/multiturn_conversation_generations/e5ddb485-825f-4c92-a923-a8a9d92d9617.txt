@@ -284,7 +284,7 @@
     \ transactions with other external currencies.\n\n**User:**\nOkay, got it. How\
     \ about `OPTION_PBAAS`? What's the purpose of that option?\n\n**AI Assistant:**\n\
     The `OPTION_PBAAS` option, with a value of 256, indicates that the token or currency\
-    \ is a PBaaS (Private Blockchain as a Service) chain definition. This is a specific\
+    \ is a PBaaS (Public Blockchain as a Service) chain definition. This is a specific\
     \ type of blockchain implementation that provides a private and customizable blockchain\
     \ solution.\n\n**User:**\nWhat about `OPTION_GATEWAY_CONVERTER`? What does that\
     \ option do?\n\n**AI Assistant:**\nThe `OPTION_GATEWAY_CONVERTER` option, with\

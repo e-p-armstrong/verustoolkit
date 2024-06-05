@@ -235,7 +235,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text appears to be a JSON schema or configuration
-    file for creating a PBaaS (Private Blockchain as a Service) chain, detailing various
+    file for creating a PBaaS (Public Blockchain as a Service) chain, detailing various
     parameters and options for customization.
 
     #### Type of Information: The information is technical and specific, outlining

@@ -310,7 +310,7 @@
     \ fully decentralized network.\n- On-chain 100% decentralized, launches with fair\
     \ la\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nWhat is Verus PBaaS, and what\
     \ features does it offer?\n\"\"\"\n\nSupposed answer to the question (this is\
-    \ what you are fact-checking):\n\"\"\"\nVerus PBaaS (Private Blockchain as a Service)\
+    \ what you are fact-checking):\n\"\"\"\nVerus PBaaS (Public Blockchain as a Service)\
     \ is a decentralized network that allows for the creation of private blockchains,\
     \ currencies, liquidity pools, NFTs, and more. It offers features such as:\n\n\
     * Provable or pseudonymous, identity-based currency, liquidity pool, NFT, and\
@@ -333,7 +333,7 @@
     \ for launching, scaling, and operating decentralized applications (dApps) without\
     \ requiring programming knowledge.\n\n### Accuracy Check:\n**Direct Comparison\
     \ for Factual Accuracy and Common Knowledge Check:**\n\n  * The text does not\
-    \ explicitly define Verus PBaaS as \"Private Blockchain as a Service\", but it\
+    \ explicitly define Verus PBaaS as \"Public Blockchain as a Service\", but it\
     \ does describe it as a decentralized network with various features, which aligns\
     \ with the answer.\n  * The text lists some features of Verus PBaaS, including\
     \ provable or pseudonymous, identity-based currency, liquidity pool, NFT, and\

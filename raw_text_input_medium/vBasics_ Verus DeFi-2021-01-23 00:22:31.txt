@@ -1,0 +1,56 @@
+Title: vBasics: Verus DeFi
+Article URL: https://medium.com/veruscoin/vbasics-verus-defi-118da0b13f35
+Content:
+
+vBasics: Verus DeFi
+Verus is a UTXO-based cryptocurrency with DeFi in its consensus protocol. In this first vBasics-series, we explain what liquidity pools, automated market makers and fractional currencies are, and how they function in the Verus ecosystem.
+
+Verus is a foundational blockchain that builds key primitives at the consensus level of the protocol. DeFi is one of those key primitives, and quite difficult to wrap our heads around. Especially as the words we use can be confusing. This is new technology so we make it up as we go. DeFi systems we know use words like ‘automated market makers’ and ‘liquidity pools’. Verus adds ‘fractional currency’ to the terminology.
+In a DeFi system there are no people you buy or sell your currency to. You only interact with a pool of liquidity. Inside this pool of liquidity can be many different currencies, small or large amounts. The liquidity pool is attached to a currency. The currency that is attached to the liquidity pool has a value that is determined by what is in the liquidity pool (image 1).
+Important note: in the Verus ecosystem, all currencies with liquidity pools have adaptive supplies.
+Image 1: In Verus DeFi a currency can have a pool of liquidity attached to it
+Let’s start by explaining currencies that are backed by 100% (see image 2). In our example we have NewCurrency. This currency is backed by 100% and has VRSC and ETH in its liquidity pool (A).
+In a currency that is 100% backed, the value is always equally divided by the number of currencies in the liquidity pool. NewCurrency has 1000 VRSC and 2 ETH in its liquidity pool. And even though they are different values, and they have different values outside the Verus ecosystem, they still represent 50/50% of the value (B).
+Let’s say the currencies in the liquidity pool of NewCurrency have a value of both $500. Consequently, the value of 1 NewCurrency is $1000 (C).
+Image 2: How the value of a Verus DeFi currency is composed
+So, depending on what is in the liquidity pool of NewCurrency, the price of the currency fluctuates. Here comes the term ‘automated market maker’ in play. No person sets the price of the currency, it is fully automated. Anyone at any time can interact with this currency because there is always a value, and always liquidity. Which means it is an always ‘on’ market maker. A fully automated market maker.
+You might ask yourself: why is there always liquidity? This is because a liquidity pool can never be really empty. One can always add or take out VRSC and ETH. When a balance tips too much to one side, there is opportunity to arbitrage and make money. There is always something to trade against.
+Now why would someone want to convert their VRSC or ETH to NewCurrency? This is a portfolio management choice. NewCurrency acts as a constant-mix strategy. You are exposed to two different currencies, while holding only one. By holding NewCurrency you also earn fees from people converting, more on this later.
+A Verus DeFi currency that is backed by 100% can have many more currencies than just two in its liquidity pool. All kinds of combinations are possible (image 3).
+Image 3: A currency backed by 100% can have many different currencies in its liquidity pool
+In the Verus ecosystem we call a currency that has a pool of liquidity attached to it a ‘fractional currency’. The currencies that are in the pool of liquidity we call ‘reserve currencies’, see image 4.
+Image 4: Verus DeFi terminology
+To make it a bit more complicated, let us explain why we call these currencies ‘fractional currencies’. In our example before (image 2) we showed a fractional currency that derives its value 100% from the reserve currencies: it is backed 100%. In the Verus ecosystem, we can have fractional currencies that are partially, fractionally, backed by a number between 5 and 95%, see image 5.
+Image 5: Two examples of fractional currencies that are partially backed by its reserves
+How one creates 100% backed or partially backed fractional currencies differs. A user can create a currency and define that the currency is 100% backed. A user can not define the fraction between 5 and 95%. The number of backing by a fractional currency is dependent upon market forces before the currency is launched.
+One can ask, what is the consequence that a currency is backed by 10, 50, 80 or 100%? The difference is the curve of price vs supply. And remember, the fractional currencies have adaptive supplies. See image 6 for a simplified illustration.
+Image 6: Different backing percentage means different price vs supply curve
+Converting From Reserve to Reserve
+We have explained how one can always convert to a fractional currency with its reserve currencies. Or back to a reserve currency with the fractional currency. In the Verus ecosystem there is another way to convert currencies.
+We call this converting through the fractional currency. One doesn’t acquire the fractional currency, but converts through the fractional currency to a reserve currency. To simplify: one converts one reserve currency to another reserve currency. See image 7 for the different conversion possibilities within our NewCurrency example. Remember that all the currencies (fractional & reserves) have a value relative to each other.
+Image 7: Possibility to convert in every direction
+For example, if one owns VRSC, they can convert it to ETH through NewCurrency. In the Verus DeFi ecosystem, if one wants to convert VRSC to ETH, the protocol searches through all the fractional currencies with both VRSC and ETH in its reserves, presenting you the best price for conversion (image 8).
+Image 8: The protocol searches through all fractional currencies to present the best conversion price
+There is always a value, and always liquidity attached to the fractional and reserve currencies. It will always be possible to obtain a fractional currency, or convert to a reserve currency with any of the many fractional AND reserve currencies that will be available in the Verus ecosystem.
+Important note: all fractional currencies on the Verus blockchain must have VRSC as one of its reserves.
+Earning Fees
+Like we discussed earlier, holding a fractional currency is besides a portfolio/investment strategy, an opportunity to earn fees.
+Let's say one holds NewCurrency from image 2. Every time a user converts VRSC to ETH, or ETH to VRSC, 0.025% of the transaction in VRSC stays in the NewCurrency reserve. This means that the total value of NewCurrency goes up which is beneficial for the holder.
+Join the Revolution
+What makes Verus unique compared to its competitor Ethereum, is that in Verus all blocks are solved simultaneously. Front-running will not be possible. Read more in-depth information on the differences between Verus and Ethereum DeFi.
+A giant system of liquidity will emerge, with value flowing in every other direction. Many times the value of the currencies in the Verus ecosystem will not be aligned with the same currencies outside of the ecosystem. Many arbitrage opportunities will arise which means more value flowing into the system.
+Essentials
+Verus Website
+Get Verus Desktop
+Mining Software & Pools
+GitHub Repository
+Block Explorer
+CoinMarketCap, CoinGecko, CoinPaprika
+Join the Verus Community
+Official Twitter
+Discord
+Community Telegram
+Facebook
+Medium
+Reddit
+BitcoinTalk

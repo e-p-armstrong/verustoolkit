@@ -410,7 +410,7 @@
 
 
     If a currency has the `OPTION_PBAAS` option set when defining a currency, it means
-    that this is a PBaaS (Private Blockchain as a Service) chain definition. This
+    that this is a PBaaS (Public Blockchain as a Service) chain definition. This
     option is used to define a PBaaS chain, which is a type of chain that allows for
     private blockchain services.
 

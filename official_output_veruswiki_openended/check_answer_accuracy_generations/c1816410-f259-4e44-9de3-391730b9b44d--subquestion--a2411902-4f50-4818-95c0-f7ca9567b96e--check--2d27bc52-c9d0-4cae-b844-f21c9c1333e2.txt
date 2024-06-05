@@ -307,7 +307,7 @@
     \ (based on text):\n\"\"\"\nWhat are the key components of a PBaaS blockchain\
     \ definition, and how do you define a PBaaS blockchain using the `definecurrency`\
     \ command in Verus?\n\"\"\"\n\nSupposed answer to the question (this is what you\
-    \ are fact-checking):\n\"\"\"\nA PBaaS (Private Blockchain as a Service) blockchain\
+    \ are fact-checking):\n\"\"\"\nA PBaaS (Public Blockchain as a Service) blockchain\
     \ definition in Verus consists of several key components, which are specified\
     \ in a JSON object. These components include:\n\n* `name`: the name of the PBaaS\
     \ chain\n* `options`: an integer that represents various options for the chain\n\

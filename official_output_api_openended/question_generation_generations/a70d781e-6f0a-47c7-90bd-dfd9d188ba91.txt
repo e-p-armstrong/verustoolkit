@@ -368,7 +368,7 @@
 
     **ANSWER:**
 
-    When defining a PBaaS (Private Blockchain as a Service) blockchain using Verus,
+    When defining a PBaaS (Public Blockchain as a Service) blockchain using Verus,
     there are several components that make up the definition. These components are
     essential to understanding how the blockchain will function and how it will be
     configured.

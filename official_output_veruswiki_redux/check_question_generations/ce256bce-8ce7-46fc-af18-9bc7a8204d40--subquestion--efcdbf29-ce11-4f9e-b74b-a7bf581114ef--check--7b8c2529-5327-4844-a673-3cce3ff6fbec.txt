@@ -225,7 +225,7 @@
 
     #### Content and Depth: The text discusses the latest developments on the TestNet,
     including an upgrade to the Ethereum bridge contracts, and the path to mainnet
-    for PBaaS (Private Blockchain as a Service).
+    for PBaaS (Public Blockchain as a Service).
 
     #### Type of Information: The information is descriptive/educational, teaching
     people about the current state of the TestNet and the plans for mainnet activation.

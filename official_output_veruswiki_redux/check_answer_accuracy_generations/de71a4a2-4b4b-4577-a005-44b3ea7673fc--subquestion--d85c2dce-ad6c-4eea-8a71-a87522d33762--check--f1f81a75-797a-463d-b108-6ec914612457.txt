@@ -297,7 +297,7 @@
     What is the purpose of the `OPTION_PBAAS` option when defining a token or currency\
     \ in Verus?\n\"\"\"\n\nSupposed answer to the question (this is what you are fact-checking):\n\
     \"\"\"\nThe `OPTION_PBAAS` option, with a value of 256, indicates that the token\
-    \ or currency is a PBaaS (Private Blockchain as a Service) chain definition. This\
+    \ or currency is a PBaaS (Public Blockchain as a Service) chain definition. This\
     \ is a specific type of blockchain implementation that provides a private and\
     \ customizable blockchain solution.\n\"\"\""
   role: user

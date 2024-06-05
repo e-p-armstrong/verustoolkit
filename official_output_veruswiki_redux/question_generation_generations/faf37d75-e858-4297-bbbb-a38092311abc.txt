@@ -400,7 +400,7 @@
 
     **ANSWER:**
 
-    PBaaS (Private Blockchain as a Service) chains in Verus are decentralized, multi-currency,
+    PBaaS (Public Blockchain as a Service) chains in Verus are decentralized, multi-currency,
     ID-capable blockchains that can send and receive from the Verus chain. They are
     merge-mineable and stakeable with other blockchains in the Verus network. All
     PBaaS chains run from the same daemon, and projects can join the worldwide Verus

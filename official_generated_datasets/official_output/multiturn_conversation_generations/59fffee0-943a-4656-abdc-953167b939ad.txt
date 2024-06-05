@@ -273,7 +273,7 @@
 
     **ANSWER:**
 
-    A PBaaS (Private Blockchain as a Service) chain is a blockchain that runs from
+    A PBaaS (Public Blockchain as a Service) chain is a blockchain that runs from
     the same daemon as the Verus chain. This means that projects can join the Verus
     community in improving the daemon, and in doing so, they will have access to a
     complete, multi-currency, ID-capable blockchain with DeFi capabilities that is
@@ -349,7 +349,7 @@
 
     **AI Assistant:**
 
-    A PBaaS (Private Blockchain as a Service) chain is a blockchain that runs from
+    A PBaaS (Public Blockchain as a Service) chain is a blockchain that runs from
     the same daemon as the Verus chain. This means that projects can join the Verus
     community in improving the daemon, and in doing so, they will have access to a
     complete, multi-currency, ID-capable blockchain with DeFi capabilities that is

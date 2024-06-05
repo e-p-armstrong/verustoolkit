@@ -407,7 +407,7 @@
 
     **QUESTION:**
 
-    What is the advantage of using the Verus PBaaS (Private Blockchain as a Service)
+    What is the advantage of using the Verus PBaaS (Public Blockchain as a Service)
     blockchains?
 
 

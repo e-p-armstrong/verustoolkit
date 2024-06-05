@@ -224,7 +224,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text discusses the Verus testnet, specifically the
-    PBaaS (Private Blockchain as a Service) multi-currency tokens feature. It explains
+    PBaaS (Public Blockchain as a Service) multi-currency tokens feature. It explains
     how tokens can be defined, launched, and used within the Verus network.
 
     #### Type of Information: The information is descriptive/educational, teaching

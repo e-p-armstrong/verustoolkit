@@ -217,7 +217,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text provides examples of defining a currency and
-    a PBaaS (Private Blockchain as a Service) blockchain in Verus, including the JSON
+    a PBaaS (Public Blockchain as a Service) blockchain in Verus, including the JSON
     definitions and command-line commands.
 
     #### Type of Information: The information is instructional/technical, teaching

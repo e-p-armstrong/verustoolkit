@@ -306,7 +306,7 @@
     :[371747.20398827,0,1000000],\"initialsupply\":3000000}'\n```\n\"\"\"\n\nQuestion\
     \ (based on text):\n\"\"\"\nWhat is a PBaaS blockchain, and how can I define one\
     \ using Verus?\n\"\"\"\n\nSupposed answer to the question (this is what you are\
-    \ fact-checking):\n\"\"\"\nA PBaaS (Private Blockchain as a Service) blockchain\
+    \ fact-checking):\n\"\"\"\nA PBaaS (Public Blockchain as a Service) blockchain\
     \ is a type of blockchain that allows users to create their own private blockchain\
     \ networks. To define a PBaaS blockchain using Verus, you can use the `definecurrency`\
     \ command with a JSON object that specifies the blockchain's properties, such\

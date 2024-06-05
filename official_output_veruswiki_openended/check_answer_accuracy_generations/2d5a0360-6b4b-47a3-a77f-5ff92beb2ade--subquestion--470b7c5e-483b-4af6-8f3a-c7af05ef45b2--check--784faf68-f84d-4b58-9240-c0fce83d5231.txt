@@ -321,7 +321,7 @@
     \ or even a full-fledged, multi-currency, ID-issuing blockchain that can interact\
     \ with the Verus chain. This allows users to create their own blockchains that\
     \ are merge-mineable and stakeable with other blockchains in the Verus network.\
-    \ All PBaaS (Private Blockchain as a Service) chains run from the same daemon,\
+    \ All PBaaS (Public Blockchain as a Service) chains run from the same daemon,\
     \ and projects can join the worldwide Verus community to improve the daemon, gaining\
     \ a complete, multi-currency, ID-capable blockchain with DeFi capabilities.\n\n\
     **Consensus Integrated DeFi Liquidity Pools and Fractional Currency Baskets:**\n\

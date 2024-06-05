@@ -1,0 +1,28 @@
+Title: September 2021  — Verus Monthly Recap
+Article URL: https://medium.com/veruscoin/september-2021-verus-monthly-recap-9f0961624d0a
+Content:
+
+September 2021 — Verus Monthly Recap
+The latest Verus updates on development, community, ecosystem and more. Subscribe to the newsletter here.
+
+Next to publishing the monthly recap on Medium, I will send the exact same content through a newsletter. Subscribe here. I’ll try to keep things short and to the point.
+
+VerusID Profiles
+To showcase VerusID and Verus Data Exchange Format (VDXF) capabilities you can now create your very own profile with VerusID. As of right now these profiles can contain images, videos, posts and proofs of ownership of social media accounts, websites or crypto addresses. You are in total control of your profile and you can never be deplatformed. For data storage Arweave is used, a decentralized storage provider. Other storage providers can also be used. This is only the beginning and we haven’t even scratched the surface of what is possible with VerusID and VDXF. Stay tuned for instructions to create your VerusID Profile.
+Check out the very first VerusID Profile by Mike Toutonghi
+
+Mobile Wyre Integration
+A new Verus Mobile update has entered initial testing. Among the new updates is the Wyre integration which lets you convert to/from fiat to BTC/ETH. If you have a US residence address, it also lets you connect a bank account.
+
+Verus Hardware Wallet
+Community member jesse is working on a Verus open source hardware wallet. Still early days but a very useful addition to the Verus ecosystem nonetheless!
+Updated Insight Explorer
+With the updated Insight Explorer you can now search for VerusIDs. It also shows special transactions such as VerusID creations. Check out the updated Insight Explorer here.
+Community Videos
+Community member Macoofer made this educational video on UTXOs. Watch What Is a UTXO? | A Beginner’s Explainer on Transaction Outputs.
+Community member Houssam made this video on how to start mining with your mobile phone. Learn how to mine on your phone here.
+Community member Crypto Rich made a video from the previous Monthly Recap. In case you missed it: Have a look here.
+ETH Bridge, Website Delays
+Unfortunately the Ethereum Bridge and new website release have been delayed. This is not due to any fundamental issues encountered but simply a matter of time. Stay tuned for updates.
+Thanks for reading. That’s it from me. Until next month!
+Please subscribe to the monthly recap so you’ll get it each month in your mailbox.

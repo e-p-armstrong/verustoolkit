@@ -1,0 +1,107 @@
+Title: Introducing Switch — The Gateway to Switch Between Stablecoins on Verus
+Article URL: https://medium.com/veruscoin/introducing-switch-the-gateway-to-switch-between-stablecoins-on-verus-1dc60e4f1104
+Content:
+
+Introducing Switch — The Gateway Currency to Switch Between Stablecoins on Verus
+Switch is a decentralized currency fully backed by VRSC, DAI, USDC & EURC. Use it to switch between Verus and the different stablecoins. Or hold it while it accrues value from conversion fees.
+
+⏱️ Switch is launched on block: 2,984,851 (Saturday 30 March, 2024).
+🔁 Convert VRSC, DAI, USDC or EURC to Switch, or vice versa. Or use Switch as an AMM and convert the reserves with each other.
+❓ USDC & EURC are stablecoins issued by Circle. DAI is a USD stablecoin issued by Maker.
+💸 Low-cost, MEV-resistant DeFi conversions with max. fees of 0.05%.
+⌨️ See the Switch statistics (protocol prices, amount in reserves) at Cryptodashboard or verus.trading. Or type in /switch in the #trading channel in the community Discord.
+📚 Learn in this article how to convert the stables with each other, and how to convert to and from Switch. Also you learn how to bridge EURC or USDC to the Verus network.
+What is Switch?
+Switch is a decentralized currency on the Verus blockchain. It is fully (100%) backed by its reserves. Its initial supply is 20,000 Switch.
+Its reserves are weighted as follows: VRSC (16%), DAI DAI.vETH (21%), USDC vUSDC.vETH (21%) & EURC EURC.vETH (42%). What does this mean? E.g. when you put EURC in the reserves you get more Switch after preconversion than when you put VRSC in.
+Use Switch to convert between any of the reserves for a max. fee of 0.05%. Switch is a MEV-resistant AMM. Learn more about Verus DeFi.
+Switch accrues 50% of the conversion fees — the conversion fees stay in the reserves, increasing the value of Switch.
+The other 50% of the conversion fees go to the miners and stakers of Verus.
+There is a risk to holding Switch — USDC & EURC are distributed by the centralized company Circle.
+The supply of Switch is dynamic. Switch gets minted when people convert to it from VRSC, DAI.vETH, vUSDC.vETHor EURC.vETH, and get burned when people convert back to the reserves.
+
+Register subIDs— *.Switch@ for a 10 EURC (in Switch) fee. Those fees get burned. Learn more about subIDs (VerusIDs).
+Switch is perfect to use with VerusPay — Get your local businesses to take DAI, USDC & EURC on Verus. If you hold VRSC, DAI, or USDC and need to buy coffee in EURC, just scan a QR code! Verus scales to everyone worldwide and auto-converts payments from your favorite currency for always low transaction fees & a 0.05% conversion fee.
+There was a preconversion period for Switch
+There was a 7-day preconversion period where the reserves of Switch were filled with VRSC, DAI DAI.vETH, USDC vUSDC.vETH & EURC EURC.vETH. Depending on how much people added they got their fair share of the 20,000 Switch after the 7 day period.
+After the 7-day period Switch became a MEV-resistant AMM. All reserves can now be converted between each other.
+
+How to bridge USDC & EURC over to Verus
+USDC and EURC are ERC-20 token stablecoins issued by Circle. Get them on Coinbase or other exchanges. On the Verus blockchain they are called vUSDC.vETH & EURC.vETH.
+DAI DAI.vETH is readily available on the Verus network. Below are the ERC-20 token contracts for the tokens:
+USDC token contract
+EURC token contract
+DAI token contract
+To be able to use those ERC-20 tokens to preconvert into Switch they need to be bridged to the Verus blockchain. The bridging is done through the non-custodial and trustless Verus-Ethereum Bridge. Bridging and preconverting can be done with Verus Mobile, Verus Desktop (full node) & MetaMask with the bridge website.
+Verus Mobile bridging
+Let’s start by bridging with Verus Mobile. First thing to do is to add the ERC-20s in Verus Mobile. This is how to do it:
+Adding ERC-20s to Verus Mobile.
+Press the plus-button bottom-right corner
+Press “Add ERC-20 Token”
+Select checkmark to “Find using mapped PBaaS currency”, and fill in eurc.veth, vusdc.veth or dai.veth. Then press Continue.
+Press OK when a warning screen pops up.
+Now you are ready to receive USDC, EURC or DAI (as ERC-20s) on Verus Mobile.
+Before bridging the tokens over to Verus let’s add the currencies on the Verus blockchain to the wallet:
+Adding the currencies on the Verus blockchain on Verus Mobile.
+Press the plus-button bottom-right corner.
+Press “Add PBaaS currency”.
+Fill in eurc.veth, vusdc.veth or dai.veth and press continue.
+Press “ADD”.
+Now we are ready to bridge the ERC-20s over to the Verus blockchain.
+Bridging EURC to Verus. It will come out as EURC.vETH.
+Select the ERC-20 you want to bridge. (In the example we use EURC).
+Press “Send” and then “Convert or cross-chain”.
+Press “Send off-chain”.
+As the recipient address fill in a Verus address you own (R- or i-address, or VerusID).
+Fill in the amount you want to bridge over.
+Then as “Select network to send to” choose Verus
+Then as “Select currency to receive as” choose EURC.vETH
+That’s it. It can take up to 90 minutes before the ERC-20 arrives as a currency on Verus.
+Bridging with MetaMask
+Let’s bridge with MetaMask and the Verus-Ethereum Bridge website:
+Bridging with MetaMask to a Verus-address, EURC used as example.
+Connect MetaMask with this website: https://eth.verusbridge.io/
+Address: where you want the DAI, USDC or EURC to end up on the Verus blockchain (as DAI.vETH, vUSDC.vETH or EURC.vETH)
+Select token: [Euro Coin] as EURC.vETH, [0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48] as vUSDC.vETH or DAI.vETH
+Destination: select the same … on VRSC
+Choose the amount you want to bridge over
+It may take up to 90 minutes before the funds arrive on Verus
+Convert DAI, USDC, EURC & VRSC with each other
+Now that Switch is fully launched you can convert between VRSC, DAI.vETH, vUSDC.vETH and EURC.vETH. It’s now an AMM. Learn more on Verus DeFi here.
+Convert with Verus Desktop or Verus Mobile.
+Convert with Verus Desktop
+On Verus Desktop click the “Convert Currencies”-button and then go to the “Advanced”-tab.
+Convert all Switch reserves with each other on Verus Desktop.
+Choose amount to send
+“From Currency”: fill in DAI.vETH , vUSDC.vETH, EURC.vETH, VRSC
+“To Currency”: fill in DAI.vETH , vUSDC.vETH, EURC.vETH, VRSC
+“Via Currency”: fill in Switch
+“Destination Address”: fill in a R-/i-address or VerusID where you want to receive the currency.
+Now click “Convert Currencies”, and that’s it! Wait between 1 and 5 blocks and you will receive the amount.
+If you want to convert to Switch:
+“To Currency”: to Switch
+Leave out “Via Currency”
+Convert with Verus Mobile
+Convert all Switch reserves with each other on Verus Mobile.
+Press DAI.vETH , vUSDC.vETH, EURC.vETH, VRSC
+Press “Send” and then “Convert or cross-chain”
+Press “Convert currency”
+As the recipient address fill in a Verus address you own (R- or i-address, or VerusID) or self to receive it on the same address where you send it from.
+Fill in the amount you want to convert
+Then as “Select currency to convert to” choose what you want to convert it to.
+The network to send to is “current network” = Verus
+Now press “Send” and confirm, and that’s it! You now have to wait between 1 and 5 blocks and you will see the currency in your wallet.
+Join the crypto revolution with Verus & Switch
+Switch is a unique currency used as a gateway to switch between stablecoins, launched on the Verus Protocol. Join the Verus Discord and explore what Verus has to offer. It is one of the most, if not the most, far ahead cryptocurrency protocols.
+Verus solves scalability by neither sacrificing decentralization or security
+The Verus-Ethereum Bridge is non-custodial & trustless
+Launch currencies (like Switch!) without any coding needed
+Launch fully interoperable, independent and customizable PBaaS-blockchains
+VerusID: self-sovereign identities
+Verus DeFi: simple, low-cost, MEV-resistant and without any middleman
+Verus is the protocol for builders: join the community at Consensus 2024
+And so much more.
+Join the community. Learn about the protocol. Use Verus. Get ahead of the game.
+➡️ Join the community on Discord
+Follow on Twitter
+Go to verus.io

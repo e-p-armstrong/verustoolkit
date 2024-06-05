@@ -256,7 +256,7 @@
 
     **Merge Mining:**
 
-    Additionally, when PBaaS (Private Blockchain as a Service) goes live, miners can
+    Additionally, when PBaaS (Public Blockchain as a Service) goes live, miners can
     choose to mine up to 22 PBaaS-chains simultaneously, without losing any of their
     original hashing power. This allows miners to diversify their mining efforts and
     increase their potential earnings.
@@ -294,7 +294,7 @@
     \ that anyone can start mining with consumer-grade hardware, without the need\
     \ for specialized equipment. In fact, mining can be started directly from within\
     \ Verus Desktop, making it easy for new miners to get started.\n\n**Merge Mining:**\n\
-    Additionally, when PBaaS (Private Blockchain as a Service) goes live, miners can\
+    Additionally, when PBaaS (Public Blockchain as a Service) goes live, miners can\
     \ choose to mine up to 22 PBaaS-chains simultaneously, without losing any of their\
     \ original hashing power. This allows miners to diversify their mining efforts\
     \ and increase their potential earnings.\n\n**Staking Ecosystem:**\nAnyone can\

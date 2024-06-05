@@ -1,0 +1,63 @@
+Title: VerusCoin 0.5.3 Official Release Notes
+Article URL: https://medium.com/veruscoin/veruscoin-0-5-0-official-release-notes-6d371095dc7a
+Content:
+
+VerusCoin 0.5.3 Official Release Notes
+VerusHash 2.0 Mandatory Upgrade — Fire Up Those CPUs! Plus Side-by-Side Verus and Komodo Daemon Support in Verus Agama, and Two Bounty Offerings
+
+An important foundational principle upon which Verus Coin is established is that of decentralization. In the proof of work this was highlighted from launch, when Verus developed the fastest CPU hash algorithm in the world, effectively VerusHash 1.0, in a 100% fair launch. Today we are announcing VerusHash 2.0, in a continued commitment to decentralization and the design and ongoing maintenance of a cutting edge PoW hashing algorithm.
+TLDR: NEW in this Release
+Time to dust off that CPU (and your kids gaming computer and your best friends modern laptop, and well, EVERY CPU you can get your hands on!) and prepare for an EPIC mining experience to usher in 2019!
+New VerusHash 2.0 includes novel techniques designed to close the performance gap between CPU, GPU, and FPGA
+New Agama Daemon Support of Verus and Komodo/Komodo Asset Chains running in native side-by-side and Verus enhanced features on other asset chains
+Get Verus v0.5.3 with VerusHash 2.0
+Verus v0.5.3 can be built from source or downloaded for your OS using the following links. Please remember to backup your wallet.dat file prior to any update.
+This is a mandatory update before December 28th. All clients must be updated before block 310000, we recommend updating before Dec 27.
+To download the binary or GUI (Agama) for your OS:
+https://veruscoin.io/#download
+or
+https://github.com/VerusCoin/VerusCoin/releases/tag/v0.5.3
+To build from source:
+https://github.com/VerusCoin/VerusCoin
+GUI Users: Follow our guide to updating your wallet
+IMPORTANT
+THIS IS A MANDATORY UPDATE, AND IF YOU DO NOT UPDATE, YOU WILL BE UNABLE TO ACCESS THE MAIN VERUS CHAIN AFTER BLOCK 310000, WHICH WILL BE MINED ON DECEMBER 28, 2018.
+VerusHash 2.0
+VerusHash 2.0 is explicitly designed to address the gap in hash power that FPGAs have over CPUs today on the Verus network. While initial activation will likely mean no FPGAs (and possibly even no GPUs) on the Verus network at least temporarily, our goal is more equivalence across returns on various types of hardware while continuing to enable people with just a CPU to easily contribute to and join the Verus Community through mining.
+VerusHash 2.0 is designed to better equalize mining across all hardware platforms, while favoring the latest CPUs over older types, which is also one defense against the centralizing potential of botnets.
+Strategy Involved in VerusHash Design
+Because VerusHash 1.0 was designed with the Haraka V2 Core, it leveraged highly integrated instruction sets of modern CPUs and in turn GPUs didn’t gain too much of an advantage when they were implemented. In the original hash, the strategy was to advantage CPUs through the use of these optimizations, and we knew we would consider adjusting the hash if hardware was made for this algorithm, however we did not have a reference point of comparison until now.
+The goal of closing the gap between CPUs and GPUs with 1.0 was to promote decentralization, allowing more people from around the world to participate in mining Verus Coin and creating a stronger network together. Rather than simply advantaging a small number of integrated CPU instructions, using Haraka V2 Core, we have deeply considered a number of hardware characteristics across different target hardware to invent VerusHash 2.0.
+Based on efforts to ensure that the algorithm leverages a number of additional strengths of CPUs, while placing more of a burden on some weaknesses of FPGAs, specifically, we are optimistic that VerusHash 2.0 will significantly close, if not eliminate, the gap between ROI on various types of hardware.
+If for any reason, VerusHash 2.0 goes too far, and FPGAs become economically useless for mining Verus Coin, which we don’t believe is the likely outcome, we can discuss tuning with the community, as the algorithm includes many new parameters that can be used to adjust its relative speed on different hardware.
+Botnet Resistant
+While you can never prevent capable, controlled PCs from being used for mining, it is far more likely that the CPUs in those PCs will be older, rather than the newest models. With VerusHash 2.0, modern CPUs are strongly advantaged over older CPUs, and the newest, advantaged even more.
+Drop in Nethash
+Because VerusHash 2.0 is doing so much more than its predecessor, one result of this algorithm will be a significant drop in the nethash. It is important to understand that this does not indicate any drop in level of security of the blockchain.
+While we hope all of you will fire up your favorite newer CPU to join us in welcoming the new algorithm, the algorithm will not go as fast as the older algorithm on any device, and we should see hashrate numbers closer to the early days of mining Verus. Again, this does NOT reflect any issue with regards to our immunity to 51% hash attacks, as the Verus Proof of Power algorithm is not subject to that vulnerability.
+Verus Agama Improvements
+In this release of the Verus Enhanced Agama wallet (GUI) we are introducing full support of any Komodo asset running natively alongside Verus Coin. This is done by separating out the daemon for Komodo, allowing both the Verus daemon and the Komodo daemon to run simultaneously.
+This change will allow us to add native support from other coin daemons in the future as well, while maintaining maximum compatibility with each coin supported. We believe we added all active coins in the Komodo ecosystem, but if we missed out on your favorite, please reach out on Discord and let us know!
+Two Related Bounty Offerings!
+In conjunction with this release, the Verus foundation is offering two bounties, one for GPU and one for FPGA development. The bounty of each is for the first implementation of a competitive miner for VerusHash 2.0 for that particular hardware type with some stipulations:
+The code must be made open source and available to the community without first being used in secret.
+To qualify, the miner implementation must beat the best CPU hash rate by at least 1.5x hash rate for a comparably priced CPU-to-device.
+For GPUs the target GPU individually performing the qualifying hash rate must be common (and available to the general public) nVidia or AMD devices. For FPGAs, the hardware performing the qualifying hash rate must be easily available and under $1250 per device.
+Submitted and qualifying implementations must be completed, working, and in a form that can be easily tested by a representative of the Verus Coin Foundation. This bounty offer will automatically end 90 days after this release (prior to March 20, 2019) and may be renewed by the Verus Coin Foundation at its sole discretion. Entries submitted will also be determined eligible for a bounty at the sole discretion of the Verus Coin Foundation and its representatives.
+For a qualifying GPU software miner, over and above any additional bounties earned by any qualifying developer, the bounty will be 50,000 VRSC. For a qualifying FPGA development, over and above any additional bounties earned by any qualifying developer, the bounty will be 100,000 VRSC. Both of these bounties will be provided as addresses holding time-locked VRSC, which will release uniformly over the next 1 year and ~8.5 months.
+Good luck developers!
+Get involved in Verus Coin and the Verus community
+Want to learn more about Verus Coin? The best place to start is reading the Verus Vision Paper.
+Want to get started mining, staking or just joining our very active community? Begin with our official site and the very thriving, welcoming Verus community on Discord, where you’ll also find lots of FAQs and meet many helpful members!
+Visit Verus Official Site: https://veruscoin.io
+Join the Official Verus Discord: https://discord.gg/VRKMP2S
+Resources
+Verus on the Spirit of Open Source, Community, and Contributing to Crypto
+VerusCoin Successfully Activates Sapling
+How to Update or Install Verus GUI Enhanced Agama Wallet
+How Verus Solved Nothing at Stake and Weak Subjectivity for Proof of Work
+Everything You Need to Know About the Zcash Sapling Upgrade
+Ben’s Pocket Guide to VerusCoin for Dummies and Smart People
+Komodo Ecosystem Spotlight: Verus Coin
+Komodo AMA Spotlights VerusCoin
+Formation of The Verus Coin Foundation with a Vision of PBaaS

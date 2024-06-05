@@ -381,7 +381,7 @@
   role: user
 - content: '**QUESTION:**
 
-    What is the Verus PBaaS (Private Blockchain as a Service) platform, and what makes
+    What is the Verus PBaaS (Public Blockchain as a Service) platform, and what makes
     it unique compared to other decentralized platforms?
 
 

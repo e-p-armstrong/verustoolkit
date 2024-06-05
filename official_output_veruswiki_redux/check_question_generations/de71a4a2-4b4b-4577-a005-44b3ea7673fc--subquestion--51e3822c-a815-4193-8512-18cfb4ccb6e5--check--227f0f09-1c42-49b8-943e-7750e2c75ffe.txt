@@ -209,7 +209,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text lists various options for setting up a PBaaS
-    (Private Blockchain as a Service) chain or gateway in Verus, along with their
+    (Public Blockchain as a Service) chain or gateway in Verus, along with their
     corresponding values.
 
     #### Type of Information: The information is technical and descriptive, outlining

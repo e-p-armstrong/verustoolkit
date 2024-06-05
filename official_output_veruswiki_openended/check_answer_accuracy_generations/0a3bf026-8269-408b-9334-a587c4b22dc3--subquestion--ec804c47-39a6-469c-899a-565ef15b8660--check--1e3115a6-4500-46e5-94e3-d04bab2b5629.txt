@@ -303,7 +303,7 @@
     \ defaults\n```json\n {\n \"currencies\": [\n  \"VRSCTEST\",\n  \"PBaaSChain\"\
     ,\n  \"USD\"\n ],\n \"initialcontributions\": [\n  380228.12033701,\n  0,\n  1000000\n\
     \ ],\n \"initialsupply\": 3000000\n}\n```\n\"\"\"\n\nQuestion (based on text):\n\
-    \"\"\"\nHow do I define a new currency and a PBaaS (Private Blockchain as a Service)\
+    \"\"\"\nHow do I define a new currency and a PBaaS (Public Blockchain as a Service)\
     \ blockchain using the Verus command line, and what are the key components of\
     \ these definitions?\n\"\"\"\n\nSupposed answer to the question (this is what\
     \ you are fact-checking):\n\"\"\"\nTo define a new currency and a PBaaS blockchain\

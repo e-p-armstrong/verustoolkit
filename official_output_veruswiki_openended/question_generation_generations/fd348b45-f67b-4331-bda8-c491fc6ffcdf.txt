@@ -374,7 +374,7 @@
 
     **ANSWER:**
 
-    To define a PBaaS (Private Blockchain as a Service) blockchain in Verus, you need
+    To define a PBaaS (Public Blockchain as a Service) blockchain in Verus, you need
     to specify several key components in a JSON object. These components include:
 
 

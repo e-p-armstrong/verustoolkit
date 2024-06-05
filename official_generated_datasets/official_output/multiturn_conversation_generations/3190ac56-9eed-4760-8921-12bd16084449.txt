@@ -275,7 +275,7 @@
 
     This release is significant because it delivers on every part of the vision described
     in the vision paper of June 2018, including most stretch goals, for the PBaaS
-    (Private Blockchain as a Service) release. It is expected to go live on the Verus
+    (Public Blockchain as a Service) release. It is expected to go live on the Verus
     mainnet on May 21, 2023, with the activation targeted at block 2546600.
 
 
@@ -327,7 +327,7 @@
 
     This release is significant because it delivers on every part of the vision described
     in the vision paper of June 2018, including most stretch goals, for the PBaaS
-    (Private Blockchain as a Service) release. It is expected to go live on the Verus
+    (Public Blockchain as a Service) release. It is expected to go live on the Verus
     mainnet on May 21, 2023, with the activation targeted at block 2546600. Mark your
     calendars!
 

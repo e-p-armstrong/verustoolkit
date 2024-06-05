@@ -410,7 +410,7 @@
 
 
     The `OPTION_PBAAS` option, with a value of 256, indicates that the token or currency
-    is a PBaaS (Private Blockchain as a Service) chain definition. This is a specific
+    is a PBaaS (Public Blockchain as a Service) chain definition. This is a specific
     type of blockchain implementation that provides a private and customizable blockchain
     solution.
 

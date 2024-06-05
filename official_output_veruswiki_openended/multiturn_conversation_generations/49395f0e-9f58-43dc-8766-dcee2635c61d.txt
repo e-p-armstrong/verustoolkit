@@ -256,7 +256,7 @@
 
 
     **OPTION_PBAAS (256):** This option indicates that the definition is for a PBaaS
-    chain. PBaaS (Private Blockchain as a Service) chains are private blockchains
+    chain. PBaaS (Public Blockchain as a Service) chains are private blockchains
     that can be created and managed on the Verus platform.
 
 
@@ -312,7 +312,7 @@
 
 
     **OPTION_PBAAS (256):** This option indicates that the definition is for a PBaaS
-    chain. PBaaS (Private Blockchain as a Service) chains are private blockchains
+    chain. PBaaS (Public Blockchain as a Service) chains are private blockchains
     that can be created and managed on the Verus platform.
 
 

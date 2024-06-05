@@ -304,7 +304,7 @@
     nodeidentity\":\"Node2@\"}],\"gatewayconvertername\":\"Bridge\",\"gatewayconverterissuance\"\
     :1000000}' '{\"currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\"initialcontributions\"\
     :[371747.20398827,0,1000000],\"initialsupply\":3000000}'\n```\n\"\"\"\n\nQuestion\
-    \ (based on text):\n\"\"\"\nHow do I define a PBaaS (Private Blockchain as a Service)\
+    \ (based on text):\n\"\"\"\nHow do I define a PBaaS (Public Blockchain as a Service)\
     \ blockchain using Verus, and what are the key components of the definition?\n\
     \"\"\"\n\nSupposed answer to the question (this is what you are fact-checking):\n\
     \"\"\"\nDefining a PBaaS blockchain using Verus involves creating a JSON object\

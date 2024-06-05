@@ -1,0 +1,70 @@
+Title: How-to Participate in the Verus-Ethereum Bridge Launch
+Article URL: https://medium.com/veruscoin/how-to-participate-in-the-verus-ethereum-bridge-launch-73aeeae1c76a
+Content:
+
+How-to Participate in the Verus-Ethereum Bridge Launch
+This article gives instructions on how to use the Verus-Ethereum Bridge website and Verus Desktop and Verus Mobile to preconvert ETH, DAI and MKR into Bridge.vETH.
+
+First I recommend to read: Bridging Done Right — Verus-Ethereum Bridge Launches Now!
+✅ We will show you:
+How-to bridge ETH, DAI & MKR over to Verus
+How-to enable vETH, DAI.vETH & MKR.vETH on Verus Desktop & Verus Mobile
+How-to preconvert into Bridge.vETH with Verus Desktop & Verus Mobile
+Download the latest Verus Desktop or Verus Mobile (iOS App Store or Android Play Store)
+If on Verus Desktop make sure you are on native mode and fully synced. (And remember to always backup your wallet.dat file!)
+Visit the Verus-Ethereum Bridge website here: https://eth.verusbridge.io/
+Bridging ETH, DAI & MKR over to Verus
+First thing we need to do, before we can preconvert, is to bridge over. To bridge ETH, DAI or MKR over you need to visit the bridge website here.
+
+Then connect your Metamask or WalletConnect wallet. Follow the steps they give you.
+
+Then fill in the address (R- or i-address) you want the bridged ETH, DAI or MKR to end up.
+
+Then choose what you want to bridge over (ETH, DAI, MKR or VRSC). And then the destination. After that choose the amount and click send.
+Metamask or WalletConnect will guide you through the next steps. ⚠️ It can take up to 45 minutes before your bridged ETH, DAI or MKR arrives on the Verus blockchain and in your wallet.
+⛽ Also, the gas fee calculation is quite high, it could be that you pay a lot less, but this is never a guarantee.
+Getting Verus Desktop to show vETH, DAI.vETH & MKR.vETH
+Now that you have sent over ETH, DAI or MKR to your R- or i-address, we need to make sure you can actually see them in Verus Desktop.
+
+Go to the “Multiverse”-tab, click on Verus on the left. You can see that Bridge.vETH, DAI.vETH, MKR.vETH & vETH or not “added” yet. Click on one of the currencies.
+
+When clicking on one of the currencies you can see a button “Add Currency”. Click on it, and do it for all if you want.
+You can now go back to the “Wallet”-tab.
+
+You can now see the added currencies in the dropdown in your Wallet-tab (when Verus is selected).
+Getting Verus Mobile to show vETH, DAI.vETH & MKR.vETH
+For this step we assume you already have the wallet installed and are ready to go. Now that you have sent over ETH, DAI or MKR to your R- or i-address, we need to make sure you can actually see them in Verus Mobile.
+
+Click on the big plus button in the right bottom corner. Then click “Add PBaaS Currency”.
+Then you can type in vETH (or DAI.vETH, MKR.vETH depending on what you want to add). (not capital sensitive). Btw, you can also already add Bridge.vETH.
+Follow the steps and the currency will be added to your main screen.
+Preconverting to Bridge.vETH
+Verus Desktop
+To actually start preconverting currencies to Bridge.vETH click on “Convert Currencies”.
+
+Now go to “Advanced”.
+
+You only need to fill in the highlighted parts of the form. See below:
+Amount: how much of vETH, DAI.vETH or MKR.vETH you want to convert to Bridge.vETH
+From Currency: Fill in vETH, DAI.vETH or MKR.vETH (not case sensitive)
+To Currency: Fill in Bridge.vETH (not case sensitive)
+Destination Address: Fill in where you want to receive the Bridge.vETH (on Fri 20 Oct). Can be a R-address, i-address or VerusID.
+Send as pre-convert: Check this
+Refund Address: Sometimes a currency has a minimum or maximum amount to preconvert before it launches. For example, when the minimum preconversion amount is not met, and thus the currency not launched, you will receive your funds back. In this case there isn’t a minimum or maximum but you still need to fill it in. Can be the same as your Destination Address.
+Now click on “Convert Currencies” and confirm the transaction. You have now preconverted funds into Bridge.vETH!
+Verus Mobile
+Now we want to preconvert currencies (vETH, DAI.vETH, MKR.vETH) into Bridge.vETH.
+
+Click on the currency you want to preconvert into Bridge.vETH. Go to the correct tab where you have the currency stored. Click “Send”, then “Convert or Cross-chain”, then click “Pre-convert”.
+Recipient address: This is the address where you will receive the Bridge.vETH, you can click on “self”, or choose something else.
+Amount: choose the amount of the currency you want to convert into Bridge.vETH.
+Currency to convert to: Fill in Bridge.vETH (not case sensitive)
+Then click send and follow the steps. You have now preconverted currencies into Bridge.vETH!
+On Friday 20 Oct you will receive an amount of the 100,000 initial supply of Bridge.vETH in your destination address.
+You can always check verus.io/eth-bridge for statistics on Bridge.vETH
+Join the community. Learn about the protocol. Use Verus & build.
+👉 Connect to the bridge
+Verus-Ethereum Bridge webpage
+➡️ Join the community on Discord
+Follow on Twitter
+Go to verus.io

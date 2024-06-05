@@ -381,7 +381,7 @@
 
     **ANSWER:**
 
-    Defining a PBaaS (Private Blockchain as a Service) blockchain in Verus allows
+    Defining a PBaaS (Public Blockchain as a Service) blockchain in Verus allows
     you to create a private blockchain that can be used for various purposes, such
     as creating a decentralized application or storing data. The definition includes
     parameters such as the name of the chain, the currencies it supports, the conversion

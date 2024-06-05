@@ -402,7 +402,7 @@
 - content: '**QUESTION:**
 
 
-    What is the plan for preparing the PBaaS (Private Blockchain as a Service) for
+    What is the plan for preparing the PBaaS (Public Blockchain as a Service) for
     mainnet activation?
 
 

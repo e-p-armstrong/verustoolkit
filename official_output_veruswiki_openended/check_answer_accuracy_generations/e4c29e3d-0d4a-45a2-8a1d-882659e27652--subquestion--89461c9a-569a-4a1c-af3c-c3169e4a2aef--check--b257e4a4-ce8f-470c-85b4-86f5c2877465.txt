@@ -312,7 +312,7 @@
     \ in finding bugs and earning rewards?\n\"\"\"\n\nSupposed answer to the question\
     \ (this is what you are fact-checking):\n\"\"\"\nThe Verus PBaaS and DeFi testnet\
     \ is a platform for testing and refining the Verus protocol, specifically focusing\
-    \ on the PBaaS (Private Blockchain as a Service) and DeFi (Decentralized Finance)\
+    \ on the PBaaS (Public Blockchain as a Service) and DeFi (Decentralized Finance)\
     \ features. The testnet allows users to experiment with the protocol, identify\
     \ potential issues, and report bugs or errors.\n\nThe Verus Coin Foundation is\
     \ incentivizing users to participate in bug hunting by offering rewards, known\

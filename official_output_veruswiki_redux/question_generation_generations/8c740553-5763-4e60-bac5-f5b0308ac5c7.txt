@@ -440,7 +440,7 @@
     **ANSWER:**
 
     The `OPTION_PBAAS` currency option, when set, indicates that the currency is a
-    PBaaS (Private Blockchain as a Service) chain definition. This means that the
+    PBaaS (Public Blockchain as a Service) chain definition. This means that the
     currency is part of a PBaaS chain, which is a private blockchain service provided
     by Verus.'
   role: assistant

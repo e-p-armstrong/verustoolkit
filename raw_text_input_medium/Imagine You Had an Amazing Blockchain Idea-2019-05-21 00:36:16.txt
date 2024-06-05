@@ -1,0 +1,39 @@
+Title: Imagine You Had an Amazing Blockchain Idea
+Article URL: https://medium.com/veruscoin/public-blockchains-as-a-service-36c858bcfe2f
+Content:
+
+Imagine You Had an Amazing Blockchain Idea
+
+One so good, our world seems primitive without it. You can already see your coin flippening itself through the ranks, showing its immaculately crisp logo on hundreds of Youtube channels, and finally, plunging into the mainstream.
+So, naturally, you search the internet for “How to make your own blockchain” to get started. Immediately, you are met with big, centralized, advertised corporate solutions sitting atop their money stacks on the front page of results. You keep scrolling. Smaller, cryptocurrency projects slowly fill your screen. One seems to stick out to you; it’s fancy website and pointy, triangular logo draw you to it’s instruction page. You read it, watch some videos, and get started, only to find that you’ll need to fork a Github repository, create an Amazon AWS account or Droplet account, subscribe to some centralized service, and set up an array of servers.
+This may stop some people from moving on, but not you, you’re driven. You trudge through hours of your time, some of your money, and finally, it’s ready.
+You’ve done it. Created a blockchain. Congratulations! You’ve finished the easiest part. What lies ahead includes months of growing a community, struggling with exchanges, building a wallet, creating infrastructure, finding help, publishing your idea, and becoming known. Hopefully, at the end of all this, you’ll have enough time, money, and motivation to actually start implementing your idea, but it’s easy to understand why we might not be seeing all of the potential we hear so much about.
+It doesn’t have to be this way. Creators shouldn’t have to jump through numerous centralized hurdles, deal with multiple different companies, and ultimately rely on others to bring their ideas to life. This is why Verus was created. Public Blockchains as a Service (PBaaS) enables a decentralized, automated experience to not only the use of blockchains, but their creation as well.
+Using an intuitive GUI wallet, anyone with a little bit of VerusCoin (or Verus Test Coin for now), has the ability to define and start up their own public blockchain in minutes. Any miner will be able to see your new chain as soon as it’s created, and merge-mine your chain with Verus, along with 13 other chains as well, meaning, they’re hashpower on Verus will apply to your chain too. Through this process, your chain is also automatically cross-validated through Verus, bolstering it’s security, and making it immune to multiple different forms of attack.
+This technology allows for the creation of a near infinitely scalable, completely decentralized, secure ecosystem of blockchain applications, that you can easily be a part of.
+But don’t trust me, verify my claims yourself on the VerusCoin test-net by following a simple guide.
+How to create your own chain on the Verus Testnet
+1 – Download the GUI Wallet Tech Release
+To get started, simply head to this GitHub page, and download the latest desktop wallet for your operating system.
+2 – Start the Verus Test chain
+Click Add Coin, select VRSCTEST, and select “Activate Coin”. This will either spin up VRSCTEST, or, you’ll be prompted to download any required ZCash parameters. If prompted, choose a server, and download the parameters. After the download is done, redo this step.
+If you’re having trouble getting it to start, don’t worry! Check out this FAQ page, or ask the community for help in one of the Verus Discord channels here.
+
+3 – Obtain some VRSCTEST coins
+Getting some of your own VRSCTEST is easy, simply mine some by yourself, or hop into the Verus discord and show us your receiving address. Any freindly test-net whales would be happy to give you some for free.
+Once the syncing progress bar in your wallet loads fully, you’ll be able to see your coins in your balance.
+
+3 – Open the PBaaS create menu
+Once you’ve got a balance, you’re ready to explore PBaaS! Navigate to the PBaaS tab, and you’ll notice the options to Connect, Discover and create. Connect and Discover allow you to connect to and explore all the chains already created on the testnet. If you’d like to create your own, head to the create tab.
+
+4 – Fill out the create form (Steps 1 – 4)
+Fill out the create a chain form to specify exactly what you want, and how you want it. After giving your creation a name, you have a huge number of options that make your chain unique. Do you want a premine? If so, how large? How should your reward schedule be outlined? How much will you reward notaries for securing your chain?
+The initial amount you pay to start the chain in VRSCTEST will be what you put as the “initial notarization offer” in step 4 of the form. You’ll need to make sure your balance can cover that.
+
+5 – Finish the create form (Steps 5 – 6)
+After you’ve finished specifying your chain to your needs, you’ll need to provide it with two public nodes (that are going to run your chain) to start on. Setup your own first public nodes, or, ask the helpful community on the Verus discord to help you bootstrap your chain and give you some addresses to use. This step will be automated soon, but for now, you’ll need to provide initial nodes manually.
+After you’ve sorted that out, review your chain data, and press “confirm” when you’re ready!
+If a little green window pops up in the corner of your screen, congratulations! You’ve started a chain! Otherwise, you’ll get a little error message telling you what’s wrong.
+
+Once the transaction that created your chain gets one confirmation (you can see this on your transactions screen), everyone connected to the test-net will be able to see your chain on the discover page, or search for it on the connect page, and connect to it!
+You’ve just launched a secure, zk-SNARK and smart transaction supporting, 51% hash attack resistant, publicly mineable and stakeable blockchain in 5 simple steps, on a decentralized platform, without requiring or relying on any centralized entity. What’s even better is that you can mine and stake your own project and use the same hash power to mine and stake up to 14 other coins, earning cryptocurrency while helping other teams and realizing your own unique vision!

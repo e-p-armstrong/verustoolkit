@@ -1,0 +1,25 @@
+Title: Satoshi’s 10 Year Prophecy and Verus Coin’s Vision to Help Realize It
+Article URL: https://medium.com/veruscoin/satoshis-10-year-prophecy-and-verus-coin-s-vision-to-help-realize-it-8472439d132
+Content:
+
+Satoshi’s 10 Year Prophecy and Verus Coin’s Vision to Help Realize It
+From the desk of Satoshi Nakamoto, the following email on Jan 16 2009 at 18:35 UTC, made a 10 year prediction-turned-prophecy
+On January 16, 2009 at 18:35 UTC, Satoshi in replying to Dustin Trammell, made some insightful and self-fulfilling prophecies…specifically for “10 years from now”…which falls on today, Jan 16 2019.
+
+You can read the original email on sourceforge here, but I’ve copied it in it’s entirety below.
+Re: [bitcoin-list] Bitcoin v0.1 released
+2009–01–16 18:35:32 UTC
+I would be surprised if 10 years from now we’re not using electronic currency in some way, now that we know a way to do it that won’t inevitably get dumbed down when the trusted third party gets cold feet.
+It could get started in a narrow niche like reward points, donation tokens, currency for a game or micropayments for adult sites. Initially it can be used in proof-of-work applications for services that could almost be free but not quite.
+It can already be used for pay-to-send e-mail. The send dialog is resizeable and you can enter as long of a message as you like. It’s sent directly when it connects. The recipient doubleclicks on the transaction to see the full message. If someone famous is getting more e-mail than they can read, but would still like to have a way for fans to contact them, they could set up Bitcoin and give out the IP address on their website. “Send X bitcoins to my priority hotline at this IP and I’ll read the message personally.”
+Subscription sites that need some extra proof-of-work for their free trial so it doesn’t cannibalize subscriptions could charge bitcoins for the trial.
+It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy. Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.
+Satoshi Nakamoto
+http://www.bitcoin.org
+When I stumbled upon this email around the new year, it struck me how accurate these predictions have manifested. I also had to stop and look a little deeper and ask what more might Satoshi have envisioned than simply “digital cash.” Although bitcoin was originally used as digital money, I believe Satoshi saw it as much, much more…and believe this email eludes to it.
+What’s Next for Blockchain?
+It occurred to me that the simple application of money in the bitcoin, was only the beginning of progress and what is possible to expand from this original use case. Particularly the underlying theme of blockchain services is an innovative progression of the invention of bitcoin.
+The Verus Coin’s project vision is a marketplace of provisioned public blockchains as a service (PBaaS) that are used to run public applications, including polls and voting. The goal is ultimately decentralized applications that provision and use these chains automatically, paying Verus miners, stakers, and service providers for provisioning and services.
+Verus is a 100% fairly launched, no-ICO, no-pre-mine community project and introduces a new consensus algorithm called Proof of Power, a 50% proof of work / 50% proof of stake algorithm, which solves theoretical weaknesses in other PoS systems and is provably immune to 51% hash attacks, making Verus one of, if not the most double-spend resistant public blockchain(s) running.
+With its groundbreaking consensus protocol, Verus also uses a unique hash algorithm, VerusHash 2.0, a quantum secure hash algorithm that is near-equally mineable on both CPUs and GPUs. Verus Coin also offers the most advanced zero-knowledge privacy available, using Sapling-generation zk-SNARKs for fast, secure, private transactions and messages.
+If you would like to learn more about Verus Coin and get involved in any way, whether in mining and helping secure the blockchain or through contributing and joining the community (or both!), visit the official site at https://veruscoin.io and join the official Verus Discord.

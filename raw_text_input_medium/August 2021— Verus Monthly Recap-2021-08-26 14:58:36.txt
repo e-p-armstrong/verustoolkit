@@ -1,0 +1,32 @@
+Title: August 2021— Verus Monthly Recap
+Article URL: https://medium.com/veruscoin/august-2021-verus-monthly-recap-4241c7c80b8a
+Content:
+
+August 2021— Verus Monthly Recap
+Filling the information gap. Subscribe to the newsletter. This is for you who doesn’t want to read through all the messages on Discord everyday (where all the latest project information can be found.) For you who can’t be bothered with following social media. For you who just generally wants to have a life and still get the occasional updates on Verus and its ecosystem. And everyone else is welcome too.
+
+Next to publishing the monthly recap on Medium, I will send the exact same content through a newsletter. Subscribe here. I’ll try to keep things short and to the point. So let’s get started with the very first monthly recap.
+August 2021
+Preparing Testnet for Ethereum Bridge
+The multi-chain testnet has been reset. This in preperation for the bridge to the Rinkeby testnet. It has been said we are very close to this game-changing release.
+Wallet Updates
+Highly recommended non-mandatory Verus Desktop and CLI wallet updates have been made available. (Critical for notaries and pools). Download v0.7.4 here
+Conversations with Mike & Bluesky
+Bluesky is an initiative from Twitter to create a decentralized social media platform. Verus lead developer Mike Toutonghi had some very interesting posts in their Discord channel explaining the benefits that Verus and VerusID can bring to their project. Everyone in their Discord is still shell-shocked from the bombs that Mike dropped on them. Read a part of the messages here. Verus has been selected to start a workgroup to integrate with OpenID. The future will tell if it is something worthwhile. One big positive is that more people, and especially developers, will learn about Verus. You can read all the messages back in the Bluesky Discord, and please keep the shilling to yourself. We want to foster professional and productive environments.
+
+Giant Website Overhaul
+We are close to finishing a giant website overhaul. Better, more concise messaging. Easier to understand copywriting. More illustrations. Clearer design. All-in-all easier to digest for all people. I personally can’t wait for it to be online. I believe it to be a great improvement that will definitely get more people more interested in Verus.
+
+Mobile Wallet Developments
+Interesting progress on the mobile development front. Verus Mobile will be able to function as an encrypted local repository for your personal data, creating a central place for you to securely store information about yourself (that only you control.) This data allows you to integrate your wallet with in-app service providers that extend application functionality. Initially, this is how fiat on/off ramp services (Wyre) will be connected to the wallet. Later on, VerusID integration gives users the power to prove information about themselves in a decentralized, self-sovereign way. Exciting stuff!
+
+New Docs Website
+In addition to the new website we are working on a documentation website. In here you can find information if you want to take a deeper dive into Verus blockchain technology. It will be online the same time as the new website. Although this one is still a work-in-progress and needs to be updated constantly.
+Community-Made Videos
+Community member tango808 made an awesome video showing current and near future capabilities. Check it out on YouTube. He made even way more and you can find them here. Please share them around if you want!
+Ecosystem Project Valu
+Community member Consilience from Valu low-key confirmed that they will launch their project soon after PBaaS (Public Blockchains as a Service) has been brought to mainnet. One of those things are fiat gateways for Verus. It will be a giant boost for the ecosystem I’m sure.
+Fun Fact
+At the time of writing the active amount of $VRSC staking is over 33M. Not bad. Still room for improvement. So get staking! Or not (more for me.)
+Thanks for reading. That’s it from me. Until next month!
+Please subscribe to the monthly recap so you’ll get it each month in your mailbox.

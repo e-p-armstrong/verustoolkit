@@ -369,13 +369,13 @@
   role: user
 - content: '**QUESTION:**
 
-    What are the components of a PBaaS (Private Blockchain as a Service) chain definition,
+    What are the components of a PBaaS (Public Blockchain as a Service) chain definition,
     and how do I define one using the Verus command line?
 
 
     **ANSWER:**
 
-    A PBaaS (Private Blockchain as a Service) chain definition consists of several
+    A PBaaS (Public Blockchain as a Service) chain definition consists of several
     components that define the properties and behavior of the chain. These components
     include:
 

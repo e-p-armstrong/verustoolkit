@@ -320,7 +320,7 @@
     \ tokens and merge-mineable, interoperable blockchains:**\nThe Verus protocol\
     \ allows any user with a VerusID to create their own token currency or even a\
     \ full-fledged, multi-currency, ID-issuing blockchain that can interact with the\
-    \ Verus chain. These blockchains, known as PBaaS (Private Blockchain as a Service)\
+    \ Verus chain. These blockchains, known as PBaaS (Public Blockchain as a Service)\
     \ chains, can be created without requiring any programming knowledge. They are\
     \ also merge-mineable and stakeable with other blockchains in the Verus network,\
     \ which means they can share mining power and liquidity with other chains. This\

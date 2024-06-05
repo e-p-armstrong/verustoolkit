@@ -409,7 +409,7 @@
 
     4. Fixing getchaintips bug.
 
-    5. Preparations for PBaaS (Private Blockchain as a Service).
+    5. Preparations for PBaaS (Public Blockchain as a Service).
 
 
     **QUESTION:**

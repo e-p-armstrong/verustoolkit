@@ -305,7 +305,7 @@
     \ ],\n \"initialsupply\": 3000000\n}\n```\n\"\"\"\n\nQuestion (based on text):\n\
     \"\"\"\nWhat is a PBaaS blockchain, and how is it defined in Verus?\n\"\"\"\n\n\
     Supposed answer to the question (this is what you are fact-checking):\n\"\"\"\n\
-    A PBaaS (Private Blockchain as a Service) blockchain is a type of blockchain that\
+    A PBaaS (Public Blockchain as a Service) blockchain is a type of blockchain that\
     \ allows users to create their own private blockchain networks. In Verus, a PBaaS\
     \ blockchain is defined using a JSON object that specifies various properties,\
     \ such as the name of the chain, the currencies it supports, the conversion rates\

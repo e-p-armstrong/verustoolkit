@@ -396,7 +396,7 @@
     **AI Assistant:**
 
     OPTION_PBAAS is a flag in Verus that, when set to 256, defines a PBaaS chain.
-    This means that the chain is a Private Blockchain as a Service (PBaaS) chain.
+    This means that the chain is a Public Blockchain as a Service (PBaaS) chain.
 
 
     **User:**

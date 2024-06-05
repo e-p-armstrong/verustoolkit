@@ -372,7 +372,7 @@
 
     **ANSWER:**
 
-    The Verus PBaaS (Private Blockchain as a Service) network is a revolutionary technology
+    The Verus PBaaS (Public Blockchain as a Service) network is a revolutionary technology
     that enables the creation of decentralized applications and services with advanced
     features and capabilities. At its core, the Verus PBaaS network allows for the
     integration of multiple blockchain networks, including the Verus network, Ethereum,

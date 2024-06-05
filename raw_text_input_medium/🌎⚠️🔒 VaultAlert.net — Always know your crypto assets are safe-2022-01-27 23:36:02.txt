@@ -1,0 +1,31 @@
+Title: 🌎⚠️🔒 VaultAlert.net — Always know your crypto assets are safe
+Article URL: https://medium.com/veruscoin/%EF%B8%8F-vaultalert-net-always-know-your-crypto-assets-are-safe-a20b4d537c61
+Content:
+
+🌎⚠️🔒 VaultAlert.net — Always know your crypto assets are safe
+VaultAlert.net is a brand new service for the Verus ecosystem. Every user who set up the secure VerusID Vault can now check its status from anywhere in the world.
+
+VerusID Vault: A secure place for your crypto assets
+Vault is part of the VerusID self-sovereign identity protocol, built within the Verus multichain blockchain protocol. One of many VerusID features is that it functions as a human-readable cryptocurrency address. You can store $VRSC on your VerusID and lock them with Vault. In the future tokens and other bridged crypto-assets can also be stored and locked on a VerusID.
+A locked VerusID can not spend, which means assets can not leave your VerusID. Even if someone has the private keys. It’s a revolutionary novel technology that will help many people from getting their crypto assets stolen. It can also be used for inheritance, trusts or vesting periods.
+$VRSC that is locked with Vault can still stake. You can create a setup for yourself in which you won’t have to worry about your $VRSC being stolen.
+In combination with other VerusIDs functioning as revocation and recovery authorities you can be a self-sovereign superpower. Having peace of mind and full control over your crypto assets is an incredibly powerful thing to have.
+Revocation and Recovery Authorities
+What if the private key of your VerusID is exposed? Maybe through your own fault, or a hacker that tries to steal your crypto assets. You don’t want anyone to be able to run away with your hard-earned assets. You’d want to be able to revoke access to that VerusID, so no one can do anything with the assets that are on it. And after that, you’d want to completely recover those assets into your own control. Read more here on how the revocation and recovery authorities function.
+TimeLock & DelayLock
+Vault has two different options to lock your assets, TimeLock and DelayLock. You can only choose one option to lock the Vault. And the only way to circumvent a locked Vault is through revoking and recovering the VerusID.
+With TimeLock you determine how long you want the Vault to be locked. After the determined period is over the assets can be spent again. The maximum amount of time the Vault can be locked is 21 years.
+With DelayLock you determine a cooldown period. You lock the Vault and have to request an unlock. After requesting the unlock you have to wait for the determined cooldown period before the assets can be spent again.
+VaultAlert.net
+So how does it work? You can search for any VerusID on VaultAlert.net and it shows you all you need to know about the Vault status and more.
+
+LOCKED: the Vault is locked and funds can not be spent
+UNLOCK SOON: the Vault is locked but gets unlocked within a time period of 30 days.
+NO LOCK: Vault is not active and thus funds can be spent.
+DelayLock or TimeLock
+Primary address: The primary address is the owner of the VerusID, as it contains the private key. It can contain more than one VerusID.
+Identity address (also called i-address): The identity address is, next to the name, the identifier of the VerusID.
+Revocation and recovery VerusID authorities
+🌎⚠️🔒 Check out VaultAlert.net yourself with this example VerusID.
+Be a self-sovereign superpower
+If you want to be at the forefront of Verus’ cutting edge technology then you should not waste any time and get yourself a VerusID for a small fee (which goes to the miners and stakers of the network). Download Verus Desktop, or join our Discord to engage with the worldwide community.

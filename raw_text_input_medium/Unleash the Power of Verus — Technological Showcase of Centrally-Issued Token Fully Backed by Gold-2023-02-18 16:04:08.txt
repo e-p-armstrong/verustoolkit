@@ -1,0 +1,72 @@
+Title: Unleash the Power of Verus — Technological Showcase of Centrally-Issued Token Fully Backed by Gold
+Article URL: https://medium.com/veruscoin/unleash-the-power-of-verus-technological-showcase-of-centrally-issued-token-fully-backed-by-gold-dcc9fae7ca0f
+Content:
+
+Unleash the Power of Verus — Technological Showcase of Centrally-Issued Token Fully Backed by Gold
+In this article, we showcase how to launch a centrally controlled token with minting and burning capabilities, fully backed by gold. We use the innovative Verus blockchain technology with its versatile currency launches, which can be used both for centralized and decentralized projects. And we don’t even need to code anything!
+
+📝 Note that this walkthrough is for the Verus Testnet blockchain, which already has the functionalities that the PBaaS-upgrade (Public Blockchains as a Service) will bring to mainnet. Also, the commands are for macOS and Linux, as Windows works a bit differently. We use the CLI wallet for Verus. Download here 🔗 You can also use Verus Desktop with its incorporated terminal.
+Fictional Company “Very Good Gold”
+In this technological showcase, we have a fictional company that is an issuer of a centralized token with 1:1 backing of gold. With a starting supply of 0. The issuer of this token has full control of minting and burning capabilities.
+The mint and burn process however needs to be approved by two signers, making sure one entity doesn’t have full control. For this example we use a 2 of 2 signature setup. Any signature setup is possible (with a maximum of 13 of 25), depending on different use cases.
+Defining a Currency
+Defining a currency on the Verus network is simple, just two commands. When the currency is successfully launched it can flow around within the protocol, and outside of the protocol (learn how to export a currency as an ERC-20 to Ethereum 🔗). Let’s get started.
+VerusID Namespace
+
+Before defining the currency, we already registered the VerusID VGG@. This cost us 100 VRSCTEST (or 80 when using a referral), which were distributed to the block producers. These costs can drastically vary depending on which PBaaS-blockchain we create a VerusID.
+VerusID is the namespace for currencies and PBaaS-blockchains, among many other things. Learn more about VerusID 🔗
+We also said to have a 2 of 2 signature setup. This means the identity is controlled by two primary addresses, with always two signatures needed to do any action (like launching the currency, minting, burning and sending).
+Defining the currency
+Defining a currency costs 200 VRSCTEST. These costs can change depending on which blockchain you want to define a currency on. When launching PBaaS-chains you can define your own costs in the chains’ native currency. Good to know: these costs are going to the miners and stakers of the blockchain.
+With a few simple commands, we will:
+Define the currency
+Have it signed by a second signature
+Launch the currency
+Before starting we must fund VGG@ with 200+ VRSCTEST to launch the currency. The chain definition is as follows:
+./verus -chain=VRSCTEST definecurrency '{
+  "name":"VGG", 
+  "options":32, 
+  "proofprotocol":2
+}'
+It’s a simple chain definition, with only “options”:32 (= the currency is just a token), and “proofprotocol”:2 (= the controller of the VerusID where the currency is launched from can mint and burn tokens at will).
+These are some options and specifications that are possible when launching a currency: as a simple token, as fractional reserve currency or multi-reserve basket, start & end block, min. & max. preconversions, initial contributions, pre-launch discount & carveout, initial supply and much more.
+⭐ To learn more about the many different launch options when defining a currency on Verus, go here 🔗 We encourage anyone to start testing the protocol to get ahead of the game. The community is happy to help on Discord 🔗
+Approving and launching the currency
+Now, the second signer needs to come in and sign off on the currency definition, and launch the currency.
+The command from before gives out a HEX. The second signer needs to sign this HEX as follows:
+./verus -chain=VRSCTEST signrawtransaction "hex"
+This gives out another HEX. We use it to submit the transaction to the chain, which in turn launches the currency.
+./verus -chain=VRSCTEST sendrawtransaction "hex"
+After doing the command above, it takes around 15 blocks before the currency is officially launched on the network.
+Next step is the minting and burning of tokens, according to how much gold the company has in custody.
+Minting and burning
+Say a customer put 10,000 ounces of gold into the custody of the company. Now let’s make sure the customer gets that amount of VGG into their wallet.
+We mint 10,000 VGG with this simple command:
+./verus -chain=VRSCTEST sendcurrency "VGG@" '[{
+  "address":"Customer1@", 
+  "currency":"VGG", 
+  "mintnew":1, 
+  "amount":10000
+}]'
+VGG@ is the change-address, Customer1@ is the address where the 10,000 VGG are minted to.
+The second signer needs to do signrawtransaction and sendrawtransaction, as we have done before, to actually mint the tokens into Customer1@.
+Now, if someone wants to redeem their VGG for gold again, we need to be able to burn that amount from the supply of VGG. We burn with the following command:
+./verus -chain=VRSCTEST sendcurrency "VGG@" '[{
+  "address":"VGG@", 
+  "currency": "VGG", 
+  "amount": 5000, 
+  "burn":true
+}]' 
+To make it happen, the second signer needs to sign off on it again.
+If we want to check to see the supply of the currency, we can do the following command:
+./verus -chain=VRSCTEST getcurrency “vgg”
+Use VGG in Many Ways
+This article showcased a simple example of how a business can function using the Verus protocol. What we can do with the network goes far beyond what is possible using current blockchain protocols. And all of that without any programming needed!
+We can also easily export the VGG token to Ethereum as an ERC-20. It can also become one of the reserves in a multi-reserve liquidity basket AMM (automated market maker) as part of Verus DeFi.
+Anybody can define a multi-reserve currency which includes VGG as a reserve with weighted percentage (10–90%). The reserves grow as they retain a small fee whenever assets are traded in/out/through.
+A multi-reserve currency itself can also be used as one of the reserves in another multi-reserve liquidity basket AMM token on Verus.
+👀 Stay tuned for more examples, or start reading docs.verus.io, or join the Discord to learn.
+🫡 Credits for the article go to community member ‘ejuliano’.
+➡️ Explore with the community on Discord
+Follow on Twitter
+Go to verus.io

@@ -312,7 +312,7 @@
     \ runs on the new blockcha\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nWhat\
     \ are PBaaS chains, and how do they benefit from the Verus ecosystem?\n\"\"\"\n\
     \nSupposed answer to the question (this is what you are fact-checking):\n\"\"\"\
-    \nPBaaS (Private Blockchain as a Service) chains are decentralized, merge-mineable,\
+    \nPBaaS (Public Blockchain as a Service) chains are decentralized, merge-mineable,\
     \ and interoperable blockchains that can be created by users using the Verus platform.\
     \ These chains can send and receive from the Verus chain and benefit from the\
     \ Verus community's contributions to the daemon, starting with a complete, multi-currency,\

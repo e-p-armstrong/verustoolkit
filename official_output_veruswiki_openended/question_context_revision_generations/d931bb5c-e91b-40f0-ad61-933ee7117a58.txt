@@ -449,7 +449,7 @@
 
     **Verus PBaaS Features:**
 
-    The Verus PBaaS (Private Blockchain as a Service) upgrade introduces several key
+    The Verus PBaaS (Public Blockchain as a Service) upgrade introduces several key
     features, including:
 
 

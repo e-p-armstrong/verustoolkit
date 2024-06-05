@@ -1,0 +1,20 @@
+Title: Announcing Verus Block Reward Halving — Predictable, Transparent Monetary Policy
+Article URL: https://medium.com/veruscoin/announcing-verus-block-reward-halving-predictable-transparent-monetary-policy-eec42c18ca4
+Content:
+
+Announcing Verus Block Reward Halving — Predictable, Transparent Monetary Policy
+Every two years the Verus block reward is halved. This is part of the predictable and transparent monetary policy, set in place by its inception in May 2018.
+
+Halving Event
+The current block reward is 12 VRSC — which means that miners and stakers who win a block are rewarded 12 VRSC for their efforts of securing the network. This number will go down to 6 VRSC, drastically lowering the number of coins coming into circulation. See the complete coin emission schedule here.
+⭐ What: Block reward to 6 VRSC
+⏱️ When: Block height 2,329,920 ( ~ Saturday 17 Dec 2022) see countdown
+Introducing the Fee Pool
+With the PBaaS-mainnet upgrade coming closer, let’s introduce one of its gaming-changing features that will reward miners and stakers with drastically higher block rewards.
+Higher block rewards for miners and stakers.
+When PBaaS is activated on mainnet, anyone can launch blockchains, tokens and currencies, and they can convert currencies through Verus’ L1 DeFi protocol. All these activities cost fees that directly go to the miners and stakers of the worldwide network.
+So even though a halving to 6 VRSC might seem bad for miners and stakers at first glance, a lot of good things are on the horizon.
+👉 Be on the cutting edge of blockchain technology and try out the fully functional testnet and its Fee Pool economy
+Discuss and explore all Verus has to offer on Discord
+Follow on Twitter
+Go to verus.io

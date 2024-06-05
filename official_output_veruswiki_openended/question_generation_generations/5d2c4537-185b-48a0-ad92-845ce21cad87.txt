@@ -389,7 +389,7 @@
     Verus allows any user with a VerusID to create their own token currency or even
     a full-fledged, multi-currency, ID-issuing blockchain. This blockchain can be
     51% hash attack resistant, merge-mineable, and stakeable with other blockchains
-    in the Verus network. All PBaaS (Private Blockchain as a Service) chains run from
+    in the Verus network. All PBaaS (Public Blockchain as a Service) chains run from
     the same daemon, enabling projects to join the worldwide Verus community and contribute
     to improving the daemon.
 

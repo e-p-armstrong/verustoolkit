@@ -251,7 +251,7 @@
   role: assistant
 - content: '**QUESTION:**
 
-    What is the plan for preparing the PBaaS (Private Blockchain as a Service) for
+    What is the plan for preparing the PBaaS (Public Blockchain as a Service) for
     mainnet activation?
 
 
@@ -314,7 +314,7 @@
 
     **User:**
 
-    I''m really interested in the PBaaS (Private Blockchain as a Service) and its
+    I''m really interested in the PBaaS (Public Blockchain as a Service) and its
     mainnet activation. What''s the plan for preparing it?
 
 

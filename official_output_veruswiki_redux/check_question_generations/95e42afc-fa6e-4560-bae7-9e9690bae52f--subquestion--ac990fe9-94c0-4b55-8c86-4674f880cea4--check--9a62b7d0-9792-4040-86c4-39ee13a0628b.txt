@@ -209,7 +209,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text lists various options for configuring a PBaaS
-    (Private Blockchain as a Service) chain or gateway, with each option having a
+    (Public Blockchain as a Service) chain or gateway, with each option having a
     specific value and description.
 
     #### Type of Information: The information is technical and descriptive, providing

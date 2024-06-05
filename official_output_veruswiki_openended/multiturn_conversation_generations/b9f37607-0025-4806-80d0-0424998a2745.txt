@@ -234,13 +234,13 @@
   role: assistant
 - content: '**QUESTION:**
 
-    What are the components of a PBaaS (Private Blockchain as a Service) chain definition,
+    What are the components of a PBaaS (Public Blockchain as a Service) chain definition,
     and how do I define one using the Verus command line?
 
 
     **ANSWER:**
 
-    A PBaaS (Private Blockchain as a Service) chain definition consists of several
+    A PBaaS (Public Blockchain as a Service) chain definition consists of several
     components that define the properties and behavior of the chain. These components
     include:
 
@@ -298,7 +298,7 @@
     ```'
   role: user
 - content: "## Conversation that answers the provided questions:\n**User:**\nI'm trying\
-    \ to create a PBaaS (Private Blockchain as a Service) chain and I'm not sure what\
+    \ to create a PBaaS (Public Blockchain as a Service) chain and I'm not sure what\
     \ components I need to define. Can you walk me through the components of a PBaaS\
     \ chain definition and how I can define one using the Verus command line?\n\n\
     **AI Assistant:**\nI'd be happy to help. \n\nA PBaaS (Private Blockchain as a\

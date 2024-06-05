@@ -1,0 +1,34 @@
+Title: Verus on the Spirit of Open Source, Community and Contributing to Crypto as a Whole
+Article URL: https://medium.com/veruscoin/verus-on-the-spirit-of-open-source-community-and-contributing-to-crypto-as-a-whole-5dad716ac60c
+Content:
+
+Verus on the Spirit of Open Source, Community and Contributing to Crypto as a Whole
+What Open Source and Collaboration Means to Verus and How Verus is Contributing Back Upstream to the Komodo Ecosystem
+
+Before developing and releasing Verus, one of the most important decisions to make was a path towards building a blockchain capable of delivering on the Verus vision. By choosing Komodo as a starting point from which to develop its technology, the Verus project joined a vibrant ecosystem of independent, decentralized projects that work together, are willing to help each other, and cooperate by building on each others contributions to a common, or sometimes even just similar, code base.
+Innovation in Cooperation
+From the beginning of our development Komodo’s lead developer, JL777, offered help and advice as we dove into the Komodo technology and code. This fast tracked our understanding of Komodo’s core, helping us best leverage the Komodo technology and improve it through our own enhancements and invention, needed to launch the Verus main net.
+This spirit of a cooperating, decentralized, and independent open source community has helped Verus achieve the goals we have to date and laid a foundation for the journey ahead.
+Open Source and Innovation
+We are an open source project. We believe that through development, open source, and mutual sharing of inventions and technology with others we can all build stronger systems for the betterment of society. This model allows each project and community to maintain their own vision, as we collectively develop solutions that are greater than the sum of their parts.
+It is in this spirit that we upstream some of our hard work and technologies, in gratitude for the technology and support that Komodo provided at our inception, for use by all projects across the Komodo ecosystem.
+What is Being Shared Upstream
+This upstream sharing includes the integration of Sapling with Komodo features and crypto conditions, VerusPoS, VerusHash, Timelocks for coinbase emissions, and advanced emission schedules.
+What is Remaining Unique to Verus
+The Verus Project will continue development of its enhanced crypto conditions and work with Komodo towards a common model. Proof of Power and Stake Guard have not been upstreamed at this time and will remain unique to Verus Coin until integrated independently by Komodo, during another upstream in the future, or by other open source efforts.
+Strength in Community and Collaboration
+We’ve seen and even been part of a lot of history in recent months, and we see major changes in crypto now and on the horizon. We started as a fair launch project in a decentralized ecosystem, not an ICO, not a funding event or premine. Komodo is one of the few ecosystems, if not the only, where independent blockchain projects strong on technology can find a home and a way to collaborate.
+We’ve made huge technological progress, solved some critical problems to enable the security needed for public blockchains as a service, and with your help we have built an incredible, growing Verus community of its own. We believe this upstream contribution is the right thing to do and will be good for Verus, as it is good for Komodo.
+Through this, as in other things, we are pleased to contribute to the advancement of crypto as a whole.
+Get involved in Verus and the Verus community
+Visit https://veruscoin.io
+Discord https://discord.gg/VRKMP2S
+Resources
+How to Update or Install Verus GUI Enhanced Agama Wallet
+Verus Coin v0.4.0 Official Release Notes
+How Verus Solved Nothing at Stake and Weak Subjectivity for Proof of Work
+Everything You Need to Know About the Zcash Sapling Upgrade
+Ben’s Pocket Guide to VerusCoin for Dummies and Smart People
+Komodo Ecosystem Spotlight: Verus Coin
+Komodo AMA Spotlights VerusCoin
+Formation of The Verus Coin Foundation with a Vision of PBaaS

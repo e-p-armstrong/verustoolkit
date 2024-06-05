@@ -412,7 +412,7 @@
     Verus multi-currency fractional reserve baskets are UTXO-based, fractional reserve
     currencies that offer several innovative features and benefits. These baskets
     are designed to provide a provably fair liquidity system for all currencies and
-    tokens within the PBaaS (Private Blockchain as a Service) system.
+    tokens within the PBaaS (Public Blockchain as a Service) system.
 
 
     One of the key features of Verus multi-currency fractional reserve baskets is

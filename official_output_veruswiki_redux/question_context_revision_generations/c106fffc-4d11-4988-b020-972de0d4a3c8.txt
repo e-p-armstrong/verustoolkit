@@ -409,7 +409,7 @@
 
 
     The `OPTION_PBAAS` flag, with a value of 256, indicates that a chain definition
-    is a PBaaS (Private Blockchain as a Service) chain. This flag is used to distinguish
+    is a PBaaS (Public Blockchain as a Service) chain. This flag is used to distinguish
     PBaaS chains from other types of chains or gateways in Verus.
 
 

@@ -400,7 +400,7 @@
     the previous step, using the wallet''''s private keys.'
   role: assistant
 - content: "**QUESTION:**\n\nWhat is a PBaaS blockchain, and how do I define one using\
-    \ Verus?\n\n**ANSWER:**\n\nA PBaaS (Private Blockchain as a Service) blockchain\
+    \ Verus?\n\n**ANSWER:**\n\nA PBaaS (Public Blockchain as a Service) blockchain\
     \ is a type of blockchain that allows users to create and manage their own private\
     \ blockchain networks. To define a PBaaS blockchain using Verus, you need to pass\
     \ a JSON object to the `definecurrency` command that defines the properties of\

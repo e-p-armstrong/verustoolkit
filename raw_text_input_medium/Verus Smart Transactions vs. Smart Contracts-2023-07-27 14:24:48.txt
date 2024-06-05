@@ -1,0 +1,36 @@
+Title: Verus Smart Transactions vs. Smart Contracts
+Article URL: https://medium.com/veruscoin/verus-smart-transactions-vs-smart-contracts-f98079c00ed0
+Content:
+
+Verus Smart Transactions vs. Smart Contracts
+Verus Protocol lead developer Mike Toutonghi explains the differences between Verus smart transactions and smart contracts.
+
+The following was written by Mike Toutonghi, lead developer on the Verus Protocol, on Discord👇
+Application Programming Model
+The way to understand smart transactions vs. smart contracts is to think about the application programming model, and how each of them work in context.
+There is no 1:1 correlation, but smart transactions are much easier to use in practice to achieve most capabilities, if not all, in a decentralized fashion.
+Smart Contracts
+Basically, the current model on Ethereum is:
+You run on a blockchain where the only currency where accounting is enforced by the blockchain protocol is ETH. To launch, or materialize a token, an account abstraction, or any other form of currency or identity-like structure (NFTs, liquidity pools, etc), you write an executable program/contract, according to accepted conventions, but with no actual checks that you follow any form of math accuracy, interface adherence, or accounting rules whatsoever.
+The differentiation of these contracts, which are akin to stored procedures in a database, but carry with them the DB schema as well as the interface, is in the way they enable differences of implementation of those accepted conventions.
+Consensus across all of Ethereum is applied to ensuring that the shared, serialized, worldwide computer that is the EVM executes its low level instructions accurately, with no accounting of currencies, exchanges, enablement of efficient, actual IDs, zk-privacy, etc. The currencies that run above the single native security currency, run by arbitrary rules, often opaque or containing unexpected behaviors, and everyone must create their version of these contracts to build a dApp.
+Verus Smart Transactions
+In Verus, it’s a new model as follows:
+Your dApp can run on a client or on a broad range of resource types, and it communicates via the same RPC API as the CLI commands (optionally without wallet or control functions) with a fully functional, decentralized backend, which is the Internet of Value, including all its unlimited scale, connected systems and chains.
+Unlike a single currency blockchain, Verus smart transactions natively support an unlimited number of friendly name currencies directly via protocol and an unlimited number of blockchains for currency launches, simple sends, currency conversions, or cross-chain operations. All inputs, outputs, cross-chain imports, and even conversions are validated and in/out values of all currencies accounted for by consensus, just as native currency ins and outs are on single-currency blockchains.
+Identities are a first class concept in the primitives available for dApps. They all support fully available, open, decentralized, user controlled authentication and authorization protocols, enabled by QR code or deep links and supportive of permission granting, ID provisioning/sale by the dApp, private/attested KYC and other services. These protocols can easily be bridged to OAuth or OpenID Connect via servers like Hydra, but used natively, they require no service provider between the service actually authenticating the user and the user themselves.
+Every identity is multisig and has revocation and recovery capabilities. They are also transferable and can have rights bound into them in a provable manner via the contentmultimap. All of this is supported as primitives in the core RPC/CLI api/command line and in the core protocol.
+IDs enable their holders to launch like-named currencies, blockchains, and single NFT-like tokens that have a super power over the ID, which is very useful for an ID that may live across multiple chains.
+IDs and currencies may be created and launched on one chain, leveraging all of that chains capabilities (Verus includes many variations in currency, including conditional crowdfunding, liquidity pools, blockchains, etc.), and exported to other chains to be used everywhere across the network. For example, if you launch a currency on Verus or any PBaaS chain, including the native PBaaS chain’s currency. All of those currency definitions can be exported to Ethereum, and they will emerge on Ethereum as an automatically created and functional ERC20 contract, enabling the currency to be sent back and forth via protocol from then on.
+All identities and currencies are resolvable worldwide, meaning that you can determine a network path to the nodes of the blockchain where they were defined via their friendly name, or usually via their i-address, if they have been exported cross-chain. This enables apps to scale over any number of decentralized blockchains worldwide and leave the management of user databases and user data, as well as settings, signals, endpoints, etc. to the users themselves and the client apps they use to help them manage.
+Because the currency and liquidity pool support is in the L1 protocol, we have been able to actually solve for and provide MEV-resistant (both intra and inter-block) AMMs as a primitive, available to all applications and users.
+People don’t have to write basic liquidity and conversion protocols, which are just primitives, not apps. Real apps can use all of these primitives to deliver the next level of function. Payments, currency conversions, earning systems, polls, voting, multi-chain world scale social networks using provable streams in provable IDs, crowdfunding, independent economies. All primitives, such as IDs, currencies, blockchains, and liquidity baskets have very rich capabilities from launch to continued operation.
+Extending Verus Smart Transactions
+If someone wants to extend smart transactions, that is an option, but they either don’t have to, or if they really have a reason to do so, they can do it on their PBaaS chain, share or not share back (lots of reasons to do so), and now that we have the core primitive framework as a foundation, we can certainly collaborate on a kind of protocol extension that is likely to include forms of VM and/or ZKVM extension points in the current protocol, to work within the framework of the core primitives that are fundamental to Verus and that we believe are crucial for safe financial infrastructure, yet generally missing in other systems.
+Try Yourself! ✅
+Look up docs.verus.io to use many API commands (e.g. launching currencies, tokens & liquidity pools).
+Or look up the complete command list here.
+Join the community. Learn about the protocol. Use Verus & build.
+➡️ Join the community on Discord
+Follow on Twitter
+Go to verus.io

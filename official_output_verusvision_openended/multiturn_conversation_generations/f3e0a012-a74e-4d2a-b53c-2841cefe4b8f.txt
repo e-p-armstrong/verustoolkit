@@ -254,7 +254,7 @@
 
 
     Instead of adopting this approach, Verus takes a novel approach to scaling by
-    using highly scalable PBaaS (Private Blockchain as a Service) autochains. This
+    using highly scalable PBaaS (Public Blockchain as a Service) autochains. This
     approach provides an extra dimension of information and an unlimited number of
     token types or "colors," while also rewarding Verus miners and node operators
     as provisioning agents.
@@ -296,7 +296,7 @@
 
 
     Instead of adopting this approach, Verus takes a novel approach to scaling by
-    using highly scalable PBaaS (Private Blockchain as a Service) autochains. This
+    using highly scalable PBaaS (Public Blockchain as a Service) autochains. This
     approach provides an extra dimension of information and an unlimited number of
     token types or "colors," while also rewarding Verus miners and node operators
     as provisioning agents.

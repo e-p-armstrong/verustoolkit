@@ -403,7 +403,7 @@
 
 
     What are some of the command line options available for customizing Verus mining
-    and PBaaS (Private Blockchain as a Service) settings, and how do they affect the
+    and PBaaS (Public Blockchain as a Service) settings, and how do they affect the
     behavior of Verus?
 
 

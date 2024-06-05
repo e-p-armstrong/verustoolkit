@@ -269,7 +269,7 @@
     \ and configurations."
   role: user
 - content: "## Conversation that answers the provided questions:\n**User:**\nI'm trying\
-    \ to create a new currency and a Private Blockchain as a Service (PBaaS) blockchain\
+    \ to create a new currency and a Public Blockchain as a Service (PBaaS) blockchain\
     \ using the Verus command line. Can you walk me through the process and explain\
     \ the key components of these definitions?\n\n**AI Assistant:**\nTo define a new\
     \ currency and a PBaaS blockchain using the Verus command line, you need to use\

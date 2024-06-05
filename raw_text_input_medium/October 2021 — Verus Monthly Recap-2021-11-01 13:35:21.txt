@@ -1,0 +1,22 @@
+Title: October 2021 — Verus Monthly Recap
+Article URL: https://medium.com/veruscoin/october-2021-verus-monthly-recap-eb4b6fd686f1
+Content:
+
+October 2021 — Verus Monthly Recap
+The latest Verus updates on development, community, ecosystem and more. Subscribe to the newsletter here.
+
+Next to the monthly recap on Medium, you can receive the exact same content through a newsletter. Subscribe here. I’ll keep things short and to the point.
+
+Ethereum Bridge Live on Testnet
+The decentralized Ethereum-Verus bridge is now live on Rinkeby and Verus Testnet. It works wonderfully: users can now easily transfer and convert coins and tokens between the two independent blockchains. Try the bridge with MetaMask here, or download Verus Desktop or CLI and activate the Verus Testnet blockchain. Help with the community test effort on Discord in the #pbaas-development channel. Right now, the bridge together with PBaaS are being tested and hardened for deployment on mainnet.
+VerusID Marketplace
+An update to the mainnet was announced and will give the Verus community an on-chain VerusID marketplace. Users will be able to buy, sell, and make offers on VerusIDs without any intermediaries. It’s the next evolution for VerusID and will make it one of the most powerful NFT systems (and beyond) to date. More details later.
+VerUSD Stablecoin
+Verus and Valu announce a fully compliant stablecoin for the Verus ecosystem and beyond. The US dollar stablecoin is called VerUSD, is 100% backed with dollar collateral and is FDIC insured. The issuance of the stablecoin is transparent, auditable and controlled by code. Users will be able to easily switch between dollars on their bank account and VerUSD. More details later.
+
+New Websites Launched
+The new websites verus.io and docs.verus.io are now online.
+Community Videos
+Lead developer Mike Toutonghi gave the community mind-blowing updates on Verus. Listen here.
+Thanks for reading. That’s it from me. Until next month!
+Please subscribe to the monthly recap so you’ll get it each month in your mailbox.

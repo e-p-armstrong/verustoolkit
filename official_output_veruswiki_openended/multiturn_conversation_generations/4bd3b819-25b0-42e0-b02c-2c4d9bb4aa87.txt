@@ -241,7 +241,7 @@
     **ANSWER:**
 
     The Verus PBaaS and DeFi testnet is a platform for testing and refining the Verus
-    protocol, specifically focusing on the PBaaS (Private Blockchain as a Service)
+    protocol, specifically focusing on the PBaaS (Public Blockchain as a Service)
     and DeFi (Decentralized Finance) features. The testnet allows users to experiment
     with the protocol, identify potential issues, and report bugs or errors.
 
@@ -288,7 +288,7 @@
     **AI Assistant:**
 
     The Verus PBaaS and DeFi testnet is a platform for testing and refining the Verus
-    protocol, specifically focusing on the PBaaS (Private Blockchain as a Service)
+    protocol, specifically focusing on the PBaaS (Public Blockchain as a Service)
     and DeFi (Decentralized Finance) features. The testnet allows users to experiment
     with the protocol, identify potential issues, and report bugs or errors.
 

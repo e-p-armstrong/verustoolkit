@@ -1,0 +1,91 @@
+Title: How Verus Tames the Wild Private Key
+Article URL: https://medium.com/veruscoin/how-verus-tames-the-wild-private-key-3cc3b05c266
+Content:
+
+How Verus Tames the Wild Private Key
+Verus ($VRSC) is an innovative, fast moving cryptocurrency project that has already completed an enormous amount of work and has some truly mind-blowing stuff live on mainnet and in development right now. What this article covers is only one of many new use cases. If you follow crypto and blockchain tech at all, you owe it yourself to dig deeper.
+Most of the features discussed in this article are already on mainnet — which means they’re available for anyone to use. “Locking” and “unlocking” are on testnet and will roll out to mainnet in the not too distant future.
+
+In pursuit of a better internet, Verus is making important changes to some cryptocurrency basics, improving on assumptions that have powered cryptocurrencies since Bitcoin launched in 2011. One ground-shaking example: with Verus, even if you lose private keys your money can still be protected.
+Keys and Addresses
+First, a note about public and private keys and cryptocurrency addresses. (You can skip this section if you’re already familiar with them.)
+Most cryptocurrencies use a pairing of public and private keys to create their addresses. You use a string of numbers and letters derived from a public key to deposit funds. Though it’s good practice to keep a public key secret, it doesn’t have to be kept secret because it can’t be used for withdrawals.
+· An example Bitcoin address:
+1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2
+· An example Ethereum address:
+ 0x89205A3A3b2A69De6Dbf7f01ED13B2108B2c43e7
+Private keys, on the other hand, have the power to spend. After you send currency an address, it can be withdrawn by anyone who knows a corresponding private key. Private keys have to be kept secret.
+An imperfect analogy for a private key is the password for an email account. If you know the password, you can login, delete everything and close the account. By the same token, anyone who knows the private keys for address can move its funds. One flaw with this analogy is that if you lose an email password you can change it. If you lose your private keys, however — or lose access to the wallet that’s using them — you lose the funds they’re associated with.
+Problems of key management — using keys as needed while also keeping them secret — have helped define the crypto landscape. If you save your private keys in an electronic medium, you risk getting hacked. If, on the other hand, you keep them on paper until you need them, they’re protected from hackers but you might lose the paper. By some estimates, around 3.7 million Bitcoin have already been lost-–billions of dollars worth at current prices–a lot of it because private keys were misplaced: laundered, lost, shredded, forgotten, etc.
+Rather than fuss with private keys, many people just leave their cryptocurrencies on an exchange. This goes against the decentralizing ethos of cryptocurrencies, but it’s usually workable. When private keys for an exchange get hacked, however — which has happened many times — lots of money can be stolen very quickly.
+It’s been 11 years since Bitcoin launched: why are we still living like this? Why do private keys still have enough power to destroy a user’s financial dreams? By placing the burdens of key management on individuals, cryptocurrencies harken back to the days of people shoving their savings into their mattress. If people are going to be responsible for their private keys, cryptocurrencies should include features that protect them.
+There’s a Better Way
+This next section’s a little geeky, but bear with it. What Verus has accomplished is big and worth understanding.
+Verus Self Sovereign Identity
+Like other crypto projects, Verus can use an address (with public and private keys) to send and receive funds. With Verus, however, you can also create a VerusID and use it to send and receive funds. This article is laser focused on features of the VerusID that you can use to protect your funds but VerusIDs are incredibly powerful and can be used as fully self sovereign identities.
+Like an email or web address, VerusIDs can include any combination of letters and numbers. They just have to end with an ‘@’ symbol. This document uses example addresses such as, Bob@, and Alice@— but Mogg@ could also be a VerusID, or BigCompany@, or BurgundySocksfortheHolidays@, or whatever.
+VerusIDs are controlled by one or more associated addresses. For example, if you send funds to an ID, they’ll be available to be spent by that ID and also by associated addresses. As we’ll see, this opens up a lot of design space.
+The Three Authorities
+Each VerusID is created with three authorities. You can think of an authority as a bundle of specific powers.
+First is primary authority. Primary authority allows an ID to:
+receive deposits,
+spend funds,
+sign,
+stake,
+modify ID information,
+lock, and
+unlock.
+(We’ll look more closely at those last two — lock and unlock — in a bit.)
+Second is the revocation authority, typically assigned to another ID. The revocation authority revokes the primary authority. When used, it prevents an ID from spending or receiving funds, staking, signing, etc. For example, say you have two IDs, “Bob@” and “Alice@.” If you assign Bob@’s revocation authority to Alice@:
+Alice@ will be able to revoke Bob@’s primary authority, making Bob@ unable to spend or receive funds, etc.
+Only Alice@ will be able to change the revocation authority for Bob@; Bob@ will not be able to change it.
+Finally, there’s the recovery authority. After it’s assigned to an ID, the recovery authority can be used to recover a revoked primary authority, assigning it to a new address. The recovery authority can also change the recovery authority.
+So, for example, say you assigned Alice@ to be the recovery authority for Bob@. If Bob@’s private keys are stolen: After revoking Bob@’s primary authority —and effectively preventing Bob@ from spending or doing much of anything — the owner of Alice@ could recover Bob@’s primary authority to a different address. Alice@ effectively swaps the addresses that control Bob@. The compromised private key becomes useless and Bob@ becomes fully functional and again with new, secret private keys.
+Together, the primary authority, revocation authority, and recovery authority help Verus tame the wild power of the private key.
+Example, Part A
+Say Bob@ holds 1000 VRSC, and you want some protection in case Bob@’s private key is lost or stolen. You decide to create a “paper wallet” to hold an address for the Alice@ ID. Because that address was created in a paper wallet, it’s never exposed to the internet. You give Alice@ both revocation and recovery authority over Bob@.
+Now you can continue to use Bob@ to deposit, to spend currency, to stake, etc. If you ever suspect it of being compromised, you:
+Use Alice@ to revoke Bob@s primary authority.
+Create a new address.
+Use Alice@ to recover primary authority for Bob@ to the new address. Bob@ has changed his address — he’s moved houses! His new address contains his 1000 VRSC. The robbery is foiled and all Bob@’s funds are safe.
+What if Bob@ was compromised electronically though? Those 1000 VRSC can be spent very quickly. You might not have time to revoke and recover Bob@’s primary authority. Other powers are needed.
+Accounting for Time
+The Verus protocol allows an ID to be locked or unlocked. When locked, an ID can accept deposits, hold coins and even stake them (awesome), but it cannot spend them.
+Here are the possible “lock” states for an ID:
+Locked indefinitely
+Locked and will unlock after
+1) an unlock has been requested and then
+2) a predetermined amount of time has elapsed
+Unlocked
+A VerusID can be in one of three states.
+When an ID is locked, its spending power can still be revoked. Revocation overrides locking. So, let’s go back to our example and figure out how to really secure our funds.
+Example, Part B
+Once again, Bob@ holds 1000 VRSC, but this time you can:
+Assign both revocation and recovery authority to the Alice@ address. (You could give revocation and recovery to different IDs, but for this example we’ll put them both on the same one.)
+Lock Bob@ with the condition that it won’t unlock for 24 hours after unlocking is requested. Once you set a time, it can’t be changed. It’s protected by the blockchain.
+With this design, you have complete a solution if a private key for Bob@ is compromised. Let’s run through that scenario again.
+First, Bob@ is locked, so the attacker can’t spend the 1000 VRSC. Instead, the attacker first has to request that Bob@ be unlocked. But you have cleverly configured Bob@ so it won’t unlock until 24 hours after a request. You can use that time to safeguard your funds.
+Use Alice@ to revoke primary authority for Bob@. That prevents the attacker from withdrawing the funds.
+Create a new address.
+Use Alice@ to recover primary authority to the new address. Bob@ is once again a functioning ID that you have primary authority over and that holds 1000 VRSC. You’ve just swapped out a controlling address.
+The attacker is now proud owner of private keys for an address that used to control Bob@ but now controls nothing.
+While this scenario tames the power of the private key, it also begs the question of how you know if an attacker has made an unlock request for Bob@? The answer is that requests are public — they’re published on the blockchain. You can set an alert.
+In Summary
+Two big problems with private keys are 1) having them stolen and 2) losing them. Verus helps with both.
+To Protect Against Theft
+Assign revocation and recovery authorities to an address that you can protect. For example, you might assign them to an address you created with a paper wallet. It won’t be compromised electronically because it’ll never have been on the network.
+Lock the ID that’s on the network and set a time period before it unlocks. If a request to unlock that ID appears on the blockchain, revoke the primary authority and recover it to a different ID.
+To Protect Against Losing an ID
+And if you happen to lose the paper on which you wrote down your revocation and recovery ID, Verus can help with that too:
+First, request an unlock on the ID that holds your funds (the one that your revocation and recovery ID was protecting).
+While you’re waiting for the unlock, create two additional IDs. (Say Bobby@ and Allison@.)
+When the coins unlock, send them to one of the new IDs (e.g., Bobby@). Then assign revocation and recovery for that ID to the other ID (e.g., assigned revocation and recovery for Bobby@ to Allison@). Your funds are usable and protected again.
+UI Versus Capability
+Users may not want to think about concepts like ‘authorities.’ A user interface (UI), can provide instructions and clearly labeled controls that make authorities easy to use. The Verus community is already working on UI solutions. Maybe you should join us.
+There’s More
+Together, VerusIDs and the three authorities improve and enable basic scenarios. But Verus is doing additional fundamental work at the protocol level. For example, you can assigned the three authorities to multiple IDs (e.g., five different IDs, or seven). Doing so can help with scenarios such as estate planning. Keep an eye out for articles on this and other scenarios.
+**
+· There’s a Verus channel on Medium with a lot more information about specific features.
+· The Verus website is a fantastic resource.
+· Join the conversation on Discord!
+Verus is a truly decentralized, *community* driven cryptocurrency project. It had a fair launch without a premine and the brilliant team working on it is dedicated to a vision of a better future for all of us.

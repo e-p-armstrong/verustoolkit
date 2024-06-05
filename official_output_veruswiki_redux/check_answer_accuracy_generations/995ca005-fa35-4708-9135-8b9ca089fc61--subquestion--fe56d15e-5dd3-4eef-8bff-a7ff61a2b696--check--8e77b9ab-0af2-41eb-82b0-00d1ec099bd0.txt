@@ -310,7 +310,7 @@
     PBaaSChainName\",\"exportid\":\"true\",\"amount\":100,\"currency\":\"vrsctest\"\
     }]'\n```\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nWhat is a PBaaS blockchain,\
     \ and how is it defined in Verus?\n\"\"\"\n\nSupposed answer to the question (this\
-    \ is what you are fact-checking):\n\"\"\"\nA PBaaS (Private Blockchain as a Service)\
+    \ is what you are fact-checking):\n\"\"\"\nA PBaaS (Public Blockchain as a Service)\
     \ blockchain is a type of blockchain that can be created and customized using\
     \ the Verus protocol. To define a PBaaS blockchain in Verus, you need to specify\
     \ its properties in a JSON object, which includes its name, options, currencies,\
@@ -328,7 +328,7 @@
     \ settings.\n\n### Accuracy Check:\n**Direct Comparison for Factual Accuracy and\
     \ Common Knowledge Check:**\n\n  * The text does not explicitly define what a\
     \ PBaaS blockchain is, but the answer's definition is reasonable and aligns with\
-    \ common knowledge of the term \"Private Blockchain as a Service\".\n  * The text\
+    \ common knowledge of the term \"Public Blockchain as a Service\".\n  * The text\
     \ shows an example of a JSON object used to define a PBaaS blockchain, which includes\
     \ the properties mentioned in the answer.\n  * The answer's description of the\
     \ JSON object properties matches the text's example.\n\n### Final Judgment:\n\

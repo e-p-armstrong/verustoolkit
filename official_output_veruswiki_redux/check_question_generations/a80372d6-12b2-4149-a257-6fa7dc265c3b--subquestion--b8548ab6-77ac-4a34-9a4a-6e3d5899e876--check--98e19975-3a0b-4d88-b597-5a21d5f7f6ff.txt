@@ -214,7 +214,7 @@
     \ IDs may be used as friendly name cryptocurrency addresses for all currencies\
     \ on all Verus PBaaS blockchains in the Verus network. The VerusID protocol is\
     \ a protocol, which can also be implement\n\"\"\"\n\nQuestion (based on text):\n\
-    \"\"\"\nWhat is the Verus PBaaS (Private Blockchain as a Service) platform, and\
+    \"\"\"\nWhat is the Verus PBaaS (Public Blockchain as a Service) platform, and\
     \ what makes it unique compared to other decentralized platforms?\n\"\"\"\n\n\
     If the question clearly goes off the rails and is incoherent, or if it is cut-off\
     \ and incomplete, then it is irrelevant. Be careful around 'how' and 'why' questions."

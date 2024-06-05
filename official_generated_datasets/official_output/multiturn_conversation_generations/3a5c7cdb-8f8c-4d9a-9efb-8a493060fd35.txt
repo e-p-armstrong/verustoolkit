@@ -286,7 +286,7 @@
 
     **QUESTION:**
 
-    What are the main components of a PBaaS (Private Blockchain as a Service) blockchain
+    What are the main components of a PBaaS (Public Blockchain as a Service) blockchain
     definition in Verus?
 
 

@@ -211,7 +211,7 @@
     \ notarization, in blocks (default: 10, min 10 min)`-notaryid=<ID@>`\n   VerusID\
     \ used for PBaaS and Ethereum cross-chain notarization\n\"\"\"\n\nQuestion (based\
     \ on text):\n\"\"\"\nWhat are some of the command line options available for customizing\
-    \ Verus mining and PBaaS (Private Blockchain as a Service) settings, and how do\
+    \ Verus mining and PBaaS (Public Blockchain as a Service) settings, and how do\
     \ they affect the behavior of Verus?\n\"\"\"\n\nIf the question clearly goes off\
     \ the rails and is incoherent, or if it is cut-off and incomplete, then it is\
     \ irrelevant. Be careful around 'how' and 'why' questions."

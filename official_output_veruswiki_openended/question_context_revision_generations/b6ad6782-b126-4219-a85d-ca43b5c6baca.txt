@@ -409,7 +409,7 @@
     \ that can send and receive from the Verus chain which launched it. This means\
     \ that users can create their own decentralized tokens and blockchains without\
     \ needing to know how to program.\n\n**Interoperable Blockchains:**\nAll PBaaS\
-    \ (Private Blockchain as a Service) chains on the Verus platform run from the\
+    \ (Public Blockchain as a Service) chains on the Verus platform run from the\
     \ same daemon, and projects may choose to join the worldwide Verus community in\
     \ improving the daemon. This allows for the creation of interoperable blockchains\
     \ that can communicate with each other seamlessly.\n\n**Consensus Integrated DeFi\

@@ -310,7 +310,7 @@
     \ on fees while preventing gaming of the fee system?\n\"\"\"\n\nSupposed answer\
     \ to the question (this is what you are fact-checking):\n\"\"\"\nThe Verus Fee\
     \ Pool and Rewards system is a unique technology and solution implemented by Verus,\
-    \ which goes live with PBaaS (Private Blockchain as a Service). This system ensures\
+    \ which goes live with PBaaS (Public Blockchain as a Service). This system ensures\
     \ that all fees collected from various activities on the network, such as cross-chain\
     \ transactions, DeFi operations, and ID registrations, are pooled together in\
     \ an on-chain \"fee pool\". When a miner or staker solves a block, they receive\

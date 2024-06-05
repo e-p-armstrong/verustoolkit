@@ -1,0 +1,54 @@
+Title: Mining VerusCoin On Smartphone
+Article URL: https://medium.com/veruscoin/mining-veruscoin-on-smartphone-208dbb06905f
+Content:
+
+Mining VerusCoin On a Smartphone
+
+Modern cell phones (Octa-Core) are more powerful than computers over eleven years old (Pentium 4) when the advent of bitcoin shook the world.
+The only hardware required, in the beginning, was a simple computer… Things have changed a lot in less than 11 years.
+So let’s start preparing our Smartphone to mine VerusCoin, we will need to do some steps before.
+Get a VerusCoin Wallet.
+chose one of the multiple VerusCoin Wallets To creat Your Mining address
+You’ll need a VerusCoin address, which you can create using one of the multiple wallets listed on the VerusCoin Website. Verus Desktop is recommended for Windows/MacOS/Linux, or use the iOS/Android mobile wallet , paper Wallet or other alternate wallets.
+Linux Command Line on Android With Termux.
+Install termux
+from: GooglePlayStore or F-Droid
+>Termux is an Android terminal emulator and Linux environment application that works directly with no rooting or setup required. Termux provides a package ecosystem similar to the one in Linux distributions. However you should be aware that Termux is just a regular application running on Android OS. summarizing Termux to a terminal is very reductive
+We’ll use only Termux for the rest of this tutorial.
+Check you cpu For AES instructions and also the Architecture We need ARMV8 version
+run “ lscpu ” and search for aes, pmull, and armv8/aarch64
+
+Install Proot pkg : ‘pkg install proot’
+>The main purpose of PRoot is to run the Linux distributions inside Termux without having to root the device.
+Proot
+Installing Linux distributions
+Termux provides a package `proot-distro`, which allows us to install Linux on a chrooted environment.
+proot-distro takes care of management of the Linux distributions inside Termux ,Install this utility by executing.
+`pkg install proot-distro`
+Note: For now it supports these distributions:(Alpine Linux , Arch Linux ,Kali Nethunter , Ubuntu 20.04 ) for this example we are using ubuntu-20.04
+Install Ubunt By : “ proot-distro install ubuntu-20.04 ”
+To login : “ proot-distro login ubuntu-20.04`
+Ubuntu logIn
+The picture show that we are logged in ubuntu-20.04
+Update system packages: “ apt-get update && apt-get upgrade -y ”
+>all the following instructions can be found on the miner repository.
+Install additional package and dependencies: “ apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential git nano ”
+Clone ccminer miner repository: “ git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git”
+single-branch take two dash as in the picture in cas you see or copy past it Wrong. thanks keda666 from verus discord
+Then cd to “ ccminer/ ” folder and make ‘build.sh’ , ‘configure.sh’ and ‘autogen.sh’ files executable using this command in one line: “ chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh “
+We can then execute “ ./build.sh ” script on the same place and wait for it to compile the miner
+If it completes successfully edit the “ run” file located in ccminer Folder
+“ nano run” (HIT Enter)
+Change Pool_url , Mining address and Cpu threads Number ,to save CTRL+x , respond by Y and hit Enter
+./ccminer -a verus -o stratum+tcp://Pool_URL:PORT -u MINING_Address.WORKER_NAME -p x -t THREADS NUMBERS
+It should look like this :
+edit the “ run “ file under ccminer folder to feet your needs :D
+< Prevention is better than the cure>
+Its advised to not use all of the cpu threads because mining is an intensive job for the cpu and will cause heat that could damage your device. You can find the number of threads your CPU has on the “CPU(s):” line from lscpu from before. Choose a lower number of threads and monitor your device carefully.
+(WARNING! may have battery impact)
+to Start mining just issue the command `./run`
+ccminer start Verushashing to luckpool.net
+Useful links about Verus :
+-Veruscoin Foundation * Veruscoin Explorer *- GitHub repo
+- Official twitter *- Community twitter *- Community YouTube 
+*- Community facebook *- Community website *- Countdown website

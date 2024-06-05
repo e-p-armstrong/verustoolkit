@@ -306,7 +306,7 @@
     :[371747.20398827,0,1000000],\"initialsupply\":3000000}'\n```\n\"\"\"\n\nQuestion\
     \ (based on text):\n\"\"\"\nWhat is a PBaaS blockchain in the context of Verus?\n\
     \"\"\"\n\nSupposed answer to the question (this is what you are fact-checking):\n\
-    \"\"\"\nA PBaaS (Private Blockchain as a Service) blockchain in Verus is a type\
+    \"\"\"\nA PBaaS (Public Blockchain as a Service) blockchain in Verus is a type\
     \ of blockchain that allows users to create their own private blockchain networks,\
     \ with customizable settings and properties.\n\"\"\""
   role: user

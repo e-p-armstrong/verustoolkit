@@ -408,7 +408,7 @@
     **ANSWER:**
 
 
-    All PBaaS (Private Blockchain as a Service) capabilities, including those for
+    All PBaaS (Public Blockchain as a Service) capabilities, including those for
     application development, are now available on the new Verus testnet. This includes
     capabilities for interoperability, such as the Ethereum/Rinkeby bridge, which
     is expected to be launched soon.

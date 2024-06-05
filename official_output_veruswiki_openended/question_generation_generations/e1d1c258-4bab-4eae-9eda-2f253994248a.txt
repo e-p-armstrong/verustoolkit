@@ -380,7 +380,7 @@
 
 
     **OPTION_PBAAS (256)**: This option indicates that the token or currency is a
-    PBaaS (Private Blockchain as a Service) chain definition. PBaaS chains are a type
+    PBaaS (Public Blockchain as a Service) chain definition. PBaaS chains are a type
     of blockchain that allows for more customization and control over the network.
 
 

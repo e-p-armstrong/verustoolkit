@@ -251,7 +251,7 @@
     Verus allows any user with an ID to create their own token currency or even a
     full-fledged, multi-currency, ID-issuing blockchain. This blockchain can send
     and receive from the Verus chain that launched it, and is 51% hash attack resistant.
-    All PBaaS (Private Blockchain as a Service) chains run from the same daemon, and
+    All PBaaS (Public Blockchain as a Service) chains run from the same daemon, and
     projects can join the worldwide Verus community to improve the daemon, giving
     them a complete, multi-currency, ID-capable blockchain with DeFi capabilities.
 
@@ -304,7 +304,7 @@
     allows any user with an ID to create their own token currency or even a full-fledged,
     multi-currency, ID-issuing blockchain. This blockchain can send and receive from
     the Verus chain that launched it, and is 51% hash attack resistant. All PBaaS
-    (Private Blockchain as a Service) chains run from the same daemon, and projects
+    (Public Blockchain as a Service) chains run from the same daemon, and projects
     can join the worldwide Verus community to improve the daemon, giving them a complete,
     multi-currency, ID-capable blockchain with DeFi capabilities.
 

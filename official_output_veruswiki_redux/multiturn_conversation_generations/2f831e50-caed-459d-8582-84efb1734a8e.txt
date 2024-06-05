@@ -290,7 +290,7 @@
     **ANSWER:**
 
     When the `OPTION_PBAAS` option is set to 256, it indicates that the currency is
-    a PBaaS (Private Blockchain as a Service) chain definition. This allows the currency
+    a PBaaS (Public Blockchain as a Service) chain definition. This allows the currency
     to operate as a PBaaS chain, providing a private blockchain service to users.
 
 
@@ -366,7 +366,7 @@
     **AI Assistant:**
 
     When the `OPTION_PBAAS` option is set to 256, it indicates that the currency is
-    a PBaaS (Private Blockchain as a Service) chain definition. This allows the currency
+    a PBaaS (Public Blockchain as a Service) chain definition. This allows the currency
     to operate as a PBaaS chain, providing a private blockchain service to users.
 
 

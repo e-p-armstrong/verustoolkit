@@ -402,7 +402,7 @@
 - content: '**QUESTION:**
 
 
-    How do you define a PBaaS (Private Blockchain as a Service) chain using the Verus
+    How do you define a PBaaS (Public Blockchain as a Service) chain using the Verus
     command line tool, and what are the key components that make up the definition
     of a PBaaS chain?
 

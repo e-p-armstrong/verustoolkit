@@ -268,7 +268,7 @@
     :\"true\",\"amount\":100,\"currency\":\"vrsctest\"}]'\n```\nThis command exports\
     \ the ID \"IDNAME@\" to the PBaaS chain \"PBaaSChainName\" with an amount of 100\
     \ VRSCTEST.\n\n\n**QUESTION:**\nWhat is a PBaaS blockchain, and how do I define\
-    \ one using Verus?\n\n**ANSWER:**\nA PBaaS (Private Blockchain as a Service) blockchain\
+    \ one using Verus?\n\n**ANSWER:**\nA PBaaS (Public Blockchain as a Service) blockchain\
     \ is a type of blockchain that allows users to create and manage their own private\
     \ blockchain networks. To define a PBaaS blockchain using Verus, you need to pass\
     \ a JSON object to the `definecurrency` command that defines the properties of\
@@ -309,7 +309,7 @@
     \ PBaaS chain \"PBaaSChainName\" with an amount of 100 VRSCTEST. Does that help?\n\
     \n**User:**\nThat helps, thanks! I'm not really familiar with PBaaS chains, though.\
     \ Can you explain what they are and how I define one using Verus?\n\n**AI Assistant:**\n\
-    A PBaaS (Private Blockchain as a Service) blockchain is a type of blockchain that\
+    A PBaaS (Public Blockchain as a Service) blockchain is a type of blockchain that\
     \ allows users to create and manage their own private blockchain networks. To\
     \ define a PBaaS blockchain using Verus, you need to pass a JSON object to the\
     \ `definecurrency` command that defines the properties of the blockchain. Here's\

@@ -218,7 +218,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text provides examples of commands and JSON definitions
-    for creating a currency and a PBaaS (Private Blockchain as a Service) blockchain
+    for creating a currency and a PBaaS (Public Blockchain as a Service) blockchain
     on the Verus network.
 
     #### Type of Information: The information is technical and instructional, showing

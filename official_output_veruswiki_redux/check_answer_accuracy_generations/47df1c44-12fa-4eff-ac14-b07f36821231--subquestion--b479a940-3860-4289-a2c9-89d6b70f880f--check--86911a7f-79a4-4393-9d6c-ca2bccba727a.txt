@@ -337,7 +337,7 @@
     \ Type: This is reference-type information.\n\n### Answer Breakdown:\n**Dissect\
     \ the Answer's Assertions:**\n  * That the OPTION_PBAAS flag (value 256) indicates\
     \ that a chain definition is for a PBaaS chain.\n  * That this flag is used to\
-    \ specify that a chain is a Private Blockchain as a Service (PBaaS) chain.\n\n\
+    \ specify that a chain is a Public Blockchain as a Service (PBaaS) chain.\n\n\
     ### Accuracy Check:\n**Direct Comparison for Factual Accuracy and Common Knowledge\
     \ Check:**\n\n  * The text explicitly states that OPTION_PBAAS = 256, and that\
     \ it means \"this is a PBaaS chain definition\". The answer accurately reflects\

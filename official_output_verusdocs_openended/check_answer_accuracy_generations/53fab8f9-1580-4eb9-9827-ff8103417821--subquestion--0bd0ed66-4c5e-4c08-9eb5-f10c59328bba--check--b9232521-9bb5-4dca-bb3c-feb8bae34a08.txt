@@ -349,7 +349,7 @@
 
     **Merge Mining:**
 
-    Additionally, when PBaaS (Private Blockchain as a Service) goes live, miners can
+    Additionally, when PBaaS (Public Blockchain as a Service) goes live, miners can
     choose to mine up to 22 PBaaS-chains simultaneously, without losing any of their
     original hashing power. This allows miners to diversify their mining efforts and
     increase their potential earnings.

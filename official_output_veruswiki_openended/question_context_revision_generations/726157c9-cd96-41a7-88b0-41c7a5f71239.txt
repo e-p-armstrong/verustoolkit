@@ -414,7 +414,7 @@
     some notable changes, including the renaming of komodod and komodo-cli to verusd
     and verus, and the removal of wrappers. Additionally, there have been some minor
     staking improvements, fixes to longest chain reporting and getchaintips bugs,
-    and preparations for PBaaS (Private Blockchain as a Service) technology.
+    and preparations for PBaaS (Public Blockchain as a Service) technology.
 
 
     Before using the software, it''s essential to understand that it''s provided "as

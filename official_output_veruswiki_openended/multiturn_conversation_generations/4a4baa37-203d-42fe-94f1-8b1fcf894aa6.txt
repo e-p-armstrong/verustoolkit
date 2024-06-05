@@ -240,7 +240,7 @@
 
     **ANSWER:**
 
-    A Verus PBaaS (Private Blockchain as a Service) blockchain is a fully independent,
+    A Verus PBaaS (Public Blockchain as a Service) blockchain is a fully independent,
     rent-free blockchain that offers a range of features and capabilities. Some of
     the key features of a Verus PBaaS blockchain include:
 
@@ -290,7 +290,7 @@
     \ to understand the Verus ecosystem a bit better. Can you walk me through the\
     \ features and capabilities of a Verus PBaaS blockchain, and how currencies work\
     \ within the Verus ecosystem?\n\n**AI Assistant:**\nI'd be happy to explain! \n\
-    \nA Verus PBaaS (Private Blockchain as a Service) blockchain is a fully independent,\
+    \nA Verus PBaaS (Public Blockchain as a Service) blockchain is a fully independent,\
     \ rent-free blockchain that offers a range of features and capabilities. Some\
     \ of the key features of a Verus PBaaS blockchain include:\n\n* **Automatic Ethereum\
     \ ERC20 contract deployment**: Verus PBaaS blockchains can automatically deploy\

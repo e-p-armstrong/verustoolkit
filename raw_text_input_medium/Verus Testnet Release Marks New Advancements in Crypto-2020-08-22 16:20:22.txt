@@ -1,0 +1,83 @@
+Title: Verus Testnet Release Marks New Advancements in Crypto
+Article URL: https://medium.com/veruscoin/verus-testnet-release-marks-new-advancements-in-crypto-2701bf3e7c3
+Content:
+
+Verus Testnet Release Marks New Advancements in Crypto
+
+While much of the dialogue in the blockchain and crypto space dwells on record breaking increases in gas prices and fixes to scale Ethereum, developers are already coding historic technological advancements in the protocol layer that solve many of the issues and challenges the blockchain community is facing.
+These framework solutions are not leapfrogging current tech for a competitive, monopolizing advantage, but are building for collaboration, blockchain agnosticism and inclusive bridges with interoperable tools, so these systems can work more efficiently, together.
+There are many projects making huge advancements in the areas of consensus algorithms, privacy, self sovereign identities, fractional reserve currencies and bonding curves, conversion, currency design and launch, but the space has yet to see a protocol that is simultaneously and expediently innovating on all of these layers and weaving the solutions together — until now.
+Democratizing the Protocol Layer & Public Blockchains as a Service
+It launched without an ICO, without a pre-mine, and taking no development fees, and within 15 minutes of its announcement, it was mined and staked by thousands of network members worldwide. That was more than two years ago, and today, open-sourced Verus (Verus Coin.io) is on the leading edge of scalable blockchain technology that, although flying relatively underneath the radar, is having huge ripple effects on the space.
+Verus was launched more than two years ago, an evolution of Komodo, Zcash, BTCD and Bitcoin. A snapshot of its Genesis Block, forked and dated from BTC.
+The project is supported by contributors around the world and an independent non-profit foundation that offers bounties and aids in the decentralized building of technology by the community. It is in rapid development and has already actualized many parts of its vision for a rent-free blockchain framework that provides chain interoperability and can scale to the world.
+The Intergenerational Wisdom in the Architecture
+While many blockchain developers are still cutting their teeth on this technology, the lead developer of Verus has been around for a while. While Mike Toutonghi often shys from the limelight and shuns hype, it is worth telling that he is a seasoned web veteran who led Kernel development on Microsoft 95, and is also one of the founders of Microsoft’s Java efforts and .Net. Much like his days at Microsoft, where he was adding threads to operating systems where there were none, starting platform efforts that are now used by millions, or architecting data systems for Internet scale advertising, he similarly felt needed to help build the world’s future blockchain infrastructure.
+Toutonghi saw that chains needed to talk to each other, that consensus algorithms were not resilient enough, and so began by adding Custom Consensus (smart contracts) to Bitcoin script. The development pioneer went on to modify the core consensus rules and now Toutonghi, alongside his son and dozens of leading developers around the world, are pushing the limits even further, mitigating some of the biggest vulnerabilities and innovating solutions by doing what Toutonghi does best — inventing solutions, weaving across layers, and building bridges.
+Toutonghi and his son, Michael Jr., work with dozens of developers around the world building on Verus
+Stealth Mode, Disengage
+Verus is an evolution of Komodo, Zcash, BTCD and Bitcoin, and is currently testing its latest cutting edge technology on the public Verus testnet. The Verus blockchain and all future PBaaS blockchains will support Sapling Zero Knowledge Proofs and Komodo crypto-condition technology as a base layer for its friendly, revocable and recoverable IDs. The community has also developed a multi-coin wallet with support for many coins and ERC20 tokens, VerusIDs, built in mining and privacy, a free cryptographic signing process, staking, and Public Blockchains as a Service. PBaaS allows any community, government, organization or individual, with a few clicks and without much coding knowledge, to launch a fully mineable, secure tokenized blockchain.
+But where the power lies in Verus, literally, is in its consensus algorithm based on Proof of Power (Verus PoP), a 50–50 split of Proof of Stake and Proof of Work and a provable hybrid solution to 51% hash attacks. The PoP also solves the two of the biggest issues undermining other PoS systems — “nothing at stake” and “weak subjectivity.” You can discover more in the technical white paper or explore its hashing algorithm that lowers the barriers for mining, allowing CPU miners to go almost toe to toe with ASIC miners.
+
+The Verus consensus algorithm: Proof of Power (Verus PoP), a 50–50 split of Proof of Stake and Proof of Work and a provable hybrid solution to 51% hash attacks
+The list goes on, but these are inherent design features and while talking features may be scintillating for developers, what do these advancements really mean? And what is so groundbreaking about the latest release?
+History in the Making: Five Pioneering Developments in One Release
+This week marks the biggest testnet release for Verus and arguably, one of the biggest in DeFi history and the history of money. The core advancement stems from a multi-currency* UTXO-based “basket” that forms one fungible currency with all the benefits of each individual currency, but having the simplicity of one. This can be used as a reserve, and can even be the base reserve and liquidity pool (like Uniswap, Bancor or Balancer) for a token launch or as a gas-free, near-instant conversion mechanism. The system is a fractal, market-driven, and completely liquid worldwide network of independently valued currencies.
+In addition to the currency aspects, the way the reserve pool and the consensus algorithm works, it also holds several other novel solutions allowing flexibility in leveraging blockchain technology to work for society.
+*There is no current limit for the number of currencies in a multi-currency basket; however, the team is considering limiting it to ten for now. Taken to the extreme, one community member has created “SuperMegaGigaCoin” on testnet, with 12 currencies combined in the basket. All baskets must include VRSC.
+5. Liquidity Pools & Conversion in a Blink
+Conversion is now as easy as sending currency, without the need for an exchange. Since there is always liquidity inside a multi-reserve currency, soon anyone will be able to convert at any time.
+For example: a person has ETH and wants to convert to VRSC. That person converts first to the multi-reserve currency ETH*VRSC using their ETH (one transaction), and then they can convert the ETH*VRSC to VRSC (another transaction). In order for this to operate, ETH will need to be represented on the Verus blockchain. This will be handled by Verus’ decentralized bridging capabilities, which are under development.
+There is no fluctuating gas required, but rather a flat fee of 0.025% for conversions, 100% of which goes to the miners and stakers on the Verus network. Plans are in place to add an implied volatility fee, which will be charged variably on imbalanced blocks of transactions, making blocks that change the price of a currency significantly pay more. It will allow for the dynamic balancing of volatility, benefiting liquidity providers by offsetting potential losses (impermanent losses) and giving them the opportunity to earn more for providing liquidity, while incentivizing more stability within pools (see #2 below).
+4. An End to Front running
+Front running has plagued traditional markets for years, and blockchain tech, with its public ledgers, has made it even easier for traders looking to game the system, especially on decentralized exchanges. But now, Verus’ new release offers the world’s first solution that does away with front-running, latency wars, and gas price wars.
+The reserve currency automatically allows for the parallel processing and solving of all DeFi transactions submitted in a block — a significant advantage over Ethereum’s Virtual Machine and other protocols, which are perfectly designed to perpetuate races and zero-sum games, whereby the most savvy, well-financed players gain all the advantages against the average participant. Everyone can interact with the system knowing that they will get the fair price for their transaction — the exact same price for all buys and sells submitted by everyone within that block with zero spread.
+3. On-chain Currency Launches
+The latest testnet release allows anyone to use the command line (under development — an easy to use dashboard) to freely mint their own token, pegged to any currency or asset.
+Fractional Reserve Option
+Currencies can be defined with any other currencies with (or without) fractional reserve capabilities; those who launch a currency and choose a fractional reserve may also assign a percentage, with the minimum being ten percent.
+If the creators of a new coin choose to deposit an amount of VRSC in the reserve — or Verus and a few other currencies to make up that coin’s basket — that reserve enables anyone holding the new coin to convert this new coin into VRSC or from VRSC into that new coin. With this, coin creators no longer have to rely on exchange listings and paying high fees to access markets and liquidity pools. An incentive for people to participate in this can be a discounted price during the funding period.
+Fractional reserve token currencies will need to have the native currency of the chain as part of their reserves, and PBaaS chains that have fractional capabilities will have to contain their parent chain’s native currency. The reserve requirement is similar in that respect to Bancor, supports the network effect and growth in power of the public protocol, and will result in full, programmatic liquidity across the entirety of the worldwide multi-chain system. This allows each independent currency to be liquid and have value based on the currency’s intrinsic properties and the velocity of its use.
+Kickstarter-like Launch Minimums & Auto Refunds
+The funding of this reserve can also be done in a crowd-funding fashion and similar to Kickstarter, a minimum can be assigned and if it is not met, the contributors will automatically receive their funds back. The tools on testnet also allow the coin creator to set dynamic currency launch pricing based on participation, such as pre-launch participation price discounts, pre-conversion reserve currency carve outs, and price-neutral launch pre-allocations.
+Massively Parallel Merge Mining
+While the 0.7.1 testnet enables on-chain token currency definition, the same advances will soon be available on the Verus merge mining and multi-chain technology. When enabled, this will make it possible for Verus network chains to operate fully independently, yet be dynamically merge-mineable along with Verus and up to 21 other Verus network blockchains on a single hash, earning rewards and securing all chains simultaneously, without needing additional power in the mining software. All network blockchains will provide the same fractional currency capabilities, both for on-chain tokens and for native zk-SNARK supporting currencies as well.
+If the PBaaS chain is a reserve chain, these rewards can be converted into VRSC, increasing the incentive to miners to secure the Verus ecosystem. For staking, the same incentive applies, but is limited only by the amount of chains your system is capable of running in native mode (think full node with entire blockchain).
+
+Privacy Woven In
+VRSC and by extension, all PBaaS native currencies, whether or not they are fractional, will be able to support zk-SNARKs on native transactions. zk-SNARKs are anticipated to serve as ways to publish and exchange provable, partially or wholly private data and receive messages, paid or otherwise, on the blockchain as well.
+2. Self-Rebalancing Liquidity Pool / Basket
+Yet another use for the multi-currency reserve tokens is as a self-rebalancing liquidity pool and basket. When holding baskets on Verus, investments automatically adjust regardless of price movements.
+This allows for hedging and the ability to profit in the long-term because these holders will receive implied volatility fees for providing liquidity. When using it as a trading mechanism and liquidity pool, traders can capitalize on the arbitrage opportunities created by the price differentials and fluctuations of the rebalancing pools.
+Other automated market makers and systems provide similar rebalancing liquidity pools however, today’s solutions are subject to losses through front running, and without dynamic fees based on volatility, typically charge high fees as a default (compare Uniswap’s 0.3% fee to Verus’ 0.025% base fee), often extracting profit from those fees over and above what goes to liquidity providers, miners, and stakers; these baskets provide a fully decentralized way to use these pools that gives all value back to the participants.
+
+1. Mutualization of Value via Proof of Burn
+By using fractional currencies, combined with the ability to “burn” some of that currency to create a license while returning the value of that burned currency to all holders of the currency, the Verus formal “proof of burn” allows this event to enable new kinds of licensing and use cases. One group is pioneering PPaaC, Patent Portfolios as a Commons, and mutualizing benefits from licensing the use of technologies, which has for years, been monopolized.
+People and businesses will be able to buy a specific currency to pay their patent license fees. For every device they license, they will pay the license fee from that currency by burning the prescribed amount and the license will be tied to that specific device. Before the currency goes live, people can ‘pre-convert’ coins to that currency, to get a discount on the licensing (they get the currency at a cheaper rate than the actual set rate).
+This way the Verus blockchain provides a method of paying for the licenses (which is not new in itself) and a means of checking if the devices are licensed to use the patented technology (which is also not new in itself). The combination of payments and licensing checks on one platform is completely new though, and allows anyone to buy into the patent market as an investment in the network and concept.
+The Road Ahead
+Once testing is complete, the Verus release will be live on mainnet and the development team will continue to iterate on these innovations. The project is always open to more developers as it depends on open source development to support the continued innovation of these technologies.
+Despite the numerous innovations in this testnet release, blockchain technology and token engineering have a long road ahead. Having the new tools and capabilities of Verus will teleport the space light years ahead, but while the current focus thus far has been on a race to build “the best protocol,” the next step in maturing the tech will be reflected in interoperability and systems modeling and engineering.
+Moving from a single chain mentality to blockchain agnosticism and collaboration will help to ensure the democratization of the Internet and lower barriers of access so everyone can participate in, and benefit from, these new economies.
+
+Download the wallet now to try fractional reserve currencies on testnet. See the developments for yourself! If you need help or have questions, don’t hesitate to ask on Discord.
+Essentials
+Verus Website
+Get Verus Desktop
+Mining Software & Pools
+GitHub Repository
+Block Explorer
+CoinMarketCap, CoinGecko, CoinPaprika
+Download Infographics
+Join the Verus Community
+Official Twitter
+Discord
+Community Telegram
+Facebook
+You Tube
+Medium
+Reddit
+BitcoinTalk
+Community Twitter
+Community VerusID Twitter
+Community VerusPay Twitter

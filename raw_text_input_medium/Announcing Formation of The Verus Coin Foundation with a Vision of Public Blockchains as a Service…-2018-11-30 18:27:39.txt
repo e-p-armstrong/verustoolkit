@@ -1,0 +1,18 @@
+Title: Announcing Formation of The Verus Coin Foundation with a Vision of Public Blockchains as a Service…
+Article URL: https://medium.com/veruscoin/announcing-formation-of-the-verus-coin-foundation-with-a-vision-of-public-blockchains-as-a-service-fb5470143fff
+Content:
+
+Announcing Formation of The Verus Coin Foundation with a Vision of Public Blockchains as a Service Provisioning and Powering Scalable Autochains and Applications through Staking and Mining
+July 30, 2018 — Announcing the Verus Coin Foundation, endowed with over 4 million Verus Coins — dedicated to realizing the Verus Vision of Public Blockchains as a Service (PBaaS) powering scalable, autochains and applications through staking and mining, as outlined in the Verus Vision paper and beyond.
+According to Michael Toutonghi, lead developer for the Verus Project:
+We’ve seen the benefits of using blockchain for currency and even decentralized applications bound to a single blockchain. Now, we will use these same technologies used to create trustless and decentralized public blockchain infrastructure that can scale with the usage of the world’s population.
+The Verus Coin Foundation’s mission will be to support development of automatic blockchain provisioning on the Verus blockchain, enabling dynamic, fully featured side chain creation and no centralized provisioning or point of failure. The Verus Coin Foundation will also support development of decentralized, public applications, powered by the Verus network to change our world for the better by using PBaaS for public services like polls and voting, identity systems, and other systems that can use zero knowledge proofs to respect privacy, while tapping into the whole of human knowledge.
+The Verus Coin Foundation will soon announce thousands of Verus in community bounties on a regular basis for those members helping to further the Verus vision, so that we may all use pubic blockchains as a service, blockchain based polls and voting, and many more public infrastructure applications in the not too distant future.
+The Verus Coin Foundation is looking for strong developers, designers, blockchain architects, business development people, community development and IT experts. To join this decentralized project and help with one of the functions above, contact a Verus project representative today.
+Contact:
+Verus Coin Foundation: foundationrelease@veruscoin.io
+Visit the Website: https://veruscoin.io
+Follow on Twitter: https://twitter.com/VerusCoin
+Subscribe on Reddit: https://www.reddit.com/r/VerusCoin/
+Chat on Discord: https://discord.gg/MPXXJCm
+Representatives on Discord: miketout, englal, michaeltoutjr, VirtualSoundNW, Asher, crypto05

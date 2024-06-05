@@ -409,7 +409,7 @@
     **ANSWER:**
 
 
-    A Verus PBaaS (Private Blockchain as a Service) blockchain is a fully independent,
+    A Verus PBaaS (Public Blockchain as a Service) blockchain is a fully independent,
     rent-free blockchain that offers a range of features and capabilities. Some of
     the key features of a Verus PBaaS blockchain include:
 

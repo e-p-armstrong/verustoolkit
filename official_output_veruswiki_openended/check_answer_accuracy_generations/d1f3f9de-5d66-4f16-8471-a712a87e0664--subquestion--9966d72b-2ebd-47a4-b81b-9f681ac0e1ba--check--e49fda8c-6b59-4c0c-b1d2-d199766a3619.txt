@@ -307,7 +307,7 @@
     \ is designed to route external currencies. This means it acts as a gateway for\
     \ other currencies to interact with the Verus ecosystem.\n\n**OPTION_PBAAS (256)**:\
     \ This option indicates that the token or currency is a PBaaS chain definition.\
-    \ PBaaS stands for Private Blockchain as a Service, which is a type of blockchain\
+    \ PBaaS stands for Public Blockchain as a Service, which is a type of blockchain\
     \ that allows users to create and manage their own private blockchain networks.\n\
     \n**OPTION_GATEWAY_CONVERTER (512)**: When set, this option means that the token\
     \ or currency is the default converter for a specific PBaaS gateway. This converter\

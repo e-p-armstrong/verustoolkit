@@ -1,0 +1,38 @@
+Title: March/April 2022 — Verus Monthly Recap
+Article URL: https://medium.com/veruscoin/march-april-2022-verus-monthly-recap-1501ccea1b26
+Content:
+
+March/April 2022 — Verus Monthly Recap
+The latest Verus updates on development, community, ecosystem and more. Subscribe to the newsletter here.
+
+Next to the monthly recap on Medium, you can receive the exact same content through a newsletter. Subscribe here. I’ll keep things short and to the point.
+
+Verus Wins ‘Inspiration Award’ From Fidelity’s Center for Applied Technology
+Verus was selected as 1 of 7 finalists, and chosen from hundreds of tech disruptors across Europe. Mike Toutonghi received the award after presenting Verus at a TED Talk-style event in Dublin. It is exciting to see Fidelity and Dogpatch recognize the innovation that the Verus Protocol delivers to the world.
+➡️ Read More On the Exciting Win
+
+The developers are working hard towards mainnet before Consensus 2022. In the meantime, new testnet features are on the horizon that will enable more powerful decentralized usecases.
+Simplified and improved ID privacy by adding “source of funds” address to registration, enabling a specific ID or z-address to be used for the funds to prepare and register an identity.
+Advanced sub-ID registration for decentralized identities with new business models, semi-centralized identities for voting and other purposes, and centralized identities that can be issued and sold via centralized currencies.
+Decentralized fractional currencies can issue identities, depending on their parameters, and the person getting such an ID pays the blockchain identity import fee in native currency as well as the specified fee in the currency issuing the ID. The issuing currency fee is burned, benefitting all holders of the issuing currency by reducing supply by the fee amount and leaving the same reserves, raising conversion rates. Centralized currencies, whether fractional, token, or even native, issue identities and the fees are paid to the controlling ID of the currency, not burned.
+New “requires permission” and “referral required” issuance is supported. If this is specified as an option in an ID issuing currency definition, which may still be a decentralized issuer, the identity registration transaction must be counter-signed by either the ID of the issuing currency (“requires permission”) or a valid referrer (“referral required”) which either is the issuing currency ID or an unrevoked ID with the same parent as the new identity. The identity registration command and API will enforce this and create transactions that must be signed in this manner.
+Separate pricing, referral namespaces, and referral levels for all identity namespaces are supported (ie. only *.fanclub@ can refer for name.fanclub@).
+Pricing of sub-IDs for a fractional currency can be either in the currency itself or denominated in any of its reserves (eg. USD, VRSC, EUR, etc.) to enable compatibility with ID-based rights licensing or royalty streams priced in any currency.
+Gateway registration for centralized or decentralized non-name controller gateways (the ETH bridge, for example) that allow issuance of, for example, mike.veth@, priced in USD, and paid in Bridge.VETH.
+Creation of “mapped currencies” using the gateway registered IDs, such as BAT.vETH mapped to Ethereum BAT, for example. Normal sub-IDs cannot create currencies, but this is enabled for gateways that are not name controllers to provide them with services that would be harder for them to write than use from Verus.
+
+New Verus Desktop Features
+In the upcoming new Verus Desktop release, the Multiverse-tab has been revamped and you’ll be able to get insights into the blockchain economics and easier ways to search for currencies.
+Testnet visualization.
+Another added feature is that you can visualize the network to see the connections between all the blockchains, bridges and currencies.
+Two Videos Where Mike Toutonghi Talks About Verus
+
+
+Awesome Community Mining Rigs
+These are publicly shared mining rigs by community members in the Verus Discord. Use for inspiration when you are thinking of mobile mining Verus!
+➡️ Mining Verus is easily done with VerusBox or VerusMiner9000.
+From community member ‘R86M’
+From community member ‘NorbyTheGeek@’
+From community member ‘MaidoK’
+From community member ‘PhartBox’
+Please subscribe to the monthly recap so you’ll get it each month in your mailbox.

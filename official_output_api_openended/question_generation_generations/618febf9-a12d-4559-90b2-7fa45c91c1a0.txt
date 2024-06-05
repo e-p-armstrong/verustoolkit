@@ -356,7 +356,7 @@
   role: user
 - content: '**QUESTION:**
 
-    What are the different components of a PBaaS (Private Blockchain as a Service)
+    What are the different components of a PBaaS (Public Blockchain as a Service)
     chain definition in Verus, and how do they contribute to the overall functionality
     of the chain?
 

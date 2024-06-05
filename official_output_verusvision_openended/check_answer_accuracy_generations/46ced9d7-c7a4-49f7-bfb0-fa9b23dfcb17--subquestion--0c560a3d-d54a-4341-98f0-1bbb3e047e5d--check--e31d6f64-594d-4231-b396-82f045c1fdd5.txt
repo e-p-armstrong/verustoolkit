@@ -322,7 +322,7 @@
     \ which is used by some blockchain systems like Ethereum. However, this approach\
     \ has been proven to be suboptimal, leading to congestion and high fees on the\
     \ blockchain.\n\nInstead of adopting this approach, Verus takes a novel approach\
-    \ to scaling by using highly scalable PBaaS (Private Blockchain as a Service)\
+    \ to scaling by using highly scalable PBaaS (Public Blockchain as a Service)\
     \ autochains. This approach provides an extra dimension of information and an\
     \ unlimited number of token types or \"colors,\" while also rewarding Verus miners\
     \ and node operators as provisioning agents.\n\nIn essence, Verus is not just\

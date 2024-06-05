@@ -1,0 +1,75 @@
+Title: Bridging Done Right — Verus-Ethereum Bridge Launches Now!
+Article URL: https://medium.com/veruscoin/bridging-done-right-verus-ethereum-bridge-launches-now-1b2ca42939b2
+Content:
+
+Bridging Done Right — Verus-Ethereum Bridge Launches Now!
+The Verus-Ethereum Bridge is the first non-custodial and trustless bridge in the industry, and where the accounting of funds is proven and verified by consensus. And you can participate in its launch right now!
+
+⏱️ Verus-Ethereum Bridge launch: block height 2,758,800 (Fri 20 Oct, 2023).
+✅ Start preconverting to the bridge currency Bridge.vETH (with an initial supply of 100,000) NOW for a 10 day period. 👉 Connect to the bridge
+👀 The first ever truly non-custodial, trustless and consensus proven cryptocurrency bridge. 👉 More here: https://docs.verus.io/eth-bridge/
+How it Works
+You can already start to preconvert VRSC, ETH, DAI and MKR into Bridge.vETH.
+Bridge ETH, DAI and MKR over to the Verus network. 👉 Go to the bridge website How-to guide for bridging & preconversion
+Preconvert vETH (ETH), DAI.vETH (DAI), MKR.vETH (MKR) or VRSC into Bridge.vETH.
+See Bridge.vETH statistics on verus.io/eth-bridge
+When the bridge currency launches on 20 Oct the initial supply of 100,000 will be distributed by the protocol among all preconverters.
+
+If you move ETH, DAI and MKR over to the Verus blockchain before the bridge is launched your cross-chain fees are subsidized. Around 5000 VRSC is used to subsidize the fees on the Verus side. When the bridge currency gets launched, the VRSC that is left will be put into the reserves.
+Dynamic Supply
+The Bridge.vETH supply is dynamic (after the preconversion has finished and the bridge currency is launched). The currency gets minted when people convert to it from VRSC, vETH, DAI.vETH and MKR.vETH, or gets burned when people convert out of it.
+After the bridge currency is launched you can convert into any direction.
+Worth noting: Verus DeFi is MEV-resistant. There is no front/back-running since all conversions are simultaneously solved within a block. More details on docs.verus.io
+The Bridge.vETH currency function is to make the bridging of assets simple. From wherever you send it converts the fees that you need seamlessly.
+The Bridge Accrues Fees
+The bridge currency accrues fees with the cross-chain functions, conversions and .vETH VerusID registrations, making it more valuable the more it’s used.
+Dai holders get 5% interest (at the time of writing, the rate is subject to change by MakerDAO) automatically when holding in the DSR (Dai Savings Rate) contract. DAI in Bridge.vETH and in the complete Verus ecosystem get this savings rate. The DSR is being passed through 100% to the DAI reserves of Bridge.vETH.
+
+Use the Bridge
+After Bridge.vETH is launched and the initial supply is distributed you can now use the bridge as follows:
+Convert into any direction after the currency is launched and out of preconversion mode.
+Export launched currencies on Verus as an ERC-20. 👉 Learn how
+Launch currencies on Verus that are 1:1 mapped to any ERC-20. 👉 Learn how
+Send currencies, tokens and liquidity pools cross-chain.
+Send ERC-721 & ERC-1155 NFTs to Verus, and export tokenized ID currencies from Verus to Ethereum as ERC-721 & ERC-1155.
+Present Issues with Existing Cryptocurrency Bridges
+Let’s first delve into the challenges associated with the prevailing cryptocurrency bridges in the industry.
+The custody of bridged assets is typically maintained by a single or a small number of addresses, effectively creating a central authority for holding the funds, which contradicts the decentralized nature of blockchain.
+The smart contracts that secure these bridged assets can be readily modified by a singular or limited number of authorities, thus presenting potential security issues.
+Smart contracts might contain bugs or malicious codes, making them susceptible to exploitation and undermining the safety of the bridged assets, especially if those assets are not accounted for by the block producers.
+These problems have been demonstrated by numerous bridge hacks that have occurred and are likely to continue in the future. Verus does things, yet again, very different.
+Why the Verus-Ethereum Bridge is Different
+The Verus-Ethereum Bridge is different because the assets are never in anyone’s custody. This is done through the seamless cooperation between the block producers, community notary witnesses, the Bridgekeeper software and the Ethereum smart contract. At each step during cross-chain transactions the assets are verified and proven by consensus rules, with safeguards in place to prevent hacks.
+Every 10 blocks validators create a notarization. They create these digital receipts for both Verus and Ethereum. The digital receipts, called “notarizations’’, contain, among other things: the “stateroot” (Merkle Mountain Range for Verus, Merkle Patricia Trie for Ethereum), the blockheight, blockhash and the gas price for Ethereum. The notarizations have to be agreed to by the block producers (miners and stakers) and are then mined into the Verus blockchain.
+👉 Read more here on how the Verus Protocol handles cross-chain communication (PBaaS-chains and more) in a decentralized and provable way.
+Safeguards Against Bridge Hacks
+Threats caused by malicious notary witnesses, or stolen keys to drain funds are not viable against the Verus-Ethereum bridge. To successfully mount an attack on the bridge, if a majority of witnesses were colluding or got their private keys stolen the following would need to happen:
+Colluding, malicious witnesses.
+Fake block producers with more combined hash and stake power than the publicly validated Verus blockchain.
+Developers helping them by creating an alternate protocol for the shadow chain.
+These requirements are very close to the requirements of attacking any blockchain. The bridge even provides a way to defend against such an unlikely scenario.
+The notary witnesses are also monitoring notarizations, and if they were to sign for something that they themselves do not agree with, they can auto-revoke their identities, using the VerusID protocol, which cannot be stopped by an attacker unless they have stolen both the keys for the notary ID and those for its revocation ID as well. This serves as a prevention for stolen key attacks, ensuring that notaries are extremely hard targets to compromise.
+Bridgekeeper
+The two blockchains, Verus and Ethereum, are fundamentally different from each other, but still need to be able to communicate. A translator is needed. This translator is a program called Bridgekeeper. Notary witnesses have to run the program. Miners and stakers are also encouraged to run it, and for doing so they receive fees.
+Bridgekeeper for CLI / How to become a Bridgekeeper — video
+Verus ➡️ Ethereum
+Let’s consider a scenario where a user wants to move or convert assets from Verus to Ethereum. This transaction gets recorded on the Verus blockchain. When there are enough, or a certain time period has passed, these cross-chain transactions are rolled up into something called a ‘CCE’ (cross-chain export). This CCE is then added to a block by a miner or staker and they are rewarded a fee for doing so. The CCE is now officially part of the blockchain, and is linked to the “stateroot” (Merkle Mountain Range, which is an unchangeable overall summary of the blockchain at that block, and anything preceding it).
+Meanwhile, as the transactions (CCE) are being mined (or staked) in, the notarizations are also being mined or staked in, confirmed by miners and stakers, and only then, signed by the notary witnesses. The notarizations can occur as often as every 10 blocks, depending on how many miners and stakers are running Bridgekeeper. Before a notarization is used as proof, it has to be on the blockchain for 10 blocks, confirmed by another notarization, and also signed by at least 8 of 15 notary witnesses worldwide.
+Then when the notarization is confirmed on Verus, it’s sent over to Ethereum and becomes pending on Ethereum. Once confirmed on Ethereum by receiving another notarization, the transactions (CCE) in that block are sent over to the Ethereum smart contract, along with the Merkle Mountain Range proof. If valid the assets are sent to the users Ethereum wallet.
+Anyone can roll up the transactions into a CCE and mine it in to get a reward, but also the notary witnesses paying the ETH fees to send it to Ethereum get a share of the fees to subsidize their transaction costs.
+If there is no traffic from Verus to Ethereum, the notarizations are continued to be mined in on Verus but do not need to be sent to Ethereum, so when the traffic is light, there is minimal cost.
+Ethereum ➡️ Verus
+The above part explains going from Verus to Ethereum, but the other way around is actually a little bit different. It is not the notary witnesses that send the group of transactions over, but any miner and staker can, and thus also get part of the fees.
+Notarizations made on Verus always contain a stateroot from Ethereum that is a minimum of 30 blocks old (blocks on Ethereum take ~15 seconds) to make sure it is stable. Then after Verus has confirmed the notarization with a new one, Verus can accept transactions (CCE) from Ethereum, along with the Ethereum Merkle Patricia Trie proof that relates to the new confirmed data.
+A Giant Leap Forward
+The delayed sending of transactions is an important security mechanism that is not present in any other cross-chain bridge. To recap: before any real transactions happen, the Verus network sends proofs to the Ethereum network and vice versa. These proofs are checked and agreed upon by everyone in the network. Only then the actual moving of assets happens. Because of this delayed system, no single entity ever gets control over the assets. Also there are safeguards in place for the community notaries that protect users from hacks.
+This system is decentralized, which means it’s controlled by everyone participating in the network, rather than a single central authority. It’s a giant leap forward for the entire cryptocurrency industry, and everyone can be a part of it!
+Join the community. Learn about the protocol. Use Verus & build.
+👉 Connect to the bridge
+Verus-Ethereum Bridge webpage
+➡️ Join the community on Discord
+Follow on Twitter
+Go to verus.io
+Try Yourself! ✅
+Look up docs.verus.io to use many API commands (e.g. launching currencies, tokens & liquidity pools).
+Or look up the complete command list here.

@@ -197,7 +197,7 @@
     \ .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n\
     \   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n\
     \ }\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nWhat are the different components\
-    \ of a PBaaS (Private Blockchain as a Service) chain definition in Verus, and\
+    \ of a PBaaS (Public Blockchain as a Service) chain definition in Verus, and\
     \ how do they contribute to the overall functionality of the chain?\n\"\"\"\n\n\
     If the question clearly goes off the rails and is incoherent, or if it is cut-off\
     \ and incomplete, then it is irrelevant. Be careful around 'how' and 'why' questions."
@@ -227,7 +227,7 @@
     ### Targeted Comparison of the Question with the Text:
 
     #### Content Match: The text provides a technical definition of a Verus chain
-    definition, but it does not mention PBaaS or Private Blockchain as a Service.
+    definition, but it does not mention PBaaS or Public Blockchain as a Service.
     The question seems to be asking about a broader concept that is not addressed
     in the text.
 

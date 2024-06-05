@@ -311,7 +311,7 @@
     }]'\n```\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nWhat is a PBaaS blockchain,\
     \ and how can I define one and export an ID to it using Verus?\n\"\"\"\n\nSupposed\
     \ answer to the question (this is what you are fact-checking):\n\"\"\"\nA PBaaS\
-    \ (Private Blockchain as a Service) chain is a private blockchain that can be\
+    \ (Public Blockchain as a Service) chain is a private blockchain that can be\
     \ created and managed using the Verus protocol. To define a PBaaS chain, you need\
     \ to specify its properties, such as its name, options, currencies, conversions,\
     \ eras, notaries, and nodes. You can do this by creating a JSON object that contains\

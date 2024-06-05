@@ -381,7 +381,7 @@
 
 
     **OPTION_PBAAS (256):** This option indicates that the token or chain is a PBaaS
-    chain definition. PBaaS stands for Private Blockchain as a Service, which is a
+    chain definition. PBaaS stands for Public Blockchain as a Service, which is a
     decentralized platform that allows users to create their own private blockchains.
 
 

@@ -398,7 +398,7 @@
     its technology before releasing it to the wider public.
 
 
-    For example, in the case of the PBaaS (Private Blockchain as a Service) release,
+    For example, in the case of the PBaaS (Public Blockchain as a Service) release,
     Verus will leave the current testnet running and fully functional while preparing
     the next release, which will include the final testnet instance before the mainnet
     PBaaS activation. This will allow users to test and familiarize themselves with

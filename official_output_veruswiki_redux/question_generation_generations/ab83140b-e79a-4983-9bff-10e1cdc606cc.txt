@@ -384,7 +384,7 @@
     **ANSWER:**
 
     The `OPTION_PBAAS` flag, which has a decimal value of 256, indicates that a specific
-    definition is for a PBaaS (Private Blockchain as a Service) chain.
+    definition is for a PBaaS (Public Blockchain as a Service) chain.
 
 
     **QUESTION:**

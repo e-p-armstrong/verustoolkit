@@ -377,7 +377,7 @@
     \ audit. This issue has been fixed, and the update provides immediate protection\
     \ against any potential exploitation. It's essential to upgrade to this version\
     \ to ensure the security of your Verus wallet.\n\n**Early PBaaS Functionality:**\n\
-    This update also includes some early PBaaS (Private Blockchain as a Service) functionality,\
+    This update also includes some early PBaaS (Public Blockchain as a Service) functionality,\
     \ which will allow for testing of future PBaaS features on the main Verus chain.\
     \ While this functionality is not fully enabled, it marks an important step towards\
     \ the development of PBaaS on Verus.\n\n**Other Improvements:**\nIn addition to\

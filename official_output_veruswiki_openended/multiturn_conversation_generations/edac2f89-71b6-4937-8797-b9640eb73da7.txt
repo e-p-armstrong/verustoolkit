@@ -240,7 +240,7 @@
 
     **ANSWER:**
 
-    On Verus, PBaaS (Private Blockchain as a Service) blockchains are fully independent,
+    On Verus, PBaaS (Public Blockchain as a Service) blockchains are fully independent,
     merge mineable, and rent-free. These blockchains offer several features that set
     them apart from other blockchain solutions.
 
@@ -314,7 +314,7 @@
     them in detail.
 
 
-    On Verus, PBaaS (Private Blockchain as a Service) blockchains are fully independent,
+    On Verus, PBaaS (Public Blockchain as a Service) blockchains are fully independent,
     merge mineable, and rent-free. These blockchains offer several features that set
     them apart from other blockchain solutions.
 

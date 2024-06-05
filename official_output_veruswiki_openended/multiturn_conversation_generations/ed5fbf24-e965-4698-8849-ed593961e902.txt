@@ -234,7 +234,7 @@
   role: assistant
 - content: '**QUESTION:**
 
-    How do you define a PBaaS (Private Blockchain as a Service) chain using the Verus
+    How do you define a PBaaS (Public Blockchain as a Service) chain using the Verus
     command line tool, and what are the key components that make up the definition
     of a PBaaS chain?
 
@@ -307,7 +307,7 @@
     that describe the chain and bridge properties, respectively.'
   role: user
 - content: "## Conversation that answers the provided questions:\n**User:**\nHi, I'm\
-    \ trying to create a Private Blockchain as a Service (PBaaS) chain using the Verus\
+    \ trying to create a Public Blockchain as a Service (PBaaS) chain using the Verus\
     \ command line tool. Could you please explain how to define a PBaaS chain and\
     \ what are the key components that make up the definition of a PBaaS chain?\n\n\
     **AI Assistant:**\nTo define a PBaaS chain using the Verus command line tool,\

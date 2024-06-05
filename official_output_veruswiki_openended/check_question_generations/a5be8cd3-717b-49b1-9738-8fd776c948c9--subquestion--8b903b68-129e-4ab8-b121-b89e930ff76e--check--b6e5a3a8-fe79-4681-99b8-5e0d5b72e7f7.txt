@@ -221,7 +221,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text provides examples of Verus command-line interactions
-    with a PBaaS (Private Blockchain as a Service) chain, including sending reserve
+    with a PBaaS (Public Blockchain as a Service) chain, including sending reserve
     currency, getting currency statistics, and refunding contributions to a failed
     chain launch.
 

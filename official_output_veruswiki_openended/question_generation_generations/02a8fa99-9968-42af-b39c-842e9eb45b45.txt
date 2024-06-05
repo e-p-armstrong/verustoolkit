@@ -389,7 +389,7 @@
 
     With Verus, any user with an ID can create their own token currency or even a
     full-fledged blockchain that can send and receive from the Verus chain. These
-    blockchains, known as PBaaS (Private Blockchain as a Service) chains, are 50%
+    blockchains, known as PBaaS (Public Blockchain as a Service) chains, are 50%
     Proof of Work (POW) and 50% Proof of Stake (POS), making them 51% hash attack
     resistant. They can be merge-mined and staked with other blockchains in the Verus
     network, and can be developed and improved by the worldwide Verus community.

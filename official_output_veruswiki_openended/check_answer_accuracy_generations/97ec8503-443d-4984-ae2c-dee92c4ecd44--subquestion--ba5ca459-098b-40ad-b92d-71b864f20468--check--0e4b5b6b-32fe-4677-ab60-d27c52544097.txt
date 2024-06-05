@@ -309,7 +309,7 @@
     \ -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"IDNAME@\",\"exportto\":\"\
     PBaaSChainName\",\"exportid\":\"true\",\"amount\":100,\"currency\":\"vrsctest\"\
     }]'\n```\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nHow do you define a PBaaS\
-    \ (Private Blockchain as a Service) chain using Verus, and what are the key properties\
+    \ (Public Blockchain as a Service) chain using Verus, and what are the key properties\
     \ that need to be specified in the definition?\n\"\"\"\n\nSupposed answer to the\
     \ question (this is what you are fact-checking):\n\"\"\"\nTo define a PBaaS chain\
     \ using Verus, you need to specify several key properties in a JSON object. These\

@@ -302,10 +302,10 @@
     \ up a blockchain launch? \U0001F914\n[Go to the Verus Discord #pbaas-development\
     \ channel. The community is happy to assist!](https://www.verus.io/discord)\n\
     :::\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nHow do I define a new currency\
-    \ and set up a Private Blockchain as a Service (PBaaS) chain on the Verus network,\
+    \ and set up a Public Blockchain as a Service (PBaaS) chain on the Verus network,\
     \ using the `definecurrency` command?\n\"\"\"\n\nSupposed answer to the question\
     \ (this is what you are fact-checking):\n\"\"\"\nTo define a new currency and\
-    \ set up a Private Blockchain as a Service (PBaaS) chain on the Verus network,\
+    \ set up a Public Blockchain as a Service (PBaaS) chain on the Verus network,\
     \ you will need to use the `definecurrency` command. This command takes two JSON\
     \ objects as input: one for the PBaaS chain definition, and another for the bridge\
     \ definition defaults.\n\nLet's break down the components of the PBaaS chain definition:\n\
@@ -337,7 +337,7 @@
   role: user
 - content: "## Reasoning and thought process:\n\n### Text Analysis:\n#### Identify\
     \ Key Information: The text provides an example of a `definecurrency` command\
-    \ used to set up a Private Blockchain as a Service (PBaaS) chain on the Verus\
+    \ used to set up a Public Blockchain as a Service (PBaaS) chain on the Verus\
     \ network. It also includes a warning that offers help from the Verus community\
     \ on Discord for those who need assistance with setting up a blockchain launch.\n\
     #### Categorize Information Type: This is 'how-to'-type information.\n\n### Answer\

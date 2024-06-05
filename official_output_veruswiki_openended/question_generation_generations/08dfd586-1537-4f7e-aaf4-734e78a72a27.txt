@@ -382,7 +382,7 @@
 
 
     * `OPTION_PBAAS` (256): This option signifies that the currency or token is a
-    PBaaS chain definition. PBaaS (Private Blockchain as a Service) chains are a type
+    PBaaS chain definition. PBaaS (Public Blockchain as a Service) chains are a type
     of blockchain that allows for private, customizable blockchains within the Verus
     ecosystem.
 

@@ -225,7 +225,7 @@
 
     #### Content and Depth: The text discusses the features and benefits of VerusIDs,
     including their use as cryptocurrency addresses, and the capabilities of PBaaS
-    (Private Blockchain as a Service) chains on the Verus network.
+    (Public Blockchain as a Service) chains on the Verus network.
 
     #### Type of Information: The information is descriptive/educational, teaching
     people about the features and capabilities of VerusIDs and PBaaS chains.

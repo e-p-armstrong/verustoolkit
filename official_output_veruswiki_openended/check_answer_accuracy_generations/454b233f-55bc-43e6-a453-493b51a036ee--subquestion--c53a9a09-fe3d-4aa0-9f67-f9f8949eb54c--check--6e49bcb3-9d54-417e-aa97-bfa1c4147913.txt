@@ -306,11 +306,11 @@
     nodeidentity\":\"Node2@\"}],\"gatewayconvertername\":\"Bridge\",\"gatewayconverterissuance\"\
     :1000000}' '{\"currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\"initialcontributions\"\
     :[371747.20398827,0,1000000],\"initialsupply\":3000000}'\n```\n\"\"\"\n\nQuestion\
-    \ (based on text):\n\"\"\"\nHow do I define a Private Blockchain as a Service\
+    \ (based on text):\n\"\"\"\nHow do I define a Public Blockchain as a Service\
     \ (PBaaS) blockchain using Verus, including its properties, nodes, notaries, and\
     \ bridge configuration, and what are the key components of this definition?\n\"\
     \"\"\n\nSupposed answer to the question (this is what you are fact-checking):\n\
-    \"\"\"\nTo define a Private Blockchain as a Service (PBaaS) blockchain using Verus,\
+    \"\"\"\nTo define a Public Blockchain as a Service (PBaaS) blockchain using Verus,\
     \ you need to provide a JSON object with specific properties that describe the\
     \ blockchain's configuration. This definition is then passed to the `definecurrency`\
     \ command.\n\nHere are the key components of the PBaaS blockchain definition:\n\

@@ -15,6 +15,8 @@
     * Any string resembling "Name@" is likely a VerusID, which is essentially a crypto-address.
     * Verus has been launched for a number of years by this point, and the mainnet and testnet are both fully functional. Anything alluding to "upcoming launches" of features could likely be out of date. So be ambiguous.
 
+    PBaaS stands for "Public Blockchains as a Service"
+
     **You Must:**
 
     * Create detailed educational questions based on the snippet of a website.
@@ -36,6 +38,8 @@
     You will create however many questions make are needed to adequately cover the information in the paragraph.
     
     Do not explicitly mention the provided text or the context in the questions themselves — just ask about the concepts related to the questions.
+
+    PBaaS stands for "Public Blockchains as a Service".
 
     If the text allows for an open-ended question, consider starting with an open-ended question that gets at some broader information and helps teach high-level understanding, before you start working your way down the paragraph making questions from the top to the bottom. If the paragraph does not really allow for an open-ended question, and is rather constrained (like a how-to) then consider just starting with a "normal" question, from the perspective of a user of Verus, which asks about information that's important to know.
 - role: user

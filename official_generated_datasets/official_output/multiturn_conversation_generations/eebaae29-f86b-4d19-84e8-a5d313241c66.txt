@@ -257,14 +257,14 @@
     How can I access the 3D cross-chain network visualizer in Verus Desktop?\n\n**ANSWER:**\n\
     To access the visualizer, click on \u201CVisualize Network\u201D on the Metaverse\
     \ tab of Verus Desktop.\n\n\n**QUESTION:**\nWhat new capabilities are available\
-    \ on the Verus testnet?\n\n**ANSWER:**\nAll PBaaS (Private Blockchain as a Service)\
+    \ on the Verus testnet?\n\n**ANSWER:**\nAll PBaaS (Public Blockchain as a Service)\
     \ capabilities, including those for application development, are now available\
     \ on the new Verus testnet. This includes capabilities for interoperability, such\
     \ as the Ethereum/Rinkeby bridge, which is expected to be launched soon.\n\n\n\
     **QUESTION:**\nWhat is the goal of the new Verus testnet in terms of interoperability?\n\
     \n**ANSWER:**\nThe goal is to launch the Ethereum/Rinkeby bridge in the near future,\
     \ which will enable seamless interaction between different blockchain networks.\n\
-    \n\n**QUESTION:**\nWhen can we expect to see the Private Blockchain as a Service\
+    \n\n**QUESTION:**\nWhen can we expect to see the Public Blockchain as a Service\
     \ (PBaaS) features and interoperability capabilities on the mainnet?\n\n**ANSWER:**\n\
     These new capabilities, including the PBaaS features and interoperability capabilities,\
     \ will be available on the mainnet soon."
@@ -280,7 +280,7 @@
     \ cross-chain network visualizer in Verus Desktop?\n\n**AI Assistant:**\nTo access\
     \ the visualizer, click on \u201CVisualize Network\u201D on the Metaverse tab\
     \ of Verus Desktop. It's easy to find and use!\n\n**User:**\nWhat's new on the\
-    \ Verus testnet?\n\n**AI Assistant:**\nAll PBaaS (Private Blockchain as a Service)\
+    \ Verus testnet?\n\n**AI Assistant:**\nAll PBaaS (Public Blockchain as a Service)\
     \ capabilities, including those for application development, are now available\
     \ on the new Verus testnet. This includes capabilities for interoperability, such\
     \ as the Ethereum/Rinkeby bridge, which is expected to be launched soon.\n\n**User:**\n\
@@ -288,7 +288,7 @@
     \ Assistant:**\nThe goal is to launch the Ethereum/Rinkeby bridge in the near\
     \ future, which will enable seamless interaction between different blockchain\
     \ networks.\n\n**User:**\nThat sounds really exciting! When can we expect to see\
-    \ the Private Blockchain as a Service (PBaaS) features and interoperability capabilities\
+    \ the Public Blockchain as a Service (PBaaS) features and interoperability capabilities\
     \ on the mainnet?\n\n**AI Assistant:**\nThese new capabilities, including the\
     \ PBaaS features and interoperability capabilities, will be available on the mainnet\
     \ soon. We're working hard to get everything ready for you!"

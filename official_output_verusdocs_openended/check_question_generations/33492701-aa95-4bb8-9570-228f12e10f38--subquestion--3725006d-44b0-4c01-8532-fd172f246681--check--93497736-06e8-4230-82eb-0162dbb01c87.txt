@@ -206,7 +206,7 @@
     \ up a blockchain launch? \U0001F914\n[Go to the Verus Discord #pbaas-development\
     \ channel. The community is happy to assist!](https://www.verus.io/discord)\n\
     :::\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nHow do I define a new currency\
-    \ and set up a Private Blockchain as a Service (PBaaS) chain on the Verus network,\
+    \ and set up a Public Blockchain as a Service (PBaaS) chain on the Verus network,\
     \ using the `definecurrency` command?\n\"\"\"\n\nIf the question clearly goes\
     \ off the rails and is incoherent, or if it is cut-off and incomplete, then it\
     \ is irrelevant. Be careful around 'how' and 'why' questions."
@@ -226,7 +226,7 @@
     ### Detailed Understanding of the Question:
 
     #### Core Requirement: The question asks about defining a new currency and setting
-    up a Private Blockchain as a Service (PBaaS) chain on the Verus network using
+    up a Public Blockchain as a Service (PBaaS) chain on the Verus network using
     the `definecurrency` command.
 
     #### Depth of Detail: The question requires a step-by-step guide or a clear example

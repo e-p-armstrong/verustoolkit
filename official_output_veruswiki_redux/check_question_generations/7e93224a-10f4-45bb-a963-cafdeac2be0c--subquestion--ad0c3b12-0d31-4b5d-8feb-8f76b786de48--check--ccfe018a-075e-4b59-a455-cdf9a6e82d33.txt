@@ -224,7 +224,7 @@
     ### In-Depth Analysis of the Text:
 
     #### Content and Depth: The text appears to be a JSON schema or configuration
-    file for defining a blockchain or a PBaaS (Private Blockchain as a Service) chain
+    file for defining a blockchain or a PBaaS (Public Blockchain as a Service) chain
     on Verus. It outlines various parameters and their data types, including "gatewayconvertername".
 
     #### Type of Information: The information is technical and descriptive, detailing

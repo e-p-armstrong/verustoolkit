@@ -301,7 +301,7 @@
     \ }, ...\n]\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nWhat are the different\
     \ components of a PBaaS blockchain definition, and what do they represent?\n\"\
     \"\"\n\nSupposed answer to the question (this is what you are fact-checking):\n\
-    \"\"\"\nWhen defining a PBaaS (Private Blockchain as a Service) blockchain using\
+    \"\"\"\nWhen defining a PBaaS (Public Blockchain as a Service) blockchain using\
     \ Verus, there are several components that make up the definition. These components\
     \ are essential to understanding how the blockchain will function and how it will\
     \ be configured.\n\n**Eras:**\nThe \"eras\" component is an array of objects,\

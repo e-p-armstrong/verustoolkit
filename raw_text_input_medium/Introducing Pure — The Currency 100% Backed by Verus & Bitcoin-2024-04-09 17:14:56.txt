@@ -1,0 +1,131 @@
+Title: Introducing Pure — The Currency 100% Backed by Verus & Bitcoin
+Article URL: https://medium.com/veruscoin/introducing-pure-the-currency-100-backed-by-verus-bitcoin-d07033be15ac
+Content:
+
+Introducing Pure — The Currency 100% Backed by Verus & Bitcoin
+Pure is a decentralized currency fully backed by Verus (VRSC) & Bitcoin (tBTC). Hold Pure to be exposed to both Verus and Bitcoin while accruing fees from conversions. Or use it to convert from tBTC to VRSC and vice versa.
+
+⏱️ Pure is launched on block: 2,975,703 (Sunday 24 March, 2024).
+🔁 Convert tBTC & VRSC to Pure, or vice versa. Or use Pure as an AMM and convert tBTC & VRSC with each other.
+❓ tBTC is BTC on the Ethereum network. Threshold.network supplies a decentralized bridge for users to bridge BTC to Ethereum. tBTC is also bridged to Verus (as tBTC.vETH).
+⌨️ See the Pure statistics (protocol prices, amount in reserves) at Cryptodashboard or verus.trading. Or type in /pure in the #trading channel in the community Discord.
+📚 Learn in this article how to convert tBTC & VRSC with each other, and how to convert to and from Pure. Also you learn how to bridge tBTC to the Verus network.
+What is Pure?
+Pure is a decentralized currency launched on the Verus blockchain. It is fully backed by its reserves: Verus (VRSC) and Bitcoin (tBTC), with a reserve ratio of 50/50%.
+The currency is called Pure because it aligns with the true ideals of decentralization and transparency:
+Bitcoin and Verus are fully decentralized and controlled by its nodes and block producers. No single entity or company controls them. They are not a business — they are rent-free protocols.
+Bitcoin and Verus had fair launches. No ICO, no premine and no developer fees or taxes.
+Bitcoin and Verus have a limited supply.
+Bitcoin and Verus are censorship-resistant.
+Hold Pure to be exposed to two decentralized cryptocurrencies upholding true cypherpunk values.
+
+Pure is an AMM
+Another benefit of holding Pure is that the currency accrues conversion fees. When users convert from Pure to VRSC or tBTC (or vice versa) they pay a conversion fee of 0.025%. When users convert between VRSC and tBTC they pay a conversion fee of 0.05%.
+Half of those conversion fees (50%) stay in the Pure reserves, increasing the value of Pure since no new Pure is minted. The conversions are MEV-resistant and verified by the miners and stakers of the protocol. Learn more about Verus DeFi.
+Conversions between VRSC and tBTC are only possible after the preconversion period has ended on Sunday 24 March, 2024.
+Users can also create subIDs which cost 0.00021 tBTC.vETH (in Pure). These costs are burned reducing Pure in circulation. Learn more about VerusID and what you can do with it here. If users create an identity with your subID as referral, they pay 2/3 less — you get 1/3 and 1/3 is discounted.
+Preconversion period before the launch of Pure
+Before Pure was fully launched, there was an 8-day preconversion period. In that period users could fund the reserves of Pure with VRSC and tBTC. During this period no conversions could be done. Depending on how much they added they got their fair share of 20,000 Pure after the 8 day period.
+The initial supply of Pure was 20,000. After the initial supply has been distributed by the protocol, the supply became dynamic. When users convert from VRSC or tBTC into Pure, Pure is minted. When people convert from Pure back to VRSC or tBTC, the Pure is burned.
+Learn below how Pure was launched without any coding needed. Just a simple API call:
+
+What is tBTC, how do I get it & bridge it to Verus?
+tBTC is BTC on the Ethereum network. The decentralized bridge between Bitcoin and Ethereum is supplied by the Threshold Network.
+Existing solutions that bridge Bitcoin to Ethereum require users to send their Bitcoin to an intermediary, in exchange for an ERC-20 token that represents the original asset. This centralized model requires you to trust a third party and is susceptible to censorship, threatening the premise of Bitcoin as sovereign, secure, permissionless digital asset.
+The second generation of tBTC is a truly decentralized (and scalable) bridge between Bitcoin and Ethereum. It provides Bitcoin holders secure and open access to the broader DeFi ecosystem. tBTC v2 allows you to unlock your Bitcoin’s value to borrow and lend, mint stablecoins, provide liquidity, and much more.
+Get tBTC on Kraken, Uniswap, Curve & others. Or mint it yourself
+tBTC token address: https://etherscan.io/token/0x18084fba666a33d37592fa2633fd49a74dd93a88
+You can send tBTC to your MetaMask wallet or Verus Mobile first, and later you have to bridge it to the Verus blockchain. Bridging is done through the non-custodial Verus-Ethereum Bridge
+Adding tBTC ERC-20 to Verus Mobile
+Here is a guide to add the tBTC ERC-20 to Verus Mobile:
+How to add tBTC ERC-20 to Verus Mobile
+Press the plus-button bottom-right corner
+Press “Add ERC-20 Token”
+Select checkmark to “Find using mapped PBaaS currency”, and fill in “tbtc.veth”, then press Continue
+Press OK when a warning screen pops up.
+You have added the tBTC ERC-20 in Verus Mobile and are now ready to receive it.
+Bridging tBTC to the Verus blockchain
+How to bridge the ERC-20 tBTC over to the Verus blockchain with the bridge website or with Verus Mobile.
+Let’s start how to bridge with MetaMask and the Verus-Ethereum Bridge website:
+How to bridge tBTC ERC-20 over to Verus with MetaMask and eth.verusbridge.io
+Connect MetaMask with this website: https://eth.verusbridge.io/
+Address: where you want the tBTC to end up on the Verus blockchain
+Token: select “[tBTC v2] as tBTC.vETH”
+Destination: select “[tBTC v2] as tBTC.vETH on VRSC”
+Choose the amount you want to bridge over
+If you use Verus Desktop don’t forget to add tBTC.vETH in the “Multiverse”-tab!
+You can also bridge with Verus Mobile.
+First let’s add tBTC.vETH to your Verus Mobile wallet:
+How to add tBTC.vETH currency on Verus Mobile
+Press the plus-button bottom-right corner
+Press “Add PBaaS currency”
+Enter “tbtc.veth” and press continue
+Press “ADD”
+Now let’s bridge the tBTC ERC-20 over to the Verus blockchain.
+How to bridge tBTC ERC-20 over to the Verus blockchain as tBTC.vETH
+Press tBTC v2
+Press “Send” and then “Convert or cross-chain”
+Press “Send off-chain”
+As the recipient address fill in a Verus address you own (R- or i-address, or VerusID)
+Fill in the amount you want to send
+Then as “Select network to send to” choose Verus
+Then as “Select currency to receive as” choose tBTC.vETH
+Now you can safely bridge the tBTC over.
+So now that you’ve bridged tBTC over to Verus either on Verus Mobile or Verus Desktop, you can convert it to VRSC or Pure
+How do I convert to Pure?
+Now that Pure is fully launched you can convert to it from VRSC or tBTC.vETH.
+Convert with Verus Desktop or Verus Mobile.
+Convert to Pure with Verus Desktop
+On Verus Desktop click the “Convert Currencies”-button and then go to the “Advanced”-tab.
+Converting tBTC.vETH or VRSC to Pure on Verus Desktop.
+Choose amount to send (in tBTC.vETH or VRSC)
+“From Currency”: fill in tBTC.vETH or VRSC
+“To Currency”: fill in Pure
+“Destination Address”: fill in a R-/i-address or VerusID where you want to receive Pure.
+Now click “Convert Currencies”, and that’s it! Wait between 1 and 5 blocks and you will receive the Pure.
+If you want to go out of Pure, just change the “From Currency” to Pure and the “To Currency” to tBTC.vETH or VRSC
+Convert to Pure with Verus Mobile
+Convert tBTC.vETH or VRSC to Pure with Verus Mobile.
+Press tBTC.vETH or VRSC
+Press “Send” and then “Convert or cross-chain”
+Press “Convert currency”
+As the recipient address fill in a Verus address you own (R- or i-address, or VerusID) or self to receive it on the same address where you send it from.
+Fill in the amount you want to convert
+Then as “Select currency to convert to” choose Pure
+The network to send to is “current network” = Verus
+Now press “Send” and confirm, and that’s it! You now have to wait between 1 and 5 blocks and you will see Pure in your wallet.
+Convert VRSC and tBTC with each other
+Use Pure as an AMM to convert VRSC and tBTC.vETH with each other. Learn more on Verus DeFi here.
+Convert with Verus Desktop
+On Verus Desktop click the “Convert Currencies”-button and then go to the “Advanced”-tab.
+Convert VRSC and tBTC with each other with Verus Desktop.
+Choose amount to send (in tBTC.vETH or VRSC)
+“From Currency”: fill in tBTC.vETH or VRSC
+“To Currency”: fill in tBTC.vETH or VRSC
+“Via Currency”: fill in Pure
+“Destination Address”: fill in a R-/i-address or VerusID where you want to receive the currency.
+Now click “Convert Currencies”, and that’s it! Wait between 1 and 5 blocks and you will receive the amount.
+Convert with Verus Mobile
+Converting tBTC and VRSC with each other on Verus Mobile.
+Press tBTC.vETH or VRSC
+Press “Send” and then “Convert or cross-chain”
+Press “Convert currency”
+As the recipient address fill in a Verus address you own (R- or i-address, or VerusID) or self to receive it on the same address where you send it from.
+Fill in the amount you want to convert
+Then as “Select currency to convert to” choose what you want to convert it to.
+The network to send to is “current network” = Verus
+Now press “Send” and confirm, and that’s it! You now have to wait between 1 and 5 blocks and you will see the currency in your wallet.
+Join the crypto revolution with Verus & Pure
+Pure is a unique currency backed fully by VRSC and tBTC, launched on the Verus Protocol. Join the Verus Discord and explore what Verus has to offer!
+Verus solves scalability by neither sacrificing decentralization or security
+The Verus-Ethereum Bridge is non-custodial & trustless
+Launch currencies (like Pure!) without any coding needed
+Launch fully interoperable, independent and customizable PBaaS-blockchains
+VerusID: self-sovereign identities
+Verus DeFi: simple, low-cost, MEV-resistant and without any middleman
+Verus is the protocol for builders: join the community at Consensus 2024
+And so much more.
+Join the community. Learn about the protocol. Use Verus. Get ahead of the game.
+➡️ Join the community on Discord
+Follow on Twitter
+Go to verus.io

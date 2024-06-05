@@ -1,0 +1,39 @@
+Title: STEX.com Lists VerusCoin $VRSC
+Article URL: https://medium.com/veruscoin/stex-com-lists-veruscoin-vrsc-b8738c755a5e
+Content:
+
+STEX.com Lists VerusCoin $VRSC
+Verus Coin is now available on STEX.com for live trading with VRSC/BTC trading pair
+
+About STEX.com Exchange
+STEX.com exchange has listed Verus with VRSC/BTC trading. The Estonian-based exchange is listed on CoinMarketCap and presently has over $1MM in 24h trading volume, placing them just under the top 100 exchanges by volume, at 114th place (as of Oct 31, 2018). Follow STEX.com for updates and news related to their Exchange on Twitter.
+Please note, STEX is a “dot Com” and is found at https://www.stex.com. There you can setup a free account and begin trading VRSC with BTC.
+This listing is the second exchange listing for VerusCoin, not counting decentralized exchange BarterDEX. Verus is also listed and trading in BTC and KMD pairs on DigitalPrice. Thank you to the incredible, active Verus community for coming together so promptly to cast your “vote” in favor of this listing!
+About Verus
+Verus offers the most advanced zero knowledge privacy available, VerusHash, the only hash algorithm that is credibly mineable on both CPUs and GPUs, 50% proof of work and 50% proof of stake with a groundbreaking nothing-at-stake solution for more security and less power consumption, and is one of the most double-spend resistant blockchains running. Although Verus Coin has native, extreme double-spend resistance, it layers Komodo dPoW notarization for even further 51% attack resistance.
+The Verus Coin project also releases a GUI, multi-coin wallet that allows the sending and receiving of private messages, has built-in CPU mining and staking, client and system improvements on a regular cadence, pool software, lite mode servers, and will soon release a multi-coin mobile wallet. The Verus Coin Project developers are currently working to add mobile staking, public blockchains as a service (PBaaS), and polls and voting applications for scalable, public use. On top of all this, Verus was a 100% fair, no-ICO, no-pre-mine community launch.
+An Important Listing at an Important Milestone
+This listing comes on the heels of activating Sapling and implementing the new Crypto-Condition “Stake Guard” which, in conjunction with Cheat Catcher, is a blockchain-level decentralized solution to “Nothing at Stake” for Proof of Work. In addition to solving Nothing at Stake and Weak Subjectivity theoretical problems, Verus also notarizes to the Komodo blockchain through “delayed Proof of Work” or dPoW. This notarization is similar to taking a snapshot backup of the Verus chain and “saving it” to the KMD blockchain. Komodo, in turn, notarizes to the most secure blockchain in the world…presently Bitcoin.
+Milestones Being Realized
+On October 30, at block height 227520, Verus activated an enhanced implementation of Sapling, the upgrade developed by Zcash. This upgrade changes how Shielded zk-SNARK transactions operate, introduces new address styles, and some additional advancements to Zero Knowledge privacy. To put it simply, the process of performing totally private zk-SNARK transactions, in new Sapling edition of Verus, is like going from Dial-up to Fiber overnight. Read more about Sapling here.
+In addition to these important advancements, Verus also activated enhancements in how transactions are handled including the development of Verus’ first Crypto-Condition called Stake Guard. Stake Guard is a decentralized solution to “nothing at stake” and “weak subjectivity” problems facing Proof of Stake, completely solving the problem by making it a losing proposition to cheat.
+An important part of this solution is Cheat Catcher which can now be enabled on any node running in Native mode by either miners or stakers, and which will work in conjunction with Stake Guard to catch any found cheated block attempts and take the single legitimate reward the cheater would have had from the primary chain, giving it to the miner or staker who found the cheater instead. Read more about these innovations here.
+Several other important developments have also been implemented and released, in the latest Verus wallet, the Electrum Server and the Pool Software. Check out the latest Release Notes and Sapling Announcement to learn all about these exciting developments!
+STEX.com Listing
+Verus is a community-driven project with an active, passionate, developer-rich community of supporters and participants. Just days ago, the opportunity to list with STEX.com was brought before the community and was met with an outpouring of donations and support to get listed.
+We are excited to be listing on this platform with the VRSC/BTC trading pair and exposing this forward thinking, development-centric, revolutionary project and tech to more future community members…and to CMC for an even broader reach!
+Thank you to the incredible Verus community, developers, enthusiasts, and contributors! And thanks to STEX.com for an easy, streamlined and speedy listing process.
+Join the Verus Community
+This is truly a community project and we love helping newcomers! Whether you’re joining to support the vision, mine or stake, contribute or just be a part of this exciting and fast-growing community, jump on over to our active Official Discord and introduce yourself.
+Official Verus Discord: https://discord.gg/VRKMP2S
+Official Verus Website: https://veruscoin.io
+Resources
+VerusCoin Successfully Activates Innovative Upgrade Sapling, Cheat Catcher, Sapling-compatible Electrum Server, and Pool Software
+How to Update or Install Verus GUI Enhanced Agama Wallet
+Verus Coin v0.4.0 Official Release Notes
+How Verus Solved Nothing at Stake and Weak Subjectivity for Proof of Work
+Everything You Need to Know About the Zcash Sapling Upgrade
+Ben’s Pocket Guide to VerusCoin for Dummies and Smart People
+Komodo Ecosystem Spotlight: Verus Coin
+Komodo AMA Spotlights VerusCoin
+Formation of The Verus Coin Foundation with a Vision of PBaaS

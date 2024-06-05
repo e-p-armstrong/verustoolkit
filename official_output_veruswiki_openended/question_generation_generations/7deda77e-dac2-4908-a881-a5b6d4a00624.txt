@@ -377,7 +377,7 @@
     manage their own identities, with features such as revocability, recoverability,
     and quantum resistance.
 
-    * **PBaaS (Private Blockchain as a Service)**: A platform that enables users to
+    * **PBaaS (Public Blockchain as a Service)**: A platform that enables users to
     create and manage their own private blockchains, with features such as customizable
     consensus algorithms and node management.
 

@@ -349,7 +349,7 @@
     """
 
     The `OPTION_PBAAS` currency option in Verus indicates that the currency is a PBaaS
-    (Private Blockchain as a Service) chain definition. This means that the currency
+    (Public Blockchain as a Service) chain definition. This means that the currency
     is part of a private blockchain service that allows for customizable blockchain
     solutions.
 
@@ -367,7 +367,7 @@
     \ means \"this is a PBaaS chain definition\". This aligns with the answer's first\
     \ assertion.\n  * The text does not provide additional information about what\
     \ a PBaaS chain definition entails, but the answer's second assertion is a reasonable\
-    \ inference based on common knowledge about PBaaS (Private Blockchain as a Service).\n\
+    \ inference based on common knowledge about PBaaS (Public Blockchain as a Service).\n\
     \n### Final Judgment:\n#### Comprehensive Assessment: The answer's claims are\
     \ directly supported by the text, and the additional inference made is reasonable\
     \ based on common knowledge. The answer is: ACCURATE."

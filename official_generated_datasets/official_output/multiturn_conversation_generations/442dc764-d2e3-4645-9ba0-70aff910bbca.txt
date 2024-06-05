@@ -282,7 +282,7 @@
     **ANSWER:**
 
     When `OPTION_PBAAS` is set to 256 in a Verus currency definition, it indicates
-    that this is a PBaaS (Private Blockchain as a Service) chain definition.
+    that this is a PBaaS (Public Blockchain as a Service) chain definition.
 
 
 
@@ -341,7 +341,7 @@
     **AI Assistant:**
 
     When `OPTION_PBAAS` is set to 256 in a Verus currency definition, it indicates
-    that this is a PBaaS (Private Blockchain as a Service) chain definition. This
+    that this is a PBaaS (Public Blockchain as a Service) chain definition. This
     option specifies that the currency is part of a private blockchain service. Do
     you have any other questions about PBaaS or Verus chain definitions?
 

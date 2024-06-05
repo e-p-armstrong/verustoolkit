@@ -210,7 +210,7 @@
     :\"Bridge\",\"gatewayconverterissuance\":1000000}' '{\"currencies\":[\"VRSCTEST\"\
     ,\"PBaaSChain\",\"USD\"],\"initialcontributions\":[371747.20398827,0,1000000],\"\
     initialsupply\":3000000}'\n```\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\n\
-    What are the components of a PBaaS (Private Blockchain as a Service) chain definition,\
+    What are the components of a PBaaS (Public Blockchain as a Service) chain definition,\
     \ and how do I define one using the Verus command line?\n\"\"\"\n\nIf the question\
     \ clearly goes off the rails and is incoherent, or if it is cut-off and incomplete,\
     \ then it is irrelevant. Be careful around 'how' and 'why' questions."

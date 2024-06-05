@@ -305,7 +305,7 @@
     \ the chain or gateway to a single currency.\n\n**OPTION_GATEWAY (128):** This\
     \ option routes external currencies, allowing them to be used on the chain or\
     \ gateway.\n\n**OPTION_PBAAS (256):** This option indicates that the definition\
-    \ is for a PBaaS chain. PBaaS (Private Blockchain as a Service) chains are private\
+    \ is for a PBaaS chain. PBaaS (Public Blockchain as a Service) chains are private\
     \ blockchains that can be created and managed on the Verus platform.\n\n**OPTION_GATEWAY_CONVERTER\
     \ (512):** This option specifies that the gateway is a default converter and will\
     \ publish prices. This means that the gateway will act as a converter between\

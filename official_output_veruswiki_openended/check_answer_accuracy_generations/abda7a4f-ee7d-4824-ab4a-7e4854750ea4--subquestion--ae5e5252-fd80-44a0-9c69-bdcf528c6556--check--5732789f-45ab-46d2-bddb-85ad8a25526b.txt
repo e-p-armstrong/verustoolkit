@@ -341,7 +341,7 @@
     """
 
     In Verus, reserve currencies play a crucial role in the functionality of PBaaS
-    (Private Blockchain as a Service) chains. When a chain is launched, the initial
+    (Public Blockchain as a Service) chains. When a chain is launched, the initial
     price of the reserve currency is set to 1.0, but fees paid in the early blocks
     will be converted to the reserve currency, effectively acting as purchases of
     the fractional reserve currency. The price of the currency will then rise or fall

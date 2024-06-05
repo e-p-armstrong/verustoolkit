@@ -1,0 +1,26 @@
+Title: December 2021 — Verus Monthly Recap
+Article URL: https://medium.com/veruscoin/december-2021-verus-monthly-recap-90788bcea8f2
+Content:
+
+December 2021 — Verus Monthly Recap
+The latest Verus updates on development, community, ecosystem and more. Subscribe to the newsletter here.
+
+Next to the monthly recap on Medium, you can receive the exact same content through a newsletter. Subscribe here. I’ll keep things short and to the point.
+
+VerusBox: Tools and Stats on Your Phone
+VerusBox, released 23 December by community builders, is a handy tool for mobile users. Use it to see the blockchain and network status, such as hashrate and network distribution. View market cap and coin price. Use as a block explorer. And much more. A useful tool for every Verus enthusiast.
+[Download for Android] [Soon for iOS]
+
+VaultAlert: Check Your Vault Anywhere
+Users can lock their funds in a VerusID with Vault. If Vault is activated, your funds are locked and can not be spent any more, while you are still able to stake. With the upcoming VaultAlert you can check the status of your Vault anywhere in the world. Just visit the website and search for your VerusID. It will tell you everything you need to know about your Vault. Vault status, type of lock, unlock blockheight and date estimates.
+The first release of VaultAlert is estimated to be in January. Stay tuned! ⏰
+
+Verus Desktop with Vault and Marketplace Interfaces
+Verus Desktop now supports Vault and Marketplace with interfaces. Anyone can lock up their funds in a VerusID with Vault, or make and take offers on VerusIDs. Download the latest version v0.9.0–4 here.
+Community Videos and Audio
+This month four marketing meetings were uploaded to the Verus YouTube channel.
+Listen to this one where Mike Toutonghi talks about everything Verus.
+Listen to community member Consilience (Nicholas Lyons) speak on Clubhouse. (only available when you have the app on your phone)
+🎆 Happy New Year! 🎆
+Best wishes to all the Verus community for a great 2021, and an even better 2022! A lot has been accomplished already, and in the new year we will keep on growing and keep on building momentum!
+Please subscribe to the monthly recap so you’ll get it each month in your mailbox.

@@ -408,7 +408,7 @@
     **ANSWER:**
 
 
-    Verus PBaaS (Private Blockchain as a Service) is a platform that allows for the
+    Verus PBaaS (Public Blockchain as a Service) is a platform that allows for the
     creation of private blockchains, currencies, and decentralized applications. It
     offers features such as:
 

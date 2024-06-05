@@ -234,7 +234,7 @@
   role: assistant
 - content: '**QUESTION:**
 
-    How do you define a PBaaS (Private Blockchain as a Service) chain using Verus,
+    How do you define a PBaaS (Public Blockchain as a Service) chain using Verus,
     and what are the key properties that need to be specified in the definition?
 
 
@@ -296,7 +296,7 @@
 
     **User:**
 
-    I''m trying to set up a Private Blockchain as a Service (PBaaS) chain using Verus,
+    I''m trying to set up a Public Blockchain as a Service (PBaaS) chain using Verus,
     but I''m not sure how to define it. Can you explain how to define a PBaaS chain
     using Verus, and what are the key properties that need to be specified in the
     definition?

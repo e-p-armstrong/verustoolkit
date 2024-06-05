@@ -1,0 +1,44 @@
+Title: Verus Vault & VerusID (NFT) Marketplace Mainnet Upgrade
+Article URL: https://medium.com/veruscoin/verus-vault-verusid-nft-marketplace-mainnet-upgrade-7abb5092c81b
+Content:
+
+Verus Vault & VerusID (NFT) Marketplace Mainnet Upgrade
+Buy and sell VerusIDs in a completely decentralized way without any intermediaries. It’s the next step in the evolution of VerusID, the most powerful self-sovereign identity and secure storage for funds in the digital world. Version 0.9.0 also enables Verus Vault on mainnet, the world’s first solution to truly securing your blockchain funds. Use Vault to lock funds for security, vesting, trusts, inheritance, and more.
+
+⏰ VerusID (NFT) Marketplace and Verus Vault activate on block 1,796,400 (expected on Monday, 29 November 2021). Update your wallets to v0.9.0 before the activation blockheight to ensure smooth staking, mining, and general operation.
+🏆 Use VerusID (NFT) Marketplace to exchange VerusIDs publicly and privately.
+🔒 Use Verus Vault to lock funds for security, vesting, trusts, inheritance, and more.
+🏆 A Marketplace for Anything
+VerusIDs are much more than a typical digital identity. And once you own one on the Verus blockchain or a compatible PBaaS blockchain, it’s yours forever, rent-free, fully under your control. Until the moment you decide to pass it on.
+VerusIDs can be anything you want. They can be bound digitally to many things. They can be bound to you, or other VerusIDs they have authority or ownership of. They can be bound to an unlimited amount of content, data, and provable information, both public and private. Including provable contracts and rights that can be bound to ownership of the VerusID itself.
+Each VerusID on the Verus blockchain can even be used with Public Blockchains as a Service (PBaaS — currently on testnet) to launch a token or DeFi currency, and even an interoperable blockchain. These blockchains inherit all features as they are on the Verus blockchain.
+VerusIDs can hold funds. They can be personal profiles, corporate websites, or government portals. VerusIDs are much more than identities or today’s NFTs. They are owned assets of all kinds on the Verus blockchain. And now those assets can be exchanged easily.
+With the VerusID Marketplace protocol, anyone is able to buy and sell VerusIDs. You can look for offers on any VerusID (buy or sell offers). If you like the best offer on your VerusID, or if someone likes an offer you made on theirs, the deal is made 100% peer-to-peer, decentralized on the blockchain, without any middleman or contract controller.
+For total payment privacy, you can even pay or receive payment using private addresses and zero knowledge transactions based on the Zcash Sapling protocol.
+Exchanging in Private
+In addition to advertising worldwide on the blockchain to buy or sell VerusIDs, you can also make an exchange with the Marketplace without ever posting the offer on the blockchain until it is agreed and signed by all parties. Combine that with zero knowledge transactions, and it’s a great way to transact worldwide, escrow-free in private.
+A powerful use case example: A business sells subscriptions for exclusive content. They make VerusIDs with contracts that give access to the exclusive content. They now create a transaction that would pay for the VerusID. They give the transaction to the buyer who then executes it. The buyer now owns the VerusID that gives access to the exclusive content.
+Now imagine how you can do this for a VerusID that can be any kind of asset. A new way for everyone to engage in peer-to-peer, escrow-free commerce has arrived.
+Five New APIs
+VerusID Marketplace introduces five new RPC APIs and CLI commands for this major upgrade: makeoffer, takeoffer, getoffers, closeoffers and listopenoffers.
+makeoffer: define what you offer and for what. What you offer can be funds, VerusIDs, or when PBaaS goes live even other currencies. What you want in return can also be funds, VerusIDs or currencies. In exchange for what you offer, you also define what VerusID or how much you want for it and in what currency.
+takeoffer: take a specific offer in exchange for its request.
+getoffers: specify which VerusID or currency you want to see offers for or on offer, and it returns all offers (buy and sell) in all currencies, sorted by highest to lowest price.
+closeoffers: close expired or unexpired offers which you opened with makeoffer.
+listopenoffers: list all offers that you have opened with makeoffer.
+🔒 Protect Your Funds with Verus Vault
+The new mainnet upgrade enables a completely new level of security and safety for all your funds. Verus Vault allows you to lock any VerusID under your control, while still using its funds to actively stake and earn on the network.
+When you lock a VerusID, its funds can not be spent anymore. All locking and unlocking are visible on the blockchain.
+Two Lock Mechanisms
+You can lock a VerusID in two different ways that cannot be circumvented by anyone, except the revocation and recovery authorities together.
+Locked and unlocked until number of blocks passed: funds can not be spent until a predetermined number of blocks have passed.
+Locked and unlocked with a delay: funds can not be spent until an unlock has been requested + a predetermined number of blocks have passed
+Powerful Use Cases
+Safe staking: put funds to stake with on a VerusID. Use Vault to lock the identity with a delay of 10,080 blocks ( ~1 week). Now whenever someone gains access to the private keys of the locked VerusID, they have to unlock the identity in order to spend the funds. When someone makes an unlock request that isn’t you, you are warned. The intruder has to wait 10,080 blocks before he can spend the funds. If you have set up revocation and recovery authorities, you now have one week to safeguard your funds away from prying hands, back into your control.
+Trusts: setting up a trust fund for your children. Give your child a time locked VerusID with funds on them. When he or she turns 18, the VerusID unlocks and the funds can be spent. Keep revocation and recovery authorities with yourself or a trustee.
+Vesting period: when doing a currency or chain launch, development funds can be diverted to a locked VerusID. After two years the VerusID unlocks and the funds can only be spent with signatures of other developers. You can also spread the funds across multiple identities with different unlock periods.
+These are just a few examples on how the powerful Verus Vault can be used. VerusID can store any asset on the Verus network, including those bridged from other blockchains. When PBaaS is on mainnet, the first bridged asset is Ethereum.
+⏰ VerusID (NFT) Marketplace and Verus Vault activate on block 1,796,400 (expected on Monday, 29 November 2021). Update your wallets to v0.9.0 before the activation blockheight to ensure smooth staking, mining, and general operation.
+🏆 Use VerusID (NFT) Marketplace to exchange VerusIDs publicly and privately.
+🔒 Use Verus Vault to lock funds for security, vesting, trusts, inheritance, and more.
+🔥 Visit verus.io for more information on Verus

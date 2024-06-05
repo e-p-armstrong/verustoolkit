@@ -1,0 +1,23 @@
+Title: Announcing easy, private, encrypted, notarized memos and network scalability improvements
+Article URL: https://medium.com/veruscoin/announcing-easy-private-encrypted-notarized-memos-and-network-scalability-improvements-aa9685b72a2e
+Content:
+
+Announcing easy, private, encrypted, notarized memos and network scalability improvements
+
+Aug 13, 2018 — The Verus Coin Foundation announces the release of its latest Verus Coin software update, focused on network decentralization and enabling permanent, notarized, encrypted messages in its multi-coin enhanced version of the Agama wallet. In addition to strong encryption, Verus private messaging shields the receiver’s address, and optionally the sender, with the same zero knowledge technology (zk-SNARKs) used in private transactions.
+The new Verus Coin release also aims to improve Verus network decentralization and performance at scale, while reducing network lag. As a result, it will boost mining and staking efficiency for miners who may have experienced network synchronization delays due to the multiple terahash growth of the Verus network with solo CPU mining in only a matter of days. The Verus Foundation has incorporated learning from the recent network growth to improve performance and optimize network and individual efficiency for the entire Verus community.
+According to Michael Toutonghi, lead developer:
+“We certainly hoped for the kind of network growth we are seeing, and with that growth, we can learn, optimize and tune the Verus network parameters to prepare for geoscale usage by large populations. We are also working hard with a number of pool operators to bring Verus pools online, which will further strengthen the network and allow people worldwide to mine Verus in smaller amounts, while receiving payouts on a more regular basis.”
+While there are numerous new features, the new Verus wallet release focused on two primary objectives:
+Optimized network performance
+As the Verus network has grown rapidly in its early weeks and months of operation, some community users began reporting a lack of available connections into the Verus peer to peer network, resulting in synchronization lags. This release changes the ratio of available connections to their consumers quite significantly on the network. It also includes anti-lag measures to further ensure that the software is spending its time efficiently.
+Easier private, encrypted, notarized messages and improved GUI
+The 0.3.11 software release enabled attaching a private encrypted memo when sending to a private z-address, but there has not been an easy way to view these messages in either the GUI or on the command line. The 0.3.12 release now adds all incoming private transactions to the transaction display and enables receipt and decoding of private encrypted memos.
+Version 0.3.12 of the Verus Coin software is a step forward towards realizing the Verus Vision of Public Blockchain as a Service (PBaaS) powering public applications, such as polling, voting, and decentralized identity.
+Contact:
+Verus Coin Foundation: foundationrelease@veruscoin.io
+Visit the Website for software and white papers: https://veruscoin.io
+Follow on Twitter: https://twitter.com/VerusCoin
+Subscribe on Reddit: https://www.reddit.com/r/VerusCoin/
+Chat on Discord: https://discord.gg/MPXXJCm
+Representatives on Discord: miketout, englal, michaeltoutjr, VirtualSoundNW, Asher, crypto05

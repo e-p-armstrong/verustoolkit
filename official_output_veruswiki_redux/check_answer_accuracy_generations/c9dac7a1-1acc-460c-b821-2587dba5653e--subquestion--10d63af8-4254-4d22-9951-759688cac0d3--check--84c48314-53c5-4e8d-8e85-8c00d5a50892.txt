@@ -326,7 +326,7 @@
     """
 
     The OPTION_PBAAS flag, which has a value of 256, is used to indicate that a chain
-    definition is a PBaaS (Private Blockchain as a Service) chain. This flag is used
+    definition is a PBaaS (Public Blockchain as a Service) chain. This flag is used
     to define the properties and behavior of a PBaaS chain.
 
     """'
@@ -338,7 +338,7 @@
     \ for specific constants or flags.\n\n### Answer Breakdown:\n**Dissect the Answer's\
     \ Assertions:**\n  * That the OPTION_PBAAS flag has a value of 256.\n  * That\
     \ the OPTION_PBAAS flag is used to indicate that a chain definition is a PBaaS\
-    \ (Private Blockchain as a Service) chain.\n  * That the OPTION_PBAAS flag is\
+    \ (Public Blockchain as a Service) chain.\n  * That the OPTION_PBAAS flag is\
     \ used to define the properties and behavior of a PBaaS chain.\n\n### Accuracy\
     \ Check:\n**Direct Comparison for Factual Accuracy and Common Knowledge Check:**\n\
     \n  * The text explicitly states that OPTION_PBAAS has a value of 256, which aligns\

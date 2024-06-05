@@ -306,7 +306,7 @@
 
     **ANSWER:**
 
-    Verus PBaaS (Private Blockchain as a Service) is a decentralized network that
+    Verus PBaaS (Public Blockchain as a Service) is a decentralized network that
     allows for the creation of private blockchains, currencies, liquidity pools, NFTs,
     and more. It offers features such as:
 
@@ -341,7 +341,7 @@
     \ corrupted during download. They're an important security feature to ensure the\
     \ integrity of your Verus package.\n\n**User:**\nI've been hearing about Verus\
     \ PBaaS, can you tell me more about it? What is Verus PBaaS, and what features\
-    \ does it offer?\n\n**AI Assistant:**\nVerus PBaaS (Private Blockchain as a Service)\
+    \ does it offer?\n\n**AI Assistant:**\nVerus PBaaS (Public Blockchain as a Service)\
     \ is a decentralized network that allows for the creation of private blockchains,\
     \ currencies, liquidity pools, NFTs, and more. It offers features such as:\n\n\
     * Provable or pseudonymous, identity-based currency, liquidity pool, NFT, and\

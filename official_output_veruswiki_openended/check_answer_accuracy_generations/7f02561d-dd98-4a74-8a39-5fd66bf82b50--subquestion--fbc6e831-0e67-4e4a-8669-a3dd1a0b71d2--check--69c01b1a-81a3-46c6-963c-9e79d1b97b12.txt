@@ -331,7 +331,7 @@
     \ Creation:**\nThe Verus network enables any user with an ID to create their own\
     \ token currency or even a full-fledged, multi-currency, ID-issuing blockchain\
     \ that can interact with the Verus chain. This is made possible by the Verus PBaaS\
-    \ (Private Blockchain as a Service) technology, which allows users to create their\
+    \ (Public Blockchain as a Service) technology, which allows users to create their\
     \ own blockchains without requiring any programming knowledge. All PBaaS chains\
     \ run from the same daemon, and projects can choose to join the worldwide Verus\
     \ community to improve the daemon, starting with a complete, multi-currency, ID-capable\

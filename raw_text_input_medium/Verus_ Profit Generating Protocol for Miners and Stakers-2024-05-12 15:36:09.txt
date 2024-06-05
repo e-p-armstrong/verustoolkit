@@ -1,0 +1,48 @@
+Title: Verus: Profit Generating Protocol for Miners and Stakers
+Article URL: https://medium.com/veruscoin/verus-profit-generating-protocol-for-miners-and-stakers-2d2b454aa330
+Content:
+
+Verus: Profit Generating Protocol for Miners and Stakers
+Future and present Verus miners: take notice. Be ready to maximize profit with your hardware. Mine up to 22 blockchains with the same hashrate. With Verus’ hardware equalizing hashing algorithm (VerusHash 2.2) you can mine efficiently with CPUs, mobile phones and even ARM devices.
+
+🔥 UPDATE 21 MARCH 2024: The first ever PBaaS-chain is being launched on April 1 2024 (not a joke). From then on miners can mine 2 chains simultaneously with the same hashrate!
+More on the first ever PBaaS-chain launch: piratechain.com/v-arrr
+Efficient Mining
+VerusHash 2.2 is created to level the playing field for all hardware. The hashing algorithm uses the AES/AVX instruction sets built into most modern CPUs to boost CPU hash power.
+Mine Verus most efficiently with CPUs, mobile phones and even certain ARM devices. Compare mining hashrates here.
+Coinbase Rewards
+1440 blocks are generated each day. On average 720 blocks go to miners, 720 blocks go to stakers (learn more on staking Verus). For generating — or finding — a block, miners and stakers get compensated. This compensation is called a coinbase reward. There will never be more than 83,540,184 VRSC.
+If you look at the image below, you might think that the possibility of earning VRSC for miners and stakers goes down drastically. We explain next that earnings don’t stop at coinbase rewards.
+Verus Coin Emission Schedule. From block height 10,080 on, all coinbase rewards of 384 and 192 VRSC were timelocked and then unlocked at random block heights. The last of those rewards were unlocked at block height 1,181,520.
+Earning from Economic Activity
+Miners and stakers don’t just earn coinbase rewards (the reward for finding a new block), they also take a small portion of the Fee Pool. The Fee Pool collects fees that are paid by users when they are interacting with the protocol. Protocol fees include:
+PBaaS-chain: creating a blockchain on Verus costs 10,000 VRSC. 5,000 VRSC goes into the Verus Fee Pool, and 5,000 VRSC goes into the Fee Pool of the created blockchain, earned by miners and stakers of that blockchain
+(DeFi) Currency and tokens: creating a currency on the Verus blockchain costs 200 VRSC
+VerusID: identity fees for miners and stakers are 20, 40, 60, 80 or 100 VRSC
+subID: under launched currencies and tokens subIDs can be created, these cost 0.02 VRSC
+Conversion fees: each time a user converts currencies it costs 0.025% or 0.05% — miners and stakers get 50% of these fees
+Transaction fees: each transaction is minimally 0.0001 VRSC
+Miners and stakers are protecting the blockchain and at the same time servicing the Verus economy. We expect the Fee Pool rewards to exceed the coinbase rewards.
+Think about it: someone creates a PBaaS-chain, 5,000 VRSC goes to the Fee Pool, the winner of the next block gets 50 VRSC extra on top of the coinbase reward. Now imagine a whole lot of economic activity: users making conversions through the protocol, registering VerusIDs, creating DeFi currencies and tokens, and the Fee Pool can get quite large.
+Verus Fee Pool. Percentage is subject to change before hitting mainnet.
+Merge-Mine up to 22 Chains
+The example above is only for mining Verus directly. Keep in mind that Verus is a multichain protocol. All PBaaS-chains in the protocol have exactly the same specifications as the Verus mainchain. They too have a Fee Pool that collects fees through VerusID registrations, conversions, DeFi currency and tokens and even in a later stage also PBaaS-chains!
+And you can mine 22 of them! All with the same hashrate as you would when mining only Verus.
+All these chains have the same consensus algorithm, 50% PoW, 50% PoS, so you can also stake an unlimited amount of PBaaS-chains.
+Merge-mine 22 chains with one device
+Happy Mining (and Staking)!
+Everyone in the world can start mining Verus today with our low barrier hashing algorithm. For questions regarding mining and staking, come to our Discord server.
+Community members sharing their mining rigs on our Discord server
+Learn more on staking Verus
+Mining Software and Pools
+Mobile Phone Miner
+Join the Verus Community
+Official Twitter
+Discord
+YouTube
+Community Telegram
+Facebook
+Medium
+Reddit
+BitcoinTalk
+Community Twitter

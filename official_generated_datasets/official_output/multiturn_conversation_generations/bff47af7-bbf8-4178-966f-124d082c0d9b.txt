@@ -256,7 +256,7 @@
 
     **ANSWER:**
 
-    A PBaaS (Private Blockchain as a Service) blockchain is a private blockchain that
+    A PBaaS (Public Blockchain as a Service) blockchain is a private blockchain that
     can be created and managed using Verus. To define a PBaaS blockchain, you can
     use the `definecurrency` command with a JSON object that specifies the properties
     of the blockchain. The JSON object should include the following properties:
@@ -328,7 +328,7 @@
 
     **AI Assistant:**
 
-    A PBaaS (Private Blockchain as a Service) blockchain is a private blockchain that
+    A PBaaS (Public Blockchain as a Service) blockchain is a private blockchain that
     can be created and managed using Verus. To define a PBaaS blockchain, you can
     use the `definecurrency` command with a JSON object that specifies the properties
     of the blockchain. The JSON object should include the following properties:

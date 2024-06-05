@@ -234,7 +234,7 @@
   role: assistant
 - content: '**QUESTION:**
 
-    How do I define a PBaaS (Private Blockchain as a Service) blockchain using Verus,
+    How do I define a PBaaS (Public Blockchain as a Service) blockchain using Verus,
     and what are the key components of the definition?
 
 
@@ -315,7 +315,7 @@
 
     **User:**
 
-    Hi! I''m trying to create a Private Blockchain as a Service (PBaaS) using Verus,
+    Hi! I''m trying to create a Public Blockchain as a Service (PBaaS) using Verus,
     but I''m not sure how to define it. Can you walk me through the process and explain
     the key components of the definition?
 

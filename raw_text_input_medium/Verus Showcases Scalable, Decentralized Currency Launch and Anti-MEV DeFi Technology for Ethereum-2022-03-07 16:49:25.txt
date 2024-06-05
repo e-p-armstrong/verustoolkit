@@ -1,0 +1,20 @@
+Title: Verus Showcases Scalable, Decentralized Currency Launch and Anti-MEV DeFi Technology for Ethereum
+Article URL: https://medium.com/veruscoin/verus-showcases-scalable-decentralized-currency-launch-and-anti-mev-defi-technology-for-ethereum-96c165e94c1
+Content:
+
+Verus Showcases Scalable, Decentralized Currency Launch and Anti-MEV DeFi Technology for Ethereum and Other Networks at Consensus 2022 🔥
+Verus will showcase its Public Blockchain as a Service (PBaaS) Technology at Consensus 2022, June 9–12, Austin, TX. The world’s most influential crypto & blockchain experience of the year. Here tens of thousands of crypto enthusiasts come together to discover the latest industry-leading developments.
+
+Verus Addresses Ethereum Network Challenges
+The Verus protocol addresses challenges that are seen in Ethereum and other networks. Challenges such as MEV (Miner Extractable Value), scalability and cross-chain/network interoperability.
+With the release of the new Verus testnet (March 6, 2022, see extensive release notes) and the planned mainnet launch before the start of Consensus 2022, Verus can be used as, among many other things, a launch platform for ERC-20 tokens and currencies.
+Through the Verus Interchain Protocol (VIP, decentralized bridging technology) creators can use the Verus protocol to create currencies and tokens and immediately export them to Ethereum as ERC-20s without needing any Solidity developers or actual programming. Saving costs and having the ability to use the most feature-rich decentralized crypto protocol to date. Currencies and tokens on the Verus protocol can also be created to be mapped 1:1 with any ERC-20 token, making never seen before value transfers possible.
+All currencies and tokens on the Verus and Ethereum networks can be used with Verus DeFi. Verus DeFi is part of the L1 consensus protocol, which means that all AMM conversions can not be front-run or reordered, and are calculated simultaneously for all transactions in any given block, meaning all participants get the same price in all directions of conversion.
+Additionally, anyone can create a blockchain with Verus PBaaS technology. Rent-free, independent and fully interoperable with all other connected blockchains in the network. See release notes for more extensive information on various launch options for currencies, tokens and blockchains.
+Ethereum is the first network that has a decentralized bridge to Verus, and many networks will follow. The Verus community is excited to showcase these working technologies to the masses at Consensus 2022.
+Powerful Verus Community
+The Verus community came together to make the attendance of Consensus 2022 possible and donated VRSC, BTC and ETH at an incredible combined amount of $150,000. Thank you so much to everyone who donated! ❤️
+With the funds, the Verus community acquired a 10x10 feet (3x3 meter) booth at Consensus. And a hotel suite to be used as a Verus community home base and where interested parties can learn about Verus away from the noisy and busy Austin Convention Center.
+Most Verus community members are all joining Consensus 2022 and we want you to join as well! Let’s make a big presence and let the world see what Verus has to offer. We are all hyped and confident it is going to be a great opportunity for Verus and its ecosystem!
+Grab your ticket here. ⚠️ Get a 15% discount on your Consensus 2022 ticket if you join the Discord channel, and ask for the discount code in #marketing!
+💙 Visit verus.io for more information on Verus
