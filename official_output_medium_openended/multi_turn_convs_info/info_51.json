@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the consensus algorithm used by Verus, and how can individuals participate in the network through mining and staking?",
+            "Verus uses a hybrid consensus algorithm that combines both Proof of Work (PoW) and Proof of Stake (PoS) mechanisms, with each contributing 50% to the overall consensus. This allows for a balance between the security provided by PoW and the energy efficiency of PoS.\n\nOne of the benefits of Verus's consensus algorithm is that it allows for merge-mining of multiple chains with a single device, making it possible to mine multiple chains simultaneously. This is particularly useful for PBaaS chains, which can be merge-mined with the Verus mainnet.\n\nIndividuals can participate in the Verus network through both mining and staking. Mining involves using computational power to solve complex mathematical problems, which helps to secure the network and validate transactions. Verus's low barrier hashing algorithm makes it accessible for anyone to start mining, regardless of their technical expertise or equipment.\n\nStaking, on the other hand, involves holding a certain amount of Verus coins in a wallet and participating in the validation of transactions. Verus allows for unlimited staking of PBaaS chains, making it a highly flexible and decentralized platform.\n\nFor those interested in learning more about mining and staking on Verus, the community provides a range of resources, including a Discord server where members can share their experiences and ask questions. There are also various mining software and pools available, as well as a mobile phone miner for those who want to mine on-the-go.",
+            ".\nAll these chains have the same consensus algorithm, 50% PoW, 50% PoS, so you can also stake an unlimited amount of PBaaS-chains.\nMerge-mine 22 chains with one device\nHappy Mining (and Staking)!\nEveryone in the world can start mining Verus today with our low barrier hashing algorithm. For questions regarding mining and staking, come to our Discord server.\nCommunity members sharing their mining rigs on our Discord server\nLearn more on staking Verus\nMining Software and Pools\nMobile Phone Miner\nJoin the Verus Community\nOfficial Twitter\nDiscord\nYouTube\nCommunity Telegram\nFacebook\nMedium\nReddit\nBitcoinTalk\nCommunity Twitter",
+            "./raw_text_input_medium/Verus_ Profit Generating Protocol for Miners and Stakers-2024-05-12 15:36:09"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "da107adc-564e-4ddf-a48a-c026d91f53aa"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What are the steps to set up and launch the Verus wallet on your computer?",
+            "To set up and launch the Verus wallet on your computer, follow these steps:\n\n**Step 1: Download the Verus wallet**\nFirst, download the Verus wallet from the official Verus website. Make sure to download the correct version for your operating system.\n\n**Step 2: Unzip the folder**\nUnzip the compressed folder to a location on your computer where you can easily access it, such as your Desktop. It's a good idea to rename the folder to \"Verus vX.x\" where \"X.x\" is the version number, so you can keep track of which version you're running.\n\n**Step 3: Launch the Agama app**\nLaunch the Agama app, which is located within the unzipped folder. When you open the app, you'll see a startup screen. On this screen, select \"VRSC\" from the dropdown menu under \"Lite (SPV) Mode\", and then choose \"Create new wallet\". This will guide you through the process of setting up a new Verus wallet.\n\nBy following these steps, you'll be able to set up and launch the Verus wallet on your computer, and start using it to manage your Verus coins.",
+            "://veruscoin.io/#download\nStep 2\nUnzip the compressed folder to your Desktop or somewhere you can easily launch it from. I recommend renaming the folder to \u201cVerus v0.5.x\u201d where \u201cx\u201d is the current version, that way you keep track which version you\u2019re running.\nStep 3\nLaunch the Agama app located within the folder and upon the first screen, use the drop down under \u201cLite (SPV) Mode\u201d to select VRSC, then choose \u201cCreate new wallet\u201d:",
+            "./raw_text_input_medium/How to Start CPU Mining Verus Coin VRSC from Your Computer  in Under 5 Minutes-2019-01-18 17:13:58"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c168f8b4-ea14-416c-9776-b522111b813d"
+]

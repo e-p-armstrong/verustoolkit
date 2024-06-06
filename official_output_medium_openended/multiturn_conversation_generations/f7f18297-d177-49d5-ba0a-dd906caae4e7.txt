@@ -1,0 +1,322 @@
+- content: "You are a crypto expert and creative writer specializing in the Verus\
+    \ multi-chain and multi-currency blockchain protocol. You will write a short conversation\
+    \ between a curious user and a helpful AI assistant knowledgeable about Verus,\
+    \ in which the user asks a question about Verus and the AI assistant answers the\
+    \ question in detail. The question the user must ask will be provided; the answer\
+    \ the assistant should return will also be provided. You must use the questions\
+    \ and answer directly in your conversation.\n\n**Rules for conversation writing:**\n\
+    \n* Messages can take place across multiple lines.\n* The question and answer\
+    \ should be essentially the same as provided, though you may add \"conversational\
+    \ fluff\" around the core of the questions and answers in order to make it natural-sounding.\n\
+    * The user should make the first message, where they greet the Verus AI and ask\
+    \ their first question.\n* The AI then provides a detailed answer.\n* The AI's\
+    \ answer should begin with a preamble that you create, acknowledging the user's\
+    \ question and commenting on it. The AI's preamble should mention in passing how\
+    \ the AI is going to answer in detail.\n* The AI should then provide the provided\
+    \ answer.\n* The end of the AI's response should ask if the user has any further\
+    \ questions about the given subject (or any of the things brought up in the answer\
+    \ if applicable).\n* Use Markdown formatting.\n* If applicable, try to make the\
+    \ context behind the questions make sense. So if a person's asking about an error,\
+    \ they probably aren't just asking about it out of the blue \u2014 they've probably\
+    \ encountered the error.\n* You are allowed to slightly change the wording of\
+    \ the questions, and remove duplication, in order to make the conversation flow\
+    \ nicer."
+  role: system
+- content: '**QUESTION:**
+
+    Explain and suggest a solution to the errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    Which happen when I run `./verusd` on a Linux distro?
+
+
+    **ANSWER:**
+
+    The errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When you run `./verusd` on a Linux distribution (such as Debian or Devuan) may
+    be caused by required dependencies for `./verusd` not being installed by default
+    on your Linux distribution. The lack of required dependencies results in the error
+    messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    Here''s how to fix this problem by installing these dependencies:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.'
+  role: user
+- content: '## Conversation that answers the provided questions:
+
+    **User:**
+
+    Hey there, so I''ve run into some errors and I''m not sure what''s causing them.
+    Could you please explain and suggest a solution to the errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    Which happen when I run `./verusd` on a Linux distro?
+
+
+    **AI Assistant:**
+
+    Great question! The errors
+
+    ```
+
+    error while loading shared libraries: libgomp.so.1: No such file or directory
+
+    error while loading shared libraries: libz.so: No such file or directory
+
+    ```
+
+    When you run `./verusd` on a Linux distribution (such as Debian or Devuan) may
+    be caused by required dependencies for `./verusd` not being installed by default
+    on your Linux distribution. The lack of required dependencies results in the error
+    messages when you try to run `./verusd`.
+
+
+    `./verusd` uses the libraries `libgomp` and `zlib1g-dev` so your system must either
+    have them installed by default, or you must install them manually using a command
+    such as `sudo apt-get install`.
+
+
+    Here''s how to fix this problem by installing these dependencies:
+
+
+    1. **Install the libgomp and zlib1g-dev libaries.** This can be accomplished by
+    running `sudo apt-get install libgomp1 zlib1g-dev`.
+
+    2. **Try running the command `./verusd` again.** You can see if installing the
+    dependencies worked by running `./verusd` a second time.
+
+
+    Did that solve your problem? Do you have any further questions about these errors?'
+  role: assistant
+- content: '**QUESTION:**
+
+    What are VerusIDs, and what are some of their key benefits?
+
+
+    **ANSWER:**
+
+    VerusIDs are not just an ID system: they are a fully-functional blockchain protocol.
+    Unlike the majority of other blockchains, there is no corporation involved in
+    the protocol. VerusIDs offer benefits such as (but not limited to): transferring
+    funds, quantum resistance, full decentralization, revocability, recoverability,
+    privacy, and power. Let''s walk through each of these benefits in more detail.
+
+
+    **Transferring Funds:** VerusIDs can be used to receive and send funds, and this
+    behavior can be controlled by single or multi-sig addresses that are specified
+    in the identity itself. The controller of the identity can change these controlling
+    addresses, and if they do so, then all future spends of UTXOs sent to the VerusID
+    will follow the updated spend conditions, and will be subject to the updated keys.
+
+
+    **Quantum Resistance:** VerusIDs are resistent to attacks by quantum computers
+    using known algorithms. This helps people using VerusIDs use the Verus platform
+    securely, even in a potential future with quantum computers. In more technical
+    terms, VerusIDs are "quantum-ready friendly crypto-addresses" on the worldwide
+    Verus network.
+
+
+    **Revocability:** Every VerusID includes a revocation authority (defaults to the
+    identity self). If another ID is the revocation authority, then it can be used
+    to revoke the identity -- this creates a valid transaction that, once mined into
+    the block, prevents the VerusID from being used to spend or sign until it is recovered
+    by the recovery authority. This effectively freezes all of the funds in the VerusID,
+    and may be useful in the case of key theft or turnover in an organization.
+
+
+    **Recoverability:** Just like with revocability, a recovery authority can be specified
+    (also defaults to self). Recovery authorities can recover VerusIDs from revoked
+    states, with the option to alter the ID''s primary authorities used to spend and
+    sign.
+
+
+    **Privacy:** Each VerusID contains a set of zero-knowledge private addresses that
+    may be used as messaging, financial, or voting endpoints. VerusIDs have a special
+    storage area that holds information, known as a content map of key-value hashes.
+    This content map is designed to work together with different apps and identity
+    policies. With this feature, you can privately store facts about yourself and
+    choose to prove them to others when needed (selectively-provable claims and attestations).
+    This means you may pick and choose what parts of your identity to prove. This
+    proving can be done in a quantum secure way using a quantum secure signature,
+    when that technology becomes available.
+
+
+    **Power:** VerusIDs are also notable in that multiple addresses or other IDs can
+    be defined as primary addresses. The agreement of some number of primary addresses
+    (configurable) may be required for an ID to spend, sign, or alter itself. Further
+    security is added by the fact that the revocation authority (the power to revoke
+    an ID) may only be modified by the revocation authority itself. The same applies
+    to the recovery authority (an authority that can recover a revoked address). Each
+    of these authorities (revocation and recovery) may be their own identities, potentially
+    being controlled themselves by multiple primary addresses.'
+  role: user
+- content: "## Conversation that answers the provided questions:\n**User:**\nI'm really\
+    \ new to all this. I've got a question, maybe it's a bit basic, but, what are\
+    \ VerusIDs, and what are some of their key benefits?\n\n**AI Assistant:**\nSure,\
+    \ I'll explain that in detail! Don't worry about asking questions that may feel\
+    \ basic \u2014 they're all important to your understanding. \n\nVerusIDs are not\
+    \ just an ID system: they are a fully-functional blockchain protocol. Unlike the\
+    \ majority of other blockchains, there is no corporation involved in the protocol.\
+    \ VerusIDs offer benefits such as (but not limited to): transferring funds, quantum\
+    \ resistance, full decentralization, revocability, recoverability, privacy, and\
+    \ power. Let's walk through each of these benefits in more detail.\n\n**Transferring\
+    \ Funds:** VerusIDs can be used to receive and send funds, and this behavior can\
+    \ be controlled by single or multi-sig addresses that are specified in the identity\
+    \ itself. The controller of the identity can change these controlling addresses,\
+    \ and if they do so, then all future spends of UTXOs sent to the VerusID will\
+    \ follow the updated spend conditions, and will be subject to the updated keys.\n\
+    \n**Quantum Resistance:** VerusIDs are resistent to attacks by quantum computers\
+    \ using known algorithms. This helps people using VerusIDs use the Verus platform\
+    \ securely, even in a potential future with quantum computers. In more technical\
+    \ terms, VerusIDs are \"quantum-ready friendly crypto-addresses\" on the worldwide\
+    \ Verus network.\n\n**Revocability:** Every VerusID includes a revocation authority\
+    \ (defaults to the identity self). If another ID is the revocation authority,\
+    \ then it can be used to revoke the identity -- this creates a valid transaction\
+    \ that, once mined into the block, prevents the VerusID from being used to spend\
+    \ or sign until it is recovered by the recovery authority. This effectively freezes\
+    \ all of the funds in the VerusID, and may be useful in the case of key theft\
+    \ or turnover in an organization.\n\n**Recoverability:** Just like with revocability,\
+    \ a recovery authority can be specified (also defaults to self). Recovery authorities\
+    \ can recover VerusIDs from revoked states, with the option to alter the ID's\
+    \ primary authorities used to spend and sign.\n\n**Privacy:** Each VerusID contains\
+    \ a set of zero-knowledge private addresses that may be used as messaging, financial,\
+    \ or voting endpoints. VerusIDs have a special storage area that holds information,\
+    \ known as a content map of key-value hashes. This content map is designed to\
+    \ work together with different apps and identity policies. With this feature,\
+    \ you can privately store facts about yourself and choose to prove them to others\
+    \ when needed (selectively-provable claims and attestations). This means you may\
+    \ pick and choose what parts of your identity to prove. This proving can be done\
+    \ in a quantum secure way using a quantum secure signature, when that technology\
+    \ becomes available.\n\n**Power:** VerusIDs are also notable in that multiple\
+    \ addresses or other IDs can be defined as primary addresses. The agreement of\
+    \ some number of primary addresses (configurable) may be required for an ID to\
+    \ spend, sign, or alter itself. Further security is added by the fact that the\
+    \ revocation authority (the power to revoke an ID) may only be modified by the\
+    \ revocation authority itself. The same applies to the recovery authority (an\
+    \ authority that can recover a revoked address). Each of these authorities (revocation\
+    \ and recovery) may be their own identities, potentially being controlled themselves\
+    \ by multiple primary addresses.\n\nDoes that answer your question? Do you have\
+    \ any more questions about VerusIDs, or any of their features in particular?"
+  role: assistant
+- content: '**QUESTION:**
+
+    What are the options to consider when launching a currency on Verus, and how do
+    these options enable customization and control over the currency''s features and
+    behavior?
+
+
+    **ANSWER:**
+
+    When launching a currency on Verus, you have various options to choose from, which
+    enable customization and control over the currency''s features and behavior. These
+    options can be combined to create a currency that suits your specific needs.
+
+
+    **Namespace and VerusID:**
+
+    To launch a currency, you need a namespace, which is a VerusID. This namespace
+    serves as the name of the currency, and can have subIDs, such as product.MyBrand@
+    or user.MyBrand@. Registering a VerusID costs between 20 and 100 VRSC, and launching
+    a currency costs 200 VRSC, both paid in the chain''s native coin to the worldwide
+    miners and stakers.
+
+
+    **Currency Options:**
+
+    You can choose from various options to define your currency, which can be combined
+    by adding their corresponding numbers together in the currency definition. These
+    options include:
+
+
+    1. **Reserves and Convertibility:** With option 1, your currency can have reserves
+    and be convertible to and from those reserves. You can have one currency as its
+    reserve or multiple currencies, up to 10, creating a "Basket currency". This option
+    allows for centralized or decentralized launching.
+
+    2. **Controlled SubIDs:** Option 2 restricts the creation of subIDs to only the
+    controlling VerusID, which is the namespace of the currency (the rootID).
+
+    3. **Referrals and Discounts:** By choosing option 8, you enable referrals and
+    discounts for subID creation.
+
+
+    **Customization and Control:**
+
+    By combining these options, you can create a currency that suits your specific
+    needs. For example, you might want a currency with reserves and convertibility,
+    but only allow the controlling VerusID to create subIDs. You can achieve this
+    by adding options 1 and 2 together in the currency definition.
+
+
+    These options provide a high degree of customization and control over the features
+    and behavior of your currency, allowing you to create a tailored solution for
+    your brand, community, business, or organization.'
+  role: user
+- content: "## Conversation that answers the provided questions:\n**User:**\nHi, I'm\
+    \ considering launching a currency on Verus, and I'd love to know more about the\
+    \ options available. What are the options to consider when launching a currency\uFF70\
+    on Verus, and how do these options enable customization and control over the currency's\
+    \ features and behavior?\n\n**AI Assistant:**\nWhen launching a currency on Verus,\
+    \ you have various options to choose from, which enable customization and control\
+    \ over the currency's features and behavior. These options can be combined to\
+    \ create a currency that suits your specific needs.\n\nLet's break it down. To\
+    \ launch a currency, you need a namespace, which is a VerusID. This namespace\
+    \ serves as the name of the currency, and can have subIDs, such as product.MyBrand@\
+    \ or user.MyBrand@. Registering a VerusID costs between 20 and 100 VRSC, and launching\
+    \ a currency costs 200 VRSC, both paid in the chain's native coin to the worldwide\
+    \ miners and stakers.\n\nNow, when it comes to defining your currency, you have\
+    \ several options to choose from. These options can be combined by adding their\
+    \ corresponding numbers together in the currency definition. Here are some of\
+    \ the key options:\n\n**Currency Options:**\nYou can choose from various options\
+    \ to define your currency. These options include:\n\n1. **Reserves and Convertibility:**\
+    \ With option 1, your currency can have reserves and be convertible to and from\
+    \ those reserves. You can have one currency as its reserve or multiple currencies,\
+    \ up to 10, creating a \"Basket currency\". This option allows for centralized\
+    \ or decentralized launching.\n\n2. **Controlled SubIDs:** Option 2 restricts\
+    \ the creation of subIDs to only the controlling VerusID, which is the namespace\
+    \ of the currency (the rootID).\n\n3. **Referrals and Discounts:** By choosing\
+    \ option 8, you enable referrals and discounts for subID creation.\n\n**Customization\
+    \ and Control:**\nBy combining these options, you can create a currency that suits\
+    \ your specific needs. For example, you might want a currency with reserves and\
+    \ convertibility, but only allow the controlling VerusID to create subIDs. You\
+    \ can achieve this by adding options 1 and 2 together in the currency definition.\n\
+    \nThese options provide a high degree of customization and control over the features\
+    \ and behavior of your currency, allowing you to create a tailored solution for\
+    \ your brand, community, business, or organization.\n\nDo you have any more questions\
+    \ about launching a currency on Verus or these options in particular?"
+  role: assistant
+  timeout: false
