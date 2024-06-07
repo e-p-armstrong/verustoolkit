@@ -5,7 +5,7 @@
 # If running on a single-GPU setup, you must run:
 # conda install -c conda-forge mpi4py mpich
 # Then run this command from the /workspace/axolotl directory:
-# accelerate launch --use_deepspeed -m axolotl.cli.train config_verus_llama3_revision_2.yaml
+# accelerate launch --use_deepspeed -m axolotl.cli.train config_verus_llama3_revision_3_chatml_fix.yaml
 
 # Next up, try not sample packing to handle unexpected pos?
 
@@ -186,9 +186,9 @@ datasets:
     conversation: chatml
 
 dataset_prepared_path: last_run_prepared
-output_dir: ./verus-out
+output_dir: ./verus-out-chatml-fix
 
-sequence_len: 4000
+sequence_len: 4500
 sample_packing: true
 pad_to_sequence_len: true
 

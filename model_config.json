@@ -1,0 +1,52 @@
+{
+  "name": "Config for Chat ID 1717725396293",
+  "load_params": {
+    "n_ctx": 4000,
+    "n_batch": 512,
+    "rope_freq_base": 500000,
+    "rope_freq_scale": 0,
+    "n_gpu_layers": 0,
+    "use_mlock": true,
+    "main_gpu": 0,
+    "tensor_split": [
+      0
+    ],
+    "seed": -1,
+    "f16_kv": true,
+    "use_mmap": true,
+    "no_kv_offload": false,
+    "num_experts_used": 0
+  },
+  "inference_params": {
+    "n_threads": 4,
+    "n_predict": -1,
+    "top_k": 40,
+    "min_p": 0.05,
+    "top_p": 0.9,
+    "temp": 0.05,
+    "repeat_penalty": 1,
+    "input_prefix": "<|im_end|>\\n<|im_start|>user\\n",
+    "input_suffix": "<|im_end|>\\n<|im_start|>assistant\\n",
+    "antiprompt": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ],
+    "pre_prompt": "Perform the task to the best of your ability.",
+    "pre_prompt_suffix": "",
+    "pre_prompt_prefix": "<|im_start|>system\\n",
+    "seed": -1,
+    "tfs_z": 1,
+    "typical_p": 1,
+    "repeat_last_n": 64,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "n_keep": 0,
+    "logit_bias": {},
+    "mirostat": 0,
+    "mirostat_tau": 5,
+    "mirostat_eta": 0.1,
+    "memory_f16": true,
+    "multiline_input": false,
+    "penalize_nl": false
+  }
+}
