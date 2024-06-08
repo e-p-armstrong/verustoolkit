@@ -5,9 +5,11 @@ API:
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
 PATH:
   DEFAULT_PROMPTS: ./prompts
-  INPUT: ./raw_text_input_medium
-  OUTPUT: ./output_medium_openended_2
-  PROMPTS: ./prompts_open_question_mode_medium_override
+  INPUT: ./raw_text_input_wiki
+  OUTPUT: ./output_negative_test
+  PROMPTS: ./prompts_negative_questioning
+SKIP:
+  QUESTION_CHECK: False
 SYSTEM:
   CHUNK_SIZE: 1900
   COMPLETION_MODE: false
@@ -84,5 +86,5 @@ SYSTEM:
     {data}
   MODE: api
   STOP: true
-  SUBSET_SIZE: 10
-  USE_SUBSET: False
+  SUBSET_SIZE: 50
+  USE_SUBSET: True
