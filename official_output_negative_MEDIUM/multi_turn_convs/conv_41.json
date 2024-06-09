@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a few questions about staking my Verus funds. Can I stake them from multiple computers?\n\n**AI Assistant:**\nNo, I would advise against that. You should only stake from a single computer. Staking from multiple computers can lead to problems with accounting for staked funds and unintentional staking. It's best to keep it simple and stick to one computer.\n\n**User:**\nThat makes sense. Is staking enabled by default in the Verus wallet?\n\n**AI Assistant:**\nNo, staking is disabled by default in the Verus wallet. This is actually a safety feature to prevent unintentional staking from multiple computers or creating problems with accounting for staked funds when they\u2019re not expected. You need to manually enable staking in the wallet settings.\n\n**User:**\nGot it! I'll make sure to enable it manually. Can I stake my funds if my wallet is offline or not synced with the Verus blockchain?\n\n**AI Assistant:**\nNo, your wallet must be running, online, and synced to the Verus blockchain in order to stake successfully. Additionally, your system clock must be accurate. If your wallet is offline or not synced, staking won't work. Make sure everything is up and running smoothly before attempting to stake your funds.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I stake my Verus funds from multiple computers?",
+            "No, you should only stake from a single computer. Staking from multiple computers can lead to problems with accounting for staked funds and unintentional staking.",
+            "and synced with the Verus blockchain with staking enabled in order to stake. Addresses/wallets should only be staked from a single computer. By default staking is disabled to prevent unintentionally staking from multiple computers or creating problems with accounting for staked funds when they\u2019re not expected.\nStaking Requirements\nTo stake successfully your wallet must meet these requirements:\nFunds held in one or more transparent addresses or VerusIDs in the wallet\nWallet is running, online, synced to the Verus blockchain on a system with an accurate system clock\nStaking is enabled in the wallet software\nVerus Desktop (GUI) Staking How-To\nTo enable staking in the Verus Desktop wallet you\u2019ll open the wallet and go to the Mining tab. Here on the mining dashboard you can enable staking by clicking the icon of the dollar sign with the slash through it.",
+            "./raw_text_input_medium/Verus Beginner\u2019s Staking Guide-2021-03-09 18:52:46"
+        ],
+        [
+            "Is staking enabled by default in the Verus wallet?",
+            "No, staking is disabled by default in the Verus wallet to prevent unintentional staking from multiple computers or creating problems with accounting for staked funds when they\u2019re not expected.",
+            "and synced with the Verus blockchain with staking enabled in order to stake. Addresses/wallets should only be staked from a single computer. By default staking is disabled to prevent unintentionally staking from multiple computers or creating problems with accounting for staked funds when they\u2019re not expected.\nStaking Requirements\nTo stake successfully your wallet must meet these requirements:\nFunds held in one or more transparent addresses or VerusIDs in the wallet\nWallet is running, online, synced to the Verus blockchain on a system with an accurate system clock\nStaking is enabled in the wallet software\nVerus Desktop (GUI) Staking How-To\nTo enable staking in the Verus Desktop wallet you\u2019ll open the wallet and go to the Mining tab. Here on the mining dashboard you can enable staking by clicking the icon of the dollar sign with the slash through it.",
+            "./raw_text_input_medium/Verus Beginner\u2019s Staking Guide-2021-03-09 18:52:46"
+        ],
+        [
+            "Can I stake my funds if my wallet is offline or not synced with the Verus blockchain?",
+            "No, your wallet must be running, online, and synced to the Verus blockchain in order to stake successfully. Additionally, your system clock must be accurate.",
+            "and synced with the Verus blockchain with staking enabled in order to stake. Addresses/wallets should only be staked from a single computer. By default staking is disabled to prevent unintentionally staking from multiple computers or creating problems with accounting for staked funds when they\u2019re not expected.\nStaking Requirements\nTo stake successfully your wallet must meet these requirements:\nFunds held in one or more transparent addresses or VerusIDs in the wallet\nWallet is running, online, synced to the Verus blockchain on a system with an accurate system clock\nStaking is enabled in the wallet software\nVerus Desktop (GUI) Staking How-To\nTo enable staking in the Verus Desktop wallet you\u2019ll open the wallet and go to the Mining tab. Here on the mining dashboard you can enable staking by clicking the icon of the dollar sign with the slash through it.",
+            "./raw_text_input_medium/Verus Beginner\u2019s Staking Guide-2021-03-09 18:52:46"
+        ]
+    ]
+]

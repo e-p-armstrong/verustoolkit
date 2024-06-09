@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I obtain VRSCTEST coins by purchasing them from a central authority?",
+            "You cannot obtain VRSCTEST coins by purchasing them from a central authority. Instead, you can mine some by yourself or join the Verus Discord and share your receiving address, and friendly test-net whales may give you some for free.",
+            "3 \u2013 Obtain some VRSCTEST coins\nGetting some of your own VRSCTEST is easy, simply mine some by yourself, or hop into the Verus discord and show us your receiving address. Any freindly test-net whales would be happy to give you some for free.\nOnce the syncing progress bar in your wallet loads fully, you\u2019ll be able to see your coins in your balance.3 \u2013 Open the PBaaS create menu\nOnce you\u2019ve got a balance, you\u2019re ready to explore PBaaS! Navigate to the PBaaS tab, and you\u2019ll notice the options to Connect, Discover and create. Connect and Discover allow you to connect to and explore all the chains already created on the testnet. If you\u2019d like to create your own, head to the create tab.4 \u2013 Fill out the create form (Steps 1 \u2013 4)\nFill out the create a chain form to specify exactly what you want, and how you want it. After giving your creation a name, you have a huge number of options that make your chain unique. Do you want a premine? If so, how large? How should your reward schedule be outlined? How much will you reward notaries for securing your chain?\nThe initial amount you pay to start the chain in VRSCTEST will be what you put as the \u201cinitial notarization offer\u201d in step 4 of the form. You\u2019ll need to make sure your balance can cover that.",
+            "./raw_text_input_medium/Imagine You Had an Amazing Blockchain Idea-2019-05-21 00:36:16"
+        ],
+        [
+            "What is the purpose of the \"Connect\" and \"Discover\" options in the PBaaS tab?",
+            "The \"Connect\" and \"Discover\" options in the PBaaS tab allow you to connect to and explore all the chains already created on the testnet, not to create a new chain. If you want to create your own chain, you should head to the \"Create\" tab.",
+            "3 \u2013 Obtain some VRSCTEST coins\nGetting some of your own VRSCTEST is easy, simply mine some by yourself, or hop into the Verus discord and show us your receiving address. Any freindly test-net whales would be happy to give you some for free.\nOnce the syncing progress bar in your wallet loads fully, you\u2019ll be able to see your coins in your balance.3 \u2013 Open the PBaaS create menu\nOnce you\u2019ve got a balance, you\u2019re ready to explore PBaaS! Navigate to the PBaaS tab, and you\u2019ll notice the options to Connect, Discover and create. Connect and Discover allow you to connect to and explore all the chains already created on the testnet. If you\u2019d like to create your own, head to the create tab.4 \u2013 Fill out the create form (Steps 1 \u2013 4)\nFill out the create a chain form to specify exactly what you want, and how you want it. After giving your creation a name, you have a huge number of options that make your chain unique. Do you want a premine? If so, how large? How should your reward schedule be outlined? How much will you reward notaries for securing your chain?\nThe initial amount you pay to start the chain in VRSCTEST will be what you put as the \u201cinitial notarization offer\u201d in step 4 of the form. You\u2019ll need to make sure your balance can cover that.",
+            "./raw_text_input_medium/Imagine You Had an Amazing Blockchain Idea-2019-05-21 00:36:16"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a77f605f-6459-4cf3-80f8-41b38b955a66"
+]

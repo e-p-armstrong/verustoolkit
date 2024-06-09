@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm a bit confused about something. I saw a message that was signed by VerusID.twitter.com. What does that mean?\n\n**AI Assistant:**\nI think there might be some confusion here! It doesn't mean anything, because VerusID.twitter.com is not a valid signer. Messages should be signed by the correct VerusID, which is verus.io, not twitter.com. The correct signer should be verus.io, not twitter.com. Does that clear things up for you?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does it mean when a message is signed by VerusID.twitter.com?",
+            "It doesn't mean anything, because VerusID.twitter.com is not a valid signer. Messages should be signed by the correct VerusID, which is verus.io, not twitter.com.",
+            "ake sure they are signed by the correct VerusID.verus.io",
+            "./raw_text_input_medium/Discord\u2019s Session Hijack Vulnerability and Verus Community\u2019s Response-2023-12-05 00:03:43"
+        ]
+    ]
+]

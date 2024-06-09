@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey there, I've been reading an article by John Westbrook about Verus Coin and I'm curious about it. What is the main topic of John Westbrook's article about Verus Coin?\n\n**AI Assistant:**\nThe article is about Verus Coin and related topics, such as the formation of the Verus Coin Foundation and its vision for PBaaS (Private Blockchain as a Service). Would you like me to summarize the article for you or provide more information on PBaaS?\n\n**User:**\nThat sounds interesting. I'm also curious about John Westbrook himself. What is John Westbrook's experience in the blockchain industry?\n\n**AI Assistant:**\nJohn Westbrook has been involved in blockchain technology for over 2 years. He is a blockchain consultant and has been involved in the industry as an educator, investor, and day trader. He's quite knowledgeable about the blockchain space and has a good understanding of the industry's trends and developments.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the main topic of John Westbrook's article about Verus Coin?",
+            "The article is about Verus Coin and related topics, such as the formation of the Verus Coin Foundation and its vision for PBaaS (Private Blockchain as a Service).",
+            "he Zcash Sapling Upgrade\nBen\u2019s Pocket Guide to VerusCoin for Dummies and Smart People\nKomodo Ecosystem Spotlight: Verus Coin\nKomodo AMA Spotlights VerusCoin\nFormation of The Verus Coin Foundation with a Vision of PBaaS\nAbout the Author\nJohn Westbrook is a blockchain consultant and has been involved in blockchain technology for over 2 years as an educator, investor and day trader.",
+            "./raw_text_input_medium/How to Setup a Verus (VRSC) Staking Server with Email Alerts Using Ubuntu and a $5 DigitalOcean\u2026-2019-06-26 20:35:13"
+        ],
+        [
+            "What is John Westbrook's experience in the blockchain industry?",
+            "John Westbrook has been involved in blockchain technology for over 2 years. He is a blockchain consultant and has been involved in the industry as an educator, investor, and day trader.",
+            "he Zcash Sapling Upgrade\nBen\u2019s Pocket Guide to VerusCoin for Dummies and Smart People\nKomodo Ecosystem Spotlight: Verus Coin\nKomodo AMA Spotlights VerusCoin\nFormation of The Verus Coin Foundation with a Vision of PBaaS\nAbout the Author\nJohn Westbrook is a blockchain consultant and has been involved in blockchain technology for over 2 years as an educator, investor and day trader.",
+            "./raw_text_input_medium/How to Setup a Verus (VRSC) Staking Server with Email Alerts Using Ubuntu and a $5 DigitalOcean\u2026-2019-06-26 20:35:13"
+        ]
+    ]
+]

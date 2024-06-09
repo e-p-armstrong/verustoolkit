@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm trying to import something and I'm wondering, will I see a message in the upper left when the import starts?\n\n**AI Assistant:**\nActually, no, you'll see a message in the lower right when the import starts, not in the upper left. So, keep an eye out for that notification in the lower right corner to know when the import process begins.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Will you see a message in the upper left when the import starts?",
+            "No, you'll see a message in the lower right when the import starts, not in the upper left.",
+            "When the import starts you\u2019ll see a message in the lower right and another when the import has successfully completed:",
+            "./raw_text_input_medium/How to Earn VRSC Mining with Your CPU and Staking Mined Coins!-2019-01-11 19:50:07"
+        ]
+    ]
+]

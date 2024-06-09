@@ -5,8 +5,8 @@ API:
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
 PATH:
   DEFAULT_PROMPTS: ./prompts
-  INPUT: ./raw_text_input_wiki
-  OUTPUT: ./output_negative_WIKI
+  INPUT: ./raw_text_input_medium
+  OUTPUT: ./output_negative_MEDIUM
   PROMPTS: ./prompts_negative_questioning
 SKIP:
   QUESTION_CHECK: False

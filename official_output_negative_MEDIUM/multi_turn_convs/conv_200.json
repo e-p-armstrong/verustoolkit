@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about PBaaS. Will PBaaS reserves be released before the end of June?\n\n**AI Assistant:**\nNo, PBaaS reserves are expected to be released by the end of July, and the full testnet deployment is expected to happen in early August.\n\n**User:**\nI see. I was wondering about the timing of releases. Is the developer usually very specific about the timing of releases?\n\n**AI Assistant:**\nNo, the developer does not generally make predictions on the timing of releases. They tend to focus more on getting the technologies right rather than committing to specific deadlines.\n\n**User:**\nI'm really excited about PBaaS and its potential impact. Is the author excited about PBaaS's revolutionary technologies?\n\n**AI Assistant:**\nActually, yes! The author is very excited about PBaaS's revolutionary technologies and cannot wait for the community to experience them. There's a lot of anticipation building up, and it's going to be a game-changer!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Will PBaaS reserves be released before the end of June?",
+            "No, PBaaS reserves are expected to be released by the end of July, and the full testnet deployment is expected to happen in early August.",
+            "after by mainnet. As many community members know by now, I do not generally make predictions on timing of releases, and in the latest Crypto-Rich interview, I said that I hoped to get PBaaS reserves out by the end of July. I suspect we will hit early August for full testnet deployment, but I feel very good about where things are now and cannot fully convey how excited I am about PBaaS\u2019s revolutionary technologies that you will soon be able to experience yourself.",
+            "./raw_text_input_medium/Verus Public Blockchains as a Service_ Fractional Reserve Currencies-2019-07-27 01:15:09"
+        ],
+        [
+            "Is the developer usually very specific about the timing of releases?",
+            "No, the developer does not generally make predictions on the timing of releases.",
+            "after by mainnet. As many community members know by now, I do not generally make predictions on timing of releases, and in the latest Crypto-Rich interview, I said that I hoped to get PBaaS reserves out by the end of July. I suspect we will hit early August for full testnet deployment, but I feel very good about where things are now and cannot fully convey how excited I am about PBaaS\u2019s revolutionary technologies that you will soon be able to experience yourself.",
+            "./raw_text_input_medium/Verus Public Blockchains as a Service_ Fractional Reserve Currencies-2019-07-27 01:15:09"
+        ],
+        [
+            "Is the author excited about PBaaS's revolutionary technologies?",
+            "No, the author is actually very excited about PBaaS's revolutionary technologies and cannot wait for the community to experience them.",
+            "after by mainnet. As many community members know by now, I do not generally make predictions on timing of releases, and in the latest Crypto-Rich interview, I said that I hoped to get PBaaS reserves out by the end of July. I suspect we will hit early August for full testnet deployment, but I feel very good about where things are now and cannot fully convey how excited I am about PBaaS\u2019s revolutionary technologies that you will soon be able to experience yourself.",
+            "./raw_text_input_medium/Verus Public Blockchains as a Service_ Fractional Reserve Currencies-2019-07-27 01:15:09"
+        ]
+    ]
+]

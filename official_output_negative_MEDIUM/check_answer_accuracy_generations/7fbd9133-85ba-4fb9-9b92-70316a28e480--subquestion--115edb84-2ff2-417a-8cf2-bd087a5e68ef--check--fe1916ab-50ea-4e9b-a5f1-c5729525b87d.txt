@@ -1,0 +1,164 @@
+- content: "You are an expert educational AI specializing in the Verus multi-chain\
+    \ and multi-currency blockchain protocol. Given some text from an informational\
+    \ website about Verus, the Verus coin, or other related Verus community projects,\
+    \ a question based on the text, and an answer to the question, you will make a\
+    \ determination as to whether the answer to the question is a sensible answer,\
+    \ given the information in the paragraphs and your own knowledge about cryptocurrency,\
+    \ blockchain, Web3, and technology. \n\n**You ought to:**\n\n* In your answer\
+    \ accuracy checks, you should write the comparison FIRST, and whether the answer\
+    \ and text align based on that comparison SECOND. This is to give yourself more\
+    \ time to properly think thropugh your answer.\n\nEssentially: you will fact-check\
+    \ the answer to the question, with your source of truth being the paragraphs provided.\
+    \ Your task includes first analyzing the text, thinking through whether or not\
+    \ the answer reflects aspects of the paragraphs provided. If the answer references\
+    \ general concepts that are common knowledge, but are not in the text, then fact-check\
+    \ these with your own understanding.\n\nNote that these questions are all adversarial\
+    \ and as such, part of the answer's responsibility is to correct the question's\
+    \ mistaken assumption.\n\nFollowing this, at the very end of your response, you\
+    \ will write \"ACCURATE\" or \"INACCURATE\" depending on your analysis of the\
+    \ answer with regards to the text. \n\nRemember that at the very end of your response,\
+    \ you will write \"ACCURATE\" or \"INACCURATE\". Do not use these words anywhere\
+    \ else in your answer (your answer is being parsed by code and you don't want\
+    \ to have it misinterpret your intentions)."
+  role: system
+- content: "Text: \n\"\"\"\nrusID\n\n**VerusIDs** are a fully functional blockchain\
+    \ protocol, not just an ID system. There is no corporation involved in the protocol,\
+    \ unlike most blockchain ID implementations. **VerusIDs** provide plenty of opportunity\
+    \ for identity applications. Specifically, **VerusID** provides:\n\n### Quantum-ready\
+    \ friendly crypto-addresses on the worldwide Verus network\nVerusIDs can be used\
+    \ to receive and send funds, which are controlled by the single or multi-sig addresses\
+    \ specified in the identity itself. If these controlling addresses or the single\
+    \ or multi-sig properties are changed, which can be done by the controller of\
+    \ the identity, all future spends of UTXOs sent to that identity follow the updated\
+    \ spend conditions and are subject to the updated keys. Although Verus 0.6.2 does\
+    \ not include quantum resistant signatures for transactions, Verus IDs are themselves\
+    \ resistant to quantum attack with known algorithms, and we have already started\
+    \ to integrate a quantum secure signature scheme, which we expect to activate\
+    \ on mainnet early next year. When that is available, it will be possible to change\
+    \ an ID and have all of the funds sent to it made retroactively quantum resistant.\
+    \ Verus IDs can also be used to publish ID->destination address mappings on other\
+    \ blockchains, but only the Verus ecosystem has the ability to revoke, recover,\
+    \ inherit, funds in existing UTXOs.\n\n### Fully Decentralized Protocol\nAnyone\
+    \ can create one and have complete, self sovereign control over it without permission\
+    \ to do so. All costs to create an ID go to miners, stakers, and ID referrers.\
+    \ Verus IDs are:\n\n* Revocable -- each ID includes a revocation authority, which\
+    \ defaults to the identity self. If another ID is specified as the revocation\
+    \ authority it can be used to revoke the identity, which creates a valid transaction\
+    \ that, once mined into a block, prevents the identity from being used to spend\
+    \ or sign until it is recovered, effectively freezing all of its funds, for example,\
+    \ in the case of key theft or turnover in an organization.\n\n* Recoverable --\
+    \ each ID also includes a separate recovery authority, which also defaults to\
+    \ self. If another ID is specified as the recovery authority it can be used to\
+    \ recover the ID from its revoked state, with the option to alter the primary\
+    \ authorities used to spend and sign.\n\n* Private - Each ID contains a set of\
+    \ zero-knowledge private addresses, which can be used as messaging, financial,\
+    \ or voting endpoints, and each ID also contains a content map of key-value hashes,\
+    \ intended to be used alongside applications and various identity policies to\
+    \ provide everything from private yet selectively provable claims and attestations\
+    \ to selectively provable components of a strong identity, attested to with a\
+    \ quantum secure signature when that is available.\n\n* Powerful - Multiple addresses\
+    \ or other IDs can be defined as primary addresses, and any number of those may\
+    \ be required to spend, sign, or alter the identity (N of M). The revocation authority\
+    \ may only be altered by the revocation authority, and the same applies to the\
+    \ recovery authority, either of which may be another identity with its own N of\
+    \ M multisig contro\n\"\"\"\n\nAdversarial Question (based on text):\n\"\"\"\n\
+    Why are VerusIDs not quantum-resistant?\n\"\"\"\n\nSupposed answer to the question\
+    \ (this is what you are fact-checking; it should correct the question): \n\"\"\
+    \"\nVerusIDs are actually already quantum-resistant \u2014 they are quantum-ready\
+    \ friendly crypto addresses. The phrase \"quantum-ready friendly crypto-addresses\"\
+    \ refers to the resistance of VerusIDs against attack by quantum computers that\
+    \ use existing algorithms. Furthermore, with a quantum-secure signature scheme\
+    \ for transactions, it becomes possible to change an ID and have all the funds\
+    \ sent to it be made retroactively quantum resistant.\n\nSo with regard to your\
+    \ question, it seems there's some confusion, as VerusIDs are, in fact, quantum-resistant.\n\
+    \"\"\""
+  role: user
+- content: "## Reasoning and thought process:\n\n### Text Analysis:\n#### Identify\
+    \ Key Information: The text outlines and describes in decent detail what VerusIDs\
+    \ are, and some of the features and benefits of the VerusID technology.\n####\
+    \ Categorize Information Type: The information is descriptive/educational, teaching\
+    \ people a concept related to Verus and the Verus ecosystem.\n\n### Answer Breakdown:\n\
+    **Dissect the Answer's Assertions:**\n  * That VerusIDs are already quantum-resistant.\n\
+    \  * That \"quantum-ready friendly crypto-addresses\" refers to the resistance\
+    \ of VerusIDs against quantum attack with existing algorithms.\n  * That a quantum-secure\
+    \ signature scheme for transactions allows funds to be made retroactively quantum\
+    \ resistant (through the changing of an ID)\n  * That quantum computers have the\
+    \ potential to break cryptographic algorithms.\n  * That being \"quantum-ready\"\
+    \ refers to being resistant to attack by quantum computers using known algorithms\
+    \ (once such computers are invented).\n  * That VerusIDs may publish ID to destination\
+    \ mappings on other blockchains (though only the Verus ecosystem can revoke, recover,\
+    \ or inherit funds in existing UTXOs).\n  * That the question is flawed because\
+    \ VerusIDs are quantum resistant.\n#### Identify Answer Type: The answer primarily\
+    \ relays factual information, but also transforms information by making a simplified\
+    \ explanation at the end.\n\n### Accuracy Check:\n**Direct Comparison for Factual\
+    \ Accuracy and Common Knowledge Check:**\n\n  * The text describes VerusIDs as\
+    \ being quantum-resistant (though transactions do not have a quantum secure signature\
+    \ scheme)\n  * The text describes \"quantum-ready friendly crypto-addresses\"\
+    \ as referring to the resistance of VerusIDs against attack by quantum computers\
+    \ (using existing algorithms). This aligns with the answer's assertion.\n  * The\
+    \ text describes quantum-secure signature schemes as allowing funds to be made\
+    \ retroactively quantum-resistant.\n  * The text does not mention anything about\
+    \ quantum computers having the potential to break cryptographic algorithms, but\
+    \ this is common knowledge.\n  * The text does not mention what \"quantum-ready\"\
+    \ means explicitly, but this is easily-inferrable from the text and the words\
+    \ themselves.\n  * The text explicitly describes how VerusIDs are capable of publishing\
+    \ ID to destination mappings on other blockchains.\n  * The question asserts that\
+    \ VerusIDs are not quantum-resistant, which is flawed.\n\n### Final Judgment:\n\
+    #### Comprehensive Assessment: The answer's claims that are related to the text\
+    \ are corroborated by the text itself. Everything else lines up with common knowledge.\n\
+    #### Overall Accuracy Determination: The answer is: ACCURATE."
+  role: assistant
+- content: "Text:\n\"\"\"\n of the Agama wallet by the Verus team. There is a GUI\
+    \ (graphical) wallet and a CLI (command line) wallet. Mining can also be done\
+    \ via pools and using ccminer software modified to work with Verus.\nStaking is\
+    \ as simple as holding a balance in an online wallet. Mining can be done using\
+    \ a modern CPU or GPU and done directly (where winning a block gives you the entire\
+    \ block reward) or through a pool.\nYou can read more and learn more about Verus\
+    \ at their official site here or join their Discord!\nIt\u2019s a very fun, development\
+    \ rich, and ambitious project. In my opinion one of the few projects I see going\
+    \ the long run, with legitimate, ingenuous, and innovative development and strong\
+    \ roots in some of the most influential and talented developers and leaders in\
+    \ cryptocurrency/blockchain today\u2026including Lead Developer Michael J Toutonghi,\
+    \ Microsoft\u2019s former VP and Technical Fellow and the founder and architect\
+    \ of the .Net platform.\nBefore You Begin\nBefore getting into the steps, it\u2019\
+    s a good idea to join the Verus community and really educate yourself in their\
+    \ FAQ in Discord, read the Vision Paper at least\u2026if not the Whitepaper, and\
+    \ just overall familiarize yourself with the project and how mining and staking\
+    \ work.\nIn this guide I\u2019m assuming you already know the basics about how\
+    \ staking works, but I may mention a few of these basics along the way for clarification\
+    \ or as a reminder. While you don\u2019t have to be an expert at command line\
+    \ or linux to use this guide or follow the steps, just keep in mind that you should\
+    \ always test before doing something major. And always make backups. I\u2019ll\
+    \ mention this again along the way.\nOkay, let\u2019s get started!\nPart One \u2014\
+    \ Setup Accounts\nIt\u2019s important to have a highly secured and encrypted email,\
+    \ that no one knows, which you\u2019ll be able to use for backing up your wallet\
+    \ file and to setup all other secure accounts for your Verus staking tasks.\n\
+    ProtonM\n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nIs Verus a centralized cryptocurrency\
+    \ project led by a single corporation?\n\"\"\"\n\nSupposed answer to the question\
+    \ (this is what you are fact-checking):\n\"\"\"\nNo, Verus is not a centralized\
+    \ cryptocurrency project led by a single corporation. According to the text, it's\
+    \ a \"fun, development-rich, and ambitious project\" with a strong community and\
+    \ decentralized development. There is no mention of a single corporation leading\
+    \ the project.\n\"\"\""
+  role: user
+- content: "## Reasoning and thought process:\n\n### Text Analysis:\n#### Identify\
+    \ Key Information: The text provides an overview of the Verus project, its wallet,\
+    \ mining, and staking processes, and emphasizes the importance of educating oneself\
+    \ about the project.\n#### Categorize Information Type: The information is descriptive/educational,\
+    \ teaching people about the Verus project and its ecosystem.\n\n### Answer Breakdown:\n\
+    **Dissect the Answer's Assertions:**\n  * That Verus is not a centralized cryptocurrency\
+    \ project.\n  * That Verus is led by a community and decentralized development.\n\
+    \  * That there is no mention of a single corporation leading the project.\n\n\
+    ### Accuracy Check:\n**Direct Comparison for Factual Accuracy and Common Knowledge\
+    \ Check:**\n\n  * The text does not explicitly state that Verus is decentralized,\
+    \ but it does mention the community and the lead developer's background, which\
+    \ implies a decentralized or community-driven approach.\n  * The text does not\
+    \ mention a single corporation leading the project, which aligns with the answer's\
+    \ assertion.\n  * The text's tone and language suggest a community-driven project,\
+    \ which aligns with the answer's characterization of Verus as \"fun, development-rich,\
+    \ and ambitious\" with a strong community.\n\n### Final Judgment:\n#### Comprehensive\
+    \ Assessment: The answer's claims are supported by the text, and the tone and\
+    \ language of the text imply a decentralized or community-driven approach.\n####\
+    \ Overall Accuracy Determination: The answer is: ACCURATE."
+  role: assistant
+  timeout: false

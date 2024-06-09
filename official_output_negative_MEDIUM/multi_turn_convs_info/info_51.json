@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How does the primary authority of a Verus ID work without a revocation authority and recovery authority?",
+            "Actually, the primary authority of a Verus ID does work with a revocation authority and recovery authority. The primary authority is the address that controls the ID, and the revocation authority and recovery authority are additional layers of security that can be used to protect the ID in case of compromise. The revocation authority can revoke the primary authority, effectively preventing the ID from spending or doing much of anything, and the recovery authority can recover the primary authority to a new address, swapping out the compromised private key.",
+            "uthority, assigning it to a new address. The recovery authority can also change the recovery authority.\nSo, for example, say you assigned Alice@ to be the recovery authority for Bob@. If Bob@\u2019s private keys are stolen: After revoking Bob@\u2019s primary authority \u2014and effectively preventing Bob@ from spending or doing much of anything \u2014 the owner of Alice@ could recover Bob@\u2019s primary authority to a different address. Alice@ effectively swaps the addresses that control Bob@. The compromised private key becomes useless and Bob@ becomes fully functional and again with new, secret private keys.\nTogether, the primary authority, revocation authority, and recovery authority help Verus tame the wild power of the private key.\nExample, Part A\nSay Bob@ holds 1000 VRSC, and you want some protection in case Bob@\u2019s private key is lost or stolen. You decide to create a \u201cpaper wallet\u201d to hold an address for the Alice@ ID. Because that address was created in a paper wallet, it\u2019s never exposed to the internet. You give Alice@ both revocation and recovery authority over Bob@.\nNow you can continue to use Bob@ to deposit, to spend currency, to stake, etc. If you ever suspect it of being compromised, you:\nUse Alice@ to revoke Bob@s primary authority.\nCreate a new address.\nUse Alice@ to recover primary authority for Bob@ to the new address. Bob@ has changed his address \u2014 he\u2019s moved houses! His new address contains his 1000 VRSC. The robbery is foiled and all Bob@\u2019s funds are safe.\nWhat if Bob@ was compromised electronically though? Those 1000 VRSC can be spent very quickly. You might not have time to revoke and recover Bob@\u2019s primary authority. Other powers are needed.\nAccounting for Time\nThe Verus protocol allows an ID to be locked or unlocked. When locked, an ID can accept deposits, hold coins and even stake them (awesome), but it cannot spend them.\nHere are the possible \u201clock\u201d states for an ",
+            "./raw_text_input_medium/How Verus Tames the Wild Private Key-2020-10-11 00:02:49"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "29a5c882-e5c1-414d-af20-f48a57c95725"
+]

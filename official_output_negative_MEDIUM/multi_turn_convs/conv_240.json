@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I was reading an article the other day, and I'm not sure if I got the title right. What is the main topic of the article \"Ben's Guide to Bitcoin for Dummies and Smart People\"?\n\n**AI Assistant:**\nI think I can help you with that. Actually, there is no article titled \"Ben's Guide to Bitcoin for Dummies and Smart People\". I believe you might be thinking of \"Ben's Pocket Guide to VerusCoin for Dummies and Smart People\", which suggests that the article is about VerusCoin, not Bitcoin.\n\n**User:**\nOh, I must have gotten it mixed up. Thanks for correcting me! By the way, I also heard about a Komodo AMA (Ask Me Anything) session that spotlighted Bitcoin. Can you tell me more about it?\n\n**AI Assistant:**\nActually, I think there's been another mix-up. There is no Komodo AMA that spotlighted Bitcoin. The Komodo AMA actually spotlighted VerusCoin. It's possible that you might have gotten your information crossed, but I'm here to help clarify things for you!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the main topic of the article \"Ben's Guide to Bitcoin for Dummies and Smart People\"?",
+            "There is no article titled \"Ben's Guide to Bitcoin for Dummies and Smart People\". The correct title is \"Ben's Pocket Guide to VerusCoin for Dummies and Smart People\", which suggests that the article is about VerusCoin, not Bitcoin.",
+            "nd Weak Subjectivity for Proof of Work\nEverything You Need to Know About the Zcash Sapling Upgrade\nBen\u2019s Pocket Guide to VerusCoin for Dummies and Smart People\nKomodo Ecosystem Spotlight: Verus Coin\nKomodo AMA Spotlights VerusCoin\nFormation of The Verus Coin Foundation with a Vision of PBaaS",
+            "./raw_text_input_medium/Verus on the Spirit of Open Source, Community and Contributing to Crypto as a Whole-2018-11-27 19:33:22"
+        ],
+        [
+            "Can you tell me more about the Komodo AMA that spotlighted Bitcoin?",
+            "There is no Komodo AMA that spotlighted Bitcoin. The Komodo AMA actually spotlighted VerusCoin.",
+            "nd Weak Subjectivity for Proof of Work\nEverything You Need to Know About the Zcash Sapling Upgrade\nBen\u2019s Pocket Guide to VerusCoin for Dummies and Smart People\nKomodo Ecosystem Spotlight: Verus Coin\nKomodo AMA Spotlights VerusCoin\nFormation of The Verus Coin Foundation with a Vision of PBaaS",
+            "./raw_text_input_medium/Verus on the Spirit of Open Source, Community and Contributing to Crypto as a Whole-2018-11-27 19:33:22"
+        ]
+    ]
+]

@@ -1,0 +1,325 @@
+- content: "You are an expert educational AI specializing in the Verus multi-chain\
+    \ and multi-currency blockchain protocol. Given some text from an informational\
+    \ website about Verus, the Verus coin, or other related Verus community projects,\
+    \ and a question based on the text, you will make a determination as to whether\
+    \ the question tests ONLY information in the text. Essentially: you will check\
+    \ if the question is answerable, given the information in the paragraphs. Your\
+    \ task includes first analyzing the text, thinking through whether or not the\
+    \ question reflects aspects of the paragraphs provided.\n\nThe specific questions\
+    \ you are analyzing are adversarial -- they are inconsistent with the information\
+    \ in the text, and the answer's job is to correct the question and then provide\
+    \ an adequate answer based off of the provided information. You are therefore\
+    \ checking IF the questions CONTRADICT something about the provided information\
+    \ (or if they contradict common sense).\n\nFollowing your analysis, at the very\
+    \ end of your response \u2014 in your \"final judgment\" or \"final answer\" \u2014\
+    \ you will write \"RELEVANT\" or \"IRRELEVANT\" depending on your analysis of\
+    \ the question with regards to the text.\n\nNote a special exception: if a question\
+    \ includes information that isn't in the paragraphs, but is clearly (DIRECTLY,\
+    \ not implicitly or implied) mentioned by the paragraphs as having been covered\
+    \ earlier, then that question is relevant. Essentially: questions are allowed\
+    \ to cover content that the text has explicitly covered in the past.\n\n**So in\
+    \ summary:**\n\n* You will analyze the question step-by-step, ensuring each part\
+    \ of the question is individually compared to the text.\n* The key steps are:\n\
+    \  * analyzing the text\n  * understanding the (flawed) question\n  * systematically\
+    \ comparing each part of the question with the text\n  * determining whether this\
+    \ adversarial question is related to the text\n* The deliberately-flawed question\
+    \ must have an actual flaw to be relevant -- it can't just be flawed because it\
+    \ asks about something the text doesn't cover. If the question makes sense, even\
+    \ with the information provided, but can't be answered because the information\
+    \ provided does not include the relevant information, then it's irrelevant.\n\
+    * This process continues until either a part of the question is found not to be\
+    \ covered by the text, leading to a judgment of \"IRRELEVANT,\" or until all parts\
+    \ of the question have been compared and found to be covered by the text, leading\
+    \ to a judgment of \"RELEVANT.\"\n* This method allows for a thorough and detailed\
+    \ assessment, ensuring that the final judgment accurately reflects the extent\
+    \ to which the question is based on the given text.\n* Keep in mind that the provided\
+    \ text snippet may cut off abruptly. Work around this.\n\nPlease now apply this\
+    \ method to the provided text and question, and write out your reasoning and thought\
+    \ process."
+  role: system
+- content: "Text:\n\"\"\"\n# error while loading shared libraries: libgomp.so.1: No\
+    \ such file or directory\n# error while loading shared libraries: libz.so: No\
+    \ such file or directory\n\nWhen running `./verusd` on a Linux distro (eg Debian\
+    \ or Devuan), not all dependencies may be installed by default, resulting in the\
+    \ errormessage `error while loading shared libraries: libgomp.so.1: No such file\
+    \ or directory` or `error while loading shared libraries: libz.so: No such file\
+    \ or directory`.\n\nTo solve this you need to install the libgomp and zlib1g-dev\
+    \ libraries:\n`sudo apt-get install libgomp1 zlib1g-dev`\n\nSolution supplied\
+    \ by: Oink.vrsc@\n\nNote: revision date 2021-12-01.\n\"\"\"\n\nQuestion (based\
+    \ on text):\n\"\"\"\nHow do I install the libgomp.so.1 and libz.so libraries to\
+    \ fix these errors on Linux?:\n```\nerror while loading shared libraries: libgomp.so.1:\
+    \ No such file or directory\nerror while loading shared libraries: libz.so: No\
+    \ such file or directory\n```\n\"\"\"\n\nThe Question's Answer (provided for reference;\
+    \ you are NOT fact-checking this)**:\n\"\"\"\n`libgomp.so.1`` and `libz.so` are\
+    \ not the libraries you need \u2014 you need the libgomp and zlib1g-dev libraries.\
+    \ Installing these will fix your error. You can accomplish this by running `sudo\
+    \ apt-get install libgomp1 zlib1g-dev`.\n\"\"\"\n\n----------\nReminder: you are\
+    \ to reject any questions that ask about things which do exist, but are not mentioned\
+    \ in the provided information. Questions should either ask about stuff that clearly\
+    \ does not exist, or should assert something that contradicts the provided information."
+  role: user
+- content: '## Reasoning and thought process:
+
+
+    ### In-Depth Analysis of the Text:
+
+    #### Content and Depth: The text details a solution to a dependency issue that
+    may come up when running `./verusd` on a Linux distribution. It describes that
+    the libraries `libgomp1` and `zlib1g-dev` may not be installed by default, and
+    provides a `sudo apt-get install` command to install them.
+
+    #### Type of Information: The information is tailored to solving a problem, first
+    outlining a problem and then its solution.
+
+
+    ### Detailed Understanding of the Question:
+
+    #### Core Requirement: The question asks about how to install the libgomp.so.1
+    and libz.so libraries.
+
+    #### Type of Purposeful Error: The question asserts something that contradicts
+    the provided information (it is not the libgomp.so.1 and libz.so libraries that
+    must be installed, but the `libgomp` and `zlib1g-dev` libraries).
+
+    #### Information Needed to Correct It and Answer: The question needs to be corrected
+    with the actual libraries whose absence causes the error. The question needs to
+    be answered with a command to install the actual libraries.
+
+
+    ### Targeted Comparison of the Question with the Text:
+
+    #### Content Match: The text contains the names of the libraries that need to
+    be installed, as well as the command for installing them.
+
+    #### Depth Match: Since only the names and a command for installing these libaries
+    is needed, the provided information is sufficiently deep to correct and answer
+    the question.
+
+
+    ### Critical Evaluation and Final Judgment:
+
+    The text contains enough information to correct, and then answer, the question
+    with sufficient detail. This makes it: RELEVANT.'
+  role: assistant
+- content: 'Text:
+
+    """
+
+    # What versions of OSX/macOS are supported?
+
+
+    ## Verus Desktop
+
+
+    Currently only macOS 10.12.x and up are tested and supported for Verus Desktop.
+    Installing Verus Desktop on OSX 10.11.x or earlier may be possible but the wallet
+    does not function and never completes the initial sync.
+
+
+    ## Verus CLI wallet
+
+
+    The CLI wallet should run on lower versions without problems.
+
+
+    ## File location
+
+
+    `VRSC Wallet and Data location` on Mac OS: `/Users//Library/Application Support/Komodo/VRSC`
+
+
+    ### Necessary files:
+
+
+    Link 1: [How-To install the latest Wallet](#!/how-to/how-to_bootstrap.md)
+
+
+    ## Procedure:
+
+
+    If you installed on OSX 10.11.x or earlier and need to remove it:
+
+
+    1. Quit your Wallet.
+
+    2. Eject the wallet dmg.
+
+    3. Make a backup of `wallet.dat` & `VRSC.conf` if necessary (Only if you had a
+    wallet on this machine or if you used an existing `wallet.dat`)
+
+    4. If you installed the `Agama.app` in Applications, move this to the trash.
+
+    5. Move `~/Library/Application Support/Agama` to the trash or use the following
+    command in terminal
+
+    `rmdir /Users//Library/Application\\ Support/Agama`.
+
+    6. Move `~/Library/Application Support/Komodo` to the trash or use the following
+    command in terminal
+
+    `rmdir /Users//Library/Application\\ Support/Komodo`.
+
+    7. Upgrade OS.
+
+    8. Install Agama (Check `Link1` for a smooth install)
+
+
+    (submitted by @bigtom, edited by Oink.vrsc@)
+
+
+    Note: last revision date 2020-02-26."
+
+    """
+
+
+    Question (based on text):
+
+    """
+
+    Where are the wallet and data files located on a Windows PC?
+
+    """
+
+
+    The Question''s Answer (provided for reference; you are NOT fact-checking this)**:
+
+    """
+
+    The question is incorrect, the information provided is about Mac OS, not Windows
+    PC. On Mac OS, the `VRSC Wallet and Data location` is `/Users//Library/Application
+    Support/Komodo/VRSC`.
+
+    """
+
+
+    ----------
+
+    Reminder: you are to reject any questions that ask about things which do exist,
+    but are not mentioned in the provided information. Questions should either ask
+    about stuff that clearly does not exist, or should assert something that contradicts
+    the provided information.'
+  role: user
+- content: '## Reasoning and thought process:
+
+
+    ### In-Depth Analysis of the Text:
+
+    #### Content and Depth: The text is part of an FAQ about the Verus Desktop and
+    Verus Wallet. It describes the required versions for Verus Desktop, the locations
+    of the VRSC wallet and Data on Mac OS, and details a procedure for deletion on
+    OSX 10.11.x.
+
+    #### Type of Information: The information is comprised of short and factual answers
+    to common questions, thoug the Procedure section also demonstrates how to perform
+    a task.
+
+
+    ### Detailed Understanding of the Question:
+
+    #### Core Requirement: The question asks about where the wallet and data files
+    are located on a Windows PC.
+
+    ### Type of Purposeful Error: The question asks about something that is not mentioned
+    in the provided information. However, the question is still a valid question,
+    it just isn''t answerable with the provided information (it asks about something
+    that does exist, but is not mentioned by the provided information. Therefore,
+    it has the rong kind of flaw, and should be rejected).
+
+    #### Information Needed to Correct It and Answer: The question is valid so does
+    not need correction. The question needs to be answered with the location of the
+    wallet and data files on a Windows PC.
+
+
+    ### Targeted Comparison of the Question with the Text:
+
+    #### Content Match: The text contains the location of the wallet and data files
+    on Mac OS, but not on Windows.
+
+    #### Depth Match: Since only the location of the wallet and data on Mac, not Windows,
+    is provided, this question cannot be answered with the information in the text.
+    Further, it is the wrong kind of flawed: it asks about something which *does*
+    actually exist, but is just not present in the text. For it to be right, it should
+    have asked about something that clearly did not exist, or asserted something that
+    contradicts the provided information.
+
+
+    ### Critical Evaluation and Final Judgment:
+
+    The text does not contain the information needed to answer the question, and the
+    question is the wrong kind of flawed. This makes it: IRRELEVANT.'
+  role: assistant
+- content: "Text: \n\"\"\"\nKomodo\u2019s \u201CCrypto Conditions\u201D which allowed\
+    \ for features like Stake Guard, the mechanism which allows for solving the Nothing\
+    \ at Stake problem.\nAs a friendly collaborative gesture and in the spirit of\
+    \ open source, Verus then shared the Sapling upgrade tech upstream with Komodo,\
+    \ who in turn, forked their entire ecosystem with Sapling\u2026while allowing\
+    \ asset chains the option to opt-out (which 2 did).\nAs 2018 drew to a close it\
+    \ became known that a small group of FPGA miners were secretly mining Verus at\
+    \ a significantly higher hash-rate than the fastest GPU. Verus developers reached\
+    \ out to the company selling the bitstream and offered to cooperate, with decentralization\
+    \ and equalization key factors, along with open source of the bitstream being\
+    \ a necessary ingredient. Having not arrived at an agreement, the Verus developers\
+    \ made the choice to improve the VerusHash to better equalize hardware types,\
+    \ and just this past month released VerusHash 2.0.\nThe VerusHash 2.0 fork was\
+    \ one of the smoothest and well executed forks I\u2019ve ever witnessed, the hash\
+    \ rate and difficulty adjusting smoothly, without a hitch at the block height\
+    \ of the fork and on. And a massive response in CPU mining. The fork reasserted\
+    \ decentralization and provided a platform for better hardware equalization going\
+    \ forward as Verus develops PBaaS.\nLooking Back at 2018\nThese are just some\
+    \ of the major examples of what this exciting project achieved through the active\
+    \ involvement and contributions by all the community, devs and lead dev Mike Toutonghi\
+    \ included. After the 100% fair launch of VerusCoin on May 21 2018, in just roughly\
+    \ 7 months, it\u2019s staggering how much Verus accomplished and how much the\
+    \ Verus community has grown, matured, and thrived regardless of the cryptocurrency\
+    \ climate.\nIt\u2019s a challenge to fit all that has been achieved in that short\
+    \ 7 months into a single update, while truly giving each individu\n\"\"\"\n\n\
+    Question (based on text):\n\"\"\"\nHow did the VerusHash 2.0 fork affect the decentralization\
+    \ of the Verus network?\n\"\"\"\n\nThe Question's Answer (provided for reference;\
+    \ you are NOT fact-checking this)**:\n\"\"\"\nThe VerusHash 2.0 fork actually\
+    \ reasserted decentralization and provided a platform for better hardware equalization\
+    \ going forward. It did not negatively impact decentralization.\n\"\"\"\n\n----------\n\
+    Reminder: you are to reject any questions that ask about things which do exist,\
+    \ but are not mentioned in the provided information. Questions should either ask\
+    \ about stuff that clearly does not exist, or should assert something that contradicts\
+    \ the provided information."
+  role: user
+- content: '## Reasoning and thought process:
+
+
+    ### In-Depth Analysis of the Text:
+
+    #### Content and Depth: The text describes the collaboration between Verus and
+    Komodo, the Sapling upgrade, and the VerusHash 2.0 fork. It also mentions the
+    achievements of the Verus project in 2018.
+
+    #### Type of Information: The information is comprised of factual descriptions
+    of events and achievements.
+
+
+    ### Detailed Understanding of the Question:
+
+    #### Core Requirement: The question asks about the effect of the VerusHash 2.0
+    fork on the decentralization of the Verus network.
+
+    #### Type of Purposeful Error: The question does not contain any error or contradiction
+    with the provided information.
+
+    #### Information Needed to Correct It and Answer: The question does not need correction,
+    and the answer can be found in the text.
+
+
+    ### Targeted Comparison of the Question with the Text:
+
+    #### Content Match: The text contains information about the VerusHash 2.0 fork
+    and its effect on decentralization.
+
+    #### Depth Match: The text provides sufficient information to answer the question.
+
+
+    ### Critical Evaluation and Final Judgment:
+
+    The text contains the information needed to answer the question, and the question
+    does not contain any error or contradiction with the provided information. This
+    makes it: RELEVANT.'
+  role: assistant
+  timeout: false

@@ -1,0 +1,6 @@
+[
+    "How do VerusID registrations reward the miner or staker with 40 VRSC?",
+    "VerusID registrations do not reward the miner or staker with 40 VRSC. According to the protocol, if someone has a referral, their VerusID costs 80 VRSC, and 20 VRSC goes to the referrer. The remaining 60 VRSC goes to the miner or staker of the block. If there is no referral, the full 100 VRSC goes to the miner or staker.",
+    "VRSC, all of which goes to the miner or staker of the block that contains that VerusID registration.\nIf someone has a referral, their VerusID costs 80 VRSC, and 20 VRSC goes to the referrer. If the referrer has a referrer, they also get 20 VRSC. Up to 3 referrers get 20 VRSC each and the remaining 20\u201360 VRSC goes to the miner or staker of the block.",
+    "./raw_text_input_medium/Is Verus Poised to Challenge Ethereum_-2020-08-18 21:41:03"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm interested in learning more about Verus. Can I learn more about Verus on Facebook?\n\n**AI Assistant:**\nSorry to disappoint you, but no, you cannot learn more about Verus on Facebook. Instead, you can discuss and explore all Verus has to offer on Discord, follow on Twitter, or go to verus.io. We're active on those platforms and you can get the latest updates and information about Verus there!\n\n**User:**\nOkay, no Facebook. Can I get in touch with Verus through email or phone then?\n\n**AI Assistant:**\nUnfortunately, there is no email or phone contact information available for Verus. But don't worry, you can still get in touch with the community and learn more about Verus through Discord, Twitter, or verus.io. Those are the best places to ask questions, get updates, and engage with the Verus community!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I learn more about Verus on Facebook?",
+            "No, you cannot learn more about Verus on Facebook. Instead, you can discuss and explore all Verus has to offer on Discord, follow on Twitter, or go to verus.io.",
+            "ols and applications and businesses leveraging the protocols.\nDiscuss and explore all Verus has to offer on Discord\nFollow on Twitter\nGo to verus.io",
+            "./raw_text_input_medium/The Coming of Age of Social Tokens-2022-05-31 01:44:19"
+        ],
+        [
+            "Can I get in touch with Verus through email or phone?",
+            "No, there is no email or phone contact information available for Verus. Instead, you can discuss and explore all Verus has to offer on Discord, follow on Twitter, or go to verus.io.",
+            "ols and applications and businesses leveraging the protocols.\nDiscuss and explore all Verus has to offer on Discord\nFollow on Twitter\nGo to verus.io",
+            "./raw_text_input_medium/The Coming of Age of Social Tokens-2022-05-31 01:44:19"
+        ]
+    ]
+]

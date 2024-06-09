@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got some ideas about Verus that I'd like to share with the community. How can I share my ideas on the Verus forum?\n\n**AI Assistant:**\nActually, we don't have a forum, but you can share your ideas and join the discussion on the Verus Discord instead! You can access it at Verus.io/discord. It's a great place to connect with the community, ask questions, and share your thoughts.\n\n**User:**\nThat's great, thanks for letting me know! I've also encountered a bug while using Verus, and I was wondering if there's a way to submit a bug report on the Verus website?\n\n**AI Assistant:**\nUnfortunately, there's no way to submit a bug report directly on the Verus website. However, you can still report the bug and get help by joining the discussion on the Verus Discord. You can share the details of the bug you encountered, and our community and developers will be happy to assist you. Just head over to Verus.io/discord and let us know what's going on!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I share my ideas on the Verus forum?",
+            "You can share your ideas and join the discussion on the Verus Discord, not a forum. The correct platform to do so is Verus.io/discord.",
+            "Join the discussion & share your ideas on Verus.io/discord",
+            "./raw_text_input_medium/Bootstrap Your Genius Idea on Verus-2020-09-03 23:47:28"
+        ],
+        [
+            "Is there a way to submit a bug report on the Verus website?",
+            "No, there is no way to submit a bug report on the Verus website. Instead, you can join the discussion and share your ideas on the Verus Discord, which can be accessed at Verus.io/discord.",
+            "Join the discussion & share your ideas on Verus.io/discord",
+            "./raw_text_input_medium/Bootstrap Your Genius Idea on Verus-2020-09-03 23:47:28"
+        ]
+    ]
+]

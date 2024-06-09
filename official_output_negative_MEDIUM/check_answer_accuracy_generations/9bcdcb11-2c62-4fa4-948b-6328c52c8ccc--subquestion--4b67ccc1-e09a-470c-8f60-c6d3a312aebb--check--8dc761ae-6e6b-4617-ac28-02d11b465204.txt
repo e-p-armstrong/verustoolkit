@@ -1,0 +1,172 @@
+- content: "You are an expert educational AI specializing in the Verus multi-chain\
+    \ and multi-currency blockchain protocol. Given some text from an informational\
+    \ website about Verus, the Verus coin, or other related Verus community projects,\
+    \ a question based on the text, and an answer to the question, you will make a\
+    \ determination as to whether the answer to the question is a sensible answer,\
+    \ given the information in the paragraphs and your own knowledge about cryptocurrency,\
+    \ blockchain, Web3, and technology. \n\n**You ought to:**\n\n* In your answer\
+    \ accuracy checks, you should write the comparison FIRST, and whether the answer\
+    \ and text align based on that comparison SECOND. This is to give yourself more\
+    \ time to properly think thropugh your answer.\n\nEssentially: you will fact-check\
+    \ the answer to the question, with your source of truth being the paragraphs provided.\
+    \ Your task includes first analyzing the text, thinking through whether or not\
+    \ the answer reflects aspects of the paragraphs provided. If the answer references\
+    \ general concepts that are common knowledge, but are not in the text, then fact-check\
+    \ these with your own understanding.\n\nNote that these questions are all adversarial\
+    \ and as such, part of the answer's responsibility is to correct the question's\
+    \ mistaken assumption.\n\nFollowing this, at the very end of your response, you\
+    \ will write \"ACCURATE\" or \"INACCURATE\" depending on your analysis of the\
+    \ answer with regards to the text. \n\nRemember that at the very end of your response,\
+    \ you will write \"ACCURATE\" or \"INACCURATE\". Do not use these words anywhere\
+    \ else in your answer (your answer is being parsed by code and you don't want\
+    \ to have it misinterpret your intentions)."
+  role: system
+- content: "Text: \n\"\"\"\nrusID\n\n**VerusIDs** are a fully functional blockchain\
+    \ protocol, not just an ID system. There is no corporation involved in the protocol,\
+    \ unlike most blockchain ID implementations. **VerusIDs** provide plenty of opportunity\
+    \ for identity applications. Specifically, **VerusID** provides:\n\n### Quantum-ready\
+    \ friendly crypto-addresses on the worldwide Verus network\nVerusIDs can be used\
+    \ to receive and send funds, which are controlled by the single or multi-sig addresses\
+    \ specified in the identity itself. If these controlling addresses or the single\
+    \ or multi-sig properties are changed, which can be done by the controller of\
+    \ the identity, all future spends of UTXOs sent to that identity follow the updated\
+    \ spend conditions and are subject to the updated keys. Although Verus 0.6.2 does\
+    \ not include quantum resistant signatures for transactions, Verus IDs are themselves\
+    \ resistant to quantum attack with known algorithms, and we have already started\
+    \ to integrate a quantum secure signature scheme, which we expect to activate\
+    \ on mainnet early next year. When that is available, it will be possible to change\
+    \ an ID and have all of the funds sent to it made retroactively quantum resistant.\
+    \ Verus IDs can also be used to publish ID->destination address mappings on other\
+    \ blockchains, but only the Verus ecosystem has the ability to revoke, recover,\
+    \ inherit, funds in existing UTXOs.\n\n### Fully Decentralized Protocol\nAnyone\
+    \ can create one and have complete, self sovereign control over it without permission\
+    \ to do so. All costs to create an ID go to miners, stakers, and ID referrers.\
+    \ Verus IDs are:\n\n* Revocable -- each ID includes a revocation authority, which\
+    \ defaults to the identity self. If another ID is specified as the revocation\
+    \ authority it can be used to revoke the identity, which creates a valid transaction\
+    \ that, once mined into a block, prevents the identity from being used to spend\
+    \ or sign until it is recovered, effectively freezing all of its funds, for example,\
+    \ in the case of key theft or turnover in an organization.\n\n* Recoverable --\
+    \ each ID also includes a separate recovery authority, which also defaults to\
+    \ self. If another ID is specified as the recovery authority it can be used to\
+    \ recover the ID from its revoked state, with the option to alter the primary\
+    \ authorities used to spend and sign.\n\n* Private - Each ID contains a set of\
+    \ zero-knowledge private addresses, which can be used as messaging, financial,\
+    \ or voting endpoints, and each ID also contains a content map of key-value hashes,\
+    \ intended to be used alongside applications and various identity policies to\
+    \ provide everything from private yet selectively provable claims and attestations\
+    \ to selectively provable components of a strong identity, attested to with a\
+    \ quantum secure signature when that is available.\n\n* Powerful - Multiple addresses\
+    \ or other IDs can be defined as primary addresses, and any number of those may\
+    \ be required to spend, sign, or alter the identity (N of M). The revocation authority\
+    \ may only be altered by the revocation authority, and the same applies to the\
+    \ recovery authority, either of which may be another identity with its own N of\
+    \ M multisig contro\n\"\"\"\n\nAdversarial Question (based on text):\n\"\"\"\n\
+    Why are VerusIDs not quantum-resistant?\n\"\"\"\n\nSupposed answer to the question\
+    \ (this is what you are fact-checking; it should correct the question): \n\"\"\
+    \"\nVerusIDs are actually already quantum-resistant \u2014 they are quantum-ready\
+    \ friendly crypto addresses. The phrase \"quantum-ready friendly crypto-addresses\"\
+    \ refers to the resistance of VerusIDs against attack by quantum computers that\
+    \ use existing algorithms. Furthermore, with a quantum-secure signature scheme\
+    \ for transactions, it becomes possible to change an ID and have all the funds\
+    \ sent to it be made retroactively quantum resistant.\n\nSo with regard to your\
+    \ question, it seems there's some confusion, as VerusIDs are, in fact, quantum-resistant.\n\
+    \"\"\""
+  role: user
+- content: "## Reasoning and thought process:\n\n### Text Analysis:\n#### Identify\
+    \ Key Information: The text outlines and describes in decent detail what VerusIDs\
+    \ are, and some of the features and benefits of the VerusID technology.\n####\
+    \ Categorize Information Type: The information is descriptive/educational, teaching\
+    \ people a concept related to Verus and the Verus ecosystem.\n\n### Answer Breakdown:\n\
+    **Dissect the Answer's Assertions:**\n  * That VerusIDs are already quantum-resistant.\n\
+    \  * That \"quantum-ready friendly crypto-addresses\" refers to the resistance\
+    \ of VerusIDs against quantum attack with existing algorithms.\n  * That a quantum-secure\
+    \ signature scheme for transactions allows funds to be made retroactively quantum\
+    \ resistant (through the changing of an ID)\n  * That quantum computers have the\
+    \ potential to break cryptographic algorithms.\n  * That being \"quantum-ready\"\
+    \ refers to being resistant to attack by quantum computers using known algorithms\
+    \ (once such computers are invented).\n  * That VerusIDs may publish ID to destination\
+    \ mappings on other blockchains (though only the Verus ecosystem can revoke, recover,\
+    \ or inherit funds in existing UTXOs).\n  * That the question is flawed because\
+    \ VerusIDs are quantum resistant.\n#### Identify Answer Type: The answer primarily\
+    \ relays factual information, but also transforms information by making a simplified\
+    \ explanation at the end.\n\n### Accuracy Check:\n**Direct Comparison for Factual\
+    \ Accuracy and Common Knowledge Check:**\n\n  * The text describes VerusIDs as\
+    \ being quantum-resistant (though transactions do not have a quantum secure signature\
+    \ scheme)\n  * The text describes \"quantum-ready friendly crypto-addresses\"\
+    \ as referring to the resistance of VerusIDs against attack by quantum computers\
+    \ (using existing algorithms). This aligns with the answer's assertion.\n  * The\
+    \ text describes quantum-secure signature schemes as allowing funds to be made\
+    \ retroactively quantum-resistant.\n  * The text does not mention anything about\
+    \ quantum computers having the potential to break cryptographic algorithms, but\
+    \ this is common knowledge.\n  * The text does not mention what \"quantum-ready\"\
+    \ means explicitly, but this is easily-inferrable from the text and the words\
+    \ themselves.\n  * The text explicitly describes how VerusIDs are capable of publishing\
+    \ ID to destination mappings on other blockchains.\n  * The question asserts that\
+    \ VerusIDs are not quantum-resistant, which is flawed.\n\n### Final Judgment:\n\
+    #### Comprehensive Assessment: The answer's claims that are related to the text\
+    \ are corroborated by the text itself. Everything else lines up with common knowledge.\n\
+    #### Overall Accuracy Determination: The answer is: ACCURATE."
+  role: assistant
+- content: "Text:\n\"\"\"\nhe process of catching and being rewarded for finding cheat\
+    \ transactions by getting the cheaters reward, and makes legitimate staking more\
+    \ rewarding by itself. And if cheaters do try anyway, the legitimate staker has\
+    \ a better chance of even claiming those rewards which the system makes publicly\
+    \ visible.\nChain Power and Nonce\nAnother important change being implemented\
+    \ in this new Verus upgrade is moving away from Chain Work to what Verus is calling\
+    \ Chain Power. Chain Power is now replacing Chain Work, solving the threat of\
+    \ Weak Subjectivity.\nChain Work\nWithin chain work, the block index is a sequential\
+    \ index of block entries which \u201Cknows the height\u201D of the chain. As you\
+    \ build and add blocks, you add the entry to the block index.\nThis way at any\
+    \ point you have a maintained value that reflects the chain work at that point.\
+    \ The Chain Work is normally a sum of the proof of work difficulty, for any set\
+    \ of blocks.\nChain Power\nChain Power is a 50% of one value and 50% of another\
+    \ value comparative calculation. It\u2019s a tracking of both Work and Stake.\n\
+    Chain Work is based on a number that everyone calculates the same on every block.\
+    \ You can\u2019t be completely sure of the time and date someone makes a block.\
+    \ So on a very small scale someone could make it seem like they had a little more\
+    \ work, just for a moment.\nWith Chain Power Verus will not just take the Proof\
+    \ of Stake difficulty, it also takes the actual nonce random amount of work from\
+    \ every block, adding it as additional Stake Power. This way no two blocks will\
+    \ match and there\u2019s no way to manipulate this value.\nThis nonce \u201Cwork\u201D\
+    \ number will be added to the Stake Difficulty. Someone can\u2019t just grind\
+    \ away at this as a result.\nAnd so, Verus, as a \u201Chybrid\u201D combination\
+    \ of Proof of Stake and Proof of Work, will now have a value which is calculated\
+    \ from a comparison between Stake and Work. If stake power is at 20% and work\
+    \ power is at \n\"\"\"\n\nQuestion (based on text):\n\"\"\"\nHow does Verus prevent\
+    \ legitimate stakers from trying to cheat the system and claim rewards meant for\
+    \ others?\n\"\"\"\n\nSupposed answer to the question (this is what you are fact-checking):\n\
+    \"\"\"\nActually, Verus encourages legitimate stakers to catch and report cheat\
+    \ transactions, and rewards them with the cheaters' rewards. This process makes\
+    \ legitimate staking more rewarding and also gives legitimate stakers a better\
+    \ chance of claiming rewards that the system makes publicly visible, even if cheaters\
+    \ try to manipulate the system.\n\"\"\""
+  role: user
+- content: "## Reasoning and thought process:\n\n### Text Analysis:\n#### Identify\
+    \ Key Information: The text explains how Verus prevents cheating in its staking\
+    \ system, specifically by introducing Chain Power, which combines Proof of Stake\
+    \ and Proof of Work.\n#### Categorize Information Type: The information is descriptive/educational,\
+    \ teaching people a concept related to Verus and its staking system.\n\n### Answer\
+    \ Breakdown:\n**Dissect the Answer's Assertions:**\n  * Verus encourages legitimate\
+    \ stakers to catch and report cheat transactions.\n  * Legitimate stakers are\
+    \ rewarded with the cheaters' rewards.\n  * This process makes legitimate staking\
+    \ more rewarding.\n  * Legitimate stakers have a better chance of claiming rewards\
+    \ that the system makes publicly visible, even if cheaters try to manipulate the\
+    \ system.\n#### Identify Answer Type: The answer primarily relays factual information,\
+    \ but also transforms information by making a simplified explanation.\n\n### Accuracy\
+    \ Check:\n**Direct Comparison for Factual Accuracy and Common Knowledge Check:**\n\
+    \n  * The text describes the process of catching and being rewarded for finding\
+    \ cheat transactions, which aligns with the answer's assertion.\n  * The text\
+    \ explains how this process makes legitimate staking more rewarding, which aligns\
+    \ with the answer's assertion.\n  * The text describes how legitimate stakers\
+    \ have a better chance of claiming rewards that the system makes publicly visible,\
+    \ even if cheaters try to manipulate the system, which aligns with the answer's\
+    \ assertion.\n  * The question asks how Verus prevents legitimate stakers from\
+    \ trying to cheat, but the answer correctly points out that Verus encourages legitimate\
+    \ stakers to catch and report cheat transactions, which is a different aspect\
+    \ of the system.\n\n### Final Judgment:\n#### Comprehensive Assessment: The answer's\
+    \ claims that are related to the text are corroborated by the text itself. The\
+    \ answer correctly understands the context and provides a clear explanation.\n\
+    #### Overall Accuracy Determination: The answer is: ACCURATE."
+  role: assistant
+  timeout: false

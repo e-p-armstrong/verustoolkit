@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in staking, but I don't want to download the Verus Agama wallet. Is there a way to start staking without it?\n\n**AI Assistant:**\nI'm afraid not. To start staking, you'll need to download and set up the Verus Agama wallet. It's a necessary step to participate in the Verus blockchain and begin staking. You can download the portable Verus enhanced Agama for your OS from https://veruscoin.io/#download.\n\n**User:**\nOkay, I've downloaded the wallet. Now, what's the purpose of choosing \"BTC\" from the \"Native mode\" dropdown in the Verus Agama wallet?\n\n**AI Assistant:**\nActually, you shouldn't choose \"BTC\" from the dropdown. When opening Verus enhanced Agama, you need to choose VRSC from the \"Native mode\" drop down to proceed with setting up your wallet for staking and participating in the Verus blockchain. Choosing VRSC is the correct option to get started with Verus.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I start staking without downloading the Verus Agama wallet?",
+            "You can't start staking without downloading the Verus Agama wallet. To begin, you need to download and unzip the portable Verus enhanced Agama for your OS from https://veruscoin.io/#download. Then, open Verus enhanced Agama, choose VRSC from the \"Native mode\" drop down, and proceed from there.",
+            "e of the best ways to participate in the decentralization and securing of the Verus blockchain and you earn VRSC for it! Also, by enabling Staking in the Verus Agama wallet, mined coins can begin earning you even more Verus Coin (after shielding and unshielding them, details in Part 4).\nOkay let\u2019s begin!\nStep 1\nDownload and unzip the portable Verus enhanced Agama for your OS at https://veruscoin.io/#download\nOpen Verus enhanced Agama and on the first screen, choose VRSC from the \u201cNative mode\u201d drop down and at the next screen, you\u2019ll see that the chain is loading\u2026and notice in the upper left it will say \u201cNative\u201d:",
+            "./raw_text_input_medium/How to Earn VRSC Mining with Your CPU and Staking Mined Coins!-2019-01-11 19:50:07"
+        ],
+        [
+            "What is the purpose of choosing \"BTC\" from the \"Native mode\" dropdown in the Verus Agama wallet?",
+            "The correct choice is VRSC, not BTC. When opening Verus enhanced Agama, you need to choose VRSC from the \"Native mode\" drop down to proceed with setting up your wallet for staking and participating in the Verus blockchain.",
+            "e of the best ways to participate in the decentralization and securing of the Verus blockchain and you earn VRSC for it! Also, by enabling Staking in the Verus Agama wallet, mined coins can begin earning you even more Verus Coin (after shielding and unshielding them, details in Part 4).\nOkay let\u2019s begin!\nStep 1\nDownload and unzip the portable Verus enhanced Agama for your OS at https://veruscoin.io/#download\nOpen Verus enhanced Agama and on the first screen, choose VRSC from the \u201cNative mode\u201d drop down and at the next screen, you\u2019ll see that the chain is loading\u2026and notice in the upper left it will say \u201cNative\u201d:",
+            "./raw_text_input_medium/How to Earn VRSC Mining with Your CPU and Staking Mined Coins!-2019-01-11 19:50:07"
+        ]
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about Consensus 2022. How can I get a 50% discount on my ticket by joining the Verus Discord channel?\n\n**AI Assistant:**\nActually, you can get a 25% discount on your Consensus 2022 ticket, not 50%, by joining the Verus Discord channel and asking for the discount code in #marketing. Would you like more information on how to join the Discord channel or get the discount code?\n\n**User:**\nAlso, I was wondering, what's the booth number where the Verus Protocol will be showcased at Consensus 2023?\n\n**AI Assistant:**\nThe Verus Protocol will be showcased at booth 242, but it's at Consensus 2022, not Consensus 2023. Consensus 2022 takes place in Austin, Texas from June 9 to June 12. You might want to mark your calendar for that!\n\n**User:**\nOne more question, who is the author of the article about Consensus 2022?\n\n**AI Assistant:**\nThe author of the article is Michele, a Verus Community Member, not a member of the Verus development team or a random author. Michele did a great job writing about Consensus 2022, and I'm sure you'll find the article informative!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I get a 50% discount on my Consensus 2022 ticket by joining the Verus Discord channel?",
+            "You can actually get a 25% discount on your Consensus 2022 ticket, not 50%, by joining the Verus Discord channel and asking for the discount code in #marketing.",
+            "Consensus 2022\nThe Verus Protocol will be on display in booth 242 at the upcoming Consensus 2022 that takes place in Austin, Texas June 9 \u2014 June 12. Get a 25 percent discount on your Consensus 2022 ticket if you join the Discord channel, and ask for the discount code in #marketing.\nWritten by Michele, a Verus Community Member",
+            "./raw_text_input_medium/Fidelity\u2019s Center for Applied Technology Recognizes the Verus Protocol with Its \u2018Inspiration Award\u2019-2022-04-19 16:32:34"
+        ],
+        [
+            "What is the booth number where the Verus Protocol will be showcased at Consensus 2023?",
+            "The Verus Protocol will be showcased at booth 242, but it's at Consensus 2022, not Consensus 2023. Consensus 2022 takes place in Austin, Texas from June 9 to June 12.",
+            "Consensus 2022\nThe Verus Protocol will be on display in booth 242 at the upcoming Consensus 2022 that takes place in Austin, Texas June 9 \u2014 June 12. Get a 25 percent discount on your Consensus 2022 ticket if you join the Discord channel, and ask for the discount code in #marketing.\nWritten by Michele, a Verus Community Member",
+            "./raw_text_input_medium/Fidelity\u2019s Center for Applied Technology Recognizes the Verus Protocol with Its \u2018Inspiration Award\u2019-2022-04-19 16:32:34"
+        ],
+        [
+            "Who is the author of the article about Consensus 2022?",
+            "The author of the article is Michele, a Verus Community Member, not a member of the Verus development team or a random author.",
+            "Consensus 2022\nThe Verus Protocol will be on display in booth 242 at the upcoming Consensus 2022 that takes place in Austin, Texas June 9 \u2014 June 12. Get a 25 percent discount on your Consensus 2022 ticket if you join the Discord channel, and ask for the discount code in #marketing.\nWritten by Michele, a Verus Community Member",
+            "./raw_text_input_medium/Fidelity\u2019s Center for Applied Technology Recognizes the Verus Protocol with Its \u2018Inspiration Award\u2019-2022-04-19 16:32:34"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm interested in mining on the Verus network. How do I start mining?\n\n**AI Assistant:**\nTo start mining, you need to issue the command `./run`. This will start the mining process and connect you to the luckpool.net mining pool. Simple as that!\n\n**User:**\nThanks for the help. I did notice a warning when I was setting up to mine. Is there a warning about potential disk space impact when mining on the Verus network?\n\n**AI Assistant:**\nActually, no. The warning is actually about potential battery impact, not disk space impact. It says \"(WARNING! may have battery impact)\" when mentioning the command to start mining. So, you should be aware of that before you start mining.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I start mining on the Verus network?",
+            "To start mining, you need to issue the command `./run`. This will start the mining process and connect you to the luckpool.net mining pool.",
+            " your device carefully.\n(WARNING! may have battery impact)\nto Start mining just issue the command `./run`\nccminer start Verushashing to luckpool.net\nUseful links about Verus :\n-Veruscoin Foundation * Veruscoin Explorer *- GitHub repo\n- Official twitter *- Community twitter *- Community YouTube \n*- Community facebook *- Community website *- Countdown website",
+            "./raw_text_input_medium/Mining VerusCoin On Smartphone-2023-03-04 18:16:58"
+        ],
+        [
+            "Is there a warning about potential disk space impact when mining on the Verus network?",
+            "No, the warning is actually about potential battery impact, not disk space impact. It says \"(WARNING! may have battery impact)\" when mentioning the command to start mining.",
+            " your device carefully.\n(WARNING! may have battery impact)\nto Start mining just issue the command `./run`\nccminer start Verushashing to luckpool.net\nUseful links about Verus :\n-Veruscoin Foundation * Veruscoin Explorer *- GitHub repo\n- Official twitter *- Community twitter *- Community YouTube \n*- Community facebook *- Community website *- Countdown website",
+            "./raw_text_input_medium/Mining VerusCoin On Smartphone-2023-03-04 18:16:58"
+        ]
+    ]
+]

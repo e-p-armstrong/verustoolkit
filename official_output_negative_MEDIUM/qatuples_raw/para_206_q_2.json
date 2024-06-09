@@ -1,0 +1,6 @@
+[
+    "Is there a warning about potential disk space impact when mining on the Verus network?",
+    "No, the warning is actually about potential battery impact, not disk space impact. It says \"(WARNING! may have battery impact)\" when mentioning the command to start mining.",
+    " your device carefully.\n(WARNING! may have battery impact)\nto Start mining just issue the command `./run`\nccminer start Verushashing to luckpool.net\nUseful links about Verus :\n-Veruscoin Foundation * Veruscoin Explorer *- GitHub repo\n- Official twitter *- Community twitter *- Community YouTube \n*- Community facebook *- Community website *- Countdown website",
+    "./raw_text_input_medium/Mining VerusCoin On Smartphone-2023-03-04 18:16:58"
+]
