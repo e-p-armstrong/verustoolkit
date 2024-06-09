@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been playing around with creating a new currency on Verus, and I have a few questions. Can anyone mint new coins in the \"mycoin\" currency that I created?\n\n**AI Assistant:**\nNo, not anyone can mint new coins in the \"mycoin\" currency. Only the controller of the chain ID can mint new coins, since `proofprotocol` is set to 2 (PROOF_CHAINID). This ensures that only the authorized entity can control the supply of \"mycoin\". Does that make sense?\n\n**User:**\nThat makes sense. I also have a question about the `definecurrency` command. What is the purpose of the `minpreconversion` parameter?\n\n**AI Assistant:**\nThe `minpreconversion` parameter specifies the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin, respectively. This sets a threshold for the conversion process, ensuring that a certain amount of the underlying assets is required to create a new unit of \"mycoin\". Does that clarify things for you?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can anyone mint new coins in the \"mycoin\" currency?",
+            "No, not anyone can mint new coins in the \"mycoin\" currency. Only the controller of the chain ID can mint new coins, since `proofprotocol` is set to 2 (PROOF_CHAINID).",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `minpreconversion` parameter in the `definecurrency` command?",
+            "The `minpreconversion` parameter specifies the minimum amounts of VRSCTEST and GOLD needed to convert to mycoin, respectively.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

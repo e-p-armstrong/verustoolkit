@@ -1,0 +1,6 @@
+[
+    "Does Verus protocol process transactions serially, in order, within a block?",
+    "No, the Verus protocol doesn't process transactions serially, in order, within a block. Instead, it solves all transactions \"simultaneously\" within a block, which eliminates front-running, back-running, and sandwich attacks, and provides other benefits like enhanced liquidity and fair pricing.",
+    "* Increased security at the protocol level - Verus DeFi is implemented in the protocol as part of the consensus, following the fundamental systems design principle which says that the most important security layers should be located in the system/protocol itself.\n\n## MEV-resistance\n\nThe Verus protocol solves all transactions ``simultaneously`` within a block (as opposed to serially, in order, as is done on Ethereum and all other systems which use the VM-model). This has important implications for security, fairness, and efficiency:\n\n* Elimination of front-running, back-running and sandwich attacks.\n\n* Enhancing system-wide liquidity, thus reducing slippage, as conversions going to and from any given currency within the same block are offset against each other.\n\n* Providing all users converting to and from a currency within the same block the same fair price with no spread.",
+    "./raw_text_input_docs/README_sendcurrency.md"
+]

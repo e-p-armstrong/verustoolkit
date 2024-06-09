@@ -1,0 +1,6 @@
+[
+    "What is the default index used by the `getblockhash` command if you don't provide one?",
+    "The `getblockhash` command requires an index as a mandatory argument. If you don't provide an index, it will not work. There is no default index used by the command.",
+    "getblockhash index\n\nReturns hash of block in best-block-chain at index provided.\n\nArguments:\n1. index     (numeric, required) The block index\n\nResult:\n\"hash\"     (string) The block hash\n\nExamples:\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblockhash"
+]

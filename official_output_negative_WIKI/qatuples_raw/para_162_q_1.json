@@ -1,0 +1,6 @@
+[
+    "Can I use the `getblocktemplate` method to retrieve a list of all transactions in the blockchain?",
+    "No, the `getblocktemplate` method does not return a list of all transactions in the blockchain. It returns a JSON object containing information about the next block to be mined, including the block size limit, current timestamp, compressed target of the next block, and the height of the next block. If you need to retrieve a list of transactions, you would need to use a different method or API call.",
+    "mit\" : n,          (numeric) limit of block size\n \"curtime\" : ttt,          (numeric) current timestamp in seconds since epoch (Jan 1 1970 GMT)\n \"bits\" : \"xxx\",          (string) compressed target of next block\n \"height\" : n            (numeric) The height of the next block\n}\n```\nExamples:\n```bash\n> verus getblocktemplate\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about using the `verifysignature` method with XML RPC. How do I use it instead of JSON RPC?\n\n**AI Assistant:**\nActually, the example provided uses JSON RPC, not XML RPC. To use the `verifysignature` method, you need to use JSON RPC, which is the format specified in the example. The correct format is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifysignature\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThere is no XML RPC example provided. Do you have any other questions about using the `verifysignature` method?\n\n**User:**\nAnother question, what is the default port number used by the `verifysignature` method?\n\n**AI Assistant:**\nThe example provided uses port number 27486, which is not a default port number. You need to specify the correct port number used by your RPC server. In this case, the port number is 27486, but it may be different for your setup. You'll need to check your specific configuration to determine the correct port number. Do you have any other questions about the `verifysignature` method or RPC settings?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `verifysignature` method with XML RPC instead of JSON RPC?",
+            "The example provided uses JSON RPC, not XML RPC. To use the `verifysignature` method, you need to use JSON RPC, which is the format specified in the example. The correct format is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifysignature\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThere is no XML RPC example provided.",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifysignature\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/verifysignature"
+        ],
+        [
+            "What is the default port number used by the `verifysignature` method?",
+            "The example provided uses port number 27486, which is not a default port number. You need to specify the correct port number used by your RPC server. In this case, the port number is 27486, but it may be different for your setup.",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifysignature\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/verifysignature"
+        ]
+    ]
+]

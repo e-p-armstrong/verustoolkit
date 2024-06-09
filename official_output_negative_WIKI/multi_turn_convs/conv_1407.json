@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm trying to use the Verus CLI wallet, but I'm having some trouble. Is the Verus CLI wallet documentation still in development and not yet updated to the latest version?\n\n**AI Assistant:**\nNo, the Verus CLI wallet documentation is already updated to version 1.2.2-4. You should be able to find the latest information you need there. In fact, there's a note that says \"UPDATED to v1.2.2-4\" next to the links to the Verusd options list and Verus command list, indicating that the documentation is up-to-date. If you're still having trouble, feel free to ask and I'll do my best to help!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Is the Verus CLI wallet documentation still in development and not yet updated to the latest version?",
+            "No, the Verus CLI wallet documentation is already updated to version 1.2.2-4, as indicated by the \"UPDATED to v1.2.2-4\" note next to the links to the Verusd options list and Verus command list.",
+            "## CLI wallet specific Information\n[Verusd options list](#!faq-cli/clifaq-01_verusd_options.md) ***`UPDATED to v1.2.2-4`***\n[Verus command list](#!faq-cli/clifaq-02_verus_commands.md) ***`UPDATED to v1.2.2-4`***\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n\n## Q&A Archive\n[Q&A questions channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-questions-20200728.html)\n[Q&A reward channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-reward-20200728.html)\n\nNote: last revision date 2024-05-03.",
+            "./raw_text_input_wiki/index.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "What happens if the token doesn't launch after I park my conversion?",
+    "The question is flawed because it assumes that if the token doesn't launch, something else will happen. According to the text, if the token launches, you will either find 0.975 GOLD in your wallet, or you will have your VRSCTEST back. It doesn't mention what happens if the token doesn't launch.",
+    "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,6 @@
+[
+    "How do I use the `setaccount` command to set a custom account name for a VRSC address?",
+    "You can't actually use the `setaccount` command to set a custom account name for a VRSC address. The `account` argument must be set to an empty string `\"\"` to represent the default account. Passing any other string will result in an error. The examples provided in the text are setting the account to `\"tabby\"`, which is incorrect.",
+    "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/setaccount"
+]

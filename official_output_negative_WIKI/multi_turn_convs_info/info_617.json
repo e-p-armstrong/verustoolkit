@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What does it mean if the result is `false` when validating a signature?",
+            "If the result is `true`, it means the signature is valid. If the result is `false`, it likely means the signature is invalid.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-1 UPDATEThis release includes a testnet fix for the Ethereum bridge and is required for those who want to continue using the current testnet.v0.8.0 and v0.8.0-1 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is the v0.8.0-1 update mandatory for all users?",
+            "No, the v0.8.0-1 update is not mandatory for all users. It is a non-mandatory update, but it is required for those who want to continue using the current testnet, specifically for the Ethereum bridge.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-1 UPDATEThis release includes a testnet fix for the Ethereum bridge and is required for those who want to continue using the current testnet.v0.8.0 and v0.8.0-1 Updates include:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "85e5df05-c503-4e1c-bad5-02df8013e769"
+]

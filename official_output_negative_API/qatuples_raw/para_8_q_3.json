@@ -1,0 +1,6 @@
+[
+    "What is the format of the result returned by the `getaddresstxids` command?",
+    "The result returned by the `getaddresstxids` command is an array of transaction IDs, where each transaction ID is a string.",
+    "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getaddresstxids"
+]

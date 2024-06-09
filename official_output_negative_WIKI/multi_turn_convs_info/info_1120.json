@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I verify the signature of a download without using the provided txt file?",
+            "You can't. The txt file is necessary for verifying the signature of a download. The txt file contains the signer, standard sha256 file checksum, and signature. You need to extract the txt file from the downloaded archive and use it to verify the signature of the extracted archive.",
+            "## Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation Releases@\".\n1) Extract downloaded archive\n2) Verify signature for the extracted archive using the extracted text file.\n3) Extract archive to desired directory\n### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation Releases@\" \"AfmaIQABQR8yN3LyVymt/ZRYvyuGTma3rEbxFshyLOa3zI5qAXTaz34gxj30QXiluQ5TJJ7jxQwJaLUl6bJLMvfNvlzI+KBw\" \"/Downloads/Verus-CLI-Linux-v0.9.4-3-x86_64/Verus-CLI-Linux-v0.9.4-3-x86_64.tar.gz\"\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation Releases@\" \"AfmaIQABQR8yN3LyVymt/ZRYvyuGTma3rEbxFshyLOa3zI5qAXTaz34gxj30QXiluQ5TJJ7jxQwJaLUl6bJLMvfNvlzI+KBw\" 7cea478ac61c8328fea9a42f8744f9112cf6723aa0f39c727c1d090f5daa5b34\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing v0.9.4-3, UNCHANGED FOR MAINNET -- MANDATORY FOR CONTINUED TESTNET USEThis release has no material mainnet changes.This release upgrades the testnet protocol to fix an issue with the Ethereum bridge and VRSCTEST mining and staking. Please update to v0.9.4-3 to continue mining and staking on testnet and the Ethereum bridge. This version also fixes an issue discovered when defining Ethereum NFT mapped tokens, which are not yet supported in the released Ethereum contracts, but are updated no in the daemon and ready to use when the contracts are upgraded, hopefully in the next few days.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Does the release v0.9.4-3 have significant changes for mainnet?",
+            "No, it doesn't. This release has no material mainnet changes. The changes are mainly for testnet and the Ethereum bridge.",
+            "## Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation Releases@\".\n1) Extract downloaded archive\n2) Verify signature for the extracted archive using the extracted text file.\n3) Extract archive to desired directory\n### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation Releases@\" \"AfmaIQABQR8yN3LyVymt/ZRYvyuGTma3rEbxFshyLOa3zI5qAXTaz34gxj30QXiluQ5TJJ7jxQwJaLUl6bJLMvfNvlzI+KBw\" \"/Downloads/Verus-CLI-Linux-v0.9.4-3-x86_64/Verus-CLI-Linux-v0.9.4-3-x86_64.tar.gz\"\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation Releases@\" \"AfmaIQABQR8yN3LyVymt/ZRYvyuGTma3rEbxFshyLOa3zI5qAXTaz34gxj30QXiluQ5TJJ7jxQwJaLUl6bJLMvfNvlzI+KBw\" 7cea478ac61c8328fea9a42f8744f9112cf6723aa0f39c727c1d090f5daa5b34\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing v0.9.4-3, UNCHANGED FOR MAINNET -- MANDATORY FOR CONTINUED TESTNET USEThis release has no material mainnet changes.This release upgrades the testnet protocol to fix an issue with the Ethereum bridge and VRSCTEST mining and staking. Please update to v0.9.4-3 to continue mining and staking on testnet and the Ethereum bridge. This version also fixes an issue discovered when defining Ethereum NFT mapped tokens, which are not yet supported in the released Ethereum contracts, but are updated no in the daemon and ready to use when the contracts are upgraded, hopefully in the next few days.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f5351e72-746c-4b22-a11e-50ba0d0010bb"
+]

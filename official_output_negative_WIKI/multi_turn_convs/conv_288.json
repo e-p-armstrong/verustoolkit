@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been experimenting with creating a new currency on the Verus network. I was wondering, what does setting `proofprotocol` to 1 mean for the newly created currency?\n\n**AI Assistant:**\nSetting `proofprotocol` to a specific value determines the minting rules for the newly created currency. It's an important configuration option that affects how new coins are minted and who has the authority to do so.\n\n**User:**\nThat makes sense. I set `proofprotocol` to 2 when creating my \"mycoin\" currency. Does that mean anyone can mint new coins in \"mycoin\"?\n\n**AI Assistant:**\nNo, not anyone can mint new coins in the \"mycoin\" currency. Since you set `proofprotocol` to 2 (PROOF_CHAINID), only the controller of the chain ID can mint new coins. This adds an extra layer of security and control over the currency.\n\n**User:**\nI've also been playing around with launching a testnet on Linux. What directories should I keep after launching the testnet?\n\n**AI Assistant:**\nActually, you don't need to keep any specific directories after launching the testnet. In fact, it's recommended that you delete the following directories before launching the testnet: `~/.komodo/VRSCTEST` and `~/.verustest`. This helps ensure a clean start for your testnet.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does setting `proofprotocol` to 1 mean for the newly created currency?",
+            "Setting `proofprotocol` to a specific value determines the minting rules for the newly created currency.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\n## Testnet Reset Instructions\n**Please delete the following directories before launching the testnet:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can anyone mint new coins in the \"mycoin\" currency?",
+            "No, not anyone can mint new coins in the \"mycoin\" currency. Only the controller of the chain ID can mint new coins, as specified by the `proofprotocol` being set to 2 (PROOF_CHAINID).",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\n## Testnet Reset Instructions\n**Please delete the following directories before launching the testnet:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What directories should I keep after launching the testnet on Linux?",
+            "You don't need to keep any specific directories after launching the testnet. In fact, you should delete the following directories before launching the testnet: `~/.komodo/VRSCTEST` and `~/.verustest`.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\n## Testnet Reset Instructions\n**Please delete the following directories before launching the testnet:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

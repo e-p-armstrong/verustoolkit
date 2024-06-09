@@ -1,0 +1,6 @@
+[
+    "Can I use the `sendcurrency` command to define a new currency?",
+    "No, the `sendcurrency` command is not used to define a new currency. The command is used to convert between different currencies. To define a new currency, you would use the `definecurrency` command, which is not shown in the provided text.",
+    "ress\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

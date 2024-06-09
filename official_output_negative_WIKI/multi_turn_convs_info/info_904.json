@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I initiate a token launch with the command `dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`?",
+            "The command `dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` is not used to initiate a token launch. Instead, it is used to park a conversion of VRSCTEST to GOLD until the GOLD token launches. This command does not trigger the launch of the GOLD token.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens if I want to create a new token that can only be converted to with VRSCTEST, using the command `dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`?",
+            "The command `dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` is not related to creating a new token. To create a new token, you would need to use a different command, such as `definecurrency`. The command `dcurrency` is used for parking conversions, not creating new tokens.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9003ad91-dfeb-43e7-b261-9b9f5fbb6f1c"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I verify the integrity of a downloaded Verus package without using the provided txt file?",
+            "According to the instructions, you should use the provided txt file to verify the signature of the extracted archive. This txt file contains the signer, standard sha256 file checksum, and signature. You can use the `verifyfile` or `verifyhash` commands to validate the signature.",
+            "### Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation Releases@\".\n1) Extract downloaded archive\n2) Verify signature for the extracted archive using the extracted text file.\n3) Extract archive to desired directory\n#### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation Releases@\" \"AUqqJQABQR9eyv2N6JbDY8HAvGMn5mR2NYLW3sA0jbud0we0KNyGuAV4Upp/qPgl9265PL4ZkjBLY45BrkIstubavegqwn+u\" \"/Downloads/Verus-CLI-Linux-v0.9.9-4-x86_64/Verus-CLI-Linux-v0.9.9-4-x86_64.tar.gz\"\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation Releases@\" \"AUqqJQABQR9eyv2N6JbDY8HAvGMn5mR2NYLW3sA0jbud0we0KNyGuAV4Upp/qPgl9265PL4ZkjBLY45BrkIstubavegqwn+u\" f5577a74e2d279b62aa42d85359f8d608ebc1ad7464556251ea29e7a36b6472c\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\n## v0.9.9-3\nAnnouncing v0.9.9-3 - FULLY OPTIONAL UPDATE FOR MAINNET, MANDATORY UPDATE FOR CONTINUED TESTNET OPERATION### Mainnet Changes - no protocol changes\nV0.9.9-3 introduces the `prunespentwallettransactions` CLI command and RPC API, providing a method for holders on testnet or mainnet of very large wallets to prune older spent transactions, which can improve performance for wallets that may be slowing down due to size. Thanks @Himu007 for the PR! There are no mainnet protocol changes in v0.9.9-3 over the prior release.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is v0.9.9-3 a mandatory update for mainnet operation?",
+            "No, v0.9.9-3 is a fully optional update for mainnet operation. It is, however, a mandatory update for continued testnet operation.",
+            "### Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation Releases@\".\n1) Extract downloaded archive\n2) Verify signature for the extracted archive using the extracted text file.\n3) Extract archive to desired directory\n#### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation Releases@\" \"AUqqJQABQR9eyv2N6JbDY8HAvGMn5mR2NYLW3sA0jbud0we0KNyGuAV4Upp/qPgl9265PL4ZkjBLY45BrkIstubavegqwn+u\" \"/Downloads/Verus-CLI-Linux-v0.9.9-4-x86_64/Verus-CLI-Linux-v0.9.9-4-x86_64.tar.gz\"\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation Releases@\" \"AUqqJQABQR9eyv2N6JbDY8HAvGMn5mR2NYLW3sA0jbud0we0KNyGuAV4Upp/qPgl9265PL4ZkjBLY45BrkIstubavegqwn+u\" f5577a74e2d279b62aa42d85359f8d608ebc1ad7464556251ea29e7a36b6472c\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\n## v0.9.9-3\nAnnouncing v0.9.9-3 - FULLY OPTIONAL UPDATE FOR MAINNET, MANDATORY UPDATE FOR CONTINUED TESTNET OPERATION### Mainnet Changes - no protocol changes\nV0.9.9-3 introduces the `prunespentwallettransactions` CLI command and RPC API, providing a method for holders on testnet or mainnet of very large wallets to prune older spent transactions, which can improve performance for wallets that may be slowing down due to size. Thanks @Himu007 for the PR! There are no mainnet protocol changes in v0.9.9-3 over the prior release.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "cb8dc2e8-11d3-4fdc-89a7-cadcf8fc7870"
+]

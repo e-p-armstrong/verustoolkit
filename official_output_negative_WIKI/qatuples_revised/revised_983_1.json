@@ -1,0 +1,6 @@
+[
+    "Can you explain why the `sendcurrency` command only works when sending currency within the same chain?",
+    "The `sendcurrency` command can actually be used to send currency between different chains, not just within the same chain. For example, you can send currency from PBaaSChain to VRSCTEST, which are two different chains, by using the `exportto` and `via` parameters to specify the destination chain and the bridge to use for the transfer, respectively.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

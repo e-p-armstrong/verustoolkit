@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble with the `z_getpaymentdisclosure` command. How do I use it without enabling experimental features?\n\n**AI Assistant:**\nActually, you need to enable experimental features to use the `z_getpaymentdisclosure` command. You can do this by restarting `verusd` with the `-experimentalfeatures` and `-paymentdisclosure` command-line options, or by adding the lines `experimentalfeatures=1` and `paymentdisclosure=1` to your `verus.conf` file.\n\n**User:**\nThanks for the help. I have another question related to `z_getpaymentdisclosure`. Can I use it to generate a payment disclosure for a regular transaction output, not just a joinsplit output?\n\n**AI Assistant:**\nNo, `z_getpaymentdisclosure` is specifically designed to generate a payment disclosure for a given joinsplit output. It's not intended for use with regular transaction outputs.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `z_getpaymentdisclosure` command without enabling experimental features?",
+            "Actually, you need to enable experimental features to use the `z_getpaymentdisclosure` command. You can do this by restarting `verusd` with the `-experimentalfeatures` and `-paymentdisclosure` command-line options, or by adding the lines `experimentalfeatures=1` and `paymentdisclosure=1` to your `verus.conf` file.",
+            "z_getpaymentdisclosure \"txid\" \"js_index\" \"output_index\" (\"message\")\n\nGenerate a payment disclosure for a given joinsplit output.\n\nEXPERIMENTAL FEATURE\n\nWARNING: z_getpaymentdisclosure is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-paymentdisclosure commandline options, or add these two lines\nto the zcash.conf file:\n\nexperimentalfeatures=1\npaymentdisclosure=1\n\nArguments:\n1. \"txid\"      (string, required) \n2. \"js_index\"    (string, required) \n3. \"output_index\"  (string, required) \n4. \"message\"     (string, optional)\n\nResult:\n\"paymentdisclosure\" (string) Hex data string, with \"zpd:\" prefix.\n\nExamples:\n> verus z_getpaymentdisclosure 96f12882450429324d5f3b48630e3168220e49ab7b0f066e5c2935a6b88bb0f2 0 0 \"refund\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getpaymentdisclosure\", \"params\": [\"96f12882450429324d5f3b48630e3168220e49ab7b0f066e5c2935a6b88bb0f2\", 0, 0, \"refund\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getpaymentdisclosure"
+        ],
+        [
+            "Can I use `z_getpaymentdisclosure` to generate a payment disclosure for a regular transaction output, not just a joinsplit output?",
+            "No, `z_getpaymentdisclosure` is specifically designed to generate a payment disclosure for a given joinsplit output. It's not intended for use with regular transaction outputs.",
+            "z_getpaymentdisclosure \"txid\" \"js_index\" \"output_index\" (\"message\")\n\nGenerate a payment disclosure for a given joinsplit output.\n\nEXPERIMENTAL FEATURE\n\nWARNING: z_getpaymentdisclosure is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-paymentdisclosure commandline options, or add these two lines\nto the zcash.conf file:\n\nexperimentalfeatures=1\npaymentdisclosure=1\n\nArguments:\n1. \"txid\"      (string, required) \n2. \"js_index\"    (string, required) \n3. \"output_index\"  (string, required) \n4. \"message\"     (string, optional)\n\nResult:\n\"paymentdisclosure\" (string) Hex data string, with \"zpd:\" prefix.\n\nExamples:\n> verus z_getpaymentdisclosure 96f12882450429324d5f3b48630e3168220e49ab7b0f066e5c2935a6b88bb0f2 0 0 \"refund\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getpaymentdisclosure\", \"params\": [\"96f12882450429324d5f3b48630e3168220e49ab7b0f066e5c2935a6b88bb0f2\", 0, 0, \"refund\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getpaymentdisclosure"
+        ]
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do you generate blocks on the mainnet using the `generate` command?",
+            "The `generate` command can only be used on the regtest network, not on the mainnet. It's specifically designed for testing purposes, allowing you to generate a specified number of blocks immediately.",
+            "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+            "./raw_text_input_api_text/generate"
+        ],
+        [
+            "What is the default number of blocks generated when you run the `generate` command without specifying a number?",
+            "There is no default number of blocks generated when running the `generate` command without specifying a number. You must provide the `numblocks` argument, which specifies how many blocks to generate immediately.",
+            "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+            "./raw_text_input_api_text/generate"
+        ],
+        [
+            "Can you use the `generate` command to generate blocks in the background, without blocking the RPC call?",
+            "No, the `generate` command mines blocks immediately, before the RPC call returns. It does not generate blocks in the background.",
+            "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+            "./raw_text_input_api_text/generate"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "136e9632-ea2b-4f8b-b7e2-c7bb2146653d"
+]

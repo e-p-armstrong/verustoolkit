@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to use the `getaddresstxids` command, but I'm not sure how to do it without enabling the address index. Is it possible?\n\n**AI Assistant:**\nUnfortunately, you can't use the `getaddresstxids` command without enabling the address index. The documentation explicitly states that the address index is required for this command to work. You'll need to enable the address index to use `getaddresstxids`.\n\n**User:**\nOkay, that makes sense. What's the default block height range for the `getaddresstxids` command, then?\n\n**AI Assistant:**\nThere is no default block height range for the `getaddresstxids` command. You need to specify the `start` and `end` block heights as arguments when using the command.\n\n**User:**\nGot it. So, what format does the result come in when I use `getaddresstxids`?\n\n**AI Assistant:**\nThe result returned by the `getaddresstxids` command is an array of transaction IDs, where each transaction ID is a string.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `getaddresstxids` command without enabling the address index?",
+            "You can't. The `getaddresstxids` command requires the address index to be enabled in order to work. This is explicitly stated in the documentation.",
+            "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddresstxids"
+        ],
+        [
+            "What is the default block height range for the `getaddresstxids` command?",
+            "There is no default block height range for the `getaddresstxids` command. You must specify the `start` and `end` block heights as arguments when using the command.",
+            "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddresstxids"
+        ],
+        [
+            "What is the format of the result returned by the `getaddresstxids` command?",
+            "The result returned by the `getaddresstxids` command is an array of transaction IDs, where each transaction ID is a string.",
+            "getaddresstxids\n\nReturns the txids for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n}\n\nResult:\n[\n \"transactionid\" (string) The transaction id\n ,...\n]\n\nExamples:\n> verus getaddresstxids '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddresstxids\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddresstxids"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been playing around with VerusIDs and I have a few questions. Can you explain how to launch a new blockchain using a SubID?\n\n**AI Assistant:**\nActually, you can't launch a new blockchain using a SubID. SubIDs are registered under each launched currency and token, and they have the same features as VerusIDs, except that they cannot launch blockchains, currencies, or tokens. SubIDs are more like a subset of VerusIDs, but with limited functionality. Does that make sense?\n\n**User:**\nOkay, got it. That clears things up. I also had a question about messaging. How do I use VerusID to send public messages?\n\n**AI Assistant:**\nVerusID is not for sending public messages. According to the features, VerusID allows you to send and receive completely private messages through VerusID private addresses. So, if you want to send a message, it will be private and encrypted, not public. This is one of the benefits of using VerusIDs, as it allows for secure and private communication.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain how to launch a new blockchain using a SubID?",
+            "You can't launch a new blockchain using a SubID. SubIDs are registered under each launched currency and token, and they have the same features as VerusIDs, except that they cannot launch blockchains, currencies, or tokens.",
+            "les, hashes and messages. | \n| **Multisig** | Multiple organizations or people can manage a VerusID. | \n| **Messages** | Send and receive completely private messages through VerusID private addresses. | \n| [**SSID login**](/verusid/login/) | Login to supported VerusID services without ever needing a password. |\n| **SubID** | Under each launched currency and token subIDs can be registered. SubIDs have the exact same features as VerusIDs, although they can not launch blockchains, currencies or tokens. |",
+            "./raw_text_input_docs/README_addresses.md"
+        ],
+        [
+            "How do I use VerusID to send public messages?",
+            "VerusID is not for sending public messages. According to the features, VerusID allows you to send and receive completely private messages through VerusID private addresses.",
+            "les, hashes and messages. | \n| **Multisig** | Multiple organizations or people can manage a VerusID. | \n| **Messages** | Send and receive completely private messages through VerusID private addresses. | \n| [**SSID login**](/verusid/login/) | Login to supported VerusID services without ever needing a password. |\n| **SubID** | Under each launched currency and token subIDs can be registered. SubIDs have the exact same features as VerusIDs, although they can not launch blockchains, currencies or tokens. |",
+            "./raw_text_input_docs/README_addresses.md"
+        ]
+    ]
+]

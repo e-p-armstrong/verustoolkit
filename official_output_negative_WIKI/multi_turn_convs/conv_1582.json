@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I've been playing around with Verus and I'm wondering about the `OPTION_NFT_TOKEN` option. Does it have anything to do with creating a multi-satoshi NFT token?\n\n**AI Assistant:**\nActually, no. The `OPTION_NFT_TOKEN` option is used to create a single satoshi NFT token, which tokenizes control over the root ID. It's not related to creating a multi-satoshi NFT token. So, if you're looking to create a multi-satoshi NFT token, you'll need to explore other options. Do you have any other questions about Verus or NFT tokens?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Does the `OPTION_NFT_TOKEN` option have anything to do with creating a multi-satoshi NFT token?",
+            "No, the `OPTION_NFT_TOKEN` option is actually used to create a single satoshi NFT token, which tokenizes control over the root ID. It's not related to creating a multi-satoshi NFT token.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "Can you explain why setting `proofprotocol` to 1 in the `definecurrency` command means that the controller of the chain ID can mint new coins?",
+            "Setting `proofprotocol` to 1 does not mean that the controller of the chain ID can mint new coins. In fact, according to the command `./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'`, setting `proofprotocol` to 2 (PROOF_CHAINID) is what allows the controller of the chain ID to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the command to send existing coins to an address instead of minting new ones in the \"mycoin\" currency?",
+            "The command `./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'` is actually used to mint new coins, not send existing ones. If you want to send existing coins to an address, you would need to omit the `\"mintnew\":1` part from the command.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can you explain why the `definecurrency` command doesn't require specifying the `initialsupply` of the new currency?",
+            "Actually, the `definecurrency` command does require specifying the `initialsupply` of the new currency. In the example command `./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'`, the `initialsupply` is specified as 20000.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "fc840ced-906e-4883-88f0-6397a6d3a1c1"
+]

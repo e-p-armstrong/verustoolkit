@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What kind of warranty does the software come with?",
+            "The software is provided \"AS IS\", without any warranty, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.",
+            "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**MacOS:** https://www.virustotal.com/#/file/d96bd2afb5db178dbc07cbe1708892e3d08c6b7984c32a0064a3dcfb2d2943dc/detection\n**Linux:** https://www.virustotal.com/#/file/1b08617478b2b84c3d1181a6f93f9bc6359ac57e2c434acd8e57d8b603988a9f/detection\n**Windows:**\nhttps://www.virustotal.com/#/file/040fa02e57c2e55fd0f5fc70ef8b8ea7c38e54c10fa16e967a147c9614d1fe50/detectionAvast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\n# IMPORTANT: CRITICAL UPDATE -- UPGRADE IMMEDIATELY****COMBINATION SECURITY FIX AND INITIAL PBaaS PREPARATION****",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3ce496bc-9d76-4165-a308-5be1ce002408"
+]

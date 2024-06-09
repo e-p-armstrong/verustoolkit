@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about creating identities on Verus. When I create an identity, how do I ensure that 50% of the funds go to the referrer and 50% go to the miner of the block?\n\n**AI Assistant:**\nActually, that's not how it works. According to the protocol, 20 VRSC goes to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block. The remaining funds, which are not paid to referrers, go to miners or stakers of the blockchain. There's no 50-50 split between referrer and miner.\n\n**User:**\nOkay, I think I might have misunderstood. Is it true that creating an identity requires a payment of 100 VRSC to the referrer?\n\n**AI Assistant:**\nNo, that's not correct. Creating an identity involves a payment distribution of 20 VRSC to the referrer's ID, 20 VRSC to the referrer's referrer's ID, 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block. It's not a 100 VRSC payment to the referrer.\n\n**User:**\nI see. How do I create an identity without paying any fees to referrers or miners?\n\n**AI Assistant:**\nUnfortunately, that's not possible. According to the protocol, creating an identity involves paying fees to referrers and miners. The fees are distributed as follows: 20 VRSC to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block. The remaining funds, which are not paid to referrers, go to miners or stakers of the blockchain.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "When creating an identity, how do I ensure that 50% of the funds go to the referrer and 50% go to the miner of the block?",
+            "The premise of your question is incorrect. According to the protocol, 20 VRSC goes to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block. The remaining funds, which are not paid to referrers, go to miners or stakers of the blockchain. There is no 50-50 split between referrer and miner.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it true that creating an identity requires a payment of 100 VRSC to the referrer?",
+            "No, that's not correct. Creating an identity involves a payment distribution of 20 VRSC to the referrer's ID, 20 VRSC to the referrer's referrer's ID, 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How do I create an identity without paying any fees to referrers or miners?",
+            "Unfortunately, that's not possible. According to the protocol, creating an identity involves paying fees to referrers and miners. The fees are distributed as follows: 20 VRSC to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block. The remaining funds, which are not paid to referrers, go to miners or stakers of the blockchain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

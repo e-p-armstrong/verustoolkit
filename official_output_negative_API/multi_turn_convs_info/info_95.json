@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Does the `rescanfromheight` command only work on small wallets?",
+            "No, the `rescanfromheight` command can be used on wallets of any size. However, it's worth noting that rescanning a very large wallet can take a significant amount of time, potentially minutes or even hours, depending on the size of the wallet and the height from which you're rescanning.",
+            "rescanfromheight (height)\n\nRescans the current wallet from a specified height\n\nArguments:\n1. \"height\"   (int, optional) Defaults to 0, height to start rescanning from\n\nNote: This call can take minutes or even hours to complete on very large wallets and rescans\n\nExamples:\n\nInitiate rescan of entire chain\n> verus rescanfromheight\n\nInitiate rescan from block 1000000\n> verus rescanfromheight 1000000",
+            "./raw_text_input_api_text/rescanfromheight"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9f5c7ed0-f5e7-4c34-bae4-773c76e1572e"
+]

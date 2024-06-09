@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm having some trouble with the `getblockdeltas` command. Is it possible to use it without specifying a block hash?\n\n**AI Assistant:**\nNo, the `getblockdeltas` command does require a block hash as a parameter. In the examples provided, the block hash `00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b` is used. You cannot use the `getblockdeltas` command without specifying a block hash.\n\n**User:**\nAlright, that makes sense. What about using it with a username and password, but without specifying the block hash? Is that possible?\n\n**AI Assistant:**\nNo, you cannot use the `getblockdeltas` command with a username and password, but without specifying the block hash. While you do need to specify a username and password for authentication (as shown in the `curl` example), you also need to provide the block hash as a parameter.\n\n**User:**\nGot it. I've seen some examples of the `getblockdeltas` command being used with `curl`. Is it only available through the `curl` interface?\n\n**AI Assistant:**\nNo, the `getblockdeltas` command is not only available through the `curl` interface. It can also be used directly in the Verus command-line interface, as shown in the first example: `verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b`.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `getblockdeltas` command without specifying a block hash?",
+            "The `getblockdeltas` command does require a block hash as a parameter. In the examples provided, the block hash `00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b` is used. You cannot use the `getblockdeltas` command without specifying a block hash.",
+            "Examples:\n> verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockdeltas"
+        ],
+        [
+            "Can I use the `getblockdeltas` command with a username and password, but without specifying the block hash?",
+            "No, you cannot use the `getblockdeltas` command with a username and password, but without specifying the block hash. While you do need to specify a username and password for authentication (as shown in the `curl` example), you also need to provide the block hash as a parameter.",
+            "Examples:\n> verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockdeltas"
+        ],
+        [
+            "Is the `getblockdeltas` command only available through the `curl` interface?",
+            "No, the `getblockdeltas` command is not only available through the `curl` interface. It can also be used directly in the Verus command-line interface, as shown in the first example: `verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b`.",
+            "Examples:\n> verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockdeltas"
+        ]
+    ]
+]

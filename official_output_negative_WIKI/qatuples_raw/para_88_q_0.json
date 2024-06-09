@@ -1,0 +1,6 @@
+[
+    "Is the Verus CLI wallet documentation still in development and not yet updated to the latest version?",
+    "No, the Verus CLI wallet documentation is already updated to version 1.2.2-4, as indicated by the \"UPDATED to v1.2.2-4\" note next to the links to the Verusd options list and Verus command list.",
+    "## CLI wallet specific Information\n[Verusd options list](#!faq-cli/clifaq-01_verusd_options.md) ***`UPDATED to v1.2.2-4`***\n[Verus command list](#!faq-cli/clifaq-02_verus_commands.md) ***`UPDATED to v1.2.2-4`***\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n\n## Q&A Archive\n[Q&A questions channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-questions-20200728.html)\n[Q&A reward channel Verus-WhiteBIT 2020-07-28](#!q-a/veruscoin-q-a-reward-20200728.html)\n\nNote: last revision date 2024-05-03.",
+    "./raw_text_input_wiki/index.md"
+]

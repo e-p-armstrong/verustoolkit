@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `z_importwallet` command in Verus?",
+    "There is no `z_importwallet` command in Verus. The command is actually `z_exportwallet`, which exports all wallet keys, for taddr and zaddr, in a human-readable format. It takes two arguments: the filename to save the wallet keys to, and an optional boolean flag to export only addresses with indexed UTXOs or that control IDs in the wallet.",
+    "z_exportwallet \"filename\" (omitemptytaddresses)\n\nExports all wallet keys, for taddr and zaddr, in a human-readable format. Overwriting an existing file is not permitted.\n\nArguments:\n1. \"filename\"      (string, required) The filename, saved in folder set by verusd -exportdir option\n2. \"omitemptytaddresses\" (boolean, optional) Defaults to false. If true, export only addresses with indexed UTXOs or that control IDs in the wallet\n                        (do not use this option without being sure that all addresses of interest are included)\n\nResult:\n\"path\"      (string) The full path of the destination file\n\nExamples:\n> verus z_exportwallet \"test\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportwallet\", \"params\": [\"test\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_exportwallet"
+]

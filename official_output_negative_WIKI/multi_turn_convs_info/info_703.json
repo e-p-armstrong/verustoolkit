@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does it mean when the `proofprotocol` is set to 1 in a currency definition?",
+            "This setting is not valid. In a currency definition, `proofprotocol` is typically set to 2, which means PROOF_CHAINID, allowing the controller of the chain ID to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can anyone mint new coins in a currency with `proofprotocol` set to 2?",
+            "No, only the controller of the chain ID can mint new coins when `proofprotocol` is set to 2 (PROOF_CHAINID).",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How do you define a currency with a `proofprotocol` that allows anyone to mint new coins?",
+            "There is no way to define a currency with a `proofprotocol` that allows anyone to mint new coins. In fact, a `proofprotocol` set to 2 restricts minting to the controller of the chain ID.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d65dff9a-976a-4a7b-8527-9b85fbf44d39"
+]

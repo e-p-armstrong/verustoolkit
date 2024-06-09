@@ -1,0 +1,6 @@
+[
+    "What happens to my VRSCTEST if a token launch is unsuccessful?",
+    "The outcome of an unsuccessful token launch on VRSCTEST is not specified. If a token launch is successful, you will either receive GOLD or have your VRSCTEST returned. However, the consequences of a failed token launch are not defined.",
+    "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

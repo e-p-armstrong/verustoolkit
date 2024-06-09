@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to figure out how to list open offers in my wallet. Can you help me with that? Specifically, how do I use the `listopenoffers` command?\n\n**AI Assistant:**\nThe `listopenoffers` command is used to list open offers in your wallet. If you want to list all open offers, you can use the command without any arguments, as it defaults to listing both unexpired and expired offers. If you want to list only unexpired or expired offers, you can specify the `unexpired` or `expired` argument, respectively. Do you have any further questions about using this command?\n\n**User:**\nActually, yes. What is the default behavior of the `listopenoffers` command if I don't specify any arguments?\n\n**AI Assistant:**\nThe default behavior of the `listopenoffers` command is to list both unexpired and expired offers in your wallet if you don't specify any arguments. This is because the `unexpired` and `expired` arguments both default to `true`. So, if you just run `listopenoffers` without any arguments, you'll see all open offers, including both unexpired and expired ones.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `listopenoffers` command to list open offers in my wallet?",
+            "The `listopenoffers` command is used to list open offers in your wallet. If you want to list all open offers, you can use the command without any arguments, as it defaults to listing both unexpired and expired offers. If you want to list only unexpired or expired offers, you can specify the `unexpired` or `expired` argument, respectively.",
+            "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+            "./raw_text_input_api_text/listopenoffers"
+        ],
+        [
+            "What is the default behavior of the `listopenoffers` command if I don't specify any arguments?",
+            "The default behavior of the `listopenoffers` command is to list both unexpired and expired offers in your wallet if you don't specify any arguments. This is because the `unexpired` and `expired` arguments both default to `true`.",
+            "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+            "./raw_text_input_api_text/listopenoffers"
+        ]
+    ]
+]

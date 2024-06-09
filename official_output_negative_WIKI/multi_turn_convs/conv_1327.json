@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI've been looking at some currency definitions and I'm not really sure what I'm seeing. Can you help me out? What does it mean when you set `proofprotocol` to 3 in a currency definition?\n\n**AI Assistant:**\nI'd be happy to help clarify. However, I need to correct you - there is no standard definition for a `proofprotocol` value of 3. It's possible that it's being used in a custom or specific implementation, but in general, it's not a recognized value.\n\nIn some cases, `proofprotocol` is set to 2, which corresponds to PROOF_CHAINID, allowing the controller of the chain ID to mint new coins. But again, I want to emphasize that a value of 3 is not a standard or recognized setting. If you can provide more context or information about where you're seeing this, I might be able to help you better.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does it mean when you set `proofprotocol` to 3 in a currency definition?",
+            "There is no standard definition for a `proofprotocol` value of 3. In some cases, `proofprotocol` is set to 2, which corresponds to PROOF_CHAINID, allowing the controller of the chain ID to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

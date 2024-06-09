@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getcurrencyconverters` command with a specific currency argument, such as `verus -chain=VRSCTEST getcurrencyconverters usd`?",
+    "The `getcurrencyconverters` command with specific currency arguments, such as `verus -chain=VRSCTEST getcurrencyconverters btc eth`, actually returns all currencies that have markets for the specified currencies (in this case, BTC and ETH) at or above the liquidity threshold. It does not return information about a single specific currency, like USD.",
+    "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

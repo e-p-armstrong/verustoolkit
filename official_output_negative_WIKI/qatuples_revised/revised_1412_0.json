@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `verus` command `getcurrencyconverters` with a single currency argument, such as `verus -chain=VRSCTEST getcurrencyconverters btc`?",
+    "The `getcurrencyconverters` command is not intended to be used with a single currency argument. It is meant to be used with two currencies as arguments, such as `verus -chain=VRSCTEST getcurrencyconverters btc eth`, which returns all currencies that have BTC/ETH markets at or above the liquidity threshold.",
+    "o, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

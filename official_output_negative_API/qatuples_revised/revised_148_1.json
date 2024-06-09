@@ -1,0 +1,6 @@
+[
+    "How do you decode the ciphertexts in the \"ciphertexts\" field using the \"onetimePubKey\"?",
+    "The \"onetimePubKey\" is not used to decode the ciphertexts. It is actually used to encrypt the ciphertexts. The decryption process is not specified.",
+    "  \"nullifiers\" : [      (json array of string)\n     \"hex\"           (string) input note nullifier\n     ,...\n    ],\n    \"commitments\" : [      (json array of string)\n     \"hex\"           (string) output note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}",
+    "./raw_text_input_api_text/decoderawtransaction"
+]

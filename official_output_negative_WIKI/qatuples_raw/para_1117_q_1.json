@@ -1,0 +1,6 @@
+[
+    "Is the v0.8.0 update mandatory for all users?",
+    "No, the v0.8.0 update is not mandatory for all users. According to the text, it's only mandatory for those who want to use the testnet, which will be reset as of v0.8.0. For other users, the update is NON-MANDATORY and RECOMMENDED.",
+    "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY, RECOMMENDED v0.8.0 UPDATE.\nThis release is mandatory for those who want to use the testnet, which will be reset as of v0.8.0.Updates include:",
+    "./raw_text_input_wiki/release_notes.md"
+]

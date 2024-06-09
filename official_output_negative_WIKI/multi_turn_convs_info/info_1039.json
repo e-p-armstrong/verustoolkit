@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I use the `getoffers` method to list all expired offers in my wallet?",
+            "The `getoffers` method is not used to list offers in your wallet. It's used to retrieve all available offers for or in a specific currency or ID. To list open offers in your wallet, you should use the `listopenoffers` method instead. The `listopenoffers` method has optional arguments `unexpired` and `expired` to filter the results. If you want to list all expired offers, you can set `unexpired` to `false` and `expired` to `true`.",
+            "#### Arguments\n1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase\n2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies\n3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing#### Result:\nall available offers for or in the indicated currency or ID are displayedExamples:\n```bash\n verus getoffers \"currencyorid\" (iscurrency)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listopenoffers (unexpired) (expired)`\nShows offers outstanding in this wallet#### Arguments\n1. unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n2. expired         (bool, optional) default=true, list those offers in the wallet which are expired\n#### Result\nAll open offers",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I use the `listopenoffers` method to retrieve offers for a specific currency or ID?",
+            "No, the `listopenoffers` method is used to list open offers in your wallet, regardless of the currency or ID. If you want to retrieve offers for a specific currency or ID, you should use the `getoffers` method instead, which takes a `currencyorid` argument to specify the currency or ID to check for offers.",
+            "#### Arguments\n1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase\n2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies\n3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing#### Result:\nall available offers for or in the indicated currency or ID are displayedExamples:\n```bash\n verus getoffers \"currencyorid\" (iscurrency)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listopenoffers (unexpired) (expired)`\nShows offers outstanding in this wallet#### Arguments\n1. unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n2. expired         (bool, optional) default=true, list those offers in the wallet which are expired\n#### Result\nAll open offers",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f9a54bf6-0883-4ed8-b431-114ea30f1e83"
+]

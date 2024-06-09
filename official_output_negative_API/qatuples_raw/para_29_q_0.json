@@ -1,0 +1,6 @@
+[
+    "Can you show me how to validate a block using the `invalidateblock` command?",
+    "The `invalidateblock` command is used to permanently mark a block as invalid, not to validate a block. It's used to mark a block as if it violated a consensus rule. To invalidate a block, you would use the command `invalidateblock \"hash\"` where \"hash\" is the hash of the block you want to mark as invalid.",
+    "invalidateblock \"hash\"\n\nPermanently marks a block as invalid, as if it violated a consensus rule.\n\nArguments:\n1. hash  (string, required) the hash of the block to mark as invalid\n\nResult:\n\nExamples:\n> verus invalidateblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/invalidateblock"
+]

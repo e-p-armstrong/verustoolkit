@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of OPTION_GATEWAY_NAMECONTROLLER being set to 512?",
+            "OPTION_GATEWAY_NAMECONTROLLER is actually set to 1024, not 512. When this option is not set on a gateway, top-level ID and currency registration happen on the launch chain.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can you explain how OPTION_NFT_TOKEN allows for multiple satoshi NFT tokens?",
+            "OPTION_NFT_TOKEN is actually set to 2048 and represents a single satoshi NFT token, which tokenizes control over the root ID. It does not enable multiple satoshi NFT tokens.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "60232630-bb4b-47d7-b851-7b8292fbe45f"
+]

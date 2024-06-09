@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to convert VRSCTEST to PBaaSChain using the Verus command line, but I'm not sure how to do it. Can you explain the process?\n\n**AI Assistant:**\nActually, the command you're looking for is the opposite of what you asked. The command I'll show you is used to convert PBaaSChain to VRSCTEST, not the other way around. Here's the correct command:\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThis command sends 10 units of PBaaSChain to the specified address, converts them to VRSCTEST, and exports them to the VRSCTEST chain using the Bridge.PBaaSChain bridge. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain how to convert VRSCTEST to PBaaSChain using the Verus command line?",
+            "The command you are looking for is actually the opposite of what you asked. The command shown is used to convert PBaaSChain to VRSCTEST, not the other way around. Here's the correct command:\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThis command sends 10 units of PBaaSChain to the specified address, converts them to VRSCTEST, and exports them to the VRSCTEST chain using the Bridge.PBaaSChain bridge.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

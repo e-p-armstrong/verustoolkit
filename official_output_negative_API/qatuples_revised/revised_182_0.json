@@ -1,0 +1,6 @@
+[
+    "What is the correct syntax to use the `getvdxfid` method using the Verus CLI?",
+    "The `getvdxfid` method is not used with the Verus CLI, but rather as a JSON RPC request. The correct syntax for this request is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThis will send a JSON RPC request to the Verus JSON RPC server.",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getvdxfid"
+]

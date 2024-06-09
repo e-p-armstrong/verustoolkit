@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to figure out how to estimate the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of minutes. What's the command for that?\n\n**AI Assistant:**\nThe command you're looking for is not exactly based on minutes, but rather on the number of blocks. The correct command is `estimatefee nblocks`, where `nblocks` is the number of blocks. This command estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within `nblocks` blocks.\n\n**User:**\nOkay, so if I use the `estimatefee` command, can I get an exact fee per kilobyte for a transaction?\n\n**AI Assistant:**\nNo, the `estimatefee` command doesn't provide an exact fee per kilobyte for a transaction. It estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of blocks. If there aren't enough transactions and blocks observed, the minimum fee is returned.\n\n**User:**\nSo what's the purpose of the `estimatefee` command if it only returns the minimum fee?\n\n**AI Assistant:**\nThe `estimatefee` command doesn't only return the minimum fee. It estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of blocks. The minimum fee is only returned if there aren't enough transactions and blocks observed to make an estimate. The purpose of the command is to provide an estimate of the fee needed for a transaction to be confirmed within a certain number of blocks. This can be helpful for planning and optimizing your transactions.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the command to estimate the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of minutes?",
+            "The command is not estimating the fee per kilobyte based on minutes, but rather based on the number of blocks. The correct command is `estimatefee nblocks`, where `nblocks` is the number of blocks. This command estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within `nblocks` blocks.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ],
+        [
+            "Can I use the `estimatefee` command to get an exact fee per kilobyte for a transaction?",
+            "No, the `estimatefee` command does not provide an exact fee per kilobyte for a transaction. It estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of blocks. If there are not enough transactions and blocks observed, the minimum fee is returned.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ],
+        [
+            "What is the purpose of the `estimatefee` command if it only returns the minimum fee?",
+            "The `estimatefee` command does not only return the minimum fee. It estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of blocks. The minimum fee is only returned if there are not enough transactions and blocks observed to make an estimate. The purpose of the command is to provide an estimate of the fee needed for a transaction to be confirmed within a certain number of blocks.",
+            "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+            "./raw_text_input_api_text/estimatefee"
+        ]
+    ]
+]

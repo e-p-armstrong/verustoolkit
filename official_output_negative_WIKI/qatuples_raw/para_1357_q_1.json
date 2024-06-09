@@ -1,0 +1,6 @@
+[
+    "How do I create a new token that can only be converted to with GOLD?",
+    "According to the information, creating a new token, such as \"mycoin\", requires the ability to convert to it with either GOLD or VRSCTEST. This means that you cannot create a new token that can only be converted to with GOLD, as VRSCTEST is also required as a convertible currency.",
+    "o with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

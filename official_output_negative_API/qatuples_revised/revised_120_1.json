@@ -1,0 +1,6 @@
+[
+    "What is the default value of `samplecount` if I don't specify it when running the `zcbenchmark` command?",
+    "There is no default value for `samplecount`. It is required to specify the `samplecount` when running the `zcbenchmark` command. The correct syntax is `zcbenchmark benchmarktype samplecount`.",
+    "zcbenchmark benchmarktype samplecount\n\nRuns a benchmark of the selected type samplecount times,\nreturning the running times of each sample.\n\nOutput: [\n {\n  \"runningtime\": runningtime\n },\n {\n  \"runningtime\": runningtime\n }\n ...\n]",
+    "./raw_text_input_api_text/zcbenchmark"
+]

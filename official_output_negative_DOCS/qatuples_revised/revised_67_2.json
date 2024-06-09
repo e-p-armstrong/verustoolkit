@@ -1,0 +1,6 @@
+[
+    "Do I need to know the exact blockheight of the blockchain to request an unlock?",
+    "While it's true that you need to specify a blockheight under \"unlockatblock\" to request an unlock, you don't necessarily need to know the exact current blockheight of the blockchain. You can simply fill in 0 to request an immediate unlock, without needing to know the current blockheight.",
+    "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+    "./raw_text_input_docs/setup-vault-v2.md"
+]

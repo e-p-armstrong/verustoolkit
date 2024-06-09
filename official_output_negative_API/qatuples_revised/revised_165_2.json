@@ -1,0 +1,6 @@
+[
+    "What is the data type of \"paymentaddress\"?",
+    "The data type of \"paymentaddress\" is an integer (int). It represents the rewards payment address.",
+    "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+    "./raw_text_input_api_text/getcurrency"
+]

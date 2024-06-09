@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a few questions about using the Verus API. What is the command to retrieve all currencies that have exactly 500 VRSC in reserve?\n\n**AI Assistant:**\nUnfortunately, the Verus API doesn't retrieve currencies based on an exact amount of VRSC in reserve. Instead, it retrieves currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves. The correct command to retrieve currencies with BTC/ETH markets at or above the liquidity threshold is:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis command will return all currencies that meet the conditions specified in the API, but it won't filter by an exact amount of VRSC in reserve.\n\n**User:**\nThat's not exactly what I was looking for. How do I use the Verus API to get a list of currencies that have a 5% VRSC reserve ratio?\n\n**AI Assistant:**\nUnfortunately, the Verus API doesn't provide a way to retrieve currencies based on a specific VRSC reserve ratio. The API only retrieves currencies that are greater than 10% VRSC reserve ratio, along with other conditions. The command `verus -chain=VRSCTEST getcurrencyconverters btc eth` will return all currencies that have BTC/ETH markets at or above the liquidity threshold, but it won't filter by a specific reserve ratio.\n\n**User:**\nOne more question. Can I use the Verus API to retrieve all currencies that have exactly one listed currency as a reserve?\n\n**AI Assistant:**\nNo, the Verus API only retrieves currencies that have all listed currencies as reserves, not just one. The correct command to retrieve currencies with BTC/ETH markets at or above the liquidity threshold is:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis command will return all currencies that meet the conditions specified in the API, including having all listed currencies as reserves.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the command to retrieve all currencies that have exactly 500 VRSC in reserve using the Verus API?",
+            "The Verus API doesn't retrieve currencies based on an exact amount of VRSC in reserve. Instead, it retrieves currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves. The correct command to retrieve currencies with BTC/ETH markets at or above the liquidity threshold is:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```",
+            "verters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How do I use the Verus API to get a list of currencies that have a 5% VRSC reserve ratio?",
+            "The Verus API doesn't provide a way to retrieve currencies based on a specific VRSC reserve ratio. The API only retrieves currencies that are greater than 10% VRSC reserve ratio, along with other conditions. The command `verus -chain=VRSCTEST getcurrencyconverters btc eth` will return all currencies that have BTC/ETH markets at or above the liquidity threshold, but it won't filter by a specific reserve ratio.",
+            "verters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I use the Verus API to retrieve all currencies that have exactly one listed currency as a reserve?",
+            "No, the Verus API only retrieves currencies that have all listed currencies as reserves, not just one. The correct command to retrieve currencies with BTC/ETH markets at or above the liquidity threshold is:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis command will return all currencies that meet the conditions specified in the API, including having all listed currencies as reserves.",
+            "verters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

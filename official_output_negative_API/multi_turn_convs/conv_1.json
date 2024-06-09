@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm having a bit of trouble using the `verus` command to list all unspent transactions in the entire blockchain. Can you help me out?\n\n**AI Assistant:**\nI'd be happy to help! However, I need to correct you - the `verus z_listunspent` command doesn't actually list all unspent transactions in the entire blockchain. It lists unspent transactions for a specific set of addresses.\n\nIf you want to use the command, the correct usage is `verus z_listunspent <minconf> <maxconf> <includechange> <addresses>`. Here, `<minconf>` and `<maxconf>` specify the minimum and maximum number of confirmations, `<includechange>` is a boolean indicating whether to include change addresses, and `<addresses>` is a list of addresses to check for unspent transactions.\n\nSo, if you could provide more information about what you're trying to achieve, I might be able to help you further.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `verus` command to list all unspent transactions in the entire blockchain?",
+            "The `verus z_listunspent` command does not list all unspent transactions in the entire blockchain. It actually lists unspent transactions for a specific set of addresses. The correct usage of the command is `verus z_listunspent <minconf> <maxconf> <includechange> <addresses>`, where `<minconf>` and `<maxconf>` specify the minimum and maximum number of confirmations, `<includechange>` is a boolean indicating whether to include change addresses, and `<addresses>` is a list of addresses to check for unspent transactions.",
+            "Examples\n> verus z_listunspent \n> verus z_listunspent 6 9999999 false \"[\"ztbx5DLDxa5ZLFTchHhoPNkKs57QzSyib6UqXpEdy76T1aUdFxJt1w9318Z8DJ73XzbnWHKEZP9Yjg712N5kMmP4QzS9iC9\",\"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"]\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listunspent\", \"params\": [6 9999999 false \"[\"ztbx5DLDxa5ZLFTchHhoPNkKs57QzSyib6UqXpEdy76T1aUdFxJt1w9318Z8DJ73XzbnWHKEZP9Yjg712N5kMmP4QzS9iC9\",\"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"]\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_listunspent"
+        ]
+    ]
+]

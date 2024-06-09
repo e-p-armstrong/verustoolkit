@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've got a question about converting VRSCTEST to GOLD. After sending the `sendcurrency` command, I'll immediately receive 0.975 GOLD in my wallet, right?\n\n**AI Assistant:**\nNot quite. The conversion is actually parked until the GOLD token launches. Once the token launches, you will either find 0.975 GOLD in your wallet or have your VRSCTEST back. So, it's not an immediate conversion.\n\n**User:**\nOkay, that makes sense. I've also been wondering, do I need to convert VRSCTEST to GOLD before creating mycoin?\n\n**AI Assistant:**\nNo, you don't need to convert VRSCTEST to GOLD before creating mycoin. You can create mycoin that can be converted to with either GOLD or VRSCTEST. So, feel free to create your mycoin without worrying about the conversion step!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "After sending the `sendcurrency` command to convert VRSCTEST to GOLD, I will immediately receive 0.975 GOLD in my wallet.",
+            "That's not correct. The conversion is parked until the GOLD token launches. Once the token launches, you will either find 0.975 GOLD in your wallet or have your VRSCTEST back.",
+            "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Do I need to convert VRSCTEST to GOLD before creating mycoin?",
+            "No, you don't need to convert VRSCTEST to GOLD before creating mycoin. You can create mycoin that can be converted to with either GOLD or VRSCTEST.",
+            "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

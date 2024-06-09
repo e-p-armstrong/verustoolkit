@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How does the wallet handle lag detection?",
+            "When the wallet detects a lag, it does not continue to mine or stake. Instead, it immediately stops attempting to mine or stake and devotes maximum resources to catching up. This is the opposite of what you might have thought, which is that it would continue to mine or stake.",
+            "This release should make a huge difference in global network synchronization, mining, and staking, which should provide a strong foundation as the network grows. In addition, it has significant efficiency improvements for both mining and staking. Here is a rundown of the improvements in this version:\nNew in both command line and GUI:\n1. Reconfigured connection ratios, better seed node discovery built in. Default outgoing connections now 4, default incoming for full node 384. If your machine can handle it, you can help the network and broadcast your stakes more quickly to increase the number of connections in your VRSC.conf with \"maxconnections=n\", where n is the number you wish to use.\n2. Improved lag detection. If your wallet detects a lag, it immediately stops attempting to mine or stake and devotes maximum resources to catching up. Rather than continuing to mine or stake, which may contribute to further lag, this action ensures mining and staking occurs on a viable tip of the chain.\n3. Improved staking efficiency. This version raises the default priority of the staking thread, ensuring that the staking process is fast and efficient, even in cases where it would have also lagged with mining or other machine load.\n4. All updates and improvements from Komodo Platform as of 1.5 weeks ago have been merged.\nPreparing for unlocked era.\nFirst release with verus-cli\nLinux, Mac and Windows variants built and distributed for the VerusCoin Launch.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is this release compatible with only Linux machines?",
+            "No, this release is not limited to Linux machines. The release notes mention that Linux, Mac, and Windows variants have been built and distributed for the VerusCoin Launch.",
+            "This release should make a huge difference in global network synchronization, mining, and staking, which should provide a strong foundation as the network grows. In addition, it has significant efficiency improvements for both mining and staking. Here is a rundown of the improvements in this version:\nNew in both command line and GUI:\n1. Reconfigured connection ratios, better seed node discovery built in. Default outgoing connections now 4, default incoming for full node 384. If your machine can handle it, you can help the network and broadcast your stakes more quickly to increase the number of connections in your VRSC.conf with \"maxconnections=n\", where n is the number you wish to use.\n2. Improved lag detection. If your wallet detects a lag, it immediately stops attempting to mine or stake and devotes maximum resources to catching up. Rather than continuing to mine or stake, which may contribute to further lag, this action ensures mining and staking occurs on a viable tip of the chain.\n3. Improved staking efficiency. This version raises the default priority of the staking thread, ensuring that the staking process is fast and efficient, even in cases where it would have also lagged with mining or other machine load.\n4. All updates and improvements from Komodo Platform as of 1.5 weeks ago have been merged.\nPreparing for unlocked era.\nFirst release with verus-cli\nLinux, Mac and Windows variants built and distributed for the VerusCoin Launch.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "6137d7d7-5dfb-4647-b2bc-d31116688f66"
+]

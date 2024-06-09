@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `getidentity` command?",
+            "The command is actually `getidentitycontent`, not `getidentity`. The `getidentitycontent` command is used to retrieve the content associated with a specific identity.",
+            "### `getidentitycontent \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight) (vdxfkey)`",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can you explain how to use the `getidentitycontent` command with only one parameter, the identity name?",
+            "The `getidentitycontent` command actually requires more than one parameter. The correct syntax is `getidentitycontent \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight) (vdxfkey)`. You need to provide the identity name or IID, as well as other parameters such as the height range, transaction proofs, and VDXF key.",
+            "### `getidentitycontent \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight) (vdxfkey)`",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "758b8f3f-afbb-4b1e-85d3-c81bb380e75d"
+]

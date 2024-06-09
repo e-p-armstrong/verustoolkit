@@ -1,0 +1,6 @@
+[
+    "How do I create a new token that can only be converted from VRSCTEST, using the command-line command?",
+    "The question is flawed because it assumes that the new token can only be converted from VRSCTEST, but according to the text, you can create a new token that can be converted to with either GOLD or VRSCTEST. To create such a token, you would use a command like:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines a new token named \"mycoin\" that can be converted to with either GOLD or VRSCTEST.",
+    "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

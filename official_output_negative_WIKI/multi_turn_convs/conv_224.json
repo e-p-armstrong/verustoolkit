@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to set up a PBaaS chain and I'm a bit confused about the flags. What does the `OPTION_NATIVECURRENCY` flag do in a PBaaS chain definition?\n\n**AI Assistant:**\nI think there might be some confusion. There is no `OPTION_NATIVECURRENCY` flag. The options listed are for specific features or restrictions, such as restricting to a single currency, routing external currencies, or marking a chain as a PBaaS chain. Could you be thinking of a different flag?\n\n**User:**\nActually, I think I might have made a mistake. I was wondering about the `OPTION_SINGLECURRENCY` flag. How does it enable multiple currencies on a PBaaS chain?\n\n**AI Assistant:**\nI think there's been a misunderstanding. The `OPTION_SINGLECURRENCY` flag does not enable multiple currencies on a PBaaS chain. In fact, it does the opposite: it restricts the chain to a single currency. This flag is intended for PBaaS chains or gateways that need to operate with only one currency. It's actually the opposite of what you were expecting, right?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `OPTION_NATIVECURRENCY` flag do in a PBaaS chain definition?",
+            "There is no `OPTION_NATIVECURRENCY` flag. The options listed are for specific features or restrictions, such as restricting to a single currency, routing external currencies, or marking a chain as a PBaaS chain.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How does the `OPTION_SINGLECURRENCY` flag enable multiple currencies on a PBaaS chain?",
+            "The `OPTION_SINGLECURRENCY` flag does not enable multiple currencies on a PBaaS chain. In fact, it does the opposite: it restricts the chain to a single currency. This flag is intended for PBaaS chains or gateways that need to operate with only one currency.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can you use the `closeoffers` command to close offers that do not belong to this wallet?",
+            "No, the `closeoffers` command can only close offers that belong to this wallet. It will not close offers that do not belong to this wallet, even if they are still valid.",
+            "closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)\n\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n\nArguments\n [\"offer1_txid\", \"offer2_txid\", ...]   (array, optional) array of hex tx ids of offers to close\n transparentorprivatefundsdestination     (transparent or private address, optional) destination for closing funds\n privatefundsdestination           (private address, optional) destination for native funds only\n\nResult\n null return",
+            "./raw_text_input_api_text/closeoffers"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ff3c3732-bc2f-41c8-9620-360186e2b2f4"
+]

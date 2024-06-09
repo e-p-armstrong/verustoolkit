@@ -1,0 +1,6 @@
+[
+    "What happens if the token launch fails after I park my conversion using the command:\n```\ndcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```",
+    "According to the text, if the token launch is successful, you will either find 0.975 GOLD in your wallet or have your VRSCTEST back. There is no mention of what happens if the token launch fails, but it can be inferred that the conversion would not be successful and you would not receive GOLD or have your VRSCTEST returned.",
+    "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,6 @@
+[
+    "Can I use the `z_getoperationresult` command to retrieve the result and status of an operation that is still in progress?",
+    "No, you cannot use the `z_getoperationresult` command to retrieve the result and status of an operation that is still in progress. This command only retrieves the result and status of an operation that has finished, and then removes the operation from memory.",
+    "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_getoperationresult"
+]

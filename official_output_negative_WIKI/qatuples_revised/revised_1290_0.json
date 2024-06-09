@@ -1,0 +1,6 @@
+[
+    "What happens to the stability of the chain tip if the community chooses not to use the Komodo notary service?",
+    "The stability of the chain tip is not affected by the community's decision to use or not use the Komodo notary service. PBaaS chains will always follow their proof of power protocol and lock to their witnessed tips as well. This means that the stability of the chain tip is ensured by the PBaaS chains' own protocol, regardless of the use of the Komodo notary service.",
+    "mmunity opts to use the Komodo notary service, Komodo notarizations will continue to ensure a stable chain tip, but no matter what other notarizations are present, PBaaS chains will always follow their proof of power protocol and lock to their witnessed tips as well.",
+    "./raw_text_input_wiki/release_notes.md"
+]

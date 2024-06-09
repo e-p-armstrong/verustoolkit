@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `invalidateblock` command if it only temporarily marks a block as invalid?",
+    "The `invalidateblock` command does not temporarily mark a block as invalid, it permanently marks a block as invalid, as if it violated a consensus rule. This means that once a block is marked as invalid using this command, it will remain invalid.",
+    "invalidateblock \"hash\"\n\nPermanently marks a block as invalid, as if it violated a consensus rule.\n\nArguments:\n1. hash  (string, required) the hash of the block to mark as invalid\n\nResult:\n\nExamples:\n> verus invalidateblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/invalidateblock"
+]

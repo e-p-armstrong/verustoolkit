@@ -1,0 +1,6 @@
+[
+    "If I launch GOLD, can I create mycoin that can only be converted to with GOLD and not VRSCTEST?",
+    "No, that's not correct. If you launch GOLD and want to create mycoin, you can create mycoin that can be converted to with either GOLD or VRSCTEST.",
+    "find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

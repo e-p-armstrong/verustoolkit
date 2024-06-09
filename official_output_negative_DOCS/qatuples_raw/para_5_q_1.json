@@ -1,0 +1,6 @@
+[
+    "How do I use Verus Mobile to bridge from Bitcoin to Verus?",
+    "According to the text, Verus Mobile can be used to bridge from Ethereum to Verus (or vice versa), not from Bitcoin to Verus.",
+    "# Get a Verus address\nThere are a few ways to get a Verus address on desktop and on mobile.\n\n## Verus Mobile\nDownload Verus Mobile from the [App Store](https://apps.apple.com/en/app/verus-mobile/id6447361908) or [Play Store](https://play.google.com/store/apps/details?id=org.autonomoussoftwarefoundation.verusmobile.android&hl=en&gl=US)\n\nUse Verus Mobile to bridge from Ethereum to Verus (or vice versa) all within the application. And use it for MEV-resistant and low-cost conversions: [more on Verus DeFi](/sendcurrency)\n\n## Verus Desktop\nDownload Verus Desktop for Windows, macOS, Linux or Linux ARM [here](https://verus.io/wallet).\n\nRun a full node (native mode) to experience all protocol features.",
+    "./raw_text_input_docs/getwallet.md"
+]

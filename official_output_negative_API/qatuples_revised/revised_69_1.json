@@ -1,0 +1,6 @@
+[
+    "Can I use the `migrate_completeimporttransaction` command to generate a proof on the target chain from scratch?",
+    "No, the.MixedReality `migrate_completeimporttransaction` command doesn't generate a proof on the target chain from scratch. Instead, it takes a cross-chain import tx with a proof generated on the asset chain and extends that proof to the target chain proof root.",
+    "migrate_completeimporttransaction importTx\n\nTakes a cross chain import tx with proof generated on assetchain and extends proof to target chain proof root",
+    "./raw_text_input_api_text/migrate_completeimporttransaction"
+]

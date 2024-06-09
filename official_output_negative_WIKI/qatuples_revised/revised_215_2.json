@@ -1,0 +1,6 @@
+[
+    "How do I create an identity without paying any fees to referrers or miners?",
+    "Unfortunately, that's not possible. According to the protocol, creating an identity involves paying fees to referrers and miners. The fees are distributed as follows: 20 VRSC to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block. The remaining funds, which are not paid to referrers, go to miners or stakers of the blockchain.",
+    "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+    "./raw_text_input_wiki/release_notes.md"
+]

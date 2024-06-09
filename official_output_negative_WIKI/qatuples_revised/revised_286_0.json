@@ -1,0 +1,6 @@
+[
+    "Can you explain why upgrading to a quantum secure address will only secure the latest 100 transactions sent to my identity name/address?",
+    "Actually, upgrading to a quantum secure address will retroactively secure **all** transactions sent to your identity name/address, not just the latest 100. This means that if you have 1000 transactions sent to your identity, the upgrade will secure all 1000 of them.",
+    "s as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+    "./raw_text_input_wiki/release_notes.md"
+]

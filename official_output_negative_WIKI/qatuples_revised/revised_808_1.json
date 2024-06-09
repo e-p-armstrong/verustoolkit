@@ -1,0 +1,6 @@
+[
+    "Can I download the Verus desktop wallet from the Apple App Store?",
+    "No, the Verus desktop wallet is not available for download from the Apple App Store. The desktop wallet releases can be found on GitHub, and the iOS mobile wallet can be accessed through TestFlight.",
+    "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+    "./raw_text_input_wiki/how-to_verus_info.md"
+]

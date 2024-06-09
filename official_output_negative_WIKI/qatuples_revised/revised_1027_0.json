@@ -1,0 +1,6 @@
+[
+    "How do I convert VRSCTEST to PBaaSChain using the Verus command-line interface?",
+    "Actually, the command:\n```\nverus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nis used to convert VRSCTEST to PBaaSChain, not the other way around. To convert PBaaSChain to VRSCTEST, you would use the command:\n```\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```",
+    "ress\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

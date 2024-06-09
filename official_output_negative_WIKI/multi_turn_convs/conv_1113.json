@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble with Komodo. I'm getting the error \"Cannot Get a lock on data directory /root/.komodo/VRSC\" even though I've stopped the Komodo process. Do you know what's going on?\n\n**AI Assistant:**\nThat error usually means that Komodo is already running. Before trying to start Komodo again, you should check if it's indeed running by using the command `./verus getinfo`. If it's running, you'll get information back, and if it's not, you'll get an error. Have you tried that?\n\n**User:**\nSo what do I do if I get this error? How do I start Komodo?\n\n**AI Assistant:**\nYou can't start Komodo if you're getting the \"Cannot Get a lock on data directory /root/.komodo/VRSC\" error because it means Komodo is already running. You need to check if it's running using the command `./verus getinfo` or `ps fax | grep verus` and then decide what to do next. You might want to try stopping the process or checking your system for any issues.\n\n**User:**\nBut what if Komodo is not running? What does the error indicate in that case?\n\n**AI Assistant:**\nActually, the error \"Cannot Get a lock on data directory /root/.komodo/VRSC\" actually indicates that Komodo is already running, not that it's not running. If Komodo is not running, you wouldn't get this error. So, in this case, it's likely that Komodo is still running in the background or there's another issue at play.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What should I do if I'm getting the error \"Cannot Get a lock on data directory /root/.komodo/VRSC\" even though I've stopped the Komodo process?",
+            "The error \"Cannot Get a lock on data directory /root/.komodo/VRSC\" usually means that Komodo is already running. Before trying to start Komodo again, you should check if it's indeed running by using the command `./verus getinfo`. If it's running, you'll get information back, and if it's not, you'll get an error.",
+            "# ERROR: Cannot Get a lock on data directory /root/.komodo/VRSC.\n\nKomodo is probably already running.\n\n## Procedure:\n\nIt just means you can't start it when it's already running. If it isn't running we can take a look at it.\nCheck to see if it is running by running:\n\n`./verus getinfo`\n\nIf it's running you'll get info back, if it isn't you'll get an error.\nIf that throws an error, it's worth checking using this command:\n\n`ps fax | grep verus`\n\nand seeing if any processes are listed besides the process you're using to search.\nYou would see verusd with a child process of komodo and all its cli arguments.\n\n(submitted by @keda666, solution written by englal.vrsc@)\n\nNote: last revision date 2020-02-26.",
+            "./raw_text_input_wiki/mac-faq01_obtain_lock.md"
+        ],
+        [
+            "How do I start Komodo if I get the \"Cannot Get a lock on data directory /root/.komodo/VRSC\" error?",
+            "You can't start Komodo if you're getting the \"Cannot Get a lock on data directory /root/.komodo/VRSC\" error because it means Komodo is already running. You need to check if it's running using the command `./verus getinfo` or `ps fax | grep verus` and then decide what to do next.",
+            "# ERROR: Cannot Get a lock on data directory /root/.komodo/VRSC.\n\nKomodo is probably already running.\n\n## Procedure:\n\nIt just means you can't start it when it's already running. If it isn't running we can take a look at it.\nCheck to see if it is running by running:\n\n`./verus getinfo`\n\nIf it's running you'll get info back, if it isn't you'll get an error.\nIf that throws an error, it's worth checking using this command:\n\n`ps fax | grep verus`\n\nand seeing if any processes are listed besides the process you're using to search.\nYou would see verusd with a child process of komodo and all its cli arguments.\n\n(submitted by @keda666, solution written by englal.vrsc@)\n\nNote: last revision date 2020-02-26.",
+            "./raw_text_input_wiki/mac-faq01_obtain_lock.md"
+        ],
+        [
+            "What does the error \"Cannot Get a lock on data directory /root/.komodo/VRSC\" indicate if Komodo is not running?",
+            "The error \"Cannot Get a lock on data directory /root/.komodo/VRSC\" actually indicates that Komodo is already running, not that it's not running. If Komodo is not running, you wouldn't get this error.",
+            "# ERROR: Cannot Get a lock on data directory /root/.komodo/VRSC.\n\nKomodo is probably already running.\n\n## Procedure:\n\nIt just means you can't start it when it's already running. If it isn't running we can take a look at it.\nCheck to see if it is running by running:\n\n`./verus getinfo`\n\nIf it's running you'll get info back, if it isn't you'll get an error.\nIf that throws an error, it's worth checking using this command:\n\n`ps fax | grep verus`\n\nand seeing if any processes are listed besides the process you're using to search.\nYou would see verusd with a child process of komodo and all its cli arguments.\n\n(submitted by @keda666, solution written by englal.vrsc@)\n\nNote: last revision date 2020-02-26.",
+            "./raw_text_input_wiki/mac-faq01_obtain_lock.md"
+        ]
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI've got a question about converting VRSCTEST to NEWCOIN. How do you convert VRSCTEST to NEWCOIN after it is active using the `sendcurrency` command?\n\n**AI Assistant:**\nActually, you don't need to wait for NEWCOIN to be active to convert VRSCTEST to it. You can preconvert VRSCTEST to NEWCOIN before it is active using the `sendcurrency` command with the `preconvert` option set to `true`. Here's an example:\n```\nverus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n```\nThis will effectively park your conversion until NEWCOIN is active, at which point you will either find the converted amount of NEWCOIN in your wallet or have your original VRSCTEST amount returned.\n\nSo, to summarize, you can convert VRSCTEST to NEWCOIN before it's active by using the `preconvert` option with the `sendcurrency` command. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do you convert VRSCTEST to NEWCOIN after it is active using the `sendcurrency` command?",
+            "You don't need to wait for NEWCOIN to be active to convert VRSCTEST to it. You can preconvert VRSCTEST to NEWCOIN before it is active using the `sendcurrency` command with the `preconvert` option set to `true`. Here's an example:\n```\nverus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n```\nThis will effectively park your conversion until NEWCOIN is active, at which point you will either find the converted amount of NEWCOIN in your wallet or have your original VRSCTEST amount returned.",
+            "TC\",\"via\":\"VRSC-BTC\"}]'\n  ```\n- **Preconverting to new currency, NEWCOIN, before it is active:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n  ```\n- **Sending VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"exportto\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

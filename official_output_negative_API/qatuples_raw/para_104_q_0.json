@@ -1,0 +1,6 @@
+[
+    "How do I use the `refundfailedlaunch` command to launch a new currency?",
+    "The `refundfailedlaunch` command doesn't actually launch a new currency. Instead, it refunds any funds sent to a chain if they are eligible for refund. This command attempts to refund all transactions for all contributors to the specified chain.",
+    "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/refundfailedlaunch"
+]

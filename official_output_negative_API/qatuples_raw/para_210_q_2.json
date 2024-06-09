@@ -1,0 +1,6 @@
+[
+    "What is the output format of `zcrawkeygen`?",
+    "The output format of `zcrawkeygen` is a JSON object with three properties: \"zcaddress\", \"zcsecretkey\", and \"zcviewingkey\".",
+    "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+    "./raw_text_input_api_text/zcrawkeygen"
+]

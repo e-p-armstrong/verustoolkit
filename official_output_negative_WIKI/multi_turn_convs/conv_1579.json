@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to create a transaction and I'm a bit unsure about the `feeoffer` parameter. What is the default behavior if I specify it in a transaction?\n\n**AI Assistant:**\nThe default behavior is actually the opposite: if the `feeoffer` parameter is missing, it uses the standard price. If it is specified, it uses the amount specified in the `feeoffer` parameter. So, if you specify the `feeoffer` parameter, it will override the standard price with the amount you provided.\n\n**User:**\nGot it! Thanks for clarifying that. Another question: can you explain how to specify multiple addresses for the `sourceoffunds` parameter?\n\n**AI Assistant:**\nActually, the `sourceoffunds` parameter only accepts a single address or ID. If not specified, it defaults to a transparent wildcard \"*\". There is no option to specify multiple addresses for this parameter. You'll need to use a single address or ID for the `sourceoffunds` parameter.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the default behavior if the `feeoffer` parameter is specified in a transaction?",
+            "The default behavior is actually the opposite: if the `feeoffer` parameter is missing, it uses the standard price. If it is specified, it uses the amount specified in the `feeoffer` parameter.",
+            "rn a transaction for additional\n                      signatures rather than committing it\nfeeoffer              (amount, optional)\n                      amount to offer miner/staker for the registration\n                      fee, if missing, uses standard price\nsourceoffunds           (addressorid, optional) optional address to use for source of funds. if not specified, transparent wildcard \"*\" is used\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can you explain how to specify multiple addresses for the `sourceoffunds` parameter?",
+            "Actually, the `sourceoffunds` parameter only accepts a single address or ID. If not specified, it defaults to a transparent wildcard \"*\". There is no option to specify multiple addresses for this parameter.",
+            "rn a transaction for additional\n                      signatures rather than committing it\nfeeoffer              (amount, optional)\n                      amount to offer miner/staker for the registration\n                      fee, if missing, uses standard price\nsourceoffunds           (addressorid, optional) optional address to use for source of funds. if not specified, transparent wildcard \"*\" is used\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

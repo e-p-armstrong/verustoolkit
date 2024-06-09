@@ -1,0 +1,6 @@
+[
+    "Is it possible to omit both the \"heightstart\" and \"heightend\" arguments when calling the command?",
+    "Yes, it is possible to omit both the \"heightstart\" and \"heightend\" arguments when calling the command. In this case, the command will return all exports on the specified chain, without any height restrictions.",
+    "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

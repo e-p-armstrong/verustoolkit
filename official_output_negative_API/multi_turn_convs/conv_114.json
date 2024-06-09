@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI have a question about using the `gettransaction` command. How do I use it to get information about a transaction that is not in my wallet?\n\n**AI Assistant:**\nThe `gettransaction` command is actually designed to get detailed information about in-wallet transactions. Unfortunately, it doesn't provide information about transactions that are not in your wallet. If you need to look up a transaction that's not in your wallet, you might want to try using a blockchain explorer or another tool instead.\n\n**User:**\nOkay, that makes sense. Another question about `gettransaction`: can I use it without specifying a transaction ID?\n\n**AI Assistant:**\nNo, you can't use the `gettransaction` command without specifying a transaction ID. The `txid` argument is required, and it must be a string representing the transaction ID. So, you'll need to know the ID of the transaction you're interested in and include it in the command.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `gettransaction` command to get information about a transaction that is not in my wallet?",
+            "The `gettransaction` command is specifically designed to get detailed information about in-wallet transactions. It does not provide information about transactions that are not in your wallet.",
+            "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_api_text/gettransaction"
+        ],
+        [
+            "Can I use the `gettransaction` command without specifying a transaction ID?",
+            "No, you cannot use the `gettransaction` command without specifying a transaction ID. The `txid` argument is required, and it must be a string representing the transaction ID.",
+            "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_api_text/gettransaction"
+        ]
+    ]
+]

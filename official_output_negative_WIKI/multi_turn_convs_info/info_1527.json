@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does the `OPTION_SINGLECURRENCY` flag do in a PBaaS chain definition?",
+            "The `OPTION_SINGLECURRENCY` flag is not specific to PBaaS chain definitions. It's a flag that can be used in PBaaS chains or gateways to potentially restrict them to a single currency.",
+            " token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is `OPTION_PBAAS` a flag that enables gateway functionality in a chain definition?",
+            "No, `OPTION_PBAAS` is a flag that indicates that the chain definition is a PBaaS chain, not that it enables gateway functionality. Gateway functionality is enabled by the `OPTION_GATEWAY` flag.",
+            " token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is an `OPTION_NFT_TOKEN` a type of token that represents a bundle of multiple assets?",
+            "No, an `OPTION_NFT_TOKEN` is a single satoshi NFT token that tokenizes control over the root ID. It's not a bundle of multiple assets.",
+            " token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "fabde54a-ffc9-403d-9b13-77a2b4742f58"
+]

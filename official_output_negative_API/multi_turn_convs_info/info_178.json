@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What information does the `listaccounts` command provide?",
+            "The `listaccounts` command returns an object with account names as keys and account balances as values. It allows you to filter the results based on the minimum number of confirmations and whether to include watchonly addresses.",
+            "listaccounts ( minconf includeWatchonly)\n\nDEPRECATED. Returns Object that has account names as keys, account balances as values.\n\nArguments:\n1. minconf     (numeric, optional, default=1) Only include transactions with at least this many confirmations\n2. includeWatchonly (bool, optional, default=false) Include balances in watchonly addresses (see 'importaddress')\n\nResult:\n{           (json object where keys are account names, and values are numeric balances\n \"account\": x.xxx, (numeric) The property name is the account name, and the value is the total balance for the account.\n ...\n}\n\nExamples:\n\nList account balances where there at least 1 confirmation\n> verus listaccounts\n\nList account balances including zero confirmation transactions\n> verus listaccounts 0\n\nList account balances for 6 or more confirmations\n> verus listaccounts 6\n\nAs json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaccounts\", \"params\": [6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listaccounts"
+        ],
+        [
+            "Is the `listaccounts` command still supported and not deprecated?",
+            "The `listaccounts` command is actually deprecated, meaning it's no longer recommended for use and may be removed in future versions.",
+            "listaccounts ( minconf includeWatchonly)\n\nDEPRECATED. Returns Object that has account names as keys, account balances as values.\n\nArguments:\n1. minconf     (numeric, optional, default=1) Only include transactions with at least this many confirmations\n2. includeWatchonly (bool, optional, default=false) Include balances in watchonly addresses (see 'importaddress')\n\nResult:\n{           (json object where keys are account names, and values are numeric balances\n \"account\": x.xxx, (numeric) The property name is the account name, and the value is the total balance for the account.\n ...\n}\n\nExamples:\n\nList account balances where there at least 1 confirmation\n> verus listaccounts\n\nList account balances including zero confirmation transactions\n> verus listaccounts 0\n\nList account balances for 6 or more confirmations\n> verus listaccounts 6\n\nAs json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listaccounts\", \"params\": [6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listaccounts"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c13f7447-7df7-4fe0-b984-d999ec310917"
+]

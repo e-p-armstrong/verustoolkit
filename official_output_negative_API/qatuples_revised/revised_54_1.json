@@ -1,0 +1,6 @@
+[
+    "Can you explain how to use the `zcsamplejoinsplit` command to send Verus coins to another wallet?",
+    "The `zcsamplejoinsplit` command is not used to send Verus coins to another wallet. It performs a joinsplit and returns the JSDescription.",
+    "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+    "./raw_text_input_api_text/zcsamplejoinsplit"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nAnother question, how do you specify a random address to source all funds for fees when using Verus?\n\n**AI Assistant:**\nYou don't actually specify a random address. Instead, you can use a transparent or private address to source all funds for fees, which helps to preserve the privacy of the identity. Does that make sense?\n\n**User:**\nThat's helpful, thanks. I'm still getting to grips with the technical side of Verus. What is the format of the transaction ID returned by Verus, by the way?\n\n**AI Assistant:**\nThe transaction ID returned by Verus is a hexadecimal string (hexstr).",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do you specify a random address to source all funds for fees when using Verus?",
+            "You don't specify a random address. Instead, you can use a transparent or private address to source all funds for fees, which helps to preserve the privacy of the identity.",
+            "ansparent or private address to source all funds for fees to preserve privacy of the identity\n```\n#### Result:\ntransactionid          (hexstr)",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the format of the transaction ID returned by Verus?",
+            "The transaction ID returned by Verus is a hexadecimal string (hexstr).",
+            "ansparent or private address to source all funds for fees to preserve privacy of the identity\n```\n#### Result:\ntransactionid          (hexstr)",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

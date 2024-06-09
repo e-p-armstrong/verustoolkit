@@ -1,0 +1,6 @@
+[
+    "Is it true that the \"ftfork\" blocks object has the same fields as the \"consensus\" object?",
+    "No, that is not true. The \"ftfork\" blocks object has the same fields as the \"enforce\" object, not the \"consensus\" object.",
+    "ftfork blocks (same fields as \"enforce\")\n   }, ...\n ],\n \"upgrades\": {        (object) status of network upgrades\n   \"xxxx\" : {        (string) branch ID of the upgrade\n    \"name\": \"xxxx\",    (string) name of upgrade\n    \"activationheight\": xxxxxx, (numeric) block height of activation\n    \"status\": \"xxxx\",   (string) status of upgrade\n    \"info\": \"xxxx\",    (string) additional information about upgrade\n   }, ...\n },\n \"consensus\": {        (object) branch IDs of the current and upcoming consensus rules\n   \"chaintip\": \"xxxxxxxx\",  (string) branch ID used to validate the current chain tip\n   \"nextblock\": \"xxxxxxxx\"  (string) branch ID that the next block will be validated under\n }\n}",
+    "./raw_text_input_api_text/getblockchaininfo"
+]

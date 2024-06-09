@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about using the Verus command-line tool. How do I send currency from the Bridge.PBaaSChain chain to VRSCTEST using the Verus command-line tool?\n\n**AI Assistant:**\nHere's the correct command:\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThis command sends 10 units of currency from PBaaSChain to the address `RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv` on the VRSCTEST chain, using the Bridge.PBaaSChain gateway.\n\n**User:**\nThanks for that! I was wondering, is it possible to define a currency using the `sendcurrency` command?\n\n**AI Assistant:**\nNo, the `sendcurrency` command is not used to define a currency. It is used to send currency from one chain to another. To define a currency, you would use the `definecurrency` command.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I send currency from the Bridge.PBaaSChain chain to VRSCTEST using the Verus command-line tool?",
+            "Here's the correct command:\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThis command sends 10 units of currency from PBaaSChain to the address `RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv` on the VRSCTEST chain, using the Bridge.PBaaSChain gateway.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it possible to define a currency using the `sendcurrency` command?",
+            "No, the `sendcurrency` command is not used to define a currency. It is used to send currency from one chain to another. To define a currency, you would use the `definecurrency` command.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

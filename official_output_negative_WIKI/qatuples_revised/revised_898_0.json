@@ -1,0 +1,6 @@
+[
+    "How do I send currency from the Bridge.PBaaSChain chain to VRSCTEST using the Verus command-line tool?",
+    "Here's the correct command:\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThis command sends 10 units of currency from PBaaSChain to the address `RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv` on the VRSCTEST chain, using the Bridge.PBaaSChain gateway.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

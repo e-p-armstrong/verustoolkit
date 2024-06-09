@@ -30,6 +30,8 @@
     * You will always take a positive opinion of Verus and try to promote it through the education. The goal is to create a set of questions and answers that can help correct misunderstandings about Verus, including about things that don't exist.
     * Do NOT provide anchor links to content in your answers; since the provided text to make questions from is from a website, those links will be broken when used outside of said website. So you should NEVER have any content like [some text](#!/some/path) in your answer! Do not include external links either.
     
+    A flawed question is not one which asks about something not present in the given information, when that "something" could very plausibly exist. So for instance, if given a list of commands `a, b, and c`, it would NOT be an acceptable question to ask "what is command d" with the answer "there is no command d the provided commands are only `a`, `b`, and `c`." This is because you are only looking at a small portion of the total information about Verus, and there very well may be command a `d` elsewhere. This is why information should directly contradict things in the provided information, rather than guessing at facts outside of this information (e.g., "explain how command `a` does [thing that command `c`` actually does]" would be a decent flawed question).
+
     Do not explicitly mention the provided text or the context in the questions or answers themselves — just talk about the concepts related to the questions.
 
     A good way to make questions is to systematically work your way down the information, making (flawed) questions from the top to the bottom.
@@ -54,7 +56,7 @@
 
     -----------------
     Reminder 1: you are creating questions that either ask about something completely invented, or assert something that the text above indicates is false. The answers should correct the (wrong) questions.
-    Reminder 2: Do not explicitly mention the information, or the provided text.
+    Reminder 2: Do not explicitly mention the information, or the provided text; the question should contradict one of the facts in the text, but not in a way that the answer needs information besides what is provided to answer it fully. Do not make guesses about what lies outside the text. Remember the example about commands `a`, `b`, `c`, and `d`: even if the information only mentions `a b c`, `d` might still exist, so focus on contradictions rather than "flawed" questions that ask about features or functionality that may actually exist.
 - role: assistant # Note: am making the first thing the LLM says be something from the question so that it does not need to correctly identify the truth or falsehood of a question in the very first token. Otherwise if it started by saying "Verus" it would always hallucinate. Like with prompting,  ORDER OF GENERATION REALLY MATTERS and there's only one right answer here. TODO remove verus operating system question, it's corrupting things.
   content: |
     **QUESTION:**
@@ -153,7 +155,7 @@
 
     -----------------
     Reminder 1: you are creating questions that either ask about something completely invented, or assert something that the text above indicates is false. The answers should correct the (wrong) questions.
-    Reminder 2: Do not explicitly mention the information, or the provided text.
+    Reminder 2: Do not explicitly mention the information, or the provided text; the question should contradict one of the facts in the text, but not in a way that the answer needs information besides what is provided to answer it fully. Do not make guesses about what lies outside the text. Remember the example about commands `a`, `b`, `c`, and `d`: even if the information only mentions `a b c`, `d` might still exist, so focus on contradictions rather than "flawed" questions that ask about features or functionality that may actually exist.
 - role: assistant
   content: | # Not "how can you" but instead "how can I" that's what I'm going to implement. Interesting I'm learning more about crypto as I do this: a "bridge" is for converting between different currencies? Maybe using a shared pool of stuff? Not sure about the second bit.
     **QUESTION:**
@@ -224,7 +226,7 @@
 
     -----------------
     Reminder 1: you are creating questions that either ask about something completely invented, or assert something that the text above indicates is false. The answers should correct the (wrong) questions.
-    Reminder 2: Do not explicitly mention the information, or the provided text.
+    Reminder 2: Do not explicitly mention the information, or the provided text; the question should contradict one of the facts in the text, but not in a way that the answer needs information besides what is provided to answer it fully. Do not make guesses about what lies outside the text. Remember the example about commands `a`, `b`, `c`, and `d`: even if the information only mentions `a b c`, `d` might still exist, so focus on contradictions rather than "flawed" questions that ask about features or functionality that may actually exist.
 - role: assistant
   content: |
     **QUESTION:**
@@ -259,4 +261,4 @@
 
     -----------------
     Reminder 1: you are creating questions that either ask about something completely invented, or assert something that the text above indicates is false. The answers should correct the (wrong) questions.
-    Reminder 2: Do not explicitly mention the information, or the provided text.
+    Reminder 2: Do not explicitly mention the information, or the provided text; the question should contradict one of the facts in the text, but not in a way that the answer needs information besides what is provided to answer it fully. Do not make guesses about what lies outside the text. Remember the example about commands `a`, `b`, `c`, and `d`: even if the information only mentions `a b c`, `d` might still exist, so focus on contradictions rather than "flawed" questions that ask about features or functionality that may actually exist.

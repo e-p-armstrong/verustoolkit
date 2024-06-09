@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to figure out how to use the `curl` command to access my Verus wallet. Can I do it without authentication?\n\n**AI Assistant:**\nUnfortunately, no, it's not possible to use the `curl` command to access the Verus wallet without authentication. The `curl` command requires authentication, as shown in the example: `curl --user myusername ...`. The `--user` option specifies the username for authentication. You'll need to provide the necessary credentials to access your wallet. Would you like some help with the authentication process or setting up your wallet?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Is it possible to use the `curl` command to access the Verus wallet without authentication?",
+            "No, it is not possible to use the `curl` command to access the Verus wallet without authentication. The `curl` command requires authentication, as shown in the example: `curl --user myusername ...`. The `--user` option specifies the username for authentication.",
+            "Examples\n> verus listunspent \n> verus listunspent 6 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listunspent\", \"params\": [6, 9999999 \"[\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\",\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listunspent"
+        ]
+    ]
+]

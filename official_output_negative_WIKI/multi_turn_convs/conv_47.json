@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been exploring the options for tokens and chains on Verus, and I had a few questions. What does the `OPTION_PBAAS` flag do when set on a token?\n\n**AI Assistant:**\nActually, the `OPTION_PBAAS` flag is not for tokens, but for PBaaS chain definitions. When set, it indicates that this is a PBaaS chain definition. It's not meant to be used on tokens.\n\n**User:**\nOkay, that makes sense. I was also wondering, is there an `OPTION_NATIVE_CURRENCY` flag to define a native currency?\n\n**AI Assistant:**\nNo, there is no `OPTION_NATIVE_CURRENCY` flag. Verus doesn't use a specific flag for defining native currencies.\n\n**User:**\nGot it. And finally, what is the purpose of the `OPTION_SINGLECURRENCY` flag when set on a gateway?\n\n**AI Assistant:**\nThe `OPTION_SINGLECURRENCY` flag isn't specifically for gateways, although it can be used on them. Its purpose is to restrict a PBaaS chain or gateway to a single currency. It's not exclusive to gateways, but rather a more general option for certain types of chains or gateways.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the `OPTION_PBAAS` flag do when set on a token?",
+            "The `OPTION_PBAAS` flag is actually used for PBaaS chain definitions, not tokens. When set, it indicates that this is a PBaaS chain definition.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is there an `OPTION_NATIVE_CURRENCY` flag to define a native currency?",
+            "No, there is no `OPTION_NATIVE_CURRENCY` flag.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `OPTION_SINGLECURRENCY` flag when set on a gateway?",
+            "The `OPTION_SINGLECURRENCY` flag is not specifically for gateways. It's actually for PBaaS chains or gateways to potentially restrict to a single currency.",
+            " a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "Why does the `sendcurrency` command always return the operation ID as public information?",
+            "That's not correct. The operation ID is only not public information when `returntxtemplate` is set to `false`. If `returntxtemplate` is `true`, the output will include `outputtotals` and `hextx`, but not the operation ID.",
+            "Result:\n  \"operation-id\" : \"opid\" (string) The operation id, not public info, if (returntxtemplate) is false\n\nIf (returntxtemplate) is true  {\n    \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies that need to be input to the transaction\n    \"hextx\" : \"hexstring\"        The transaction with all specified outputs and no inputs\n  }\n\nExamples:\n> verus sendcurrency \"*\" '[{\"currency\":\"btc\",\"address\":\"RRehdmUV7oEAqoZnzEGBH34XysnWaBatct\" ,\"amount\":500.0},...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendcurrency\", \"params\": [\"bob@\", [{\"currency\":\"btc\", \"address\":\"alice@quad\", \"amount\":500.0},...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendcurrency"
+        ],
+        [
+            "Can you explain why the `sendcurrency` command can only be used with a single currency output?",
+            "That's not correct. The `sendcurrency` command can be used with multiple currency outputs. In the example provided, the command is shown with an array of objects, each specifying a currency, address, and amount. This allows for sending multiple currencies to different addresses in a single transaction.",
+            "Result:\n  \"operation-id\" : \"opid\" (string) The operation id, not public info, if (returntxtemplate) is false\n\nIf (returntxtemplate) is true  {\n    \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies that need to be input to the transaction\n    \"hextx\" : \"hexstring\"        The transaction with all specified outputs and no inputs\n  }\n\nExamples:\n> verus sendcurrency \"*\" '[{\"currency\":\"btc\",\"address\":\"RRehdmUV7oEAqoZnzEGBH34XysnWaBatct\" ,\"amount\":500.0},...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendcurrency\", \"params\": [\"bob@\", [{\"currency\":\"btc\", \"address\":\"alice@quad\", \"amount\":500.0},...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendcurrency"
+        ],
+        [
+            "Is it true that the `sendcurrency` command can only be used through the command line interface and not through the JSON-RPC API?",
+            "No, that's not correct. The `sendcurrency` command can be used through both the command line interface and the JSON-RPC API. The example provided shows both a command line example and a JSON-RPC example using `curl`.",
+            "Result:\n  \"operation-id\" : \"opid\" (string) The operation id, not public info, if (returntxtemplate) is false\n\nIf (returntxtemplate) is true  {\n    \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies that need to be input to the transaction\n    \"hextx\" : \"hexstring\"        The transaction with all specified outputs and no inputs\n  }\n\nExamples:\n> verus sendcurrency \"*\" '[{\"currency\":\"btc\",\"address\":\"RRehdmUV7oEAqoZnzEGBH34XysnWaBatct\" ,\"amount\":500.0},...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendcurrency\", \"params\": [\"bob@\", [{\"currency\":\"btc\", \"address\":\"alice@quad\", \"amount\":500.0},...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendcurrency"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "01e96c5a-4726-4a42-a6a0-c02ed304afe1"
+]

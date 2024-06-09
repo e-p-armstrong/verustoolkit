@@ -1,0 +1,6 @@
+[
+    "Can you explain why the `zcbenchmark` command requires a password to run?",
+    "The `zcbenchmark` command does not require a password to run. The command syntax is simply `zcbenchmark benchmarktype samplecount`, and it runs a benchmark of the selected type `samplecount` times, returning the running times of each sample.",
+    "zcbenchmark benchmarktype samplecount\n\nRuns a benchmark of the selected type samplecount times,\nreturning the running times of each sample.\n\nOutput: [\n {\n  \"runningtime\": runningtime\n },\n {\n  \"runningtime\": runningtime\n }\n ...\n]",
+    "./raw_text_input_api_text/zcbenchmark"
+]

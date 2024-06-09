@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do you install Tmux, a terminal multiplexer, without using the `sudo` command?",
+            "You can't install Tmux without using the `sudo` command. The correct command to install Tmux is `sudo apt-get install tmux -y`. This is because `apt-get` requires superuser privileges to install packages, which is what `sudo` provides.",
+            "g++-multilib -y`\n Install Tmux a terminal multiplexer with which you can run threads in the background see https://en.wikipedia.org/wiki/Tmux\n `sudo apt-get install tmux -y`\n Start tmux:\n `tmux`\n Launch Verus Daemon with or without number of threads\n (usually number of threads equals number of cores or double of that if the processor support hyper threading well)\n `~/verus-cli/verusd -gen -genproclimit`\n `~/verus-cli/verusd -gen -genproclimit=24`\n Once mining is operational \u2013 again this may take some time \u2013\n you\u2019ll see: 256 mega hashes complete - working\n then detach tmux\n`[ctrl]&b d`",
+            "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9b2d63ac-4976-420c-8e82-4fe28f48cdbe"
+]

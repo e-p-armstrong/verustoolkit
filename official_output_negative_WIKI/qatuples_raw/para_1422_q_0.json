@@ -1,0 +1,6 @@
+[
+    "How do I create a new coin that can only be converted to from GOLD?",
+    "The text actually says that you can create a new coin that can be converted to with either GOLD or VRSCTEST, not just from GOLD. This means that the new coin can be converted to from both GOLD and VRSCTEST, not just one of them.",
+    ", which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can you explain how to convert VRSCTEST to PBaaSChain using the Verus command line?",
+            "The command you are looking for is actually the opposite of what you asked. The command shown is used to convert PBaaSChain to VRSCTEST, not the other way around. Here's the correct command:\n```json\nverus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThis command sends 10 units of PBaaSChain to the specified address, converts them to VRSCTEST, and exports them to the VRSCTEST chain using the Bridge.PBaaSChain bridge.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5097871a-388a-4721-b774-9343009a011b"
+]

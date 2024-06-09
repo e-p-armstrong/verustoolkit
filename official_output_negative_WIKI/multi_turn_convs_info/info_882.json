@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can you explain how to use the `getblockchaininfo` command to get information about a specific block?",
+            "The `getblockchaininfo` command does not provide information about a specific block. It returns an object containing various state info regarding block chain processing, but it does not provide information about a specific block. To get information about a specific block, you would need to use a different command.",
+            "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Is the `getblockchaininfo` command used to send transactions on the Verus network?",
+            "No, the `getblockchaininfo` command is not used to send transactions on the Verus network. It is a command that returns an object containing various state info regarding block chain processing, but it is not used for sending transactions.",
+            "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ffaa2704-0649-469d-9383-bd3bfb0bc538"
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `refundfailedlaunch` command?",
+            "The `refundfailedlaunch` command refunds any funds sent to a chain if they are eligible for refund. This command attempts to refund all transactions for all contributors to the specified chain.",
+            "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/refundfailedlaunch"
+        ],
+        [
+            "What is the purpose of the `refundfailedlaunch` command if the currency has already been successfully launched?",
+            "The `refundfailedlaunch` command is specifically designed to refund contributions to a chain that has failed to launch, not one that has been successfully launched. It's used to return funds to contributors in the event of a failed launch.",
+            "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/refundfailedlaunch"
+        ],
+        [
+            "Can I use the `refundfailedlaunch` command to refund funds from a specific transaction ID?",
+            "No, the `refundfailedlaunch` command doesn't allow you to refund funds from a specific transaction ID. Instead, it attempts to refund all transactions for all contributors to the specified chain. You need to provide the chain ID or full chain name as an argument to the command.",
+            "refundfailedlaunch \"currencyid\"\n\nRefunds any funds sent to the chain if they are eligible for refund.\nThis attempts to refund all transactions for all contributors.\n\nArguments\n\"currencyid\"     (iaddress or full chain name, required)  the chain to refund contributions to\n\nResult:\n\nExamples:\n> verus refundfailedlaunch \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"refundfailedlaunch\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/refundfailedlaunch"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7ba66465-5a64-4921-803a-bca6dcc99fcd"
+]

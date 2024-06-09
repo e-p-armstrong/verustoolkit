@@ -1,0 +1,6 @@
+[
+    "What is the command to set the `proofprotocol` to PROOF_CURRENCYID in the `definecurrency` command for \"mycoin\"?",
+    "The command does not set `proofprotocol` to PROOF_CURRENCYID, but rather to PROOF_CHAINID (which is represented by the value 2). This means that the controller of the chain ID can mint new coins.",
+    "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

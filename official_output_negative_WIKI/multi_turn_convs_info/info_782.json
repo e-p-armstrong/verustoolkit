@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "Why did v0.9.6 remove the Verus/Ethereum Bridge from the testnet?",
+            "v0.9.6 did not remove the Verus/Ethereum Bridge from the testnet. In fact, it adds the upgraded Ethereum bridge to the Goerli testnet, making it live with all bridgekeeping, Ethereum Gas price tracking, and reward incentive capabilities for miners and stakers.",
+            "### For testnet, v0.9.6 adds the following:\n- Caching and performance improvements for advanced PBaaS functions, providing enough performance to keep high transaction bandwidth and/or cross-chain throughput under load for each chain.\n- Most hardening required for the mainnet release.\n- **The Verus/Ethereum Bridge!** v0.9.6 includes the upgraded Ethereum bridge to the Goerli testnet live with all bridgekeeping, Ethereum Gas price tracking, and reward incentive capabilities for miners and stakers. Rewards for bridgekeeping are delivered both on Verus and on the Ethereum blockchain. Access the Ethereum bridge website (https://ethtest.verus.services) to move over some Goerli Ethereum or USDC, and participate in the Bridge.vETH liquidity basket launch to hold and earn fees on a basket with vETH, USDC, and VRSCTEST used as the fee converter for all cross chain transactions between Ethereum\u2019s Goerli and VRSC testnets.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it possible to access the Ethereum bridge website to move over some Mainnet Ethereum or USDC?",
+            "No, the Ethereum bridge website (https://ethtest.verus.services) allows users to move over some Goerli Ethereum or USDC, not Mainnet Ethereum or USDC. Goerli is a testnet, and the bridge is currently available for testing purposes.",
+            "### For testnet, v0.9.6 adds the following:\n- Caching and performance improvements for advanced PBaaS functions, providing enough performance to keep high transaction bandwidth and/or cross-chain throughput under load for each chain.\n- Most hardening required for the mainnet release.\n- **The Verus/Ethereum Bridge!** v0.9.6 includes the upgraded Ethereum bridge to the Goerli testnet live with all bridgekeeping, Ethereum Gas price tracking, and reward incentive capabilities for miners and stakers. Rewards for bridgekeeping are delivered both on Verus and on the Ethereum blockchain. Access the Ethereum bridge website (https://ethtest.verus.services) to move over some Goerli Ethereum or USDC, and participate in the Bridge.vETH liquidity basket launch to hold and earn fees on a basket with vETH, USDC, and VRSCTEST used as the fee converter for all cross chain transactions between Ethereum\u2019s Goerli and VRSC testnets.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens to rewards for bridgekeeping on v0.9.6?",
+            "Rewards for bridgekeeping on v0.9.6 are delivered on both the Verus and Ethereum blockchains. This means that bridgekeepers will receive rewards on both chains for their participation in the Verus/Ethereum Bridge.",
+            "### For testnet, v0.9.6 adds the following:\n- Caching and performance improvements for advanced PBaaS functions, providing enough performance to keep high transaction bandwidth and/or cross-chain throughput under load for each chain.\n- Most hardening required for the mainnet release.\n- **The Verus/Ethereum Bridge!** v0.9.6 includes the upgraded Ethereum bridge to the Goerli testnet live with all bridgekeeping, Ethereum Gas price tracking, and reward incentive capabilities for miners and stakers. Rewards for bridgekeeping are delivered both on Verus and on the Ethereum blockchain. Access the Ethereum bridge website (https://ethtest.verus.services) to move over some Goerli Ethereum or USDC, and participate in the Bridge.vETH liquidity basket launch to hold and earn fees on a basket with vETH, USDC, and VRSCTEST used as the fee converter for all cross chain transactions between Ethereum\u2019s Goerli and VRSC testnets.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ca510ed4-3642-4f05-a0de-971db7e3fb14"
+]

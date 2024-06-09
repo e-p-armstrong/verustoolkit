@@ -1,0 +1,6 @@
+[
+    "How do I define a currency on the PBaaSChain network using the `sendcurrency` command?",
+    "The `sendcurrency` command is not used to define a currency. The `sendcurrency` command is used to send currency from one chain to another. To define a currency, you would use the `definecurrency` command, which is not shown in the provided text. The `definecurrency` command is used to create a new currency on a blockchain network, specifying its properties and characteristics.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

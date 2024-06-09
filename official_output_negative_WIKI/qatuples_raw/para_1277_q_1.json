@@ -1,0 +1,6 @@
+[
+    "Is the CLI upgrade v0.7.2-6 mandatory?",
+    "No, the CLI upgrade v0.7.2-6 is non-mandatory.",
+    "**The result will be true if the signature is valid.**\n```\ntrue\n```\nAnnouncing NON-MANDATORY CLI upgrade v0.7.2-6, with primarily testnet improvements. Mainnet features are effectively unchanged from v0.7.2-4, with only \"z*\" added as a new, supported wildcard to the `z_getbalance` API.\nThis release includes the following improvements and updates for testnet:\n- Add `getcurrencybalance` API to get multi-currency balances on transparent/private addresses and identities.\n- Optimize multi-currency operators and UTXO selection\n- Display unlocked balance in `getwalletinfo`\n- Add support for \"z*\" wildcard in `z_getbalance`\n## The Verus DeFi Testnet -- THERE IS NO TESTNET RESET\nAll new 'sendcurrency' features described above now work on both mainnet and testnet. In addition, testnet can source funds for DeFi features from private z-addresses as well.",
+    "./raw_text_input_wiki/release_notes.md"
+]

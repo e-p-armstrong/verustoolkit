@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the main purpose of the `resendwallettransactions` command, which is used to permanently delete unconfirmed wallet transactions?",
+            "The `resendwallettransactions` command does not delete unconfirmed wallet transactions. Its main purpose is to immediately re-broadcast unconfirmed wallet transactions to all peers. This command is intended only for testing, as the wallet code periodically re-broadcasts automatically.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ],
+        [
+            "Does the `resendwallettransactions` command return a boolean value indicating whether the re-broadcast was successful or not?",
+            "No, the `resendwallettransactions` command returns an array of transaction IDs that were re-broadcast, not a boolean value indicating success or failure.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ],
+        [
+            "Is it recommended to use the `resendwallettransactions` command regularly in production environments to ensure timely transaction processing?",
+            "No, the `resendwallettransactions` command is intended only for testing, not for regular use in production environments. The wallet code periodically re-broadcasts unconfirmed transactions automatically, so there is no need to use this command regularly.",
+            "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+            "./raw_text_input_api_text/resendwallettransactions"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "745ecdc5-32b9-42eb-adc1-616e3f777db2"
+]

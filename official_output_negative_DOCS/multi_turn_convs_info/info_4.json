@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can I use the \"prelaunchdiscount\" parameter with any type of currency?",
+            "No, the \"prelaunchdiscount\" parameter only works with basket currencies, specifically those with \"options\" set to 33. It cannot be used with other types of currencies.",
+            "Example currency:\n``` json\n./verus -chain=VRSCTEST definecurrency '{\n \"name\":\"BusinessBrand\", \n \"options\":33, \n \"currencies\":[\"vrsctest\"], \n \"initialsupply\":100, \n \"prelaunchcarveout\":0.1\n}'\n```\n\u261d\ufe0f This is a basket currency called BusinessBrand. People can preconvert VRSCTEST into its reserves in return for 100 BusinessBrand distributed among them. When the currency is launched, 10% VRSCTEST is taken out of the reserves, into the rootID. This lowers the reserve ratio by 10%.### **\"prelaunchdiscount\"**\nOnly works with basket currencies (`options:33`). Use this to give people a discount during the preconversion time frame. After the preconversion time frame and the currency is launched, the conversion price will be higher, depending on what percentage the discount was.When using this parameter, after the currency is launched, the reserve ratio will be lowered by the discounted percentage.Example currency:\n``` json\n./verus -chain=VRSCTEST definecurrency '{\n \"name\":\"DiscountBrand\", \n \"options\":33, \n \"currencies\":[\"vrsctest\"], \n \"initialsupply\":100, \n \"prelaunchdiscount\":0.5\n}'\n```\n\u261d\ufe0f This is a basket currency called DiscountBrand. People can preconvert VRSCTEST into its reserves in return for 100 DiscountBrand distributed among them. Immediately after the launch of the currency, when people want to convert, the price is 50% higher. Also, the reserve ratio is 50% lower because of the prelaunchdiscount.### **\"weights\"**\nOnly works with basket currencies (`options:33`). Use this to change the respective weights of the reserves in a basket currency. The total of all weights must equal 1. With a minimum of 0.1, since there can\u2019t be more than 10 reserve currencies in a basket currency.",
+            "./raw_text_input_docs/launch-currency.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "10ac8d4a-226b-468d-8853-790f4b4b2562"
+]

@@ -1,0 +1,6 @@
+[
+    "Can you explain how to use the `getblockchaininfo` command to get information about a specific block?",
+    "The `getblockchaininfo` command does not provide information about a specific block. It returns an object containing various state info regarding block chain processing, but it does not provide information about a specific block. To get information about a specific block, you would need to use a different command.",
+    "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

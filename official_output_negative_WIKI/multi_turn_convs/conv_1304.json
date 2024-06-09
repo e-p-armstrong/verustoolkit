@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I've got a question about Verus. Is it possible to use Verus v1.0.2 on the mainnet after May 23, 2023?\n\n**AI Assistant:**\nNo, it is not possible to use Verus v1.0.2 on the mainnet after May 23, 2023. A mandatory mainnet upgrade to v1.0.3 or later is required for continued mainnet use. So, make sure to upgrade to the latest version to ensure compatibility and avoid any issues.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Is it possible to use Verus v1.0.2 on the mainnet after May 23, 2023?",
+            "No, it is not possible to use Verus v1.0.2 on the mainnet after May 23, 2023. A mandatory mainnet upgrade to v1.0.3 or later is required for continued mainnet use.",
+            "### Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation Releases@\".\n1) Extract downloaded archive\n2) Verify signature for the extracted archive using the extracted text file.\n3) Extract archive to desired directory\n#### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation Releases@\" \"AVXjJgABQR9Xa2h4vsscUcQfw7A3tjs0Bk9F7thidKhl4cjgWL5Y9W6aWeuo4ljNYYUJ6NaNo8FXC8vgP4cyNZI4ph/vMGlM\" \"/Downloads/Verus-CLI-Linux-v1.0.4-x86_64/Verus-CLI-Linux-v1.0.4-x86_64.tar.gz\"\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation Releases@\" \"AVXjJgABQR9Xa2h4vsscUcQfw7A3tjs0Bk9F7thidKhl4cjgWL5Y9W6aWeuo4ljNYYUJ6NaNo8FXC8vgP4cyNZI4ph/vMGlM\" 56fbb10a12eb44d7dc139ff2cc3fa6a6a231976676257a2328a2856e3421baec\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\n## v1.0.3\nAnnouncing v1.0.3 - MANDATORY MAINNET UPGRADE - HOPEFULLY THE LAST IN A WHILE - ACTIVATION DATE HAS BEEN PUSHED BY 2 DAYSFOR CONTINUED MAINNET USE, UPGRADE TO v1.0.3 OR LATER BEFORE MAY 23, 2023, EXPECTED BLOCK #2549420FOR CONTINUED TESTNET USE, UPGRADE ASAP### Mainnet: fixes:\n* Fixes an issue discovered that could have resulted in behavior different than what has been tested in an edge case when mainnet activates### Testnet fixes/improvements:\n* Forgives issues pre-1.0.2 on testnet that were blocking challenge resolution by lacking complete cryptographic proof for cross-chain notarization confirmation### What\u2019s New\nv1.0.3 has extended the API fundrawtransaction to allow Verus Mobile and other applications to easily construct transactions for DeFi conversions and cross-chain operations as well.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

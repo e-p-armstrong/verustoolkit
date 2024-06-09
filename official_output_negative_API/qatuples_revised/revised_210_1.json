@@ -1,0 +1,6 @@
+[
+    "Can you explain why you don't need to fund the transaction using `fundrawtransaction` before signing it with `signrawtransaction`?",
+    "Actually, it is necessary to fund the transaction using `fundrawtransaction` if necessary, before signing it with `signrawtransaction`. This ensures that the transaction has sufficient funds to be valid and can be successfully signed and exported.",
+    "migrate_converttoexport rawTx dest_symbol export_amount\n\nConvert a raw transaction to a cross-chain export.\nIf neccesary, the transaction should be funded using fundrawtransaction.\nFinally, the transaction should be signed using signrawtransaction\nThe finished export transaction, plus the payouts, should be passed to the \"migrate_createimporttransaction\" method on a KMD node to get the corresponding import transaction.",
+    "./raw_text_input_api_text/migrate_converttoexport"
+]

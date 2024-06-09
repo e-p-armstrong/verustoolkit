@@ -1,0 +1,6 @@
+[
+    "Is it true that the `sendcurrency` command can only be used through the command line interface and not through the JSON-RPC API?",
+    "No, that's not correct. The `sendcurrency` command can be used through both the command line interface and the JSON-RPC API. The example provided shows both a command line example and a JSON-RPC example using `curl`.",
+    "Result:\n  \"operation-id\" : \"opid\" (string) The operation id, not public info, if (returntxtemplate) is false\n\nIf (returntxtemplate) is true  {\n    \"outputtotals\" : {currencyvaluemap}  Total outputs in all currencies that need to be input to the transaction\n    \"hextx\" : \"hexstring\"        The transaction with all specified outputs and no inputs\n  }\n\nExamples:\n> verus sendcurrency \"*\" '[{\"currency\":\"btc\",\"address\":\"RRehdmUV7oEAqoZnzEGBH34XysnWaBatct\" ,\"amount\":500.0},...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendcurrency\", \"params\": [\"bob@\", [{\"currency\":\"btc\", \"address\":\"alice@quad\", \"amount\":500.0},...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/sendcurrency"
+]

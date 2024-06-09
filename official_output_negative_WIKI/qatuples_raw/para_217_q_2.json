@@ -1,0 +1,6 @@
+[
+    "What is the default value of the second parameter in the `getrawtransaction` command?",
+    "The default value of the second parameter in the `getrawtransaction` command is not specified in the text. However, based on the example provided, it appears that the second parameter is optional and can be set to 1 to include additional information in the response.",
+    "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

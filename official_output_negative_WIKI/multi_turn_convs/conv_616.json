@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I have a question about creating new coins. Is it possible to create a new coin that can only be converted to from GOLD?\n\n**AI Assistant:**\nActually, you can create a new coin that can be converted to with either GOLD or VRSCTEST, not just from GOLD. This means that the new coin can be converted to from both GOLD and VRSCTEST, not just one of them.\n\n**User:**\nThat's not exactly what I was hoping for. Can I create a new coin that can be converted to from a currency other than GOLD or VRSCTEST?\n\n**AI Assistant:**\nUnfortunately, no. You can only create a new coin that can be converted to with either GOLD or VRSCTEST. These are the only two options available for conversion.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I create a new coin that can only be converted to from GOLD?",
+            "You can create a new coin that can be converted to with either GOLD or VRSCTEST, not just from GOLD. This means that the new coin can be converted to from both GOLD and VRSCTEST, not just one of them.",
+            ", which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I create a new coin that can be converted to from a currency other than GOLD or VRSCTEST?",
+            "No, you can only create a new coin that can be converted to with either GOLD or VRSCTEST.",
+            ", which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

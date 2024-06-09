@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been trying to send a transaction to the Verus network, and I've been using the command `curl --user myusername --data-binary '{\"jsonrpc\": \"2.0\", ...`. Can you explain why this command is used?\n\n**AI Assistant:**\nI think there's a small mistake there. The correct command is actually `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", ...`. The `jsonrpc` version in this case is indeed `1.0`, not `2.0`. This command is used to send a JSON-RPC request to the Verus node, which then processes the transaction and sends it to the network. Does that make sense?\n\n**User:**\nI've also been looking into the `signdata` method, and I've seen a parameter called `createmmr`. What's the purpose of that parameter?\n\n**AI Assistant:**\nThe `createmmr` parameter is set to `true` in the example, which indicates that a MMR (Merkle Memory Receipt) should be created for the transaction. This is a specific requirement for this particular use case, and the `createmmr` parameter is used to enable this functionality. In short, it tells the `signdata` method to create a Merkle Memory Receipt for the transaction, which is necessary for certain types of transactions on the Verus network.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain why the command `curl --user myusername --data-binary '{\"jsonrpc\": \"2.0\", ...` is used to send a transaction to the Verus network?",
+            "The command is actually `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", ...`, not `2.0`. The `jsonrpc` version in this case is indeed `1.0`, not `2.0`.",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decryptdata"
+        ],
+        [
+            "What is the purpose of the `createmmr` parameter in the `signdata` method?",
+            "The `createmmr` parameter is set to `true` in the example, which indicates that a MMR (Merkle Memory Receipt) should be created for the transaction. This is a specific requirement for this particular use case, and the `createmmr` parameter is used to enable this functionality.",
+            "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decryptdata"
+        ]
+    ]
+]

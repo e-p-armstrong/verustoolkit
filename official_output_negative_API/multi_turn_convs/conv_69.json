@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to understand more about the inner workings of Verus. Can you explain how the \"consensus\" object is used to store information about past network upgrades?\n\n**AI Assistant:**\nActually, that's not exactly what the \"consensus\" object is used for. The \"consensus\" object is used to store the branch IDs of the current and upcoming consensus rules, including the branch ID used to validate the current chain tip and the branch ID that the next block will be validated under. It's not related to storing information about past network upgrades.\n\n**User:**\nOkay, I think I understand. I've also got a question about the \"ftfork\" blocks object. Is it true that the \"ftfork\" blocks object has the same fields as the \"consensus\" object?\n\n**AI Assistant:**\nNo, that's not correct. The \"ftfork\" blocks object actually has the same fields as the \"enforce\" object, not the \"consensus\" object. So, they're similar to the \"enforce\" object, but not the \"consensus\" object. Let me know if you have any more questions or if there's anything else I can help with!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain how the \"consensus\" object is used to store information about past network upgrades?",
+            "The \"consensus\" object is not used to store information about past network upgrades. It is actually used to store the branch IDs of the current and upcoming consensus rules, including the branch ID used to validate the current chain tip and the branch ID that the next block will be validated under.",
+            "ftfork blocks (same fields as \"enforce\")\n   }, ...\n ],\n \"upgrades\": {        (object) status of network upgrades\n   \"xxxx\" : {        (string) branch ID of the upgrade\n    \"name\": \"xxxx\",    (string) name of upgrade\n    \"activationheight\": xxxxxx, (numeric) block height of activation\n    \"status\": \"xxxx\",   (string) status of upgrade\n    \"info\": \"xxxx\",    (string) additional information about upgrade\n   }, ...\n },\n \"consensus\": {        (object) branch IDs of the current and upcoming consensus rules\n   \"chaintip\": \"xxxxxxxx\",  (string) branch ID used to validate the current chain tip\n   \"nextblock\": \"xxxxxxxx\"  (string) branch ID that the next block will be validated under\n }\n}",
+            "./raw_text_input_api_text/getblockchaininfo"
+        ],
+        [
+            "Is it true that the \"ftfork\" blocks object has the same fields as the \"consensus\" object?",
+            "No, that is not true. The \"ftfork\" blocks object has the same fields as the \"enforce\" object, not the \"consensus\" object.",
+            "ftfork blocks (same fields as \"enforce\")\n   }, ...\n ],\n \"upgrades\": {        (object) status of network upgrades\n   \"xxxx\" : {        (string) branch ID of the upgrade\n    \"name\": \"xxxx\",    (string) name of upgrade\n    \"activationheight\": xxxxxx, (numeric) block height of activation\n    \"status\": \"xxxx\",   (string) status of upgrade\n    \"info\": \"xxxx\",    (string) additional information about upgrade\n   }, ...\n },\n \"consensus\": {        (object) branch IDs of the current and upcoming consensus rules\n   \"chaintip\": \"xxxxxxxx\",  (string) branch ID used to validate the current chain tip\n   \"nextblock\": \"xxxxxxxx\"  (string) branch ID that the next block will be validated under\n }\n}",
+            "./raw_text_input_api_text/getblockchaininfo"
+        ]
+    ]
+]

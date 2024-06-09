@@ -1,0 +1,6 @@
+[
+    "Is it possible to use the `getvdxfid` method without specifying a username and password?",
+    "No, it is not possible to use the `getvdxfid` method without specifying a username and password. The `--user` option is required to authenticate the request with the Verus JSON RPC server.",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getvdxfid\", \"params\": [\"idname::userdefinedgroup.subgroup.publishedname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getvdxfid"
+]

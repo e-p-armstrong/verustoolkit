@@ -130,6 +130,21 @@ def extract_reasoning_from_context_check(response):
         print("Rewording...")
         q, a = extract_question_answer.extract_question_answer(response)
         print((q, a))
+        if "the provided" in a.lower(): # catch infrequent cases where the reworded answer contains reference to provided information
+            print("'The provided' found in reworded answer -- Setting to None...")
+            return (False, response)
+        if "the reworded" in a.lower(): # Catch infrequent cases where it talks about the reworded question and answer pair
+            print("'The reworded' found in reworded answer -- Setting to None...")
+            return (False, response)
+        if "mention" in a.lower():
+            print("'Mention' found in reworded answer -- Setting to None...")
+            return (False, response)
+        if "no information" in a.lower():
+            print("'No information' found in reworded answer -- Setting to None...")
+            return (False, response)
+        if "follow the instructions in a separate" in a.lower():
+            print("'Follow the instructions in a separate' found in reworded answer -- Setting to None...")
+            return (False, response)
         return (q, a)  # (q, a, qatuple[2], qatuple[3]), completion
     elif "FAIL" in determination:
         print("Setting to None...")
@@ -857,6 +872,9 @@ def chunking_algorithm(file_path, max_char_length=obj_conf["SYSTEM"]["CHUNK_SIZE
     # Add the last chunk if it exists
     if current_chunk:
         chunks_with_source.append(("\n\n".join(current_chunk), source_name))
+        
+    # filter out chunks with fewer than 50 characters
+    chunks_with_source = [chunk for chunk in chunks_with_source if len(chunk[0]) >= 50]
 
     return chunks_with_source
 

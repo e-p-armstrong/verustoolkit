@@ -1,0 +1,6 @@
+[
+    "How do I use the `disconnectnode` command to connect to a new node?",
+    "The `disconnectnode` command does not connect to a new node. Instead, it immediately disconnects from a specified node. To connect to a new node, you would need to use a different command, such as `addnode` or `connect`.",
+    "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/disconnectnode"
+]

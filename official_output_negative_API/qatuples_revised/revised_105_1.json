@@ -1,0 +1,6 @@
+[
+    "Does the `z_getnewaddress` command return an array of addresses?",
+    "No, the `z_getnewaddress` command returns a single string value, which is the new shielded address. It does not return an array of addresses.",
+    "z_getnewaddress ( type )\n\nReturns a new shielded address for receiving payments.\n\nWith no arguments, returns a Sapling address.\n\nArguments:\n1. \"type\"     (string, optional, default=\"sapling\") The type of address. One of [\"sprout\", \"sapling\"].\n\nResult:\n\"VRSC_address\"  (string) The new shielded address.\n\nExamples:\n> verus z_getnewaddress \n> verus z_getnewaddress sapling\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_getnewaddress"
+]

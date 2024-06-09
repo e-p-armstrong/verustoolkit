@@ -1,0 +1,6 @@
+[
+    "How do I enable login with the Root User by editing the `/etc/ssh/sshd_config` file?",
+    "You don't enable login with the Root User by editing the `/etc/ssh/sshd_config` file, you actually disable it. To do this, you need to set `PermitRootLogin` to `no` in the file. This is a security measure to prevent unauthorized access to your system. Before making this change, make sure you have a newly created user with sudo rights, as this will ensure you can still access and manage your system.",
+    "Disable login with Root User\n(make sure your newly created user login works and has sudo rights)\n `sudo nano /etc/ssh/sshd_config`\nFind: PermitRootLogin yes\nAnd set to\nPermitRootLogin no\nApply new settings:\n `sudo systemctl restart sshd`\n\n(submitted by @karero, corrected by @Glennp, edited by Oink.vrsc@)\n\nNote: last revision date 2022-08-19.",
+    "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+]

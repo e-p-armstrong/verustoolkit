@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `verus` command `getrawtransaction` with two arguments, where the second argument is a string?",
+            "The `getrawtransaction` command with two arguments doesn't take a string as its second argument. Instead, it takes an integer, which specifies the verbosity of the output. For example, `verus getrawtransaction \"mytxid\" 1` retrieves the raw transaction with the specified ID and returns it in a verbose format.",
+            "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawtransaction"
+        ],
+        [
+            "How do I use the `curl` command to send a `getrawtransaction` request to the Verus API without authentication?",
+            "You can't use the `curl` command to send a `getrawtransaction` request to the Verus API without authentication. As shown in the example, you need to provide a username (`--user myusername`) to authenticate the request. Without authentication, the API will reject the request.",
+            "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getrawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f2007946-ab11-4da6-9006-ab6cbae7d967"
+]

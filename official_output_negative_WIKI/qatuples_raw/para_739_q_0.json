@@ -1,0 +1,6 @@
+[
+    "What does the OPTION_GATEWAY_NAMECONTROLLER option do when set to 0?",
+    "The OPTION_GATEWAY_NAMECONTROLLER option is not set to 0 in the text. It is set to 1024, and when not set on a gateway, top-level ID and currency registration happen on the launch chain.",
+    "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

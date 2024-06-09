@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "What is the structure of the \"eras\" array in a chain definition, and are there any limits on the number of objects it can contain?",
+            "The \"eras\" array in a chain definition is an object array that can have multiple objects, each representing a different chain phase of rewards and convertibility. There is no maximum limit of 2 objects.",
+            "ns and IDs)\n  \"eras\" : \"[obj, ...]\",         (objarray) different chain phases of rewards and convertibility\n  {\n   \"reward\" : \"[n, ...]\",        (int) reward start for each era in native coin\n   \"decay\" : \"[n, ...]\",        (int) exponential or linear decay of rewards during each era\n   \"halving\" : \"[n, ...]\",       (int) blocks between halvings during each era\n   \"eraend\" : \"[n, ...]\",        (int) block marking the end of each era\n   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }, ...\n]",
+            "./raw_text_input_api_text/listcurrencies"
+        ],
+        [
+            "Is it true that the \"nodes\" array can only have a single object, representing a single node that can be used to connect to the blockchain?",
+            "No, that's not correct. The \"nodes\" array can have up to 8 objects, each representing a node that can be used to connect to the blockchain.",
+            "ns and IDs)\n  \"eras\" : \"[obj, ...]\",         (objarray) different chain phases of rewards and convertibility\n  {\n   \"reward\" : \"[n, ...]\",        (int) reward start for each era in native coin\n   \"decay\" : \"[n, ...]\",        (int) exponential or linear decay of rewards during each era\n   \"halving\" : \"[n, ...]\",       (int) blocks between halvings during each era\n   \"eraend\" : \"[n, ...]\",        (int) block marking the end of each era\n   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }, ...\n]",
+            "./raw_text_input_api_text/listcurrencies"
+        ],
+        [
+            "Why is the \"eraoptions\" field included in each era object?",
+            "The \"eraoptions\" field is an optional field, marked as \"(int) options (reserved)\".",
+            "ns and IDs)\n  \"eras\" : \"[obj, ...]\",         (objarray) different chain phases of rewards and convertibility\n  {\n   \"reward\" : \"[n, ...]\",        (int) reward start for each era in native coin\n   \"decay\" : \"[n, ...]\",        (int) exponential or linear decay of rewards during each era\n   \"halving\" : \"[n, ...]\",       (int) blocks between halvings during each era\n   \"eraend\" : \"[n, ...]\",        (int) block marking the end of each era\n   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }, ...\n]",
+            "./raw_text_input_api_text/listcurrencies"
+        ],
+        [
+            "Can you explain why the \"lastconfirmedcurrencystate\" field is structured in a certain way?",
+            "The \"lastconfirmedcurrencystate\" field is not an array of objects. It is a single object.",
+            "ns and IDs)\n  \"eras\" : \"[obj, ...]\",         (objarray) different chain phases of rewards and convertibility\n  {\n   \"reward\" : \"[n, ...]\",        (int) reward start for each era in native coin\n   \"decay\" : \"[n, ...]\",        (int) exponential or linear decay of rewards during each era\n   \"halving\" : \"[n, ...]\",       (int) blocks between halvings during each era\n   \"eraend\" : \"[n, ...]\",        (int) block marking the end of each era\n   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }, ...\n]",
+            "./raw_text_input_api_text/listcurrencies"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "be9d8a13-a5aa-4af2-8907-71618447d3c1"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `getnewaddress` command with the `account` argument set to `\"myaccount\"`?",
+            "The `account` argument is actually deprecated and should be set to an empty string (`\"\"`). Passing any other string, including `\"myaccount\"`, will result in an error. The `getnewaddress` command is used to generate a new VRSC address for receiving payments, and it does not require or utilize an `account` argument with a specific value.",
+            "getnewaddress ( \"account\" )\n\nReturns a new VRSC address for receiving payments.\n\nArguments:\n1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The new VRSC address\n\nExamples:\n> verus getnewaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnewaddress"
+        ],
+        [
+            "Can I use the `getnewaddress` command to get a list of all my existing VRSC addresses?",
+            "No, the `getnewaddress` command is used to generate a new VRSC address for receiving payments, not to retrieve a list of existing addresses. It returns a single new VRSC address as a string.",
+            "getnewaddress ( \"account\" )\n\nReturns a new VRSC address for receiving payments.\n\nArguments:\n1. \"account\"    (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The new VRSC address\n\nExamples:\n> verus getnewaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnewaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnewaddress"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "611135b5-46f0-4027-b71e-71e62d323a3d"
+]

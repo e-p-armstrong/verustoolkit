@@ -1,0 +1,6 @@
+[
+    "How do I list all available currencies using the `verus` command-line tool without specifying any arguments?",
+    "You can't list all available currencies without specifying any arguments. To list all available currencies, you need to use the `listcurrencies` command with the `true` argument, like this: `verus listcurrencies true`.",
+    "Examples:\n> verus listcurrencies true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listcurrencies"
+]

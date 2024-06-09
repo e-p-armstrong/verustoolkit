@@ -1,0 +1,6 @@
+[
+    "What is the default port used by the `listbanned` command?",
+    "The `listbanned` command does not have a default port. The port number `27486` is used in the example, but it is not a default port. The port number might be specific to the setup or configuration of the system.",
+    "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listbanned"
+]

@@ -1,0 +1,6 @@
+[
+    "How do you use the `getblockhash` command to retrieve an array of hashes of blocks within a specific timestamp range?",
+    "The `getblockhash` command does not support retrieving an array of hashes of blocks within a specific timestamp range with a single argument. However, there is another variant of the `getblockhash` command, `getblockhashes`, that takes a timestamp as an argument and returns an array of hashes of blocks within the specified timestamp range.",
+    "### `getblockhash index`\nReturns hash of block in best-block-chain at index provided.#### Arguments:\n```\nindex     (numeric, required) The block index\n```\n#### Result:\n```\n\"hash\"     (string) The block hash\n```\nExamples:\n```bash\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getblockhashes timestamp`\nReturns array of hashes of blocks within the timestamp range provided.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

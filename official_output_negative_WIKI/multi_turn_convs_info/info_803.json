@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What happens if I don't upgrade to v0.7.3-9 Verus CLI, since it's not mandatory?",
+            "While upgrading to v0.7.3-9 Verus CLI is not mandatory, it is highly recommended, especially for notaries, high peer count public nodes, and pools. This version includes important fixes, such as a fix for signrawtransaction that could sometimes result in failure of countersigning a multisig, ID-based raw transaction, as well as more immediate and effective bad node banning behavior.",
+            "Avast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/## Verifying Downloads\nA txt file containing the signer, standard sha256 file checksum, and signature, is included for each download. These packages have been signed with the identity \"Verus Coin Foundation Releases@\".\n1) Extract downloaded archive\n2) Verify signature for the extracted archive using the extracted text file.\n3) Extract archive to desired directory\n### CLI examples\n**Verifying file directly**\n```\n./verus verifyfile \"Verus Coin Foundation Releases@\" ARJwGAABQSAEzdWu0ba5tX9dSzAPIJsuuYhh/+Fd4F3m0uPsQHLCWCr6PGjzCB+aC5uBtVxtheSL1ATWW6nDv6/OwyEDtK4V /Downloads/Verus-CLI-Linux-v0.7.3-10-x86_64/Verus-CLI-Linux-v0.7.3-10-x86_64.tar.gz\n```\n**Verifying using a checksum**\n```\n./verus verifyhash \"Verus Coin Foundation Releases@\" ARJwGAABQSAEzdWu0ba5tX9dSzAPIJsuuYhh/+Fd4F3m0uPsQHLCWCr6PGjzCB+aC5uBtVxtheSL1ATWW6nDv6/OwyEDtK4V f99dfbd27d8b97eb14861d37371858c545a293e56ec8dd742ffa4f2365966af9\n```**The result will be true if the signature is valid.**\n```\ntrue\n```\n## Announcing immediate availability of NON-MANDATORY, RECOMMENDED ESPECIALLY FOR NOTARIES, HIGH PEER COUNT PUBLIC NODES, AND POOLS, v0.7.3-9 Verus CLI.In addition to more immediate and effective bad node banning behavior, v0.7.3-9 includes a fix for signrawtransaction that could sometimes result in failure of countersigning a multisig, ID-based raw transaction.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d98052fe-116e-41e5-b0a5-627e97f009a5"
+]

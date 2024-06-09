@@ -1,0 +1,6 @@
+[
+    "What does a result of 0.0 mean when using the `estimatepriority` command?",
+    "According to the text, a result of -1.0 is returned if not enough transactions and blocks have been observed to make an estimate, not 0.0. There is no mention of 0.0 as a possible result.",
+    "estimatepriority nblocks\n\nEstimates the approximate priority\na zero-fee transaction needs to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated priority\n\n-1.0 is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatepriority 6",
+    "./raw_text_input_api_text/estimatepriority"
+]

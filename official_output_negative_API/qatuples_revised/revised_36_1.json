@@ -1,0 +1,6 @@
+[
+    "What is the default port number used by the `verifysignature` method?",
+    "The example provided uses port number 27486, which is not a default port number. You need to specify the correct port number used by your RPC server. In this case, the port number is 27486, but it may be different for your setup.",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifysignature\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/verifysignature"
+]

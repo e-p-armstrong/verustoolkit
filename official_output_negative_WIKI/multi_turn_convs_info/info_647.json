@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "If I run the command `dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`, I will immediately receive 0.975 GOLD in my wallet, correct?",
+            "No, that's not correct. Running that command will effectively park your conversion until the GOLD token launches. At that point, you will either find 0.975 GOLD in your wallet, or you will have your VRSCTEST back. It doesn't immediately convert or give you GOLD.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "367ca28e-6ec9-4f50-98e3-7375c938d319"
+]

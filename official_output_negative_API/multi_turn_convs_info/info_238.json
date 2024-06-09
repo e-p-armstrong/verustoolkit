@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `getinitialcurrencystate` command when run on the current blockchain?",
+            "The `getinitialcurrencystate` command is not meant to be used on the current blockchain. It is actually used to get information about other chains that are being launched by the current chain, not about the current chain itself.",
+            "getinitialcurrencystate \"name\"\n\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.\n\nArguments\n  \"name\"          (string, required) name or chain ID of the chain to get the export transactions for\n\nResult:\n  [\n    {\n      \"flags\" : n,\n      \"initialratio\" : n,\n      \"initialsupply\" : n,\n      \"emitted\" : n,\n      \"supply\" : n,\n      \"reserve\" : n,\n      \"currentratio\" : n,\n    },\n  ]\n\nExamples:\n> verus getinitialcurrencystate name\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getinitialcurrencystate\", \"params\": [name] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getinitialcurrencystate"
+        ],
+        [
+            "How do I use the `getinitialcurrencystate` command to get information about the current blockchain?",
+            "You can't use the `getinitialcurrencystate` command to get information about the current blockchain. This command is meant to be used to get information about other chains that are being launched by the current chain. If you want to get information about the current blockchain, you would need to use a different command.",
+            "getinitialcurrencystate \"name\"\n\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.\n\nArguments\n  \"name\"          (string, required) name or chain ID of the chain to get the export transactions for\n\nResult:\n  [\n    {\n      \"flags\" : n,\n      \"initialratio\" : n,\n      \"initialsupply\" : n,\n      \"emitted\" : n,\n      \"supply\" : n,\n      \"reserve\" : n,\n      \"currentratio\" : n,\n    },\n  ]\n\nExamples:\n> verus getinitialcurrencystate name\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getinitialcurrencystate\", \"params\": [name] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getinitialcurrencystate"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7997d53c-d324-4175-931e-cac5d9e89d90"
+]

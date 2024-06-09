@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getblock` command in Verus?",
+    "There is no `getblock` command mentioned in the text. The command mentioned is `getblockchaininfo`, which returns an object containing various state info regarding block chain processing. It does not mention a `getblock` command.",
+    "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

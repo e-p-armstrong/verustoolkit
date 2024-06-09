@@ -1,0 +1,6 @@
+[
+    "How do I specify a transaction hash in the \"includeWatchonly\" argument?",
+    "You don't specify a transaction hash in the \"includeWatchonly\" argument. \"includeWatchonly\" is a boolean argument that determines whether to include watchonly addresses in balance calculation and details. The transaction id is specified in the \"txid\" argument, which is a required string argument.",
+    "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

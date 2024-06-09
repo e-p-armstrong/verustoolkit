@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I create a signature using the `verus` command-line tool without specifying the identity?",
+            "You can't create a signature without specifying the identity. The `verus signdata` command requires the identity to be specified, as shown in the example: `verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'`. The identity is a necessary parameter for creating a signature.",
+            "```\n#### Examples\nCreate the signature\n```bash\n> verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'\n```\nVerify the signature\n```bash\n> verus verifydata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'\n```\nAs json rpc\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I use the `verus verifydata` command to create a signature?",
+            "No, you cannot use the `verus verifydata` command to create a signature. The `verus verifydata` command is used to verify a signature, not create one. To create a signature, you need to use the `verus signdata` command.",
+            "```\n#### Examples\nCreate the signature\n```bash\n> verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'\n```\nVerify the signature\n```bash\n> verus verifydata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'\n```\nAs json rpc\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Is it possible to use the `curl` command to create a signature without specifying the `signdata` method?",
+            "No, it is not possible to use the `curl` command to create a signature without specifying the `signdata` method. The `curl` command example provided uses the `signdata` method to create a signature, and it is a required parameter.",
+            "```\n#### Examples\nCreate the signature\n```bash\n> verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'\n```\nVerify the signature\n```bash\n> verus verifydata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'\n```\nAs json rpc\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3ff354d7-0820-413f-8cd8-84496aa5edaf"
+]

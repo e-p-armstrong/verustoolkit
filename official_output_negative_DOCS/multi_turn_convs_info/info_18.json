@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I launch a new currency without using a decentralized crowdfund mechanism?",
+            "All currencies can be launched through decentralized crowdfund mechanisms. There is no alternative way to launch a currency. So, it's not possible to launch a currency without using a decentralized crowdfund mechanism.",
+            "## Crowdfund mechanisms\nAll currencies can be launched through decentralized crowdfund mechanisms. [Set required minimum levels](/currencies/launch-currency.html#minpreconversion) of worldwide participation in your preferred currencies. If by the start time of your currency or token, minimums are not met, all participants will automatically get a refund of all of their preconversions, less the network fees.\n\nThe launch options also provide for maximum participation in one or more currencies, pre-launch discounts, price neutral [pre-allocations](launch-currency.html#preallocations) to select VerusIDs that increase the reserve ratio to issue currencies, similarly price neutral [carve-outs of proceeds](launch-currency.html#prelaunchcarveout), and [pre-launch discounts](launch-currency.html#prelaunchdiscount) for early participants. Using VerusIDs, launches can also include vesting schedules in the pre-allocations as well.\n\n#",
+            "./raw_text_input_docs/README_currencies.md"
+        ],
+        [
+            "Can I set a fixed price for my currency or token during the crowdfund mechanism?",
+            "No, the crowdfund mechanism does not allow for setting a fixed price for a currency or token. It provides for pre-launch discounts, price-neutral pre-allocations, and carve-outs of proceeds, which suggests that the price is not fixed.",
+            "## Crowdfund mechanisms\nAll currencies can be launched through decentralized crowdfund mechanisms. [Set required minimum levels](/currencies/launch-currency.html#minpreconversion) of worldwide participation in your preferred currencies. If by the start time of your currency or token, minimums are not met, all participants will automatically get a refund of all of their preconversions, less the network fees.\n\nThe launch options also provide for maximum participation in one or more currencies, pre-launch discounts, price neutral [pre-allocations](launch-currency.html#preallocations) to select VerusIDs that increase the reserve ratio to issue currencies, similarly price neutral [carve-outs of proceeds](launch-currency.html#prelaunchcarveout), and [pre-launch discounts](launch-currency.html#prelaunchdiscount) for early participants. Using VerusIDs, launches can also include vesting schedules in the pre-allocations as well.\n\n#",
+            "./raw_text_input_docs/README_currencies.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a0b3955c-51e1-45fc-baf2-2f0e4669f98d"
+]

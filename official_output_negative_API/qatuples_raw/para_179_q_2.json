@@ -1,0 +1,6 @@
+[
+    "Can I use the `migrate_createimporttransaction` command to create a burn transaction from an import transaction?",
+    "No, the `migrate_createimporttransaction` command does not create a burn transaction from an import transaction. Its purpose is to create an import transaction given a burn transaction and the corresponding payouts, not the other way around.",
+    "migrate_createimporttransaction burnTx payouts\n\nCreate an importTx given a burnTx and the corresponding payouts, hex encoded",
+    "./raw_text_input_api_text/migrate_createimporttransaction"
+]

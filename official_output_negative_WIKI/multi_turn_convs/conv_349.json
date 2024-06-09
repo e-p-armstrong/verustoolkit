@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to wrap my head around some of the options available in VerusIDs. Can you help me understand the purpose of the OPTION_NFT_TOKEN option, which allows for the creation of multiple satoshi NFT tokens?\n\n**AI Assistant:**\nActually, the OPTION_NFT_TOKEN option is used to create a single satoshi NFT token, not multiple satoshi NFT tokens. This token tokenizes control over the root ID. It's a way to represent ownership and control of the ID in a tokenized form.\n\n**User:**\nOkay, that makes sense. I was also wondering about the OPTION_GATEWAY_NAMECONTROLLER option. When it's set on a gateway, does that trefficate that top-level ID and currency registration happen on the launch chain?\n\n**AI Assistant:**\nNo, that's actually the opposite. When the OPTION_GATEWAY_NAMECONTROLLER option is **not** set on a gateway, top-level ID and currency registration happen on the launch chain. So, it's the absence of this option that triggers that behavior.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the OPTION_NFT_TOKEN option, which allows for the creation of multiple satoshi NFT tokens?",
+            "The OPTION_NFT_TOKEN option is actually used to create a single satoshi NFT token, not multiple satoshi NFT tokens. This token tokenizes control over the root ID.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "When the OPTION_GATEWAY_NAMECONTROLLER option is set on a gateway, top-level ID and currency registration happen on the launch chain. Is that correct?",
+            "No, that's not correct. When the OPTION_GATEWAY_NAMECONTROLLER option is **not** set on a gateway, top-level ID and currency registration happen on the launch chain.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

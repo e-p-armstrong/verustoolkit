@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm having some trouble with zkeys in my Verus wallet. Can you use the `z_importkey` command to export a zkey from your wallet?\n\n**AI Assistant:**\nNo, that's not correct. The `z_importkey` command is actually used to import a zkey into your wallet, not export one. To export a zkey, you would use the `z_exportkey` command, as shown in the example: `verus z_exportkey \"myaddress\"`. Do you have any other questions about working with zkeys?\n\n**User:**\nThanks for clarifying that. I was also wondering, is it possible to use the `z_importkey` command without specifying the `rescan` argument?\n\n**AI Assistant:**\nYes, it is possible to use the `z_importkey` command without specifying the `rescan` argument. In this case, the default value of `rescan` would be \"whenkeyisnew\", which means the wallet will rescan for transactions only if the key is new. So, you can simply run the command without specifying `rescan` and it will use the default behavior. Do you have any other questions about using `z_importkey` or working with zkeys in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you use the `z_importkey` command to export a zkey from your wallet?",
+            "No, the `z_importkey` command is used to import a zkey into your wallet, not export one. To export a zkey, you would use the `z_exportkey` command, as shown in the example: `verus z_exportkey \"myaddress\"`.",
+            "z_importkey \"zkey\" ( rescan startHeight )\n\nAdds a zkey (as returned by z_exportkey) to your wallet.\n\nArguments:\n1. \"zkey\"       (string, required) The zkey (see z_exportkey)\n2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\"\n3. startHeight     (numeric, optional, default=0) Block height to start rescan from\n\nNote: This call can take minutes to complete if rescan is true.\n\nExamples:\n\nExport a zkey\n> verus z_exportkey \"myaddress\"\n\nImport the zkey with rescan\n> verus z_importkey \"mykey\"\n\nImport the zkey with partial rescan\n> verus z_importkey \"mykey\" whenkeyisnew 30000\n\nRe-import the zkey with longer partial rescan\n> verus z_importkey \"mykey\" yes 20000\n\nAs a JSON-RPC call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ],
+        [
+            "Is it possible to use the `z_importkey` command without specifying the `rescan` argument?",
+            "Yes, it is possible to use the `z_importkey` command without specifying the `rescan` argument. In this case, the default value of `rescan` would be \"whenkeyisnew\", which means the wallet will rescan for transactions only if the key is new.",
+            "z_importkey \"zkey\" ( rescan startHeight )\n\nAdds a zkey (as returned by z_exportkey) to your wallet.\n\nArguments:\n1. \"zkey\"       (string, required) The zkey (see z_exportkey)\n2. rescan        (string, optional, default=\"whenkeyisnew\") Rescan the wallet for transactions - can be \"yes\", \"no\" or \"whenkeyisnew\"\n3. startHeight     (numeric, optional, default=0) Block height to start rescan from\n\nNote: This call can take minutes to complete if rescan is true.\n\nExamples:\n\nExport a zkey\n> verus z_exportkey \"myaddress\"\n\nImport the zkey with rescan\n> verus z_importkey \"mykey\"\n\nImport the zkey with partial rescan\n> verus z_importkey \"mykey\" whenkeyisnew 30000\n\nRe-import the zkey with longer partial rescan\n> verus z_importkey \"mykey\" yes 20000\n\nAs a JSON-RPC call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importkey\", \"params\": [\"mykey\", \"no\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_importkey"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "Is there a single command to import a wallet backup in all platforms, including Windows, Linux, and MacOS?",
+    "No, there isn't. While the command `z_importwallet \"<PATH><mywalletimport>\"` is used in Agama and in Linux/MacOS CLI, in Windows CLI, you need to use `verus z_importwallet \\\"<PATH><mywalletimport>\\\"` instead.",
+    "#### Verus Desktop:\n  Go to `Settings`, `Coin Settings` and click `Import native wallet backup`.\n  Click `Choose file`, browse to your backup file, select it and click `Open`\n  Click `Import` to start the inport process\n#### Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_importwallet \"<PATH><mywalletimport>\"` and click the button below to run it.\n#### linux/MacOS CLI:\n  run `./verus z_importwallet \"<PATH><mywalletimport>\"`\n#### Windows CLI:\n  run `verus z_importwallet \\\"<PATH><mywalletimport>\\\"`\n\n### Using individual seeds / WIF-keys\nImporting individual keys is explained in detail in this wiki: [import your Lite wallet address into your native Verus Desktop](#!how-to/how-to_convert-seed-to-wif.md).\n\nInformation compiled by Oink.vrsc@.\n\nNote: revision date 2022-09-12.",
+    "./raw_text_input_wiki/how-to_restore_my_wallet.md"
+]

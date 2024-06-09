@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can I use the `verus z_sendmany` command to send coins from a transparent address to a zaddr?",
+            "No, the `verus z_sendmany` command is used to send coins from a zaddr to a transparent address, not the other way around. It allows you to send a specified amount of Verus to a given transparent address, ID address, or ID-name.",
+            "To just shield a single address, specify that as the first argument:\n\n`verus z_shieldcoinbase <YOUR R-ADDRESS> <YOUR zs-ADDRESS>`\n\nOnce the funds have moved to the zaddr and are confirmed, you can freely send them to any address, They will be eligble for staking id sent to a transpartent address (R-address).\n\nTo send from a certain zaddr to a transparent address, use z_sendmany. The following command sends 10 Verus to a given transparent address, ID address or ID-name.\nExample: `verus z_sendmany zcZpfuzzJqmNJ3fUJekvbnyuxuJe9eAURAHrMCvN2Nr7VuWjakb1LEw6j2etPcCnr45BRot7MaMbipuS5da162BfuUkFGxx '[{\"amount\":10,\"address\":\"Verus Coin Foundation@\"}]'`\n\nNote: revision date 2020-02-12.",
+            "./raw_text_input_wiki/how-to_shield_via_cli.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c38f403d-480f-48b5-968c-d5ed9a1d4db0"
+]

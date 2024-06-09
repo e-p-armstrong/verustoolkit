@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about requesting an unlock. What happens if I fill in the current blockheight under \"unlockatblock\" when requesting an unlock?\n\n**AI Assistant:**\nYou shouldn't fill in the current blockheight under \"unlockatblock\" when requesting an unlock. Instead, you should fill in the current blockheight minus 1. This is because the \"unlockatblock\" parameter specifies the block at which the unlock should be effective, and if you fill in the current blockheight, the unlock will not be immediate. It's recommended to fill in 0 to request an immediate unlock.\n\n**User:**\nThat makes sense. Can I fill in a future blockheight under \"unlockatblock\" to schedule an unlock for later?\n\n**AI Assistant:**\nNo, you can't fill in a future blockheight under \"unlockatblock\" to schedule an unlock for later. The \"unlockatblock\" parameter is used to specify the block at which the unlock should be effective, and filling in a future blockheight would not schedule an unlock for later. Instead, you can fill in the current blockheight minus 1 or 0 to request an immediate unlock.\n\n**User:**\nOkay, got it. So, do I need to know the exact blockheight of the blockchain to request an unlock?\n\n**AI Assistant:**\nWhile it's true that you need to specify a blockheight under \"unlockatblock\" to request an unlock, you don't necessarily need to know the exact current blockheight of the blockchain. You can simply fill in 0 to request an immediate unlock, without needing to know the current blockheight.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens if I fill in the current blockheight under \"unlockatblock\" when requesting an unlock?",
+            "You shouldn't fill in the current blockheight under \"unlockatblock\" when requesting an unlock. Instead, you should fill in the current blockheight minus 1. This is because the \"unlockatblock\" parameter specifies the block at which the unlock should be effective, and if you fill in the current blockheight, the unlock will not be immediate. It's recommended to fill in 0 to request an immediate unlock.",
+            "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+            "./raw_text_input_docs/setup-vault-v2.md"
+        ],
+        [
+            "Can I fill in a future blockheight under \"unlockatblock\" to schedule an unlock for later?",
+            "No, you can't fill in a future blockheight under \"unlockatblock\" to schedule an unlock for later. The \"unlockatblock\" parameter is used to specify the block at which the unlock should be effective, and filling in a future blockheight would not schedule an unlock for later. Instead, you can fill in the current blockheight minus 1 or 0 to request an immediate unlock.",
+            "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+            "./raw_text_input_docs/setup-vault-v2.md"
+        ],
+        [
+            "Do I need to know the exact blockheight of the blockchain to request an unlock?",
+            "While it's true that you need to specify a blockheight under \"unlockatblock\" to request an unlock, you don't necessarily need to know the exact current blockheight of the blockchain. You can simply fill in 0 to request an immediate unlock, without needing to know the current blockheight.",
+            "To request an unlock you need to know the blockheight of the blockchain. Under ``unlockatblock`` you can fill in whatever the current blockheight is minus 1. So if the blockheight is at 1,000,000 you can fill in ``999999`` or just ``0`` (recommended) to immediately request an unlock.\n\n``` json\nrun setidentitytimelock \"myid@\" \n'{\n  \"unlockatblock\":0\n}'\n```\n\nYou can copy and paste this code snippet into the commandline interface of Verus Desktop and edit the necessary inputs for your needs.",
+            "./raw_text_input_docs/setup-vault-v2.md"
+        ]
+    ]
+]

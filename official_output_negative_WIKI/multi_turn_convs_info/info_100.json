@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Does this software come with a warranty that covers any kind of damage?",
+            "No, the software does not come with a warranty that covers any kind of damage. In fact, the software is provided \"as is\", without warranty of any kind, express or implied, and the authors or copyright holders are not liable for any claim, damages, or other liability arising from the software or its use.",
+            "This is experimental and unfinished software. Use at your own risk! No warranty for any kind of damage!\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:The enclosed copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**MacOS:**\nhttps://www.virustotal.com/#/file/6dc2eb44ee294829c6f14e38349ccd1f8ba2bf683b93c0cda328c9bbdd588bab/detection\n**Linux-AMD64:** https://www.virustotal.com/#/file/ba3014f6ae1298fea11258474eb053b8841b1be04db911e4a3e2f80990ac42c3/detection\n**Windows:**\nhttps://www.virustotal.com/#/file/596ef34389d9aa801936da73f39f7ac6c85878f9b927321537e850deae4f614f/detection",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is this software completely finished and stable?",
+            "No, the software is not completely finished and stable. It is experimental and unfinished, and may have bugs or other issues. Use at your own risk!",
+            "This is experimental and unfinished software. Use at your own risk! No warranty for any kind of damage!\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:The enclosed copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**MacOS:**\nhttps://www.virustotal.com/#/file/6dc2eb44ee294829c6f14e38349ccd1f8ba2bf683b93c0cda328c9bbdd588bab/detection\n**Linux-AMD64:** https://www.virustotal.com/#/file/ba3014f6ae1298fea11258474eb053b8841b1be04db911e4a3e2f80990ac42c3/detection\n**Windows:**\nhttps://www.virustotal.com/#/file/596ef34389d9aa801936da73f39f7ac6c85878f9b927321537e850deae4f614f/detection",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "6391fcca-58da-4081-ad0f-0e63838d57f8"
+]

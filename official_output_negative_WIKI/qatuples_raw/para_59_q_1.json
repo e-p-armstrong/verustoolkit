@@ -1,0 +1,6 @@
+[
+    "Who compiled the software on January 1, 2020?",
+    "The software was not compiled on January 1, 2020. According to the note, the software was compiled by Oink.vrsc@, and the last revision date was May 3, 2024.",
+    "`-rpcservertimeout=<n>`\n    Timeout during HTTP requests (default: 30)\n\ncompiled by Oink.vrsc@.\nNote: last revision date 2024-05-03.",
+    "./raw_text_input_wiki/clifaq-01_verusd_options.md"
+]

@@ -1,0 +1,6 @@
+[
+    "Is `zcsamplejoinsplit` a command used to create a new blockchain?",
+    "No, the `zcsamplejoinsplit` command is not used to create a new blockchain. The text doesn't provide any information about creating a new blockchain. It only mentions that it performs a joinsplit and returns the JSDescription, which suggests that it's related to some kind of transaction or operation, but not creating a new blockchain.",
+    "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+    "./raw_text_input_api_text/zcsamplejoinsplit"
+]

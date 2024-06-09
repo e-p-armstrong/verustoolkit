@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHi, I'm having some trouble using the `getimports` command. Can you help me out? How do I use it to return all imports from a specific currency?\n\n**AI Assistant:**\nThe `getimports` command returns imports. To use it, you need to specify the chain name, and optionally, a block range (start height and end height) to retrieve the imports within that range. The correct syntax is `getimports \"chainname\" (startheight) (endheight)`. So, if you want to get all imports from a specific currency, just replace \"chainname\" with the name of the currency you're interested in. Does that make sense?\n\n**User:**\nThat helps, thanks! But what if I want to retrieve imports from multiple chains at once? Can I use the `getimports` command for that?\n\n**AI Assistant:**\nUnfortunately, no, you cannot use the `getimports` command to retrieve imports from multiple chains at once. The `chainname` argument specifies a single chain to look for imports in. If you don't specify a `chainname`, the command will only return imports for the current chain in the daemon. You'll have to run the command separately for each chain you're interested in.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `getimports` command to return all imports from a specific currency?",
+            "The `getimports` command returns imports. To use the `getimports` command, you need to specify the chain name, and optionally, a block range (start height and end height) to retrieve the imports within that range. The correct syntax is `getimports \"chainname\" (startheight) (endheight)`.",
+            "### `getimports \"chainname\" (startheight) (endheight)`\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n#### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   default=maxheight only return exports below or at this height",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I use the `getimports` command to retrieve imports from multiple chains at once?",
+            "No, you cannot use the `getimports` command to retrieve imports from multiple chains at once. The `chainname` argument specifies a single chain to look for imports in. If you don't specify a `chainname`, the command will only return imports for the current chain in the daemon.",
+            "### `getimports \"chainname\" (startheight) (endheight)`\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n#### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   default=maxheight only return exports below or at this height",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

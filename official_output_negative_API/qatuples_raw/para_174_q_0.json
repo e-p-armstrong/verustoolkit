@@ -1,0 +1,6 @@
+[
+    "How do I use the `verifysignature` method with XML RPC instead of JSON RPC?",
+    "The example provided uses JSON RPC, not XML RPC. To use the `verifysignature` method, you need to use JSON RPC, which is the format specified in the example. The correct format is:\n```\ncurl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifysignature\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```\nThere is no XML RPC example provided.",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"verifysignature\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/verifysignature"
+]

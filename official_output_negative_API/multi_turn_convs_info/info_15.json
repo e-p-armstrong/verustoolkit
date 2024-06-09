@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the format of the \"time\" field in a transaction, and what does it represent?",
+            "The \"time\" field in a transaction represents the transaction time in milliseconds since the epoch (January 1, 1970 GMT), not in a custom format. The correct unit is seconds, not milliseconds.",
+            "ch (1 Jan 1970 GMT).\n  \"txid\": \"transactionid\", (string) The transaction id. Available for 'send' and 'receive' category of transactions.\n  \"time\": xxx,       (numeric) The transaction time in seconds since epoch (Jan 1 1970 GMT).\n  \"timereceived\": xxx,   (numeric) The time received in seconds since epoch (Jan 1 1970 GMT). Available for 'send' and 'receive' category of transactions.\n  \"comment\": \"...\",    (string) If a comment is associated with the transaction.\n  \"to\": \"...\",      (string) If a comment to is associated with the transaction.\n ],\n \"lastblock\": \"lastblockhash\"   (string) The hash of the last block\n}",
+            "./raw_text_input_api_text/listsinceblock"
+        ],
+        [
+            "Is the \"txid\" field only available for 'send' transactions?",
+            "No, the \"txid\" field is available for both 'send' and 'receive' category of transactions, not just 'send' transactions.",
+            "ch (1 Jan 1970 GMT).\n  \"txid\": \"transactionid\", (string) The transaction id. Available for 'send' and 'receive' category of transactions.\n  \"time\": xxx,       (numeric) The transaction time in seconds since epoch (Jan 1 1970 GMT).\n  \"timereceived\": xxx,   (numeric) The time received in seconds since epoch (Jan 1 1970 GMT). Available for 'send' and 'receive' category of transactions.\n  \"comment\": \"...\",    (string) If a comment is associated with the transaction.\n  \"to\": \"...\",      (string) If a comment to is associated with the transaction.\n ],\n \"lastblock\": \"lastblockhash\"   (string) The hash of the last block\n}",
+            "./raw_text_input_api_text/listsinceblock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "4fc43789-75c8-4ae3-b87d-543802a483e8"
+]

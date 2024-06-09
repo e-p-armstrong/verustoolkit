@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got some Verus configuration options I'm trying to understand. Can you help me out? Specifically, what does the OPTION_GATEWAY_NAMECONTROLLER option do when set to 0?\n\n**AI Assistant:**\nActually, the OPTION_GATEWAY_NAMECONTROLLER option is not set to 0. When not set on a gateway, top-level ID and currency registration happen on the launch chain. So, it's not about setting it to 0, but rather about whether it's set or not. Does that make sense?\n\n**User:**\nThat's helpful, thanks! I've also got a question about the OPTION_NFT_TOKEN option. Does it create a multi-satoshi NFT token?\n\n**AI Assistant:**\nNo, the OPTION_NFT_TOKEN option creates a single satoshi NFT token, which tokenizes control over the root ID. So, it's a single satoshi token, not a multi-satoshi one. Do you have any more questions about these options or Verus configuration in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does the OPTION_GATEWAY_NAMECONTROLLER option do when set to 0?",
+            "The OPTION_GATEWAY_NAMECONTROLLER option is not set to 0. When not set on a gateway, top-level ID and currency registration happen on the launch chain.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Does the OPTION_NFT_TOKEN option create a multi-satoshi NFT token?",
+            "No, the OPTION_NFT_TOKEN option creates a single satoshi NFT token, which tokenizes control over the root ID.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

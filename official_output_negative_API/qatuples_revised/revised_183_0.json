@@ -1,0 +1,6 @@
+[
+    "How do I use the `getnettotals` command to get information about the total number of transactions on the Verus network?",
+    "The `getnettotals` command does not provide information about the total number of transactions on the Verus network. Instead, it returns information about network traffic, including the total bytes received, total bytes sent, and current CPU time.",
+    "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnettotals"
+]

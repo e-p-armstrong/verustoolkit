@@ -1,0 +1,6 @@
+[
+    "How do I use the `getcurrencyconverters` API to retrieve all currencies that have a market capitalization of over $1 billion?",
+    "The `getcurrencyconverters` API does not filter results by market capitalization. Instead, it retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves. If you want to retrieve currencies that have a market with a specific pair (e.g., BTC/ETH), you can use the API with the desired currency codes, like this: `verus -chain=VRSCTEST getcurrencyconverters btc eth`.",
+    "ueries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

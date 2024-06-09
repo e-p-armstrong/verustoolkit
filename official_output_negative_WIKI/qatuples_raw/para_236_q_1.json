@@ -1,0 +1,6 @@
+[
+    "Can I omit the \"txid\" argument and only provide the \"includeWatchonly\" argument?",
+    "No, you cannot omit the \"txid\" argument. The \"txid\" argument is required, and it specifies the transaction id. The \"includeWatchonly\" argument is optional, and it defaults to false if not provided.",
+    "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

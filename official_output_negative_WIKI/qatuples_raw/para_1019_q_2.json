@@ -1,0 +1,6 @@
+[
+    "What is the command to send existing \"mycoin\" coins to an address, rather than minting new ones?",
+    "The provided command `./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'` is actually used to mint new coins, not send existing ones. To send existing coins, you would need to use a different command that does not include the `\"mintnew\":1` parameter.",
+    "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

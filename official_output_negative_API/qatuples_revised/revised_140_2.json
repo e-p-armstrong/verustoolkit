@@ -1,0 +1,6 @@
+[
+    "What happens if the memo field contains invalid UTF-8 text?",
+    "If the memo field contains invalid UTF-8 text, the API will not return a \"memoStr\" field. The \"memo\" field will still be returned, but it will contain the hexadecimal string representation of the memo field, and it will be up to the client to handle or ignore it.",
+    "  \"value\" : x.xxx         (numeric) The amount in VRSC\n   \"valueZat\" : xxxx        (numeric) The amount in zatoshis\n   \"memo\" : \"hexmemo\",       (string) Hexademical string representation of the memo field\n   \"memoStr\" : \"memo\",       (string) Only returned if memo contains valid UTF-8 text.\n  }\n  ,...\n ],\n}",
+    "./raw_text_input_api_text/z_viewtransaction"
+]

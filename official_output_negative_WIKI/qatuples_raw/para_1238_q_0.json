@@ -1,0 +1,6 @@
+[
+    "Can you explain how to create a new token using a decentralized issuance option?",
+    "Actually, according to the available information, the only way to create new tokens at present is with a centralized issuance option, not a decentralized one.",
+    "he only way at present to create new tokens is with a centralized issuance option. To convert VRSCTEST to GOLD, you could issue the command:\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,6 @@
+[
+    "Is it true that miners or stakers do not receive any fees when a new identity is created?",
+    "No, that's not correct. Miners or stakers receive 20 VRSC when a new identity is created, in addition to 100% of all funds that are not paid to referrers.",
+    "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+    "./raw_text_input_wiki/release_notes.md"
+]

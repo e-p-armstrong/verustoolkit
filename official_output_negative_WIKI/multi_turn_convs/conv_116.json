@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to use a command that requires the \"heightend\" argument, but I'm not sure what to put for it. What is the default value of the \"heightend\" argument when it is not specified?\n\n**AI Assistant:**\nThe default value of the \"heightend\" argument when it is not specified is not 0, but rather \"maxheight\". This means that when \"heightend\" is not specified, the command will return exports below or at the maximum height.\n\n**User:**\nThat helps, thanks! Another question - is it possible to omit both the \"heightstart\" and \"heightend\" arguments when calling the command?\n\n**AI Assistant:**\nYes, it is possible to omit both the \"heightstart\" and \"heightend\" arguments when calling the command. In this case, the command will return all exports on the specified chain, without any height restrictions.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the default value of the \"heightend\" argument when it is not specified?",
+            "The default value of the \"heightend\" argument when it is not specified is not 0, but rather \"maxheight\". This means that when \"heightend\" is not specified, the command will return exports below or at the maximum height.",
+            "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Is it possible to omit both the \"heightstart\" and \"heightend\" arguments when calling the command?",
+            "Yes, it is possible to omit both the \"heightstart\" and \"heightend\" arguments when calling the command. In this case, the command will return all exports on the specified chain, without any height restrictions.",
+            "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

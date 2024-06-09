@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the maximum number of nodes that can be specified in the \"nodes\" array?",
+            "The maximum number of nodes that can be specified in the \"nodes\" array is 8.",
+            "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+            "./raw_text_input_api_text/getcurrency"
+        ],
+        [
+            "Can I specify a \"nodeidentity\" as an integer?",
+            "No, you cannot specify a \"nodeidentity\" as an integer. A \"nodeidentity\" is a string, and it can be an internet, TOR, or other supported address for the node.",
+            "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+            "./raw_text_input_api_text/getcurrency"
+        ],
+        [
+            "What is the data type of \"paymentaddress\"?",
+            "The data type of \"paymentaddress\" is an integer (int). It represents the rewards payment address.",
+            "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+            "./raw_text_input_api_text/getcurrency"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5c384eb9-93ab-49de-93a6-cbc9ba440f97"
+]

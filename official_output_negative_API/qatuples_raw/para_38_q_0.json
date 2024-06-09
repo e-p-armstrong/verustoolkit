@@ -1,0 +1,6 @@
+[
+    "How do I use the `getconnectioncount` command to get a list of all connected nodes?",
+    "The `getconnectioncount` command doesn't return a list of connected nodes. Instead, it returns the number of connections to other nodes. If you want to get a list of connected nodes, you'll need to use a different command.",
+    "getconnectioncount\n\nReturns the number of connections to other nodes.\n\nResult:\nn     (numeric) The connection count\n\nExamples:\n> verus getconnectioncount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getconnectioncount"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to use the `getnotarizationproofs` method, but I'm not sure how to use it. Can I use it without providing any parameters?\n\n**AI Assistant:**\nUnfortunately, no, you can't use the `getnotarizationproofs` method without providing any parameters. The method requires a list of objects as a parameter, each containing a `type`, `evidence`, `proveheight`, and `atheight` field. You need to provide these parameters to use the method correctly.\n\n**User:**\nOkay, I understand. But can I use the `getnotarizationproofs` method with a single parameter instead of a list of objects?\n\n**AI Assistant:**\nNo, the `getnotarizationproofs` method requires a list of objects as a parameter, not a single object. The method is designed to work with a list of objects, where each object contains the required fields. You need to provide a list of objects with the necessary fields to use the method correctly.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `getnotarizationproofs` method without providing any parameters?",
+            "You can't use the `getnotarizationproofs` method without providing any parameters. The method requires a list of objects as a parameter, each containing a `type`, `evidence`, `proveheight`, and `atheight` field.",
+            "Examples:\n> verus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnotarizationproofs"
+        ],
+        [
+            "Can I use the `getnotarizationproofs` method with a single parameter instead of a list of objects?",
+            "No, the `getnotarizationproofs` method requires a list of objects as a parameter, not a single object. The method is designed to work with a list of objects, where each object contains the required fields.",
+            "Examples:\n> verus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnotarizationproofs"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What happens if I try to convert VRSCTEST to GOLD before the GOLD token launches?",
+            "If you try to convert VRSCTEST to GOLD before the GOLD token launches, the conversion will be parked until the token launches. You can do this by issuing a command like:\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nThis will effectively park your conversion until the GOLD token launches. After the launch, you will either find 0.975 GOLD in your wallet, or you will have your VRSCTEST back.",
+            "ncy must be funded with at least 10 VRSCTEST before sending the transaction returned from this command to\ninitiate a currency launch that will start at 50 blocks from when it was made (default), and that must have 1000 VRSCTEST preconverted at 0.01 VRSCTEST per GOLD in order to launch.\nall of this happens as part of the mining process, since mining the blocks that launch a currency earn the 0.025% conversion fees of participation\nin the launch, converting VRSCTEST to GOLD. I could send the following command before the block where GOLD token launches.\nAfter it launches, the only way at present to create new tokens is with a centralized issuance option. To convert VRSCTEST to GOLD, you could issue the command:\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Do I need to fund my currency with at least 1000 VRSCTEST before sending the transaction to initiate a currency launch?",
+            "No, you don't need to fund your currency with at least 1000 VRSCTEST before sending the transaction to initiate a currency launch. You need to fund your currency with at least 10 VRSCTEST before sending the transaction, and have 1000 VRSCTEST preconverted at 0.01 VRSCTEST per GOLD in order to launch.",
+            "ncy must be funded with at least 10 VRSCTEST before sending the transaction returned from this command to\ninitiate a currency launch that will start at 50 blocks from when it was made (default), and that must have 1000 VRSCTEST preconverted at 0.01 VRSCTEST per GOLD in order to launch.\nall of this happens as part of the mining process, since mining the blocks that launch a currency earn the 0.025% conversion fees of participation\nin the launch, converting VRSCTEST to GOLD. I could send the following command before the block where GOLD token launches.\nAfter it launches, the only way at present to create new tokens is with a centralized issuance option. To convert VRSCTEST to GOLD, you could issue the command:\n```\n./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "4680c514-2715-41b8-9c0a-e11035717635"
+]

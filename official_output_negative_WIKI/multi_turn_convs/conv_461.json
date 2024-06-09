@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to create mycoin, but I'm a bit confused about the requirements. I've heard that creating mycoin only requires VRSCTEST. Is that true?\n\n**AI Assistant:**\nActually, that's not entirely accurate. Creating mycoin requires either GOLD or VRSCTEST, not just VRSCTEST. This means that you can create mycoin using either of these two currencies, giving you more flexibility and options.\n\n**User:**\nSo, does that mean I can use other currencies to create mycoin as well? Like, is it possible to create mycoin with a currency other than GOLD or VRSCTEST?\n\n**AI Assistant:**\nNo, creating mycoin requires either GOLD or VRSCTEST. There is no option to use any other currency to create mycoin. You'll need to use one of these two currencies to create your mycoin.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain why creating mycoin requires only VRSCTEST?",
+            "Actually, creating mycoin requires either GOLD or VRSCTEST, not just VRSCTEST. This means that you can create mycoin using either of these two currencies, giving you more flexibility and options.",
+            " with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it possible to create mycoin with a currency other than GOLD or VRSCTEST?",
+            "No, creating mycoin requires either GOLD or VRSCTEST. There is no option to use any other currency to create mycoin.",
+            " with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

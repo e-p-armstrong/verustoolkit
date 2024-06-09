@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I've got a question about the `submitmergedblock` command. Can it only submit blocks to PBaaS chains?\n\n**AI Assistant:**\nNo, the `submitmergedblock` command is not limited to submitting blocks to PBaaS chains only. It can actually submit blocks to both Verus and PBaaS merge mined chains. So, you've got more flexibility than that! Do you have any other questions about this command or merge mining in general?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can the `submitmergedblock` command only submit blocks to PBaaS chains?",
+            "No, the `submitmergedblock` command can submit blocks to both Verus and PBaaS merge mined chains, not just PBaaS chains.",
+            "### `submitmergedblock \"hexdata\" ( \"jsonparametersobject\" )`\nAttempts to submit one more more new blocks to one or more networks.\nEach merged block submission may be valid for Verus and/or PBaaS merge mined chains.\nThe submitted block consists of a valid block for this chain, along with embedded headers of other PBaaS merge mined chains.\nIf the hash for this header meets targets of other chains that have been added with 'addmergedblock', this API will\nsubmit those blocks to the specified URL endpoints with an RPC 'submitmergedblock' request.\nAttempts to submit one or more new blocks to one or more networks.#### Arguments\n1. \"hexdata\"  (string, required) the hex-encoded block data to submit#### Results:\n```json\n  { rejected: \"reject reason\" }\n```\n Submission to our chain and PBaaS chains\n```json\n  { blockhash: \"hex\", accepted: true, pbaas_submissions: { \"Quantum\":\"chainID_hex\", ... } }\n```\n Submission to only PBaaS chains\n```json\n  { blockhash: \"hex\", accepted: \"pbaas\", pbaas_submissions: { \"Quantum\":\"chainID_hex\", ... } }\n```#### Examples:\n```bash\n> verus submitmergedblock \"mydata\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"submitmergedblock\", \"params\": [\"mydata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```## Network### `addnode \"node\" \"add|remove|onetry\"`\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.#### Arguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

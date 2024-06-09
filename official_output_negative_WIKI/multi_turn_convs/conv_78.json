@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to understand the `getlocalsolps` command in Verus. Does it return the total number of solutions found by all nodes in the network?\n\n**AI Assistant:**\nNo, the `getlocalsolps` command doesn't return the total number of solutions found by all nodes in the network. Instead, it returns the average local solutions per second since this node was started, which is a measure of the performance of the local node. Does that make sense?\n\n**User:**\nThat clears things up. One more question about `getlocalsolps`: is the result of the command a string value?\n\n**AI Assistant:**\nNo, the result of the `getlocalsolps` command is a numeric value, specifically a decimal value representing the average local solutions per second since the node was started. So, you can expect a numerical value as the output, not a string.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Does the `getlocalsolps` command return the total number of solutions found by all nodes in the network?",
+            "No, the `getlocalsolps` command does not return the total number of solutions found by all nodes in the network. It returns the average local solutions per second since this node was started, which is a measure of the performance of the local node.",
+            "### `getlocalsolps`\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).#### Result:\nxxx.xxxxx   (numeric) Solutions per second average",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Is the result of the `getlocalsolps` command a string value?",
+            "No, the result of the `getlocalsolps` command is a numeric value, specifically a decimal value representing the average local solutions per second since the node was started.",
+            "### `getlocalsolps`\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).#### Result:\nxxx.xxxxx   (numeric) Solutions per second average",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "How do I use the `validateaddress` command to invalidate a Verus address?",
+    "The `validateaddress` command is not used to invalidate a Verus address. Instead, it returns information about the given Verus address. If you need to mark a block as invalid, you would use the `invalidateblock` command, but it is not applicable to addresses.",
+    "#### Arguments:\n1. hash  (string, required) the hash of the block to mark as invalid### `jumblr_deposit \"depositaddress\"`\n### `jumblr_pause`\n### `jumblr_resume`\n### `jumblr_secret \"secretaddress\"`\n### `reconsiderblock \"hash\"`\nRemoves invalidity status of a block and its descendants, reconsider them for activation.\nThis can be used to undo the effects of invalidateblock.#### Arguments:\n1. hash  (string, required) the hash of the block to reconsider#### Result:Examples:\n```bash\n> verus invalidateblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `validateaddress \"verusaddress\"`\nReturn information about the given Verus address.#### Arguments:\n1. \"verusaddress\"   (string, required) The Komodo address to validate",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

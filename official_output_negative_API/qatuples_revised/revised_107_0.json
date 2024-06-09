@@ -1,0 +1,6 @@
+[
+    "How do I use the `getlastimportfrom` command to retrieve the last import from all systems on the chain?",
+    "The `getlastimportfrom` command doesn't retrieve the last import from all systems on the chain. Instead, it returns the last import from a specific originating system, identified by its \"systemname\" argument. To use this command, you need to specify the name or ID of the system you're interested in.",
+    "getlastimportfrom \"systemname\"\n\nReturns the last import from a specific originating system.\n\nArguments\n1. \"systemname\"           (string, optional) name or ID of the system to retrieve the last import from\n\nResult:\n {\n   \"lastimport\" :         (object) last import from the indicated system on this chain\n    {\n    }\n   \"lastconfirmednotarization\" :  (object) last confirmed notarization of the indicated system on this chain\n    {\n    }\n }\n\nExamples:\n> verus getlastimportfrom \"systemname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlastimportfrom\", \"params\": [\"systemname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getlastimportfrom"
+]

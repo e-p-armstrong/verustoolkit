@@ -1,0 +1,6 @@
+[
+    "Can you explain why the command `curl --user myusername --data-binary '{\"jsonrpc\": \"2.0\", ...` is used to send a transaction to the Verus network?",
+    "The command is actually `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", ...`, not `2.0`. The `jsonrpc` version in this case is indeed `1.0`, not `2.0`.",
+    "As json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"address\":\"Verus Coin Foundation.vrsc@\", \"createmmr\":true, \"data\":[{\"message\":\"hello world\", \"encrypttoaddress\":\"Sapling address\"}]}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/decryptdata"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the default number of blocks generated when you run the `generate` command without specifying a number?",
+    "There is no default number of blocks generated when running the `generate` command without specifying a number. You must provide the `numblocks` argument, which specifies how many blocks to generate immediately.",
+    "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+    "./raw_text_input_api_text/generate"
+]

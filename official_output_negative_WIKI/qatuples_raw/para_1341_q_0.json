@@ -1,0 +1,6 @@
+[
+    "What are the main features of Verus v0.7.1, the latest node and wallet upgrade?",
+    "There is no mention of Verus v0.7.1. The latest upgrade mentioned is Verus v0.7.2, which is a non-mandatory but highly recommended upgrade that includes a fully decentralized finance and liquidity system activated on the new Verus testnet, as well as performance improvements and a fix for an issue related to ID revocation and recovery on mainnet.",
+    "We are excited to announce Verus v0.7.2, non-mandatory but highly recommended Verus node and wallet upgrade, with fully decentralized finance and liquidity system activated on the new Verus testnet. While most of the new capabilities in this release are focused on testnet, the mainnet support does include some performance improvements and also fixes an issue that may occur in an edge case of revocation and recovery of IDs, which can result in a revoked ID being irrecoverable from an earlier version than v0.7.2.## Testnet Reset\nThe testnet was deleted and relaunched on this release. **IF YOU HAVE LAST LAUNCHED VRSCTEST FROM A VERSION PRIOR TO THIS, PLEASE FOLLOW THE INSTRUCTIONS AT THE BOTTOM OF THE RELEASE NOTES BEFORE RUNNING THIS UPDATE**",
+    "./raw_text_input_wiki/release_notes.md"
+]

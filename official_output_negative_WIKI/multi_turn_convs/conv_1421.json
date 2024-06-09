@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to create a new token that can be converted to with either GOLD or VRSCTEST. How do I do that using the command-line command?\n\n**AI Assistant:**\nTo create such a token, you would use a command like:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines a new token named \"mycoin\" that can be converted to with either GOLD or VRSCTEST. Make sure to replace \"mycoin\" with the actual name you want for your token, and adjust the other parameters as needed.\n\n**User:**\nThat's really helpful, thanks! I've also heard of \"parking a conversion\" but I'm not really sure what that means. Can you explain it to me?\n\n**AI Assistant:**\n\"Parking a conversion\" is a way to reserve a conversion for a token that has not yet launched. It doesn't make sense to park a conversion for a token that has already launched. So, if you're planning to create a new token and want to reserve a conversion for it, you can park the conversion before the token launches. But if the token has already launched, parking a conversion isn't an option. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I create a new token that can be converted to with either GOLD or VRSCTEST using the command-line command?",
+            "To create such a token, you would use a command like:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines a new token named \"mycoin\" that can be converted to with either GOLD or VRSCTEST.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does \"parking a conversion\" mean, and can I do it for a token that has already launched?",
+            "\"Parking a conversion\" is a way to reserve a conversion for a token that has not yet launched. It doesn't make sense to park a conversion for a token that has already launched.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

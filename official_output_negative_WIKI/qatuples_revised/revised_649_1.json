@@ -1,0 +1,6 @@
+[
+    "Do the command line formatting rules for Windows also apply to Verus Desktop?",
+    "No, the command line formatting rules for Windows only apply to the native Windows command prompt (`cmd.com`). Verus Desktop will accept commands as listed, without the need for formatting changes.",
+    "# Remarks on Windows command line formatting:\n\nThe CLI help shows the command format for Linux and MacOS. On the native windows command prompt (`cmd.com`) the formatting is different.\n\n* For windows substitute the shown `'`-character with the `\"`-character.\n * For windows substitute the shown `\"`-character with the `\\\"`-characters.\n\nNote: this only applies to giving commands from the windows command prompt. Verus Desktop will accept commands as listed.\n\nCreated by Oink.vrsc@\n\nNote: last revision date 2020-03-02.",
+    "./raw_text_input_wiki/winfaq-01_cli_formatting.md"
+]

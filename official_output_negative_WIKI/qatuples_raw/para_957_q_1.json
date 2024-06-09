@@ -1,0 +1,6 @@
+[
+    "Does deleting the specified directories alone reset the testnet?",
+    "No, deleting the specified directories alone is not enough to reset the testnet. You need to make sure Verus is closed and no testnet daemon is running before deleting the directories, and then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest, and re-add verustest native) to complete the reset process.",
+    "## Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):",
+    "./raw_text_input_wiki/release_notes.md"
+]

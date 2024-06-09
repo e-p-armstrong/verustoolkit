@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I use the `ping` command to get an immediate response from all other nodes?",
+            "The `ping` command is not handled immediately, but rather is queued with all other commands. This means that it does not provide an immediate response, but rather measures the processing backlog, which includes the time it takes to process commands in the queue.",
+            "ping\n\nRequests that a ping be sent to all other nodes, to measure ping time.\nResults provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.\nPing command is handled in queue with all other commands, so it measures processing backlog, not just network ping.\n\nExamples:\n> verus ping \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/ping"
+        ],
+        [
+            "What units are the results of the `ping` command provided in?",
+            "The results of the `ping` command, specifically the `pingtime` and `pingwait` fields, are provided in decimal seconds, not milliseconds or any other unit.",
+            "ping\n\nRequests that a ping be sent to all other nodes, to measure ping time.\nResults provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.\nPing command is handled in queue with all other commands, so it measures processing backlog, not just network ping.\n\nExamples:\n> verus ping \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"ping\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/ping"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "71a0d5e0-cf9b-46ee-a5c2-6c07dd8b8eab"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the minimum transaction fee that can be set using the `settxfee` command?",
+    "The minimum transaction fee is not specified, but the `settxfee` command sets the transaction fee per kB, and the amount is rounded to the nearest 0.00000001 VRSC/kB.",
+    "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/settxfee"
+]

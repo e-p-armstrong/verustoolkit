@@ -1,0 +1,6 @@
+[
+    "Can you explain how to use the `getidentitycontent` command with only one parameter, the identity name?",
+    "The `getidentitycontent` command actually requires more than one parameter. The correct syntax is `getidentitycontent \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight) (vdxfkey)`. You need to provide the identity name or IID, as well as other parameters such as the height range, transaction proofs, and VDXF key.",
+    "### `getidentitycontent \"name@ || iid\" (heightstart) (heightend) (txproofs) (txproofheight) (vdxfkey)`",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

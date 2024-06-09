@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble with the `gettransaction` command. Can you explain why it only works with transaction IDs that are exactly 10 characters long?\n\n**AI Assistant:**\nI think there might be some confusion. The `gettransaction` command does not only work with transaction IDs that are exactly 10 characters long. In fact, the example provided shows a transaction ID that is 64 characters long: `1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d`. The command can work with transaction IDs of varying lengths.\n\n**User:**\nOkay, that clears things up. I also have a question about the `getunconfirmedbalance` command. How do I use it to get the balance of a specific wallet?\n\n**AI Assistant:**\nThe `getunconfirmedbalance` command doesn't actually return the balance of a specific wallet. It returns the server's total unconfirmed balance. If you need to get the balance of a specific wallet, you would need to use a different command. Let me know if you need help with that!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain why the `gettransaction` command only works with transaction IDs that are exactly 10 characters long?",
+            "The `gettransaction` command does not only work with transaction IDs that are exactly 10 characters long. In fact, the example provided shows a transaction ID that is 64 characters long: `1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d`. The command can work with transaction IDs of varying lengths.",
+            "Examples:\n```bash\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getunconfirmedbalance`\nReturns the server's total unconfirmed balance### `getwalletinfo`\nReturns an object containing various wallet state info.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How do I use the `getunconfirmedbalance` command to get the balance of a specific wallet?",
+            "The `getunconfirmedbalance` command does not return the balance of a specific wallet. It returns the server's total unconfirmed balance. If you need to get the balance of a specific wallet, you would need to use a different command.",
+            "Examples:\n```bash\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `getunconfirmedbalance`\nReturns the server's total unconfirmed balance### `getwalletinfo`\nReturns an object containing various wallet state info.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

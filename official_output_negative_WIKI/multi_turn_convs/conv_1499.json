@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to set up a new blockchain using Verus, and I'm having some trouble. How do I define a PBaaS blockchain using the `definecurrency` command?\n\n**AI Assistant:**\nI think there may be some confusion here. The `definecurrency` command is not actually used to define a PBaaS blockchain. Instead, it's used to define a new currency, such as \"mycoin\". If you're trying to set up a new blockchain, you'll need to use a different command or series of commands. Can you tell me more about what you're trying to do, and I can try to help you out?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I define a PBaaS blockchain using the `definecurrency` command?",
+            "The `definecurrency` command is not used to define a PBaaS blockchain. It is used to define a new currency, such as \"mycoin\".",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```### Defining a PBaaS blockchain\n```json\n {\n \"name\": \"PBaaSChain\",\n \"options\": 264,\n \"currencies\": [\n  \"VRSCTEST\"\n ],\n \"conversions\": [\n  1\n ],\n \"eras\": [\n  {\n   \"reward\": 1200000000,\n   \"decay\": 0,\n   \"halving\": 0,\n   \"eraend\": 0\n  }\n ],\n \"notaries\": [\n  \"Notary1@\",\n  \"Notary2@\",\n  \"Notary3@\",\n ],\n \"minnotariesconfirm\": 2,\n \"nodes\": [\n  {\n   \"networkaddress\": \"111.111.111.111:10000\",\n   \"nodeidentity\": \"Node1@\"\n  },\n  {\n   \"networkaddress\": \"111.111.111.112:10000\",\n   \"nodeidentity\": \"Node2@\"\n  }\n ],\n \"gatewayconvertername\": \"Bridge\",\n \"gatewayconverterissuance\": 1000000\n}\n```\nThe bridge definition has overridable defaults\n```json\n {\n \"currencies\": [\n  \"VRSCTEST\",\n  \"PBaaSChain\",\n  \"USD\"\n ],\n \"initialcontributions\": [\n  380228.12033701,\n  0,\n  1000000\n ],\n \"initialsupply\": 3000000\n}\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

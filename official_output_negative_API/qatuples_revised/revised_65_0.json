@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getBlockHashForNotarisations` function?",
+    "There is no `getBlockHashForNotarisations` function. The actual function is `getNotarisationsForBlock` and it takes a block hash as an input and returns notarisation transactions within that block.",
+    "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+    "./raw_text_input_api_text/getNotarisationsForBlock"
+]

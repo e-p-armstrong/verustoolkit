@@ -1,0 +1,6 @@
+[
+    "How do I add a new IP address to the ban list using the `clearbanned` command?",
+    "The `clearbanned` command does not add new IP addresses to the ban list. Instead, it clears all banned IPs, effectively removing all IP addresses from the ban list. If you want to add a new IP address to the ban list, you would need to use a different command.",
+    "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/clearbanned"
+]

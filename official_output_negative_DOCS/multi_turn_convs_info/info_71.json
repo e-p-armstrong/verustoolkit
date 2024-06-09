@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the recommended limit for currency supplies in Verus, and how many decimal places does it have?",
+            "The recommended absolute limit for all currency supplies in Verus is 10 billion (-1 SATOSHI), which has 8 decimal places (9999999999.99999999).",
+            "::: danger Limit for all currency supplies (10 billion)\n10 billion (-1 SATOSHI) with 8 decimal places (9999999999.99999999) is now the recommended absolute limit for all currency supplies, including over time with conversions and extended tail emissions for blockchains.\n:::### Blockchain 1``` json\n./verus -chain=VRSCTEST definecurrency '{\n  \"name\":\"PBaaSChain\",\n  \"options\":264,\n  \"currencies\":[\"VRSCTEST\"],\n  \"conversions\":[1],\n  \"eras\":[\n    {\n      \"reward\":1200000000,\n      \"decay\":0,\n      \"halving\":0,\n      \"eraend\":0\n    }\n  ],\n  \"notaries\":[\n    \"Notary1@\",\n    \"Notary2@\",\n    \"Notary3@\"\n  ],\n  \"minnotariesconfirm\":2,\n  \"nodes\":[\n    {\n      \"networkaddress\":\"111.111.111.111:10000\",\n      \"nodeidentity\":\"Node1@\"\n    },\n    {\n      \"networkaddress\":\"111.111.111.112:10000\",\n      \"nodeidentity\":\"Node2@\"\n    }\n  ],\n  \"gatewayconvertername\":\"Bridge\",\n  \"gatewayconverterissuance\":1000000\n  }' \n  '{\n    \"currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\n    \"initialcontributions\":[371747.20398827,0,1000000],\n    \"initialsupply\":3000000\n  }'\n```### Blockchain 2",
+            "./raw_text_input_docs/define-pbaas.md"
+        ],
+        [
+            "Can I create a currency supply with more than 10 billion units in Verus?",
+            "No, the recommended absolute limit for all currency supplies in Verus is 10 billion (-1 SATOSHI). It's not recommended to create a currency supply with more than 10 billion units.",
+            "::: danger Limit for all currency supplies (10 billion)\n10 billion (-1 SATOSHI) with 8 decimal places (9999999999.99999999) is now the recommended absolute limit for all currency supplies, including over time with conversions and extended tail emissions for blockchains.\n:::### Blockchain 1``` json\n./verus -chain=VRSCTEST definecurrency '{\n  \"name\":\"PBaaSChain\",\n  \"options\":264,\n  \"currencies\":[\"VRSCTEST\"],\n  \"conversions\":[1],\n  \"eras\":[\n    {\n      \"reward\":1200000000,\n      \"decay\":0,\n      \"halving\":0,\n      \"eraend\":0\n    }\n  ],\n  \"notaries\":[\n    \"Notary1@\",\n    \"Notary2@\",\n    \"Notary3@\"\n  ],\n  \"minnotariesconfirm\":2,\n  \"nodes\":[\n    {\n      \"networkaddress\":\"111.111.111.111:10000\",\n      \"nodeidentity\":\"Node1@\"\n    },\n    {\n      \"networkaddress\":\"111.111.111.112:10000\",\n      \"nodeidentity\":\"Node2@\"\n    }\n  ],\n  \"gatewayconvertername\":\"Bridge\",\n  \"gatewayconverterissuance\":1000000\n  }' \n  '{\n    \"currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\n    \"initialcontributions\":[371747.20398827,0,1000000],\n    \"initialsupply\":3000000\n  }'\n```### Blockchain 2",
+            "./raw_text_input_docs/define-pbaas.md"
+        ],
+        [
+            "How do I define a new currency in Verus with an unlimited supply?",
+            "You can't define a new currency in Verus with an unlimited supply. The recommended absolute limit for all currency supplies in Verus is 10 billion (-1 SATOSHI). You can define a new currency with a specific supply using the `definecurrency` command, but it should be within the recommended limit.",
+            "::: danger Limit for all currency supplies (10 billion)\n10 billion (-1 SATOSHI) with 8 decimal places (9999999999.99999999) is now the recommended absolute limit for all currency supplies, including over time with conversions and extended tail emissions for blockchains.\n:::### Blockchain 1``` json\n./verus -chain=VRSCTEST definecurrency '{\n  \"name\":\"PBaaSChain\",\n  \"options\":264,\n  \"currencies\":[\"VRSCTEST\"],\n  \"conversions\":[1],\n  \"eras\":[\n    {\n      \"reward\":1200000000,\n      \"decay\":0,\n      \"halving\":0,\n      \"eraend\":0\n    }\n  ],\n  \"notaries\":[\n    \"Notary1@\",\n    \"Notary2@\",\n    \"Notary3@\"\n  ],\n  \"minnotariesconfirm\":2,\n  \"nodes\":[\n    {\n      \"networkaddress\":\"111.111.111.111:10000\",\n      \"nodeidentity\":\"Node1@\"\n    },\n    {\n      \"networkaddress\":\"111.111.111.112:10000\",\n      \"nodeidentity\":\"Node2@\"\n    }\n  ],\n  \"gatewayconvertername\":\"Bridge\",\n  \"gatewayconverterissuance\":1000000\n  }' \n  '{\n    \"currencies\":[\"VRSCTEST\",\"PBaaSChain\",\"USD\"],\n    \"initialcontributions\":[371747.20398827,0,1000000],\n    \"initialsupply\":3000000\n  }'\n```### Blockchain 2",
+            "./raw_text_input_docs/define-pbaas.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2a685f68-c5e5-4ca3-9a0e-b3483c294450"
+]

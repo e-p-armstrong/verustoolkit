@@ -1,0 +1,6 @@
+[
+    "Does the `resendwallettransactions` command return a boolean value indicating whether the re-broadcast was successful or not?",
+    "No, the `resendwallettransactions` command returns an array of transaction IDs that were re-broadcast, not a boolean value indicating success or failure.",
+    "resendwallettransactions\nImmediately re-broadcast unconfirmed wallet transactions to all peers.\nIntended only for testing; the wallet code periodically re-broadcasts\nautomatically.\nReturns array of transaction ids that were re-broadcast.",
+    "./raw_text_input_api_text/resendwallettransactions"
+]

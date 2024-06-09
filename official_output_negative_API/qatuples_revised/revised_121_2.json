@@ -1,0 +1,6 @@
+[
+    "Can I use the `estimatepriority` command to estimate the priority of a transaction that already has a fee?",
+    "The `estimatepriority` command is specifically designed to estimate the priority of a zero-fee transaction. It doesn't estimate the priority of transactions that already have a fee.",
+    "estimatepriority nblocks\n\nEstimates the approximate priority\na zero-fee transaction needs to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated priority\n\n-1.0 is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatepriority 6",
+    "./raw_text_input_api_text/estimatepriority"
+]

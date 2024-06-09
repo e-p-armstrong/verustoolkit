@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble finding the Verus data folder on my Windows 10 machine. Is there a way to access it without knowing the exact file path?\n\n**AI Assistant:**\nInitially, I'd say no, there's no way to access the Verus data folder on Windows 10 without knowing the exact file path. However, I realized that's not entirely accurate. You can actually access the Verus data folder on Windows 10 (and other OSes) by using the Verus Desktop application and clicking `Help` > `Show Verus data folder (default)`. This will reveal the default location of the Verus data folder.\n\n**User:**\nThat's really helpful, thanks! I was also wondering, are the standard locations for Verus wallet files the same across all operating systems?\n\n**AI Assistant:**\nInitially, I'd say yes, the standard locations for Verus wallet files are the same across all operating systems. But, that's not entirely accurate. The standard locations for Verus wallet files actually vary across different operating systems. For example, on Linux, the location is `~/.komodo/VRSC`, on Mac OS, it's `~/Library/Application Support/Komodo/VRSC`, and on Windows 10, it's `%AppData%\\Roaming\\Komodo\\VRSC\\`. So, it's important to know the specific location for your operating system.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Is there a way to access the Verus data folder on Windows 10 without knowing the exact file path?",
+            "No, there is no way to access the Verus data folder on Windows 10 without knowing the exact file path.\n\n**CORRECTION:**\nActually, you can access the Verus data folder on Windows 10 (and other OSes) by using the Verus Desktop application and clicking `Help` > `Show Verus data folder (default)`. This will reveal the default location of the Verus data folder.",
+            "### Verus `Wallet.dat`, Chaindata & `VRSC.conf` standard locations\n * Linux:\t\t`~/.komodo/VRSC`\n * Mac OS: \t`~/Library/Application Support/Komodo/VRSC`\n * Windows 10: \t`%AppData%\\Roaming\\Komodo\\VRSC\\`\n * OS independent through Verus Desktop: Click `help`, `Show Verus data folder (default)`\n\nNote: last revision date 2020-09-30.",
+            "./raw_text_input_wiki/faq-allos24_wallet.dat_and_vrsc.conf_location.md"
+        ],
+        [
+            "Are the standard locations for Verus wallet files the same across all operating systems?",
+            "Yes, the standard locations for Verus wallet files are the same across all operating systems.\n\n**CORRECTION:**\nActually, the standard locations for Verus wallet files vary across different operating systems. For example, on Linux, the location is `~/.komodo/VRSC`, on Mac OS, it's `~/Library/Application Support/Komodo/VRSC`, and on Windows 10, it's `%AppData%\\Roaming\\Komodo\\VRSC\\`.",
+            "### Verus `Wallet.dat`, Chaindata & `VRSC.conf` standard locations\n * Linux:\t\t`~/.komodo/VRSC`\n * Mac OS: \t`~/Library/Application Support/Komodo/VRSC`\n * Windows 10: \t`%AppData%\\Roaming\\Komodo\\VRSC\\`\n * OS independent through Verus Desktop: Click `help`, `Show Verus data folder (default)`\n\nNote: last revision date 2020-09-30.",
+            "./raw_text_input_wiki/faq-allos24_wallet.dat_and_vrsc.conf_location.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "Can I use the `curl` command to list currencies by sending a request to `http://example.com`?",
+    "No, you cannot use the `curl` command to list currencies by sending a request to `http://example.com`. The `curl` command needs to be sent to `http://127.0.0.1:27486/` with the correct JSON-RPC payload, like this: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+    "Examples:\n> verus listcurrencies true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listcurrencies\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listcurrencies"
+]

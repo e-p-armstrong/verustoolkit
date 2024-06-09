@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble with the `sendcurrency` API. I want to send VRSCTEST from a single address to multiple recipients. How do I do that?\n\n**AI Assistant:**\nYou can specify multiple recipient addresses in the `sendcurrency` command. For example:\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}, {\"currency\":\"vrsctest\",\"address\":\"charlie@\",\"amount\":20}]'\n```\nThis will send 10 VRSCTEST to `alice@` and 20 VRSCTEST to `charlie@` from the address `bob@`.\n\n**User:**\nThanks for that! I'm still a bit unclear about testnet coins, though. Can I use the `sendcurrency` API to send testnet coins that have real value?\n\n**AI Assistant:**\nNo, testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset. The `sendcurrency` API is only for testing purposes and does not involve real-value transactions. It's meant to help you test and develop your applications without risking real assets. So, don't worry about losing any valuable coins!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I send VRSCTEST from a single address to multiple recipients using the `sendcurrency` API?",
+            "The correct way to send VRSCTEST from a single address to multiple recipients is to specify multiple recipient addresses in the `sendcurrency` command. For example:\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}, {\"currency\":\"vrsctest\",\"address\":\"charlie@\",\"amount\":20}]'\n```\nThis will send 10 VRSCTEST to `alice@` and 20 VRSCTEST to `charlie@` from the address `bob@`.",
+            "#### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I use the `sendcurrency` API to send testnet coins that have real value?",
+            "No, testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset. The `sendcurrency` API is only for testing purposes and does not involve real-value transactions.",
+            "#### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

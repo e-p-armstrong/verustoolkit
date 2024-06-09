@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What's the easiest way to reset your testnet without deleting any files or directories?",
+            "Unfortunately, there's no way to reset your testnet without deleting specific files and directories. To reset your testnet, you need to delete the specified directories (`~/.komodo/vrsctest` and `~/.verustest` on Linux, `~/Library/Application Support/Komodo/vrsctest` and `~/Library/Application Support/VerusTest` on Mac OS, and `%AppData%\\Roaming\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\` and `%AppData%\\Roaming\\VerusTest` on Windows 10) and then restart the testnet daemon or relaunch Verus Desktop.",
+            "# Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):\n\n- Linux: `~/.komodo/vrsctest`, `~/.verustest`\n- Mac OS: `~/Library/Application Support/Komodo/vrsctest`, `~/Library/Application\\ Support/VerusTest`\n- Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest`\n\nInformation compiled by Oink.vrsc@ from Verus Release Notes.\n\nNote: revision date 2023-05-15.",
+            "./raw_text_input_wiki/how-to_reset_testnet.md"
+        ],
+        [
+            "Is it necessary to close Verus before resetting your testnet?",
+            "Yes, it is necessary to close Verus (and ensure no testnet daemon is running) before resetting your testnet. If you don't close Verus, you might encounter issues or errors during the reset process.",
+            "# Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):\n\n- Linux: `~/.komodo/vrsctest`, `~/.verustest`\n- Mac OS: `~/Library/Application Support/Komodo/vrsctest`, `~/Library/Application\\ Support/VerusTest`\n- Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest`\n\nInformation compiled by Oink.vrsc@ from Verus Release Notes.\n\nNote: revision date 2023-05-15.",
+            "./raw_text_input_wiki/how-to_reset_testnet.md"
+        ],
+        [
+            "Can I reset my mainnet by following the same steps as resetting a testnet?",
+            "No, the instructions provided are specifically for resetting a testnet, not a mainnet. You should not attempt to reset your mainnet using these steps, as it may lead to unintended consequences or data loss.",
+            "# Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):\n\n- Linux: `~/.komodo/vrsctest`, `~/.verustest`\n- Mac OS: `~/Library/Application Support/Komodo/vrsctest`, `~/Library/Application\\ Support/VerusTest`\n- Windows 10: `%AppData%\\Roaming\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest` or `%AppData%\\Komodo\\vrsctest\\`, `%AppData%\\Roaming\\VerusTest`\n\nInformation compiled by Oink.vrsc@ from Verus Release Notes.\n\nNote: revision date 2023-05-15.",
+            "./raw_text_input_wiki/how-to_reset_testnet.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "510d6264-28ba-4ddb-9be2-99ed9975658e"
+]

@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI was wondering about the Verus daemon version 0.7.1-3. Does it have full support for the Verus mainnet multi-currency technology?\n\n**AI Assistant:**\nActually, no. The Verus daemon v0.7.1-3 has full support for the new Verus Testnet multi-currency technology preview, not the Verus mainnet multi-currency technology. It only has minor improvements for mainnet operation. So, if you're looking to take advantage of the multi-currency features on the mainnet, you might need to wait for a future update.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Does the Verus daemon v0.7.1-3 have full support for the Verus mainnet multi-currency technology?",
+            "No, the Verus daemon v0.7.1-3 has full support for the new Verus Testnet multi-currency technology preview, not the Verus mainnet multi-currency technology. It only has minor improvements for mainnet operation.",
+            "**The result will be true if the signature is valid.**\n```\ntrue\n```\n## New in v0.7.1-3\n- This non-mandatory release is compatible with mainnet with mininal changes from v0.7.1-1. It contains fixes necessary to continue participating in the testnet launched in v0.7.1-1 and 0.7.1-2, without reset of your wallet or holdings, if you started using the VRSCTEST multi-currency testnet in v0.7.1-1 or \"-2\". You should be able to synchronize easily, but if you are unable to synchronize VRSCTEST shortly after connecting, try deleting the data in your VRSCTEST folder, and retain the wallet.dat file.\n- Improved staking supply calculation# Verus Testnet with Multi-currency Fractional Reserves and Currency Launch Protocol\nVerus multi-currency fractional reserve baskets are UTXO-based, fractional reserve currencies with anti-front running, simultaneously solved, provably fair liquidity system for all currencies and tokens in or imported into the PBaaS system.While Verus daemon v0.7.1-3 has minor improvements for mainnet operation, it offers full support for the new Verus Testnet multi-currency technology preview. On testnet, the new \"sendcurrency\" API, which is already available on Verus mainnet in its simplified form, is enhanced with new multi-currency parameters. The first parameter, \"currency\":\"currencyname\" - where the default on testnet for currency name is \"vrsctest\", specifies the source currency of the send. The next, \"convertto\":\"currencyname\", allows conversion from one currency to either a fractional currency where it is a reserve or a reserve of the fractional currency of the source.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

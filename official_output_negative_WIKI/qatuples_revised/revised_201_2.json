@@ -1,0 +1,6 @@
+[
+    "Can I reset my testnet while the testnet daemon is still running?",
+    "No, you cannot reset your testnet while the testnet daemon is still running. You need to make sure Verus is closed and no testnet daemon is running before deleting the specified directories and restarting the testnet daemon (or relaunching Verus Desktop, deactivating verustest, and re-adding verustest native) to reset the testnet.",
+    "## Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):",
+    "./raw_text_input_wiki/release_notes.md"
+]

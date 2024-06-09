@@ -1,0 +1,6 @@
+[
+    "Is it possible to create an ID without paying any fees to referrers or miners?",
+    "No, it's not possible to create an ID without paying any fees to referrers or miners. The protocol is designed to incentivize referrers and miners/stakers by distributing a portion of the fees to them. Referrers receive 20 VRSC up to three levels deep, and miners/stakers receive 100% of the remaining funds.",
+    "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+    "./raw_text_input_wiki/release_notes.md"
+]

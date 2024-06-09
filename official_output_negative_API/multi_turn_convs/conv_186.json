@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to send a JSON RPC request to a remote server. Can you help me out? I think I need to use the `verus` command, but I'm not sure how.\n\n**AI Assistant:**\nActually, the `verus` command is not used to send a JSON RPC request to a remote server. Instead, it's used to execute Verus commands locally.\n\n**User:**\nOh, I see. So how do I send a JSON RPC request to a remote server then?\n\n**AI Assistant:**\nTo send a JSON RPC request, you would use a tool like `curl`. Here's an example: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`. This will send a JSON RPC request to the specified server.\n\n**User:**\nThanks for the help! I think I can get it working now.\n\n**AI Assistant:**\nYou're welcome! If you have any more questions or need further assistance, feel free to ask. Good luck with your JSON RPC request!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `verus` command to send a JSON RPC request to a remote server?",
+            "The `verus` command is not used to send a JSON RPC request to a remote server. Instead, it is used to execute Verus commands locally. To send a JSON RPC request, you would use a tool like `curl`, as shown in the example: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+            "Examples:\n> verus getblocktemplate \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblocktemplate"
+        ]
+    ]
+]

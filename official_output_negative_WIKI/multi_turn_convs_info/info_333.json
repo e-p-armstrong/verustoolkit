@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can you explain why the initial price in reserve at chain launch is 0.1, and how this affects the volatility of the currency's price?",
+            "The initial price in reserve at chain launch is not 0.1, but 1.0. This means that at launch, the currency's price will not be affected by volatility due to reserve ratio. The volatility of the currency's price is inversely related to the reserve ratio, so a currency with a reserve ratio of 1 will never change its price when converting to or from its reserve. A currency with a lower reserve ratio, such as 0.1 or 10%, will experience more volatility in its price when converted to or from its reserve.",
+            "The example above defines a chain that emits a premine to the indicated address and also converts all contributions up to a maximum amount to the native chain currency at launch at a 100%, 1:1 conversion price. All contributions will enter the currency's reserve deposits, and the more contributions on this chain, the higher the starting reserve ratio will be. If the minimum contributions are not met, the chain will fail to start and all contributions can be spent back to the original contributors.The initial price in reserve at chain launch will start at 1.0, but there will be some fees to be paid in the early blocks that will come in as reserve currency. All fees in reserve that are converted to a fractional reserve currency are effective purchases of the fractional reserve currency, and based on a reversible formula, a currency's price will rise or fall on conversion from or to reserves with a level of volatility that is inversely related to the reserve ratio. A currency with a reserve ratio of 1 will never change its price when converting to or from its reserve. A currency with a reserve of 0.1 or 10% will rise or fall fairly quickly when converted to or from, depending on the amount of conversion relative to the total currency reserves on deposit.**Once a chain is made, anyone running the local VRSCTEST chain can connect to any defined chain with the command:**\n```\n./verusd -chain=SOMECOIN\n```\nOn first connection, a local config file is created, and VRSCTEST will not need to run to connect. However, it will be needed to merge mine.The presence of a correct config file for any chain, which are kept in .verustest/PBAAS/CHAINNAME, which is the home directory for a PBaaS chain, enables the chain to load as an independent chain.## Here are a few examples of cross-chain operations using the command line:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5dfa562a-5824-4565-9609-6e13be73f068"
+]

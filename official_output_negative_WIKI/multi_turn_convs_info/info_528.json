@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I convert VRSCTEST to a new currency, NEWCOIN, after it has already launched?",
+            "You can't use the `preconvert` option to convert VRSCTEST to a new currency after it has already launched. The `preconvert` option is specifically used to preconvert to a new currency before it is active. If the currency has already launched, you can convert VRSCTEST to it directly using the `convertto` option.",
+            ":\"bob@:private\",\"amount\":10}]'\n  ```\n- **Converting VRSCTEST to a fractional basket currency, VRSC-BTC using IDs as a funding source:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*i\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"VRSC-BTC\"}]'\n  ```\n- **Converting VRSCTEST to another reserve, BTC through a fractional currency, VRSC-BTC:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"BTC\",\"via\":\"VRSC-BTC\"}]'\n  ```\n- **Preconverting to new currency, NEWCOIN, before it is active:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n  ```\n- **Sending VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"exportto\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I convert VRSCTEST to a reserve currency, like USD, directly?",
+            "No, you cannot convert VRSCTEST to a reserve currency, like USD, directly. You need to convert VRSCTEST to a fractional currency, like VRSC-BTC, and then convert that fractional currency to the reserve currency, like BTC.",
+            ":\"bob@:private\",\"amount\":10}]'\n  ```\n- **Converting VRSCTEST to a fractional basket currency, VRSC-BTC using IDs as a funding source:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*i\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"VRSC-BTC\"}]'\n  ```\n- **Converting VRSCTEST to another reserve, BTC through a fractional currency, VRSC-BTC:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"BTC\",\"via\":\"VRSC-BTC\"}]'\n  ```\n- **Preconverting to new currency, NEWCOIN, before it is active:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n  ```\n- **Sending VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"exportto\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8f713e11-8468-479f-92bc-8a03934d31b7"
+]

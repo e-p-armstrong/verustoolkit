@@ -1,0 +1,6 @@
+[
+    "Can I use the `verus` command to list transactions in a specific range, but without specifying the `*` character?",
+    "The `verus listtransactions` command does require the `*` character to list transactions in a specific range. The correct syntax is `verus listtransactions \"*\" 20 100` to list transactions 100 to 120.",
+    "Examples:\n\nList the most recent 10 transactions in the systems\n> verus listtransactions\n\nList transactions 100 to 120\n> verus listtransactions \"*\" 20 100\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listtransactions"
+]

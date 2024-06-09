@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `z_getoperationstatus` command, and how does it differ from the `z_listoperations` command?",
+            "There is no `z_listoperations` command mentioned in the provided text. The `z_getoperationstatus` command is used to get the status and any associated result or error data of an operation. It takes an optional argument, an array of operation IDs, and returns a list of JSON objects containing the status and result/error data of the specified operations. If no operation IDs are provided, it examines all operations known to the node.",
+            "z_getoperationstatus ([\"operationid\", ... ])\n\nGet operation status and any associated result or error data. The operation will remain in memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationstatus '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationstatus\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationstatus"
+        ],
+        [
+            "How do I use the `z_getoperationstatus` command to delete an operation from memory?",
+            "The `z_getoperationstatus` command does not delete an operation from memory. This command is used to retrieve the status and associated data of an operation, not to delete it.",
+            "z_getoperationstatus ([\"operationid\", ... ])\n\nGet operation status and any associated result or error data. The operation will remain in memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationstatus '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationstatus\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationstatus"
+        ],
+        [
+            "Can I use the `z_getoperationstatus` command without providing an operation ID?",
+            "Yes, you can use the `z_getoperationstatus` command without providing an operation ID. In this case, the command will examine all operations known to the node and return their statuses and associated data.",
+            "z_getoperationstatus ([\"operationid\", ... ])\n\nGet operation status and any associated result or error data. The operation will remain in memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationstatus '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationstatus\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationstatus"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7c00b338-7e8e-4da5-a938-f79c16dbffdb"
+]

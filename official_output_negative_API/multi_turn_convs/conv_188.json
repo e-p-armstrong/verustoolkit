@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey there, I have a few questions about using `zcrawkeygen` to generate zcaddrs. How can I use `zcrawkeygen` to generate a zcaddr that can only receive confidential values, not send them?\n\n**AI Assistant:**\nUnfortunately, `zcrawkeygen` generates a zcaddr that can both send and receive confidential values. The output includes the zcaddress, zcsecretkey, and zcviewingkey. There is no option to generate a zcaddr that can only receive confidential values. Do you have any other questions about `zcrawkeygen` or zcaddrs?\n\n**User:**\nThat's good to know. Is `zcrawkeygen` a recommended command to use for generating zcaddrs?\n\n**AI Assistant:**\nNo, `zcrawkeygen` is actually deprecated, which means it's no longer recommended for use. You should avoid using it and look for alternative methods to generate zcaddrs. It's always a good idea to use the most up-to-date and recommended tools to ensure security and compatibility.\n\n**User:**\nWhat is the output format of `zcrawkeygen`, just out of curiosity?\n\n**AI Assistant:**\nThe output format of `zcrawkeygen` is a JSON object with three properties: \"zcaddress\", \"zcsecretkey\", and \"zcviewingkey\". However, as I mentioned earlier, it's not recommended to use `zcrawkeygen` anymore. If you need help with generating zcaddrs, I can try to assist you with alternative methods.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I use `zcrawkeygen` to generate a zcaddr that can only receive confidential values, not send them?",
+            "`zcrawkeygen` actually generates a zcaddr that can both send and receive confidential values. The output includes the zcaddress, zcsecretkey, and zcviewingkey. There is no option to generate a zcaddr that can only receive confidential values.",
+            "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ],
+        [
+            "Is `zcrawkeygen` a recommended command to use for generating zcaddrs?",
+            "No, `zcrawkeygen` is actually deprecated, which means it's no longer recommended for use. You should avoid using it and look for alternative methods to generate zcaddrs.",
+            "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ],
+        [
+            "What is the output format of `zcrawkeygen`?",
+            "The output format of `zcrawkeygen` is a JSON object with three properties: \"zcaddress\", \"zcsecretkey\", and \"zcviewingkey\".",
+            "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+            "./raw_text_input_api_text/zcrawkeygen"
+        ]
+    ]
+]

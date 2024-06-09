@@ -1,0 +1,6 @@
+[
+    "Do referrers receive a fixed amount of VRSC for each new identity created, regardless of the referral chain?",
+    "No, that's not correct. The referral fees are structured in a hierarchical manner, with 20 VRSC going to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID. This implies that the amount of VRSC received by referrers depends on their position in the referral chain.",
+    "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+    "./raw_text_input_wiki/release_notes.md"
+]

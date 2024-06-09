@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the cost to register a .vETH subID to launch a currency with a 1-to-1 mapping of an ERC-20, and what cryptocurrency is it paid in?",
+            "The cost to register a .vETH subID is 0.01 vETH worth of Bridge.vETH, not a different cryptocurrency like Bitcoin or Ethereum. It's specifically paid in Bridge.vETH.",
+            "## .vETH subID\nRegister a .vETH subID to launch a currency with a 1-to-1 mapping of an ERC-20. The cost is 0.01 vETH worth of Bridge.vETH.\n\n[Learn here how to register a VerusID / subID.](/verusid/verusid-create/)\n\n## Contract addresses\n\n| What       |     Contract address      |\n| :------------------ | :----------------------------------------- |\n| Verus-Ethereum Bridge smart contract **mainnet**| [0x71518580f36FeCEFfE0721F06bA4703218cD7F63](https://etherscan.io/address/0x71518580f36FeCEFfE0721F06bA4703218cD7F63) |\n| **VRSC** token address| [0xBc2738BA63882891094C99E59a02141Ca1A1C36a](https://etherscan.io/token/0xbc2738ba63882891094c99e59a02141ca1a1c36a) |\n| **Bridge.vETH** token address| [0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2](https://etherscan.io/token/0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2) |",
+            "./raw_text_input_docs/README_eth-bridge.md"
+        ],
+        [
+            "Is the **VRSC** token address the same as the **Bridge.vETH** token address?",
+            "No, they are not the same. The **VRSC** token address is 0xBc2738BA63882891094C99E59a02141Ca1a1C36a, and the **Bridge.vETH** token address is 0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2. They are two separate token addresses.",
+            "## .vETH subID\nRegister a .vETH subID to launch a currency with a 1-to-1 mapping of an ERC-20. The cost is 0.01 vETH worth of Bridge.vETH.\n\n[Learn here how to register a VerusID / subID.](/verusid/verusid-create/)\n\n## Contract addresses\n\n| What       |     Contract address      |\n| :------------------ | :----------------------------------------- |\n| Verus-Ethereum Bridge smart contract **mainnet**| [0x71518580f36FeCEFfE0721F06bA4703218cD7F63](https://etherscan.io/address/0x71518580f36FeCEFfE0721F06bA4703218cD7F63) |\n| **VRSC** token address| [0xBc2738BA63882891094C99E59a02141Ca1A1C36a](https://etherscan.io/token/0xbc2738ba63882891094c99e59a02141ca1a1c36a) |\n| **Bridge.vETH** token address| [0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2](https://etherscan.io/token/0xE6052Dcc60573561ECef2D9A4C0FEA6d3aC5B9A2) |",
+            "./raw_text_input_docs/README_eth-bridge.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "58f73593-5a3d-441e-8a0a-33c4beef7675"
+]

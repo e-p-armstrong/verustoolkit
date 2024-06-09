@@ -1,0 +1,6 @@
+[
+    "Can I use the `getrawtransaction` command without specifying a transaction ID?",
+    "No, you cannot use the `getrawtransaction` command without specifying a transaction ID. The command requires a transaction ID (`mytxid` in the example) to retrieve the raw transaction data. Without a transaction ID, the command will not know which transaction to retrieve.",
+    "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

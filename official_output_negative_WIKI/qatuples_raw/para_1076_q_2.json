@@ -1,0 +1,6 @@
+[
+    "What is the default liquidity threshold for the `getcurrencyconverters` API?",
+    "The text does not mention a specific default liquidity threshold for the `getcurrencyconverters` API. However, it does mention that the API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves, which suggests that these conditions are the threshold for the API.",
+    "ueries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

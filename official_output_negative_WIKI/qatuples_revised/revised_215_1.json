@@ -1,0 +1,6 @@
+[
+    "Is it true that creating an identity requires a payment of 100 VRSC to the referrer?",
+    "No, that's not correct. Creating an identity involves a payment distribution of 20 VRSC to the referrer's ID, 20 VRSC to the referrer's referrer's ID, 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block.",
+    "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+    "./raw_text_input_wiki/release_notes.md"
+]

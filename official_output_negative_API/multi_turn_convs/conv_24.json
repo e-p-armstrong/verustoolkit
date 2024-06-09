@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm playing around with the Verus CLI and I was wondering about the `getlaunchinfo` command. What's the purpose of it if you don't specify a currencyid?\n\n**AI Assistant:**\nActually, the `getlaunchinfo` command requires a currencyid as an argument. It returns the launch notarization data and partial transaction proof of the launch notarization for the specified currencyid. If you don't specify a currencyid, the command will not work as intended. You need to provide a currencyid to get the desired information.\n\n**User:**\nOkay, got it. So, can I use the `getlaunchinfo` command to get information about a specific transaction?\n\n**AI Assistant:**\nNo, the `getlaunchinfo` command is used to retrieve the launch notarization data and partial transaction proof of the launch notarization for a specific currencyid, not for a specific transaction. It returns information related to the launch of a currency, not a specific transaction. If you need information about a specific transaction, you'll need to use a different command.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getlaunchinfo` command if you don't specify a currencyid?",
+            "The `getlaunchinfo` command requires a currencyid as an argument. It returns the launch notarization data and partial transaction proof of the launch notarization for the specified currencyid. If you don't specify a currencyid, the command will not work as intended.",
+            "getlaunchinfo \"currencyid\"\n\nReturns the launch notarization data and partial transaction proof of the \nlaunch notarization for the specifed currencyid.\n\nArguments\n1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on\n\nResult:\n{\n \"currencydefinition\" : {},   (json) Full currency definition\n \"txid\" : \"hexstr\",      (hexstr) transaction ID\n \"voutnum\" : \"n\",       (number) vout index of the launch notarization\n \"transactionproof\" : {},    (json) Partial transaction proof of the launch transaction and output\n \"launchnotarization\" : {},   (json) Final CPBaaSNotarization clearing launch or refund\n \"notarynotarization\" : {},   (json) Current notarization of this chain\n}\n\nExamples:\n> verus getlaunchinfo \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlaunchinfo"
+        ],
+        [
+            "Can I use the `getlaunchinfo` command to get information about a specific transaction?",
+            "No, the `getlaunchinfo` command is used to retrieve the launch notarization data and partial transaction proof of the launch notarization for a specific currencyid, not for a specific transaction. It returns information related to the launch of a currency, not a specific transaction.",
+            "getlaunchinfo \"currencyid\"\n\nReturns the launch notarization data and partial transaction proof of the \nlaunch notarization for the specifed currencyid.\n\nArguments\n1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on\n\nResult:\n{\n \"currencydefinition\" : {},   (json) Full currency definition\n \"txid\" : \"hexstr\",      (hexstr) transaction ID\n \"voutnum\" : \"n\",       (number) vout index of the launch notarization\n \"transactionproof\" : {},    (json) Partial transaction proof of the launch transaction and output\n \"launchnotarization\" : {},   (json) Final CPBaaSNotarization clearing launch or refund\n \"notarynotarization\" : {},   (json) Current notarization of this chain\n}\n\nExamples:\n> verus getlaunchinfo \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlaunchinfo\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlaunchinfo"
+        ]
+    ]
+]

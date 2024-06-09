@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to use the `z_validatepaymentdisclosure` command, but I'm not sure how to do it without enabling experimental features. Can you help me out?\n\n**AI Assistant:**\nI'd be happy to help! Unfortunately, you can't use the `z_validatepaymentdisclosure` command without enabling experimental features. According to the documentation, `z_validatepaymentdisclosure` is an experimental feature and is disabled by default. To enable it, you need to restart `zcashd` with the `-experimentalfeatures` and `-paymentdisclosure` command-line options, or add the corresponding lines to the `zcash.conf` file.\n\n**User:**\nThat makes sense. I was also wondering, can I use `z_validatepaymentdisclosure` without providing any arguments?\n\n**AI Assistant:**\nNo, you can't use `z_validatepaymentdisclosure` without providing any arguments. The documentation states that the command requires a single argument, which is a string representing the payment disclosure in hex format with a \"zpd:\" prefix. So, make sure to provide the necessary argument when using the command.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `z_validatepaymentdisclosure` command without enabling experimental features?",
+            "You can't use the `z_validatepaymentdisclosure` command without enabling experimental features. According to the documentation, `z_validatepaymentdisclosure` is an experimental feature and is disabled by default. To enable it, you need to restart `zcashd` with the `-experimentalfeatures` and `-paymentdisclosure` command-line options, or add the corresponding lines to the `zcash.conf` file.",
+            "z_validatepaymentdisclosure \"paymentdisclosure\"\n\nValidates a payment disclosure.\n\nEXPERIMENTAL FEATURE\n\nWARNING: z_validatepaymentdisclosure is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-paymentdisclosure commandline options, or add these two lines\nto the zcash.conf file:\n\nexperimentalfeatures=1\npaymentdisclosure=1\n\nArguments:\n1. \"paymentdisclosure\"   (string, required) Hex data string, with \"zpd:\" prefix.\n\nExamples:\n> verus z_validatepaymentdisclosure \"zpd:706462ff004c561a0447ba2ec51184e6c204...\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_validatepaymentdisclosure\", \"params\": [\"zpd:706462ff004c561a0447ba2ec51184e6c204...\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_validatepaymentdisclosure"
+        ],
+        [
+            "Can I use `z_validatepaymentdisclosure` without providing any arguments?",
+            "No, you can't use `z_validatepaymentdisclosure` without providing any arguments. The documentation states that the command requires a single argument, which is a string representing the payment disclosure in hex format with a \"zpd:\" prefix.",
+            "z_validatepaymentdisclosure \"paymentdisclosure\"\n\nValidates a payment disclosure.\n\nEXPERIMENTAL FEATURE\n\nWARNING: z_validatepaymentdisclosure is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-paymentdisclosure commandline options, or add these two lines\nto the zcash.conf file:\n\nexperimentalfeatures=1\npaymentdisclosure=1\n\nArguments:\n1. \"paymentdisclosure\"   (string, required) Hex data string, with \"zpd:\" prefix.\n\nExamples:\n> verus z_validatepaymentdisclosure \"zpd:706462ff004c561a0447ba2ec51184e6c204...\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_validatepaymentdisclosure\", \"params\": [\"zpd:706462ff004c561a0447ba2ec51184e6c204...\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_validatepaymentdisclosure"
+        ]
+    ]
+]

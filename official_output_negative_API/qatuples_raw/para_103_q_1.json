@@ -1,0 +1,6 @@
+[
+    "Can you explain how to use the `getnotarizationdata` command to get notarization data for all currencies?",
+    "The `getnotarizationdata` command is designed to retrieve the latest PBaaS notarization data for a specific currencyid, not for all currencies. You need to specify the currencyid as an argument to get the notarization data for that particular currency.",
+    "getnotarizationdata \"currencynameorid\" (getevidence) (separatecounterevidence)\n\nReturns the latest PBaaS notarization data for the specifed currencyid.\n\nArguments\n1. \"currencyid\"         (string, required) the hex-encoded ID or string name search for notarizations on\n2. \"(getevidence)\"        (bool, optional)  if true, returns notarization evidence as well as other data\n1. \"(separatecounterevidence)\"  (bool, optional)  if true, counter-evidence is processed and returned with proofroots\n\nResult:\n{\n \"version\" : n,         (numeric) The notarization protocol version\n}\n\nExamples:\n> verus getnotarizationdata \"currencyid\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationdata\", \"params\": [\"currencyid\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnotarizationdata"
+]

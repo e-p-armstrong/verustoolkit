@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getblockhash` command in Verus, and how do you use it to get a list of all blocks in the blockchain?",
+    "The `getblockhash` command in Verus does not return a list of all blocks in the blockchain. Instead, it returns the hash of a specific block at a given index in the best-block-chain. To use it, you need to provide the index of the block you're interested in, and it will return the corresponding block hash.\n\nFor example, `verus getblockhash 1000` would return the hash of the block at index 1000.",
+    "getblockhash index\n\nReturns hash of block in best-block-chain at index provided.\n\nArguments:\n1. index     (numeric, required) The block index\n\nResult:\n\"hash\"     (string) The block hash\n\nExamples:\n> verus getblockhash 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockhash\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblockhash"
+]

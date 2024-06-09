@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I use the `getoffers` command to create a new offer for a specific currency or ID?",
+            "The `getoffers` command does not create new offers, it returns all open offers for a specific currency or ID. If you want to create a new offer, you would need to use a different command.",
+            "getoffers \"currencyorid\" (iscurrency) (withtx)\n\nReturns all open offers for a specific currency or ID\n\nArguments\n1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase\n2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies\n3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing\n\nResult:\nall available offers for or in the indicated currency or ID are displayed\n\nExamples:\n> verus getoffers \"currencyorid\" (iscurrency)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getoffers"
+        ],
+        [
+            "Can I use the `getoffers` command without specifying a currency or ID?",
+            "No, you cannot use the `getoffers` command without specifying a currency or ID. The `currencyorid` argument is required, and it specifies the currency or ID to check for offers.",
+            "getoffers \"currencyorid\" (iscurrency) (withtx)\n\nReturns all open offers for a specific currency or ID\n\nArguments\n1. \"currencyorid\"    (string, required) The currency or ID to check for offers, both sale and purchase\n2. \"iscurrency\"     (bool, optional)  default=false, if false, this looks for ID offers, if true, currencies\n3. \"withtx\"       (bool, optional)  default=false, if true, this returns serialized hex of the exchange transaction for signing\n\nResult:\nall available offers for or in the indicated currency or ID are displayed\n\nExamples:\n> verus getoffers \"currencyorid\" (iscurrency)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getoffers\", \"params\": [\"currencyorid\" (iscurrency)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getoffers"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7d88b53b-c764-488f-bdbb-baf545087964"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to set up my own currency, \"mycoin\", using the `definecurrency` command. I'm a bit unclear on one of the options. What is the purpose of setting the `proofprotocol` to 1 in the `definecurrency` command for \"mycoin\"?\n\n**AI Assistant:**\nActually, I think there might be some confusion. The `proofprotocol` is set to 2, not 1, in the `definecurrency` command for \"mycoin\". This means that the controller of the chain ID can mint new coins. Would you like me to explain more about how this works?\n\n**User:**\nThat clears things up a bit. But, I was wondering, can I mint new coins in \"mycoin\" without being the controller of the chain ID?\n\n**AI Assistant:**\nNo, the controller of the chain ID is the only one who can mint new coins in \"mycoin\" when the `proofprotocol` is set to 2 (PROOF_CHAINID). This ensures that the controller has full control over the creation of new coins in the currency.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of setting the `proofprotocol` to 1 in the `definecurrency` command for \"mycoin\"?",
+            "The `proofprotocol` is set to 2, not 1, in the `definecurrency` command for \"mycoin\". This means that the controller of the chain ID can mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":96, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"conversions\":[0.01, 1.0],\"minpreconversion\":[1000,1000]}'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```## Testnet Reset\nThe testnet was deleted and relaunched on this release. **IF YOU HAVE LAST LAUNCHED VRSCTEST FROM A VERSION PRIOR TO THIS, PLEASE DELETE THE FOLLOWING DIRECTORIES BEFORE RUNNING THIS NEW UPDATE:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```**MacOS**\n```\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069/\u2068Komodo/VRSCTEST\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069\u2068/VerusTest\n```**Windows**\n```\n\"%APPDATA%\"\\Komodo\\VRSCTEST\n\"%APPDATA%\"\\VerusTest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I mint new coins in \"mycoin\" without being the controller of the chain ID?",
+            "No, the controller of the chain ID is the only one who can mint new coins in \"mycoin\" when the `proofprotocol` is set to 2 (PROOF_CHAINID).",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":96, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"conversions\":[0.01, 1.0],\"minpreconversion\":[1000,1000]}'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```## Testnet Reset\nThe testnet was deleted and relaunched on this release. **IF YOU HAVE LAST LAUNCHED VRSCTEST FROM A VERSION PRIOR TO THIS, PLEASE DELETE THE FOLLOWING DIRECTORIES BEFORE RUNNING THIS NEW UPDATE:**\n**Linux:**\n```\n~/.komodo/VRSCTEST\n~/.verustest\n```**MacOS**\n```\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069/\u2068Komodo/VRSCTEST\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069\u2068/VerusTest\n```**Windows**\n```\n\"%APPDATA%\"\\Komodo\\VRSCTEST\n\"%APPDATA%\"\\VerusTest\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

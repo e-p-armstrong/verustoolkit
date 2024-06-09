@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `definecurrency` command when sending currency between blockchain networks?",
+            "You don't need to use the `definecurrency` command to send currency from one blockchain network to another. The `definecurrency` command is used to define a new currency, not to send existing currency from one chain to another. The command provided is actually a `sendcurrency` command, which is used to send currency from one address to another, and in this case, it's used to send currency from PBaaSChain to VRSCTEST.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can you explain why the `sendcurrency` command only works when sending currency within the same chain?",
+            "The `sendcurrency` command can actually be used to send currency between different chains, not just within the same chain. For example, you can send currency from PBaaSChain to VRSCTEST, which are two different chains, by using the `exportto` and `via` parameters to specify the destination chain and the bridge to use for the transfer, respectively.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Why do you need to have a Bridge.PBaaSChain address to send currency from PBaaSChain to VRSCTEST?",
+            "You don't need a Bridge.PBaaSChain address to send currency from PBaaSChain to VRSCTEST. The `via` parameter in the `sendcurrency` command is used to specify the bridge to use for the transfer, which in this case is Bridge.PBaaSChain. This is a bridge that facilitates the transfer of currency between the two chains, but it's not an address that needs to be owned or controlled by the user.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f82cc3c0-3c17-4e3c-9670-5247ab78304b"
+]

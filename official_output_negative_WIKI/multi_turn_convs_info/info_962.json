@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do you specify a random address to source all funds for fees when using Verus?",
+            "You don't specify a random address. Instead, you can use a transparent or private address to source all funds for fees, which helps to preserve the privacy of the identity.",
+            "ansparent or private address to source all funds for fees to preserve privacy of the identity\n```\n#### Result:\ntransactionid          (hexstr)",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the format of the transaction ID returned by Verus?",
+            "The transaction ID returned by Verus is a hexadecimal string (hexstr).",
+            "ansparent or private address to source all funds for fees to preserve privacy of the identity\n```\n#### Result:\ntransactionid          (hexstr)",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "56143df7-19be-4d16-9fd3-d43dd273ff21"
+]

@@ -1,0 +1,6 @@
+[
+    "How do I use the `getcurrencyconverters` command to retrieve all currencies that have exactly 500 VRSC in reserve?",
+    "The `getcurrencyconverters` command doesn't actually retrieve currencies with exactly 500 VRSC in reserve. It retrieves currencies that have at least 1000 VRSC in reserve, not 500. Additionally, it also filters currencies by requiring a >10% VRSC reserve ratio and having all listed currencies as reserves.",
+    "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

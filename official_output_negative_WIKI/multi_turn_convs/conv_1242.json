@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to create a new token that can only be converted to with VRSCTEST. I was told to use the command:\n```\ndcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nCan you help me with that?\n\n**AI Assistant:**\nActually, that command isn't for creating a new token. It's for parking a conversion of VRSCTEST to a new token until it launches. If you want to create a new token, you'll need to use a different command.\n\nFor example, if you want to create a new token called \"mycoin\" that can be converted to with either GOLD or VRSCTEST, you would use a command like this:\n```\ndefinecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines a new token with the specified properties. Would you like me to explain more about how to create a new token?\n\n**User:**\nWait, what happens if the token launch fails after I park my conversion using the command:\n```\ndcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nDo I get my VRSCTEST back?\n\n**AI Assistant:**\nUnfortunately, if the token launch fails, it can be inferred that the conversion would not be successful and you would not receive GOLD or have your VRSCTEST returned. So, it's essential to make sure the token launch is successful before parking your conversion.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I create a new token that can only be converted to with VRSCTEST, using the command:\n```\ndcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```",
+            "The command you provided is not for creating a new token, but rather for parking a conversion of VRSCTEST to a new token until it launches. To create a new token, you would use a different command, such as:\n```\ndefinecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines a new token called \"mycoin\" that can be converted to with either GOLD or VRSCTEST.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens if the token launch fails after I park my conversion using the command:\n```\ndcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```",
+            "If the token launch fails, it can be inferred that the conversion would not be successful and you would not receive GOLD or have your VRSCTEST returned.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

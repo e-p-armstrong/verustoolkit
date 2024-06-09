@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Who is responsible if I encounter issues with the software?",
+            "You should not contact the authors or copyright holders for any claims, damages, or other liability arising from the software or its use. They are not liable for any issues that may arise.",
+            "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**MacOS:**\nhttps://www.virustotal.com/#/file/97fec5a44e617452d48e13f0c00736430d904a72d85fc61731fd01452de77880/detection\n**Linux-AMD64:** https://www.virustotal.com/#/file/3c8134361c965ab87751f817a097c1825ca61e2a521bfd1ed9382fbc44638920/detection\n**Linux-ARM64:** https://www.virustotal.com/#/file/c5c70239f6cb94cd1ab8cb109597f609a198f1bce644fa3434f50426f9fa8724/detection\n**Windows:**\nhttps://www.virustotal.com/#/file/418d4da1a4113b29f7c7ce490f8aa527d6217f2d85fd10ff639b33110ab5eba0/detectionAvast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Are the software binaries on VirusTotal completely virus-free?",
+            "The software binaries on VirusTotal may not be completely virus-free. Some antivirus software, such as Avast and Kaspersky, may flag the software as \"not-a-virus\" or \"PUP\" (Potentially Unwanted Program), which means they may detect it as mining software that could be installed by a third party to exploit your PC. However, this does not necessarily mean the software is malicious.",
+            "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**MacOS:**\nhttps://www.virustotal.com/#/file/97fec5a44e617452d48e13f0c00736430d904a72d85fc61731fd01452de77880/detection\n**Linux-AMD64:** https://www.virustotal.com/#/file/3c8134361c965ab87751f817a097c1825ca61e2a521bfd1ed9382fbc44638920/detection\n**Linux-ARM64:** https://www.virustotal.com/#/file/c5c70239f6cb94cd1ab8cb109597f609a198f1bce644fa3434f50426f9fa8724/detection\n**Windows:**\nhttps://www.virustotal.com/#/file/418d4da1a4113b29f7c7ce490f8aa527d6217f2d85fd10ff639b33110ab5eba0/detectionAvast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "beb9cd5c-812d-485e-9607-b6f48b22eb4f"
+]

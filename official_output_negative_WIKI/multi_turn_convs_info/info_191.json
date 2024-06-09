@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How can I upgrade my transactions sent to my identity name/address to be quantum secure, considering that each transaction needs to be individually updated?",
+            "Actually, when quantum secure addresses become available, upgrading your identity name/address will retroactively secure all transactions sent to that address, regardless of how many there are. This means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address will automatically secure all 1000 transactions under the control of that address, without needing to individually update each transaction.",
+            "subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Will my transactions be lost or compromised if I upgrade my identity name/address to a quantum secure address?",
+            "No, upgrading your identity name/address to a quantum secure address will not result in the loss or compromise of your transactions. In fact, the upgrade will retroactively secure all transactions sent to that address, ensuring their security and integrity.",
+            "subject to its spend conditions as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "4786eabd-34e9-48c1-80e5-f7f3a7613fed"
+]

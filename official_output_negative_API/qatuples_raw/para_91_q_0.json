@@ -1,0 +1,6 @@
+[
+    "What is the maximum number of nodes that can be specified in the \"nodes\" array?",
+    "The maximum number of nodes that can be specified in the \"nodes\" array is 16, not unlimited or any other number. According to the text, it is specifically up to 8 nodes.",
+    "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+    "./raw_text_input_api_text/getcurrency"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the OPTION_GATEWAY_NAMECONTROLLER option, and how does it affect the registration of IDs and currencies?",
+    "The OPTION_GATEWAY_NAMECONTROLLER option is set to 1024, and its purpose is to specify that top-level ID and currency registration happen on the launch chain when it is not set on a gateway. This means that when this option is not set on a gateway, the registration of IDs and currencies will occur on the launch chain.",
+    "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

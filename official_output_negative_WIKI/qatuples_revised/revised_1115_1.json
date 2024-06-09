@@ -1,0 +1,6 @@
+[
+    "Can I use the `getimports` command to retrieve imports from multiple chains at once?",
+    "No, you cannot use the `getimports` command to retrieve imports from multiple chains at once. The `chainname` argument specifies a single chain to look for imports in. If you don't specify a `chainname`, the command will only return imports for the current chain in the daemon.",
+    "### `getimports \"chainname\" (startheight) (endheight)`\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n#### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   default=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

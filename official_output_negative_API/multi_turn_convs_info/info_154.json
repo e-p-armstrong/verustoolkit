@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do you use the `registernamecommitment` method to register a commitment with a specified identity address?",
+            "The `registernamecommitment` method doesn't take an identity address as a parameter. Instead, it takes a single parameter, which is the unique name to be registered. The identity address is actually returned as part of the result object, in the `namereservation` section, under the key `nameid`.",
+            "Result: obj\n{\n  \"txid\" : \"hexid\"\n  \"namereservation\" :\n  {\n    \"name\"  : \"namestr\",   (string) the unique name in this commitment\n    \"salt\"  : \"hexstr\",   (hex)  salt used to hide the commitment\n    \"referral\": \"identityaddress\", (base58) address of the referring identity if there is one\n    \"parent\" : \"namestr\",   (string) name of the parent if not Verus or Verus test\n    \"nameid\" : \"address\",   (base58) identity address for this identity if it is created\n  }\n}\n\nExamples:\n> verus registernamecommitment \"name\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"registernamecommitment\", \"params\": [\"name\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/registernamecommitment"
+        ],
+        [
+            "Can you explain why the `registernamecommitment` method requires a referral address as a mandatory parameter?",
+            "The `registernamecommitment` method does not require a referral address as a mandatory parameter. The referral address is actually an optional parameter, stored in the `namereservation` section of the result object under the key `referral`. It is used to specify the address of the referring identity, if there is one.",
+            "Result: obj\n{\n  \"txid\" : \"hexid\"\n  \"namereservation\" :\n  {\n    \"name\"  : \"namestr\",   (string) the unique name in this commitment\n    \"salt\"  : \"hexstr\",   (hex)  salt used to hide the commitment\n    \"referral\": \"identityaddress\", (base58) address of the referring identity if there is one\n    \"parent\" : \"namestr\",   (string) name of the parent if not Verus or Verus test\n    \"nameid\" : \"address\",   (base58) identity address for this identity if it is created\n  }\n}\n\nExamples:\n> verus registernamecommitment \"name\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"registernamecommitment\", \"params\": [\"name\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/registernamecommitment"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "68afa91d-559b-4987-92fa-945c49d0a684"
+]

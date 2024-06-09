@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHi, I've got some questions about the Verus protocol options. Can you help me understand what the `OPTION_NATIVECURRENCY` option does?\n\n**AI Assistant:**\nActually, there is no `OPTION_NATIVECURRENCY` option in the Verus protocol. It doesn't exist.\n\n**User:**\nThat's weird. I could've sworn I saw it somewhere. Anyway, what about the `OPTION_SINGLECURRENCY` option? What does it do when set to 128?\n\n**AI Assistant:**\nThe `OPTION_SINGLECURRENCY` option is actually set to 64, not 128. When set to 64, it allows PBaaS chains or gateways to potentially restrict to a single currency.\n\n**User:**\nOkay, got it. So, what about the `OPTION_GATEWAY_CONVERTER` option? Is that used to restrict external currencies?\n\n**AI Assistant:**\nNo, the `OPTION_GATEWAY_CONVERTER` option is actually used to indicate that a specific PBaaS gateway is the default converter and will publish prices. It's not related to restricting external currencies.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `OPTION_NATIVECURRENCY` option in the Verus protocol?",
+            "There is no `OPTION_NATIVECURRENCY` option in the Verus protocol.",
+            "oken, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What does the `OPTION_SINGLECURRENCY` option do when set to 128?",
+            "The `OPTION_SINGLECURRENCY` option is set to 64, not 128. When set to 64, it allows PBaaS chains or gateways to potentially restrict to a single currency.",
+            "oken, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is the `OPTION_GATEWAY_CONVERTER` option used to restrict external currencies?",
+            "No, the `OPTION_GATEWAY_CONVERTER` option is actually used to indicate that a specific PBaaS gateway is the default converter and will publish prices. It's not related to restricting external currencies.",
+            "oken, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

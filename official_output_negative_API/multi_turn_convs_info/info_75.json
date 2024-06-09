@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I use the `getconnectioncount` command to get a list of all connected nodes?",
+            "The `getconnectioncount` command doesn't return a list of connected nodes. Instead, it returns the number of connections to other nodes. If you want to get a list of connected nodes, you'll need to use a different command.",
+            "getconnectioncount\n\nReturns the number of connections to other nodes.\n\nResult:\nn     (numeric) The connection count\n\nExamples:\n> verus getconnectioncount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getconnectioncount"
+        ],
+        [
+            "What is the default port used by the `getconnectioncount` command?",
+            "There is no default port specified for the `getconnectioncount` command. However, in the example using `curl`, the port `27486` is specified. This suggests that the port number may need to be provided when using the `getconnectioncount` command.",
+            "getconnectioncount\n\nReturns the number of connections to other nodes.\n\nResult:\nn     (numeric) The connection count\n\nExamples:\n> verus getconnectioncount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getconnectioncount"
+        ],
+        [
+            "Can I use the `getconnectioncount` command to disconnect from other nodes?",
+            "No, the `getconnectioncount` command is used to retrieve the number of connections to other nodes, not to disconnect from them. It's a read-only command that provides information about the current state of connections, but it doesn't allow you to modify or disconnect from those connections.",
+            "getconnectioncount\n\nReturns the number of connections to other nodes.\n\nResult:\nn     (numeric) The connection count\n\nExamples:\n> verus getconnectioncount \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getconnectioncount\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getconnectioncount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "14b73091-4721-4ec9-9e4d-acea722d80c1"
+]

@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm curious about minting new coins in the \"mycoin\" currency. Can anyone do it?\n\n**AI Assistant:**\nNo, not anyone can mint new coins in the \"mycoin\" currency. Only the controller of the chain ID can mint new coins. This is because `proofprotocol` is set to 2, which is PROOF_CHAINID, allowing the chain ID controller to mint new coins. So, it's a restricted privilege, not open to the general public.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can anyone mint new coins in the \"mycoin\" currency?",
+            "No, only the controller of the chain ID can mint new coins in the \"mycoin\" currency, not anyone. This is because `proofprotocol` is set to 2, which is PROOF_CHAINID, allowing the chain ID controller to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

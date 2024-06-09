@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI'm interested in creating a new token on the Verus network. Is it possible to create a new token that can only be converted to with GOLD?\n\n**AI Assistant:**\nCreating a new token, such as \"mycoin\", requires the ability to convert to it with either GOLD or VRSCTEST. This means that you cannot create a new token that can only be converted to with GOLD, as VRSCTEST is also required as a convertible currency. The Verus protocol is designed to allow for flexibility and interoperability between different tokens, so it's not possible to restrict conversion to a single currency like GOLD. Would you like to know more about creating a new token on the Verus network?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I create a new token that can only be converted to with GOLD?",
+            "Creating a new token, such as \"mycoin\", requires the ability to convert to it with either GOLD or VRSCTEST. This means that you cannot create a new token that can only be converted to with GOLD, as VRSCTEST is also required as a convertible currency.",
+            "o with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

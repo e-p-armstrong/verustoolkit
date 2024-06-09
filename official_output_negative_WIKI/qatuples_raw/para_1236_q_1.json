@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `via` field in the `sendcurrency` command?",
+    "The `via` field in the `sendcurrency` command is not used to specify the destination chain. Instead, it specifies the bridge to use for the conversion. In the examples provided, `via` is set to `\"Bridge.PBaaSChain\"`, which indicates that the Bridge.PBaaSChain bridge should be used for the conversion.",
+    "ress\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the format of the transaction ID returned by Verus?",
+    "The transaction ID returned by Verus is a hexadecimal string (hexstr).",
+    "ansparent or private address to source all funds for fees to preserve privacy of the identity\n```\n#### Result:\ntransactionid          (hexstr)",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

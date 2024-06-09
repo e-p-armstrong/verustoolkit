@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `sendrawtransaction` command, and why does it only work with already confirmed transactions?",
+            "The `sendrawtransaction` command is used to submit a raw transaction (serialized, hex-encoded) to the local node and network, not just with already confirmed transactions. It can be used to send a newly created transaction to the network, allowing it to be processed and confirmed by the network.",
+            "sendrawtransaction \"hexstring\" ( allowhighfees )\n\nSubmits raw transaction (serialized, hex-encoded) to local node and network.\n\nAlso see createrawtransaction and signrawtransaction calls.\n\nArguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees\n\nResult:\n\"hex\"       (string) The transaction hash in hex\n\nExamples:\n\nCreate a transaction\n> verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\"\nSign the transaction, and get back the hex\n> verus signrawtransaction \"myhex\"\n\nSend the transaction (signed hex)\n> verus sendrawtransaction \"signedhex\"\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ],
+        [
+            "Can you explain why the `sendrawtransaction` command requires three arguments: the hex string of the raw transaction, the sender's private key, and the recipient's public key?",
+            "The `sendrawtransaction` command does not require three arguments. According to the documentation, it only requires two arguments: the hex string of the raw transaction (required) and an optional `allowhighfees` boolean flag (defaulting to `false`). The sender's private key and the recipient's public key are not required arguments for this command.",
+            "sendrawtransaction \"hexstring\" ( allowhighfees )\n\nSubmits raw transaction (serialized, hex-encoded) to local node and network.\n\nAlso see createrawtransaction and signrawtransaction calls.\n\nArguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees\n\nResult:\n\"hex\"       (string) The transaction hash in hex\n\nExamples:\n\nCreate a transaction\n> verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\"\nSign the transaction, and get back the hex\n> verus signrawtransaction \"myhex\"\n\nSend the transaction (signed hex)\n> verus sendrawtransaction \"signedhex\"\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ],
+        [
+            "How do I use the `sendrawtransaction` command to create a new transaction?",
+            "The `sendrawtransaction` command is not used to create a new transaction. Instead, it is used to submit a raw transaction to the network. To create a new transaction, you would use the `createrawtransaction` command, which creates a raw transaction that can then be signed and sent to the network using the `signrawtransaction` and `sendrawtransaction` commands, respectively.",
+            "sendrawtransaction \"hexstring\" ( allowhighfees )\n\nSubmits raw transaction (serialized, hex-encoded) to local node and network.\n\nAlso see createrawtransaction and signrawtransaction calls.\n\nArguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees\n\nResult:\n\"hex\"       (string) The transaction hash in hex\n\nExamples:\n\nCreate a transaction\n> verus createrawtransaction \"[{\"txid\" : \"mytxid\",\"vout\":0}]\" \"{\"myaddress\":0.01}\"\nSign the transaction, and get back the hex\n> verus signrawtransaction \"myhex\"\n\nSend the transaction (signed hex)\n> verus sendrawtransaction \"signedhex\"\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"sendrawtransaction\", \"params\": [\"signedhex\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/sendrawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c391cc33-83f3-490a-991d-dd0db3532e3b"
+]

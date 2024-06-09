@@ -1,0 +1,6 @@
+[
+    "What is the format of the result returned by the `processupgradedata` command?",
+    "The result returned by the `processupgradedata` command is an object with two properties: `txid` (a string representing the transaction ID) and `index` (a number representing the spending input index).",
+    "processupgradedata {upgradedata}\n\nReturns the txid and index where an output is spent.\n\nArguments:\n{\n \"upgradeid\"        (string) The VDXF key identifier\n \"minimumdaemonversion\"   (string) The minimum version required for the upgrade\n \"activationheight\"     (number) The block height to activate\n \"activationtime\"      (number) Epoch time to activate, depending on upgrade\n}\n\nResult:\n{\n \"txid\" (string) The transaction id\n \"index\" (number) The spending input index\n ,...\n}\n\nExamples:\n> verus processupgradedata '{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"processupgradedata\", \"params\": [{\"txid\": \"0437cd7f8525ceed2324359c2d0ba26006d92d856a9c20fa0241106ee5a597c9\", \"index\": 0}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/processupgradedata"
+]

@@ -1,0 +1,6 @@
+[
+    "How do I convert VRSCTEST to PBaaSChain using the `sendcurrency` command?",
+    "You don't actually convert VRSCTEST to PBaaSChain. The `sendcurrency` command is used to send currency from one chain to another, not to convert between them.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

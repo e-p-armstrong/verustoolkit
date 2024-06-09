@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm interested in using VerusCoin, but I'm not sure about the wallet options. Is there an official web wallet available for VerusCoin?\n\n**AI Assistant:**\nUnfortunately, there is no official web wallet mentioned for VerusCoin. However, there are various wallet options available, including CLI wallet releases, mobile wallets for Android and iOS, and a paper wallet. You can choose the one that best suits your needs.\n\n**User:**\nThat's good to know. I'm a Mac user, so I was wondering if I can download the Verus desktop wallet from the Apple App Store?\n\n**AI Assistant:**\nNo, the Verus desktop wallet is not available for download from the Apple App Store. The desktop wallet releases can be found on GitHub, and the iOS mobile wallet can be accessed through TestFlight. You can try those options instead.\n\n**User:**\nI've also heard of VerusPay. Is that a type of wallet for VerusCoin?\n\n**AI Assistant:**\nNo, VerusPay is not a type of wallet for VerusCoin. VerusPay is a separate entity with its own setup guide, but it is not a wallet. You can still choose from the various wallet options available, including CLI wallet releases, mobile wallets, and a paper wallet. Let me know if you have any other questions!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Is there an official web wallet available for VerusCoin?",
+            "There is no official web wallet mentioned. However, there are various wallet options available, including CLI wallet releases, mobile wallets for Android and iOS, and a paper wallet.",
+            "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ],
+        [
+            "Can I download the Verus desktop wallet from the Apple App Store?",
+            "No, the Verus desktop wallet is not available for download from the Apple App Store. The desktop wallet releases can be found on GitHub, and the iOS mobile wallet can be accessed through TestFlight.",
+            "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ],
+        [
+            "Is VerusPay a type of wallet for VerusCoin?",
+            "VerusPay is not a type of wallet for VerusCoin. VerusPay is a separate entity with its own setup guide, but it is not a wallet. There are various wallet options available, including CLI wallet releases, mobile wallets, and a paper wallet.",
+            "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ]
+    ]
+]

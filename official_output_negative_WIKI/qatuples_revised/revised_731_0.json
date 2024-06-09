@@ -1,0 +1,6 @@
+[
+    "What are the benefits of solo staking over joining a staking pool?",
+    "Solo staking avoids the disadvantages of joining a staking pool, such as centralization, lack of control over funds, and the need to trust the pool operator.",
+    "# Question: what are the staking pools that I can join?\n\n- [Dudezmobi](https://docs.google.com/spreadsheets/d/1Up1WbMuCR21e6TxLae6zjLJePu_RIOVZwqShRj9vVvc/edit?usp=sharing)\n- [Ginasis](https://discord.gg/4FJJRY5)\n\nA staking pool has advantages and disadvantages over solo staking:\n\n**Disadvantages**:\n 1. It causes centralization on the network\n 2. The pool owner is in control of **all** funds in the pool, including yours.\n 3. You need to trust the pool operator to share the rewards fairly.\n 4. You need to trust the pool operator to release your funds back to you on request.\n 5. You need to trust the pool operator to securely run the pool 24/7.\n\n**Advantages**:\n 1. You don't need to run your wallet 24/7 in native mode.\n\nWarning: **Do your own research** before you decide anything!\n\nNote: last revision date 2020-10-14.",
+    "./raw_text_input_wiki/faq-allos22_staking_pools.md"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do you use the `verus signfile` command to generate an MD5 hash of a file?",
+            "The `verus signfile` command does not generate an MD5 hash of a file. It generates a SHA256 hash of the file, not SHA256D as the argument description incorrectly states. The command signs the hash with the private key specified and returns the hash and the signature.",
+            "signfile \"address or identity\" \"filepath/filename\" \"currentsig\"\n\nGenerates a SHA256D hash of the file, returns the hash, and signs the hash with the private key specified\n\nArguments:\n1. \"t-addr or identity\" (string, required) The transparent address or identity to use for signing.\n2. \"filename\"    (string, required) Local file to sign\n2. \"cursig\"     (string) The current signature of the message encoded in base 64 if multisig ID\n\nResult:\n{\n \"hash\":\"hexhash\"     (string) The hash of the message (SHA256, NOT SHA256D)\n \"signature\":\"base64sig\" (string) The aggregate signature of the message encoded in base 64 if all or partial signing successful\n}\n\nExamples:\n\nCreate the signature\n> verus signfile \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"filepath/filename\"\n\nVerify the signature\n> verus verifyfile \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"signature\" \"filepath/filename\"\n\nAs json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signfile\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"filepath/filename\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/signfile"
+        ],
+        [
+            "Can you use the `verus signfile` command to sign a file with a public key?",
+            "No, the `verus signfile` command signs a file with a private key, not a public key. It uses the private key specified to sign the hash of the file and returns the hash and the signature.",
+            "signfile \"address or identity\" \"filepath/filename\" \"currentsig\"\n\nGenerates a SHA256D hash of the file, returns the hash, and signs the hash with the private key specified\n\nArguments:\n1. \"t-addr or identity\" (string, required) The transparent address or identity to use for signing.\n2. \"filename\"    (string, required) Local file to sign\n2. \"cursig\"     (string) The current signature of the message encoded in base 64 if multisig ID\n\nResult:\n{\n \"hash\":\"hexhash\"     (string) The hash of the message (SHA256, NOT SHA256D)\n \"signature\":\"base64sig\" (string) The aggregate signature of the message encoded in base 64 if all or partial signing successful\n}\n\nExamples:\n\nCreate the signature\n> verus signfile \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"filepath/filename\"\n\nVerify the signature\n> verus verifyfile \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"signature\" \"filepath/filename\"\n\nAs json rpc\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signfile\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"filepath/filename\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/signfile"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "9bb291e9-b620-41b1-a14e-def9ef0d64c8"
+]

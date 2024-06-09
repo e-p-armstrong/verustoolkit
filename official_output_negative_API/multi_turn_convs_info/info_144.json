@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I get a list of all confirmed transfers for a particular chain using the `getpendingtransfers` command?",
+            "The `getpendingtransfers` command actually returns all pending transfers for a particular chain that have not yet been aggregated into an export, not confirmed transfers. If you want to get a list of confirmed transfers, you would need to use a different command.",
+            "getpendingtransfers \"chainname\"\n\nReturns all pending transfers for a particular chain that have not yet been aggregated into an export\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n\nResult:\n {\n }\n\nExamples:\n> verus getpendingtransfers \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpendingtransfers"
+        ],
+        [
+            "Can I use the `getpendingtransfers` command without specifying a chain name?",
+            "Yes, you can use the `getpendingtransfers` command without specifying a chain name. If you don't provide a chain name, the command will return the pending transfers for the current chain in the daemon.",
+            "getpendingtransfers \"chainname\"\n\nReturns all pending transfers for a particular chain that have not yet been aggregated into an export\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n\nResult:\n {\n }\n\nExamples:\n> verus getpendingtransfers \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpendingtransfers\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getpendingtransfers"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f1dcbede-113b-4855-9c84-321f2858418f"
+]

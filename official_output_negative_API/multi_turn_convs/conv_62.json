@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey there, I'm trying to use the `registernamecommitment` method to register a commitment with a specified identity address. Can you show me how to do that?\n\n**AI Assistant:**\nActually, the `registernamecommitment` method doesn't quite work like that. It doesn't take an identity address as a parameter. Instead, it takes a single parameter, which is the unique name to be registered. The identity address is actually returned as part of the result object, in the `namereservation` section, under the key `nameid`. Would you like more information on how to use the `registernamecommitment` method?\n\n**User:**\nI think I understand. But I'm still a bit unclear about something. I've been told that the `registernamecommitment` method requires a referral address as a mandatory parameter. Is that true?\n\n**AI Assistant:**\nNo, that's not correct. The `registernamecommitment` method does not require a referral address as a mandatory parameter. The referral address is actually an optional parameter, stored in the `namereservation` section of the result object under the key `referral`. It is used to specify the address of the referring identity, if there is one. So, you don't need to provide a referral address when using the `registernamecommitment` method, unless you want to specify one.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do you use the `registernamecommitment` method to register a commitment with a specified identity address?",
+            "The `registernamecommitment` method doesn't take an identity address as a parameter. Instead, it takes a single parameter, which is the unique name to be registered. The identity address is actually returned as part of the result object, in the `namereservation` section, under the key `nameid`.",
+            "Result: obj\n{\n  \"txid\" : \"hexid\"\n  \"namereservation\" :\n  {\n    \"name\"  : \"namestr\",   (string) the unique name in this commitment\n    \"salt\"  : \"hexstr\",   (hex)  salt used to hide the commitment\n    \"referral\": \"identityaddress\", (base58) address of the referring identity if there is one\n    \"parent\" : \"namestr\",   (string) name of the parent if not Verus or Verus test\n    \"nameid\" : \"address\",   (base58) identity address for this identity if it is created\n  }\n}\n\nExamples:\n> verus registernamecommitment \"name\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"registernamecommitment\", \"params\": [\"name\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/registernamecommitment"
+        ],
+        [
+            "Can you explain why the `registernamecommitment` method requires a referral address as a mandatory parameter?",
+            "The `registernamecommitment` method does not require a referral address as a mandatory parameter. The referral address is actually an optional parameter, stored in the `namereservation` section of the result object under the key `referral`. It is used to specify the address of the referring identity, if there is one.",
+            "Result: obj\n{\n  \"txid\" : \"hexid\"\n  \"namereservation\" :\n  {\n    \"name\"  : \"namestr\",   (string) the unique name in this commitment\n    \"salt\"  : \"hexstr\",   (hex)  salt used to hide the commitment\n    \"referral\": \"identityaddress\", (base58) address of the referring identity if there is one\n    \"parent\" : \"namestr\",   (string) name of the parent if not Verus or Verus test\n    \"nameid\" : \"address\",   (base58) identity address for this identity if it is created\n  }\n}\n\nExamples:\n> verus registernamecommitment \"name\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"registernamecommitment\", \"params\": [\"name\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/registernamecommitment"
+        ]
+    ]
+]

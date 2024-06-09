@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been using the `getidentitytrust` command, and I saw a value for `identitytrustmode` that I didn't understand. Can you explain what the `identitytrustmode` value of 3 means in the result of the `getidentitytrust` command?\n\n**AI Assistant:**\nActually, there is no `identitytrustmode` value of 3. The possible values are 0 (no restriction on sync), 1 (only sync to IDs rated approved), and 2 (sync to all IDs but those on block list). If you have any confusion about the values or how to use the `getidentitytrust` command, I'd be happy to help!\n\n**User:**\nThanks for clarifying that! Now, how do I use the `getidentitytrust` command to add a new ID to the trust list?\n\n**AI Assistant:**\nThe `getidentitytrust` command doesn't actually add new IDs to the trust list. It retrieves the trust ratings for specified IDs or all IDs if no IDs are specified. It doesn't have the ability to add new IDs to the trust list. If you need help with adding IDs to the trust list, I can provide you with the correct command or steps to follow.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain what the `identitytrustmode` value of 3 means in the result of the `getidentitytrust` command?",
+            "There is no `identitytrustmode` value of 3. The possible values are 0 (no restriction on sync), 1 (only sync to IDs rated approved), and 2 (sync to all IDs but those on block list).",
+            "getidentitytrust '[\"id\",...]'\n\nArguments\n\"[\"id\",...]\"                    (strarray, optional) if specified, only returns rating values for specified IDs, otherwise all\n\nResult:\n{\n \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object\n \"identitytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list\n}\n\nExamples:\n> verus getidentitytrust '[\"id\",...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentitytrust\", \"params\": ['[\"id\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentitytrust"
+        ],
+        [
+            "How do I use the `getidentitytrust` command to add a new ID to the trust list?",
+            "The `getidentitytrust` command does not add new IDs to the trust list. It retrieves the trust ratings for specified IDs or all IDs if no IDs are specified. It does not have the ability to add new IDs to the trust list.",
+            "getidentitytrust '[\"id\",...]'\n\nArguments\n\"[\"id\",...]\"                    (strarray, optional) if specified, only returns rating values for specified IDs, otherwise all\n\nResult:\n{\n \"setratings\":{\"id\":JSONRatingObject,...},    (jsonobj) an ID/ratings key/value object\n \"identitytrustmode\":<n>              (int) 0 = no restriction on sync, 1 = only sync to IDs rated approved, 2 = sync to all IDs but those on block list\n}\n\nExamples:\n> verus getidentitytrust '[\"id\",...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentitytrust\", \"params\": ['[\"id\",...]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getidentitytrust"
+        ]
+    ]
+]

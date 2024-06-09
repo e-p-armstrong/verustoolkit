@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to create a new raw transaction using the `sendrawtransaction` command, but I'm not sure how to do it. Can you help me?\n\n**AI Assistant:**\nI think there's a misunderstanding! The `sendrawtransaction` command doesn't actually create a new raw transaction. Instead, it submits a raw transaction (serialized and hex-encoded) to the local node and network. To create a new raw transaction, you would use the `createrawtransaction` command.\n\n**User:**\nOh, I see! Thanks for the clarification. I was also wondering about the `allowhighfees` argument in the `sendrawtransaction` command. What's the default value for that?\n\n**AI Assistant:**\nThe default value of the `allowhighfees` argument is actually `false`, not `true`. This means that by default, high fees are not allowed. Just something to keep in mind when working with the `sendrawtransaction` command!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `sendrawtransaction` command to create a new raw transaction?",
+            "The `sendrawtransaction` command does not create a new raw transaction. Instead, it submits a raw transaction (serialized and hex-encoded) to the local node and network. To create a new raw transaction, you would use the `createrawtransaction` command.",
+            "### `sendrawtransaction \"hexstring\" ( allowhighfees )`\nSubmits raw transaction (serialized, hex-encoded) to local node and network.Also see createrawtransaction and signrawtransaction calls.#### Arguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees#### Result:\n\"hex\"       (string) The transaction hash in hexExamples:",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the default value of the `allowhighfees` argument in the `sendrawtransaction` command?",
+            "The default value of the `allowhighfees` argument is `false`, not `true`. This means that by default, high fees are not allowed.",
+            "### `sendrawtransaction \"hexstring\" ( allowhighfees )`\nSubmits raw transaction (serialized, hex-encoded) to local node and network.Also see createrawtransaction and signrawtransaction calls.#### Arguments:\n1. \"hexstring\"  (string, required) The hex string of the raw transaction)\n2. allowhighfees  (boolean, optional, default=false) Allow high fees#### Result:\n\"hex\"       (string) The transaction hash in hexExamples:",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

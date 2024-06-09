@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nI've been thinking about creating my own currency on the Verus network. When defining a new currency, can anyone mint new coins?\n\n**AI Assistant:**\nNot exactly. When you create a new currency on Verus, only the controller of the chain ID can mint new coins. This is the case when `proofprotocol` is set to 2 (PROOF_CHAINID). This ensures that the creation of new coins is controlled and secure, and helps prevent unauthorized minting of coins. Does that make sense? Do you have any other questions about creating a new currency on Verus?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "When defining a new currency, can anyone mint new coins?",
+            "No, only the controller of the chain ID can mint new coins when `proofprotocol` is set to 2 (PROOF_CHAINID).",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

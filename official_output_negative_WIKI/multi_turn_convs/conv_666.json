@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been playing around with the `ST sendcurrency` command, and I'm a bit confused about how it works. If I use the command `ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`, I will immediately receive 0.975 GOLD in my wallet, correct?\n\n**AI Assistant:**\nNo, that's not correct. Using the command `ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` will park the conversion until the GOLD token launches. At that point, you will either find 0.975 GOLD in your wallet or have your VRSCTEST back, not immediately receive the GOLD.\n\n**User:**\nOkay, that clears things up. I've also been thinking about creating my own coin, and I was wondering if I can create a coin that can only be converted to with GOLD?\n\n**AI Assistant:**\nNo, that's not correct. When creating a coin, it can be converted to with either GOLD or VRSCTEST, not just GOLD. Do you have any more questions about creating coins or using the `ST sendcurrency` command?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "If I use the command `ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`, I will immediately receive 0.975 GOLD in my wallet, correct?",
+            "No, that's not correct. Using the command `ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` will park the conversion until the GOLD token launches. At that point, you will either find 0.975 GOLD in your wallet or have your VRSCTEST back, not immediately receive the GOLD.",
+            "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I create a coin that can only be converted to with GOLD?",
+            "No, that's not correct. When creating a coin, it can be converted to with either GOLD or VRSCTEST, not just GOLD.",
+            "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the default directory for VerusTest on MacOS?",
+            "The question is incorrect. The default directory for VRSCTEST (not VerusTest) on MacOS is actually:\n```\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069/\u2068Komodo/VRSCTEST\n```\nAnd the directory for VerusTest on MacOS is:\n```\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069\u2068/VerusTest\n```",
+            "**MacOS**\n```\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069/\u2068Komodo/VRSCTEST\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069\u2068/VerusTest\n```**Windows**\n```\n\"%APPDATA%\"\\Komodo\\VRSCTEST\n\"%APPDATA%\"\\VerusTest\n```**Launching the testnet:**\n```\n./verusd -chain=VRSCTEST\n```\n# DisclaimerThis is experimental and unfinished software. Use at your own risk! No warranty for any kind of damage!\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:The enclosed copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the command to launch the mainnet of Verus?",
+            "The question is incorrect. The command provided is actually for launching the testnet of Verus, not the mainnet. The command is:\n```\n./verusd -chain=VRSCTEST\n```\nThere is no information provided about launching the mainnet.",
+            "**MacOS**\n```\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069/\u2068Komodo/VRSCTEST\n \u2068Users\u2069/\u2068{YourUserName}/\u2068Library\u2069/\u2068Application Support\u2069\u2068/VerusTest\n```**Windows**\n```\n\"%APPDATA%\"\\Komodo\\VRSCTEST\n\"%APPDATA%\"\\VerusTest\n```**Launching the testnet:**\n```\n./verusd -chain=VRSCTEST\n```\n# DisclaimerThis is experimental and unfinished software. Use at your own risk! No warranty for any kind of damage!\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:The enclosed copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d6c28839-d846-45c5-a4f5-4e4dce8a83df"
+]

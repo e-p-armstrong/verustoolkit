@@ -1,0 +1,6 @@
+[
+    "Does the `decoderawtransaction` method only work with the Verus JSON-RPC API?",
+    "No, the `decoderawtransaction` method can be used with both the Verus CLI and the Verus JSON-RPC API. The provided examples show how to use the method with both the CLI (`verus decoderawtransaction \"hexstring\"`) and the JSON-RPC API (`curl ...`).",
+    "Examples:\n> verus decoderawtransaction \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/decoderawtransaction"
+]

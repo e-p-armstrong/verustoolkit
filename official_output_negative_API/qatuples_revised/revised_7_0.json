@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getunconfirmedbalance` command when it comes to sending transactions?",
+    "The `getunconfirmedbalance` command doesn't actually relate to sending transactions. Its purpose is to return the server's total unconfirmed balance.",
+    "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+    "./raw_text_input_api_text/getunconfirmedbalance"
+]

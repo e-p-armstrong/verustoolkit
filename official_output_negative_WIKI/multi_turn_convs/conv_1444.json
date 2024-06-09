@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm playing around with the `definecurrency` command, and I was wondering about the `options` parameter. What does `options` set to 33 do?\n\n**AI Assistant:**\nUnfortunately, the effect of `options` set to 33 in the `definecurrency` command is not specified. If you're unsure about the options or parameters for a command, feel free to ask, and I'll do my best to help!\n\n**User:**\nI'm also curious about the `proofprotocol` parameter. If I set it to 2, can anyone mint new coins in \"mycoin\"?\n\n**AI Assistant:**\nNo, when `proofprotocol` is set to 2, only the controller of the chain ID can mint new coins, not just anyone. This provides a level of control and security over the currency.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "In the `definecurrency` command, what does `options` set to 33 do?",
+            "The effect of `options` set to 33 in the `definecurrency` command is not specified.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can anyone mint new coins in \"mycoin\" since `proofprotocol` is set to 2?",
+            "No, only the controller of the chain ID can mint new coins when `proofprotocol` is set to 2, not just anyone.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

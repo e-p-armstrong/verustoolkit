@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to get a list of all transactions in the entire blockchain. I've heard that the `listsinceblock` command can do this. How do I use it to get this list?\n\n**AI Assistant:**\nI'm happy to help! However, I need to correct you - the `listsinceblock` command doesn't actually return a list of all transactions in the entire blockchain. Instead, it returns a list of transactions since a specified block, or from the tip of the chain if no block is specified. You need to provide a block hash or height as an argument to get the list of transactions since that block.\n\nIf you're looking to get a list of all transactions, you might need to use a combination of commands or a different approach. Would you like me to help you explore other options?\n\n**User:**\nThanks for the clarification. I was also thinking of using the `listtransactions` command to get a list of all transactions for all accounts. Can I use it for that?\n\n**AI Assistant:**\nUnfortunately not. The `listtransactions` command doesn't return a list of all transactions for all accounts either. It returns up to a specified count of the most recent transactions for a specific account, skipping a specified number of transactions from the start. You need to specify the account and the count and from parameters to get the desired list of transactions.\n\nIf you're trying to get a comprehensive list of transactions, we might need to explore other options or use a combination of commands. Would you like me to help you with that?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `listsinceblock` command to get a list of all transactions in the entire blockchain?",
+            "The `listsinceblock` command does not return a list of all transactions in the entire blockchain. It returns a list of transactions since a specified block, or from the tip of the chain if no block is specified. You need to provide a block hash or height as an argument to get the list of transactions since that block.",
+            "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I use the `listtransactions` command to get a list of all transactions for all accounts?",
+            "No, the `listtransactions` command does not return a list of all transactions for all accounts. It returns up to a specified count of the most recent transactions for a specific account, skipping a specified number of transactions from the start. You need to specify the account and the count and from parameters to get the desired list of transactions.",
+            "Examples:\n```bash\n> verus listsinceblock\n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listtransactions ( \"account\" count from includeWatchonly)`\nReturns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

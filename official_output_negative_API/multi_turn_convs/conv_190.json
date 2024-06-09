@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to get a better understanding of how to use the `addnode` command. Can you help me out? Specifically, how do I use it to list all the nodes in the network?\n\n**AI Assistant:**\nI'd be happy to help! However, I have to correct you - the `addnode` command is not used to list all the nodes in the network. Instead, it's used to add or remove a node from the addnode list, or to try a connection to a node once. If you want to list all the nodes in the network, you would actually use the `getpeerinfo` command.\n\n**User:**\nOkay, got it. Thanks for the correction! So, can I use the `addnode` command to connect to multiple nodes at once?\n\n**AI Assistant:**\nNo, the `addnode` command is used to add or remove a single node from the addnode list, or to try a connection to a single node once. It's not used to connect to multiple nodes at once. Each invocation of the command is used to manage a single node.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `addnode` command to list all the nodes in the network?",
+            "The `addnode` command is not used to list all the nodes in the network. Instead, it's used to add or remove a node from the addnode list, or to try a connection to a node once. To list all the nodes in the network, you would use the `getpeerinfo` command.",
+            "addnode \"node\" \"add|remove|onetry\"\n\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n\nExamples:\n> verus addnode \"192.168.0.6:8233\" \"onetry\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/addnode"
+        ],
+        [
+            "Can I use the `addnode` command to connect to multiple nodes at once?",
+            "No, the `addnode` command is used to add or remove a single node from the addnode list, or to try a connection to a single node once. It's not used to connect to multiple nodes at once. Each invocation of the command is used to manage a single node.",
+            "addnode \"node\" \"add|remove|onetry\"\n\nAttempts add or remove a node from the addnode list.\nOr try a connection to a node once.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n2. \"command\" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n\nExamples:\n> verus addnode \"192.168.0.6:8233\" \"onetry\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"addnode\", \"params\": [\"192.168.0.6:8233\", \"onetry\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/addnode"
+        ]
+    ]
+]

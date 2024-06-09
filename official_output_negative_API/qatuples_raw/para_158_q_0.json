@@ -1,0 +1,6 @@
+[
+    "How do I use the `z_shieldcoinbase` command without specifying any parameters?",
+    "The `z_shieldcoinbase` command requires at least two parameters: the zaddr to shield from and the taddr to shield to. The correct syntax is `verus z_shieldcoinbase <zaddr> <taddr>`. You cannot use the command without specifying any parameters.",
+    "Examples:\n> verus z_shieldcoinbase \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_shieldcoinbase\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_shieldcoinbase"
+]

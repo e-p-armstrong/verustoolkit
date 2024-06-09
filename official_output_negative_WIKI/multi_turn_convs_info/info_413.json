@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can contributors get a refund if the chain launches successfully?",
+            "If the minimum contributions are not met, the chain will fail to start and all contributions can be spent back to the original contributors. However, if the chain launches successfully, there is no provision for refunds. Instead, the contributions will be converted to the native chain currency at launch.",
+            "**Sample chain definition:**\n```\n./verusd -chain=VRSCTEST definechain '{\"name\":\"RESERVEWITHPREMINE\",\"paymentaddress\":\"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\",\"premine\":50000000000000,\"initialcontribution\":5000000000000,\"conversion\":100000000,\"minpreconvert\":45000000000000,\"maxpreconvert\":100000000000000,\"launchfee\":0,\"billingperiod\":14400,\"notarizationreward\":100000000000,\"eras\":[{\"reward\":5000000000,\"decay\":0,\"halving\":0,\"eraend\":0,\"eraoptions\":1}],\"nodes\":[{\"networkaddress\":\"ipaddress:port\",\"paymentaddress\":\"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\"},\n{\"networkaddress\":\"2ndipaddress:port\",\"paymentaddress\":\"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\"}]}'\n```The example above defines a chain that emits a premine to the indicated address and also converts all contributions up to a maximum amount to the native chain currency at launch at a 100%, 1:1 conversion price. All contributions will enter the currency's reserve deposits, and the more contributions on this chain, the higher the starting reserve ratio will be. If the minimum contributions are not met, the chain will fail to start and all contributions can be spent back to the original contributors.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "dbafd4b8-bf59-404c-b69c-d1d702cf4f02"
+]

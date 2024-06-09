@@ -1,0 +1,6 @@
+[
+    "How do I use the `verus` command to send a JSON RPC request to a remote server?",
+    "The `verus` command is not used to send a JSON RPC request to a remote server. Instead, it is used to execute Verus commands locally. To send a JSON RPC request, you would use a tool like `curl`, as shown in the example: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+    "Examples:\n> verus getblocktemplate \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblocktemplate\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblocktemplate"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to understand some of the APIs in Verus, can you help me out? What is the purpose of the `sendcurrency` API?\n\n**AI Assistant:**\nThe `sendcurrency` API is a powerful tool in Verus. It's not only used for sending funds, but also for converting funds. It can be used to send and convert funds between different currencies, such as VRSCTEST and VRSC-BTC. This allows for a seamless transaction experience across different currencies within the Verus ecosystem.\n\n**User:**\nThat makes sense. I've been playing around with the testnet, and I was wondering, do testnet coins/currencies have any value?\n\n**AI Assistant:**\nNo, testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset. They're simply a way to test and experiment with the Verus network without risking any real assets. It's a great way to get familiar with the system and try out new things without any financial risk.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `sendcurrency` API?",
+            "The `sendcurrency` API is not only used for sending funds, but also for converting funds. It can be used to send and convert funds between different currencies, such as VRSCTEST and VRSC-BTC.",
+            "## Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n  ```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\":10}]'\n  ```\n- **Converting VRSCTEST to a fractional basket currency, VRSC-BTC using IDs as a funding source:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*i\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"VRSC-BTC\"}]'\n  ```\n- **Converting VRSCTEST to another reserve, BTC through a fractional currency, VRSC-BTC:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"B",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Do testnet coins/currencies have any value?",
+            "No, testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset.",
+            "## Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n  ```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\":10}]'\n  ```\n- **Converting VRSCTEST to a fractional basket currency, VRSC-BTC using IDs as a funding source:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*i\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"VRSC-BTC\"}]'\n  ```\n- **Converting VRSCTEST to another reserve, BTC through a fractional currency, VRSC-BTC:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"bob@\",\"amount\":10, \"convertto\":\"B",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

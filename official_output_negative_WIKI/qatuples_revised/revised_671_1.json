@@ -1,0 +1,6 @@
+[
+    "What is the command to apply the new settings after editing the `/etc/ssh/sshd_config` file?",
+    "The command to apply the new settings after editing the `/etc/ssh/sshd_config` file is `sudo systemctl restart sshd`. This restarts the SSH daemon, which then applies the changes you made to the configuration file.",
+    "Disable login with Root User\n(make sure your newly created user login works and has sudo rights)\n `sudo nano /etc/ssh/sshd_config`\nFind: PermitRootLogin yes\nAnd set to\nPermitRootLogin no\nApply new settings:\n `sudo systemctl restart sshd`\n\n(submitted by @karero, corrected by @Glennp, edited by Oink.vrsc@)\n\nNote: last revision date 2022-08-19.",
+    "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+]

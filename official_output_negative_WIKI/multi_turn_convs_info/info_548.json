@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can I use the `verus validateaddress` command to generate a new wallet address?",
+            "No, you cannot use the `verus validateaddress` command to generate a new wallet address. The `verus validateaddress` command is used to validate an existing address and obtain its pubkey. To generate a new wallet address, you should use the `verus getnewaddress` command.",
+            "## In Verus CLI\nStep 1 - First get your wallet address you want to mine to:\nYou can find an address if you already have previous transactions, or you can create a new one. To find an address from a previous transaction, use the command line verus listtransactions and copy the address found after \"address\".\nTo generate a new wallet address, use the command line `verus getnewaddress` and a new address will be created.\n\nStep 2 - Next, using your new address, enter the command with verus-cli `verus validateaddress`. From the output find the long string after \"pubkey\", copy without the quotation marks.\n\nStep 3 - Set your PubKey\n* Option 1: use this pubkey when starting your daemon by adding the following line to the end of your command, just before the \"&\" sign: -pubkey=THELONGSTRINGCOPIED\n* Option 2: edit your `VRSC.conf` and add the line `pubkey=THELONGSTRINGCOPIED`. Then start your whallet as you are used to.\n\nYour rewards will now be mined to that address. It would be a good idea to keep notes and associate the wallet address with the pubkey...also to double check that you did validate the correct pubkey for the wallet address, making sure you made no errors.\n\n(submitted by @Oliver Westbrook, edited by Oink.vrsc@)\n\nnote: last revision date 2020-02-24.",
+            "./raw_text_input_wiki/faq-allos03_mine_rewards_to_a_single_verus_wallet_gui_+_cli.md"
+        ],
+        [
+            "What is the purpose of the `verus listtransactions` command in the mining process?",
+            "The `verus listtransactions` command is not directly related to the mining process. It is used to find an existing address from a previous transaction, which can then be used for mining. The actual mining process involves setting up your PubKey using the `verus validateaddress` command and then starting your daemon with the `-pubkey` option or editing your `VRSC.conf` file.",
+            "## In Verus CLI\nStep 1 - First get your wallet address you want to mine to:\nYou can find an address if you already have previous transactions, or you can create a new one. To find an address from a previous transaction, use the command line verus listtransactions and copy the address found after \"address\".\nTo generate a new wallet address, use the command line `verus getnewaddress` and a new address will be created.\n\nStep 2 - Next, using your new address, enter the command with verus-cli `verus validateaddress`. From the output find the long string after \"pubkey\", copy without the quotation marks.\n\nStep 3 - Set your PubKey\n* Option 1: use this pubkey when starting your daemon by adding the following line to the end of your command, just before the \"&\" sign: -pubkey=THELONGSTRINGCOPIED\n* Option 2: edit your `VRSC.conf` and add the line `pubkey=THELONGSTRINGCOPIED`. Then start your whallet as you are used to.\n\nYour rewards will now be mined to that address. It would be a good idea to keep notes and associate the wallet address with the pubkey...also to double check that you did validate the correct pubkey for the wallet address, making sure you made no errors.\n\n(submitted by @Oliver Westbrook, edited by Oink.vrsc@)\n\nnote: last revision date 2020-02-24.",
+            "./raw_text_input_wiki/faq-allos03_mine_rewards_to_a_single_verus_wallet_gui_+_cli.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ea80793c-6424-4de6-a735-d12b312db544"
+]

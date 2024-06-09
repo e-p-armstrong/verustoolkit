@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can you help me troubleshoot an issue with my Verus wallet where it's stuck on block number YYYY?",
+            "The issue you're experiencing sounds similar to the problem where the wallet is stuck on block number XXXX. You might want to check out the troubleshooting guide for \"My wallet is stuck on block number XXXX. It does not synchronize properly anymore.\" as it might provide the solution you're looking for.",
+            "ng_pools.md)\n[Verus Wallet & VRSC.conf standard locations](#!faq-allos/faq-allos24_wallet.dat_and_vrsc.conf_location.md)\n[My wallet is stuck on block number XXXX. It does not synchronize properly anymore.](#!faq-allos/faq-allos25_wallet_not_synced.md)\n[I accidentally send funds to a B-address and cannot move those funds](#!faq-allos/faq-allos26_sent_funds_to_b-address.md)",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "How do I recover funds I sent to an A-address?",
+            "The question seems to be based on a wrong premise. If you accidentally sent funds to a B-address, you can follow these steps to recover them: [insert steps].",
+            "ng_pools.md)\n[Verus Wallet & VRSC.conf standard locations](#!faq-allos/faq-allos24_wallet.dat_and_vrsc.conf_location.md)\n[My wallet is stuck on block number XXXX. It does not synchronize properly anymore.](#!faq-allos/faq-allos25_wallet_not_synced.md)\n[I accidentally send funds to a B-address and cannot move those funds](#!faq-allos/faq-allos26_sent_funds_to_b-address.md)",
+            "./raw_text_input_wiki/index.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "79a46bd4-15cb-43c5-bfff-fb2d0a461339"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I create a new blockchain on k that is not interoperable with other blockchains?",
+            "k is a fractal blockchain, which means it enables an unlimited number of simultaneously operating, interoperable blockchains. Therefore, it is not possible to create a new blockchain on k that is not interoperable with other blockchains.",
+            "k is fractal, enabling an unlimited number of simultaneously operating, interoperable blockchains.\n### Locking and Unlocking IDs\n- **Time Lock:**\n The timelock parameter defines the unlock height of the identity.\n```\nverus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 0, \"timelock\": <Unlock block height>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n```\n- **Time Delay:**\n The timelock parameter defines how many blocks to delay an ID's unlock when the flags are set back to an unlocked state.\n```\nverus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n```\n- Revoking an identity will clear its locked status, regardless of time delay or unlock height.\n- A locked identity cannot revoke itself.\n## Conversion Queries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can a locked identity revoke itself?",
+            "No, a locked identity cannot revoke itself. Revoking an identity will clear its locked status, regardless of time delay or unlock height.",
+            "k is fractal, enabling an unlimited number of simultaneously operating, interoperable blockchains.\n### Locking and Unlocking IDs\n- **Time Lock:**\n The timelock parameter defines the unlock height of the identity.\n```\nverus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 0, \"timelock\": <Unlock block height>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n```\n- **Time Delay:**\n The timelock parameter defines how many blocks to delay an ID's unlock when the flags are set back to an unlocked state.\n```\nverus -chain=VRSCTEST updateidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n```\n- Revoking an identity will clear its locked status, regardless of time delay or unlock height.\n- A locked identity cannot revoke itself.\n## Conversion Queries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "508a5ad0-3e12-43ed-8a05-b36a85da1588"
+]

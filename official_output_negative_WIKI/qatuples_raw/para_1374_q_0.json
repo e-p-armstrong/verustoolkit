@@ -1,0 +1,6 @@
+[
+    "Can you explain why creating mycoin requires only VRSCTEST?",
+    "Actually, creating mycoin requires either GOLD or VRSCTEST, not just VRSCTEST. This means that you can create mycoin using either of these two currencies, giving you more flexibility and options.",
+    " with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

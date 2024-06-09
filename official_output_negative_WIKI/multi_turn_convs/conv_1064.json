@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about minting coins in the \"mycoin\" currency. Can anyone mint new coins in the \"mycoin\" currency?\n\n**AI Assistant:**\nNo, not anyone can mint new coins in the \"mycoin\" currency. Only the controller of the chain ID can mint new coins, as specified by the `proofprotocol` set to 2 (PROOF_CHAINID) in the `definecurrency` command. Does that help clarify things?\n\n**User:**\nI was also wondering about sending coins. What is the command to send existing coins of \"mycoin\" currency to another address?\n\n**AI Assistant:**\nActually, I think there might be some confusion. The command you're referring to is not for sending existing coins, but for minting new coins. The command is:\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\nThis command mints 10,000 new coins of \"mycoin\" currency and sends them to the address \"mike@\". If you want to send existing coins, you'll need to use a different command. Would you like me to explain that?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can anyone mint new coins in the \"mycoin\" currency?",
+            "No, not anyone can mint new coins in the \"mycoin\" currency. Only the controller of the chain ID can mint new coins, as specified by the `proofprotocol` set to 2 (PROOF_CHAINID) in the `definecurrency` command.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the command to send existing coins of \"mycoin\" currency to another address?",
+            "The question is flawed. The command shown in the text is not for sending existing coins, but for minting new coins:\n```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```\nThis command mints 10,000 new coins of \"mycoin\" currency and sends them to the address \"mike@\".",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

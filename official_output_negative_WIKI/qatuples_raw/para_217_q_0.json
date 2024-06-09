@@ -1,0 +1,6 @@
+[
+    "How do I use the `getrawtransaction` command to get the block hash of a transaction?",
+    "The `getrawtransaction` command does not return the block hash of a transaction. It returns the raw transaction data, which includes information such as the transaction ID, block time, and other transaction details. If you want to get the block hash, you would need to use a different command or API method.",
+    "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

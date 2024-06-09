@@ -1,0 +1,6 @@
+[
+    "Can I use the `verus` command to send a JSON-RPC request to a Verus node?",
+    "No, the `verus` command is not used to send a JSON-RPC request to a Verus node. Instead, it is used to interact with a local Verus node. To send a JSON-RPC request to a Verus node, you would use a tool like `curl`, as shown in the third example.",
+    "Examples:\n> verus listsinceblock \n> verus listsinceblock \"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listsinceblock\", \"params\": [\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listsinceblock"
+]

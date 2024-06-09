@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can I use the \"sourceoffunds\" argument to specify a referral identity?",
+            "No, the \"referralidentity\" argument is used to specify a friendly name or identity address that is provided as a referral mechanism and to lower network cost of the ID, whereas the \"sourceoffunds\" argument is used to specify an optional address to use for the source of funds. These are two separate arguments with different purposes.",
+            "#### Arguments:\n```\n\"name\"              (string, required) the unique name to commit to. creating a name commitment is not a\n                            registration, and if one is created for a name that exists, it may\n                            succeed, but will never be able to be used.\n\"controladdress\"         (address, required) address that will control this commitment\n\"referralidentity\"        (identity, optional)friendly name or identity address that is provided as a referral mechanism and to lower network cost of the ID\n\"parentnameorid-pbaasonly\"    (currency, optional)friendly name or currency i-address, which will be the parent of this ID and dictate issuance rules & pricing\n\"sourceoffunds\"         (addressorid, optional) optional address to use for source of funds. if not specified, transparent wildcard \"*\" is used\n```\n#### Result: obj\n```json\n{\n  \"txid\" : \"hexid\"\n  \"namereservation\" :\n  {\n    \"name\"  : \"namestr\",   (string) the unique name in this commitment\n    \"salt\"  : \"hexstr\",   (hex)  salt used to hide the commitment\n    \"referral\": \"identityaddress\", (base58) address of the referring identity if there is one\n    \"parent\" : \"namestr\",  (string) name of the parent if not Verus or Verus test\n    \"nameid\" : \"address\",  (base58) identity address for this identity if it is created\n  }\n}\n```\nExamples:\n```bash\n> verus registernamecommitment \"name\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"registernamecommitment\", \"params\": [\"name\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "0f5c128c-8351-457f-af10-2102c11ed012"
+]

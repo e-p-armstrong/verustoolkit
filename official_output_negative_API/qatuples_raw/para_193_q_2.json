@@ -1,0 +1,6 @@
+[
+    "Can I use the `getblockdeltas` command to get information about a transaction without specifying the block hash?",
+    "No, you need to specify the block hash as an argument to the `getblockdeltas` command. The command requires a single argument, which is the block hash, and returns information about the block and its transactions.",
+    "getblockdeltas \"blockhash\"Returns information about the given block and its transactions.WARNING: getblockdeltas is disabled.\nTo enable it, restart zcashd with the -experimentalfeatures and\n-insightexplorer commandline options, or add these two lines\nto the zcash.conf file:experimentalfeatures=1\ninsightexplorer=1Arguments:\n1. \"hash\"     (string, required) The block hash",
+    "./raw_text_input_api_text/getblockdeltas"
+]

@@ -25,40 +25,6 @@ strict: false
 
 datasets:
   - path: json
-    data_files: pretraining_vision.json
-    ds_type: json
-    type: completion
-  - path: json
-    data_files: simplified_data_rag_VISION.jsonl
-    ds_type: json
-    type: sharegpt
-    conversation: chatml
-  - path: json
-    data_files: simplified_data_no_rag_VISION.jsonl
-    ds_type: json
-    type: sharegpt
-    conversation: chatml
-  - path: json
-    data_files: simplified_data_rag_OPENENDED_VISION.jsonl
-    ds_type: json
-    type: sharegpt
-    conversation: chatml
-  - path: json
-    data_files: simplified_data_no_rag_OPENENDED_VISION.jsonl
-    ds_type: json
-    type: sharegpt
-    conversation: chatml
-  - path: json
-    data_files: evol_split_1.json
-    ds_type: json
-    type: sharegpt
-    conversation: chatml
-  - path: json
-    data_files: unnatural_split_1.json
-    ds_type: json
-    type: sharegpt
-    conversation: chatml
-  - path: json
     data_files: pretraining_medium.json
     ds_type: json
     type: completion
@@ -181,6 +147,40 @@ datasets:
     conversation: chatml
   - path: json
     data_files: simplified_data_no_rag_OPENENDED_DOCS.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json ## INSERTION POINT
+    data_files: evol_split_1.json
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json 
+    data_files: unnatural_split_1.json
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: pretraining_vision.json
+    ds_type: json
+    type: completion
+  - path: json
+    data_files: simplified_data_rag_VISION.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_VISION.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_rag_OPENENDED_VISION.jsonl
+    ds_type: json
+    type: sharegpt
+    conversation: chatml
+  - path: json
+    data_files: simplified_data_no_rag_OPENENDED_VISION.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml

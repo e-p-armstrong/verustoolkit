@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Why does the `verus gettransaction` command require a username and password to retrieve transaction information?",
+            "The `verus gettransaction` command does not require a username and password to retrieve transaction information. In fact, the examples provided show that you can simply use the command with the transaction ID as an argument, without any authentication credentials.",
+            "Examples:\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/gettransaction"
+        ],
+        [
+            "How do I use the `curl` command to retrieve transaction information without specifying the transaction ID?",
+            "You cannot use the `curl` command to retrieve transaction information without specifying the transaction ID. The `curl` command in the examples provided requires the transaction ID as a parameter in the JSON-RPC request.",
+            "Examples:\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"\n> verus gettransaction \"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettransaction\", \"params\": [\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/gettransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b029d742-2d00-4c26-87d2-a5c7a64293f9"
+]

@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I've been having some issues with my wallet and I've been trying to troubleshoot. I've heard about the `rescanfromheight` command, but I'm not sure if it's suitable for my situation. Does the `rescanfromheight` command only work on small wallets?\n\n**AI Assistant:**\nNo, the `rescanfromheight` command can be used on wallets of any size. However, it's worth noting that rescanning a very large wallet can take a significant amount of time, potentially minutes or even hours, depending on the size of the wallet and the height from which you're rescanning. So, while it's not limited to small wallets, you should be prepared for a potentially lengthy process if you have a large wallet. Did you have any other questions about using `rescanfromheight` or troubleshooting your wallet issues?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Does the `rescanfromheight` command only work on small wallets?",
+            "No, the `rescanfromheight` command can be used on wallets of any size. However, it's worth noting that rescanning a very large wallet can take a significant amount of time, potentially minutes or even hours, depending on the size of the wallet and the height from which you're rescanning.",
+            "rescanfromheight (height)\n\nRescans the current wallet from a specified height\n\nArguments:\n1. \"height\"   (int, optional) Defaults to 0, height to start rescanning from\n\nNote: This call can take minutes or even hours to complete on very large wallets and rescans\n\nExamples:\n\nInitiate rescan of entire chain\n> verus rescanfromheight\n\nInitiate rescan from block 1000000\n> verus rescanfromheight 1000000",
+            "./raw_text_input_api_text/rescanfromheight"
+        ]
+    ]
+]

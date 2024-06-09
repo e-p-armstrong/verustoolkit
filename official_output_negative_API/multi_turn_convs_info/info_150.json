@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "Can I import a wallet using the `dumpwallet` command?",
+            "No, the `dumpwallet` command is used to dump the wallet, not to import it. To import a wallet, you need to use the `importwallet` command, specifying the filename of the wallet dump file as an argument.",
+            "importwallet \"filename\"\n\nImports taddr keys from a wallet dump file (see dumpwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus dumpwallet \"nameofbackup\"\n\nImport the wallet\n> verus importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ],
+        [
+            "Is it possible to import a wallet without specifying a filename?",
+            "No, it is not possible to import a wallet without specifying a filename. The `importwallet` command requires a filename as an argument, which is the wallet file to be imported.",
+            "importwallet \"filename\"\n\nImports taddr keys from a wallet dump file (see dumpwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus dumpwallet \"nameofbackup\"\n\nImport the wallet\n> verus importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ],
+        [
+            "Can I import a wallet using the `importwallet` command without having a wallet dump file?",
+            "No, you cannot import a wallet using the `importwallet` command without having a wallet dump file. The `importwallet` command is used to import taddr keys from a wallet dump file, so you need to have a wallet dump file to import from.",
+            "importwallet \"filename\"\n\nImports taddr keys from a wallet dump file (see dumpwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus dumpwallet \"nameofbackup\"\n\nImport the wallet\n> verus importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/importwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e2ca2bb9-3366-4244-a635-9f3487341c24"
+]

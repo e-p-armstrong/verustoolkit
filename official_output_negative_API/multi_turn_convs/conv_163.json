@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble with some commands in Verus. I was wondering if I can use the `getbestblockhash` command to get the hash of a specific block by its height?\n\n**AI Assistant:**\nUnfortunately, the answer is no. You cannot use the `getbestblockhash` command to get the hash of a specific block by its height. This command only returns the hash of the best (tip) block in the longest block chain, without allowing you to specify a particular block height. You'll need to use a different command or approach to achieve that.\n\n**User:**\nOkay, that's good to know. One more question about `getbestblockhash`. Does it return the block hash in a decimal format?\n\n**AI Assistant:**\nNo, the `getbestblockhash` command returns the block hash in a hexadecimal (hex) encoded string, not in a decimal format. So, you'll get a string of hexadecimal characters representing the block hash, rather than a decimal number.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you use the `getbestblockhash` command to get the hash of a specific block by its height?",
+            "No, you cannot use the `getbestblockhash` command to get the hash of a specific block by its height. This command only returns the hash of the best (tip) block in the longest block chain, without allowing you to specify a particular block height.",
+            "getbestblockhash\n\nReturns the hash of the best (tip) block in the longest block chain.\n\nResult\n\"hex\"   (string) the block hash hex encoded\n\nExamples\n> verus getbestblockhash \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getbestblockhash\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getbestblockhash"
+        ],
+        [
+            "Does the `getbestblockhash` command return the block hash in a decimal format?",
+            "No, the `getbestblockhash` command returns the block hash in a hexadecimal (hex) encoded string, not in a decimal format.",
+            "getbestblockhash\n\nReturns the hash of the best (tip) block in the longest block chain.\n\nResult\n\"hex\"   (string) the block hash hex encoded\n\nExamples\n> verus getbestblockhash \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getbestblockhash\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getbestblockhash"
+        ]
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm thinking of creating a new token called \"mycoin\" that can only be converted to with GOLD. What command would I use to create it?\n\n**AI Assistant:**\nTo create mycoin, you would use a command like:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines a new token called \"mycoin\" that can be converted to with either GOLD or VRSCTEST. Would you like me to explain what each part of the command does?\n\n**User:**\nThat's helpful, thanks! I have another question. What happens to my VRSCTEST if a token launch is unsuccessful?\n\n**AI Assistant:**\nThe outcome of an unsuccessful token launch on VRSCTEST is not specified. If a token launch is successful, you will either receive GOLD or have your VRSCTEST returned. However, the consequences of a failed token launch are not defined. It's always a good idea to carefully plan and research before launching a token to minimize the risk of an unsuccessful launch.\n\n**User:**\nI'm also wondering, can I park my conversion of VRSCTEST to GOLD without specifying the amount I want to convert?\n\n**AI Assistant:**\nNo, you need to specify the amount you want to convert. For example, the command `./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` parks the conversion of 100 VRSCTEST to GOLD. You need to specify the exact amount you want to convert to GOLD. Do you have any more questions about creating tokens or converting currencies?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "If I want to create a new token called \"mycoin\" that can only be converted to with GOLD, what command would I use?",
+            "To create mycoin, you would use a command like:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nThis command defines a new token called \"mycoin\" that can be converted to with either GOLD or VRSCTEST.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What happens to my VRSCTEST if a token launch is unsuccessful?",
+            "The outcome of an unsuccessful token launch on VRSCTEST is not specified. If a token launch is successful, you will either receive GOLD or have your VRSCTEST returned. However, the consequences of a failed token launch are not defined.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I park my conversion of VRSCTEST to GOLD without specifying the amount I want to convert?",
+            "No, you need to specify the amount you want to convert. For example, the command `./verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'` parks the conversion of 100 VRSCTEST to GOLD.",
+            "dcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

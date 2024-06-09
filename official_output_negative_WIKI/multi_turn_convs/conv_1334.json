@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I was looking through this document and I was wondering about its origins. Was this document created by an unknown author?\n\n**AI Assistant:**\nNo, the document was created by Oink.vrsc@, so the author is known. You can see their username right there. Do you have any other questions about the document or its contents?\n\n**User:**\nThat's good to know. When was this documentation last revised?\n\n**AI Assistant:**\nLet me check... According to the document, it was last revised on June 3, 2023, not in 2024. So, it's relatively up-to-date. If you have any more questions or need help with anything else, feel free to ask!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Was this document created by an unknown author?",
+            "No, the document was created by Oink.vrsc@, so the author is known.",
+            "Created by Oink.vrsc@\n\nNote: last revision date 2023-06-03.",
+            "./raw_text_input_wiki/how-to_lite_to_native.md"
+        ],
+        [
+            "When was this documentation last revised?",
+            "No, the documentation was last revised on June 3, 2023, not in 2024.",
+            "Created by Oink.vrsc@\n\nNote: last revision date 2023-06-03.",
+            "./raw_text_input_wiki/how-to_lite_to_native.md"
+        ]
+    ]
+]

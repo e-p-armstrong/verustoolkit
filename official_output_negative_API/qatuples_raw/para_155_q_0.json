@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the \"memo\" field in a transaction, and why is it always a numeric value?",
+    "The \"memo\" field in a transaction is not always a numeric value. In fact, it is a hexadecimal string representation of the memo field. It can contain any type of data, not just numbers. Additionally, if the memo field contains valid UTF-8 text, the API will also return a \"memoStr\" field with the decoded string.",
+    "  \"value\" : x.xxx         (numeric) The amount in VRSC\n   \"valueZat\" : xxxx        (numeric) The amount in zatoshis\n   \"memo\" : \"hexmemo\",       (string) Hexademical string representation of the memo field\n   \"memoStr\" : \"memo\",       (string) Only returned if memo contains valid UTF-8 text.\n  }\n  ,...\n ],\n}",
+    "./raw_text_input_api_text/z_viewtransaction"
+]

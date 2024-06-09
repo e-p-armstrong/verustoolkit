@@ -1,0 +1,6 @@
+[
+    "Is it possible to use the `dumpprivkey` command with a private key as an argument?",
+    "No, the `dumpprivkey` command requires a transparent address (`t-addr`) as an argument, not a private key. The command is used to retrieve the private key associated with the specified transparent address.",
+    "dumpprivkey \"t-addr\"\n\nReveals the private key corresponding to 't-addr'.\nThen the importprivkey can be used with this output\n\nArguments:\n1. \"t-addr\"  (string, required) The transparent address for the private key\n\nResult:\n\"key\"     (string) The private key\n\nExamples:\n> verus dumpprivkey \"myaddress\"\n> verus importprivkey \"mykey\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"dumpprivkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/dumpprivkey"
+]

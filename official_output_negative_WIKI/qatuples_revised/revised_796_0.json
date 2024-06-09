@@ -1,0 +1,6 @@
+[
+    "If I use the command `sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`, I will immediately receive 0.975 GOLD in my wallet, right?",
+    "No, that's not correct. Using this command will park your conversion until the GOLD token launches. Only after the token launches will you either find 0.975 GOLD in your wallet or have your VRSCTEST back.",
+    "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

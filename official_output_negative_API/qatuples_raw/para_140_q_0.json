@@ -1,0 +1,6 @@
+[
+    "How do I use the `getnotarizationproofs` method without providing any parameters?",
+    "You can't use the `getnotarizationproofs` method without providing any parameters. The method requires a list of objects as a parameter, each containing a `type`, `evidence`, `proveheight`, and `atheight` field. The examples provided in the text show how to use the method with the required parameters.",
+    "Examples:\n> verus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getnotarizationproofs"
+]

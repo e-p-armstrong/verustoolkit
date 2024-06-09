@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI have a question about revoking identities in Verus. What happens when you revoke an identity that has a locked status and a time delay or unlock height set?\n\n**AI Assistant:**\nWhen you revoke an identity, its locked status is cleared, regardless of the time delay or unlock height. So, the revocation process will not be affected by the lock. Does that make sense?\n\n**User:**\nThat's good to know. Another question I had about locked identities is, can a locked identity revoke itself?\n\n**AI Assistant:**\nNo, a locked identity cannot revoke itself. This is a security feature to prevent unintended revocations. It's an added layer of protection to ensure that identities are not revoked accidentally or maliciously.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What happens when you revoke an identity that has a locked status and a time delay or unlock height set?",
+            "When you revoke an identity, its locked status is cleared, regardless of the time delay or unlock height. So, the revocation process will not be affected by the lock.",
+            "teidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n  ```\n- Revoking an identity will clear its locked status, regardless of time delay or unlock height.\n- A locked identity cannot revoke itself.\n## Conversion Queries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can a locked identity revoke itself?",
+            "No, a locked identity cannot revoke itself. This is a security feature to prevent unintended revocations.",
+            "teidentity '{\"name\": \"ID@\", \"flags\": 2, \"timelock\": <Unlock block delay>, \"minimumsignatures\": 1, \"primaryaddresses\": [\"t-address\"]}'\n  ```\n- Revoking an identity will clear its locked status, regardless of time delay or unlock height.\n- A locked identity cannot revoke itself.\n## Conversion Queries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

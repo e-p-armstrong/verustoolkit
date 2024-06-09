@@ -1,0 +1,6 @@
+[
+    "What is the default behavior if the `feeoffer` parameter is specified in a transaction?",
+    "The default behavior is actually the opposite: if the `feeoffer` parameter is missing, it uses the standard price. If it is specified, it uses the amount specified in the `feeoffer` parameter.",
+    "rn a transaction for additional\n                      signatures rather than committing it\nfeeoffer              (amount, optional)\n                      amount to offer miner/staker for the registration\n                      fee, if missing, uses standard price\nsourceoffunds           (addressorid, optional) optional address to use for source of funds. if not specified, transparent wildcard \"*\" is used\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

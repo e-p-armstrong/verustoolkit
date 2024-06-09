@@ -1,0 +1,6 @@
+[
+    "Can I use the `decodescript` command to encode a script?",
+    "No, the `decodescript` command is used to decode a script, not encode it. The command specifically decodes a hex-encoded script.",
+    "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

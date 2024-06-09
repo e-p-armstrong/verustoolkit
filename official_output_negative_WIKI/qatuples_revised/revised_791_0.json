@@ -1,0 +1,6 @@
+[
+    "Is the bootstrap archive required to be kept on your hard drive after completing the installation/update process?",
+    "No, the bootstrap archive is not required to be kept on your hard drive after completing the installation/update process. You can remove the downloaded bootstrap archive to free up space on your hard drive if desired.",
+    "If you followed these steps, you will have installed/updated the latest version of a wallet for verus, made a backup of your wallet and installed the bootstrap. If desired you can remove the downloaded bootstrap archive to free up space on your hard drive.\n\n### Optional:\nWatch this video with an explanation how to accomplish the steps above: [Bootstrapping your wallet manually](https://youtu.be/ILr8vDgfPHI)\n\nInformation compiled by Oink.vrsc@.\n\nNote: revision date 2024-04-07.",
+    "./raw_text_input_wiki/how-to_bootstrap.md"
+]

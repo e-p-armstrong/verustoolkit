@@ -1,0 +1,6 @@
+[
+    "Is the \"txid\" field only available for 'send' transactions?",
+    "No, the \"txid\" field is available for both 'send' and 'receive' category of transactions, not just 'send' transactions.",
+    "ch (1 Jan 1970 GMT).\n  \"txid\": \"transactionid\", (string) The transaction id. Available for 'send' and 'receive' category of transactions.\n  \"time\": xxx,       (numeric) The transaction time in seconds since epoch (Jan 1 1970 GMT).\n  \"timereceived\": xxx,   (numeric) The time received in seconds since epoch (Jan 1 1970 GMT). Available for 'send' and 'receive' category of transactions.\n  \"comment\": \"...\",    (string) If a comment is associated with the transaction.\n  \"to\": \"...\",      (string) If a comment to is associated with the transaction.\n ],\n \"lastblock\": \"lastblockhash\"   (string) The hash of the last block\n}",
+    "./raw_text_input_api_text/listsinceblock"
+]

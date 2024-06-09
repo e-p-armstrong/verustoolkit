@@ -1,0 +1,6 @@
+[
+    "Does the `getunconfirmedbalance` command return the confirmed balance of the server?",
+    "No, the `getunconfirmedbalance` command does not return the confirmed balance of the server. It returns the server's total unconfirmed balance.",
+    "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+    "./raw_text_input_api_text/getunconfirmedbalance"
+]

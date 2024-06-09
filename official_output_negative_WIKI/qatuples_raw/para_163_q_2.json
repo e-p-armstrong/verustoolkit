@@ -1,0 +1,6 @@
+[
+    "Is the result of the `getlocalsolps` command a string value?",
+    "No, the result of the `getlocalsolps` command is a numeric value, specifically a decimal value representing the average local solutions per second since the node was started.",
+    "### `getlocalsolps`\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).#### Result:\nxxx.xxxxx   (numeric) Solutions per second average",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

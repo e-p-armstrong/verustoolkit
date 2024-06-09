@@ -1,0 +1,6 @@
+[
+    "Is Verus (VRSC) a private coin, and what is its hash algorithm?",
+    "Yes, Verus (VRSC) has privacy features, specifically using Zcash Sapling for privacy. Its hash algorithm is VerusHash 2.2.",
+    "# Coin Overview\n\n| | |\n| -----------------------: | :-- | \n| **Launch Date** | 21 May 2018 | \n| **Coin Ticker** | VRSC | \n| **Average Block Time** | 1 minute | \n| **Transaction Fee** | 0.0001 VRSC | \n| **Max Supply** | 83,540,184 VRSC | \n| **Consensus Algorithm** | [Verus Proof of Power](/overview/verus-proof-of-power/) | \n| **Hash Algorithm** | [VerusHash 2.2](/overview/verus-proof-of-power.md#verushash-2-2) | \n| **Privacy** | Zcash Sapling |",
+    "./raw_text_input_docs/coin.md"
+]

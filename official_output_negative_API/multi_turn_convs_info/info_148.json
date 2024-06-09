@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the \"nullifiers\" field in the JSON object?",
+            "The \"nullifiers\" field in the JSON object is a JSON array of strings, where each string is a hexadecimal representation of an input note nullifier.",
+            "  \"nullifiers\" : [      (json array of string)\n     \"hex\"           (string) input note nullifier\n     ,...\n    ],\n    \"commitments\" : [      (json array of string)\n     \"hex\"           (string) output note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}",
+            "./raw_text_input_api_text/decoderawtransaction"
+        ],
+        [
+            "How do you decode the ciphertexts in the \"ciphertexts\" field using the \"onetimePubKey\"?",
+            "The \"onetimePubKey\" is not used to decode the ciphertexts. It is actually used to encrypt the ciphertexts. The decryption process is not specified.",
+            "  \"nullifiers\" : [      (json array of string)\n     \"hex\"           (string) input note nullifier\n     ,...\n    ],\n    \"commitments\" : [      (json array of string)\n     \"hex\"           (string) output note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}",
+            "./raw_text_input_api_text/decoderawtransaction"
+        ],
+        [
+            "What is the purpose of the \"randomSeed\" field in the JSON object, which is used to generate the proof?",
+            "The \"randomSeed\" field is not used to generate the proof. Its purpose is not clearly specified in the provided information, but it is likely used as a random seed for some cryptographic operation, such as key generation or encryption. The \"proof\" field in the JSON object contains a hexadecimal representation of a zero-knowledge proof, which is a separate entity from the \"randomSeed\".",
+            "  \"nullifiers\" : [      (json array of string)\n     \"hex\"           (string) input note nullifier\n     ,...\n    ],\n    \"commitments\" : [      (json array of string)\n     \"hex\"           (string) output note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}",
+            "./raw_text_input_api_text/decoderawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "40f9976f-a8d3-4d33-adbe-5340e4892533"
+]

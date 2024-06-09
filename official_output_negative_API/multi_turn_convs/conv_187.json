@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble with banning IP addresses. Can you help me out? How do I use the `listbanned` command to ban a specific IP address?\n\n**AI Assistant:**\nI think there's a misunderstanding here. The `listbanned` command is actually used to list all banned IPs/Subnets, not to ban a specific IP address. It doesn't have the functionality to add new bans. The correct usage of `listbanned` is to retrieve a list of currently banned IPs/Subnets, as shown in the examples: `verus listbanned` or using the JSON-RPC method with `curl`. If you want to ban an IP address, you'll need to use a different command.\n\n**User:**\nOh, I see! Thanks for the correction. I was also wondering, what is the default port used by the `listbanned` command?\n\n**AI Assistant:**\nThe `listbanned` command doesn't have a default port. The port number `27486` might be used in some examples, but it's not a default port. The port number might be specific to the setup or configuration of the system.\n\n**User:**\nOkay, got it! One more question. Can I use the `listbanned` command to whitelist an IP address?\n\n**AI Assistant:**\nNo, the `listbanned` command is only used to list banned IPs/Subnets, not to whitelist an IP address. It doesn't have the functionality to add or manage whitelisted IPs. Its purpose is to retrieve a list of currently banned IPs/Subnets. If you want to whitelist an IP address, you'll need to use a different command or method.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `listbanned` command to ban a specific IP address?",
+            "The `listbanned` command is used to list all banned IPs/Subnets, not to ban a specific IP address. It does not have the functionality to add new bans. The correct usage of `listbanned` is to retrieve a list of currently banned IPs/Subnets, as shown in the examples: `verus listbanned` or using the JSON-RPC method with `curl`.",
+            "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ],
+        [
+            "What is the default port used by the `listbanned` command?",
+            "The `listbanned` command does not have a default port. The port number `27486` is used in the example, but it is not a default port. The port number might be specific to the setup or configuration of the system.",
+            "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ],
+        [
+            "Can I use the `listbanned` command to whitelist an IP address?",
+            "No, the `listbanned` command is used to list banned IPs/Subnets, not to whitelist an IP address. It does not have the functionality to add or manage whitelisted IPs. Its purpose is to retrieve a list of currently banned IPs/Subnets.",
+            "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ]
+    ]
+]

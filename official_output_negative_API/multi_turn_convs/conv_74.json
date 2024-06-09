@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to configure my Verus setup, and I'm not sure about a few things. What is the maximum number of nodes that can be specified in the \"nodes\" array?\n\n**AI Assistant:**\nThe maximum number of nodes that can be specified in the \"nodes\" array is 8. So, you can specify up to 8 nodes in that array.\n\n**User:**\nThat helps, thanks! I also have a question about \"nodeidentity\". Can I specify a \"nodeidentity\" as an integer?\n\n**AI Assistant:**\nNo, you cannot specify a \"nodeidentity\" as an integer. A \"nodeidentity\" is a string, and it can be an internet, TOR, or other supported address for the node.\n\n**User:**\nGot it, I'll make sure to use a string for \"nodeidentity\". One more question: what is the data type of \"paymentaddress\"?\n\n**AI Assistant:**\nThe data type of \"paymentaddress\" is an integer (int). It represents the rewards payment address.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the maximum number of nodes that can be specified in the \"nodes\" array?",
+            "The maximum number of nodes that can be specified in the \"nodes\" array is 8.",
+            "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+            "./raw_text_input_api_text/getcurrency"
+        ],
+        [
+            "Can I specify a \"nodeidentity\" as an integer?",
+            "No, you cannot specify a \"nodeidentity\" as an integer. A \"nodeidentity\" is a string, and it can be an internet, TOR, or other supported address for the node.",
+            "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+            "./raw_text_input_api_text/getcurrency"
+        ],
+        [
+            "What is the data type of \"paymentaddress\"?",
+            "The data type of \"paymentaddress\" is an integer (int). It represents the rewards payment address.",
+            "   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }",
+            "./raw_text_input_api_text/getcurrency"
+        ]
+    ]
+]

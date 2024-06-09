@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do Verus ID's digital signatures compare to Bitcoin's decentralized blockchain transactions in terms of security?",
+            "Verus ID enables more advanced features such as recovery from loss or theft of private keys, friendly name aliases, modifiable multi-sig signing, updates, privacy, and the association of signed attestations by other identities to statements about properties of the identity.",
+            "Bitcoin, which was first to enable worldwide, P2P decentralized blockchain transactions, and most of its derivatives, offer ways to sign messages with specific private keys that can be verified against public addresses. While that does offer some limited signing capability, it does not offer capabilities that can compete with centralized services offering more sophisticated key management. A single public/private key pair lacks critical capabilities to make it suitable as an actual identity, most notable and obvious being the ability to recover from loss or theft of private keys, but arguably as important are friendly name aliases, modifiable multi-sig signing, updates, privacy, and the association of signed attestations by other identities to statements about properties of the identity.Verus ID enables free verifiable digital signatures for all through the Verus ID protocol as just one of the many new capabilities it enables. It is also the foundation upon which many new applications and additional capabilities can be built.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How do Verus ID and Bitcoin and its derivatives compare in terms of key management capabilities?",
+            "Verus ID enables more advanced key management capabilities, such as recovery from loss or theft of private keys, friendly name aliases, modifiable multi-sig signing, updates, privacy, and the association of signed attestations by other identities to statements about properties of the identity. Bitcoin and its derivatives lack these critical capabilities.",
+            "Bitcoin, which was first to enable worldwide, P2P decentralized blockchain transactions, and most of its derivatives, offer ways to sign messages with specific private keys that can be verified against public addresses. While that does offer some limited signing capability, it does not offer capabilities that can compete with centralized services offering more sophisticated key management. A single public/private key pair lacks critical capabilities to make it suitable as an actual identity, most notable and obvious being the ability to recover from loss or theft of private keys, but arguably as important are friendly name aliases, modifiable multi-sig signing, updates, privacy, and the association of signed attestations by other identities to statements about properties of the identity.Verus ID enables free verifiable digital signatures for all through the Verus ID protocol as just one of the many new capabilities it enables. It is also the foundation upon which many new applications and additional capabilities can be built.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is Verus ID just a copy of Bitcoin's digital signature technology?",
+            "No, Verus ID is not just a copy of Bitcoin's digital signature technology. While Bitcoin does offer ways to sign messages with specific private keys that can be verified against public addresses, Verus ID enables free verifiable digital signatures for all through the Verus ID protocol, which is a more advanced and comprehensive identity management system.",
+            "Bitcoin, which was first to enable worldwide, P2P decentralized blockchain transactions, and most of its derivatives, offer ways to sign messages with specific private keys that can be verified against public addresses. While that does offer some limited signing capability, it does not offer capabilities that can compete with centralized services offering more sophisticated key management. A single public/private key pair lacks critical capabilities to make it suitable as an actual identity, most notable and obvious being the ability to recover from loss or theft of private keys, but arguably as important are friendly name aliases, modifiable multi-sig signing, updates, privacy, and the association of signed attestations by other identities to statements about properties of the identity.Verus ID enables free verifiable digital signatures for all through the Verus ID protocol as just one of the many new capabilities it enables. It is also the foundation upon which many new applications and additional capabilities can be built.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f2d8b723-9e68-46ab-8e7f-8cebeab408dd"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getdeprecationinfo` command on the testnet?",
+    "The `getdeprecationinfo` command is actually only applicable on mainnet, not on testnet. It returns an object containing the current version and deprecation block height.",
+    "getdeprecationinfo\nReturns an object containing current version and deprecation block height. Applicable only on mainnet.\n\nResult:\n{\n \"version\": xxxxx,           (numeric) the server version\n \"subversion\": \"/MagicBean:x.y.z[-v]/\",   (string) the server subversion string\n \"deprecationheight\": xxxxx,      (numeric) the block height at which this version will deprecate and shut down\n}\n\nExamples:\n> verus getdeprecationinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getdeprecationinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getdeprecationinfo"
+]

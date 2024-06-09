@@ -1,0 +1,6 @@
+[
+    "Why do you need to have a Bridge.PBaaSChain address to send currency from PBaaSChain to VRSCTEST?",
+    "You don't need a Bridge.PBaaSChain address to send currency from PBaaSChain to VRSCTEST. The `via` parameter in the `sendcurrency` command is used to specify the bridge to use for the transfer, which in this case is Bridge.PBaaSChain. This is a bridge that facilitates the transfer of currency between the two chains, but it's not an address that needs to be owned or controlled by the user.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

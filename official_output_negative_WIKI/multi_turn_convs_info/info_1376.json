@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "When setting the transparent limit parameter to zero, what is the maximum number of UTXOs that can be selected for merging?",
+            "When the transparent limit parameter is set to zero, the number of UTXOs selected for merging is not fixed and can vary. Before Overwinter is active, the `-mempooltxinputlimit` option determines the number of UTXOs. After Overwinter has activated, the number of UTXOs is limited based on the size of the transaction, with a maximum transaction size constraint of 100000 bytes before Sapling and 2000000 bytes once Sapling activates.",
+            "The number of UTXOs and notes selected for merging can be limited by the caller. If the transparent limit parameter is set to zero, and Overwinter is not yet active, the `-mempooltxinputlimit` option will determine the number of UTXOs. After Overwinter has activated `-mempooltxinputlimit` is ignored and having a transparent input limit of zero will mean limit the number of UTXOs based on the size of the transaction. Any limit is constrained by the consensus rule defining a maximum transaction size of 100000 bytes before Sapling, and 2000000 bytes once Sapling activates.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Is it true that if the transparent limit parameter is set to a non-zero value, there is no limit to the number of UTXOs that can be selected for merging?",
+            "No, that's not correct. Even if the transparent limit parameter is set to a non-zero value, there is still a limit to the number of UTXOs that can be selected for merging due to the consensus rule defining a maximum transaction size. The maximum transaction size is 100000 bytes before Sapling and 2000000 bytes once Sapling activates.",
+            "The number of UTXOs and notes selected for merging can be limited by the caller. If the transparent limit parameter is set to zero, and Overwinter is not yet active, the `-mempooltxinputlimit` option will determine the number of UTXOs. After Overwinter has activated `-mempooltxinputlimit` is ignored and having a transparent input limit of zero will mean limit the number of UTXOs based on the size of the transaction. Any limit is constrained by the consensus rule defining a maximum transaction size of 100000 bytes before Sapling, and 2000000 bytes once Sapling activates.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Does the `-mempooltxinputlimit` option have any effect on the number of UTXOs selected for merging after Overwinter has activated?",
+            "No, it doesn't. After Overwinter has activated, the `-mempooltxinputlimit` option is ignored, and the number of UTXOs selected for merging is limited based on the size of the transaction, with a maximum transaction size constraint of 2000000 bytes once Sapling activates.",
+            "The number of UTXOs and notes selected for merging can be limited by the caller. If the transparent limit parameter is set to zero, and Overwinter is not yet active, the `-mempooltxinputlimit` option will determine the number of UTXOs. After Overwinter has activated `-mempooltxinputlimit` is ignored and having a transparent input limit of zero will mean limit the number of UTXOs based on the size of the transaction. Any limit is constrained by the consensus rule defining a maximum transaction size of 100000 bytes before Sapling, and 2000000 bytes once Sapling activates.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "bb7bca38-ea06-4e70-8e1e-404f5f42f83a"
+]

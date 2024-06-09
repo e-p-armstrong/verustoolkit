@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got some questions about Verus commands. I was playing around with the `definecurrency` command and I set `proofprotocol` to 1. What does that do?\n\n**AI Assistant:**\nSetting `proofprotocol` to 1 in the `definecurrency` command is not a documented or supported option. If you're trying to achieve a specific goal, please provide more context or clarify what you're trying to achieve. I'd be happy to help you figure it out.\n\n**User:**\nOkay, no worries. I was also trying to transfer some existing coins of \"mycoin\" to a different address using the `sendcurrency` command. How do I do that?\n\n**AI Assistant:**\nThe provided `sendcurrency` command is actually used to mint new coins, not transfer existing ones. To transfer existing coins, you would need to use a different command or parameters. The command shown is specifically for minting new coins, not transferring existing ones. If you can provide more details on what you're trying to do, I can try to help you with the correct command.\n\n**User:**\nOne more question. I saw a parameter called `minpreconversion` in the `definecurrency` command. What's the purpose of that?\n\n**AI Assistant:**\nThe `minpreconversion` parameter is used to define the minimum amounts of currencies required to convert to the new currency, \"mycoin\". In this case, it's set to `[10000, 5.1298]`, which means that at least 10,000 VRSCTEST and 5.1298 GOLD are required to convert to mycoin.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What does it mean when you set `proofprotocol` to 1 in the `definecurrency` command?",
+            "Setting `proofprotocol` to 1 in the `definecurrency` command is not a documented or supported option. If you're trying to achieve a specific goal, please provide more context or clarify what you're trying to achieve.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How do you transfer existing coins of \"mycoin\" to a different address using the `sendcurrency` command?",
+            "The provided `sendcurrency` command is actually used to mint new coins, not transfer existing ones. To transfer existing coins, you would need to use a different command or parameters. The command shown is specifically for minting new coins, not transferring existing ones.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `minpreconversion` parameter in the `definecurrency` command?",
+            "The `minpreconversion` parameter is used to define the minimum amounts of currencies required to convert to the new currency, \"mycoin\". In this case, it's set to `[10000, 5.1298]`, which means that at least 10,000 VRSCTEST and 5.1298 GOLD are required to convert to mycoin.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":97, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":[20000]'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

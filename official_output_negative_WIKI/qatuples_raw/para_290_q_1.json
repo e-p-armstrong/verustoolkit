@@ -1,0 +1,6 @@
+[
+    "Does the `verus` command `getcurrencyconverters` return all possible currency pairs that can be converted between each other?",
+    "No, the `getcurrencyconverters` command does not return all possible currency pairs that can be converted between each other. It returns all currencies that have a market between the two specified currencies (e.g., BTC and ETH) at or above the liquidity threshold.",
+    "o, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,6 @@
+[
+    "Can I use the `gettransaction` command without specifying a transaction ID?",
+    "No, you cannot use the `gettransaction` command without specifying a transaction ID. The `txid` argument is required, and it must be a string representing the transaction ID.",
+    "gettransaction \"txid\" ( includeWatchonly )Get detailed information about in-wallet transaction <txid>Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+    "./raw_text_input_api_text/gettransaction"
+]

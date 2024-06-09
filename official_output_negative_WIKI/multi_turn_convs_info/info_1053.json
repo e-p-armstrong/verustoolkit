@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "Can I create a currency with any name I want, without needing an ID with that name?",
+            "No, you cannot create a currency with any name you want without needing an ID with that name. To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level.\nFirst, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\nof course, since this is a test currency, I send myself some to start. The identity of the curre",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I create multiple currencies with the same name using different IDs?",
+            "No, you cannot create multiple currencies with the same name using different IDs. As stated, the controller of an ID with a specific name can only create a currency of that name once. This means that once a currency with a specific name is created, no one else can create another currency with the same name, even if they have an ID with that name.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level.\nFirst, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\nof course, since this is a test currency, I send myself some to start. The identity of the curre",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Does the `definecurrency` command allow me to create a currency without specifying an ID?",
+            "No, the `definecurrency` command requires an ID to create a currency. In the example provided, the command `./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'` defines a currency named \"gold\" and specifies the ID \"mike@\" for preallocation.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"my\", offers to attribute the coins some utility or product value if the purchase exceeds a certain level.\nFirst, I could define the currency \"gold\" as follows:\n```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"gold\",\"options\":96,\"currencies\":[\"vrsctest\"],\"conversions\":[0.01],\"minpreconversion\":[1000],\"preallocations\":[{\"mike@\":50000000.00000000}]}'\n```\nof course, since this is a test currency, I send myself some to start. The identity of the curre",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c80ef3d9-4af3-45f8-9fa0-c74f2238519a"
+]

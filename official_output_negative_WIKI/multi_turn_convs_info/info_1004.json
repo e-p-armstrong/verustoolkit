@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can you explain how to close a single offer using the `closeoffers` command?",
+            "The `closeoffers` command actually closes all offers listed, not a single offer. To close specific offers, you need to provide an array of hex tx ids of the offers to close as the first argument. For example: `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]')`.",
+            "## Marketplace\n### `closeoffers ('[\"offer1_txid\", \"offer2_txid\", ...]') (transparentorprivatefundsdestination) (privatefundsdestination)`\nCloses all offers listed, if they are still valid and belong to this wallet.\nAlways closes expired offers, even if no parameters are given\n#### Arguments\n1. `[\"offer1_txid\", \"offer2_txid\", ...]`   (array, optional) array of hex tx ids of offers to close\n2. transparentorprivatefundsdestination    (transparent or private address, optional) destination for closing funds\n3. privatefundsdestination          (private address, optional) destination for native funds only#### Results\nnull return### `getoffers \"currencyorid\" (iscurrency) (withtx)`\nReturns all open offers for a specific currency or ID",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b71c2807-b878-4c75-8ef9-bab6a6791dbd"
+]

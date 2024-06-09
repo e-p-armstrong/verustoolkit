@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I've been looking at the currency definitions in Verus, and I'm not sure what the `OPTION_FRACTIONAL` option does. Can you help me out?\n\n**AI Assistant:**\nThe `OPTION_FRACTIONAL` option is actually set to 1, not 2. Its purpose is to allow reserve conversion using base calculations when set. It doesn't restrict ID creation to controlling IDs, which is the function of the `OPTION_ID_ISSUANCE` option.\n\nWould you like me to explain more about how reserve conversion works in Verus, or is there something else you'd like to know about currency definitions?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `OPTION_FRACTIONAL` option in currency definitions, and why is it set to 2?",
+            "The `OPTION_FRACTIONAL` option is actually set to 1, not 2. Its purpose is to allow reserve conversion using base calculations when set. It does not restrict ID creation to controlling IDs, which is the function of the `OPTION_ID_ISSUANCE` option.",
+            "bvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\n### Defining a Currency\n#### Currency Options\n```\nOPTION_FRACTIONAL = 1         // allows reserve conversion using base calculations when set\nOPTION_ID_ISSUANCE = 2         // clear is permissionless, if set, IDs may only be created by controlling ID\nOPTION_ID_STAKING = 4         // all IDs on chain stake equally, rather than value-based staking\nOPTION_ID_REFERRALS = 8        // if set, this chain supports referrals\nOPTION_ID_REFERRALREQUIRED = 16    // if set, this chain requires referrals\nOPTION_TOKEN = 32           // if set, this is a token, not a native currency\nOPTION_SINGLECURRENCY = 64       // for PBaaS chains or gateways to potentially restrict to single currency\nOPTION_GATEWAY = 128          // if set, this routes external currencies\nOPTION_PBAAS = 256           // this is a PBaaS chain definition\nOPTION_GATEWAY_CONVERTER = 512     // this means that for a specific PBaaS gateway, this is the default converter and will publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm having some trouble with the `currencyconverters` API. I want to use it to retrieve all currencies that have exactly 500 VRSC in reserve. Can you help me with that?\n\n**AI Assistant:**\nI'd be happy to help! However, I need to correct you - the `currencyconverters` API actually retrieves all currencies that have at least 1000 VRSC in reserve, not exactly 500 VRSC. Additionally, it also filters currencies that have a reserve ratio greater than 10% VRSC and have all listed currencies as reserves. So, unfortunately, you can't use it to get currencies with exactly 500 VRSC in reserve. Is there anything else I can help you with?\n\n**User:**\nActually, I have another question. What is the purpose of the `getcurrencyconverters` command with a specific currency argument, such as `verus -chain=VRSCTEST getcurrencyconverters usd`?\n\n**AI Assistant:**\nThe `getcurrencyconverters` command with specific currency arguments, such as `verus -chain=VRSCTEST getcurrencyconverters btc eth`, actually returns all currencies that have markets for the specified currencies (in this case, BTC and ETH) at or above the liquidity threshold. It does not return information about a single specific currency, like USD. So, in your example, it would return all currencies that have a market for USD, not information about USD itself.\n\n**User:**\nOne last question. How do I use the `currencyconverters` API to retrieve all currencies that have a reserve ratio less than 5% VRSC?\n\n**AI Assistant:**\nUnfortunately, the `currencyconverters` API doesn't allow you to filter currencies by a reserve ratio less than 5% VRSC. In fact, it does the opposite - it filters currencies that have a reserve ratio greater than 10% VRSC, along with having at least 1000 VRSC in reserve and having all listed currencies as reserves. So, you can't use it to get currencies with a reserve ratio less than 5% VRSC.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `currencyconverters` API to retrieve all currencies that have exactly 500 VRSC in reserve?",
+            "The `currencyconverters` API actually retrieves all currencies that have at least 1000 VRSC in reserve, not exactly 500 VRSC. Additionally, it also filters currencies that have a reserve ratio greater than 10% VRSC and have all listed currencies as reserves.",
+            "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the purpose of the `getcurrencyconverters` command with a specific currency argument, such as `verus -chain=VRSCTEST getcurrencyconverters usd`?",
+            "The `getcurrencyconverters` command with specific currency arguments, such as `verus -chain=VRSCTEST getcurrencyconverters btc eth`, actually returns all currencies that have markets for the specified currencies (in this case, BTC and ETH) at or above the liquidity threshold. It does not return information about a single specific currency, like USD.",
+            "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "How do I use the `currencyconverters` API to retrieve all currencies that have a reserve ratio less than 5% VRSC?",
+            "The `currencyconverters` API actually filters currencies that have a reserve ratio greater than 10% VRSC, not less than 5% VRSC. It only returns currencies that meet this specific condition, along with having at least 1000 VRSC in reserve and having all listed currencies as reserves.",
+            "currencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

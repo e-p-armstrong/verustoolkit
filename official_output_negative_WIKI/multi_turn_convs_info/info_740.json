@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the command to start the CLI walletdaemon for the mainnet?",
+            "The command provided is actually for starting the CLI walletdaemon for the testnet, not the mainnet. The correct command for the testnet is `verusd -chain=VRSCTEST`. If you want to start the CLI walletdaemon for the mainnet, you would use a different command, without the `-chain=VRSCTEST` option.",
+            "1. Start your Verus Desktop wallet.\n2. If you have never run Verus testnet on your system before:\n 1. Go to `settings` (cogwheel icon) and select `General Settings`.\n 2. Select `Enable VRSCTEST`.\n 3. Click `Save Changes`\n 4. Restart Verus desktop\n3. When logged in, click `Add Coin`, select `Verus Testnet` and click `Continue`.\n4. Select the startup parameters you desire (Native (Lite mode is not available on testnet), Staking, mining (specify number of threads), reindex blockchain and/or rescan wallet) and click `Add Coin`.\n\n**CLI wallet**\n1. start CLI walletdaemon using these parameters:\n  `verusd -chain=VRSCTEST` \n  Any extra parameter that you are used to for VRSC (like `-mint` or `-pubkey=`) can be appended as well.\n2. commands through the CLI are in the following format:\n  `verus -chain=VRSCTEST` \n  The only difference with the normal VRSC chain is the `-chain=VRSCTEST` option, that is added.\n\nCreated by Oink.vrsc@, inspired by 0x03.vrsc@.\n\nNote: revision date 2020-11-11.",
+            "./raw_text_input_wiki/how-to_join_testnet.md"
+        ],
+        [
+            "Can I use the same commands for the CLI wallet on both the mainnet and testnet?",
+            "No, the commands for the CLI wallet are slightly different for the mainnet and testnet. For the testnet, you need to add the `-chain=VRSCTEST` option, whereas for the mainnet, you would not use this option. The format for the testnet is `verus -chain=VRSCTEST`, while for the mainnet, it would be just `verus`.",
+            "1. Start your Verus Desktop wallet.\n2. If you have never run Verus testnet on your system before:\n 1. Go to `settings` (cogwheel icon) and select `General Settings`.\n 2. Select `Enable VRSCTEST`.\n 3. Click `Save Changes`\n 4. Restart Verus desktop\n3. When logged in, click `Add Coin`, select `Verus Testnet` and click `Continue`.\n4. Select the startup parameters you desire (Native (Lite mode is not available on testnet), Staking, mining (specify number of threads), reindex blockchain and/or rescan wallet) and click `Add Coin`.\n\n**CLI wallet**\n1. start CLI walletdaemon using these parameters:\n  `verusd -chain=VRSCTEST` \n  Any extra parameter that you are used to for VRSC (like `-mint` or `-pubkey=`) can be appended as well.\n2. commands through the CLI are in the following format:\n  `verus -chain=VRSCTEST` \n  The only difference with the normal VRSC chain is the `-chain=VRSCTEST` option, that is added.\n\nCreated by Oink.vrsc@, inspired by 0x03.vrsc@.\n\nNote: revision date 2020-11-11.",
+            "./raw_text_input_wiki/how-to_join_testnet.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e64d2304-dc83-4b82-8333-0c3475d81459"
+]

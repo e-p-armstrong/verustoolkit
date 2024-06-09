@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getidentity` command without providing any arguments?",
+    "The `getidentity` command requires at least one argument, which is the \"name@ || iid\" string. This string is a required argument that specifies the identity to retrieve. Without providing this argument, the command will not function as intended.",
+    "getidentity \"name@ || iid\" (height) (txproof) (txproofheight)\n\nArguments\n  \"name@ || iid\"            (string, required) name followed by \"@\" or i-address of an identity\n  \"height\"               (number, optional) default=current height, return identity as of this height, if -1 include mempool\n  \"txproof\"              (bool, optional) default=false, if true, returns proof of ID\n  \"txproofheight\"           (number, optional) default=\"height\", height from which to generate a proof\n\nResult:\n\nExamples:\n> verus getidentity \"name@\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getidentity\", \"params\": [\"name@\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getidentity"
+]

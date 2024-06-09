@@ -1,0 +1,6 @@
+[
+    "Does this `find` command only remove files with the exact name \"wallet\" in the `$DEST_FOLDER` directory?",
+    "No, the command removes files with names starting with \"wallet\", not just the exact name \"wallet\". The `wallet*` pattern is a glob that matches any file name that starts with \"wallet\".",
+    "# Keep only last 6 days - BE SURE to fully understand how it works, as every \"rm\" command!\nfind $DEST_FOLDER/wallet* -type f -mtime +6 -exec rm {} ;\n```\n\n(submitted by @TexWiller)\n\nNote: last revision date 2020-02-26.",
+    "./raw_text_input_wiki/faq-lin05_daily_cloud_backup.md"
+]

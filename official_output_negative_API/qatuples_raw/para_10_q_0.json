@@ -1,0 +1,6 @@
+[
+    "What does the `zcsamplejoinsplit` command do to a transaction?",
+    "The `zcsamplejoinsplit` command doesn't do anything to a transaction. According to the text, it performs a joinsplit and returns the JSDescription, but it doesn't mention modifying a transaction.",
+    "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+    "./raw_text_input_api_text/zcsamplejoinsplit"
+]

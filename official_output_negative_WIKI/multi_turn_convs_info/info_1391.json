@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I specify a filename with a file extension for the `z_exportwallet` command?",
+            "You can't specify a filename with a file extension for the `z_exportwallet` command. The filename you replace `<mywalletexport>` with can only contain letters and figures, no other characters, which means it cannot have a file extension.",
+            "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+            "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+        ],
+        [
+            "Can I run the `z_exportwallet` command in Agama by simply typing `z_exportwallet <mywalletexport>` in the CLI section?",
+            "No, you need to select VRSC in the CLI section of Agama, then type `z_exportwallet <mywalletexport>` and click the button below to run it.",
+            "Note: The filename you replace`<mywalletexport>` with, can only contain letters and figures, no other characters, so it **cannot** have an file-extension* Verus Desktop:\n  Go to `Settings`, `Coin Settings` en click in the textbox shown there.\n  Enter `run z_exportwallet <mywalletexport>` en press enter to execute the command.\n * Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_exportwallet <mywalletexport>` and click the button below to run it.\n * linux CLI:\n  run `./verus z_exportwallet <mywalletexport>`\n * win CLI:\n  run `verus z_exportwallet <mywalletexport>`",
+            "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e42b73fe-95bb-4f1c-bc6b-ea19bde68f73"
+]

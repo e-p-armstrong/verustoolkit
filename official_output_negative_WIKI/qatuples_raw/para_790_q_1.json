@@ -1,0 +1,6 @@
+[
+    "Can PBaaS chains ever follow a chain tip that is not their witnessed tip?",
+    "No, PBaaS chains will always follow their proof of power protocol and lock to their witnessed tips. The text explicitly states that no matter what other notarizations are present, PBaaS chains will always follow their own protocol and lock to their witnessed tips. This means that PBaaS chains will never follow a chain tip that is not their witnessed tip.",
+    "mmunity opts to use the Komodo notary service, Komodo notarizations will continue to ensure a stable chain tip, but no matter what other notarizations are present, PBaaS chains will always follow their proof of power protocol and lock to their witnessed tips as well.",
+    "./raw_text_input_wiki/release_notes.md"
+]

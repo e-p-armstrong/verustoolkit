@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having trouble with a command. How do I use the `getcurrencyconverters` command to retrieve all currencies that have exactly 500 VRSC in reserve?\n\n**AI Assistant:**\nActually, the `getcurrencyconverters` command doesn't quite do what you think it does. It doesn't retrieve currencies with exactly 500 VRSC in reserve. Instead, it retrieves currencies that have at least 1000 VRSC in reserve, not 500. Additionally, it also filters currencies by requiring a >10% VRSC reserve ratio and having all listed currencies as reserves.\n\n**User:**\nOh, I see. Thanks for the correction! So, what is the purpose of the `getcurrencyconverters` command if I don't specify any currencies as arguments?\n\n**AI Assistant:**\nWell, the `getcurrencyconverters` command actually requires you to specify currencies as arguments, such as `getcurrencyconverters \"currency1\" \"currency2\" ...`. Without specifying currencies, the command won't work as intended. It's used to retrieve currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `getcurrencyconverters` command to retrieve all currencies that have exactly 500 VRSC in reserve?",
+            "The `getcurrencyconverters` command doesn't actually retrieve currencies with exactly 500 VRSC in reserve. It retrieves currencies that have at least 1000 VRSC in reserve, not 500. Additionally, it also filters currencies by requiring a >10% VRSC reserve ratio and having all listed currencies as reserves.",
+            "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the purpose of the `getcurrencyconverters` command if I don't specify any currencies as arguments?",
+            "The `getcurrencyconverters` command actually requires you to specify currencies as arguments, such as `getcurrencyconverters \"currency1\" \"currency2\" ...`. Without specifying currencies, the command won't work as intended. It's used to retrieve currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves.",
+            "### `getcurrencyconverters \"currency1\" \"currency2\" ... | 'json object'`\nRetrieves all currencies that have at least 1000 VRSC in reserve, are >10% VRSC reserve ratio, and have all listed currencies as reserves",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

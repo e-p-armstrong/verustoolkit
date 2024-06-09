@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I reset my testnet without closing Verus?",
+            "You can't reset your testnet without closing Verus. To reset your testnet, you need to make sure Verus is closed (and no testnet daemon is running) and then delete the specified directories. After that, you can restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest, and re-add verustest native).",
+            "## Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I reset my testnet without restarting the testnet daemon?",
+            "No, you cannot reset your testnet without restarting the testnet daemon. After deleting the specified directories, you need to restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest, and re-add verustest native) to complete the reset process.",
+            "## Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "85062c5a-aa30-440c-a107-5671c8770cba"
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "When sending coinbase UTXOs to a taddr, can I specify a change address?",
+            "Actually, when sending coinbase UTXOs to a zaddr, change is not allowed. The entire value of the UTXO(s) must be consumed. There is no mention of this restriction applying to taddr.",
+            "#### Result:\n```json\n{\n \"remainingUTXOs\": xxx        (numeric) Number of UTXOs still available for merging.\n \"remainingTransparentValue\": xxx  (numeric) Value of UTXOs still available for merging.\n \"remainingNotes\": xxx        (numeric) Number of notes still available for merging.\n \"remainingShieldedValue\": xxx    (numeric) Value of notes still available for merging.\n \"mergingUTXOs\": xxx         (numeric) Number of UTXOs being merged.\n \"mergingTransparentValue\": xxx   (numeric) Value of UTXOs being merged.\n \"mergingNotes\": xxx         (numeric) Number of notes being merged.\n \"mergingShieldedValue\": xxx     (numeric) Value of notes being merged.\n \"opid\": xxx             (string) An operationid to pass to z_getoperationstatus to get the result of the operation.\n}\n```Examples\n```bash\n> verus z_mergetoaddress '[\"ANY_SAPLING\", \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"]' ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_mergetoaddress\", \"params\": [[\"ANY_SAPLING\", \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\"], \"ztfaW34Gj9FrnGUEf833ywDVL62NWXBM81u6EQnM6VR45eYnXhwztecW1SjxA7JrmAXKJhxhj3vDNEpVCQoSvVoSpmbhtjf\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `z_sendmany \"fromaddress\" [{\"address\":... ,\"amount\":...},...] ( minconf ) ( fee )`\nSend multiple times. Amounts are decimal numbers with at most 8 digits of precision.\nChange generated from a taddr flows to a new taddr address, while change generated from a zaddr returns to itself.\nWhen sending coinbase UTXOs to a zaddr, change is not allowed. The entire value of the UTXO(s) must be consumed.\nBefore Sapling activates, the maximum number of zaddr outputs is 54 due to transaction size limits.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "021693d0-bca9-479f-8761-db69529e2ef2"
+]

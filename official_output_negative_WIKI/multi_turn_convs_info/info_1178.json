@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the default value of the \"minconf\" parameter if it's not specified in the transaction?",
+            "The default value of the \"minconf\" parameter is actually 1, not 0. This means that by default, the transaction will only use funds that have been confirmed at least once.",
+            "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What happens if you set \"returntxtemplate\" to true when sending a transaction?",
+            "If you set \"returntxtemplate\" to true, the transaction information will be returned without submitting the transaction to the chain. This means that the transaction will not be broadcast to the network or recorded on the blockchain.",
+            "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can you send a transaction from a decentralized currency ID to create new currency?",
+            "No, sending a transaction from a currency ID only creates new currency if the currency ID is from a centralized currency. Decentralized currencies do not work in the same way.",
+            "if the transaction is sent from the currency ID of a centralized currency, this creates new currency to send\n  }, ... ]\n  ```\n3. \"minconf\"         (numeric, optional, default=1) only use funds confirmed at least this many times.\n4. \"feeamount\"        (numeric, optional) specific fee amount requested instead of default miner's fee.\n5. \"returntxtemplate     (boolean, optional, default false) if true, returns transaction info without submitting the transaction to the chain.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "f162dc5c-f455-4e0c-8d9d-86b0b0b86e70"
+]

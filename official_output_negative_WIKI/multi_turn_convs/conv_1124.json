@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHi there! I've been trying to figure out how to retrieve all currencies using the `getcurrencyconverters` API. Is it possible to use this API to get all currencies, regardless of their reserve ratio or amount?\n\n**AI Assistant:**\nUnfortunately, the `getcurrencyconverters` API is designed to filter currencies based on specific criteria. It only retrieves currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves. It does not return all currencies, regardless of their reserve ratio or amount. So, in this case, you won't be able to use this API to get all currencies. Are you trying to achieve something specific with this API, or would you like help with an alternative approach?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I use the `getcurrencyconverters` API to retrieve all currencies, regardless of their reserve ratio or amount?",
+            "No, the `getcurrencyconverters` API is designed to filter currencies based on specific criteria. It only retrieves currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves. It does not return all currencies, regardless of their reserve ratio or amount.",
+            "ueries\nThe `getcurrencyconverters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n  ```\n  verus -chain=VRSCTEST getcurrencyconverters btc eth\n  ```\n  Will return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "What happens to the remaining funds after referrers are paid when a new ID is created?",
+    "According to the protocol, 100% of all funds that are not paid to referrers go to miners or stakers of the blockchain. So, the remaining funds after referrers are paid are distributed to miners or stakers, not to some other entity or stored in a central account.",
+    "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+    "./raw_text_input_wiki/release_notes.md"
+]

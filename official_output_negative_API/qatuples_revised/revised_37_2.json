@@ -1,0 +1,6 @@
+[
+    "Is it possible to verify a signature without providing a signature to the `verifysignature` command?",
+    "No, it is not possible to verify a signature without providing a signature to the `verifysignature` command. The `signature` parameter is required to verify the signature. Without it, the command will not be able to perform the verification.",
+    "verifysignature '{\"address\":\"i-address or friendly name (t-address checks on simple signature w/hash and prefix, nothing else)\",\n         \"prefixstring\":\"extra string that is hashed during signature and must be supplied for verification\",\n         \"filename\":\"filepath/filename\" |\n          \"message\":\"any message\" |\n          \"messagehex\":\"hexdata\" |\n          \"messagebase64\":\"base64data\" |\n          \"datahash\":\"256bithex\",\n         \"vdxfkeys\":[\"vdxfkey i-address\", ...],\n         \"vdxfkeynames\":[\"vdxfkeyname, object for getvdxfid API, or friendly name ID -- no i-addresses\", ...],\n         \"boundhashes\":[\"hexhash\", ...],\n         \"hashtype\": \"sha256\" | \"sha256D\" | \"blake2b\" | \"keccak256\"\n         \"checklatest\": true | false\n         \"signature\":\"verificationsignature\"}'",
+    "./raw_text_input_api_text/verifysignature"
+]

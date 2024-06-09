@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to create a token with OPTION_NFT_TOKEN and OPTION_TOKEN flags. What are the benefits of setting the maximum pre-conversion to a non-zero value?\n\n**AI Assistant:**\nActually, when creating a token with OPTION_NFT_TOKEN and OPTION_TOKEN flags, the maximum pre-conversion must be 0 if the token is pre-allocated. This is because the maximum supply of the token is set to 1 satoshi, and pre-conversion is not applicable in this case. So, there are no benefits to setting the maximum pre-conversion to a non-zero value in this scenario.\n\n**User:**\nThat makes sense. I was also planning on resetting the Verus testnet. Should I keep the testnet daemon running while I do that?\n\n**AI Assistant:**\nNo, it's not recommended to keep the Verus testnet daemon running while resetting the testnet. You should make sure Verus is closed and no testnet daemon is running before deleting the necessary directories and restarting the testnet daemon (or relaunching Verus Desktop, deactivating verustest, and re-adding verustest native). This will ensure a clean reset and prevent any potential issues.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What are the benefits of setting the maximum pre-conversion to a non-zero value when creating a token with OPTION_NFT_TOKEN and OPTION_TOKEN flags?",
+            "When creating a token with OPTION_NFT_TOKEN and OPTION_TOKEN flags, the maximum pre-conversion must be 0 if the token is pre-allocated. This is because the maximum supply of the token is set to 1 satoshi, and pre-conversion is not applicable in this case.",
+            "### Tokenizing ID control (next generation NFT):\nThe currency definition have flags OPTION_NFT_TOKEN + OPTION_TOKEN, and a max supply of 1 satoshi that is either pre allocated or pre-converted to. If the token is pre-allocated, then the maximum pre-conversion must be 0.\n```\nverus -chain=vrsctest definecurrency '{\"name\":\"ID\",\"options\":2080,\"preallocations\":[{\"ControlTokenRecipient@\":0.00000001}],\"maxpreconversion\":[0]}'\n```The rest of these release notes are the same as the prior release. Drop by pbaas-development to start building your vision on Verus while helping get PBaaS ready for mainnet!## Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it recommended to keep the Verus testnet daemon running while resetting the testnet?",
+            "No, it's not recommended to keep the Verus testnet daemon running while resetting the testnet. You should make sure Verus is closed and no testnet daemon is running before deleting the necessary directories and restarting the testnet daemon (or relaunching Verus Desktop, deactivating verustest, and re-adding verustest native).",
+            "### Tokenizing ID control (next generation NFT):\nThe currency definition have flags OPTION_NFT_TOKEN + OPTION_TOKEN, and a max supply of 1 satoshi that is either pre allocated or pre-converted to. If the token is pre-allocated, then the maximum pre-conversion must be 0.\n```\nverus -chain=vrsctest definecurrency '{\"name\":\"ID\",\"options\":2080,\"preallocations\":[{\"ControlTokenRecipient@\":0.00000001}],\"maxpreconversion\":[0]}'\n```The rest of these release notes are the same as the prior release. Drop by pbaas-development to start building your vision on Verus while helping get PBaaS ready for mainnet!## Testnet Reset\nTo reset your testnet make sure Verus is closed (and no testnet daemon running) and delete the following directories, then restart the testnet daemon (or relaunch Verus Desktop, deactivate verustest and re-add verustest native):",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

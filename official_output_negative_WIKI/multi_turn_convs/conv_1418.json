@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm having some trouble with postfix and I'm hoping you can help me out. I was told to add the `smtp_tls_security_level=digest` setting, but I'm not really sure why it's necessary. Can you explain why I need this setting for sending emails with postfix?\n\n**AI Assistant:**\nActually, the correct setting is `smtp_tls_security_level=encrypt`, not `digest`. This setting is necessary to enforce TLS security in postfix when sending emails, such as when backing up the dat file. With this setting, postfix will use TLS encryption to secure the email transmission, which helps protect the emails from being intercepted or tampered with during transmission. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Why is the `smtp_tls_security_level=digest` setting necessary for sending emails with postfix?",
+            "The `smtp_tls_security_level` setting is actually set to `encrypt`, not `digest`. This setting is necessary to enforce TLS security in postfix when sending emails, such as when backing up the dat file.",
+            "In the following, the `*/5` is every 5 min, the `0` is on the hour every hour, the `0 12` is every day at 12 PM.\n\n##### CRONTAB\n\n```bash\n# m h dom mon dow  command\n*/5 * * * * /home/user/checkfornewblocks.sh\n0 * * * * /home/user/checkifverusdisrunning.sh\n0 12 * * * /home/user/backupwallet.sh\n```\nNote: For any emails sent (for backup of dat file for example) make sure to enforce TLS security in postfix by adding the following line to your /etc/postfix/main.cf\n`smtp_tls_security_level=encrypt`\n\n(submitted by @J Oliver Westbrook)\n\nNote: last revision date 2021-03-09.",
+            "./raw_text_input_wiki/faq-lin03_linux_scripts_make_life_easy.md"
+        ]
+    ]
+]

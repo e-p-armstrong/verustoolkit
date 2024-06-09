@@ -1,0 +1,6 @@
+[
+    "Why is the \"eraoptions\" field included in each era object?",
+    "The \"eraoptions\" field is an optional field, marked as \"(int) options (reserved)\".",
+    "ns and IDs)\n  \"eras\" : \"[obj, ...]\",         (objarray) different chain phases of rewards and convertibility\n  {\n   \"reward\" : \"[n, ...]\",        (int) reward start for each era in native coin\n   \"decay\" : \"[n, ...]\",        (int) exponential or linear decay of rewards during each era\n   \"halving\" : \"[n, ...]\",       (int) blocks between halvings during each era\n   \"eraend\" : \"[n, ...]\",        (int) block marking the end of each era\n   \"eraoptions\" : \"[n, ...]\",      (int) options (reserved)\n  }\n  \"nodes\"   : \"[obj, ..]\",  (objectarray, optional) up to 8 nodes that can be used to connect to the blockchain   [{\n     \"nodeidentity\" : \"txid\", (string, optional) internet, TOR, or other supported address for node\n     \"paymentaddress\" : n,   (int,   optional) rewards payment address\n    }, .. ]\n  \"lastconfirmedcurrencystate\" : {\n   }\n  \"besttxid\" : \"txid\"\n   }\n  \"confirmednotarization\" : {\n   }\n  \"confirmedtxid\" : \"txid\"\n }, ...\n]",
+    "./raw_text_input_api_text/listcurrencies"
+]

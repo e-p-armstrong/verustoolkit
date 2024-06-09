@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I add a new IP address to the ban list using the `clearbanned` command?",
+            "The `clearbanned` command does not add new IP addresses to the ban list. Instead, it clears all banned IPs, effectively removing all IP addresses from the ban list. If you want to add a new IP address to the ban list, you would need to use a different command.",
+            "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ],
+        [
+            "What is the purpose of the `clearbanned` command if it only shows the current list of banned IPs?",
+            "The `clearbanned` command does not show the current list of banned IPs. Its purpose is to clear all banned IPs, effectively removing all IP addresses from the ban list. This command is used to reset the ban list and allow previously banned IPs to access the system again.",
+            "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/clearbanned"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7648597b-cb6c-4f01-8372-1217b40161da"
+]

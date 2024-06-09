@@ -1,0 +1,6 @@
+[
+    "Can you explain how to use the `getNotarisationsForBlock` function to get a list of all blocks in the blockchain?",
+    "The `getNotarisationsForBlock` function does not return a list of all blocks in the blockchain. Instead, it takes a block hash as an input and returns notarisation transactions within that specific block. It does not provide a way to get a list of all blocks in the blockchain.",
+    "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+    "./raw_text_input_api_text/getNotarisationsForBlock"
+]

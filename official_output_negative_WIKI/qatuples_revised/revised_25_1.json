@@ -1,0 +1,6 @@
+[
+    "Can I create multiple currencies with the same name, as long as I have multiple IDs with that name?",
+    "No, that's not possible. According to the rules, you can only create one currency of a specific name, and that's tied to the ID of the same name. Once you've created a currency with a certain name, you can't create another one with the same name, even if you have multiple IDs with that name.",
+    "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+    "./raw_text_input_wiki/release_notes.md"
+]

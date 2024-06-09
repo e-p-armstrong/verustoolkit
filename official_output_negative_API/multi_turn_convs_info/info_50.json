@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I use the `listbanned` command to ban a specific IP address?",
+            "The `listbanned` command is used to list all banned IPs/Subnets, not to ban a specific IP address. It does not have the functionality to add new bans. The correct usage of `listbanned` is to retrieve a list of currently banned IPs/Subnets, as shown in the examples: `verus listbanned` or using the JSON-RPC method with `curl`.",
+            "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ],
+        [
+            "What is the default port used by the `listbanned` command?",
+            "The `listbanned` command does not have a default port. The port number `27486` is used in the example, but it is not a default port. The port number might be specific to the setup or configuration of the system.",
+            "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ],
+        [
+            "Can I use the `listbanned` command to whitelist an IP address?",
+            "No, the `listbanned` command is used to list banned IPs/Subnets, not to whitelist an IP address. It does not have the functionality to add or manage whitelisted IPs. Its purpose is to retrieve a list of currently banned IPs/Subnets.",
+            "listbanned\n\nList all banned IPs/Subnets.\n\nExamples:\n> verus listbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/listbanned"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "dd8b2dc4-3612-428e-ac7a-146c57732c0c"
+]

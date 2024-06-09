@@ -1,0 +1,6 @@
+[
+    "Can I use the `verus` command to query the blockchain using JSON-RPC?",
+    "No, the `verus` command is not used for JSON-RPC queries. The example provided shows how to use the `curl` command to send a JSON-RPC request to the Verus blockchain. The `verus` command is used for other purposes, such as getting peer information.",
+    "Examples:\n> verus getpeerinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpeerinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getpeerinfo"
+]

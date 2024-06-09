@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Is it possible to use the `decoderawtransaction` method with the Verus CLI without specifying a username?",
+            "Yes, it is possible to use the `decoderawtransaction` method with the Verus CLI without specifying a username. The example provided shows that when using the CLI, you can simply run `verus decoderawtransaction \"hexstring\"` without providing a username. However, when using the JSON-RPC API with `curl`, you do need to specify a username, as shown in the example: `curl --user myusername ...`.",
+            "Examples:\n> verus decoderawtransaction \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decoderawtransaction"
+        ],
+        [
+            "Does the `decoderawtransaction` method only work with the Verus JSON-RPC API?",
+            "No, the `decoderawtransaction` method can be used with both the Verus CLI and the Verus JSON-RPC API. The provided examples show how to use the method with both the CLI (`verus decoderawtransaction \"hexstring\"`) and the JSON-RPC API (`curl ...`).",
+            "Examples:\n> verus decoderawtransaction \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/decoderawtransaction"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5d1ce5c8-997d-4907-b3b2-f21a3341ea06"
+]

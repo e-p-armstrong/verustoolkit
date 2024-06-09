@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the main Verus wallet that is currently supported and widely used?",
+            "The Verus Agama GUI wallet is not the main wallet that is currently supported and widely used. In fact, it's been deprecated and is no longer supported. The main wallet is the Verus Desktop GUI wallet, which is a newly developed multi-coin wallet that supports VerusID.",
+            "Also check out the Guide on how to mine in under 5 minutes: https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e\n\n#### Wallets:\nVerus Agama GUI wallet is a forked Agama Desktop App for multiple coins (for Win, Linux and Mac). It's been deprecated now and no longer supported;\nVerus Desktop GUI wallet is a newly developed multi-coin wallet supporting VerusID https://github.com/VerusCoin/Verus-Desktop/releases (for Win, Linux, Mac and ARM Linux);\nthe CLI wallets can be found here: https://github.com/VerusCoin/VerusCoin/releases/\nThere's also possibilities to test coming PBaaS functionality in this wallet.\n\nA beta version of the Android mobile wallet can be found here: https://github.com/VerusCoin/Verus-Mobile/releases\nA beta version of the iOS mobile wallet can be accessed via this Apple TestFlight invite https://testflight.apple.com/join/ZS43lYcw\n\nOur Paper Wallet can be accessed here: https://paperwallet.verus.io\n\nIf you need a bootstrap, you can find it here: https://bootstrap.verus.io\n(a guide how to apply is pinned in #community-support channel in Discord: https://discord.gg/VRKMP2S or in the HOW-TO & FAQ section of our website https://wiki.verus.io/how-to/how-to_bootstrap.md)\n\nFor those interested in VerusPay, a guide can be found here: https://veruspay.io/setup/\nAnd finally for those interested in running various Veruscoin services: https://github.com/VerusCoin/VerusServicesSetup\n\nInformation compiled by Thoskk.vrsc@, complemented by Godballz.vrsc@ and Oink.vrsc@.\n\nNote: revision date 2020-11-11.",
+            "./raw_text_input_wiki/how-to_verus_info.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ea0a1acb-2ef4-44ca-ab7f-e49aa09fc7e8"
+]

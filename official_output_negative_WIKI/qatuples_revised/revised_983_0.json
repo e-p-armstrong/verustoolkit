@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `definecurrency` command when sending currency between blockchain networks?",
+    "You don't need to use the `definecurrency` command to send currency from one blockchain network to another. The `definecurrency` command is used to define a new currency, not to send existing currency from one chain to another. The command provided is actually a `sendcurrency` command, which is used to send currency from one address to another, and in this case, it's used to send currency from PBaaSChain to VRSCTEST.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,6 @@
+[
+    "Is the \"memo\" field always a human-readable string?",
+    "No, the \"memo\" field is a hexadecimal string representation of the memo field. There is a separate field called \"memoStr\" that returns the memo as a human-readable string, but only if the memo contains valid UTF-8 text.",
+    " n,            (numeric, sprout) the index of the JSDescription within vJoinSplit\n   \"jsOutput\" : n,         (numeric, sprout) the index of the output within the JSDescription\n   \"output\" : n,          (numeric, sapling) the index of the output within the vShieldedOutput\n   \"address\" : \"zcashaddress\",   (string) The Zcash address involved in the transaction\n   \"recovered\" : true|false    (boolean, sapling) True if the output is not for an address in the wallet\n   \"value\" : x.xxx         (numeric) The amount in VRSC\n   \"valueZat\" : xxxx        (numeric) The amount in zatoshis\n   \"memo\" : \"hexmemo\",       (string) Hexademical string representation of the memo field\n   \"memoStr\" : \"memo\",       (string) Only returned if memo contains valid UTF-8 text.\n  }\n  ,...\n ],\n}\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

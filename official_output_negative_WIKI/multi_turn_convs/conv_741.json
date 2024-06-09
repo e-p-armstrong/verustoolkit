@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a few questions about referrers and ID creation. How do referrers get rewarded when someone creates an ID?\n\n**AI Assistant:**\nReferrers are rewarded in a hierarchical manner. When someone creates an ID, 20 VRSC is sent to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID. This is a tiered system of rewards for referrers.\n\n**User:**\nThat makes sense. What about the miners and stakers? What percentage of funds go to them when an ID is created?\n\n**AI Assistant:**\n100% of all funds that are not paid to referrers go to miners or stakers of the blockchain. This means that any funds not allocated to referrers are distributed to those who maintain the blockchain, ensuring its security and integrity.\n\n**User:**\nI thought referrers received 50 VRSC when someone creates an ID. Is that correct?\n\n**AI Assistant:**\nNo, that's not correct. When someone creates an ID, 20 VRSC is sent to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID. There is no reward of 50 VRSC.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do referrers get rewarded when someone creates an ID?",
+            "Referrers are rewarded in a hierarchical manner. When someone creates an ID, 20 VRSC is sent to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID. This is a tiered system of rewards for referrers.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What percentage of funds go to miners or stakers when an ID is created?",
+            "100% of all funds that are not paid to referrers go to miners or stakers of the blockchain. This means that any funds not allocated to referrers are distributed to those who maintain the blockchain, ensuring its security and integrity.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Do referrers receive 50 VRSC when someone creates an ID?",
+            "No, that's not correct. When someone creates an ID, 20 VRSC is sent to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID. There is no reward of 50 VRSC.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

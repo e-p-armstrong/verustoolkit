@@ -1,0 +1,6 @@
+[
+    "Can you use the `listidentities` command without any arguments?",
+    "No, you can't use the `listidentities` command without any arguments. The command requires at least one argument, which is a boolean value indicating whether to include identities for which we can spend/authorize. The other arguments, `includecansign` and `includewatchonly`, are optional and have default values.",
+    "listidentities (includecanspend) (includecansign) (includewatchonly)\n\nArguments\n  \"includecanspend\"  (bool, optional, default=true)  Include identities for which we can spend/authorize\n  \"includecansign\"   (bool, optional, default=true)  Include identities that we can only sign for but not spend\n  \"includewatchonly\"  (bool, optional, default=false)  Include identities that we can neither sign nor spend, but are either watched or are co-signers with us\n\nResult:\n\nExamples:\n> verus listidentities true\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listidentities\", \"params\": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/listidentities"
+]

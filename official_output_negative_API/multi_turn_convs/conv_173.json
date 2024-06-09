@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm a bit confused about the `disconnectnode` command. Can you tell me how to use it to connect to a new node?\n\n**AI Assistant:**\nI think there's been a misunderstanding! The `disconnectnode` command doesn't actually connect to a new node. Instead, it immediately disconnects from a specified node. To connect to a new node, you would need to use a different command, such as `addnode` or `connect`.\n\n**User:**\nOh, I see! So what happens if I try to use the `disconnectnode` command without specifying a node?\n\n**AI Assistant:**\nYou can't use the `disconnectnode` command without specifying a node. The command requires a node argument, which is a string that specifies the node to disconnect from. If you try to use the command without specifying a node, it won't work. The node argument is necessary to tell the command which node to disconnect from.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `disconnectnode` command to connect to a new node?",
+            "The `disconnectnode` command does not connect to a new node. Instead, it immediately disconnects from a specified node. To connect to a new node, you would need to use a different command, such as `addnode` or `connect`.",
+            "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ],
+        [
+            "Can I use the `disconnectnode` command without specifying a node?",
+            "No, you cannot use the `disconnectnode` command without specifying a node. The command requires a node argument, which is a string that specifies the node to disconnect from. If you try to use the command without specifying a node, it will not work.",
+            "disconnectnode \"node\"\n\nImmediately disconnects from the specified node.\n\nArguments:\n1. \"node\"   (string, required) The node (see getpeerinfo for nodes)\n\nExamples:\n> verus disconnectnode \"192.168.0.6:8233\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"disconnectnode\", \"params\": [\"192.168.0.6:8233\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/disconnectnode"
+        ]
+    ]
+]

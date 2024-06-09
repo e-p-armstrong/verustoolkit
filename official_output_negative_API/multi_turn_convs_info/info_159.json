@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can you explain why the `revokeidentity` command always sends the transaction to the network, regardless of the value of \"returntx\"?",
+            "Actually, the \"returntx\" argument determines whether the transaction is sent to the network or not. If \"returntx\" is set to `true`, the transaction is signed by the wallet and returned, but not sent to the network. If \"returntx\" is set to `false` (which is the default), the transaction is sent to the network.",
+            "revokeidentity \"nameorID\" (returntx) (tokenrevoke) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrevoke\"           (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to revoke\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus revokeidentity \"nameorID\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"revokeidentity\", \"params\": [\"nameorID\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/revokeidentity"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "95fe1c2d-2f28-4080-b929-a632fcb1eeb4"
+]

@@ -1,0 +1,6 @@
+[
+    "Is there a way to access the Verus data folder on Windows 10 without knowing the exact file path?",
+    "No, there is no way to access the Verus data folder on Windows 10 without knowing the exact file path.\n\n**CORRECTION:**\nActually, you can access the Verus data folder on Windows 10 (and other OSes) by using the Verus Desktop application and clicking `Help` > `Show Verus data folder (default)`. This will reveal the default location of the Verus data folder.",
+    "### Verus `Wallet.dat`, Chaindata & `VRSC.conf` standard locations\n * Linux:\t\t`~/.komodo/VRSC`\n * Mac OS: \t`~/Library/Application Support/Komodo/VRSC`\n * Windows 10: \t`%AppData%\\Roaming\\Komodo\\VRSC\\`\n * OS independent through Verus Desktop: Click `help`, `Show Verus data folder (default)`\n\nNote: last revision date 2020-09-30.",
+    "./raw_text_input_wiki/faq-allos24_wallet.dat_and_vrsc.conf_location.md"
+]

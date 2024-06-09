@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a few questions about the Verus settings. What is the default timeout during HTTP requests set to? I think I heard it was 60...\n\n**AI Assistant:**\nActually, that's not correct. According to the documentation, the default timeout during HTTP requests is set to 30. However, you can modify this timeout using the `-rpcservertimeout=<n>` option if needed.\n\n**User:**\nAlright, thanks for the correction! I've got another question. I was looking at the software details and I saw that it was compiled on January 1, 2020. Who compiled it on that date?\n\n**AI Assistant:**\nI think there's some misinformation there. The software wasn't compiled on January 1, 2020. According to the information I have, the software was compiled by Oink.vrsc@, and the last revision date was May 3, 2024.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the default timeout during HTTP requests set to 60?",
+            "The default timeout during HTTP requests is not set to 60. According to the documentation, the default timeout is actually set to 30. This can be modified using the `-rpcservertimeout=<n>` option.",
+            "`-rpcservertimeout=<n>`\n    Timeout during HTTP requests (default: 30)\n\ncompiled by Oink.vrsc@.\nNote: last revision date 2024-05-03.",
+            "./raw_text_input_wiki/clifaq-01_verusd_options.md"
+        ],
+        [
+            "Who compiled the software on January 1, 2020?",
+            "The software was not compiled on January 1, 2020. It was compiled by Oink.vrsc@, and the last revision date was May 3, 2024.",
+            "`-rpcservertimeout=<n>`\n    Timeout during HTTP requests (default: 30)\n\ncompiled by Oink.vrsc@.\nNote: last revision date 2024-05-03.",
+            "./raw_text_input_wiki/clifaq-01_verusd_options.md"
+        ]
+    ]
+]

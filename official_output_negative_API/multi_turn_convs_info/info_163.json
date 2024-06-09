@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can I use the `getinfo` command to unlock my wallet for transfers?",
+            "No, the `getinfo` command does not unlock your wallet for transfers. The `unlocked_until` field in the output of the command shows the timestamp until which the wallet is unlocked for transfers, but it does not perform the unlocking itself.",
+            "getinfo\nReturns an object containing various state info.\n\nResult:\n{\n \"version\": xxxxx,      (numeric) the server version\n \"protocolversion\": xxxxx,  (numeric) the protocol version\n \"walletversion\": xxxxx,   (numeric) the wallet version\n \"blocks\": xxxxxx,      (numeric) the current number of blocks processed in the server\n \"timeoffset\": xxxxx,    (numeric) the time offset\n \"connections\": xxxxx,    (numeric) the number of connections\n \"tls_established\": xxxxx,  (numeric) the number of TLS connections established\n \"tls_verified\": xxxxx,   (numeric) the number of TLS connection with validated certificates\n \"proxy\": \"host:port\",   (string, optional) the proxy used by the server\n \"difficulty\": xxxxxx,    (numeric) the current difficulty\n \"testnet\": true|false,   (boolean) if the server is using testnet or not\n \"keypoololdest\": xxxxxx,  (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n \"keypoolsize\": xxxx,    (numeric) how many new keys are pre-generated\n \"unlocked_until\": ttt,   (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n \"paytxfee\": x.xxxx,     (numeric) the transaction fee set in VRSC/kB\n \"relayfee\": x.xxxx,     (numeric) minimum relay fee for non-free transactions in VRSC/kB\n \"errors\": \"...\"      (string) any error messages\n}\n\nExamples:\n> verus getinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getinfo"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c8e75958-fe5a-4275-a9e5-bcdd0e6ec09a"
+]

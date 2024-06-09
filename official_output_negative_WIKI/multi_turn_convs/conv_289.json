@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to create an NFT token using Verus, but I'm not sure about the options. Is the OPTION_NFT_TOKEN option used to create a multi-satoshi NFT token?\n\n**AI Assistant:**\nNo, actually, the OPTION_NFT_TOKEN option is used to create a single satoshi NFT token, which tokenizes control over the root ID. It's not for creating multi-satoshi NFT tokens.\n\n**User:**\nOkay, that helps clarify things. What about the OPTION_GATEWAY_NAMECONTROLLER option? Can I set it to any value?\n\n**AI Assistant:**\nNo, the OPTION_GATEWAY_NAMECONTROLLER option has a specific value, which is 1024. Similarly, the OPTION_NFT_TOKEN option has a specific value, which is 2048. You'll need to use those exact values for these options.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Is the OPTION_NFT_TOKEN option used to create a multi-satoshi NFT token?",
+            "No, the OPTION_NFT_TOKEN option is actually used to create a single satoshi NFT token, which tokenizes control over the root ID.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can the OPTION_GATEWAY_NAMECONTROLLER option be set to any value?",
+            "No, the OPTION_GATEWAY_NAMECONTROLLER option has a specific value, which is 1024. Similarly, the OPTION_NFT_TOKEN option has a specific value, which is 2048.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

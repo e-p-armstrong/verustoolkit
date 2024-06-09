@@ -1,0 +1,6 @@
+[
+    "Can I still login as Root User after setting `PermitRootLogin` to `yes` in the `/etc/ssh/sshd_config` file?",
+    "No, you shouldn't be able to login as Root User if you set `PermitRootLogin` to `no` in the `/etc/ssh/sshd_config` file. Setting it to `no` disables root login, which is a security measure to prevent unauthorized access to your system. If you set it to `yes`, then you would be able to login as Root User, but this is not recommended for security reasons.",
+    "Disable login with Root User\n(make sure your newly created user login works and has sudo rights)\n `sudo nano /etc/ssh/sshd_config`\nFind: PermitRootLogin yes\nAnd set to\nPermitRootLogin no\nApply new settings:\n `sudo systemctl restart sshd`\n\n(submitted by @karero, corrected by @Glennp, edited by Oink.vrsc@)\n\nNote: last revision date 2022-08-19.",
+    "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+]

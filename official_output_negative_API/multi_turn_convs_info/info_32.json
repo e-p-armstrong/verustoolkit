@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the minimum transaction fee that can be set using the `settxfee` command?",
+            "The minimum transaction fee is not specified, but the `settxfee` command sets the transaction fee per kB, and the amount is rounded to the nearest 0.00000001 VRSC/kB.",
+            "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/settxfee"
+        ],
+        [
+            "How do I set the transaction fee to a specific percentage of the transaction amount using the `settxfee` command?",
+            "The `settxfee` command does not allow setting the transaction fee as a percentage of the transaction amount. It only accepts a fixed amount in VRSC/kB as an argument.",
+            "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/settxfee"
+        ],
+        [
+            "Can I use the `settxfee` command to set a negative transaction fee?",
+            "No, the `settxfee` command does not allow setting a negative transaction fee. The amount argument must be a non-negative numeric value.",
+            "settxfee amount\n\nSet the transaction fee per kB.\n\nArguments:\n1. amount     (numeric, required) The transaction fee in VRSC/kB rounded to the nearest 0.00000001\n\nResult\ntrue|false    (boolean) Returns true if successful\n\nExamples:\n> verus settxfee 0.00001\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/settxfee"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "4af33239-04ae-4b1e-b0d9-82baabcfd33c"
+]

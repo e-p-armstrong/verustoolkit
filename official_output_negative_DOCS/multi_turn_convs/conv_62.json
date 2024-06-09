@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've got a few more questions about VerusIDs. How does VerusID's signature system work, and why are signatures created through VerusID forgable?\n\n**AI Assistant:**\nActually, I think there might be some misunderstanding. VerusID's signature system creates unforgable signatures. This means that once a signature is created, it cannot be altered or replicated by anyone else. The protocol allows for the verification of these signatures for free. So, it's not possible to forge signatures created through VerusID.\n\n**User:**\nThat's good to know. Another question I have is, is it possible for a single VerusID to have spending or signing ability over multiple other VerusIDs?\n\n**AI Assistant:**\nNo, it's actually the opposite. Multiple VerusIDs can have spending or signing ability over one VerusID. This is known as multisig, and it allows multiple organizations or people to manage a single VerusID. This feature provides an added layer of security and flexibility when managing digital assets.\n\n**User:**\nThat makes sense. One more question: Can you send public messages to VerusIDs?\n\n**AI Assistant:**\nNo, VerusID allows you to send private messages to other VerusIDs, not public messages. This feature provides a secure way to communicate with others using VerusIDs, keeping your messages confidential and protected.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How does VerusID's signature system work, and why are signatures created through VerusID forgable?",
+            "VerusID's signature system actually creates unforgable signatures. This means that once a signature is created, it cannot be altered or replicated by anyone else. The protocol allows for the verification of these signatures for free.",
+            "## Signatures\nCreate unforgable, verifiable signatures with VerusID. Sign files, hashes and messages. Use the protocol to verify those signatures for free.\n\n## Multisig\nMultiple VerusIDs can have spending or signing ability of one VerusID. This means that multiple organizations or people can manage a VerusID.\n\n## Messages\nSend private messages to VerusIDs.",
+            "./raw_text_input_docs/README_addresses.md"
+        ],
+        [
+            "Is it possible for a single VerusID to have spending or signing ability over multiple other VerusIDs?",
+            "No, it's actually the opposite. Multiple VerusIDs can have spending or signing ability over one VerusID. This is known as multisig, and it allows multiple organizations or people to manage a single VerusID.",
+            "## Signatures\nCreate unforgable, verifiable signatures with VerusID. Sign files, hashes and messages. Use the protocol to verify those signatures for free.\n\n## Multisig\nMultiple VerusIDs can have spending or signing ability of one VerusID. This means that multiple organizations or people can manage a VerusID.\n\n## Messages\nSend private messages to VerusIDs.",
+            "./raw_text_input_docs/README_addresses.md"
+        ],
+        [
+            "Can you send public messages to VerusIDs?",
+            "No, VerusID allows you to send private messages to other VerusIDs, not public messages. This feature provides a secure way to communicate with others using VerusIDs.",
+            "## Signatures\nCreate unforgable, verifiable signatures with VerusID. Sign files, hashes and messages. Use the protocol to verify those signatures for free.\n\n## Multisig\nMultiple VerusIDs can have spending or signing ability of one VerusID. This means that multiple organizations or people can manage a VerusID.\n\n## Messages\nSend private messages to VerusIDs.",
+            "./raw_text_input_docs/README_addresses.md"
+        ]
+    ]
+]

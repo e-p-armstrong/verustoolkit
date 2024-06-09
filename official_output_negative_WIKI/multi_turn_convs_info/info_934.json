@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `getinfo` command in Verus, and what information does it return?",
+            "The `getinfo` command returns an object containing various state info, including `version`, `protocolversion`, `VRSCversion`, `notarized`, `prevMoMheight`, `notarizedhash`, `notarizedtxid`, `notarizedtxid_height`, `KMDnotarized_height`, `notarized_confirms`, `blocks`, `timeoffset`, `tiptime`, `connections`, `proxy`, `difficulty`, and `testnet`. These fields provide information about the server's version, protocol version, notarization status, block count, time offset, and more.",
+            "## Control\n### `getinfo`\nReturns an object containing various state info.\n#### Result:\n```json\n{\n \"version\": xxxxx,      (numeric) the server version\n \"protocolversion\": xxxxx,  (numeric) the protocol version\n \"VRSCversion\": \"xxxxx\",   (string) the daemon version\n \"notarized\": xxxxx,     (numeric) most recent notarization block\n \"prevMoMheight\": xxxxx,   (numeric) previous notarization block\n \"notarizedhash\": \"hash\",  (hash) notarization hash\n \"notarizedtxid\": \"hash\",  (hash) notarization txid\n \"notarizedtxid_height\": \"mempool\",\n \"KMDnotarized_height\": n,  (numeric)\n \"notarized_confirms\": n,  (numeric)\n \"blocks\": xxxxxx,      (numeric) the current number of blocks processed in the server\n \"timeoffset\": xxxxx,    (numeric) the time offset\n \"tiptime\": xxxxx,      (numeric) the time of the tip of the chain\n \"connections\": xxxxx,    (numeric) the number of connections\n \"proxy\": \"host:port\",   (string, optional) the proxy used by the server\n \"difficulty\": xxxxxx,    (numeric) the current difficulty\n \"testnet\": true|false,   (boolean) if the server is using testnet or not",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How do I use the `getinfo` command to get a list of all the blocks in the Verus blockchain?",
+            "The `getinfo` command does not return a list of all the blocks in the Verus blockchain. Instead, it returns an object containing various state info, including the current number of blocks processed in the server (`blocks` field). If you need to retrieve a list of blocks, you would need to use a different command.",
+            "## Control\n### `getinfo`\nReturns an object containing various state info.\n#### Result:\n```json\n{\n \"version\": xxxxx,      (numeric) the server version\n \"protocolversion\": xxxxx,  (numeric) the protocol version\n \"VRSCversion\": \"xxxxx\",   (string) the daemon version\n \"notarized\": xxxxx,     (numeric) most recent notarization block\n \"prevMoMheight\": xxxxx,   (numeric) previous notarization block\n \"notarizedhash\": \"hash\",  (hash) notarization hash\n \"notarizedtxid\": \"hash\",  (hash) notarization txid\n \"notarizedtxid_height\": \"mempool\",\n \"KMDnotarized_height\": n,  (numeric)\n \"notarized_confirms\": n,  (numeric)\n \"blocks\": xxxxxx,      (numeric) the current number of blocks processed in the server\n \"timeoffset\": xxxxx,    (numeric) the time offset\n \"tiptime\": xxxxx,      (numeric) the time of the tip of the chain\n \"connections\": xxxxx,    (numeric) the number of connections\n \"proxy\": \"host:port\",   (string, optional) the proxy used by the server\n \"difficulty\": xxxxxx,    (numeric) the current difficulty\n \"testnet\": true|false,   (boolean) if the server is using testnet or not",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "78bd1512-8bff-4647-b491-bfaeb536c7bc"
+]

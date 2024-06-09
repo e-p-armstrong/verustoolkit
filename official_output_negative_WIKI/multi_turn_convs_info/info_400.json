@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "When sending native currency to an address on a PBaaS reserve chain, is it automatically converted to reserve currency?",
+            "No, when sending native currency to an address on a PBaaS reserve chain, it is not automatically converted to reserve currency. You need to specify the `toreserve` option in the command to convert it to reserve currency, like this: `./verus -chain=RESERVEWITHPREMINE sendreserve '{\"paymentaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"amount\":5000, \"toreserve\": 1}'`.",
+            "**Sending unconverted VRSCTEST to an address on the RESERVEWITHPREMINE chain for later conversion to/from the native coin.**\n```\n./verus -chain=VRSCTEST sendreserve '{\"name\": \"RESERVEWITHPREMINE\", \"paymentaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"refundaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"amount\":5000}'\n```**Sending reserve to another chain and converting a coin from reserve to that chain's native currency at the current market price.**\n```\n./verus -chain=VRSCTEST sendreserve '{\"name\": \"RESERVEWITHPREMINE\", \"paymentaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"refundaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"amount\":5000, \"tonative\": 1}'\n```**Sending reserve currency to an address on the current PBaaS reserve chain with no cross-chain operation, Reserve currency on a PBaaS chain is equivalent to and convertible between the native VRSCTEST currency, but may also be sent to and used on PBaaS reserve chains. It will arrive as reserve currency.**\n```\n./verus -chain=RESERVEWITHPREMINE sendreserve '{\"paymentaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"amount\":5000}'\n```**Sending native currency to an address on a PBaaS reserve chain and converting it to reserve currency at the same time at the current market price.**\n```\n./verus -chain=RESERVEWITHPREMINE sendreserve '{\"paymentaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"amount\":5000, \"toreserve\": 1}'\n```**Sending reserve currency to an address on a PBaaS reserve chain and converting it to native currency at the same time at the current price. It will arrive as native currency.**\n```\n./verus -chain=RESERVEWITHPREMINE sendreserve '{\"paymentaddress\": \"R9LkTaMn1XpjeorE4RjM6pMcy5Nxkx9jPM\", \"amount\":5000, \"tonative\": 1}'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "bfa93980-6385-4052-9359-395c7a906f70"
+]

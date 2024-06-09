@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm having a bit of trouble with the `scanNotarisationsDB` command. I'm trying to scan forward from a given block height for a notarisation of a specific symbol. Can you help me out?\n\n**AI Assistant:**\nActually, the `scanNotarisationsDB` command doesn't scan forward from a given block height. It scans backwards from a given block height for a notarisation of a specific symbol.\n\n**User:**\nOh, I see. So how do I use it correctly then?\n\n**AI Assistant:**\nThe correct usage is `scanNotarisationsDB blockHeight symbol [blocksLimit=1440]`, where `blockHeight` is the starting point for the backward scan.\n\n**User:**\nOkay, got it! Thanks for the clarification. I'll make sure to use it correctly from now on.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `scanNotarisationsDB` command to scan forward from a given block height for a notarisation of a specific symbol?",
+            "The `scanNotarisationsDB` command actually scans notarisationsdb backwards from a given block height for a notarisation of a specific symbol, not forward. The correct usage is `scanNotarisationsDB blockHeight symbol [blocksLimit=1440]`, where `blockHeight` is the starting point for the backward scan.",
+            "scanNotarisationsDB blockHeight symbol [blocksLimit=1440]\n\nScans notarisationsdb backwards from height for a notarisation of given symbol",
+            "./raw_text_input_api_text/scanNotarisationsDB"
+        ]
+    ]
+]

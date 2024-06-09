@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can I use the `getlocalsolps` command to get the total number of solutions found by my node since it was started?",
+            "No, the `getlocalsolps` command returns the average local solutions per second since this node was started, not the total number of solutions found.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ],
+        [
+            "Is it possible to use the `getlocalsolps` command to get the solutions per second average for a specific time period, such as the last hour?",
+            "No, the `getlocalsolps` command returns the average local solutions per second since this node was started, not for a specific time period.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "c445e11e-9af7-49ec-adee-c7d9439a756e"
+]

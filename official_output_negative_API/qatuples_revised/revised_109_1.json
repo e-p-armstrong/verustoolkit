@@ -1,0 +1,6 @@
+[
+    "How do I use the `curl` command to send a `getrawtransaction` request to the Verus API without authentication?",
+    "You can't use the `curl` command to send a `getrawtransaction` request to the Verus API without authentication. As shown in the example, you need to provide a username (`--user myusername`) to authenticate the request. Without authentication, the API will reject the request.",
+    "Examples:\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getrawtransaction"
+]

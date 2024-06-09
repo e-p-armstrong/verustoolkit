@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does the `zcsamplejoinsplit` command do?",
+            "The `zcsamplejoinsplit` command performs a joinsplit and returns the JSDescription.",
+            "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+            "./raw_text_input_api_text/zcsamplejoinsplit"
+        ],
+        [
+            "Can you explain how to use the `zcsamplejoinsplit` command to send Verus coins to another wallet?",
+            "The `zcsamplejoinsplit` command is not used to send Verus coins to another wallet. It performs a joinsplit and returns the JSDescription.",
+            "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+            "./raw_text_input_api_text/zcsamplejoinsplit"
+        ],
+        [
+            "Is `zcsamplejoinsplit` a command used to create a new blockchain?",
+            "No, the `zcsamplejoinsplit` command is not used to create a new blockchain. It performs a joinsplit and returns the JSDescription, which suggests that it's related to some kind of transaction or operation, but not creating a new blockchain.",
+            "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+            "./raw_text_input_api_text/zcsamplejoinsplit"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b1bd56b7-8c63-4234-98e7-05698d1033d1"
+]

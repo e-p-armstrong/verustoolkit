@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm curious about creating currencies on Verus. Is it possible to create a currency with any name I want, without needing a corresponding ID?\n\n**AI Assistant:**\nUnfortunately not. To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\n\n**User:**\nSo, does that mean anyone can create a currency with a specific name, as long as they have an ID?\n\n**AI Assistant:**\nNo, not exactly. Only the controller of the ID with the same name as the currency can create a currency with that name.\n\n**User:**\nThat makes sense. So, is it possible to create multiple currencies with the same name, as long as they are controlled by different IDs?\n\n**AI Assistant:**\nNo, the controller of an ID can only create a currency of that name once. You can't have multiple currencies with the same name, even if they're controlled by different IDs.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I create a currency with any name I want, without needing a corresponding ID?",
+            "You can't. To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can anyone create a currency with a specific name, as long as they have an ID?",
+            "No, only the controller of the ID with the same name as the currency can create a currency with that name.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it possible to create multiple currencies with the same name, as long as they are controlled by different IDs?",
+            "No, the controller of an ID can only create a currency of that name once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

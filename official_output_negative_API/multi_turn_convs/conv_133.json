@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been trying to figure out how to use the `z_listoperationids` command, can you help me out? What's the purpose of this command, and how do I use it?\n\n**AI Assistant:**\nThe `z_listoperationids` command returns a list of operation IDs currently known to the wallet. You can use it to retrieve a list of operation IDs, and optionally filter the results by the operation's state (e.g., \"success\"). The command does not have any functionality related to sending new operations to the wallet.\n\n**User:**\nOkay, that makes sense. I was trying to use it to delete an operation from the wallet, but it didn't seem to work. Can you explain how to use the `z_listoperationids` command to delete an operation from the wallet?\n\n**AI Assistant:**\nI think there's been a misunderstanding! The `z_listoperationids` command doesn't have the functionality to delete an operation from the wallet. It simply returns a list of operation IDs currently known to the wallet. If you need to delete an operation, you would need to use a different command or method.\n\n**User:**\nGot it, thanks for the clarification! One more question - what's the default filter for the `z_listoperationids` command, if no \"status\" argument is provided?\n\n**AI Assistant:**\nThe `z_listoperationids` command doesn't have a default filter. If no \"status\" argument is provided, the command will return all operation IDs currently known to the wallet, without any filtering.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `z_listoperationids` command, and how do you use it?",
+            "The `z_listoperationids` command returns a list of operation IDs currently known to the wallet. You can use it to retrieve a list of operation IDs, and optionally filter the results by the operation's state (e.g., \"success\"). The command does not have any functionality related to sending new operations to the wallet.",
+            "z_listoperationids\n\nReturns the list of operation ids currently known to the wallet.\n\nArguments:\n1. \"status\"     (string, optional) Filter result by the operation's state e.g. \"success\".\n\nResult:\n[           (json array of string)\n \"operationid\"    (string) an operation id belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listoperationids \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_listoperationids"
+        ],
+        [
+            "Can you explain how to use the `z_listoperationids` command to delete an operation from the wallet?",
+            "The `z_listoperationids` command does not have the functionality to delete an operation from the wallet. It simply returns a list of operation IDs currently known to the wallet. If you need to delete an operation, you would need to use a different command or method.",
+            "z_listoperationids\n\nReturns the list of operation ids currently known to the wallet.\n\nArguments:\n1. \"status\"     (string, optional) Filter result by the operation's state e.g. \"success\".\n\nResult:\n[           (json array of string)\n \"operationid\"    (string) an operation id belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listoperationids \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_listoperationids"
+        ],
+        [
+            "What is the default filter for the `z_listoperationids` command, if no \"status\" argument is provided?",
+            "The `z_listoperationids` command does not have a default filter. If no \"status\" argument is provided, the command will return all operation IDs currently known to the wallet, without any filtering.",
+            "z_listoperationids\n\nReturns the list of operation ids currently known to the wallet.\n\nArguments:\n1. \"status\"     (string, optional) Filter result by the operation's state e.g. \"success\".\n\nResult:\n[           (json array of string)\n \"operationid\"    (string) an operation id belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listoperationids \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_listoperationids"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to understand how notary witnesses work. Can you explain how they prevent key theft attacks by using a centralized revocation authority?\n\n**AI Assistant:**\nActually, notary witnesses don't use a centralized revocation authority to prevent key theft attacks. Instead, they use the VerusID protocol, which allows them to auto-revoke their identities if they were to sign for something they do not agree with. This is a decentralized mechanism that prevents stolen key attacks, making notaries extremely hard targets to compromise. So, it's a more robust and secure approach than relying on a centralized authority.\n\n**User:**\nThat makes sense. I also had a question about Bridge.vETH. Is it a partially backed currency?\n\n**AI Assistant:**\nNo, Bridge.vETH is a 100% backed currency, meaning that its value is fully backed by the reserves it holds. So, you can have confidence in its value and stability.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do notary witnesses prevent key theft attacks by using a centralized revocation authority?",
+            "Notary witnesses do not use a centralized revocation authority to prevent key theft attacks. Instead, they use the VerusID protocol, which allows them to auto-revoke their identities if they were to sign for something they do not agree with. This is a decentralized mechanism that prevents stolen key attacks, making notaries extremely hard targets to compromise.",
+            "The notary witnesses are also monitoring notarizations, and if they were to sign for something that they themselves do not agree with, they can auto-revoke their identities, using the VerusID protocol, which cannot be stopped by an attacker unless they have stolen both the keys for the notary ID and those for its revocation ID as well. This serves as a prevention for stolen key attacks, ensuring that notaries are extremely hard targets to compromise.## Bridge.vETH currency\nBridge.vETH is a 100% backed currency with 4 currencies in its reserves (VRSC, ETH, DAI, MKR), [read more on basket currencies](/currencies/). The Bridge.vETH currency function is to make the bridging of assets simple. From wherever side on the bridge you send it converts the fees that you need seamlessly.The value of Bridge.vETH increases relative to reserves when fees or interest are added to the reserves without there being new Bridge.vETH minted.",
+            "./raw_text_input_docs/README_eth-bridge.md"
+        ],
+        [
+            "Is Bridge.vETH a partially backed currency?",
+            "No, Bridge.vETH is a 100% backed currency, meaning that its value is fully backed by the reserves it holds.",
+            "The notary witnesses are also monitoring notarizations, and if they were to sign for something that they themselves do not agree with, they can auto-revoke their identities, using the VerusID protocol, which cannot be stopped by an attacker unless they have stolen both the keys for the notary ID and those for its revocation ID as well. This serves as a prevention for stolen key attacks, ensuring that notaries are extremely hard targets to compromise.## Bridge.vETH currency\nBridge.vETH is a 100% backed currency with 4 currencies in its reserves (VRSC, ETH, DAI, MKR), [read more on basket currencies](/currencies/). The Bridge.vETH currency function is to make the bridging of assets simple. From wherever side on the bridge you send it converts the fees that you need seamlessly.The value of Bridge.vETH increases relative to reserves when fees or interest are added to the reserves without there being new Bridge.vETH minted.",
+            "./raw_text_input_docs/README_eth-bridge.md"
+        ]
+    ]
+]

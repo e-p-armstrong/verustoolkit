@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I specify a transaction hash in the \"includeWatchonly\" argument?",
+            "You don't specify a transaction hash in the \"includeWatchonly\" argument. \"includeWatchonly\" is a boolean argument that determines whether to include watchonly addresses in balance calculation and details. The transaction id is specified in the \"txid\" argument, which is a required string argument.",
+            "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I omit the \"txid\" argument and only provide the \"includeWatchonly\" argument?",
+            "No, you cannot omit the \"txid\" argument. The \"txid\" argument is required, and it specifies the transaction id. The \"includeWatchonly\" argument is optional, and it defaults to false if not provided.",
+            "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the default value of the \"txid\" argument?",
+            "There is no default value for the \"txid\" argument. It is a required string argument, and you must provide a value for it.",
+            "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e023cb33-e904-4124-9cf2-5d9401652eb9"
+]

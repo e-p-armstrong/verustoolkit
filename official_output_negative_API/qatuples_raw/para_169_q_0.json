@@ -1,0 +1,6 @@
+[
+    "What is the maximum number of private keys that can be imported using the `importprivkey` command?",
+    "The text does not specify a maximum number of private keys that can be imported using the `importprivkey` command. In fact, it suggests that you can import a single private key at a time, and it does not provide any information about importing multiple private keys simultaneously.",
+    "importprivkey \"verusprivkey\" ( \"label\" rescan )\n\nAdds a private key (as returned by dumpprivkey) to your wallet.\n\nArguments:\n1. \"verusprivkey\"  (string, required) The private key (see dumpprivkey)\n2. \"label\"      (string, optional, default=\"\") An optional label\n3. rescan        (boolean, optional, default=true) Rescan the wallet for transactions\n\nNote: This call can take minutes to complete if rescan is true.\n\nExamples:\n\nDump a private key\n> verus dumpprivkey \"myaddress\"\n\nImport the private key with rescan\n> verus importprivkey \"mykey\"\n\nImport using a label and without rescan\n> verus importprivkey \"mykey\" \"testing\" false\n\nAs a JSON-RPC call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"importprivkey\", \"params\": [\"mykey\", \"testing\", false] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/importprivkey"
+]

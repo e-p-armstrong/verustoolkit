@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I set the maximum confirmations to filter to 0 using the `maxconf` argument?",
+            "You can't set the maximum confirmations to filter to 0 using the `maxconf` argument. The default value of `maxconf` is 9999999, and you can set it to a higher value or a lower value, but not 0. The minimum value for `maxconf` is 1.",
+            "#### Arguments:\n1. minconf     (numeric, optional, default=1) The minimum confirmations to filter\n2. maxconf     (numeric, optional, default=9999999) The maximum confirmations to filter\n3. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey')\n4. \"addresses\"   (string) A json array of zaddrs (both Sprout and Sapling) to filter on. Duplicate addresses not allowed.\n```json\n  [\n   \"address\"   (string) zaddr\n   ,...\n  ]\n```\nResult\n```json\n[               (array of json object)\n {\n  \"txid\" : \"txid\",     (string) the transaction id\n  \"jsindex\" (sprout) : n,    (numeric) the joinsplit index\n  \"jsoutindex\" (sprout) : n,    (numeric) the output index of the joinsplit\n  \"outindex\" (sapling) : n,    (numeric) the output index\n  \"confirmations\" : n,    (numeric) the number of confirmations\n  \"spendable\" : true|false, (boolean) true if note can be spent by wallet, false if address is watchonly\n  \"address\" : \"address\",  (string) the shielded address\n  \"amount\": xxxxx,     (numeric) the amount of value in the note\n  \"memo\": xxxxx,      (string) hexademical string representation of memo field\n  \"change\": true|false,   (boolean) true if the address that received the note is also one of the sending addresses\n }\n ,...\n]\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I filter on a single address by passing a string instead of a JSON array of addresses?",
+            "No, you can't filter on a single address by passing a string instead of a JSON array of addresses. The `addresses` argument requires a JSON array of zaddrs, even if you only want to filter on one address. You would need to pass a JSON array with a single element, like `[\"address\"]`.",
+            "#### Arguments:\n1. minconf     (numeric, optional, default=1) The minimum confirmations to filter\n2. maxconf     (numeric, optional, default=9999999) The maximum confirmations to filter\n3. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey')\n4. \"addresses\"   (string) A json array of zaddrs (both Sprout and Sapling) to filter on. Duplicate addresses not allowed.\n```json\n  [\n   \"address\"   (string) zaddr\n   ,...\n  ]\n```\nResult\n```json\n[               (array of json object)\n {\n  \"txid\" : \"txid\",     (string) the transaction id\n  \"jsindex\" (sprout) : n,    (numeric) the joinsplit index\n  \"jsoutindex\" (sprout) : n,    (numeric) the output index of the joinsplit\n  \"outindex\" (sapling) : n,    (numeric) the output index\n  \"confirmations\" : n,    (numeric) the number of confirmations\n  \"spendable\" : true|false, (boolean) true if note can be spent by wallet, false if address is watchonly\n  \"address\" : \"address\",  (string) the shielded address\n  \"amount\": xxxxx,     (numeric) the amount of value in the note\n  \"memo\": xxxxx,      (string) hexademical string representation of memo field\n  \"change\": true|false,   (boolean) true if the address that received the note is also one of the sending addresses\n }\n ,...\n]\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b0c13790-be82-4a3a-a48e-6d96a9916e88"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I access the Frequently Asked Questions section for Linux users?",
+            "There is no indication of a section for Linux users. The available FAQs are related to Windows command line formatting, Windows pool-mining on low priority, and standard locations for Verus-Desktop installations on Windows.",
+            "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "Is there a single, comprehensive FAQ section that covers all Verus-related topics?",
+            "There is no single, comprehensive FAQ section that covers all Verus-related topics. The FAQs are organized into separate sections, each focusing on a specific topic or platform.",
+            "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+            "./raw_text_input_wiki/index.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "a85d0242-f7c4-411a-b141-5fb9308cc8de"
+]

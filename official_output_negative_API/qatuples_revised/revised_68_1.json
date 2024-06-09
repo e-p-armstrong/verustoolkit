@@ -1,0 +1,6 @@
+[
+    "How do I use the `decodescript` command to encode a script?",
+    "The `decodescript` command is used to decode a hex-encoded script, not encode one. It takes a hex-encoded script as input and returns a JSON object with information about the script. If you want to encode a script, you would need to use a different command or tool.",
+    "decodescript \"hex\"\n\nDecode a hex-encoded script.\n\nArguments:\n1. \"hex\"   (string) the hex encoded script\n\nResult:\n{\n \"asm\":\"asm\",  (string) Script public key\n \"hex\":\"hex\",  (string) hex encoded public key\n \"type\":\"type\", (string) The output type\n \"reqSigs\": n,  (numeric) The required signatures\n \"addresses\": [  (json array of string)\n   \"address\"   (string) transparent address\n   ,...\n ],\n \"p2sh\",\"address\" (string) script address\n}\n\nExamples:\n> verus decodescript \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decodescript\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/decodescript"
+]

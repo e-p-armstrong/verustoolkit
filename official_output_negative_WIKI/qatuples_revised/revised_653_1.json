@@ -1,0 +1,6 @@
+[
+    "Can I import a wallet backup in Agama by clicking on the \"Import wallet\" button in the settings?",
+    "No, you can't. To import a wallet backup in Agama, you need to go to the settings, scroll to the bottom, click on CLI, select VRSC in that section, and then type `z_importwallet \"<PATH><mywalletimport>\"` and click the button below to run it.",
+    "#### Verus Desktop:\n  Go to `Settings`, `Coin Settings` and click `Import native wallet backup`.\n  Click `Choose file`, browse to your backup file, select it and click `Open`\n  Click `Import` to start the inport process\n#### Agama:\n  Go to settings, scroll to the bottom and click CLI, select VRSC in that section.\n  Then below type `z_importwallet \"<PATH><mywalletimport>\"` and click the button below to run it.\n#### linux/MacOS CLI:\n  run `./verus z_importwallet \"<PATH><mywalletimport>\"`\n#### Windows CLI:\n  run `verus z_importwallet \\\"<PATH><mywalletimport>\\\"`\n\n### Using individual seeds / WIF-keys\nImporting individual keys is explained in detail in this wiki: [import your Lite wallet address into your native Verus Desktop](#!how-to/how-to_convert-seed-to-wif.md).\n\nInformation compiled by Oink.vrsc@.\n\nNote: revision date 2022-09-12.",
+    "./raw_text_input_wiki/how-to_restore_my_wallet.md"
+]

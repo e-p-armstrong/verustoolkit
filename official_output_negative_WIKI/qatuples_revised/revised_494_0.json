@@ -1,0 +1,6 @@
+[
+    "Can I use the `sendcurrency` API to send real money to someone?",
+    "No, you cannot use the `sendcurrency` API to send real money to someone. The API is used to send and convert funds on the VRSCTEST testnet, and all testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset.",
+    "## Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n  ```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\"",
+    "./raw_text_input_wiki/release_notes.md"
+]

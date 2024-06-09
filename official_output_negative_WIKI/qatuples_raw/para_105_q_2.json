@@ -1,0 +1,6 @@
+[
+    "Is the `getblockchaininfo` command used to send transactions on the Verus network?",
+    "No, the `getblockchaininfo` command is not used to send transactions on the Verus network. It is a command that returns an object containing various state info regarding block chain processing, but it is not used for sending transactions.",
+    "### `getblockchaininfo`\nReturns an object containing various state info regarding block chain processing.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

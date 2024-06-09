@@ -1,0 +1,6 @@
+[
+    "How do I get 1 GOLD for each VRSCTEST I convert using the command:\n```\nST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```",
+    "You won't get 1 GOLD for each VRSCTEST you convert. According to the text, you will either find 0.975 GOLD in your wallet, or you will have your VRSCTEST back.",
+    "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

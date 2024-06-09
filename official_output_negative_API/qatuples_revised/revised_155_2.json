@@ -1,0 +1,6 @@
+[
+    "Can I use the `z_listaddresses` command without providing any arguments?",
+    "Yes, you can use the `z_listaddresses` command without providing any arguments. By default, it will not include watchonly addresses in the result. However, you can optionally provide the `includeWatchonly` argument set to `true` to include watchonly addresses in the result.",
+    "z_listaddresses ( includeWatchonly )\n\nReturns the list of Sprout and Sapling shielded addresses belonging to the wallet.\n\nArguments:\n1. includeWatchonly (bool, optional, default=false) Also include watchonly addresses (see 'z_importviewingkey')\n\nResult:\n[           (json array of string)\n \"zaddr\"      (string) a zaddr belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listaddresses \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listaddresses\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_listaddresses"
+]

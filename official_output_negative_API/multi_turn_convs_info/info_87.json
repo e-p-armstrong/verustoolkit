@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I use the `setaccount` command to set a custom account name for a VRSC address?",
+            "You can't actually use the `setaccount` command to set a custom account name for a VRSC address. The `account` argument must be set to an empty string `\"\"` to represent the default account. Passing any other string will result in an error.",
+            "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ],
+        [
+            "Is the `setaccount` command still supported and widely used?",
+            "No, the `setaccount` command is actually deprecated, meaning it's no longer supported or recommended for use. It's best to avoid using this command and instead explore alternative methods for managing accounts and addresses.",
+            "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ],
+        [
+            "Can I use the `setaccount` command to associate multiple accounts with a single VRSC address?",
+            "No, the `setaccount` command is designed to associate a single account with a VRSC address, not multiple accounts. The command's purpose is to set the default account for a given address, not to manage multiple accounts.",
+            "setaccount \"VRSC_address\" \"account\"\n\nDEPRECATED. Sets the account associated with the given address.\n\nArguments:\n1. \"VRSC_address\" (string, required) The VRSC address to be associated with an account.\n2. \"account\"     (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nExamples:\n> verus setaccount \"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\" \"tabby\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setaccount\", \"params\": [\"RD6GgnrMpPaTSMn8vai6yiGA7mN4QGPV\", \"tabby\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/setaccount"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "cbaf1727-b9e3-48d3-8819-8c3ef8fa4574"
+]

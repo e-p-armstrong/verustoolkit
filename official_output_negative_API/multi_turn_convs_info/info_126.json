@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `z_importviewingkey` command in Verus?",
+            "The `z_importviewingkey` command is used to import a viewing key. Its purpose is not specified, but it is related to `z_exportviewingkey`, which reveals the viewing key corresponding to a given zaddr.",
+            "z_exportviewingkey \"zaddr\"\n\nReveals the viewing key corresponding to 'zaddr'.\nThen the z_importviewingkey can be used with this output\n\nArguments:\n1. \"zaddr\"  (string, required) The zaddr for the viewing key\n\nResult:\n\"vkey\"         (string) The viewing key\n\nExamples:\n> verus z_exportviewingkey \"myaddress\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportviewingkey"
+        ],
+        [
+            "Can I use `z_exportviewingkey` to export the private key of a zaddr?",
+            "No, `z_exportviewingkey` does not export the private key of a zaddr. It reveals the viewing key corresponding to the zaddr. The viewing key is not the same as the private key.",
+            "z_exportviewingkey \"zaddr\"\n\nReveals the viewing key corresponding to 'zaddr'.\nThen the z_importviewingkey can be used with this output\n\nArguments:\n1. \"zaddr\"  (string, required) The zaddr for the viewing key\n\nResult:\n\"vkey\"         (string) The viewing key\n\nExamples:\n> verus z_exportviewingkey \"myaddress\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportviewingkey"
+        ],
+        [
+            "What is the default value of the \"vkey\" parameter in the `z_exportviewingkey` command?",
+            "There is no \"vkey\" parameter in the `z_exportviewingkey` command. The \"vkey\" is the output of the command, which is the viewing key corresponding to the input zaddr. The input parameter is \"zaddr\", which is the zaddr for which you want to reveal the viewing key.",
+            "z_exportviewingkey \"zaddr\"\n\nReveals the viewing key corresponding to 'zaddr'.\nThen the z_importviewingkey can be used with this output\n\nArguments:\n1. \"zaddr\"  (string, required) The zaddr for the viewing key\n\nResult:\n\"vkey\"         (string) The viewing key\n\nExamples:\n> verus z_exportviewingkey \"myaddress\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_exportviewingkey\", \"params\": [\"myaddress\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_exportviewingkey"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "42719991-bc1b-404d-ab57-45960aaf2951"
+]

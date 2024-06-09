@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the value of testnet coins/currencies, and what happens to them when VRSCTEST is reset?",
+            "Testnet coins/currencies have no value, and they will disappear whenever VRSCTEST is reset. This is a warning to users to not assign any value to these testnet coins, as they are only for testing purposes and will be lost when the testnet is reset.",
+            "### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\":1",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I use the `sendcurrency` API to send funds from a single address to a single recipient without specifying the amount?",
+            "No, you cannot use the `sendcurrency` API to send funds without specifying the amount. The `sendcurrency` API requires you to specify the amount of currency to be sent, as shown in the examples provided.",
+            "### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\":1",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "1d50b0bc-0f78-455d-adab-06b448c70327"
+]

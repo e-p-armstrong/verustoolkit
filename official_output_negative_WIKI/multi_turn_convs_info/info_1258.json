@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Is the OPTION_NFT_TOKEN option used to create a multi-satoshi NFT token?",
+            "No, the OPTION_NFT_TOKEN option is actually used to create a single satoshi NFT token, which tokenizes control over the root ID.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can the OPTION_GATEWAY_NAMECONTROLLER option be set to any value?",
+            "No, the OPTION_GATEWAY_NAMECONTROLLER option has a specific value, which is 1024. Similarly, the OPTION_NFT_TOKEN option has a specific value, which is 2048.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b80f6671-3ac6-4400-900b-b686dd628b8c"
+]

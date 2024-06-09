@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to get started with mining VerusCoin on my Mac, but I'm not sure where to begin. Can I start mining without a wallet and an address to mine to?\n\n**AI Assistant:**\nUnfortunately, no, you cannot start mining VerusCoin on your Mac without a wallet and an address to mine to. To start mining, you need to have a wallet and access to an address to mine to. Without these, you won't be able to receive the VerusCoin you're mining. Do you need help setting up a wallet and getting an address?\n\n**User:**\nActually, I think I have that covered. But I did download the miner, and I'm not sure what to do with it. How do I unpack the downloaded miner on my Mac?\n\n**AI Assistant:**\nTo unpack the downloaded miner on your Mac, you need to double-click on the `nheqminer-MacOS-v0.8.0.tar.gz` file in your download folder. This will unpack the file in your download folder. Then, you can proceed with setting up the miner. If you need further assistance with setting up the miner, feel free to ask!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I start mining VerusCoin on my Mac without a wallet and an address to mine to?",
+            "No, you cannot start mining VerusCoin on your Mac without a wallet and an address to mine to. To start mining, you need to have a wallet and access to an address to mine to.",
+            "# Start mining on MacOS.Attention: Read it completely before use.`VRSC Wallet and Data location` on Mac OS: `/Users//Library/Application Support/Komodo/VRSC`### Software needed to minePrerequisite: [VerusCoin wallets](https://verus.io/wallet.html)\nNeeded: [VerusCoin miners](https://verus.io/getVRSC.html)## Prerequisites:To start mining with your Mac, you will need to have an address to mine to. Possibilities are:~~An exchange address~~ (__***NOT***__ recommended. This is asking for trouble.)\nAn address from a web-wallet\nAn address from a mobile wallet\nAn address from a Verus-Desktop Lite wallet\nAn address from a Verus-Desktop Native wallet## Procedure:To start mining on your Mac, you should already have a wallet and and access to an address to mine to. Now to start mining we will need to download the miner first:\n 1. Go to the `Veruscoin miners` link above and download `CLI nheqminer` for MacOS.\n 2. Open the download folder in finder.\n 3. doubleclick `nheqminer-MacOS-v0.8.0.tar.gz` to unpack it in your download folder.\n 4. Open the `nheqminer` folder that appeared in your download folder",
+            "./raw_text_input_wiki/mac-faq03-mining_guide.md"
+        ],
+        [
+            "How do I unpack the downloaded miner on my Mac?",
+            "To unpack the downloaded miner on your Mac, you need to double-click on the `nheqminer-MacOS-v0.8.0.tar.gz` file in your download folder. This will unpack the file in your download folder.",
+            "# Start mining on MacOS.Attention: Read it completely before use.`VRSC Wallet and Data location` on Mac OS: `/Users//Library/Application Support/Komodo/VRSC`### Software needed to minePrerequisite: [VerusCoin wallets](https://verus.io/wallet.html)\nNeeded: [VerusCoin miners](https://verus.io/getVRSC.html)## Prerequisites:To start mining with your Mac, you will need to have an address to mine to. Possibilities are:~~An exchange address~~ (__***NOT***__ recommended. This is asking for trouble.)\nAn address from a web-wallet\nAn address from a mobile wallet\nAn address from a Verus-Desktop Lite wallet\nAn address from a Verus-Desktop Native wallet## Procedure:To start mining on your Mac, you should already have a wallet and and access to an address to mine to. Now to start mining we will need to download the miner first:\n 1. Go to the `Veruscoin miners` link above and download `CLI nheqminer` for MacOS.\n 2. Open the download folder in finder.\n 3. doubleclick `nheqminer-MacOS-v0.8.0.tar.gz` to unpack it in your download folder.\n 4. Open the `nheqminer` folder that appeared in your download folder",
+            "./raw_text_input_wiki/mac-faq03-mining_guide.md"
+        ]
+    ]
+]

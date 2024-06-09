@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've been experimenting with the Verus API and I was wondering, can I use the `sendcurrency` API to send real money to someone on the VRSCTEST network?\n\n**AI Assistant:**\nNo, you cannot use the `sendcurrency` API to send real money on the VRSCTEST network. The VRSCTEST network is a testnet, and all coins/currencies on it have no value and will disappear whenever the network is reset. The VRSCTEST network is intended for testing and development purposes only, and it's not meant for actual financial transactions. If you need to send real money, you should use the mainnet instead.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I use the `sendcurrency` API to send real money to someone on the VRSCTEST network?",
+            "No, you cannot use the `sendcurrency` API to send real money on the VRSCTEST network. The VRSCTEST network is a testnet, and all coins/currencies on it have no value and will disappear whenever the network is reset.",
+            "#### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

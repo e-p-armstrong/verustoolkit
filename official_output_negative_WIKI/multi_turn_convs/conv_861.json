@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to define a new currency and I'm not sure how to set the proof protocol to PROOF_CURRENCYID. Can you help me out?\n\n**AI Assistant:**\nI'd be happy to help! However, I have to correct you - you can't set the proof protocol to PROOF_CURRENCYID. When you set the proof protocol to 2, it actually means you're setting it to PROOF_CHAINID, not PROOF_CURRENCYID. This allows the controller of the chain ID to mint new coins.\n\n**User:**\nI see, I understand now. But that raises another question - does that mean anyone can mint new coins of \"mycoin\" since the proof protocol is set to 2?\n\n**AI Assistant:**\nNo, not anyone can mint new coins. With the proof protocol set to 2 (PROOF_CHAINID), only the controller of the chain ID can mint new coins. This is a specific privilege granted to the chain ID controller, not a general ability available to anyone.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I set the proof protocol to PROOF_CURRENCYID when defining a new currency?",
+            "You can't set the proof protocol to PROOF_CURRENCYID. Setting the proof protocol to 2 means that it's set to PROOF_CHAINID, not PROOF_CURRENCYID. This allows the controller of the chain ID to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can anyone mint new coins of \"mycoin\" since proofprotocol is set to 2?",
+            "No, not anyone can mint new coins. With proofprotocol set to 2 (PROOF_CHAINID), only the controller of the chain ID can mint new coins. This is a specific privilege granted to the chain ID controller, not a general ability available to anyone.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

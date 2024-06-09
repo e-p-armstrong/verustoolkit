@@ -1,0 +1,6 @@
+[
+    "Can I use the `getmempoolinfo` command to retrieve a specific transaction from the memory pool?",
+    "No, the `getmempoolinfo` command does not allow you to retrieve a specific transaction from the memory pool. It only provides general information about the current state of the TX memory pool, such as the number of transactions, their total size, and the memory usage. If you need to retrieve a specific transaction, you would need to use a different command or method.",
+    "getmempoolinfo\n\nReturns details on the active state of the TX memory pool.\n\nResult:\n{\n \"size\": xxxxx        (numeric) Current tx count\n \"bytes\": xxxxx        (numeric) Sum of all tx sizes\n \"usage\": xxxxx        (numeric) Total memory usage for the mempool\n}\n\nExamples:\n> verus getmempoolinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getmempoolinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getmempoolinfo"
+]

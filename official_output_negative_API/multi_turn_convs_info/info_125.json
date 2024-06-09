@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I use the `gettxout` command to get a list of all unspent transactions?",
+            "The `gettxout` command is used to get details about a specific unspent transaction output, not a list of all unspent transactions. To get a list of all unspent transactions, you would use the `listunspent` command. `gettxout` requires a transaction ID and a vout value as arguments, and returns details about the specified unspent transaction output.",
+            "gettxout \"txid\" n ( includemempool )\n\nReturns details about an unspent transaction output.\n\nArguments:\n1. \"txid\"    (string, required) The transaction id\n2. n       (numeric, required) vout value\n3. includemempool (boolean, optional) Whether to include the mempool\n\nResult:\n{\n \"bestblock\" : \"hash\",  (string) the block hash\n \"confirmations\" : n,    (numeric) The number of confirmations\n \"value\" : x.xxx,      (numeric) The transaction value in VRSC\n \"scriptPubKey\" : {     (json object)\n   \"asm\" : \"code\",    (string) \n   \"hex\" : \"hex\",    (string) \n   \"reqSigs\" : n,     (numeric) Number of required signatures\n   \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n   \"addresses\" : [     (array of string) array of Verus addresses\n    \"verusaddress\"    (string) Verus address\n    ,...\n   ]\n },\n \"version\" : n,       (numeric) The version\n \"coinbase\" : true|false   (boolean) Coinbase or not\n}\n\nExamples:\n\nGet unspent transactions\n> verus listunspent\n\nView the details\n> verus gettxout \"txid\" 1\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettxout\", \"params\": [\"txid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/gettxout"
+        ],
+        [
+            "Can I use the `gettxout` command to get details about a spent transaction output?",
+            "No, the `gettxout` command is used to get details about an unspent transaction output. If the transaction output is spent, `gettxout` will not return any details about it.",
+            "gettxout \"txid\" n ( includemempool )\n\nReturns details about an unspent transaction output.\n\nArguments:\n1. \"txid\"    (string, required) The transaction id\n2. n       (numeric, required) vout value\n3. includemempool (boolean, optional) Whether to include the mempool\n\nResult:\n{\n \"bestblock\" : \"hash\",  (string) the block hash\n \"confirmations\" : n,    (numeric) The number of confirmations\n \"value\" : x.xxx,      (numeric) The transaction value in VRSC\n \"scriptPubKey\" : {     (json object)\n   \"asm\" : \"code\",    (string) \n   \"hex\" : \"hex\",    (string) \n   \"reqSigs\" : n,     (numeric) Number of required signatures\n   \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n   \"addresses\" : [     (array of string) array of Verus addresses\n    \"verusaddress\"    (string) Verus address\n    ,...\n   ]\n },\n \"version\" : n,       (numeric) The version\n \"coinbase\" : true|false   (boolean) Coinbase or not\n}\n\nExamples:\n\nGet unspent transactions\n> verus listunspent\n\nView the details\n> verus gettxout \"txid\" 1\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"gettxout\", \"params\": [\"txid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/gettxout"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "e0683759-bd48-4cbc-9e62-fbb6e12e7a1f"
+]

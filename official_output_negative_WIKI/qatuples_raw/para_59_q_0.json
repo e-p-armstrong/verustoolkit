@@ -1,0 +1,6 @@
+[
+    "What is the default timeout during HTTP requests set to 60?",
+    "The default timeout during HTTP requests is not set to 60. According to the documentation, the default timeout is actually set to 30. This can be modified using the `-rpcservertimeout=<n>` option.",
+    "`-rpcservertimeout=<n>`\n    Timeout during HTTP requests (default: 30)\n\ncompiled by Oink.vrsc@.\nNote: last revision date 2024-05-03.",
+    "./raw_text_input_wiki/clifaq-01_verusd_options.md"
+]

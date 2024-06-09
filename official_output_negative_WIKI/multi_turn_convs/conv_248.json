@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHi, I'm trying to use the `getrawtransaction` command to get the block hash of a transaction. How do I do that?\n\n**AI Assistant:**\nActually, the `getrawtransaction` command doesn't return the block hash of a transaction. It returns the raw transaction data, which includes information such as the transaction ID, block time, and other transaction details. If you want to get the block hash, you would need to use a different command or API method. Sorry for the confusion!\n\n**User:**\nHmm, that's not what I expected. Can I use the `getrawtransaction` command without specifying a transaction ID?\n\n**AI Assistant:**\nNo, you can't use the `getrawtransaction` command without specifying a transaction ID. The command requires a transaction ID (`mytxid` in the example) to retrieve the raw transaction data. Without a transaction ID, the command won't know which transaction to retrieve.\n\n**User:**\nOkay, got it. What's the default value of the second parameter in the `getrawtransaction` command?\n\n**AI Assistant:**\nThe default value of the second parameter in the `getrawtransaction` command is not specified. However, based on the example provided, it appears that the second parameter is optional and can be set to 1 to include additional information in the response.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `getrawtransaction` command to get the block hash of a transaction?",
+            "The `getrawtransaction` command does not return the block hash of a transaction. It returns the raw transaction data, which includes information such as the transaction ID, block time, and other transaction details. If you want to get the block hash, you would need to use a different command or API method.",
+            "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I use the `getrawtransaction` command without specifying a transaction ID?",
+            "No, you cannot use the `getrawtransaction` command without specifying a transaction ID. The command requires a transaction ID (`mytxid` in the example) to retrieve the raw transaction data. Without a transaction ID, the command will not know which transaction to retrieve.",
+            "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the default value of the second parameter in the `getrawtransaction` command?",
+            "The default value of the second parameter in the `getrawtransaction` command is not specified. However, based on the example provided, it appears that the second parameter is optional and can be set to 1 to include additional information in the response.",
+            "nds since epoch (Jan 1 1970 GMT)\n \"blocktime\" : ttt     (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n}\n```\nExamples:\n```bash\n> verus getrawtransaction \"mytxid\"\n> verus getrawtransaction \"mytxid\" 1\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawtransaction\", \"params\": [\"mytxid\", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

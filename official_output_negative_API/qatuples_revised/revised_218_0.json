@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `z_listoperationids` command, and how do you use it?",
+    "The `z_listoperationids` command returns a list of operation IDs currently known to the wallet. You can use it to retrieve a list of operation IDs, and optionally filter the results by the operation's state (e.g., \"success\"). The command does not have any functionality related to sending new operations to the wallet.",
+    "z_listoperationids\n\nReturns the list of operation ids currently known to the wallet.\n\nArguments:\n1. \"status\"     (string, optional) Filter result by the operation's state e.g. \"success\".\n\nResult:\n[           (json array of string)\n \"operationid\"    (string) an operation id belonging to the wallet\n ,...\n]\n\nExamples:\n> verus z_listoperationids \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_listoperationids\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_listoperationids"
+]

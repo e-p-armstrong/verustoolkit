@@ -1,0 +1,6 @@
+[
+    "How do I use the `makeoffer` command using the Verus GUI?",
+    "There is no Verus GUI. The `makeoffer` command appears to be a command-line interface or API, as it shows examples of using the command with `verus` and `curl`. There is no indication of a graphical user interface.",
+    "Examples:\n> verus makeoffer fromaddress '{\"changeaddress\":\"transparentoriaddress\", \"expiryheight\":blockheight, \"offer\":{\"currency\":\"anycurrency\", \"amount\":...} | {\"identity\":\"idnameoriaddress\",...}', \"for\":{\"address\":..., \"currency\":\"anycurrency\", \"amount\":...} | {\"name\":\"identityforswap\",\"parent\":\"parentid\",\"primaryaddresses\":[\"R-address(s)\"],\"minimumsignatures\":1,...}}' (returntx) (feeamount)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"makeoffer\", \"params\": [fromaddress '{\"changeaddress\":\"transparentoriaddress\", \"expiryheight\":blockheight, \"offer\":{\"currency\":\"anycurrency\", \"amount\":...} | {\"identity\":\"idnameoriaddress\",...}', \"for\":{\"address\":..., \"currency\":\"anycurrency\", \"amount\":...} | {\"name\":\"identityforswap\",\"parent\":\"parentid\",\"primaryaddresses\":[\"R-address(s)\"],\"minimumsignatures\":1,...}}' (returntx) (feeamount)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/makeoffer"
+]

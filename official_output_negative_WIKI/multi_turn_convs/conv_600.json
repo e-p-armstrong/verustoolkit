@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I've got a question about my VRSCTEST tokens. How can I convert them to GOLD before the GOLD token launches?\n\n**AI Assistant:**\nUnfortunately, it's not possible to convert your VRSCTEST to GOLD before the GOLD token launches. You'll need to wait until the GOLD token is launched, and then you can proceed with the conversion.\n\nDon't worry, though! Once the GOLD token launches, you'll either find the converted amount of GOLD in your wallet, or you'll have your VRSCTEST tokens returned to you. Just be patient and wait for the launch, and then you can take care of the conversion.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I convert my VRSCTEST to GOLD before the GOLD token launches?",
+            "You can't convert your VRSCTEST to GOLD before the GOLD token launches. You need to park your conversion until the GOLD token launches. Once it launches, you will either find the converted amount of GOLD in your wallet or you will have your VRSCTEST back.",
+            "y VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

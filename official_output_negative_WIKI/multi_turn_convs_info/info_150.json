@@ -1,0 +1,32 @@
+[
+    [
+        [
+            "Can I create a currency without having an ID of the same name?",
+            "No, to create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can multiple people create a currency with the same name?",
+            "No, only the controller of an ID can create a currency of the same name, and they can only do so once. This means that multiple people cannot create a currency with the same name.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I create multiple currencies with the same ID?",
+            "No, with an ID, you can only create one currency of the same name. Once you've created a currency with an ID, you cannot create another currency with the same ID.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it possible to launch a currency without an ID?",
+            "No, it is not possible to launch a currency without an ID. You need an ID of the same name as the currency you want to launch, and only the controller of that ID can create the currency.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a busines",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8ec86bc7-ef0b-4192-99aa-ff97470d0e4f"
+]

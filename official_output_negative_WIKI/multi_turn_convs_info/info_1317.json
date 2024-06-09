@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "What is the format of the output of the `listunspent` command?",
+            "The output of the `listunspent` command is an array of objects, each of which has the following properties: `txid`, `vout`, `scriptPubKey`, `amount`, and `confirmations`.",
+            "Examples:List the most recent 10 transactions in the systems\n```bash\n> verus listtransactions\n```\nList transactions 100 to 120\n```bash\n> verus listtransactions \"*\" 20 100\n```\nAs a json rpc call\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"listtransactions\", \"params\": [\"*\", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `listunspent ( minconf maxconf [\"address\",...] inludeshared )`\nReturns array of unspent transaction outputs with between minconf and maxconf (inclusive) confirmations.\nOptionally filter to only include txouts paid to specified addresses.\nResults are an array of Objects, each of which has:\n{txid, vout, scriptPubKey, amount, confirmations}",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "ec091a68-dd86-42fd-896f-38dfb46a35f1"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHi, I have a few questions about the `getlocalsolps` command. Can I use it to get the total number of solutions found by my node since it was started?\n\n**AI Assistant:**\nNo, the `getlocalsolps` command doesn't return the total number of solutions found. Instead, it returns the average local solutions per second since this node was started.\n\n**User:**\nOkay, got it. Is it possible to use the `getlocalsolps` command to get the solutions per second average for a specific time period, such as the last hour?\n\n**AI Assistant:**\nNo, the `getlocalsolps` command only returns the average local solutions per second since this node was started, not for a specific time period. It's a cumulative average since the node started, not a time-range specific average.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I use the `getlocalsolps` command to get the total number of solutions found by my node since it was started?",
+            "No, the `getlocalsolps` command returns the average local solutions per second since this node was started, not the total number of solutions found.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ],
+        [
+            "Is it possible to use the `getlocalsolps` command to get the solutions per second average for a specific time period, such as the last hour?",
+            "No, the `getlocalsolps` command returns the average local solutions per second since this node was started, not for a specific time period.",
+            "getlocalsolps\n\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).\n\nResult:\nxxx.xxxxx   (numeric) Solutions per second average\n\nExamples:\n> verus getlocalsolps \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getlocalsolps\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getlocalsolps"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "How do I use the `getblocksubsidy` command to get the total block reward for a specific block, including both the mining reward and the transaction fees?",
+    "The `getblocksubsidy` command only returns the mining reward amount, not the total block reward including transaction fees. It takes an optional height argument, which defaults to the current height of the chain if not provided, and returns a JSON object with a single key \"miner\" containing the mining reward amount in KMD.",
+    "getblocksubsidy height\n\nReturns block subsidy reward, taking into account the mining slow start and the founders reward, of block at index provided.\n\nArguments:\n1. height     (numeric, optional) The block height. If not provided, defaults to the current height of the chain.\n\nResult:\n{\n \"miner\" : x.xxx      (numeric) The mining reward amount in KMD.\n}\n\nExamples:\n> verus getblocksubsidy 1000\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockubsidy\", \"params\": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblocksubsidy"
+]

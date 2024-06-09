@@ -1,0 +1,6 @@
+[
+    "Is there an official web wallet available for VerusCoin?",
+    "There is no official web wallet mentioned. However, there are various wallet options available, including CLI wallet releases, mobile wallets for Android and iOS, and a paper wallet.",
+    "com/VerusCoin/Verus-Desktop/releases)\nWallet: [CLI wallet releases](https://github.com/VerusCoin/VerusCoin/releases/)\nMobile wallet: [Android Mobile Wallet](https://github.com/VerusCoin/Verus-Mobile/releases/tag/v0.1.6-beta)\nMobile wallet: [iOS Mobile Wallet](https://testflight.apple.com/join/ZS43lYcw)\nPaper wallet: [Verus Paper wallet](https://paperwallet.verus.io/)\nBootstrap: [Download Verus Bootstrap](https://bootstrap.verus.io)\nVerusPay: [VerusPay setup guide](https://veruspay.io/setup/)",
+    "./raw_text_input_wiki/how-to_verus_info.md"
+]

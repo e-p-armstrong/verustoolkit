@@ -1,0 +1,6 @@
+[
+    "Can I use the `getinitialcurrencystate` command to get the total amount of tokens in circulation on my current chain?",
+    "No, the `getinitialcurrencystate` command is not used to get the total amount of tokens in circulation on your current chain. It's used to get information about other PBaaS chains that are being launched by your current chain. For getting information about your current chain, you would need to use a different command.",
+    "### `getinitialcurrencystate \"name\"`\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `getBlockHashForNotarisations` function?",
+            "There is no `getBlockHashForNotarisations` function. The actual function is `getNotarisationsForBlock` and it takes a block hash as an input and returns notarisation transactions within that block.",
+            "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ],
+        [
+            "Can you explain how to use the `getNotarisationsForBlock` function to get a list of all blocks in the blockchain?",
+            "The `getNotarisationsForBlock` function does not return a list of all blocks in the blockchain. Instead, it takes a block hash as an input and returns notarisation transactions within that specific block. It does not provide a way to get a list of all blocks in the blockchain.",
+            "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ],
+        [
+            "Is it possible to use `getNotarisationsForBlock` to get notarisation transactions from multiple blocks at once?",
+            "No, the `getNotarisationsForBlock` function only returns notarisation transactions within a single block, specified by the block hash input. It does not support getting notarisation transactions from multiple blocks at once.",
+            "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "015b7d0a-68e4-4703-878b-6f3c1dcddbc6"
+]

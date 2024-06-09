@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I preconvert VRSCTEST to a new currency?",
+            "You can preconvert VRSCTEST to a new currency, for example, NEWCOIN, using the following command:\n```\nverus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n```\nNote: OLDcoin is not a valid currency in this context.",
+            "TC\",\"via\":\"VRSC-BTC\"}]'\n  ```\n- **Preconverting to new currency, NEWCOIN, before it is active:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n  ```\n- **Sending VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"exportto\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I send VRSCTEST cross-chain to PBaaSChain without using the Bridge?",
+            "Using the Bridge is necessary for sending VRSCTEST cross-chain to PBaaSChain. The correct command for sending VRSCTEST cross-chain to PBaaSChain is:\n```\nverus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"exportto\":\"Bridge.PBaaSChain\"}]'\n```\nThe Bridge is required for this operation.",
+            "TC\",\"via\":\"VRSC-BTC\"}]'\n  ```\n- **Preconverting to new currency, NEWCOIN, before it is active:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n  ```\n- **Sending VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"exportto\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it possible to convert VRSCTEST to PBaaSChain without specifying the \"exportto\" parameter?",
+            "No, the \"exportto\" parameter is required when converting VRSCTEST to PBaaSChain. The correct command for converting VRSCTEST to PBaaSChain is:\n```\nverus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n```\nThe \"exportto\" parameter is necessary to specify the destination chain.",
+            "TC\",\"via\":\"VRSC-BTC\"}]'\n  ```\n- **Preconverting to new currency, NEWCOIN, before it is active:**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"alice@\",\"amount\":10, \"convertto\":\"NEWCOIN\", \"preconvert\":true, \"refundto\":\"alice@\"}]'\n  ```\n- **Sending VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"exportto\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting VRSCTEST cross-chain to PBaaSChain:**\n ```json\n verus -chain=VRSCTEST sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"PBaaSChain\",\"exportto\":\"Bridge.PBaaSChain\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n- **Converting PBaaSChain to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d186274d-6133-4adf-bafa-f17997208eb2"
+]

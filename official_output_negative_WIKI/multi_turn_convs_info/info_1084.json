@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `getcurrency` command with two arguments, \"currencyname\" and \"blockheight\"?",
+            "The `getcurrency` command only takes one argument, \"currencyname\", which is optional. If no parameter is provided, it returns the chain definition of the current chain in the daemon. There is no \"blockheight\" argument.",
+            "### `getcurrency \"currencyname\"`\nReturns a complete definition for any given chain if it is registered on the blockchain. If the chain requested is NULL, chain definition of the current chain is returned.#### Arguments:\n```\n1. \"currencyname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n```\n#### Result:\n```json\n{\n \"version\" : n,             (int) version of this chain definition\n \"name\" : \"string\",           (string) name or symbol of the chain, same as passed\n \"fullyqualifiedname\" : \"string\",    (string) name or symbol of the chain with all parent namespaces, separated by \".\"\n \"currencyid\" : \"i-address\",      (string) string that represents t",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "How do I use the `getcurrency` command to get the blockchain definition of a chain that is not registered on the blockchain?",
+            "The `getcurrency` command can only return a complete definition for a chain if it is registered on the blockchain. If the chain is not registered, the command will not return its definition.",
+            "### `getcurrency \"currencyname\"`\nReturns a complete definition for any given chain if it is registered on the blockchain. If the chain requested is NULL, chain definition of the current chain is returned.#### Arguments:\n```\n1. \"currencyname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n```\n#### Result:\n```json\n{\n \"version\" : n,             (int) version of this chain definition\n \"name\" : \"string\",           (string) name or symbol of the chain, same as passed\n \"fullyqualifiedname\" : \"string\",    (string) name or symbol of the chain with all parent namespaces, separated by \".\"\n \"currencyid\" : \"i-address\",      (string) string that represents t",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "What is the format of the result returned by the `getcurrency` command?",
+            "The result returned by the `getcurrency` command is a JSON object with several fields, including \"version\", \"name\", \"fullyqualifiedname\", and \"currencyid\". The exact format is:\n```json\n{\n \"version\" : n, \n \"name\" : \"string\", \n \"fullyqualifiedname\" : \"string\", \n \"currencyid\" : \"i-address\", \n ...\n}\n```",
+            "### `getcurrency \"currencyname\"`\nReturns a complete definition for any given chain if it is registered on the blockchain. If the chain requested is NULL, chain definition of the current chain is returned.#### Arguments:\n```\n1. \"currencyname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n```\n#### Result:\n```json\n{\n \"version\" : n,             (int) version of this chain definition\n \"name\" : \"string\",           (string) name or symbol of the chain, same as passed\n \"fullyqualifiedname\" : \"string\",    (string) name or symbol of the chain with all parent namespaces, separated by \".\"\n \"currencyid\" : \"i-address\",      (string) string that represents t",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "1d9d99ef-8bf8-47f4-98f3-c3e7a91e5caf"
+]

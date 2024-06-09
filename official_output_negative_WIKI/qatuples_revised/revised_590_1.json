@@ -1,0 +1,6 @@
+[
+    "To define a currency, do you need to send currency from one chain to another?",
+    "No, that's not correct. Defining a currency and sending currency from one chain to another are two separate actions. Defining a currency involves specifying the properties of the currency, such as its name, options, and proof protocol.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

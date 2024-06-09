@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getrawchangeaddress` command in normal wallet operations?",
+    "The `getrawchangeaddress` command is not intended for normal wallet operations. It's specifically designed for use with raw transactions, which is a more advanced feature.",
+    "getrawchangeaddress\n\nReturns a new VRSC address, for receiving change.\nThis is for use with raw transactions, NOT normal use.\n\nResult:\n\"address\"  (string) The address\n\nExamples:\n> verus getrawchangeaddress \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getrawchangeaddress\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getrawchangeaddress"
+]

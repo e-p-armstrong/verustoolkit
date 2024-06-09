@@ -1,0 +1,6 @@
+[
+    "What is the default value of the \"heightend\" argument when it is not specified?",
+    "The default value of the \"heightend\" argument when it is not specified is not 0, but rather \"maxheight\". This means that when \"heightend\" is not specified, the command will return exports below or at the maximum height.",
+    "### Arguments:\n```\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n2. \"heightstart\"          (int, optional)   default=0 only return exports at or above this height\n3. \"heightend\"           (int, optional)   dedfault=maxheight only return exports below or at this height",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

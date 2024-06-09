@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to understand how to use the \"includeWatchonly\" argument in Verus. Can I use it to exclude transactions to watchonly addresses?\n\n**AI Assistant:**\nActually, no. The \"includeWatchonly\" argument is used to include transactions to watchonly addresses, not to exclude them. It's a bit counterintuitive, I know, but that's how it works. So, if you want to include transactions to watchonly addresses in your query, you would use the \"includeWatchonly\" argument. If you don't want to include them, you would simply omit the argument or set it to false. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I use the \"includeWatchonly\" argument to exclude transactions to watchonly addresses?",
+            "No, the \"includeWatchonly\" argument is used to include transactions to watchonly addresses, not to exclude them.",
+            "#### Arguments:\n1. \"account\"  (string, optional) DEPRECATED. The account name. Should be \"\\*\".\n2. count     (numeric, optional, default=10) The number of transactions to return\n3. from      (numeric, optional, default=0) The number of transactions to skip\n4. includeWatchonly (bool, optional, default=false) Include transactions to watchonly addresses (see 'importaddress')#### Result:\n```json\n[\n {\n  \"account\":\"accountname\",    (string) DEPRECATED. The account name associated with the transaction.\n                        It will be \"\" for the default account.\n  \"address\":\"VRSC_address\",  (string) The VRSC address of the transaction. Not present for\n                        move transactions (category = move).\n  \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n                        transaction between accounts, and not associated with an address,\n                        transaction id or block. 'send' and 'receive' transactions are\n                        associated with an address, transaction id and block details\n  \"amount\": x.xxx,     (numeric) The amount in VRSC. This is negative for the 'send' category, and for the\n                     'move' category for moves outbound. It is positive for the 'receive' category,\n                     and for the 'move' category for inbound funds.\n  \"vout\" : n,        (numeric) the vout value\n  \"fee\": x.xxx,       (numeric) The amount of the fee in VRSC. This is negative and only available for the\n                     'send' category of transactions.\n  \"confirmations\": n,    (numeric) The number of confirmations for the transaction. Available for 'send'",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

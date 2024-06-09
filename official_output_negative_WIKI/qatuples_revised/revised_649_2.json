@@ -1,0 +1,6 @@
+[
+    "Are the command line formatting rules for Windows the same as those for Linux and MacOS?",
+    "No, the command line formatting rules for Windows are different from those for Linux and MacOS. On Windows, you need to substitute the shown `'`-character with the `\"`-character, and substitute the shown `\"`-character with the `\\\"`-characters, whereas on Linux and MacOS, the formatting is as shown in the CLI help.",
+    "# Remarks on Windows command line formatting:\n\nThe CLI help shows the command format for Linux and MacOS. On the native windows command prompt (`cmd.com`) the formatting is different.\n\n* For windows substitute the shown `'`-character with the `\"`-character.\n * For windows substitute the shown `\"`-character with the `\\\"`-characters.\n\nNote: this only applies to giving commands from the windows command prompt. Verus Desktop will accept commands as listed.\n\nCreated by Oink.vrsc@\n\nNote: last revision date 2020-03-02.",
+    "./raw_text_input_wiki/winfaq-01_cli_formatting.md"
+]

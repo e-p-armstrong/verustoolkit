@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Can you explain why the `getaddressdeltas` command does not require the `addressindex` to be enabled?",
+            "Actually, the `getaddressdeltas` command does require the `addressindex` to be enabled. This is explicitly stated in the documentation.",
+            "getaddressdeltas\n\nReturns all changes for an address (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"start\" (number) The start block height\n \"end\" (number) The end block height\n \"chaininfo\" (boolean) Include chain info in results, only applies if start and end specified\n \"friendlynames\" (boolean) Include additional array of friendly names keyed by currency i-addresses\n \"verbosity\" (number) (default == 0), if 1, include output information for spends, including all reserve amounts and destinations\n}\n\nResult:\n[\n {\n  \"satoshis\" (number) The difference of satoshis\n  \"txid\" (string) The related txid\n  \"index\" (number) The related input or output index\n  \"height\" (number) The block height\n  \"address\" (string) The base58check encoded address\n }\n]\n\nExamples:\n> verus getaddressdeltas '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressdeltas\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressdeltas"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "7255d9e4-036b-4c6d-b243-778f6c643ac7"
+]

@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to get some blockchain information, and I was wondering if you could help me with that. How do I use the `verus` command to connect to a remote node and get blockchain information?\n\n**AI Assistant:**\nActually, the `verus` command is used to interact with a local Verus node, not a remote one. To get blockchain information, you can use the `verus getblockchaininfo` command, which will retrieve the information from your local node. This command is a great way to get a snapshot of your blockchain's current state, including things like block height, difficulty, and more.\n\nWould you like more information on what kind of data you can retrieve with `getblockchaininfo`, or is there anything else I can help you with?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `verus` command to connect to a remote node and get blockchain information?",
+            "The `verus` command is used to interact with a local Verus node, not a remote one. To get blockchain information, you can use the `verus getblockchaininfo` command, which will retrieve the information from your local node.",
+            "Examples:\n> verus getblockchaininfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockchaininfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblockchaininfo"
+        ]
+    ]
+]

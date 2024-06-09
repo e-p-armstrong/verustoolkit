@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can you use the `definecurrency` command without providing a JSON definition?",
+            "No, you cannot use the `definecurrency` command without providing a JSON definition. The command requires a JSON definition as an argument, which specifies the properties of the currency being defined.",
+            "Result:\n{\n \"txid\" : \"transactionid\", (string) The transaction id\n \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction\n \"hex\" : \"data\"      (string) Raw data for signed transaction\n}\n\nExamples:\n> verus definecurrency jsondefinition\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ],
+        [
+            "Is it possible to use the `definecurrency` command through a web interface?",
+            "No, the `definecurrency` command is not accessible through a web interface. According to the examples provided, it can be used either through the Verus command-line interface (`verus definecurrency jsondefinition`) or through a JSON-RPC request using `curl` (`curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`).",
+            "Result:\n{\n \"txid\" : \"transactionid\", (string) The transaction id\n \"tx\"  : \"json\",     (json)  The transaction decoded as a transaction\n \"hex\" : \"data\"      (string) Raw data for signed transaction\n}\n\nExamples:\n> verus definecurrency jsondefinition\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"definecurrency\", \"params\": [jsondefinition] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/definecurrency"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "8b7a7a65-f549-4630-b322-6c071d3ded58"
+]

@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can you explain why the `takeoffer` command requires a database connection to work?",
+            "The `takeoffer` command does not require a database connection to work. The command is used to take an offer on the Verus network, and it can be executed using the Verus CLI or through an RPC call using `curl`. The command requires the necessary parameters such as the `fromaddress`, `deliver`, `accept`, and `feeamount` to be specified, but it does not need a database connection.",
+            "Examples:\n> verus takeoffer fromaddress '{\"txid\":\"txid\" | \"tx\":\"hextx\", \"deliver\":\"fullidnameoriaddresstodeliver\" | {\"currency\":\"currencynameorid\",\"amount\":...}, \"accept\":{\"address\":\"addressorid\",\"currency\":\"currencynameorid\",\"amount\"} | {identitydefinition}}' (returntx) (feeamount)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"takeoffer\", \"params\": [fromaddress {\"txid\":\"txid\" | \"tx\":\"hextx\", \"deliver\":\"fullidnameoriaddresstodeliver\" | {\"currency\":\"currencynameorid\",\"amount\":...}, \"accept\":{\"address\":\"addressorid\",\"currency\":\"currencynameorid\",\"amount\"} | {identitydefinition}} (returntx) (feeamount)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/takeoffer"
+        ],
+        [
+            "Why does the `takeoffer` command only work with Bitcoin transactions?",
+            "The `takeoffer` command does not only work with Bitcoin transactions. The command can be used with any currency or identity definition supported by the Verus network. The `takeoffer` command is a generic command that can be used to take an offer on the Verus network, and it is not limited to Bitcoin transactions.",
+            "Examples:\n> verus takeoffer fromaddress '{\"txid\":\"txid\" | \"tx\":\"hextx\", \"deliver\":\"fullidnameoriaddresstodeliver\" | {\"currency\":\"currencynameorid\",\"amount\":...}, \"accept\":{\"address\":\"addressorid\",\"currency\":\"currencynameorid\",\"amount\"} | {identitydefinition}}' (returntx) (feeamount)\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"takeoffer\", \"params\": [fromaddress {\"txid\":\"txid\" | \"tx\":\"hextx\", \"deliver\":\"fullidnameoriaddresstodeliver\" | {\"currency\":\"currencynameorid\",\"amount\":...}, \"accept\":{\"address\":\"addressorid\",\"currency\":\"currencynameorid\",\"amount\"} | {identitydefinition}} (returntx) (feeamount)] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/takeoffer"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "06174d66-5594-4479-988e-d42956bf4838"
+]

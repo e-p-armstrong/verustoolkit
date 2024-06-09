@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `zcrawreceive` command, which is used to encrypt a note and send it to the blockchain?",
+    "The `zcrawreceive` command is actually used to decrypt an encrypted note, not to encrypt one. It takes a `zcsecretkey` and an `encryptednote` as input, decrypts the note, and checks if the coin commitments are in the blockchain. The output includes the decrypted note plaintext, the amount, and a boolean indicating whether the coin commitments exist in the blockchain.",
+    "zcrawreceive zcsecretkey encryptednote\n\nDEPRECATED. Decrypts encryptednote and checks if the coin commitments\nare in the blockchain as indicated by the \"exists\" result.\n\nOutput: {\n \"amount\": value,\n \"note\": noteplaintext,\n \"exists\": exists\n}",
+    "./raw_text_input_api_text/zcrawreceive"
+]

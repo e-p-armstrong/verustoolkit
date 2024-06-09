@@ -1,0 +1,6 @@
+[
+    "Does the `getinitialcurrencystate` command only work with the current chain?",
+    "No, the `getinitialcurrencystate \"name\"` command is specifically designed to work with other PBaaS chains that are being launched by your current chain, not just the current chain itself. You need to specify the name of the other chain you want to get information about.",
+    "### `getinitialcurrencystate \"name\"`\nReturns the total amount of preconversions that have been confirmed on the blockchain for the specified PBaaS chain.\nThis should be used to get information about chains that are not this chain, but are being launched by it.",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

@@ -1,0 +1,6 @@
+[
+    "What does the `zcsamplejoinsplit` command do?",
+    "The `zcsamplejoinsplit` command performs a joinsplit and returns the JSDescription.",
+    "zcsamplejoinsplit\n\nPerform a joinsplit and return the JSDescription.",
+    "./raw_text_input_api_text/zcsamplejoinsplit"
+]

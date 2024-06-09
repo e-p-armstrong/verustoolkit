@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I've got a question about the `getreceivedbyaccount` command. Can I use it to get the total amount sent from an account?\n\n**AI Assistant:**\nActually, no, you can't use the `getreceivedbyaccount` command to get the total amount sent from an account. Instead, it returns the total amount received by addresses with a specified account in transactions with at least a certain number of confirmations.\n\n**User:**\nOkay, got it. So, can I use the `getreceivedbyaccount` command with any string as the \"account\" argument?\n\n**AI Assistant:**\nNo, you can't use the `getreceivedbyaccount` command with any string as the \"account\" argument. According to the documentation, the \"account\" argument MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How can I use the `getreceivedbyaccount` command to get the total amount sent from an account?",
+            "The `getreceivedbyaccount` command does not get the total amount sent from an account. Instead, it returns the total amount received by addresses with a specified account in transactions with at least a certain number of confirmations.",
+            "getreceivedbyaccount \"account\" ( minconf )\n\nDEPRECATED. Returns the total amount received by addresses with <account> in transactions with at least [minconf] confirmations.\n\nArguments:\n1. \"account\"   (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n\nResult:\namount       (numeric) The total amount in VRSC received for this account.\n\nExamples:\n\nAmount received by the default account with at least 1 confirmation\n> verus getreceivedbyaccount \"\"\n\nAmount received at the tabby account including unconfirmed amounts with zero confirmations\n> verus getreceivedbyaccount \"tabby\" 0\n\nThe amount with at least 6 confirmation, very safe\n> verus getreceivedbyaccount \"tabby\" 6\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getreceivedbyaccount\", \"params\": [\"tabby\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getreceivedbyaccount"
+        ],
+        [
+            "Can I use the `getreceivedbyaccount` command with any string as the \"account\" argument?",
+            "No, you cannot use the `getreceivedbyaccount` command with any string as the \"account\" argument. According to the documentation, the \"account\" argument MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.",
+            "getreceivedbyaccount \"account\" ( minconf )\n\nDEPRECATED. Returns the total amount received by addresses with <account> in transactions with at least [minconf] confirmations.\n\nArguments:\n1. \"account\"   (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n\nResult:\namount       (numeric) The total amount in VRSC received for this account.\n\nExamples:\n\nAmount received by the default account with at least 1 confirmation\n> verus getreceivedbyaccount \"\"\n\nAmount received at the tabby account including unconfirmed amounts with zero confirmations\n> verus getreceivedbyaccount \"tabby\" 0\n\nThe amount with at least 6 confirmation, very safe\n> verus getreceivedbyaccount \"tabby\" 6\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getreceivedbyaccount\", \"params\": [\"tabby\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getreceivedbyaccount"
+        ]
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "How do I use the `scanNotarisationsDB` command to scan forward from a given block height for a notarisation of a specific symbol?",
+            "The `scanNotarisationsDB` command actually scans notarisationsdb backwards from a given block height for a notarisation of a specific symbol, not forward. The correct usage is `scanNotarisationsDB blockHeight symbol [blocksLimit=1440]`, where `blockHeight` is the starting point for the backward scan.",
+            "scanNotarisationsDB blockHeight symbol [blocksLimit=1440]\n\nScans notarisationsdb backwards from height for a notarisation of given symbol",
+            "./raw_text_input_api_text/scanNotarisationsDB"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "3cb68675-6856-4916-9837-928dc0416376"
+]

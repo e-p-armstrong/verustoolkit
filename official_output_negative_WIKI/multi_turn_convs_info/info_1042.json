@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the OPTION_GATEWAY_NAMECONTROLLER option, and how does it affect the registration of IDs and currencies?",
+            "The OPTION_GATEWAY_NAMECONTROLLER option is set to 1024, and its purpose is to specify that top-level ID and currency registration happen on the launch chain when it is not set on a gateway. This means that when this option is not set on a gateway, the registration of IDs and currencies will occur on the launch chain.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Does the OPTION_NFT_TOKEN option create a multi-satoshi NFT token?",
+            "No, the OPTION_NFT_TOKEN option creates a single satoshi NFT token, which tokenizes control over the root ID. It is set to 2048.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is the OPTION_GATEWAY_NAMECONTROLLER option related to NFT tokens?",
+            "No, the OPTION_GATEWAY_NAMECONTROLLER option is related to the registration of IDs and currencies on a launch chain when not set on a gateway, whereas the OPTION_NFT_TOKEN option is related to creating a single satoshi NFT token that tokenizes control over the root ID. These are two separate options with different purposes.",
+            "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "600a43c3-8bfe-40e7-a0d1-96811f56fdbd"
+]

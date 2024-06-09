@@ -1,0 +1,6 @@
+[
+    "Is it possible to use the `curl` command to query the Verus blockchain without providing a username?",
+    "No, it is not possible to use the `curl` command to query the Verus blockchain without providing a username. You need to provide a username to authenticate the request.",
+    "Examples:\n> verus getpeerinfo \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getpeerinfo\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getpeerinfo"
+]

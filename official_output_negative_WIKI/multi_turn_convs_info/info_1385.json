@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do you identify a block that was mined through a transaction with a high fee?",
+            "Actually, a block that was minted (staking reward) can be identified by a transaction with no fee, not a high fee. Specifically, the last transaction in your wallet will have no fee, be from the same address that it is to, and also be the address the coinbase is to.",
+            "# Question: How do you know a block was minted (staking reward)?\n\nYou can see the following characteristics:\n1. a block hash without a lot of leading zeros\n2. a last transaction that in your wallet has no fee, is from the same address that it is to, which is also the address the coinbase is to (easiest confirmation) and\n3. The POS difficulty is encoded in the low 32 bits of the nonce with 96 of the next nonce bits as zero/reserved, then a random hash at the top half\n\n(submitted by @keda666)",
+            "./raw_text_input_wiki/faq-allos09_how_do_you_know_a_block_was_minted_staking_reward.md"
+        ],
+        [
+            "What does it mean if the POS difficulty is encoded in the high 32 bits of the nonce?",
+            "Actually, the POS difficulty is encoded in the low 32 bits of the nonce, not the high 32 bits. Additionally, the next 96 bits of the nonce are zero/reserved, followed by a random hash at the top half.",
+            "# Question: How do you know a block was minted (staking reward)?\n\nYou can see the following characteristics:\n1. a block hash without a lot of leading zeros\n2. a last transaction that in your wallet has no fee, is from the same address that it is to, which is also the address the coinbase is to (easiest confirmation) and\n3. The POS difficulty is encoded in the low 32 bits of the nonce with 96 of the next nonce bits as zero/reserved, then a random hash at the top half\n\n(submitted by @keda666)",
+            "./raw_text_input_wiki/faq-allos09_how_do_you_know_a_block_was_minted_staking_reward.md"
+        ],
+        [
+            "How do you verify a block was minted by checking the block hash for many leading zeros?",
+            "Actually, to verify a block was minted, you should look for a block hash without a lot of leading zeros, not many leading zeros. This, along with the other characteristics mentioned, can help you identify a block that was minted as a staking reward.",
+            "# Question: How do you know a block was minted (staking reward)?\n\nYou can see the following characteristics:\n1. a block hash without a lot of leading zeros\n2. a last transaction that in your wallet has no fee, is from the same address that it is to, which is also the address the coinbase is to (easiest confirmation) and\n3. The POS difficulty is encoded in the low 32 bits of the nonce with 96 of the next nonce bits as zero/reserved, then a random hash at the top half\n\n(submitted by @keda666)",
+            "./raw_text_input_wiki/faq-allos09_how_do_you_know_a_block_was_minted_staking_reward.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "5cacf0e5-ffca-4b3d-a6d7-ac1eaa66d4b4"
+]

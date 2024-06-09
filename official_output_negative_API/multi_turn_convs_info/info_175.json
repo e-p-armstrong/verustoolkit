@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I use the `getbalance` command to get the balance of a specific account named \"myaccount\"?",
+            "The `getbalance` command does not support specifying a specific account name like \"myaccount\". The \"account\" argument is deprecated and must be set to an empty string \"\" or \"*\", which will return the total available balance. Passing any other string, including \"myaccount\", will result in an error.",
+            "getbalance ( \"account\" minconf includeWatchonly )\n\nReturns the server's total available balance.\n\nArguments:\n1. \"account\"   (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" or to the string \"*\", either of which will give the total available balance. Passing any other string will result in an error.\n2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n3. includeWatchonly (bool, optional, default=false) Also include balance in watchonly addresses (see 'importaddress')\n\nResult:\namount       (numeric) The total amount in VRSC received for this account.\n\nExamples:\n\nThe total amount in the wallet\n> verus getbalance\n\nThe total amount in the wallet at least 5 blocks confirmed\n> verus getbalance \"*\" 6\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getbalance\", \"params\": [\"*\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getbalance"
+        ],
+        [
+            "Can I use the `getbalance` command to get the balance of a specific address?",
+            "The `getbalance` command does not support getting the balance of a specific address. It returns the total available balance of the wallet. If you want to get the balance of a specific address, you would need to use a different command or method.",
+            "getbalance ( \"account\" minconf includeWatchonly )\n\nReturns the server's total available balance.\n\nArguments:\n1. \"account\"   (string, optional) DEPRECATED. If provided, it MUST be set to the empty string \"\" or to the string \"*\", either of which will give the total available balance. Passing any other string will result in an error.\n2. minconf     (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n3. includeWatchonly (bool, optional, default=false) Also include balance in watchonly addresses (see 'importaddress')\n\nResult:\namount       (numeric) The total amount in VRSC received for this account.\n\nExamples:\n\nThe total amount in the wallet\n> verus getbalance\n\nThe total amount in the wallet at least 5 blocks confirmed\n> verus getbalance \"*\" 6\n\nAs a json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getbalance\", \"params\": [\"*\", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getbalance"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "81cc9e17-6ba6-428e-ae38-846607b994a1"
+]

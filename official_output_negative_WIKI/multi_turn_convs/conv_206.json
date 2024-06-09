@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been trying to figure out this command, `decodescript \"base64\"`, but I'm not really sure what it does. Can you help me out?\n\n**AI Assistant:**\nI think there may be a mistake. The command `decodescript \"base64\"` doesn't actually exist. The correct command is `decodescript \"hex\"`, which is used to decode a hex-encoded script. Did you maybe get the encoding type wrong?\n\n**User:**\nOh, I see! I must have gotten it mixed up. Thanks for correcting me! But, I was wondering, can I use the `decodescript` command to encode a script?\n\n**AI Assistant:**\nNo, the `decodescript` command is actually used to decode a script, not encode it. The command specifically decodes a hex-encoded script. If you need to encode a script, you'll need to use a different command or tool.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the command `decodescript \"base64\"`?",
+            "The command `decodescript \"base64\"` does not exist. The correct command is `decodescript \"hex\"`, which is used to decode a hex-encoded script.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ],
+        [
+            "Can I use the `decodescript` command to encode a script?",
+            "No, the `decodescript` command is used to decode a script, not encode it. The command specifically decodes a hex-encoded script.",
+            "### `decodescript \"hex\"`\nDecode a hex-encoded script.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

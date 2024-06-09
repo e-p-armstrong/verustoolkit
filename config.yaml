@@ -6,7 +6,7 @@ API:
 PATH:
   DEFAULT_PROMPTS: ./prompts
   INPUT: ./raw_text_input_wiki
-  OUTPUT: ./output_negative_test
+  OUTPUT: ./output_negative_WIKI
   PROMPTS: ./prompts_negative_questioning
 SKIP:
   QUESTION_CHECK: False
@@ -86,5 +86,5 @@ SYSTEM:
     {data}
   MODE: api
   STOP: true
-  SUBSET_SIZE: 50
-  USE_SUBSET: True
+  SUBSET_SIZE: 20
+  USE_SUBSET: False

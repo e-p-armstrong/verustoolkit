@@ -1,0 +1,6 @@
+[
+    "Is it possible to import a wallet using a JSON RPC call with the `z_exportwallet` method?",
+    "No, it's not possible to import a wallet using a JSON RPC call with the `z_exportwallet` method. The `z_exportwallet` method is used to dump the wallet, not to import taddr and zaddr keys from a wallet export file. To import a wallet using a JSON RPC call, you would use the `z_importwallet` method, for example: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`.",
+    "z_importwallet \"filename\"\n\nImports taddr and zaddr keys from a wallet export file (see z_exportwallet).\n\nArguments:\n1. \"filename\"  (string, required) The wallet file\n\nExamples:\n\nDump the wallet\n> verus z_exportwallet \"nameofbackup\"\n\nImport the wallet\n> verus z_importwallet \"path/to/exportdir/nameofbackup\"\n\nImport using the json rpc call\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_importwallet\", \"params\": [\"path/to/exportdir/nameofbackup\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/z_importwallet"
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `getimports` command, and how does it return all exports from a specific currency?",
+    "The `getimports` command does not return all exports from a specific currency. Instead, it returns all imports into a specific currency, optionally between a specific block range. It takes three arguments: the chain name, the start height, and the end height. The start height and end height are optional, defaulting to 0 if not provided.",
+    "getimports \"chainname\" (startheight) (endheight)\n\nReturns all imports into a specific currency, optionally that were imported between a specific block range.\n\nArguments\n1. \"chainname\"           (string, optional) name of the chain to look for. no parameter returns current chain in daemon.\n1. (startheight)           (number, optional) startheight default == 0\n1. (endheight)            (number, optional) endheight default == 0\n\nResult:\n {\n }\n\nExamples:\n> verus getimports \"chainname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getimports\", \"params\": [\"chainname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getimports"
+]

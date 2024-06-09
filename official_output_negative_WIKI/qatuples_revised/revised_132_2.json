@@ -1,0 +1,6 @@
+[
+    "When was the Verus mainnet protocol updated to include VerusID?",
+    "The Verus mainnet protocol was updated to include VerusID at block 800200.",
+    "Avast and Kaspersky may flag the software as \"not-a-virus\" or \"PUP\". These are warnings that you are installing mining software, which may be installed by a third party to exploit your PC.\nTo find out more about the false positives, review the following resources:\nhttps://blog.malwarebytes.com/detections/pup-optional-bitcoinminer/\nhttps://www.kaspersky.com/blog/not-a-virus/18015/\n# Notable Changes\n- Alleviate peer banning behavior\n- Staking enhancementsThis release includes activation support for VerusID, and relative adjustment to the CPU and FPGA-equalizing VerusHash 2.1 Algorithm**AT BLOCK 800200, THE VERUS MAINNET PROTOCOL WAS UPDATED TO INCLUDE VerusID. THIS UPDATE IS THE LATEST UPDATE FOR THE UPGRADED VERUS MAINNET**# Verus ID\nVerusIDs are a fully functional blockchain protocol, not just an ID system. There is no corporation involved in the protocol, unlike most blockchain ID implementations. VerusIDs provide plenty of opportunity for identity applications. Specifically, VerusID provides:",
+    "./raw_text_input_wiki/release_notes.md"
+]

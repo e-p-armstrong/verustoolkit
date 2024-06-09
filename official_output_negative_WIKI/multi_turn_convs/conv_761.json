@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to understand how fees work when creating an identity in Verus. Do I have it right that when creating an identity, 50% of the fees go to referrers and 50% go to miners or stakers?\n\n**AI Assistant:**\nActually, that's not correct. According to the protocol, 20 VRSC goes to the referrer's ID, 20 VRSC to the referrer's referrer's ID, 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block in which the ID is mined. Additionally, 100% of all funds that are not paid to referrers go to miners or stakers of the blockchain. So, it's not a 50/50 split.\n\n**User:**\nOkay, that makes sense. I was also wondering, do referrers receive a fixed amount of VRSC for each new identity created, regardless of the referral chain?\n\n**AI Assistant:**\nNo, that's not correct. The referral fees are structured in a hierarchical manner, with 20 VRSC going to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID. This implies that the amount of VRSC received by referrers depends on their position in the referral chain. So, it's not a fixed amount regardless of the referral chain.\n\n**User:**\nOne more thing, I've heard that miners or stakers don't receive any fees when a new identity is created. Is that true?\n\n**AI Assistant:**\nNo, that's not correct. Miners or stakers receive 20 VRSC when a new identity is created, in addition to 100% of all funds that are not paid to referrers. So, they do receive fees when a new identity is created.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "When creating an identity, does 50% of the fees go to referrers and 50% go to miners or stakers?",
+            "No, that's not correct. According to the protocol, 20 VRSC goes to the referrer's ID, 20 VRSC to the referrer's referrer's ID, 20 VRSC to the referrer's referrer's referrer's ID, and 20 VRSC to the miner of the block in which the ID is mined. Additionally, 100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Do referrers receive a fixed amount of VRSC for each new identity created, regardless of the referral chain?",
+            "No, that's not correct. The referral fees are structured in a hierarchical manner, with 20 VRSC going to the referrer's ID, 20 VRSC to the referrer's referrer's ID, and 20 VRSC to the referrer's referrer's referrer's ID. This implies that the amount of VRSC received by referrers depends on their position in the referral chain.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it true that miners or stakers do not receive any fees when a new identity is created?",
+            "No, that's not correct. Miners or stakers receive 20 VRSC when a new identity is created, in addition to 100% of all funds that are not paid to referrers.",
+            "- 20 VRSC to the referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the referrer\u2019s referrer\u2019s referrer\u2019s ID\n- 20 VRSC to the miner of the block in which the ID is mined100% of all funds that are not paid to referrers go to miners or stakers of the blockchain.## To create an identity:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `clearbanned` command if it only shows the current list of banned IPs?",
+    "The `clearbanned` command does not show the current list of banned IPs. Its purpose is to clear all banned IPs, effectively removing all IP addresses from the ban list. This command is used to reset the ban list and allow previously banned IPs to access the system again.",
+    "clearbanned\n\nClear all banned IPs.\n\nExamples:\n> verus clearbanned \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"clearbanned\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/clearbanned"
+]

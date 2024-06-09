@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of running the miner command without `nice -n 19`?",
+            "The command `nice -n 19` is actually used to run the miner with a lower priority, which is the recommended way to run the miner. It's not about running the miner command without `nice -n 19`, but rather, it's about adding `nice -n 19` to the command to run it with lower priority.",
+            "- Run your miner as you normally would, with `nice -n 19 ` placed in front of the command you normally use,\n  for example:\n   `nice -n 19 ./ccminer -a verus -o stratum+tcp://pool.verus.io:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.Donator -t 6`\n - make sure you replace the pool (`stratum+tcp://pool.verus.io:9999`) with your prefered pool and the address\n  (`RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ`) with your own address. The address shown in this line is the veruscoin\n  foundation donation address. If desired change the identifier (`Donator`) to a name that easily identifies the\n  miner to you.\n\nCreated by Oink.vrsc@.\n\nNote: last revision date 2020-11-11.",
+            "./raw_text_input_wiki/faq-lin08_low_priority_mining.html.md"
+        ],
+        [
+            "Can I use any pool and address I want, or do I have to use the ones specified in the example?",
+            "You can use your preferred pool and address, but you should not use the ones specified in the example (unless they are actually your preferred pool and address). The example shows the Veruscoin foundation donation address, which is not intended for personal use. You should replace the pool and address with your own.",
+            "- Run your miner as you normally would, with `nice -n 19 ` placed in front of the command you normally use,\n  for example:\n   `nice -n 19 ./ccminer -a verus -o stratum+tcp://pool.verus.io:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.Donator -t 6`\n - make sure you replace the pool (`stratum+tcp://pool.verus.io:9999`) with your prefered pool and the address\n  (`RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ`) with your own address. The address shown in this line is the veruscoin\n  foundation donation address. If desired change the identifier (`Donator`) to a name that easily identifies the\n  miner to you.\n\nCreated by Oink.vrsc@.\n\nNote: last revision date 2020-11-11.",
+            "./raw_text_input_wiki/faq-lin08_low_priority_mining.html.md"
+        ],
+        [
+            "Is it mandatory to change the identifier (`Donator`) to a name that easily identifies the miner to me?",
+            "No, it's not mandatory to change the identifier (`Donator`) to a name that easily identifies the miner to you. However, it's recommended to do so, as it can help you easily identify the miner.",
+            "- Run your miner as you normally would, with `nice -n 19 ` placed in front of the command you normally use,\n  for example:\n   `nice -n 19 ./ccminer -a verus -o stratum+tcp://pool.verus.io:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.Donator -t 6`\n - make sure you replace the pool (`stratum+tcp://pool.verus.io:9999`) with your prefered pool and the address\n  (`RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ`) with your own address. The address shown in this line is the veruscoin\n  foundation donation address. If desired change the identifier (`Donator`) to a name that easily identifies the\n  miner to you.\n\nCreated by Oink.vrsc@.\n\nNote: last revision date 2020-11-11.",
+            "./raw_text_input_wiki/faq-lin08_low_priority_mining.html.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "194c53a1-2d62-4a4e-accc-c1a096ba339c"
+]

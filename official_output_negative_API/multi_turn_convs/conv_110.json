@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having trouble with generating blocks on the mainnet. Can you tell me how to generate blocks on the mainnet using the `generate` command?\n\n**AI Assistant:**\nActually, the `generate` command can only be used on the regtest network, not on the mainnet. It's specifically designed for testing purposes, allowing you to generate a specified number of blocks immediately. You can't use it to generate blocks on the mainnet.\n\n**User:**\nOkay, that's good to know. What if I run the `generate` command without specifying a number? Is there a default number of blocks that gets generated?\n\n**AI Assistant:**\nNo, there is no default number of blocks generated when running the `generate` command without specifying a number. You must provide the `numblocks` argument, which specifies how many blocks to generate immediately. If you don't provide a number, the command won't work.\n\n**User:**\nGot it. And one more question: can I use the `generate` command to generate blocks in the background, without blocking the RPC call?\n\n**AI Assistant:**\nNo, the `generate` command mines blocks immediately, before the RPC call returns. It does not generate blocks in the background. The command will block until the specified number of blocks are generated.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do you generate blocks on the mainnet using the `generate` command?",
+            "The `generate` command can only be used on the regtest network, not on the mainnet. It's specifically designed for testing purposes, allowing you to generate a specified number of blocks immediately.",
+            "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+            "./raw_text_input_api_text/generate"
+        ],
+        [
+            "What is the default number of blocks generated when you run the `generate` command without specifying a number?",
+            "There is no default number of blocks generated when running the `generate` command without specifying a number. You must provide the `numblocks` argument, which specifies how many blocks to generate immediately.",
+            "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+            "./raw_text_input_api_text/generate"
+        ],
+        [
+            "Can you use the `generate` command to generate blocks in the background, without blocking the RPC call?",
+            "No, the `generate` command mines blocks immediately, before the RPC call returns. It does not generate blocks in the background.",
+            "generate numblocks\n\nMine blocks immediately (before the RPC call returns)\n\nNote: this function can only be used on the regtest network\n\nArguments:\n1. numblocks  (numeric) How many blocks are generated immediately.\n\nResult\n[ blockhashes ]   (array) hashes of blocks generated\n\nExamples:\n\nGenerate 11 blocks\n> verus generate 11",
+            "./raw_text_input_api_text/generate"
+        ]
+    ]
+]

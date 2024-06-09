@@ -1,0 +1,6 @@
+[
+    "How can I use `zcrawkeygen` to generate a zcaddr that can only receive confidential values, not send them?",
+    "`zcrawkeygen` actually generates a zcaddr that can both send and receive confidential values. The output includes the zcaddress, zcsecretkey, and zcviewingkey. There is no option to generate a zcaddr that can only receive confidential values.",
+    "zcrawkeygen\n\nDEPRECATED. Generate a zcaddr which can send and receive confidential values.\n\nOutput: {\n \"zcaddress\": zcaddr,\n \"zcsecretkey\": zcsecretkey,\n \"zcviewingkey\": zcviewingkey,\n}",
+    "./raw_text_input_api_text/zcrawkeygen"
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm trying to use the `sendcurrency` API and I'm a bit confused. Can I use it to send real money to someone?\n\n**AI Assistant:**\nNo, you cannot use the `sendcurrency` API to send real money to someone. The API is used to send and convert funds on the VRSCTEST testnet, and all testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset. It's purely for testing purposes.\n\n**User:**\nThat's good to know. So, I was wondering, if I use the `sendcurrency` API, will it always convert the funds to the recipient's preferred currency?\n\n**AI Assistant:**\nNo, the `sendcurrency` API can be used to send and convert funds, but it does not automatically convert the funds to the recipient's preferred currency. The conversion is specified in the API call, for example, `{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}`. You need to specify the conversion details in the API call itself.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I use the `sendcurrency` API to send real money to someone?",
+            "No, you cannot use the `sendcurrency` API to send real money to someone. The API is used to send and convert funds on the VRSCTEST testnet, and all testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset.",
+            "## Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n  ```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Will the `sendcurrency` API always convert the funds to the recipient's preferred currency?",
+            "The `sendcurrency` API can be used to send and convert funds, but it does not automatically convert the funds to the recipient's preferred currency. The conversion is specified in the API call, for example, `{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}`.",
+            "## Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n  ```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n  ```json\n  verus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

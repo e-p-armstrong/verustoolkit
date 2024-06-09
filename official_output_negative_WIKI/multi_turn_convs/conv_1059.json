@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI'm curious about creating currencies on Verus. Can anyone create a currency with any name they want, without needing to own a specific ID?\n\n**AI Assistant:**\nActually, no, that's not correct. To create a currency with a specific name, you need to own an ID with the same name. The controller of that ID is the only one who can create a currency with that name, and they can only do so once.\n\n**User:**\nThat makes sense. But what if I want to create multiple currencies with the same name? Can I do that as long as they're controlled by different IDs?\n\n**AI Assistant:**\nNo, that's not possible. If you have an ID with a specific name, you can only create one currency with that name. It's a one-to-one relationship between the ID and the currency.\n\n**User:**\nOkay, got it. So, just to confirm, can I create a currency without having an ID with the same name?\n\n**AI Assistant:**\nNo, you can't. To create a currency, you need to have an ID with the same name as the currency you want to create. The controller of that ID is the only one who can create a currency with that name.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can anyone create a currency with any name they want, without needing to own a specific ID?",
+            "No, that's not correct. To create a currency with a specific name, you need to own an ID with the same name. The controller of that ID is the only one who can create a currency with that name, and they can only do so once.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Is it possible to create multiple currencies with the same name, as long as they are controlled by different IDs?",
+            "No, that's not possible. If you have an ID with a specific name, you can only create one currency with that name. It's a one-to-one relationship between the ID and the currency.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I create a currency without having an ID with the same name?",
+            "No, you can't. To create a currency, you need to have an ID with the same name as the currency you want to create. The controller of that ID is the only one who can create a currency with that name.",
+            "To create a currency of a specific name, you need an ID of the same name. The controller of this ID is the only one who can create a currency of that name, and they can only do so once.\nSo, let's hypothetically assume I have 3 IDs, one named gold@, one named mycoin@, and one named mike@. I would like to have one currency, gold@,\nthat I somehow launch in a way that maps it in a way that can be widely trusted to a specific, auditable store of gold.\nI also would like to launch a token called mycoin@, which is something like a Kickstarter, where a business, \"",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

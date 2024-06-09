@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "Can you use the `getblock` command with a block hash and a block height at the same time?",
+            "No, the `getblock` command can only be used with either a block hash or a block height, not both at the same time. The examples provided show using `getblock` with a block hash (`00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5`) or a block height (`12800`), but not both.",
+            "Result (for verbosity = 2):\n{\n ...,           Same output as verbosity = 1.\n \"tx\" : [        (array of Objects) The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 \"tx\" result.\n     ,...\n ],\n ,...           Same output as verbosity = 1.\n}\n\nExamples:\n> verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblock 12800\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblock"
+        ],
+        [
+            "Is it possible to use the `getblock` command without specifying a block hash or height?",
+            "No, it is not possible to use the `getblock` command without specifying a block hash or height. The command requires either a block hash or a block height as a parameter, as shown in the examples provided.",
+            "Result (for verbosity = 2):\n{\n ...,           Same output as verbosity = 1.\n \"tx\" : [        (array of Objects) The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 \"tx\" result.\n     ,...\n ],\n ,...           Same output as verbosity = 1.\n}\n\nExamples:\n> verus getblock \"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [\"00000000febc373a1da2bd9f887b105ad79ddc26ac26c2b28652d64e5207c5b5\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n> verus getblock 12800\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblock\", \"params\": [12800] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getblock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "42835901-9635-48ee-891d-6efb729ba952"
+]

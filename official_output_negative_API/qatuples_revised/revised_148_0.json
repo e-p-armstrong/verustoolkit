@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the \"nullifiers\" field in the JSON object?",
+    "The \"nullifiers\" field in the JSON object is a JSON array of strings, where each string is a hexadecimal representation of an input note nullifier.",
+    "  \"nullifiers\" : [      (json array of string)\n     \"hex\"           (string) input note nullifier\n     ,...\n    ],\n    \"commitments\" : [      (json array of string)\n     \"hex\"           (string) output note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}",
+    "./raw_text_input_api_text/decoderawtransaction"
+]

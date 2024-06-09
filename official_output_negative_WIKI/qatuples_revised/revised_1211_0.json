@@ -1,0 +1,6 @@
+[
+    "How do you decode a raw transaction using the Verus CLI tool without specifying the hex string?",
+    "You cannot decode a raw transaction using the Verus CLI tool without specifying the hex string. The `decoderawtransaction` command requires a hex string as an argument, which is the raw transaction to be decoded. The correct usage is `verus decoderawtransaction \"hexstring\"`.",
+    "tput note commitment\n     ,...\n    ],\n    \"onetimePubKey\" : \"hex\", (string) the onetime public key used to encrypt the ciphertexts\n    \"randomSeed\" : \"hex\",   (string) the random seed\n    \"macs\" : [         (json array of string)\n     \"hex\"           (string) input note MAC\n     ,...\n    ],\n    \"proof\" : \"hex\",     (string) the zero-knowledge proof\n    \"ciphertexts\" : [      (json array of string)\n     \"hex\"           (string) output note ciphertext\n     ,...\n    ]\n   }\n   ,...\n ],\n}\n```\nExamples:\n```bash\n> verus decoderawtransaction \"hexstring\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"decoderawtransaction\", \"params\": [\"hexstring\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

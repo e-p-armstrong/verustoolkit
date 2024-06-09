@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I use the `getnotarizationproofs` method without providing any parameters?",
+            "You can't use the `getnotarizationproofs` method without providing any parameters. The method requires a list of objects as a parameter, each containing a `type`, `evidence`, `proveheight`, and `atheight` field.",
+            "Examples:\n> verus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnotarizationproofs"
+        ],
+        [
+            "Can I use the `getnotarizationproofs` method with a single parameter instead of a list of objects?",
+            "No, the `getnotarizationproofs` method requires a list of objects as a parameter, not a single object. The method is designed to work with a list of objects, where each object contains the required fields.",
+            "Examples:\n> verus getnotarizationproofs '[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnotarizationproofs\", \"params\": [[{\"type\":\"iCwxpRL6h3YeCRtGjgQSsqoKdZCuM4Dxaf\", \"evidence\":{CNotaryEvidence}, \"proveheight\":n, \"atheight\":n}, ...]] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnotarizationproofs"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "abac9831-c654-4a34-be36-1877ca86ce03"
+]

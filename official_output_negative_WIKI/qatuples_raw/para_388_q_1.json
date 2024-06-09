@@ -1,0 +1,6 @@
+[
+    "Can anyone mint new coins in a currency with `proofprotocol` set to 2?",
+    "No, not anyone can mint new coins in a currency with `proofprotocol` set to 2. Only the controller of the chain ID can mint new coins when `proofprotocol` is set to 2, which is PROOF_CHAINID.",
+    "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

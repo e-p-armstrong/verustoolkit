@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "How do I use the `backupwallet` command to restore a wallet from a backup?",
+            "The `backupwallet` command is actually used to create a backup of your wallet, not restore from one. It safely copies the `wallet.dat` file to a specified destination filename. If you want to restore a wallet from a backup, you would need to use a different command or method.",
+            "backupwallet \"destination\"\n\nSafely copies wallet.dat to destination filename\n\nArguments:\n1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option.\n\nResult:\n\"path\"       (string) The full path of the destination file\n\nExamples:\n> verus backupwallet \"backupdata\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ],
+        [
+            "Can I use the `backupwallet` command to backup a specific wallet account?",
+            "The `backupwallet` command backs up the entire `wallet.dat` file, not a specific wallet account. It does not provide a way to backup individual accounts within the wallet.",
+            "backupwallet \"destination\"\n\nSafely copies wallet.dat to destination filename\n\nArguments:\n1. \"destination\"  (string, required) The destination filename, saved in the directory set by -exportdir option.\n\nResult:\n\"path\"       (string) The full path of the destination file\n\nExamples:\n> verus backupwallet \"backupdata\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"backupwallet\", \"params\": [\"backupdata\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/backupwallet"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "b4e38693-d9cb-4794-8f9f-479f6d015920"
+]

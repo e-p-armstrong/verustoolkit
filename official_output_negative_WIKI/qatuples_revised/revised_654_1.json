@@ -1,0 +1,6 @@
+[
+    "Can I use the `sendcurrency` command to send VRSCTEST directly to a wallet address on the PBaaSChain?",
+    "No, you cannot send VRSCTEST directly to a wallet address on the PBaaSChain using the `sendcurrency` command. To send currency from PBaaSChain to VRSCTEST, you need to specify the `exportto` parameter as `\"VRSCTEST\"` and the `convertto` parameter as `\"VRSCTEST\"`.",
+    " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+    "./raw_text_input_wiki/release_notes.md"
+]

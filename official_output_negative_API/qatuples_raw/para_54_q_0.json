@@ -1,0 +1,6 @@
+[
+    "How do I use the `listopenoffers` command to list all closed offers in my wallet?",
+    "The `listopenoffers` command is used to list open offers in your wallet, not closed offers. If you want to list all open offers, you can use the command without any arguments, as it defaults to listing both unexpired and expired offers. If you want to list only unexpired or expired offers, you can specify the `unexpired` or `expired` argument, respectively.",
+    "listopenoffers (unexpired) (expired)'\n\nShows offers outstanding in this wallet\n\nArguments\n unexpired        (bool, optional) default=true, list those offers in the wallet which are not expired\n expired         (bool, optional) default=true, list those offers in the wallet which are expired\n\nResult\n all open offers",
+    "./raw_text_input_api_text/listopenoffers"
+]

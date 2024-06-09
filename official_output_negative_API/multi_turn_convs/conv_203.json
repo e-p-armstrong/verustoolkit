@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble understanding a function in the Verus API. Can you help me out? What is the purpose of the `getBlockHashForNotarisations` function?\n\n**AI Assistant:**\nI think there may be a mistake here. There is no `getBlockHashForNotarisations` function. The actual function is `getNotarisationsForBlock`, and it takes a block hash as an input and returns notarisation transactions within that block. Does that clear things up?\n\n**User:**\nOh, I apologize for the mistake! Thanks for correcting me. So, how do I use the `getNotarisationsForBlock` function to get a list of all blocks in the blockchain?\n\n**AI Assistant:**\nActually, the `getNotarisationsForBlock` function doesn't do that. It takes a block hash as an input and returns notarisation transactions within that specific block. It doesn't provide a way to get a list of all blocks in the blockchain. You'll need to use a different function or approach to get that information.\n\n**User:**\nOkay, got it. So, is it possible to use `getNotarisationsForBlock` to get notarisation transactions from multiple blocks at once?\n\n**AI Assistant:**\nNo, the `getNotarisationsForBlock` function only returns notarisation transactions within a single block, specified by the block hash input. It doesn't support getting notarisation transactions from multiple blocks at once. You'll need to call the function separately for each block you're interested in.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `getBlockHashForNotarisations` function?",
+            "There is no `getBlockHashForNotarisations` function. The actual function is `getNotarisationsForBlock` and it takes a block hash as an input and returns notarisation transactions within that block.",
+            "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ],
+        [
+            "Can you explain how to use the `getNotarisationsForBlock` function to get a list of all blocks in the blockchain?",
+            "The `getNotarisationsForBlock` function does not return a list of all blocks in the blockchain. Instead, it takes a block hash as an input and returns notarisation transactions within that specific block. It does not provide a way to get a list of all blocks in the blockchain.",
+            "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ],
+        [
+            "Is it possible to use `getNotarisationsForBlock` to get notarisation transactions from multiple blocks at once?",
+            "No, the `getNotarisationsForBlock` function only returns notarisation transactions within a single block, specified by the block hash input. It does not support getting notarisation transactions from multiple blocks at once.",
+            "getNotarisationsForBlock blockHash\n\nTakes a block hash and returns notarisation transactions within the block",
+            "./raw_text_input_api_text/getNotarisationsForBlock"
+        ]
+    ]
+]

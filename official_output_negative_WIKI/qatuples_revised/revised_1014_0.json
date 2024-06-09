@@ -1,0 +1,6 @@
+[
+    "How do I create a signature using the `verus` command-line tool without specifying the identity?",
+    "You can't create a signature without specifying the identity. The `verus signdata` command requires the identity to be specified, as shown in the example: `verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'`. The identity is a necessary parameter for creating a signature.",
+    "```\n#### Examples\nCreate the signature\n```bash\n> verus signdata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'\n```\nVerify the signature\n```bash\n> verus verifydata '{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\", \"signature\":\"base64sig\"}'\n```\nAs json rpc\n```bash\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signdata\", \"params\": ['{\"identity\":\"Verus Coin Foundation.vrsc@\", \"message\":\"hello world\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

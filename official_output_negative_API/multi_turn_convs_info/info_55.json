@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How can I use the `getaddressutxos` command to get the entire blockchain's unspent outputs?",
+            "You can't use the `getaddressutxos` command to get the entire blockchain's unspent outputs. The `getaddressutxos` command is used to retrieve all unspent outputs for a specific address or a list of addresses, not the entire blockchain. You need to provide the addresses you're interested in as an argument to the command.",
+            "getaddressutxos\n\nReturns all unspent outputs for an address (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ],\n \"chaininfo\"  (boolean) Include chain info with results\n \"friendlynames\" (boolean, optional default=false) Include additional array of friendly names keyed by currency i-addresses\n \"verbosity\"  (number) (default == 0), if 1, include output information for spends, including all reserve amounts and destinations\n}\n\nResult\n[\n {\n  \"address\" (string) The address base58check encoded\n  \"txid\" (string) The output txid\n  \"height\" (number) The block height\n  \"outputIndex\" (number) The output index\n  \"script\" (strin) The script hex encoded\n  \"satoshis\" (number) The number of satoshis of the output\n }\n]\n\nExamples:\n> verus getaddressutxos '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressutxos\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressutxos"
+        ],
+        [
+            "Can I use the `getaddressutxos` command without enabling the address index?",
+            "No, you can't use the `getaddressutxos` command without enabling the address index. The command requires the address index to be enabled in order to function.",
+            "getaddressutxos\n\nReturns all unspent outputs for an address (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ],\n \"chaininfo\"  (boolean) Include chain info with results\n \"friendlynames\" (boolean, optional default=false) Include additional array of friendly names keyed by currency i-addresses\n \"verbosity\"  (number) (default == 0), if 1, include output information for spends, including all reserve amounts and destinations\n}\n\nResult\n[\n {\n  \"address\" (string) The address base58check encoded\n  \"txid\" (string) The output txid\n  \"height\" (number) The block height\n  \"outputIndex\" (number) The output index\n  \"script\" (strin) The script hex encoded\n  \"satoshis\" (number) The number of satoshis of the output\n }\n]\n\nExamples:\n> verus getaddressutxos '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressutxos\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressutxos"
+        ],
+        [
+            "How can I use the `getaddressutxos` command to get the balance of an address?",
+            "The `getaddressutxos` command doesn't directly return the balance of an address. Instead, it returns a list of unspent outputs (UTXOs) associated with the address. You would need to sum up the `satoshis` values of these UTXOs to get the total balance of the address.",
+            "getaddressutxos\n\nReturns all unspent outputs for an address (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ],\n \"chaininfo\"  (boolean) Include chain info with results\n \"friendlynames\" (boolean, optional default=false) Include additional array of friendly names keyed by currency i-addresses\n \"verbosity\"  (number) (default == 0), if 1, include output information for spends, including all reserve amounts and destinations\n}\n\nResult\n[\n {\n  \"address\" (string) The address base58check encoded\n  \"txid\" (string) The output txid\n  \"height\" (number) The block height\n  \"outputIndex\" (number) The output index\n  \"script\" (strin) The script hex encoded\n  \"satoshis\" (number) The number of satoshis of the output\n }\n]\n\nExamples:\n> verus getaddressutxos '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressutxos\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressutxos"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "026d8137-543f-4556-821b-24c25649ef1e"
+]

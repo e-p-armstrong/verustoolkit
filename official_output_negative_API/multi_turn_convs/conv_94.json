@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to get some information about the Verus network. Can I use the `getnettotals` command to get information about the total number of transactions on the Verus network?\n\n**AI Assistant:**\nUnfortunately, the `getnettotals` command doesn't provide that information. Instead, it returns information about network traffic, including the total bytes received, total bytes sent, and current CPU time. If you're looking for transaction data, you might want to try a different command or API. Do you have any other questions about Verus or its commands?\n\n**User:**\nHmm, okay. Can I use the `getnettotals` command to get information about the total amount of Verus coins transferred on the network?\n\n**AI Assistant:**\nNo, the `getnettotals` command doesn't provide information about the total amount of Verus coins transferred on the network either. It only provides information about network traffic, including bytes received and sent, and CPU time. If you're looking for data on coin transactions, you might want to explore other options, such as using a blockchain explorer or API. Would you like some recommendations on where to find that information?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `getnettotals` command to get information about the total number of transactions on the Verus network?",
+            "The `getnettotals` command does not provide information about the total number of transactions on the Verus network. Instead, it returns information about network traffic, including the total bytes received, total bytes sent, and current CPU time.",
+            "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnettotals"
+        ],
+        [
+            "Can I use the `getnettotals` command to get information about the total amount of Verus coins transferred on the network?",
+            "No, the `getnettotals` command does not provide information about the total amount of Verus coins transferred on the network. It only provides information about network traffic, including bytes received and sent, and CPU time.",
+            "getnettotals\n\nReturns information about network traffic, including bytes in, bytes out,\nand current time.\n\nResult:\n{\n \"totalbytesrecv\": n,  (numeric) Total bytes received\n \"totalbytessent\": n,  (numeric) Total bytes sent\n \"timemillis\": t    (numeric) Total cpu time\n}\n\nExamples:\n> verus getnettotals \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getnettotals\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getnettotals"
+        ]
+    ]
+]

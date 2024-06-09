@@ -1,0 +1,6 @@
+[
+    "Does the Komodo project use a proof-of-work consensus algorithm?",
+    "The Komodo project's consensus algorithm is not specified. However, it does use Sapling enhanced zk-SNARKs zero-knowledge proofs for privacy, which is a feature commonly associated with proof-of-stake or other alternative consensus algorithms.",
+    "## Information:|||\n|---|---|\n|Platform:      |Komodo|\n|Project type:    |Decentralized public blockchain|\n|          |Open source, fair launch, no ICO|\n|          |Community driven project|\n|Privacy:      |Sapling enhanced, zk-SNARKs zero knowledge proofs|\n|Website:  ",
+    "./raw_text_input_wiki/how-to_verus_info.md"
+]

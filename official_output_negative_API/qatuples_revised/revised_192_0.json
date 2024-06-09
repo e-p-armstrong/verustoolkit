@@ -1,0 +1,6 @@
+[
+    "How do I use the `getblockdeltas` command without specifying a block hash?",
+    "The `getblockdeltas` command does require a block hash as a parameter. In the examples provided, the block hash `00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b` is used. You cannot use the `getblockdeltas` command without specifying a block hash.",
+    "Examples:\n> verus getblockdeltas 00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getblockdeltas\", \"params\": [\"00227e566682aebd6a7a5b772c96d7a999cadaebeaf1ce96f4191a3aad58b00b\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getblockdeltas"
+]

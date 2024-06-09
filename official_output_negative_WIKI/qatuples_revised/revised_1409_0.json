@@ -1,0 +1,6 @@
+[
+    "Will my wallet sync instantly, regardless of the number of addresses I have?",
+    "No, your wallet won't sync instantly, regardless of the number of addresses you have. The syncing process may take several minutes to complete, depending on the number of addresses in your wallet and how far along you are on re-syncing.",
+    "Depending on the number of addresses in your wallet and how far along you are on re-syncing, this may take several minutes to complete. Your balances will adjust as the chain syncs, as it only knows about the transactions that have happened in the blocks it has received and scanned. That means your balance will adjust as new blocks are scanned and won't reflect an accurate balance until you are fully synced.\n\nNote: last revision date 2020-11-11.",
+    "./raw_text_input_wiki/faq-allos20_i_followed_the_procedure_in_faq_19_and_am_still_having_problems_with_my_wallet.md"
+]

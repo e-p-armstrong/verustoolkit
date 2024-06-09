@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to define a new currency, \"mycoin\", and I'm not sure about one of the options. What is the purpose of setting `proofprotocol` to 1 in the `definecurrency` command for \"mycoin\"?\n\n**AI Assistant:**\nActually, the `proofprotocol` is set to 2, not 1, and it means that the controller of the chain ID can mint new coins. Setting `proofprotocol` to 2 sets it to PROOF_CHAINID, allowing the controller of the chain ID to mint new coins.\n\n**User:**\nOkay, so does that mean anyone can mint new coins in \"mycoin\" after it's been defined?\n\n**AI Assistant:**\nNo, only the controller of the chain ID can mint new coins in \"mycoin\" after it's been defined. This is because the `proofprotocol` is set to 2, which is PROOF_CHAINID, giving the controller of the chain ID the ability to mint new coins.\n\n**User:**\nGot it! So what if I want to send existing coins of \"mycoin\" to an address, rather than minting new ones? What's the command for that?\n\n**AI Assistant:**\nThe command you provided only shows how to mint new coins of \"mycoin\" with the `mintnew` option. To send existing coins of \"mycoin\" to an address, you would need to use a different command, likely a `sendcurrency` command without the `mintnew` option.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of setting `proofprotocol` to 1 in the `definecurrency` command for \"mycoin\"?",
+            "The `proofprotocol` is actually set to 2, not 1, and it means that the controller of the chain ID can mint new coins. Setting `proofprotocol` to 2 sets it to PROOF_CHAINID, allowing the controller of the chain ID to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can anyone mint new coins in \"mycoin\" after it's been defined?",
+            "No, only the controller of the chain ID can mint new coins in \"mycoin\" after it's been defined. This is because the `proofprotocol` is set to 2, which is PROOF_CHAINID, giving the controller of the chain ID the ability to mint new coins.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "What is the command to send existing coins of \"mycoin\" to an address, rather than minting new ones?",
+            "The command provided only shows how to mint new coins of \"mycoin\" with the `mintnew` option. To send existing coins of \"mycoin\" to an address, you would need to use a different command, likely a `sendcurrency` command without the `mintnew` option.",
+            "```\n./verus -chain=VRSCTEST definecurrency '{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\", \"gold\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000'\n```\nIn \"mycoin\", I set proofprotocol to 2, which is PROOF_CHAINID. That means that the controller of the chain ID can mint new coins as follows:```\n./verus -chain=VRSCTEST sendcurrency \"mycoin@\" '[{\"address\":\"mike@\",\"currency\":\"mycoin\",\"mintnew\":1,\"amount\":10000}]'\n```",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

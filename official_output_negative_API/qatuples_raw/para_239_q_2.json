@@ -1,0 +1,6 @@
+[
+    "What is the purpose of the `estimatefee` command if it only returns the minimum fee?",
+    "The `estimatefee` command does not only return the minimum fee. It estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of blocks. The minimum fee is only returned if there are not enough transactions and blocks observed to make an estimate. The purpose of the command is to provide an estimate of the fee needed for a transaction to be confirmed within a certain number of blocks.",
+    "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+    "./raw_text_input_api_text/estimatefee"
+]

@@ -1,0 +1,6 @@
+[
+    "Does the `getlocalsolps` command return the total number of solutions found by all nodes in the network?",
+    "No, the `getlocalsolps` command does not return the total number of solutions found by all nodes in the network. It returns the average local solutions per second since this node was started, which is a measure of the performance of the local node.",
+    "### `getlocalsolps`\nReturns the average local solutions per second since this node was started.\nThis is the same information shown on the metrics screen (if enabled).#### Result:\nxxx.xxxxx   (numeric) Solutions per second average",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]

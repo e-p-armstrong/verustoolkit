@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to use the `estimatepriority` command to figure out how much I need to pay in fees for a transaction to be confirmed within a certain number of blocks. Can you help me out?\n\n**AI Assistant:**\nI think there might be some confusion. The `estimatepriority` command doesn't actually estimate the fee needed for a transaction. Instead, it estimates the approximate priority a zero-fee transaction needs to begin confirmation within a certain number of blocks. The command takes one argument, `nblocks`, which is the number of blocks within which you want the transaction to be confirmed.\n\n**User:**\nOh, I see. So what does a result of 0.0 mean when using the `estimatepriority` command?\n\n**AI Assistant:**\nActually, a result of 0.0 is not a documented result of the `estimatepriority` command. A result of -1.0 is returned if not enough transactions and blocks have been observed to make an estimate.\n\n**User:**\nOkay, got it. One more question: can I use the `estimatepriority` command to estimate the priority of a transaction that already has a fee?\n\n**AI Assistant:**\nNo, the `estimatepriority` command is specifically designed to estimate the priority of a zero-fee transaction. It doesn't estimate the priority of transactions that already have a fee.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the `estimatepriority` command to estimate the fee needed for a transaction to be confirmed within a certain number of blocks?",
+            "The `estimatepriority` command doesn't estimate the fee needed for a transaction. Instead, it estimates the approximate priority a zero-fee transaction needs to begin confirmation within a certain number of blocks. The command takes one argument, `nblocks`, which is the number of blocks within which you want the transaction to be confirmed.",
+            "estimatepriority nblocks\n\nEstimates the approximate priority\na zero-fee transaction needs to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated priority\n\n-1.0 is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatepriority 6",
+            "./raw_text_input_api_text/estimatepriority"
+        ],
+        [
+            "What does a result of 0.0 mean when using the `estimatepriority` command?",
+            "A result of 0.0 is not a documented result of the `estimatepriority` command. A result of -1.0 is returned if not enough transactions and blocks have been observed to make an estimate.",
+            "estimatepriority nblocks\n\nEstimates the approximate priority\na zero-fee transaction needs to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated priority\n\n-1.0 is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatepriority 6",
+            "./raw_text_input_api_text/estimatepriority"
+        ],
+        [
+            "Can I use the `estimatepriority` command to estimate the priority of a transaction that already has a fee?",
+            "The `estimatepriority` command is specifically designed to estimate the priority of a zero-fee transaction. It doesn't estimate the priority of transactions that already have a fee.",
+            "estimatepriority nblocks\n\nEstimates the approximate priority\na zero-fee transaction needs to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated priority\n\n-1.0 is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatepriority 6",
+            "./raw_text_input_api_text/estimatepriority"
+        ]
+    ]
+]

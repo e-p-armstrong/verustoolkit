@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been trying to use the `verus` command, but I'm not quite sure what I'm doing. Can you help me out? What is the purpose of the `verus` command with the `setcurrency` argument, like this: `verus setcurrency \"currencyname\"`?\n\n**AI Assistant:**\nI think there might be some confusion. There is no `setcurrency` argument for the `verus` command. The correct command is actually `verus getcurrency \"currencyname\"`, which is used to retrieve information about a specific currency. Are you trying to get information about a particular currency?\n\n**User:**\nOh, I see! Thanks for the correction. I think I might have gotten it mixed up. I was also trying to use the `verus` command to send a request to a remote server using HTTP. Can you help me with that?\n\n**AI Assistant:**\nYou don't actually use the `verus` command to send an HTTP request to a remote server. Instead, you can use the `curl` command to send a JSON-RPC request to a local Verus node. For example, you can use the following command: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrency\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`. This will allow you to interact with your local Verus node using JSON-RPC. Does that make sense?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "What is the purpose of the `verus` command with the `setcurrency` argument, like this: `verus setcurrency \"currencyname\"`?",
+            "There is no `setcurrency` argument for the `verus` command. The correct command is `verus getcurrency \"currencyname\"`, which is used to retrieve information about a specific currency.",
+            "Examples:\n> verus getcurrency \"currencyname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrency\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getcurrency"
+        ],
+        [
+            "How do I use the `verus` command to send a request to a remote server using HTTP?",
+            "You don't use the `verus` command to send an HTTP request to a remote server. Instead, you can use the `curl` command to send a JSON-RPC request to a local Verus node, like this: `curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrency\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/`",
+            "Examples:\n> verus getcurrency \"currencyname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getcurrency\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getcurrency"
+        ]
+    ]
+]

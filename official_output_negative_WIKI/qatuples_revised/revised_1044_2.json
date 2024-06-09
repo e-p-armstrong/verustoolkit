@@ -1,0 +1,6 @@
+[
+    "Is the OPTION_GATEWAY_NAMECONTROLLER option related to NFT tokens?",
+    "No, the OPTION_GATEWAY_NAMECONTROLLER option is related to the registration of IDs and currencies on a launch chain when not set on a gateway, whereas the OPTION_NFT_TOKEN option is related to creating a single satoshi NFT token that tokenizes control over the root ID. These are two separate options with different purposes.",
+    "ill publish prices\nOPTION_GATEWAY_NAMECONTROLLER = 1024  // when not set on a gateway, top level ID and currency registration happen on launch chain\nOPTION_NFT_TOKEN = 2048        // single satoshi NFT token, tokenizes control over the root ID\n```",
+    "./raw_text_input_wiki/release_notes.md"
+]

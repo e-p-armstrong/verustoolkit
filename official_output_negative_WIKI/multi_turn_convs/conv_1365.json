@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've been playing around with some commands and I'm not entirely sure what's going on. If I use the command `sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`, I will immediately receive 0.975 GOLD in my wallet, right?\n\n**AI Assistant:**\nActually, that's not correct. Using this command will park your conversion until the GOLD token launches. Only after the token launches will you either find 0.975 GOLD in your wallet or have your VRSCTEST back. So, it's not immediate, but rather dependent on the launch of the GOLD token.\n\n**User:**\nI see. I've also been thinking about creating a custom coin. Can I create a custom coin that can only be converted to with VRSCTEST using a specific command?\n\n**AI Assistant:**\nNo, you can create a custom coin that can be converted to with either VRS or VRSCTEST. The conversion options are not limited to just one of these. Would you like to know more about creating custom coins or is there something else I can help you with?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "If I use the command `sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'`, I will immediately receive 0.975 GOLD in my wallet, right?",
+            "No, that's not correct. Using this command will park your conversion until the GOLD token launches. Only after the token launches will you either find 0.975 GOLD in your wallet or have your VRSCTEST back.",
+            "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I create a custom coin that can only be converted to with VRSCTEST using a specific command?",
+            "No, you can create a custom coin that can be converted to with either...",
+            "T sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

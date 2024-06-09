@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm having some trouble finding my way around. How do I access the Frequently Asked Questions section for Linux users?\n\n**AI Assistant:**\nUnfortunately, I have to break the news to you that there isn't a specific FAQ section dedicated to Linux users. The available FAQs are more focused on Windows-related topics, such as command line formatting, pool-mining on low priority, and standard locations for Verus-Desktop installations on Windows.\n\n**User:**\nThat's a bit disappointing. Is there at least a single, comprehensive FAQ section that covers all Verus-related topics?\n\n**AI Assistant:**\nSorry to say, but there isn't a single, all-encompassing FAQ section that covers every Verus-related topic. The FAQs are organized into separate sections, each focusing on a specific topic or platform. You might need to explore different sections to find the answers you're looking for.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I access the Frequently Asked Questions section for Linux users?",
+            "There is no indication of a section for Linux users. The available FAQs are related to Windows command line formatting, Windows pool-mining on low priority, and standard locations for Verus-Desktop installations on Windows.",
+            "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+            "./raw_text_input_wiki/index.md"
+        ],
+        [
+            "Is there a single, comprehensive FAQ section that covers all Verus-related topics?",
+            "There is no single, comprehensive FAQ section that covers all Verus-related topics. The FAQs are organized into separate sections, each focusing on a specific topic or platform.",
+            "## Frequently Asked Questions (Windows specific)\n[Remarks on Windows command line formatting](#!faq-windows/winfaq-01_cli_formatting.md)\n[Windows pool-mining on low priority](#!faq-windows/winfaq-02_low_priority_mining.md)\n[Standard locations for Verus-Desktop installations](#!faq-windows/winfaq-03_verus_desktop_locations.md)",
+            "./raw_text_input_wiki/index.md"
+        ]
+    ]
+]

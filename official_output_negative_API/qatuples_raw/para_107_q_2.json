@@ -1,0 +1,6 @@
+[
+    "Can you use the `getminingdistribution` command to retrieve the mining distribution for a specific user or address?",
+    "No, the `getminingdistribution` command retrieves the current mining distribution in general, not for a specific user or address. It returns a JSON object with the current mining distribution, which includes destination addresses and their relative values, but it does not filter or target a specific user or address.",
+    "getminingdistribution\n\nRetrieves current mining distribution\n\nArguments: NONE\n\nResult:\n   NULL object if not set\n   If set:\n   {\n    \"uniquedestination1\":value  (key/number) valid destination address and relative value output to it\n    \"uniquedestination2\":value  (key/number) destination address and relative value output\n    ...\n   }\n\nExamples:\n> verus getminingdistribution \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getminingdistribution\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getminingdistribution"
+]

@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to use the Verus API to retrieve some specific currency information. Can you help me with that? I want to retrieve all currencies that have less than 1000 VRSC in reserve.\n\n**AI Assistant:**\nI'd be happy to help! However, I need to correct you - the Verus API actually retrieves all currencies that have **at least** 1000 VRSC in reserve, not less than. Additionally, the currencies must also have a reserve ratio greater than 10% VRSC and have all listed currencies as reserves.\n\nIf you're still interested in using the API to retrieve this information, I can provide you with more guidance on how to do so. Just let me know!",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I use the Verus API to retrieve all currencies that have less than 1000 VRSC in reserve?",
+            "The Verus API actually retrieves all currencies that have **at least** 1000 VRSC in reserve, not less than. Additionally, the currencies must also have a reserve ratio greater than 10% VRSC and have all listed currencies as reserves.",
+            "verters` API retrieves all currencies that have at least 1000 VRSC in reserve, are greater than 10% VRSC reserve ratio, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

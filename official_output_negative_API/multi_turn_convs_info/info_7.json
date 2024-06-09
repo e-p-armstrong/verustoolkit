@@ -1,0 +1,20 @@
+[
+    [
+        [
+            "What is the purpose of the `getunconfirmedbalance` command when it comes to sending transactions?",
+            "The `getunconfirmedbalance` command doesn't actually relate to sending transactions. Its purpose is to return the server's total unconfirmed balance.",
+            "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+            "./raw_text_input_api_text/getunconfirmedbalance"
+        ],
+        [
+            "Does the `getunconfirmedbalance` command return the confirmed balance of the server?",
+            "No, the `getunconfirmedbalance` command does not return the confirmed balance of the server. It returns the server's total unconfirmed balance.",
+            "getunconfirmedbalance\nReturns the server's total unconfirmed balance",
+            "./raw_text_input_api_text/getunconfirmedbalance"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "29b6d3fa-d91d-48d2-8b62-7f20e3c87254"
+]

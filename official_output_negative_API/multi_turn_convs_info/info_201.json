@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What is the purpose of the `getreservedeposits` command if it only returns deposits controlled by independent currencies?",
+            "The `getreservedeposits` command actually returns all deposits under the control of the specified currency or chain, not just independent currencies. If the currency is of an external system or chain, all deposits will be under the control of that system or chain only, not its independent currencies.",
+            "getreservedeposits \"currencyname\" (returnutxos)\n\nReturns all deposits under control of the specified currency or chain. If the currency is of an external system\nor chain, all deposits will be under the control of that system or chain only, not its independent currencies.\n\nArguments\n1. \"currencyname\"    (string, required)    full name or i-ID of controlling currency\n2. \"returnutxos\"    (bool, optional)     if true, returns a UTXO list and currency values on each\n\nResult:\n {\n   \"utxos\" : {utxo and currency values},    if returnutxos == true, else null\n   \"currency 1 i-address\" : value,\n   \"currency 2 i-address\" : value,\n }\n\nExamples:\n> verus getreservedeposits \"currencyname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getreservedeposits\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getreservedeposits"
+        ],
+        [
+            "How do I use the `getreservedeposits` command to return a list of all deposits on the entire Verus network?",
+            "The `getreservedeposits` command does not return a list of all deposits on the entire Verus network. It returns all deposits under the control of a specified currency or chain. To use this command, you need to specify the \"currencyname\" argument, which is the full name or i-ID of the controlling currency.",
+            "getreservedeposits \"currencyname\" (returnutxos)\n\nReturns all deposits under control of the specified currency or chain. If the currency is of an external system\nor chain, all deposits will be under the control of that system or chain only, not its independent currencies.\n\nArguments\n1. \"currencyname\"    (string, required)    full name or i-ID of controlling currency\n2. \"returnutxos\"    (bool, optional)     if true, returns a UTXO list and currency values on each\n\nResult:\n {\n   \"utxos\" : {utxo and currency values},    if returnutxos == true, else null\n   \"currency 1 i-address\" : value,\n   \"currency 2 i-address\" : value,\n }\n\nExamples:\n> verus getreservedeposits \"currencyname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getreservedeposits\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getreservedeposits"
+        ],
+        [
+            "What is the default value of the \"returnutxos\" argument in the `getreservedeposits` command?",
+            "The default value of the \"returnutxos\" argument in the `getreservedeposits` command is not specified. However, if \"returnutxos\" is true, the command returns a UTXO list and currency values on each. If \"returnutxos\" is not specified, it is likely false by default, and the command will not return a UTXO list.",
+            "getreservedeposits \"currencyname\" (returnutxos)\n\nReturns all deposits under control of the specified currency or chain. If the currency is of an external system\nor chain, all deposits will be under the control of that system or chain only, not its independent currencies.\n\nArguments\n1. \"currencyname\"    (string, required)    full name or i-ID of controlling currency\n2. \"returnutxos\"    (bool, optional)     if true, returns a UTXO list and currency values on each\n\nResult:\n {\n   \"utxos\" : {utxo and currency values},    if returnutxos == true, else null\n   \"currency 1 i-address\" : value,\n   \"currency 2 i-address\" : value,\n }\n\nExamples:\n> verus getreservedeposits \"currencyname\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getreservedeposits\", \"params\": [\"currencyname\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getreservedeposits"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "37ab4756-464c-4b3d-a5bb-875d99e541cb"
+]

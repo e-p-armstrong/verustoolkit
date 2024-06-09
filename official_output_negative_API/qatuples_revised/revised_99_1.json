@@ -1,0 +1,6 @@
+[
+    "Can I use the `getaccountaddress` command to get the VRSC address of any account, regardless of its name?",
+    "No, you can't use the `getaccountaddress` command to get the VRSC address of any account, regardless of its name. If you pass any string other than an empty string (`\"\"`), the command will result in an error. You can only use the command to get the VRSC address of the default account by passing an empty string as the argument.",
+    "getaccountaddress \"account\"\n\nDEPRECATED. Returns the current VRSC address for receiving payments to this account.\n\nArguments:\n1. \"account\"    (string, required) MUST be set to the empty string \"\" to represent the default account. Passing any other string will result in an error.\n\nResult:\n\"VRSC_address\"  (string) The account VRSC address\n\nExamples:\n> verus getaccountaddress \n> verus getaccountaddress \"\"\n> verus getaccountaddress \"myaccount\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaccountaddress\", \"params\": [\"myaccount\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/getaccountaddress"
+]

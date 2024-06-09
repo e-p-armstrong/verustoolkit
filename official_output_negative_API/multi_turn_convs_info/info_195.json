@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I use the `invalidateblock` command to mark a block as invalid?",
+            "The `invalidateblock` command is used to permanently mark a block as invalid, not to validate a block. It's used to mark a block as if it violated a consensus rule. To invalidate a block, you would use the command `invalidateblock \"hash\"` where \"hash\" is the hash of the block you want to mark as invalid.",
+            "invalidateblock \"hash\"\n\nPermanently marks a block as invalid, as if it violated a consensus rule.\n\nArguments:\n1. hash  (string, required) the hash of the block to mark as invalid\n\nResult:\n\nExamples:\n> verus invalidateblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/invalidateblock"
+        ],
+        [
+            "What is the purpose of the `invalidateblock` command if it only temporarily marks a block as invalid?",
+            "The `invalidateblock` command does not temporarily mark a block as invalid, it permanently marks a block as invalid, as if it violated a consensus rule. This means that once a block is marked as invalid using this command, it will remain invalid.",
+            "invalidateblock \"hash\"\n\nPermanently marks a block as invalid, as if it violated a consensus rule.\n\nArguments:\n1. hash  (string, required) the hash of the block to mark as invalid\n\nResult:\n\nExamples:\n> verus invalidateblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/invalidateblock"
+        ],
+        [
+            "Can I use the `invalidateblock` command to mark a transaction as invalid instead of a block?",
+            "No, the `invalidateblock` command is used to mark a block as invalid, not a transaction. It takes the hash of a block as an argument, not a transaction ID. It's used to mark a block as if it violated a consensus rule, not to invalidate individual transactions within a block.",
+            "invalidateblock \"hash\"\n\nPermanently marks a block as invalid, as if it violated a consensus rule.\n\nArguments:\n1. hash  (string, required) the hash of the block to mark as invalid\n\nResult:\n\nExamples:\n> verus invalidateblock \"blockhash\"\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"invalidateblock\", \"params\": [\"blockhash\"] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/invalidateblock"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "2eeda1bb-477a-4870-874a-a8a9e0758cf5"
+]

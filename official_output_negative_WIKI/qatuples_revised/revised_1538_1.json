@@ -1,0 +1,6 @@
+[
+    "Is it possible to use the `getcurrencyconverters` command to list all currencies that have markets with any cryptocurrency?",
+    "The `getcurrencyconverters` command is used to list currencies that have markets with specific reserve currencies, not to list all currencies that have markets with any cryptocurrency. To list currencies that have markets with specific reserve currencies, you need to specify those currencies as arguments to the command, like this:\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nThis will return all currencies that have markets with both BTC and ETH. If you want to list all currencies that have markets with any cryptocurrency, you would need to use a different command or approach.",
+    "o, and have all listed currencies as reserves\n- **E.g. BTC ETH:**\n```\nverus -chain=VRSCTEST getcurrencyconverters btc eth\n```\nWill return all currencies that have btc/eth markets at or above the liquidity threshold.",
+    "./raw_text_input_wiki/release_notes.md"
+]

@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "How do I use the `sendcurrency` API to send VRSCTEST from a single address to a single recipient, and also guarantee that the funds will be converted to a different currency?",
+            "The `sendcurrency` API does not have a built-in feature to guarantee conversion to a different currency. The examples provided only show how to send VRSCTEST from a single address to a single recipient, or from all private wallet funds to multiple recipients, without any currency conversion.\n\nIf you want to convert funds to a different currency, you would need to use a different API or command, or perform the conversion as a separate step.",
+            "#### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I use the `sendcurrency` API to send VRSCTEST from a single address to multiple recipients, and also specify a custom currency name for the transaction?",
+            "The `sendcurrency` API does allow sending VRSCTEST from a single address to multiple recipients, but it does not allow specifying a custom currency name for the transaction. The currency name is fixed as \"vrsctest\" or \"VRSCTEST\" in the provided examples.",
+            "#### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Are testnet coins/currencies on VRSCTEST permanent and can be used as a store of value?",
+            "No, testnet coins/currencies on VRSCTEST are not permanent and have no value. They will disappear whenever VRSCTEST is reset.",
+            "#### Sending and Converting Currency\n**Warning: All testnet coins/currencies have no value and will disappear whenever VRSCTEST is reset**The `sendcurrency` API can be used to send and convert funds.\n- **Sending VRSCTEST from a single address (bob@) to a single recipient (alice@):**\n```\nverus -chain=VRSCTEST sendcurrency \"bob@\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@\",\"amount\":10}]'\n```\n- **Sending VRSCTEST from all private wallet funds to two recipients with friendly-name z-addresses (alice@:private and bob@:private):**\n```\nverus -chain=VRSCTEST sendcurrency \"*Z\" '[{\"currency\":\"vrsctest\",\"address\":\"alice@:private\",\"amount\":10},{\"currency\":\"VRSCTEST\",\"address\":\"bob@:private\",\"amount\"",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "87ebdbba-954a-4d4c-8312-c153ff388308"
+]

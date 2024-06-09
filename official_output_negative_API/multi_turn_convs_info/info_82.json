@@ -1,0 +1,14 @@
+[
+    [
+        [
+            "Is it possible to use the `recoveridentity` command without specifying the \"returntx\" argument?",
+            "Yes, it is possible to use the `recoveridentity` command without specifying the \"returntx\" argument. The \"returntx\" argument is optional, and if not provided, it defaults to `false`, which means the transaction will be sent instead of being signed and returned.",
+            "recoveridentity \"jsonidentity\" (returntx) (tokenrecover) (feeoffer) (sourceoffunds)\n\nArguments\n    \"returntx\"            (bool,  optional) defaults to false and transaction is sent, if true, transaction is signed by this wallet and returned\n    \"tokenrecover\"          (bool,  optional) defaults to false, if true, the tokenized ID control token, if one exists, will be used to recover\n    \"feeoffer\"            (value, optional) non-standard fee amount to pay for the transaction\n    \"sourceoffunds\"          (string, optional) transparent or private address to source all funds for fees to preserve privacy of the identity\n\nResult:\n\nExamples:\n> verus recoveridentity '{\"name\" : \"myname\"}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"recoveridentity\", \"params\": ['{\"name\" : \"myname\"}'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/recoveridentity"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "d8da224d-228e-461f-912b-f1be8cea4695"
+]

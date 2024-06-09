@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm having some trouble with the `getaddressbalance` command. Can I use it without enabling addressindex?\n\n**AI Assistant:**\nUnfortunately, the answer is no. You cannot use the `getaddressbalance` command without enabling addressindex. The `getaddressbalance` command requires addressindex to be enabled in order to function correctly. This is explicitly stated in the documentation. Enabling addressindex is a necessary step to use this command. Do you have any other questions about using `getaddressbalance` or addressindex?",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I use the `getaddressbalance` command without enabling addressindex?",
+            "No, you cannot use the `getaddressbalance` command without enabling addressindex. The `getaddressbalance` command requires addressindex to be enabled in order to function correctly. This is explicitly stated in the documentation.",
+            "getaddressbalance\n\nReturns the balance for an address(es) (requires addressindex to be enabled).\n\nArguments:\n{\n \"addresses\"\n  [\n   \"address\" (string) The base58check encoded address\n   ,...\n  ]\n \"friendlynames\" (boolean) Include additional array of friendly names keyed by currency i-addresses\n}\n\nResult:\n{\n \"balance\" (number) The current balance in satoshis\n \"received\" (number) The total number of satoshis received (including change)\n}\n\nExamples:\n> verus getaddressbalance '{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"getaddressbalance\", \"params\": [{\"addresses\": [\"RY5LccmGiX9bUHYGtSWQouNy1yFhc5rM87\"]}] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/getaddressbalance"
+        ]
+    ]
+]

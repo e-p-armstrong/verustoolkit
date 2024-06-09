@@ -1,0 +1,14 @@
+[
+    "## Conversation that answers the provided question:\n**User:**\nHey, I'm trying to register an identity on the Verus network. Can I use the `registernamecommitment` command to do so?\n\n**AI Assistant:**\nActually, no, the `registernamecommitment` command is not used to register an identity. It's a step in the process, but not the final step. The `registernamecommitment` command is used to register a name commitment, which is a prerequisite for registering an identity. To actually register an identity, you'll need to use the `registeridentity` command. Make sure you've completed the name commitment step successfully before moving on to register your identity.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can I register an identity using the `registernamecommitment` command?",
+            "No, the `registernamecommitment` command is not used to register an identity. It is used to register a name commitment, which is a prerequisite for registering an identity. The actual identity registration is done using the `registeridentity` command.",
+            "#### Result:\n  transactionid          (hexstr)\nExamples:\n```bash\n> verus registeridentity jsonidregistration\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"registeridentity\", \"params\": [jsonidregistration] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/\n```### `registernamecommitment \"name\" \"controladdress\" (\"referralidentity\") (\"parentnameorid\") (\"sourceoffunds\")`\nRegisters a name commitment, which is required as a source for the name to be used when registering an identity. The name commitment hides the name itself while ensuring that the miner who mines in the registration cannot front-run the name unless they have also registered a name commitment for the same name or are willing to forfeit the offer of payment for the chance that a commitment made now will allow them to register the name in the future.",
+            "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+[
+    "Is MadCatMining a currently active mining pool for Verus?",
+    "No, MadCatMining is currently inactive. Although it's listed as an option, it's not a viable choice for mining Verus at this time.",
+    "# Question: What are the mining pools that I can join?\n\n[luckpool.net](https://luckpool.net/verus)\n[pool.verus.io](https://pool.verus.io)\n[zergpool.com](https://zergpool.com/)\n[wattpool.net](https://wattpool.net/ui/verus/stats)\n[vrsc.ciscotech.dk](https://vrsc.ciscotech.dk/)\n[www.lepool.com.cn](http://www.lepool.com.cn:8088/)\n[www.zhuaao.com](http://www.zhuaao.com:8880/)\n[aod-tech.com](https://cryptopools.aod-tech.com/)\n[verus.alphatechit.co.uk](https://verus.alphatechit.co.uk/)\n[MadCatMining (currently inactive)](https://vrsc.mcmpool.eu/)\n\nThe statistics of the known public pools can be checked here:\n[Mining Pool Stats](https://miningpoolstats.stream/veruscoin)\n\nPayouts from mining pools do not need to be shielded first. The mining pool has already taken care of that.\n\nNote: last revision date 2020-11-08.",
+    "./raw_text_input_wiki/faq-allos21_mining_pools.md"
+]

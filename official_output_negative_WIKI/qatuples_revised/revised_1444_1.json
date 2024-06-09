@@ -1,0 +1,6 @@
+[
+    "Can I create mycoin with a command like `ST definecurrency \"*\" '[{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000]'`?",
+    "No, the command `ST definecurrency \"*\" '[{\"name\":\"mycoin\",\"options\":33, \"proofprotocol\":2,\"currencies\":[\"vrsctest\"],\"minpreconversion\":[10000,5.1298]}, \"initialsupply\":20000]'` is not correct. To create mycoin, you need to specify that it can be converted to with either GOLD or VRSCTEST, but in this command, only VRSCTEST is specified as a convertible currency. The correct command should include both GOLD and VRSCTEST as convertible currencies.",
+    "ST sendcurrency \"*\" '[{\"address\":\"mike@\",\"convertto\":\"gold\",\"preconvert\":1,\"amount\":100}]'\n```\nthat would effectively park my conversion until the token launches, at which point, I will either find 0.975 GOLD in my wallet, or I will have my VRSCTEST back.\nAssuming it launches, and I later want to create mycoin, which can be converted to with either GOLD or VRSCTEST, I can create mycoin with:",
+    "./raw_text_input_wiki/release_notes.md"
+]

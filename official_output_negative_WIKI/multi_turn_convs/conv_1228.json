@@ -1,0 +1,26 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHey, I'm trying to edit my `/etc/ssh/sshd_config` file to enable login with the Root User. Can you tell me how to do that?\n\n**AI Assistant:**\nActually, I should correct you. Editing the `/etc/ssh/sshd_config` file doesn't enable login with the Root User, but rather disables it. To do this, you need to set `PermitRootLogin` to `no` in the file. This is a security measure to prevent unauthorized access to your system. Before making this change, make sure you have a newly created user with sudo rights, as this will ensure you can still access and manage your system.\n\n**User:**\nOkay, got it. So, what's the command to apply the new settings after editing the `/etc/ssh/sshd_config` file?\n\n**AI Assistant:**\nThe command to apply the new settings after editing the `/etc/ssh/sshd_config` file is `sudo systemctl restart sshd`. This restarts the SSH daemon, which then applies the changes you made to the configuration file.\n\n**User:**\nOne more question. If I set `PermitRootLogin` to `yes` in the `/etc/ssh/sshd_config` file, can I still login as Root User?\n\n**AI Assistant:**\nNo, that's not correct. If you set `PermitRootLogin` to `no` in the `/etc/ssh/sshd_config` file, you won't be able to login as Root User. Setting it to `no` disables root login, which is a security measure to prevent unauthorized access to your system. If you set it to `yes`, then you would be able to login as Root User, but this is not recommended for security reasons.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I enable login with the Root User by editing the `/etc/ssh/sshd_config` file?",
+            "You don't enable login with the Root User by editing the `/etc/ssh/sshd_config` file, you actually disable it. To do this, you need to set `PermitRootLogin` to `no` in the file. This is a security measure to prevent unauthorized access to your system. Before making this change, make sure you have a newly created user with sudo rights, as this will ensure you can still access and manage your system.",
+            "Disable login with Root User\n(make sure your newly created user login works and has sudo rights)\n `sudo nano /etc/ssh/sshd_config`\nFind: PermitRootLogin yes\nAnd set to\nPermitRootLogin no\nApply new settings:\n `sudo systemctl restart sshd`\n\n(submitted by @karero, corrected by @Glennp, edited by Oink.vrsc@)\n\nNote: last revision date 2022-08-19.",
+            "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+        ],
+        [
+            "What is the command to apply the new settings after editing the `/etc/ssh/sshd_config` file?",
+            "The command to apply the new settings after editing the `/etc/ssh/sshd_config` file is `sudo systemctl restart sshd`. This restarts the SSH daemon, which then applies the changes you made to the configuration file.",
+            "Disable login with Root User\n(make sure your newly created user login works and has sudo rights)\n `sudo nano /etc/ssh/sshd_config`\nFind: PermitRootLogin yes\nAnd set to\nPermitRootLogin no\nApply new settings:\n `sudo systemctl restart sshd`\n\n(submitted by @karero, corrected by @Glennp, edited by Oink.vrsc@)\n\nNote: last revision date 2022-08-19.",
+            "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+        ],
+        [
+            "Can I still login as Root User after setting `PermitRootLogin` to `yes` in the `/etc/ssh/sshd_config` file?",
+            "No, you shouldn't be able to login as Root User if you set `PermitRootLogin` to `no` in the `/etc/ssh/sshd_config` file. Setting it to `no` disables root login, which is a security measure to prevent unauthorized access to your system. If you set it to `yes`, then you would be able to login as Root User, but this is not recommended for security reasons.",
+            "Disable login with Root User\n(make sure your newly created user login works and has sudo rights)\n `sudo nano /etc/ssh/sshd_config`\nFind: PermitRootLogin yes\nAnd set to\nPermitRootLogin no\nApply new settings:\n `sudo systemctl restart sshd`\n\n(submitted by @karero, corrected by @Glennp, edited by Oink.vrsc@)\n\nNote: last revision date 2022-08-19.",
+            "./raw_text_input_wiki/faq-lin01_install_linux_cli.md"
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nI've got a question about quantum secure addresses. I've heard that if I upgrade to one, it will only secure the latest 100 transactions sent to my identity name/address. Is that true?\n\n**AI Assistant:**\nActually, that's a misconception. Upgrading to a quantum secure address will retroactively secure **all** transactions sent to your identity name/address, not just the latest 100. This means that if you have 1000 transactions sent to your identity, the upgrade will secure all 1000 of them.\n\n**User:**\nThat's great to know! I was worried I'd have to re-secure all my previous transactions manually. Speaking of which, will I need to manually re-secure each of my previous transactions when I upgrade to a quantum secure address!?\n\n**AI Assistant:**\nNo, you won't need to manually re-secure each of your previous transactions. Upgrading to a quantum secure address will retroactively secure all previous transactions sent to your identity name/address, so you won't need to take any additional steps to secure them. The upgrade will take care of everything for you.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "Can you explain why upgrading to a quantum secure address will only secure the latest 100 transactions sent to my identity name/address?",
+            "Actually, upgrading to a quantum secure address will retroactively secure **all** transactions sent to your identity name/address, not just the latest 100. This means that if you have 1000 transactions sent to your identity, the upgrade will secure all 1000 of them.",
+            "s as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Will I need to manually re-secure each of my previous transactions when I upgrade to a quantum secure address?",
+            "No, you won't need to manually re-secure each of your previous transactions. Upgrading to a quantum secure address will retroactively secure all previous transactions sent to your identity name/address, so you won't need to take any additional steps to secure them.",
+            "s as well. That means that if you have 1000 transactions sent to your identity name/address, an upgrade to a quantum secure address, when they are available, will retroactively secure all 1000 transactions under the control of that address.",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

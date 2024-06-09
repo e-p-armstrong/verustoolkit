@@ -1,0 +1,6 @@
+[
+    "How do I use the `keypoolrefill` command to shrink the keypool to 50?",
+    "The `keypoolrefill` command is used to fill the keypool, not shrink it. If you want to set the keypool size to 50, you would use `keypoolrefill 50`. The default size is 100, but you can specify a different size as an argument.",
+    "keypoolrefill ( newsize )\n\nFills the keypool.\n\nArguments\n1. newsize   (numeric, optional, default=100) The new keypool size\n\nExamples:\n> verus keypoolrefill \n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"keypoolrefill\", \"params\": [] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+    "./raw_text_input_api_text/keypoolrefill"
+]

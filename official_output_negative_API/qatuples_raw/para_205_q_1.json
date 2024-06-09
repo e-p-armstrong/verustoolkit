@@ -1,0 +1,6 @@
+[
+    "Is the `zcrawreceive` command a new feature in the latest version of the software?",
+    "No, the `zcrawreceive` command is actually deprecated, meaning it is no longer recommended for use and may be removed in future versions.",
+    "zcrawreceive zcsecretkey encryptednote\n\nDEPRECATED. Decrypts encryptednote and checks if the coin commitments\nare in the blockchain as indicated by the \"exists\" result.\n\nOutput: {\n \"amount\": value,\n \"note\": noteplaintext,\n \"exists\": exists\n}",
+    "./raw_text_input_api_text/zcrawreceive"
+]

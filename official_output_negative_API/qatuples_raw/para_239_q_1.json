@@ -1,0 +1,6 @@
+[
+    "Can I use the `estimatefee` command to get an exact fee per kilobyte for a transaction?",
+    "No, the `estimatefee` command does not provide an exact fee per kilobyte for a transaction. It estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within a certain number of blocks. If there are not enough transactions and blocks observed, the minimum fee is returned.",
+    "estimatefee nblocks\n\nEstimates the approximate fee per kilobyte\nneeded for a transaction to begin confirmation\nwithin nblocks blocks.\n\nArguments:\n1. nblocks   (numeric)\n\nResult:\nn :  (numeric) estimated fee-per-kilobyte\n\nminimum fee is returned if not enough transactions and\nblocks have been observed to make an estimate.\n\nExample:\n> verus estimatefee 6",
+    "./raw_text_input_api_text/estimatefee"
+]

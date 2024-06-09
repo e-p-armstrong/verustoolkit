@@ -1,0 +1,6 @@
+[
+    "What does it mean if the result is `false` when validating a signature?",
+    "According to the text, if the result is `true`, it means the signature is valid. There is no mention of what `false` means in this context, but we can infer that if `true` means the signature is valid, then `false` would likely mean the signature is invalid.",
+    "**The result will be true if the signature is valid.**\n```\ntrue\n```\n# Announcing immediate availability of GUI and CLI for all platforms of the NON-MANDATORY v0.8.0-1 UPDATEThis release includes a testnet fix for the Ethereum bridge and is required for those who want to continue using the current testnet.v0.8.0 and v0.8.0-1 Updates include:",
+    "./raw_text_input_wiki/release_notes.md"
+]

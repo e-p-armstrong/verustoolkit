@@ -1,0 +1,20 @@
+[
+    "## Conversation that answers the provided questions:\n**User:**\nHi, I'm trying to figure out how to use the `sendcurrency` command to convert VRSCTEST to PBaaSChain. Can you help me with that?\n\n**AI Assistant:**\nActually, you don't actually convert VRSCTEST to PBaaSChain. The `sendcurrency` command is used to send currency from one chain to another, not to convert between them. It's more like transferring assets between different blockchains.\n\n**User:**\nSo, can I use the `sendcurrency` command to send VRSCTEST directly to a wallet address on the PBaaSChain?\n\n**AI Assistant:**\nNo, you cannot send VRSCTEST directly to a wallet address on the PBaaSChain using the `sendcurrency` command. To send currency from PBaaSChain to VRSCTEST, you need to specify the `exportto` parameter as `\"VRSCTEST\"` and the `convertto` parameter as `\"VRSCTEST\"`. This way, you're telling the command to export the currency to the VRSCTEST chain and convert it to the correct format.",
+    "AI Assistant",
+    "",
+    "N/A",
+    [
+        [
+            "How do I convert VRSCTEST to PBaaSChain using the `sendcurrency` command?",
+            "You don't actually convert VRSCTEST to PBaaSChain. The `sendcurrency` command is used to send currency from one chain to another, not to convert between them.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ],
+        [
+            "Can I use the `sendcurrency` command to send VRSCTEST directly to a wallet address on the PBaaSChain?",
+            "No, you cannot send VRSCTEST directly to a wallet address on the PBaaSChain using the `sendcurrency` command. To send currency from PBaaSChain to VRSCTEST, you need to specify the `exportto` parameter as `\"VRSCTEST\"` and the `convertto` parameter as `\"VRSCTEST\"`.",
+            " to VRSCTEST:**\n ```json\n verus -chain=PBaaSChain sendcurrency \"*\" '[{\"address\":\"RXLYm4J6qi7yam9zXtkEkRwbvCrnWKGZuv\",\"amount\":10, \"convertto\":\"VRSCTEST\",\"exportto\":\"VRSCTEST\",\"via\":\"Bridge.PBaaSChain\"}]'\n ```\n## Defining a Currency",
+            "./raw_text_input_wiki/release_notes.md"
+        ]
+    ]
+]

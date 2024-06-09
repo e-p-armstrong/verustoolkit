@@ -1,0 +1,26 @@
+[
+    [
+        [
+            "What does the `z_getoperationresult` command do when you provide an empty list of operation IDs?",
+            "When you provide an empty list of operation IDs to the `z_getoperationresult` command, it doesn't ignore all operations and return nothing. Instead, it examines all operations known to the node.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ],
+        [
+            "Can I use the `z_getoperationresult` command to retrieve the result and status of an operation that is still in progress?",
+            "No, you cannot use the `z_getoperationresult` command to retrieve the result and status of an operation that is still in progress. This command only retrieves the result and status of an operation that has finished, and then removes the operation from memory.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ],
+        [
+            "What is the return type of the `z_getoperationresult` command?",
+            "The return type of the `z_getoperationresult` command is not a single JSON object, but rather an array of JSON objects.",
+            "z_getoperationresult ([\"operationid\", ... ])\n\nRetrieve the result and status of an operation which has finished, and then remove the operation from memory.\n\nArguments:\n1. \"operationid\"     (array, optional) A list of operation ids we are interested in. If not provided, examine all operations known to the node.\n\nResult:\n\"  [object, ...]\"   (array) A list of JSON objects\n\nExamples:\n> verus z_getoperationresult '[\"operationid\", ... ]'\n> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"z_getoperationresult\", \"params\": ['[\"operationid\", ... ]'] }' -H 'content-type: text/plain;' http://127.0.0.1:27486/",
+            "./raw_text_input_api_text/z_getoperationresult"
+        ]
+    ],
+    "will",
+    "be",
+    "replaced",
+    "763bacf7-9cf4-402b-8951-1864c9571503"
+]

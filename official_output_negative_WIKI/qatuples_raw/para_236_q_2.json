@@ -1,0 +1,6 @@
+[
+    "What is the default value of the \"txid\" argument?",
+    "There is no default value for the \"txid\" argument. It is a required string argument, and you must provide a value for it.",
+    "#### Arguments:\n1. \"txid\"  (string, required) The transaction id\n2. \"includeWatchonly\"  (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]",
+    "./raw_text_input_wiki/clifaq-02_verus_commands.md"
+]
