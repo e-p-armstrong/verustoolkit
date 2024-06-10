@@ -215,7 +215,7 @@ datasets:
     type: sharegpt
     conversation: chatml # synthetic_data_hallucination_defence_combined_reminder.jsonl
   - path: json
-    data_files: synthetic_data_hallucination_defence_combined_reminder
+    data_files: synthetic_data_hallucination_defence_combined_reminder.jsonl
     ds_type: json
     type: sharegpt
     conversation: chatml
@@ -258,6 +258,8 @@ resume_from_checkpoint:
 logging_steps: 1
 xformers_attention:
 flash_attention: true
+
+chat_template: chatml
 
 warmup_steps: 100
 auto_resume_from_checkpoints: false
