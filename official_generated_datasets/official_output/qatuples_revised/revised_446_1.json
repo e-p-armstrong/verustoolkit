@@ -1,6 +1,0 @@
-[
-    "Where are the base directories located for Komodo and Komodo asset chains on different operating systems?",
-    "The base directories for Komodo are:\n* Linux: `~/.Komodo`\n* Mac OS: `~/Library/Application Support/Komodo`\n* Windows 10: `%AppData%\\Roaming\\Komodo`\n\nFor Komodo asset chains, the directory is a folder within the `komodo` base directory, with the official coin designation (e.g., `komodo/PIRATE`).",
-    "#### For Komodo the base directory is `komodo`. * Linux:\t\t`~/.Komodo` * Mac OS: \t`~/Library/Application Support/Komodo` * Windows 10: \t`%AppData%\\Roaming\\Komodo` For Komodo asset chains it is a folder/directory in the `komodo` base directory (eg `komodo/PIRATE`) with the **official** coin designation. #### For Zcash the base directory is `zcash` instead of komodo. * Linux:\t\t`~/.Zcash` * Mac OS: \t`~/Library/Application Support/Zcash` * Windows 10: \t`%AppData%\\Roaming\\Zcash` #### **non-Verus** chains Verus Desktop * **before** executing the command in the `run ...` commands, select the appropriate coin in the top right corner. Information compiled by Oink.vrsc@. Note: revision date 2022-09-12.",
-    "./raw_txt_input/how-to_backup_my_wallet.md"
-]

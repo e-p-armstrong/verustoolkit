@@ -158,10 +158,11 @@ See the `_model_training_configs_and_data` folder.
 
 To train a model on the data produced by Verustoolkit, you can use the provided model training configurations and the data that you generated. The second demo video exhaustively shows how to do this, but here's a quick rundown if you have some experience with training LLMs (or CS in general):
 
-1. Rent a GPU instance on a cloud provider like [Vast.ai](https://vast.ai/) or [Runpod](https://www.runpod.io/). If you want to be really secure against Out Of Memory issues, consider using an A100. You can also use a local GPU if you have one. Be sure to use the winglian/axolotl:main-latest docker image.
+1. Rent a GPU instance on a cloud provider like [Vast.ai](https://vast.ai/) or [Runpod](https://www.runpod.io/). If you want to be really secure against Out Of Memory issues, consider using ~280 GB + of VRAM. You can also use local GPUs if you have them. Be sure to use the winglian/axolotl:main-latest docker image.
+    - NOTE that the official datasets were generated with Llama 3 70B instruct, meaning that, as per the Llama 3 license, can only be used to improve derivatives of Llama 3. If you want to train a different model, it is advisable to generate your own dataset so that you are not breaking the license.
 2. Use SSH to scp the data and model training configuration YAML to the instance's `/workspace/axolotl` folder.
 3. If running on a single-GPU setup, you must run: `conda install -c conda-forge mpi4py mpich`
-4. Login to HuggingFace with `huggingface-cli login`. On HuggingFace's website, request access to the repo of the base model you are training on if needed (by default, this is `alpindale/Mistral-7B-v0.2-hf`).
+4. Login to HuggingFace with `huggingface-cli login`. On HuggingFace's website, request access to the repo of the base model you are training on if needed (by default, this is `meta-llama/Meta-Llama-3-8B`).
 5. Then run this command from the `/workspace/axolotl` directory: `accelerate launch --use_deepspeed -m axolotl.cli.train <your config file name>.yaml`. Be sure to replace <your config file name> with the name of the config file you want to use. If you use the provided config file, it would be `config_verus.yaml`.
 6. When prompted about whether you want to use weights and biases, pick whatever option you want.
 7. Wait for the model to train. This will likely take a couple hours, but unless you're throwing an ungodly amount of data at the problem it will be done in way less than a day.
@@ -205,7 +206,7 @@ Starting from more common things to less common things:
 ## Join the Community!
 
 
-[![Discord](https://img.shields.io/badge/chat-Discord-blue?logo=discord)](https://verus.io/discord)
+[![Discord](https://img.shields.io/badge/chat-Discord-blue?logo=discord)](https://verus.io/discord) <-- You can chat with the LLM in the #verus-ai channel!
 
 [![Telegram](https://img.shields.io/badge/chat-Telegram-blue?logo=telegram)](https://t.me/veruscommunity)
 
@@ -219,6 +220,6 @@ Interested in a privacy-preserving, commerce-enabled, people-powered internet?
 
 [Chat with the custom LLM right now!](https://huggingface.co/VerusCommunity/llama-3-verus-8-epochs-revision-1)
 
-(It will later be available on the Verus Destktop app, where it can run locally.)
+Or visit the #verus-ai channel: [![Discord](https://img.shields.io/badge/chat-Discord-blue?logo=discord)](https://verus.io/discord)
 
 If you really want a human to answer your questions,  you can go to the Discord or Telegram links above and ask there. Someone will be happy to help you out.

@@ -1,6 +1,0 @@
-[
-    "What happens when I double-click on the `start.command` file?",
-    "When you double-click on the `start.command` file, your machine will start mining.",
-    "We have all the settings ready to go, but the file we just edited is not executable right now. 12. Click `Start.sh` and click `copy \"Start.sh\"` 13. Click in an empty space in you folder and click `Paste items`, which will result in a new `start copy.sh` file. 14. rename `start copy.sh` to `start.command` Now we have an executable file that will run when you doubleclick. 15. Doubleclick `start.command` and your machine will start mining. Created by Oink.vrsc@. Note: last revision date 2020-02-26.",
-    "./raw_txt_input/mac-faq03-mining_guide.md"
-]

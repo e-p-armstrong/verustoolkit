@@ -1,13 +1,13 @@
 API:
-  API_KEY: d8b3628a88791bce982994f6fb7e8dc169b208bcc366d66317d818f5af891f47
+  API_KEY: Add your API key here
   BASE_URL: https://api.together.xyz
   LARGE_LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
 PATH:
-  DEFAULT_PROMPTS: ./prompts
+  DEFAULT_PROMPTS: ./default_prompts
   INPUT: ./raw_text_input_medium
-  OUTPUT: ./output_negative_MEDIUM
-  PROMPTS: ./prompts_negative_questioning
+  OUTPUT: ./output
+  PROMPTS: ./default_prompts
 SKIP:
   QUESTION_CHECK: False
 SYSTEM:

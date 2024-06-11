@@ -17,7 +17,7 @@ git clone https://github.com/imartinez/privateGPT
 cd privateGPT
 
 # Download the model file
-curl -L -o ggml-model-Q8_0.gguf "https://huggingface.co/VerusCommunity/llama-3-verus-8-epochs-revision-1/resolve/main/ggml-model-Q8_0.gguf"
+curl -L -o ggml-model-Q8_0.gguf "https://huggingface.co/VerusCommunity/Llama-3-Verus-Rev-4/resolve/main/llama-3-verus-revision-4-negativeandhallucinationdefence-q8_0.gguf?download=true"
 
 # Move the model file to the ./models/ directory
 mv ggml-model-Q8_0.gguf ./models/
