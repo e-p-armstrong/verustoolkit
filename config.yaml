@@ -1,11 +1,11 @@
 API:
-  API_KEY: Add your API key here
+  API_KEY: 993f9dce3623bffe9b45f4be6cdc216a703242ff8702779aa09078e49d20a351
   BASE_URL: https://api.together.xyz
   LARGE_LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
 PATH:
   DEFAULT_PROMPTS: ./default_prompts
-  INPUT: ./raw_text_input_medium
+  INPUT: ./text_inputs/raw_text_input_medium
   OUTPUT: ./output
   PROMPTS: ./default_prompts
 SKIP:
@@ -86,5 +86,5 @@ SYSTEM:
     {data}
   MODE: api
   STOP: true
-  SUBSET_SIZE: 20
+  SUBSET_SIZE: 5
   USE_SUBSET: False
