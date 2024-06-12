@@ -229,7 +229,7 @@
     Please show me how to park a conversion of VRSCTEST to a new token before that token launches, how to define a new token called "mycoin", and how to define a PBaaS chain, using the command line?
 
     **ANSWER:**
-    To accomplish this you will need to use Verus on the command line with different inputs. In order, here's how to park the conversion of VRSCTEST to a new token before it launches, and how to defien a PBaaS chain. 
+    To accomplish this you will need to use Verus on the command line with different inputs. In order, here's how to park the conversion of VRSCTEST to a new token before it launches, and how to define a PBaaS chain. 
     
 
     **Parking Conversion of VRSCTEST:**

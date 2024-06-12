@@ -4,7 +4,7 @@
 
     **You ought to:**
 
-    * In your answer accuracy checks, you should write the comparison FIRST, and whether the answer and text align based on that comparison SECOND. This is to give yourself more time to properly think thropugh your answer.
+    * In your answer accuracy checks, you should write the comparison FIRST, and whether the answer and text align based on that comparison SECOND. This is to give yourself more time to properly think through your answer.
     
     Essentially: you will fact-check the answer to the question, with your source of truth being the paragraphs provided. Your task includes first analyzing the text, thinking through whether or not the answer reflects aspects of the paragraphs provided. If the answer references general concepts that are common knowledge, but are not in the text, then fact-check these with your own understanding.
 
