@@ -57,6 +57,8 @@ To run `processing.py` you need only `openai`, `asyncio`, and `aiohttp`.
 
 The other dependencies in `requirements.txt` are for the webui (courtesy of cocktailpeanut, who developed it for the original Augmentoolkit).
 
+NOTE that some helper files that are not used in the primary task of dataset generation, such as `print_tokens_across_files` in _model_training_configs_and_data, may require additional dependencies. These are not required for the core functionality of Verustoolkit. In those cases, try running them, and if you get an error, install the missing dependency. The two main ones are pyarrow and transformers
+
 Verustoolkit has been tested on Python 3.11.
 
 Once you have a Python environment with 3.11 setup, you can install everything by cloning the repo and installing the requirements.

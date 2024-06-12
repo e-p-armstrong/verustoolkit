@@ -4,3 +4,5 @@ output*
 _old_orca_splits
 log.txt
 filter_*
+# Ignore all __pycache__ folders
+__pycache__/

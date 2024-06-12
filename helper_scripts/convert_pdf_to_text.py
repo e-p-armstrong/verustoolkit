@@ -1,8 +1,5 @@
 # Written by GPT-4
 import fitz  # PyMuPDF
-import pytesseract
-from PIL import Image
-import io
 
 # Ensure the path to the tesseract executable is set if it's not in your PATH
 # pytesseract.pytesseract.tesseract_cmd = r'<path_to_your_tesseract_executable>'
