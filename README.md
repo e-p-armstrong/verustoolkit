@@ -16,7 +16,11 @@ Verus is an open-source, fairly-launched multi-chain blockchain protocol with un
 ### (Model training config is provided in repo)
 
 ## Demo video
-coming soon!
+[Set up the Verus LLM in less than 10 minutes](https://youtu.be/OW1dyRf6T8Y)
+
+[Video Documentation 1: Generate a Dataset with Verustoolkit (repo specific)](https://youtu.be/NI0QXWWtux8)
+
+
 
 Ready to get started?
 ## Table of Contents
