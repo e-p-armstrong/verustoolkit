@@ -152,6 +152,12 @@ Field-by-field:
 - `SUBSET_SIZE` controls the number of chunks fed through the pipeline if USE_SUBSET is on. This is useful for debugging and testing quickly and cheaply — only the first `SUBSET_SIZE` chunks will be processed.
 - `USE_SUBSET` is a boolean that determines whether the pipeline uses a subset of the input data.
 
+Note:
+```
+SKIP:
+  QUESTION_CHECK: False
+```
+This lets you control whether you want to validate your generated questions or not. This should generally always be on. It is a remnant of a prompt override set that did not need question validation, but later had it added back in. PRs adding more SKIP sections are welcome.
 ## Training an LLM With your new data
 
 See the `_model_training_configs_and_data` folder.
