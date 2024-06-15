@@ -5,16 +5,14 @@
 # If running on a single-GPU setup, you must run:
 # conda install -c conda-forge mpi4py mpich
 # Then run this command from the /workspace/axolotl directory:
-# accelerate launch --use_deepspeed -m axolotl.cli.train config_verus_llama3_revision_3_no_format_add_negatives.yaml
+# accelerate launch --use_deepspeed -m axolotl.cli.train axolotl_config_verus_llama3_Jun_9_2024.yaml
 
-# Next up, try not sample packing to handle unexpected pos?
-
-
+# If using GaLore, do not use deepspeed
 
 # (to copy files over to a rented GPU instance, you'll have to use SSH to Secure CoPy files over from your machine to the rented one. This is what such a command might look like, adapt it to your needs)
-# scp -P 40001 -r lima-sharegpt.jsonl simplified_data_rag.jsonl simplified_data_no_rag.jsonl pretraining.json config_verus_both.yaml root@173.231.62.170:/workspace/axolotl/
+# scp -P 40001 -r ./ root@173.231.62.170:/workspace/axolotl/
 
-# NOTE this is the most recent configa s of Jun 10 2024; it trained a good model
+# NOTE this is the most recent config of Jun 10 2024; it trained a good model
 
 base_model: meta-llama/Meta-Llama-3-8B
 model_type: LlamaForCausalLM
