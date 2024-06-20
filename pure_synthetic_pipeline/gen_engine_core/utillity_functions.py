@@ -38,7 +38,7 @@ with open("./config.yaml", "r") as file:
 
 OUTPUT_FOLDER = obj_conf["PATH"]["OUTPUT"]
 DEFAULT_PROMPT_PATH = obj_conf["PATH"]["DEFAULT_PROMPTS"]
-COMPLETION_MODE = obj_conf["SYSTEM"]["COMPLETION_MODE"]
+COMPLETION_MODE = False # obj_conf["SYSTEM"]["COMPLETION_MODE"]
 LOGICAL_MODEL_A = obj_conf["API"]["LOGICAL_MODEL_A"]
 LOGICAL_MODEL_B = obj_conf["API"]["LOGICAL_MODEL_B"]
 API_KEY_A = obj_conf["API"]["API_KEY_A"]

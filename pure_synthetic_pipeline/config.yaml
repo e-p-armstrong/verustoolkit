@@ -11,10 +11,10 @@ PATH:
   METAPIPELINE_OUTPUT_FOLDER: "./meta_pipeline_output" # Where Augmentoolkit writes the output of the meta-pipeline
   METAPIPELINE_PY_FILE: "pipeline.py" # output path for the metapipeline python file. Should be at the same directory level as the other metapipeline fields.
 API:
-  API_KEY_A: "" # Add the API key for the provider you're using for the first model here (this is typically the smaller, less-costly model)
-  API_KEY_B: "" # Add the API key for the provider you're using for the second model here (typically a larger, more-capable model)
-  API_KEY_C: "" # Add the API key for the provider you're using for the third model here (typically the largest, most-capable model)
-  API_KEY_D: "" # Largester model, must have high context
+  API_KEY_A: "add your api key here!" # Add the API key for the provider you're using for the first model here (this is typically the smaller, less-costly model)
+  API_KEY_B: "add your api key here!" # Add the API key for the provider you're using for the second model here (typically a larger, more-capable model)
+  API_KEY_C: "add your api key here!" # Add the API key for the provider you're using for the third model here (typically the largest, most-capable model)
+  API_KEY_D: "and here too" # Largester model, must have high context
   BASE_URL_A: "https://api.together.xyz/v1" # add the base url for a provider, or local server, here. Some possible values:  http://127.0.0.1:5000/v1/ # <- local models. # https://api.together.xyz # <- together.ai, which is real cheap, real flexible, and real high-quality, if a tad unreliable. # https://api.openai.com/v1/ # <- OpenAI. Will bankrupt you very fast. # anything else that accepts OAI-style requests, so basically any API out there (openrouter, fireworks, etc etc etc...)
   BASE_URL_B: "https://api.together.xyz/v1" # Remember which model is which by thinking: B stands for 'Big'
   BASE_URL_C: "https://api.together.xyz/v1" # Remember which model is which by thinking: C stands for 'Crazy'
@@ -30,7 +30,6 @@ SYSTEM:
   DOUBLE_CHECK_COUNT: 3 # How many times to check a question and answer pair during each validation step. Majority vote decides if it passes that step. There are three steps. So most questions are by default checked around 9 times (fewer if the first two checks for a step pass, obviously).
   USE_SUBSET: True # Whether to take only the first 13 chunks from a text during the run. Useful for experimenting and iterating and seeing all the steps without costing too much money or time.
   CONCURRENCY_LIMIT: 90 # Hard limit of how many calls can be run at the same time, useful for API mode (aphrodite automatically manages this and queues things, as far as I know)
-  COMPLETION_MODE: False # Change to false if you want to use chat (instruct) mode; this requires .json files in your chosen prompts directory, in the OpenAI API format
   
   LOG_EVERYTHING: True
 REQUIREMENTS: # Strings that describe behavior to influence the synthetic data. Since each field will be slightly different in each application of these instructions, there must be an overarching description of the task and what each thing represents. 

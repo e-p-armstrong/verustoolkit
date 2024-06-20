@@ -13,12 +13,6 @@ async def main():
     with open("./config.yaml", "r") as f:
         config = yaml.safe_load(f)
 
-    if (
-        not config["SYSTEM"]["COMPLETION_MODE"]
-        and config["SYSTEM"]["MODE"] == "aphrodite"
-    ):
-        raise Exception("Aphrodite engine mode MUST use completion prompts!")
-
     # Create output directory
     if not os.path.exists(config["PATH"]["OUTPUT"]):
         os.makedirs(config["PATH"]["OUTPUT"])
@@ -44,7 +38,7 @@ async def main():
         "BASE_URL"
     ]  # Augmentoolkit-API should also be compatible with any other API provider that accepts OAI-style requests
 
-    COMPLETION_MODE = config["SYSTEM"]["COMPLETION_MODE"]
+    COMPLETION_MODE = False # config["SYSTEM"]["COMPLETION_MODE"] # Not supported right now, will be in future
 
     MODE = config["SYSTEM"]["MODE"]
 

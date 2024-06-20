@@ -1,5 +1,5 @@
 API:
-  API_KEY: Add your key here
+  API_KEY:
   BASE_URL: https://api.together.xyz
   LARGE_LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
   LOGICAL_MODEL: meta-llama/Llama-3-70b-chat-hf
@@ -12,7 +12,6 @@ SKIP:
   QUESTION_CHECK: False
 SYSTEM:
   CHUNK_SIZE: 1900
-  COMPLETION_MODE: false
   CONCURRENCY_LIMIT: 80
   DOUBLE_CHECK_COUNTER: 1
   FINAL_ASSISTANT_PROMPT_NO_RAG: |

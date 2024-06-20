@@ -19,7 +19,7 @@ API_KEY_C = obj_conf["API"]["API_KEY_C"]
 BASE_URL_C = obj_conf["API"]["BASE_URL_C"]
 LOGICAL_MODEL_C = obj_conf["API"]["LOGICAL_MODEL_C"]
 MODE = obj_conf["API"]["MODE"]
-COMPLETION_MODE = obj_conf["SYSTEM"]["COMPLETION_MODE"]
+COMPLETION_MODE = False # obj_conf["SYSTEM"]["COMPLETION_MODE"] # not supported right now, will be in future
 METAPIPELINE_OUTPUT_FOLDER = obj_conf["PATH"]["METAPIPELINE_OUTPUT_FOLDER"]
 METAPIPELINE_PY_FILE = obj_conf["PATH"]["METAPIPELINE_PY_FILE"]
 

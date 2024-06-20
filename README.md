@@ -124,7 +124,6 @@ Next, we have the `SYSTEM` section:
 ```
 SYSTEM:
   CHUNK_SIZE: 1900
-  COMPLETION_MODE: false
   CONCURRENCY_LIMIT: 60
   DOUBLE_CHECK_COUNTER: 3
   FINAL_ASSISTANT_PROMPT_NO_RAG: You are a crypto expert AI and a member of the Verus
@@ -148,7 +147,6 @@ SYSTEM:
 
 Field-by-field:
 - `CHUNK_SIZE` is the maxmimum number of characters to use in a "chunk" of text that will be fed through the pipeline. A chunk is what questions are generated from — it's kinda the core building block of QA datasets built by Verustoolkit.
-- `COMPLETION_MODE` is a boolean that determines whether prompts are sent to the provider in chat mode (default, what happens when it's set to `false`) or completion mode (what happens when it's set to `true`). Completion mode can produce higher-quality responses with some models, but many providers don't support it.
 - `CONCURRENCY_LIMIT` is an integer; it's the maximum number of concurrent requests that can be made to the provider. This is useful for controlling costs and preventing rate-limiting.
 - `DOUBLE_CHECK_COUNTER` is an integer; it's the number of times that the pipeline will double-check the questions it produces. For each QA pair, the majority vote goes: if it's positive, the question/answer pair is kept, if it's negative, the QA pair is tossed. Ties are tossed. This is a tradeoff parameter: higher means more quality but far higher cost. 3 is a good starting point.
 - `FINAL_ASSISTANT_PROMPT_NO_RAG` is a setting used to control the form of the dataset produced at the very end. What you write here will be the system prompt of the AI in the portion of the dataset that does NOT have RAG supporting the outputs. This is where we get the LLM to rely on the knowledge we teach it. Recommendation: mention its knowledge of Verus and crypto in general, so that those can be used as "trigger words" for latent space activation when inference time comes.
